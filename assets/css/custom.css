@@ -1,0 +1,674 @@
+
+
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+
+:root {
+    --basc-blue: #073b8f;
+    --basc-blue-dark: #04245c;
+    --basc-blue-light: #0b63c9;
+
+    --basc-pink: #e51d73;
+    --basc-pink-dark: #b90f57;
+    --basc-pink-light: #ff4d99;
+
+    --basc-white: #ffffff;
+    --basc-black: #111111;
+
+    --basc-light-bg: #f6f9ff;
+
+    --basc-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+
+    --basc-transition: all 0.35s ease;
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background: var(--basc-light-bg);
+    color: var(--basc-black);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================================================
+   TOP NAVIGATION BAR
+========================================================= */
+
+.basc-top-bar {
+    position: relative;
+    width: 100%;
+    min-height: 64px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 36, 92, 0.98),
+            rgba(7, 59, 143, 0.98),
+            rgba(4, 36, 92, 0.98)
+        );
+
+    border-bottom: 3px solid var(--basc-pink);
+
+    z-index: 9999;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   TOP NAV CONTAINER
+========================================================= */
+
+.basc-top-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    padding: 0 25px;
+}
+
+
+/* =========================================================
+   MAIN MENU
+========================================================= */
+
+.basc-top-menu {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   MAIN MENU ITEM
+========================================================= */
+
+.basc-top-menu > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================================
+   MAIN MENU LINKS
+========================================================= */
+
+.basc-top-menu > li > a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 64px;
+
+    padding: 0 17px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+
+    transition: var(--basc-transition);
+}
+
+
+/* =========================================================
+   MENU UNDERLINE
+========================================================= */
+
+.basc-top-menu > li > a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 3px;
+
+    background: var(--basc-pink);
+
+    transform: translateX(-50%);
+
+    transition: var(--basc-transition);
+}
+
+
+/* =========================================================
+   MENU HOVER
+========================================================= */
+
+.basc-top-menu > li:hover > a {
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+
+.basc-top-menu > li:hover > a::after {
+    width: 70%;
+}
+
+
+/* =========================================================
+   DROPDOWN ARROW
+========================================================= */
+
+.basc-top-dropdown > a {
+    padding-right: 30px !important;
+}
+
+
+.basc-top-dropdown > a::before {
+    content: "\f107";
+
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free";
+    font-weight: 900;
+
+    font-size: 11px;
+
+    color: #ffffff;
+
+    transition: var(--basc-transition);
+}
+
+
+.basc-top-dropdown:hover > a::before {
+    color: var(--basc-pink-light);
+
+    transform:
+        translateY(-50%)
+        rotate(180deg);
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+.basc-top-submenu {
+    position: absolute;
+
+    top: calc(100% + 3px);
+    left: 0;
+
+    min-width: 235px;
+
+    padding: 8px 0;
+
+    background: rgba(255, 255, 255, 0.98);
+
+    border-top: 4px solid var(--basc-pink);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.20);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+        translateY(15px)
+        scale(0.98);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+
+    z-index: 99999;
+}
+
+
+/* =========================================================
+   SHOW DROPDOWN
+========================================================= */
+
+.basc-top-dropdown:hover > .basc-top-submenu {
+    opacity: 1;
+    visibility: visible;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   DROPDOWN ITEM
+========================================================= */
+
+.basc-top-submenu li {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   DROPDOWN LINK
+========================================================= */
+
+.basc-top-submenu li a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 45px;
+
+    padding: 10px 20px;
+
+    color: #333333;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #eeeeee;
+
+    transition: var(--basc-transition);
+}
+
+
+.basc-top-submenu li:last-child a {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   DROPDOWN LEFT LINE
+========================================================= */
+
+.basc-top-submenu li a::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background: var(--basc-pink);
+
+    transform: scaleY(0);
+
+    transform-origin: center;
+
+    transition: var(--basc-transition);
+}
+
+
+/* =========================================================
+   DROPDOWN HOVER
+========================================================= */
+
+.basc-top-submenu li a:hover {
+    color: var(--basc-blue);
+
+    background:
+        linear-gradient(
+            90deg,
+            #f2f7ff,
+            #ffffff
+        );
+
+    padding-left: 27px;
+}
+
+
+.basc-top-submenu li a:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* =========================================================
+   VIDEO BANNER
+========================================================= */
+
+.banner-video {
+    position: relative;
+
+    width: 100%;
+
+    height: 620px;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    background: #061b40;
+}
+
+
+/* =========================================================
+   VIDEO ELEMENT
+========================================================= */
+
+.banner-video-element {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    object-fit: cover;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   VIDEO OVERLAY
+========================================================= */
+
+.banner-video-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 25, 65, 0.88) 0%,
+            rgba(4, 38, 88, 0.65) 40%,
+            rgba(4, 38, 88, 0.32) 70%,
+            rgba(0, 0, 0, 0.45) 100%
+        );
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   SUBTLE BOTTOM GRADIENT
+========================================================= */
+
+.banner-video::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 130px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.50),
+            transparent
+        );
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   VIDEO OVERLAY HEADER
+========================================================= */
+
+.video-overlay-header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding:0px;
+
+    z-index: 5;
+    background-color: #00000064;
+}
+
+
+/* =========================================================
+   VIDEO HEADER CONTAINER
+========================================================= */
+
+.video-header-container {
+    width: 100%;
+    height: 100px;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding: 5px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+/* =========================================================
+   LEFT COLLEGE INFORMATION
+========================================================= */
+
+.video-college-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   COLLEGE LOGO
+========================================================= */
+
+.video-college-logo {
+    width: 105px;
+    height: 105px;
+
+    flex: 0 0 100px;
+
+
+}
+
+.video-college-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   COLLEGE TEXT
+========================================================= */
+
+.video-college-text {
+    color: #ffffff;
+
+    text-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================================
+   COLLEGE NAME
+========================================================= */
+
+.video-college-text h1 {
+    margin: 0;
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   COLLEGE SUB NAME
+========================================================= */
+
+.video-college-text h2 {
+    margin: 8px 0 7px;
+
+    font-size: clamp(19px, 2vw, 30px);
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   AUTONOMOUS TEXT
+========================================================= */
+
+.video-college-text p {
+    margin: 0;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+    opacity: 0.95;
+}
+
+/* =========================================================
+   RECOGNITION LOGOS
+========================================================= */
+
+.video-recognition-logos {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 13px;
+
+    flex-wrap: wrap;
+
+    max-width: 500px;
+}
+
+
+/* =========================================================
+   INDIVIDUAL RECOGNITION LOGO
+========================================================= */
+
+.video-recognition-logo {
+    width: 72px;
+    height: 72px;
+
+    padding: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 2px solid rgba(255, 255, 255, 0.85);
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================================
+   RECOGNITION IMAGE
+========================================================= */
+
+.video-recognition-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+

@@ -1,0 +1,888 @@
+
+
+/* =========================================================
+   DESKTOP - MOBILE BUTTONS HIDDEN
+========================================================= */
+
+.basc-mobile-toggle,
+.basc-mobile-close {
+    display: none;
+}
+
+
+/* =========================================================
+   MOBILE VIEW - MAX 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+    /* =====================================================
+       MOBILE HAMBURGER BUTTON
+    ===================================================== */
+
+    .basc-mobile-toggle {
+
+        display: flex;
+
+        position: absolute;
+
+        top: 15px;
+        right: 15px;
+
+        width: 44px;
+        height: 44px;
+
+        padding: 0;
+        margin: 0;
+
+        align-items: center;
+        justify-content: center;
+
+        border: 0;
+        border-radius: 7px;
+
+        background: #08306c;
+        color: #ffffff;
+
+        font-size: 21px;
+        line-height: 1;
+
+        cursor: pointer;
+
+        z-index: 10001;
+
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+
+        transition: all 0.3s ease;
+    }
+
+    .basc-mobile-toggle:hover {
+        background: #e12b7b;
+    }
+
+
+    /* =====================================================
+       TOP BAR BECOMES MOBILE SIDE MENU
+    ===================================================== */
+
+    .basc-top-bar {
+
+        position: fixed;
+
+        top: 0;
+        right: -320px;
+
+        width: 300px;
+        max-width: 85%;
+
+        height: 100vh;
+
+        margin: 0;
+        padding: 75px 20px 30px;
+
+        box-sizing: border-box;
+
+        background: #ffffff;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        z-index: 10000;
+
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.20);
+
+        transition: right 0.35s ease;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    /* =====================================================
+       OPEN MOBILE MENU
+    ===================================================== */
+
+    .basc-top-bar.basc-mobile-active {
+        right: 0;
+    }
+
+
+    /* =====================================================
+       TOP CONTAINER
+    ===================================================== */
+
+    .basc-top-container {
+
+        width: 100%;
+
+        max-width: none;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    .basc-top-menu {
+
+        display: block !important;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       MENU ITEMS
+    ===================================================== */
+
+    .basc-top-menu > li {
+
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        border-bottom: 1px solid #eeeeee;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       MENU LINKS
+    ===================================================== */
+
+    .basc-top-menu > li > a {
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        min-height: 48px;
+
+        padding: 14px 5px;
+
+        box-sizing: border-box;
+
+        color: #08306c;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        line-height: 1.3;
+
+        text-decoration: none;
+
+        transition: all 0.25s ease;
+    }
+
+
+    .basc-top-menu > li > a:hover {
+        color: #e12b7b;
+    }
+
+
+    /* Remove desktop hover arrow */
+    .basc-top-menu > li:hover > a::after {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       DROPDOWN
+    ===================================================== */
+
+    .basc-top-dropdown {
+        position: relative;
+    }
+
+
+    /* =====================================================
+       MOBILE SUBMENU
+    ===================================================== */
+
+    .basc-top-submenu {
+
+        position: static !important;
+
+        display: none;
+
+        width: 100%;
+
+        min-width: 0;
+
+        margin: 0;
+        padding: 4px 0;
+
+        box-sizing: border-box;
+
+        background: #f5f7fb;
+
+        box-shadow: none !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        transform: none !important;
+
+        list-style: none;
+    }
+
+
+    /* =====================================================
+       OPEN SUBMENU
+    ===================================================== */
+
+    .basc-top-dropdown.mobile-open > .basc-top-submenu {
+        display: block;
+    }
+
+
+    /* =====================================================
+       SUBMENU ITEM
+    ===================================================== */
+
+    .basc-top-submenu li {
+
+        display: block;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .basc-top-submenu li a {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 11px 15px;
+
+        box-sizing: border-box;
+
+        color: #333333;
+
+        font-size: 13px;
+        font-weight: 500;
+
+        line-height: 1.3;
+
+        text-decoration: none;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        transition: all 0.25s ease;
+    }
+
+
+    .basc-top-submenu li:last-child a {
+        border-bottom: 0;
+    }
+
+
+    .basc-top-submenu li a:hover {
+        color: #e12b7b;
+        background: #ffffff;
+        padding-left: 20px;
+    }
+
+
+    /* =====================================================
+       CLOSE BUTTON
+    ===================================================== */
+
+    .basc-mobile-close {
+
+        position: fixed;
+
+        top: 15px;
+        right: 15px;
+
+        width: 40px;
+        height: 40px;
+
+        padding: 0;
+        margin: 0;
+
+        align-items: center;
+        justify-content: center;
+
+        border: 0;
+        border-radius: 50%;
+
+        background: #e12b7b;
+        color: #ffffff;
+
+        font-size: 18px;
+        line-height: 1;
+
+        cursor: pointer;
+
+        z-index: 10003;
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+
+        transition: all 0.3s ease;
+    }
+
+
+    /* Show close button */
+    .basc-mobile-close.active {
+        display: flex;
+    }
+
+
+    .basc-mobile-close:hover {
+        background: #08306c;
+        transform: rotate(90deg);
+    }
+
+
+    /* =====================================================
+       HIDE HAMBURGER WHEN MENU OPEN
+    ===================================================== */
+
+    .basc-mobile-toggle.menu-open {
+        display: none;
+    }
+
+
+    /* =====================================================
+       VIDEO HEADER - IMPORTANT FIX
+    ===================================================== */
+
+    .video-overlay-header {
+
+        width: 100%;
+
+        padding: 12px 15px;
+
+        box-sizing: border-box;
+    }
+
+
+    .video-header-container {
+
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+        flex-direction: row !important;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       COLLEGE INFORMATION
+    ===================================================== */
+
+    .video-college-info {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        gap: 9px;
+
+        flex: 1;
+
+        min-width: 0;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       COLLEGE LOGO
+    ===================================================== */
+
+    .video-college-logo {
+
+        flex: 0 0 auto;
+
+        width: 55px;
+        height: 55px;
+    }
+
+
+    .video-college-logo img {
+
+        display: block;
+
+        width: 55px;
+        height: 55px;
+
+        max-width: 100%;
+
+        object-fit: contain;
+    }
+
+
+    /* =====================================================
+       COLLEGE TEXT
+    ===================================================== */
+
+    .video-college-text {
+
+        flex: 1;
+
+        min-width: 0;
+
+        text-align: left;
+
+        padding-right: 50px;
+
+        box-sizing: border-box;
+    }
+
+
+    .video-college-text h1 {
+
+        margin: 0;
+
+        font-size: 25px;
+
+        line-height: 1.05;
+
+        letter-spacing: 1px;
+
+        white-space: nowrap;
+    }
+
+
+    .video-college-text h2 {
+
+        margin: 5px 0 0;
+
+        font-size: 13px;
+
+        line-height: 1.15;
+
+        letter-spacing: 0.4px;
+
+        white-space: nowrap;
+    }
+
+
+    .video-college-text p {
+
+        margin: 4px 0 0;
+
+        font-size: 7px;
+
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       RECOGNITION LOGO HIDDEN ON MOBILE
+    ===================================================== */
+
+    .video-recognition-logos {
+        display: none !important;
+    }
+
+
+    .video-recognition-logos img {
+        display: none !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - MAX 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+    /* -----------------------------------------------
+       HAMBURGER
+    ----------------------------------------------- */
+
+    .basc-mobile-toggle {
+
+        top: 12px;
+        right: 12px;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 19px;
+    }
+
+
+    /* -----------------------------------------------
+       SIDE MENU
+    ----------------------------------------------- */
+
+    .basc-top-bar {
+
+        width: 285px;
+        max-width: 88%;
+
+        padding: 70px 18px 25px;
+    }
+
+
+    /* -----------------------------------------------
+       MENU TEXT
+    ----------------------------------------------- */
+
+    .basc-top-menu > li > a {
+
+        min-height: 45px;
+
+        padding: 13px 5px;
+
+        font-size: 13px;
+    }
+
+
+    .basc-top-submenu li a {
+
+        padding: 10px 14px;
+
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------------
+       CLOSE BUTTON
+    ----------------------------------------------- */
+
+    .basc-mobile-close {
+
+        top: 12px;
+        right: 12px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+
+    /* -----------------------------------------------
+       VIDEO HEADER
+    ----------------------------------------------- */
+
+    .video-overlay-header {
+
+        padding: 10px 12px;
+    }
+
+
+    .video-header-container {
+
+        gap: 6px;
+    }
+
+
+    .video-college-info {
+
+        gap: 7px;
+    }
+
+
+    .video-college-logo {
+
+        width: 46px;
+        height: 46px;
+    }
+
+
+    .video-college-logo img {
+
+        width: 46px;
+        height: 46px;
+    }
+
+
+    .video-college-text {
+
+        padding-right: 42px;
+    }
+
+
+    .video-college-text h1 {
+
+        font-size: 20px;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    .video-college-text h2 {
+
+        margin-top: 4px;
+
+        font-size: 10px;
+
+        letter-spacing: 0.2px;
+    }
+
+
+    .video-college-text p {
+
+        margin-top: 3px;
+
+        font-size: 6px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES - MAX 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .video-college-logo,
+    .video-college-logo img {
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .video-college-text {
+
+        padding-top: -40px;
+    }
+
+
+    .video-college-text h1 {
+
+        font-size: 18px;
+
+        letter-spacing: 0.3px;
+    }
+
+
+    .video-college-text h2 {
+
+        font-size: 9px;
+    }
+
+
+    .video-college-text p {
+
+        font-size: 5.5px;
+    }
+
+
+    .basc-mobile-toggle {
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE VIDEO BANNER - FULL WIDTH RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .banner-video {
+        position: relative;
+
+        width: 100%;
+
+        /* Remove desktop fixed height */
+        height: 420px;
+
+        min-height: 0;
+
+        margin: 0;
+        padding: 0;
+
+        overflow: hidden;
+
+        background: #061b40;
+    }
+
+
+    /* =====================================================
+       VIDEO
+    ===================================================== */
+
+    .banner-video-element {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        min-width: 0;
+        min-height: 0;
+
+        object-fit: cover;
+
+        object-position: center center;
+
+        transform: none;
+
+        display: block;
+
+        z-index: 1;
+    }
+
+
+    /* =====================================================
+       OVERLAY
+    ===================================================== */
+
+    .banner-video-overlay {
+
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(2, 25, 65, 0.65) 0%,
+                rgba(4, 38, 88, 0.25) 50%,
+                rgba(0, 0, 0, 0.45) 100%
+            );
+
+        z-index: 2;
+    }
+
+
+    /* =====================================================
+       BOTTOM GRADIENT
+    ===================================================== */
+
+    .banner-video::after {
+
+        height: 90px;
+
+        background:
+            linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.45),
+                transparent
+            );
+
+        z-index: 3;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .banner-video {
+        height: 380px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .banner-video {
+
+        width: 100%;
+
+        height: 300px;
+
+        min-height: 0;
+
+        overflow: hidden;
+    }
+
+
+    .banner-video-element {
+
+        width: 100%;
+        height: 100%;
+
+        min-width: 0;
+        min-height: 0;
+
+        object-fit: cover;
+
+        object-position: center center;
+
+        transform: none;
+    }
+
+
+    .banner-video-overlay {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(2, 25, 65, 0.60),
+                rgba(4, 38, 88, 0.20),
+                rgba(0, 0, 0, 0.45)
+            );
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .banner-video {
+        height: 280px;
+    }
+
+}
+
