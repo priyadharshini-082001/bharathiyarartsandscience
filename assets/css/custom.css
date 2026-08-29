@@ -836,43 +836,52 @@ ul {
 }
 
 
-/*================================================
-   BHARATHIYAR SECTION
-================================================*/
+
+
+
+/* =========================================================
+   BHARATHIYAR HIGHLIGHT SECTION
+========================================================= */
 
 .bharathiyar-section {
     width: 100%;
-    padding:50px 20px;
-    background: #ffffff;
+    padding: 45px 20px;
+    background: #f7f9fc;
 }
 
 .bharathiyar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-
+    width:100%;
+    margin: auto;
+ 
     display: grid;
-    grid-template-columns: 1.35fr 0.85fr;
-    align-items: center;
-    gap: 55px;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+
+    align-items: stretch;
 }
 
-/*================================================
-   LEFT BIG IMAGE
-================================================*/
+
+/* =========================================================
+   LEFT IMAGE CARD
+========================================================= */
 
 .bharathiyar-image {
-    width: 100%;
-    height: 520px;
+    height: 400px;
     overflow: hidden;
-    border-radius: 18px;
-    position: relative;
+    border-radius: 12px;
+    background: #fff;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
 }
 
 .bharathiyar-image img {
     width: 100%;
     height: 100%;
     display: block;
+
     object-fit: cover;
+    object-position: center;
+
     transition: transform 0.5s ease;
 }
 
@@ -880,241 +889,747 @@ ul {
     transform: scale(1.04);
 }
 
-/*================================================
-   RIGHT CONTENT
-================================================*/
+
+/* =========================================================
+   NEAT & COMPACT CONTENT
+========================================================= */
 
 .bharathiyar-content {
-    padding: 10px 0;
+    position: relative;
+    height: 400px;
+
+    padding: 30px 36px;
+
+    background: #073b8f;
+    border-radius: 12px;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: hidden;
 }
+
+
+/* Small heading */
 
 .section-small-title {
-    display: inline-block;
-    color: #174ea6;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    margin-bottom: 14px;
+    margin: 0 0 7px;
+
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+
+    color: rgba(255,255,255,0.78);
 }
+
+
+/* Main heading */
 
 .bharathiyar-content h2 {
-    margin: 0 0 18px;
-    color: #102a56;
-    font-size: 34px;
-    line-height: 1.25;
+    margin: 0 0 13px;
+    padding-bottom: 9px;
+
+    font-size: 26px;
+    line-height: 1.2;
     font-weight: 700;
+
+    color: #fff;
 }
 
-.content-text {
-    color: #5f6b7a;
-    font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 24px;
+.bharathiyar-content h2::after {
+    width: 45px;
+    height: 3px;
 }
 
-/*================================================
-   TAMIL HIGHLIGHT
-================================================*/
+
+/* Description */
+
+.bharathiyar-content .content-text {
+    margin: 0 0 14px;
+
+    font-size: 16px;
+    line-height: 1.65;
+
+    color: rgba(255,255,255,0.92);
+}
+
+
+/* Tamil Quote */
 
 .tamil-highlight {
-    position: relative;
-    background: linear-gradient(
-        135deg,
-        #fff7fb,
-        #f4f8ff
-    );
+    margin: 0 0 5px;
+    padding: 9px 15px;
 
-    border-left: 5px solid #174ea6;
-    border-radius: 10px;
+    background: rgba(255,255,255,0.10);
 
-    padding: 22px 24px;
-    margin: 22px 0 10px;
-
+    border-left: 3px solid #fff;
+    border-radius: 5px;
 }
 
 .tamil-highlight p {
     margin: 0;
-    color: #182b49;
 
-    font-family: "Noto Sans Tamil",
-                 "Latha",
-                 sans-serif;
-
-    font-size: 19px;
-    line-height: 1.9;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
     font-weight: 600;
+
+    color: #fff;
 }
 
-/* Quote */
 
-.quote-mark {
-    position: absolute;
-    top: 5px;
-    left: 12px;
-
-    font-family: Georgia, serif;
-    font-size: 38px;
-    color: #d83b78;
-    line-height: 1;
-}
-
-.quote-end {
-    top: auto;
-    left: auto;
-    right: 12px;
-    bottom: -8px;
-}
-
-/*================================================
-   AUTHOR
-================================================*/
+/* Author */
 
 .highlight-author {
-    text-align: right;
-    margin: 8px 4px 25px;
+    margin: 4px 0 12px;
 
-    color: #d83b78;
-    font-size: 13px;
-    font-weight: 600;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: rgba(255,255,255,0.75);
+
+    text-align: right;
 }
 
-/*================================================
-   BUTTON
-================================================*/
+
+/* Button */
 
 .bharathiyar-btn {
+    padding: 8px 17px;
+
+    font-size: 14px;
+    line-height: 1;
+
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   TAMIL HIGHLIGHT
+========================================================= */
+
+.tamil-highlight {
+    position: relative;
+    z-index: 2;
+
+    margin: 2px 0 5px;
+
+    padding: 10px 16px;
+
+    background: rgba(255,255,255,0.11);
+
+    border-left: 3px solid #fff;
+    border-radius: 5px;
+}
+
+.tamil-highlight p {
+    margin: 0;
+
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
+
+    font-size: 15px;
+    line-height: 1.65;
+    font-weight: 600;
+
+    color: #fff;
+}
+
+
+/* Hide large quote marks */
+
+.quote-mark {
+    display: none;
+}
+
+
+/* =========================================================
+   AUTHOR
+========================================================= */
+
+.highlight-author {
+    position: relative;
+    z-index: 2;
+
+    margin: 4px 0 13px;
+
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
+    font-size: 11px;
+
+    color: rgba(255,255,255,0.75);
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.bharathiyar-btn {
+    position: relative;
+    z-index: 2;
+
     display: inline-flex;
     align-items: center;
-    gap: 9px;
+    justify-content: center;
+    gap: 7px;
 
-    padding: 12px 22px;
+    width: fit-content;
 
-    background: #174ea6;
+    padding: 8px 18px;
+
+    background: #e51d73;
     color: #ffffff;
 
-    border-radius: 7px;
+    border-radius: 4px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
 
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
 
     transition: all 0.3s ease;
 }
 
 .bharathiyar-btn i {
-    font-size: 12px;
     transition: transform 0.3s ease;
 }
 
 .bharathiyar-btn:hover {
-    background: #d83b78;
-    color: #ffffff;
+    background: #f0f4ff;
+    color: #052e70;
+
+    transform: translateY(-2px);
 }
 
 .bharathiyar-btn:hover i {
     transform: translateX(4px);
 }
 
+/* =========================================================
+   DEPARTMENT SLIDER SECTION
+========================================================= */
 
-/*================================================
-   TABLET
-================================================*/
+.department-slider-container{
+    width: 100%;
+    padding:50px 10px;
+    background: #ff4d9a33;
+}
 
-@media (max-width: 992px) {
-
-    .bharathiyar-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .bharathiyar-image {
-        height: 430px;
-    }
-
-    .bharathiyar-content h2 {
-        font-size: 28px;
-    }
-
-    .tamil-highlight p {
-        font-size: 17px;
-    }
+.department-slider-container {
+    width:100%;
+    padding: 3%;
 }
 
 
-/*================================================
-   MOBILE
-================================================*/
+/* =========================================================
+   HEADING
+========================================================= */
 
-@media (max-width: 768px) {
+.department-slider-heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
 
-    .bharathiyar-section {
-        padding: 50px 15px;
-    }
+.department-slider-heading > span {
+    display: block;
+    margin-bottom: 8px;
 
-    .bharathiyar-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
 
-    /* Big image remains prominent */
-    .bharathiyar-image {
-        height: 350px;
-        border-radius: 14px;
-    }
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
 
-    .bharathiyar-content {
-        padding: 0 5px;
-    }
+    color: #c39b4a;
+}
 
-    .section-small-title {
-        font-size: 11px;
-        letter-spacing: 1px;
-    }
+.department-slider-heading h2 {
+    margin: 0;
 
-    .bharathiyar-content h2 {
-        font-size: 26px;
-    }
+    font-family: "Poppins", sans-serif;
+    font-size: 44px;
+    font-weight: 800;
 
-    .content-text {
-        font-size: 14px;
-        line-height: 1.7;
-    }
+    line-height: 1.2;
 
-    .tamil-highlight {
-        padding: 20px 18px;
-    }
+    color: #073b8f;
+}
 
-    .tamil-highlight p {
-        font-size: 17px;
-        line-height: 1.8;
-    }
+.dept-heading-line {
+    position: relative;
 
-    .highlight-author {
-        font-size: 12px;
-    }
+    width: 70px;
+    height: 4px;
+
+    margin: 14px auto;
+
+    background: #c39b4a;
+    border-radius: 20px;
+}
+
+.dept-heading-line::before,
+.dept-heading-line::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+
+    width: 7px;
+    height: 7px;
+
+    background: #c39b4a;
+
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+}
+
+.dept-heading-line::before {
+    left: -14px;
+}
+
+.dept-heading-line::after {
+    right: -14px;
+}
+
+.department-slider-heading p {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 1.85;
+
+    color: #000000;
 }
 
 
-/*================================================
-   SMALL MOBILE
-================================================*/
+/* =========================================================
+   SWIPER
+========================================================= */
 
-@media (max-width: 480px) {
+.departmentSwiper {
+    position: relative;
 
-    .bharathiyar-image {
-        height: 280px;
-    }
+    width: 100%;
 
-    .bharathiyar-content h2 {
-        font-size: 23px;
-    }
-
-    .tamil-highlight p {
-        font-size: 16px;
-    }
-
-    .bharathiyar-btn {
-        width: 100%;
-        justify-content: center;
-    }
+    padding: 8px 58px 65px;
 }
+
+.departmentSwiper .swiper-slide {
+    height: auto;
+}
+
+
+/* =========================================================
+   SLIDE
+========================================================= */
+
+.department-slide {
+    display: grid;
+
+    grid-template-columns: 48% 52%;
+
+    min-height: 440px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(7,59,143,.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.department-slide:hover {
+    transform: translateY(-5px);
+
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.department-slide-image {
+    position: relative;
+
+    min-height: 440px;
+
+    overflow: hidden;
+
+    background: #e9eef7;
+}
+
+.department-slide-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .8s ease;
+}
+
+.department-slide:hover .department-slide-image img {
+    transform: scale(1.07);
+}
+
+
+/* IMAGE OVERLAY */
+
+.department-slide-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7,59,143,.02),
+            rgba(7,59,143,.18)
+        );
+
+    pointer-events: none;
+}
+
+
+/* IMAGE TOP SHINE */
+
+.department-slide-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,.12),
+        transparent 40%
+    );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.slide-number {
+    position: absolute;
+
+    left: 28px;
+    bottom: 28px;
+
+    z-index: 5;
+
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #073b8f;
+
+    border: 4px solid #ffffff;
+
+    border-radius: 50%;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    transition: .3s ease;
+}
+
+.department-slide:hover .slide-number {
+    background: #c39b4a;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.department-slide-content {
+    position: relative;
+
+    padding: 48px 52px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(195,155,74,.07),
+            transparent 35%
+        ),
+        #ffffff;
+}
+
+
+/* Decorative line */
+
+.department-slide-content::after {
+    content: "";
+
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 70px;
+    height: 70px;
+
+    border-right: 2px solid rgba(195,155,74,.20);
+    border-bottom: 2px solid rgba(195,155,74,.20);
+
+    border-radius: 0 0 15px 0;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SMALL TITLE
+========================================================= */
+
+.slide-small-title {
+    margin-bottom: 8px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #c39b4a;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.department-slide-content h3 {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+
+    line-height: 1.25;
+
+    color: #073b8f;
+}
+
+
+/* =========================================================
+   LINE
+========================================================= */
+
+.slide-line {
+    width: 58px;
+    height: 4px;
+
+    margin: 13px 0 20px;
+
+    background: #c39b4a;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.department-slide-content > p {
+    margin: 0 0 22px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.9;
+
+    color: #000000;
+}
+
+
+/* =========================================================
+   SUBJECT TAGS
+========================================================= */
+
+.slide-subjects {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 25px;
+}
+
+.slide-subjects span {
+    padding: 8px 13px;
+
+    background: #f2f6fc;
+
+    border: 1px solid #dce5f1;
+
+    border-radius: 6px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #315582;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+.slide-subjects span:hover {
+    background: #073b8f;
+
+    border-color: #073b8f;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.slide-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    gap: 9px;
+
+    padding: 12px 22px;
+
+    background: #073b8f;
+
+    border: 1px solid #073b8f;
+
+    border-radius: 6px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.slide-button:hover {
+    background: #c39b4a;
+
+    border-color: #c39b4a;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 9px 22px rgba(195,155,74,.25);
+}
+
+.slide-button i {
+    transition: transform .3s ease;
+}
+
+.slide-button:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   DEPARTMENT SLIDER - ARROWS
+========================================================= */
+
+.departmentSwiper {
+    position: relative;
+
+    width: 100%;
+
+    padding: 8px 58px 65px;
+}
+
+
+
+/* =========================================================
+   SWIPER PAGINATION
+========================================================= */
+
+.departmentSwiper .swiper-pagination {
+    bottom: 15px;
+}
+
+.departmentSwiper .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+
+    background: #cbd5e4;
+
+    opacity: 1;
+
+    transition: .3s ease;
+}
+
+.departmentSwiper .swiper-pagination-bullet-active {
+    width: 28px;
+
+    border-radius: 10px;
+
+    background: #073b8f;
+}
+
+
