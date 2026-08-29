@@ -94,7 +94,6 @@ ul {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-
     padding: 0 25px;
 }
 
@@ -105,13 +104,10 @@ ul {
 
 .basc-top-menu {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 0;
-
     margin: 0;
     padding: 0;
 }
@@ -418,56 +414,6 @@ ul {
 
 
 /* =========================================================
-   VIDEO OVERLAY
-========================================================= */
-
-.banner-video-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(2, 25, 65, 0.88) 0%,
-            rgba(4, 38, 88, 0.65) 40%,
-            rgba(4, 38, 88, 0.32) 70%,
-            rgba(0, 0, 0, 0.45) 100%
-        );
-
-    z-index: 2;
-}
-
-
-/* =========================================================
-   SUBTLE BOTTOM GRADIENT
-========================================================= */
-
-.banner-video::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    height: 130px;
-
-    background:
-        linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.50),
-            transparent
-        );
-
-    z-index: 3;
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
    VIDEO OVERLAY HEADER
 ========================================================= */
 
@@ -595,25 +541,6 @@ ul {
     color: #ffffff;
 }
 
-
-/* =========================================================
-   AUTONOMOUS TEXT
-========================================================= */
-
-.video-college-text p {
-    margin: 0;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    letter-spacing: 3px;
-
-    color: #ffffff;
-
-    opacity: 0.95;
-}
-
 /* =========================================================
    RECOGNITION LOGOS
 ========================================================= */
@@ -670,18 +597,23 @@ ul {
     object-fit: contain;
 }
 
-
 /* =========================================================
+   BHARATHIYAR ARTS & SCIENCE COLLEGE
    COMPACT TOP HEADER
 ========================================================= */
 
-.pharma-header-top {
+.basc-header-top {
     width: 100%;
     height: 42px;
+
     background: #e8e8fc;
+
     color: #073b8f;
+
     position: relative;
     z-index: 9999;
+
+    border-bottom: 2px solid #e51d73;
 }
 
 
@@ -689,7 +621,7 @@ ul {
    CONTAINER
 ========================================================= */
 
-.pharma-header-top .container {
+.basc-header-top .container {
     width: 100%;
     max-width: 1400px;
 
@@ -698,6 +630,8 @@ ul {
     margin: 0 auto;
 
     padding: 0 20px;
+
+    box-sizing: border-box;
 }
 
 
@@ -705,7 +639,7 @@ ul {
    MAIN WRAPPER
 ========================================================= */
 
-.pharma-top-wrapper {
+.basc-top-wrapper {
     width: 100%;
     height: 100%;
 
@@ -723,7 +657,7 @@ ul {
    LEFT INFORMATION
 ========================================================= */
 
-.pharma-top-left {
+.basc-top-left {
     display: flex;
 
     align-items: center;
@@ -738,14 +672,14 @@ ul {
    INFORMATION ITEM
 ========================================================= */
 
-.pharma-info-item {
+.basc-info-item {
     display: flex;
 
     align-items: center;
 
     gap: 7px;
 
-    color:  #073b8f;
+    color: #073b8f;
 
     font-size: 14px;
 
@@ -761,8 +695,8 @@ ul {
    ICON
 ========================================================= */
 
-.pharma-info-item i {
-    color: #ff4d99;
+.basc-info-item i {
+    color: #e51d73;
 
     font-size: 14px;
 
@@ -774,16 +708,17 @@ ul {
    LINKS
 ========================================================= */
 
-.pharma-info-item a {
-    color:  #073b8f;
+.basc-info-item a {
+    color: #073b8f;
 
     text-decoration: none;
 
     transition: color 0.25s ease;
 }
 
-.pharma-info-item a:hover {
-    color: #ff4d99;
+
+.basc-info-item a:hover {
+    color: #e51d73;
 }
 
 
@@ -791,7 +726,7 @@ ul {
    RIGHT SIDE
 ========================================================= */
 
-.pharma-top-right {
+.basc-top-right {
     display: flex;
 
     align-items: center;
@@ -808,10 +743,10 @@ ul {
    ADMISSION BUTTON
 ========================================================= */
 
-.pharma-admission-btn {
+.basc-admission-btn {
     height: 28px;
 
-    padding: 0 12px;
+    padding: 0 13px;
 
     display: inline-flex;
 
@@ -825,7 +760,7 @@ ul {
 
     color: #ffffff;
 
-    border-radius: 4px;
+    border-radius: 5px;
 
     font-size: 14px;
 
@@ -835,27 +770,33 @@ ul {
 
     white-space: nowrap;
 
+    box-shadow: 0 3px 8px rgba(229, 29, 115, 0.25);
+
     transition: all 0.3s ease;
 }
 
-.pharma-admission-btn i {
-    font-size: 11px;
+
+.basc-admission-btn i {
+    font-size: 14px;
 }
 
-.pharma-admission-btn:hover {
+
+.basc-admission-btn:hover {
     background: #b90f57;
 
     color: #ffffff;
 
     transform: translateY(-1px);
+
+    box-shadow: 0 5px 12px rgba(185, 15, 87, 0.30);
 }
 
 
 /* =========================================================
-   CONTACT BUTTON
+   RESULT BUTTON
 ========================================================= */
 
-.pharma-contact-btn {
+.basc-result-btn {
     height: 28px;
 
     padding: 0 13px;
@@ -870,7 +811,9 @@ ul {
 
     color: #073b8f;
 
-    border-radius: 4px;
+    border: 1px solid rgba(7, 59, 143, 0.15);
+
+    border-radius: 5px;
 
     font-size: 14px;
 
@@ -883,9 +826,295 @@ ul {
     transition: all 0.3s ease;
 }
 
-.pharma-contact-btn:hover {
-    background: #ff4d99;
 
+.basc-result-btn:hover {
+    background: #073b8f;
+
+    color: #ffffff;
+
+    border-color: #073b8f;
+}
+
+
+/*================================================
+   BHARATHIYAR SECTION
+================================================*/
+
+.bharathiyar-section {
+    width: 100%;
+    padding:50px 20px;
+    background: #ffffff;
+}
+
+.bharathiyar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.35fr 0.85fr;
+    align-items: center;
+    gap: 55px;
+}
+
+/*================================================
+   LEFT BIG IMAGE
+================================================*/
+
+.bharathiyar-image {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 18px;
+    position: relative;
+}
+
+.bharathiyar-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.bharathiyar-image:hover img {
+    transform: scale(1.04);
+}
+
+/*================================================
+   RIGHT CONTENT
+================================================*/
+
+.bharathiyar-content {
+    padding: 10px 0;
+}
+
+.section-small-title {
+    display: inline-block;
+    color: #174ea6;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+.bharathiyar-content h2 {
+    margin: 0 0 18px;
+    color: #102a56;
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.content-text {
+    color: #5f6b7a;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+/*================================================
+   TAMIL HIGHLIGHT
+================================================*/
+
+.tamil-highlight {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        #fff7fb,
+        #f4f8ff
+    );
+
+    border-left: 5px solid #174ea6;
+    border-radius: 10px;
+
+    padding: 22px 24px;
+    margin: 22px 0 10px;
+
+}
+
+.tamil-highlight p {
+    margin: 0;
+    color: #182b49;
+
+    font-family: "Noto Sans Tamil",
+                 "Latha",
+                 sans-serif;
+
+    font-size: 19px;
+    line-height: 1.9;
+    font-weight: 600;
+}
+
+/* Quote */
+
+.quote-mark {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #d83b78;
+    line-height: 1;
+}
+
+.quote-end {
+    top: auto;
+    left: auto;
+    right: 12px;
+    bottom: -8px;
+}
+
+/*================================================
+   AUTHOR
+================================================*/
+
+.highlight-author {
+    text-align: right;
+    margin: 8px 4px 25px;
+
+    color: #d83b78;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/*================================================
+   BUTTON
+================================================*/
+
+.bharathiyar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 22px;
+
+    background: #174ea6;
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.bharathiyar-btn i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.bharathiyar-btn:hover {
+    background: #d83b78;
     color: #ffffff;
 }
 
+.bharathiyar-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/*================================================
+   TABLET
+================================================*/
+
+@media (max-width: 992px) {
+
+    .bharathiyar-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .bharathiyar-image {
+        height: 430px;
+    }
+
+    .bharathiyar-content h2 {
+        font-size: 28px;
+    }
+
+    .tamil-highlight p {
+        font-size: 17px;
+    }
+}
+
+
+/*================================================
+   MOBILE
+================================================*/
+
+@media (max-width: 768px) {
+
+    .bharathiyar-section {
+        padding: 50px 15px;
+    }
+
+    .bharathiyar-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Big image remains prominent */
+    .bharathiyar-image {
+        height: 350px;
+        border-radius: 14px;
+    }
+
+    .bharathiyar-content {
+        padding: 0 5px;
+    }
+
+    .section-small-title {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .bharathiyar-content h2 {
+        font-size: 26px;
+    }
+
+    .content-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .tamil-highlight {
+        padding: 20px 18px;
+    }
+
+    .tamil-highlight p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .highlight-author {
+        font-size: 12px;
+    }
+}
+
+
+/*================================================
+   SMALL MOBILE
+================================================*/
+
+@media (max-width: 480px) {
+
+    .bharathiyar-image {
+        height: 280px;
+    }
+
+    .bharathiyar-content h2 {
+        font-size: 23px;
+    }
+
+    .tamil-highlight p {
+        font-size: 16px;
+    }
+
+    .bharathiyar-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

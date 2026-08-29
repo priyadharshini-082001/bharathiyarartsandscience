@@ -1,5 +1,4 @@
 
-
 /* =========================================================
    DESKTOP - MOBILE BUTTONS HIDDEN
 ========================================================= */
@@ -8,7 +7,6 @@
 .basc-mobile-close {
     display: none;
 }
-
 
 /* =========================================================
    MOBILE VIEW - MAX 991px
@@ -655,13 +653,6 @@
         letter-spacing: 0.2px;
     }
 
-
-    .video-college-text p {
-
-        margin-top: 3px;
-
-        font-size: 6px;
-    }
 }
 
 
@@ -697,13 +688,6 @@
 
         font-size: 9px;
     }
-
-
-    .video-college-text p {
-
-        font-size: 5.5px;
-    }
-
 
     .basc-mobile-toggle {
 
@@ -768,52 +752,6 @@
         z-index: 1;
     }
 
-
-    /* =====================================================
-       OVERLAY
-    ===================================================== */
-
-    .banner-video-overlay {
-
-        position: absolute;
-
-        inset: 0;
-
-        width: 100%;
-        height: 100%;
-
-        background:
-            linear-gradient(
-                180deg,
-                rgba(2, 25, 65, 0.65) 0%,
-                rgba(4, 38, 88, 0.25) 50%,
-                rgba(0, 0, 0, 0.45) 100%
-            );
-
-        z-index: 2;
-    }
-
-
-    /* =====================================================
-       BOTTOM GRADIENT
-    ===================================================== */
-
-    .banner-video::after {
-
-        height: 90px;
-
-        background:
-            linear-gradient(
-                to top,
-                rgba(0, 0, 0, 0.45),
-                transparent
-            );
-
-        z-index: 3;
-    }
-}
-
-
 /* =========================================================
    TABLET
 ========================================================= */
@@ -860,17 +798,6 @@
         transform: none;
     }
 
-
-    .banner-video-overlay {
-
-        background:
-            linear-gradient(
-                180deg,
-                rgba(2, 25, 65, 0.60),
-                rgba(4, 38, 88, 0.20),
-                rgba(0, 0, 0, 0.45)
-            );
-    }
 }
 
 
@@ -885,7 +812,6 @@
     }
 
 }
-
 /* =========================================================
    MOBILE - CENTER ALL TOP BAR CONTENT
 ========================================================= */
@@ -893,7 +819,8 @@
 @media (max-width: 768px) {
 
     /* Top bar */
-    .pharma-header-top {
+
+    .basc-header-top {
         width: 100%;
         height: auto;
         min-height: 20px;
@@ -904,7 +831,8 @@
 
 
     /* Container */
-    .pharma-header-top .container {
+
+    .basc-header-top .container {
         width: 100%;
         max-width: 100%;
 
@@ -915,7 +843,8 @@
 
 
     /* Main wrapper */
-    .pharma-top-wrapper {
+
+    .basc-top-wrapper {
         width: 100%;
 
         display: flex;
@@ -934,7 +863,7 @@
        CONTACT INFORMATION
     ===================================================== */
 
-    .pharma-top-left {
+    .basc-top-left {
         width: 100%;
 
         display: flex;
@@ -949,7 +878,7 @@
     }
 
 
-    .pharma-info-item {
+    .basc-info-item {
         width: 100%;
 
         display: flex;
@@ -961,30 +890,33 @@
 
         text-align: center;
 
-        font-size:12px;
-          color: white;
+        font-size: 12px;
+        color: white;
+
         line-height: 1.25;
     }
 
 
-    .pharma-info-item i {
+    .basc-info-item i {
         width: auto;
 
         flex: 0 0 auto;
 
         font-size: 11px;
-          color: white;
+        color: white;
+
         text-align: center;
     }
 
 
-    .pharma-info-item .info,
-    .pharma-info-item span,
-    .pharma-info-item a {
+    .basc-info-item .info,
+    .basc-info-item span,
+    .basc-info-item a {
         text-align: center;
 
         font-size: 12px;
-          color: white;
+        color: white;
+
         line-height: 1.25;
 
         white-space: normal;
@@ -992,11 +924,12 @@
         word-break: normal;
     }
 
+
     /* =====================================================
        RIGHT BUTTONS
     ===================================================== */
 
-    .pharma-top-right {
+    .basc-top-right {
         width: 100%;
 
         display: flex;
@@ -1010,8 +943,8 @@
     }
 
 
-    .pharma-admission-btn,
-    .pharma-contact-btn {
+    .basc-admission-btn,
+    .basc-contact-btn {
         height: 28px;
 
         padding: 0 12px;
@@ -1038,51 +971,55 @@
 
 @media (max-width: 575px) {
 
-    .pharma-header-top {
-        min-height:20px;
-                background-color: #073b8f;
+    .basc-header-top {
+        min-height: 20px;
+
+        background-color: #073b8f;
+
         padding: 7px 8px;
     }
 
 
-    .pharma-top-wrapper {
+    .basc-top-wrapper {
         gap: 4px;
     }
 
 
-    .pharma-top-left {
+    .basc-top-left {
         gap: 2px;
     }
 
 
-    .pharma-info-item {
+    .basc-info-item {
         gap: 6px;
-     
+
         font-size: 12px;
     }
 
 
-    .pharma-info-item i {
-        font-size:12px;
-         color: white;
-    }
-
-
-    .pharma-info-item .info,
-    .pharma-info-item span,
-    .pharma-info-item a {
+    .basc-info-item i {
         font-size: 12px;
-         color: white;
+
+        color: white;
     }
 
 
-    .pharma-top-right {
+    .basc-info-item .info,
+    .basc-info-item span,
+    .basc-info-item a {
+        font-size: 12px;
+
+        color: white;
+    }
+
+
+    .basc-top-right {
         gap: 6px;
     }
 
 
-    .pharma-admission-btn,
-    .pharma-contact-btn {
+    .basc-admission-btn,
+    .basc-contact-btn {
         height: 27px;
 
         padding: 0 10px;
@@ -1098,38 +1035,39 @@
 
 @media (max-width: 400px) {
 
-    .pharma-header-top {
+    .basc-header-top {
         min-height: 26px;
 
         padding: 6px 5px;
     }
 
 
-    .pharma-info-item {
+    .basc-info-item {
         gap: 5px;
 
-        font-size:11px;
+        font-size: 11px;
     }
 
 
-    .pharma-info-item i {
-        font-size:11px;
+    .basc-info-item i {
+        font-size: 11px;
     }
 
 
-    .pharma-info-item .info,
-    .pharma-info-item span,
-    .pharma-info-item a {
-        font-size:12px;
+    .basc-info-item .info,
+    .basc-info-item span,
+    .basc-info-item a {
+        font-size: 12px;
     }
 
 
-    .pharma-admission-btn,
-    .pharma-contact-btn {
+    .basc-admission-btn,
+    .basc-contact-btn {
         height: 26px;
 
         padding: 0 9px;
 
         font-size: 11px;
     }
+}
 }
