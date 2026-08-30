@@ -846,7 +846,7 @@ ul {
 .bharathiyar-section {
     width: 100%;
     padding: 45px 20px;
-    background: #f7f9fc;
+    background: #ffffff;
 }
 
 .bharathiyar-container {
@@ -1111,151 +1111,134 @@ ul {
     transform: translateX(4px);
 }
 
+
 /* =========================================================
-   DEPARTMENT SLIDER SECTION
+   UNIQUE DEPARTMENT SHOWCASE RAIL
 ========================================================= */
 
-.department-slider-container{
+.dept-rail-section {
     width: 100%;
-    padding:50px 10px;
-    background: #ff4d9a33;
+    padding: 50px 0;
+
+    background:pink;
+
+    overflow: hidden;
 }
 
-.department-slider-container {
-    width:100%;
-    padding: 3%;
+
+.dept-rail-container {
+    width: 100%;
+    margin: auto;
 }
 
 
 /* =========================================================
-   HEADING
+   HEADER
 ========================================================= */
 
-.department-slider-heading {
+.dept-rail-header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
 }
 
-.department-slider-heading > span {
-    display: block;
-    margin-bottom: 8px;
+.dept-rail-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
 
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 800;
 
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
+    letter-spacing: 3px;
 
-    color: #c39b4a;
+    color: #c34a74;
 }
 
-.department-slider-heading h2 {
+.dept-rail-kicker i {
+    display: block;
+
+    width: 35px;
+    height: 1px;
+
+    background: #c39b4a;
+}
+
+.dept-rail-header h2 {
     margin: 0;
 
     font-family: "Poppins", sans-serif;
-    font-size: 44px;
+    font-size: 45px;
     font-weight: 800;
-
-    line-height: 1.2;
 
     color: #073b8f;
 }
 
-.dept-heading-line {
-    position: relative;
+.dept-rail-header p {
+    max-width: 680px;
 
-    width: 70px;
-    height: 4px;
-
-    margin: 14px auto;
-
-    background: #c39b4a;
-    border-radius: 20px;
-}
-
-.dept-heading-line::before,
-.dept-heading-line::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-
-    width: 7px;
-    height: 7px;
-
-    background: #c39b4a;
-
-    border-radius: 50%;
-
-    transform: translateY(-50%);
-}
-
-.dept-heading-line::before {
-    left: -14px;
-}
-
-.dept-heading-line::after {
-    right: -14px;
-}
-
-.department-slider-heading p {
-    max-width: 760px;
-
-    margin: 0 auto;
+    margin: 13px auto 0;
 
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    line-height: 1.85;
+    font-size: 14px;
 
-    color: #000000;
+    line-height: 1.8;
+
+    color: #697589;
 }
 
 
 /* =========================================================
-   SWIPER
+   VIEWPORT
 ========================================================= */
 
-.departmentSwiper {
-    position: relative;
-
+.dept-rail-viewport {
     width: 100%;
-
-    padding: 8px 58px 65px;
-}
-
-.departmentSwiper .swiper-slide {
-    height: auto;
-}
-
-
-/* =========================================================
-   SLIDE
-========================================================= */
-
-.department-slide {
-    display: grid;
-
-    grid-template-columns: 48% 52%;
-
-    min-height: 440px;
-
-    background: #ffffff;
-
-    border: 1px solid rgba(7,59,143,.08);
-
-    border-radius: 20px;
 
     overflow: hidden;
 
-    transition:
-        transform .4s ease,
-        box-shadow .4s ease;
+    position: relative;
+
+    padding: 10px 0 35px;
 }
 
-.department-slide:hover {
-    transform: translateY(-5px);
 
+
+/* =========================================================
+   TRACK
+========================================================= */
+
+.dept-rail-track {
+    display: flex;
+
+    width: max-content;
+
+    gap: 25px;
+
+    animation:
+        deptRailScroll 35s linear infinite;
+}
+
+.dept-rail-viewport:hover
+.dept-rail-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.dept-rail-item {
+    width: 300px;
+
+    flex: 0 0 300px;
+
+    position: relative;
 }
 
 
@@ -1263,17 +1246,16 @@ ul {
    IMAGE
 ========================================================= */
 
-.department-slide-image {
+.dept-rail-photo {
     position: relative;
-
-    min-height: 440px;
-
+    width: 285px;
+    height: 285px;
     overflow: hidden;
+    background: #dfe6f0;
 
-    background: #e9eef7;
 }
 
-.department-slide-image img {
+.dept-rail-photo img {
     width: 100%;
     height: 100%;
 
@@ -1281,37 +1263,956 @@ ul {
 
     object-fit: cover;
 
-    transition: transform .8s ease;
+    transition:
+        transform .7s ease;
 }
 
-.department-slide:hover .department-slide-image img {
-    transform: scale(1.07);
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.dept-rail-index {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    z-index: 5;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+}
+
+.dept-rail-index::after {
+    content: "";
+
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    margin-top: 6px;
+
+    background: #c39b4a;
 }
 
 
-/* IMAGE OVERLAY */
+/* =========================================================
+   VERTICAL NAME
+========================================================= */
 
-.department-slide-image::after {
+.dept-rail-name {
+    position: absolute;
+
+    right: -4px;
+    bottom: 55px;
+
+    z-index: 5;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: rgba(255,255,255,.9);
+
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   INFO STRIP
+========================================================= */
+
+.dept-rail-info {
+    position: relative;
+
+    margin: -32px 15px 0;
+
+    min-height: 105px;
+
+    padding: 18px 50px 18px 18px;
+
+    z-index: 8;
+
+    background:  rgb(255, 255, 255);
+
+    border-top: 3px solid #c39b4a;
+}
+
+.dept-rail-info span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color: var(--basc-pink)
+}
+
+.dept-rail-info h3 {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #073b8f;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.dept-rail-arrow {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    border: 1px solid #dbe2ec;
+    background: #073b8f;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.dept-rail-item:hover
+.dept-rail-arrow {
+    background: #073b8f;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-50%)
+        translateX(3px);
+}
+
+
+/* =========================================================
+   GOLD TOP LINE
+========================================================= */
+
+.dept-rail-item::before {
     content: "";
 
     position: absolute;
 
-    inset: 0;
+    top: -5px;
+    left: 0;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(7,59,143,.02),
-            rgba(7,59,143,.18)
-        );
+    width: 0;
+    height: 3px;
 
+    z-index: 15;
+
+    background: #c39b4a;
+
+    transition: width .4s ease;
+}
+
+.dept-rail-item:hover::before {
+    width:95%;
+}
+
+
+/* =========================================================
+   AUTO SCROLL
+========================================================= */
+
+@keyframes deptRailScroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform:
+            translateX(calc(-50% - 12.5px));
+    }
+}
+
+
+/* =========================================================
+   PREMIUM NEWS • EVENTS • NOTICE
+   BHARATHIYAR ARTS & SCIENCE COLLEGE
+========================================================= */
+
+.premium-updates {
+    position: relative;
+    width: 100%;
+    padding: 50px 10px;
+    background: #a0b6ff40;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+========================================================= */
+
+.premium-updates::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(7, 59, 143, 0.035);
+    top: -220px;
+    left: -180px;
+    pointer-events: none;
+}
+
+.premium-updates::after {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(181, 47, 103, 0.035);
+    right: -180px;
+    bottom: -180px;
     pointer-events: none;
 }
 
 
-/* IMAGE TOP SHINE */
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
 
-.department-slide-image::before {
+.updates-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.premium-title {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.title-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.title-line span {
+    width: 45px;
+    height: 2px;
+    display: block;
+    background: #b52f67;
+}
+
+.title-line small {
+    color: #b52f67;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.premium-title h2 {
+    margin: 0;
+    color: #092f70;
+    font-family: "Poppins", sans-serif;
+    font-size: 46px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.premium-title h2 em {
+    color: #b52f67;
+    font-style: normal;
+}
+
+.premium-title p {
+    max-width: 760px;
+    margin: 18px auto 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.premium-update-grid {
+    display: grid;
+    grid-template-columns: 1.18fr 1fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   FEATURED NEWS
+========================================================= */
+
+.featured-news {
+    position: relative;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #e4e9f2;
+    transition: all 0.4s ease;
+}
+
+.featured-news:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================================================
+   FEATURED IMAGE
+========================================================= */
+
+.featured-image {
+    position: relative;
+    width: 100%;
+    height: 285px;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.featured-news:hover .featured-image img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================================
+   FEATURED LABEL
+========================================================= */
+
+.featured-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 15px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    color: #073b8f;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.featured-label i {
+    color: #b52f67;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   FEATURED DATE
+========================================================= */
+
+.featured-date {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 76px;
+    height: 76px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    color: #073b8f;
+}
+
+.featured-date strong {
+    font-size: 29px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.featured-date span {
+    margin-top: 6px;
+
+    color: #b52f67;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+
+/* =========================================================
+   FEATURED CONTENT
+========================================================= */
+
+.featured-content {
+    padding: 30px;
+}
+
+.content-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #b52f67;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.content-tag i {
+    font-size: 12px;
+}
+
+.featured-content h3 {
+    margin: 13px 0 14px;
+
+    color: #182b4a;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 24px;
+    line-height: 1.4;
+
+    font-weight: 750;
+}
+
+.featured-content p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.premium-read {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+
+    margin-top: 23px;
+
+    color: #073b8f;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.premium-read i {
+    transition: transform 0.3s ease;
+}
+
+.premium-read:hover {
+    color: #b52f67;
+}
+
+.premium-read:hover i {
+    transform: translateX(6px);
+}
+
+
+/* =========================================================
+   COMMON PANELS
+========================================================= */
+
+.premium-panel {
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e9f2;
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    min-height: 100%;
+
+    transition: all 0.4s ease;
+}
+
+.premium-panel:hover {
+    transform: translateY(-5px);
+
+}
+
+
+/* =========================================================
+   PANEL HEADING
+========================================================= */
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid #e9edf4;
+}
+
+.panel-heading-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.panel-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 15px;
+
+    background: #edf4ff;
+
+    color: #073b8f;
+
+    font-size: 22px;
+}
+
+.notice-icon {
+    background: #fff0f5;
+    color: #b52f67;
+}
+
+.panel-heading-left span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b52f67;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.panel-heading-left h3 {
+    margin: 0;
+
+    color: #1c2e49;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 23px;
+    line-height: 1.25;
+
+    font-weight: 750;
+}
+
+.panel-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #000000;
+
+    font-size: 11px;
+    font-weight: 750;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.panel-more:hover {
+    color: #b52f67;
+}
+
+
+/* =========================================================
+   EVENT TIMELINE
+========================================================= */
+
+.event-timeline {
+    padding-top: 7px;
+}
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns:
+        64px
+        20px
+        1fr;
+
+    gap: 13px;
+
+    min-height: 118px;
+
+    padding: 18px 0;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   EVENT DATE
+========================================================= */
+
+.timeline-date {
+    width: 64px;
+    height: 72px;
+
+    overflow: hidden;
+
+    border-radius: 13px;
+
+    background: #073b8f;
+
+    color: #ffffff;
+
+    text-align: center;
+
+}
+
+.timeline-date span {
+    display: block;
+
+    padding: 7px 3px;
+
+    background: #b52f67;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.timeline-date strong {
+    display: block;
+
+    padding-top: 7px;
+
+    font-size: 27px;
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   EVENT TIMELINE LINE
+========================================================= */
+
+.timeline-line {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-line::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: -18px;
+
+    width: 2px;
+
+    background: #e0e6ef;
+}
+
+.timeline-line span {
+    position: relative;
+
+    z-index: 2;
+
+    width: 11px;
+    height: 11px;
+
+    margin-top: 9px;
+
+    border-radius: 50%;
+
+    background: #b52f67;
+
+    box-shadow:
+        0 0 0 4px #ffffff,
+        0 0 0 5px #efd5df;
+}
+
+
+/* =========================================================
+   EVENT CONTENT
+========================================================= */
+
+.timeline-content {
+    padding-left: 2px;
+}
+
+.timeline-content small {
+    display: block;
+
+    color: #000000;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.timeline-content small i {
+    margin-right: 5px;
+    color: #073b8f;
+}
+
+.timeline-content h4 {
+    margin: 7px 0 7px;
+
+    color: #263750;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    font-weight: 750;
+}
+
+.timeline-content p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.timeline-content p i {
+    margin-right: 5px;
+    color: #b52f67;
+}
+
+
+/* =========================================================
+   NOTICE BOARD
+========================================================= */
+
+.notice-wrapper {
+    padding-top: 5px;
+}
+
+.notice-row {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px dashed #dfe5ee;
+
+    transition: all 0.3s ease;
+}
+
+.notice-row:last-child {
+    border-bottom: none;
+}
+
+.notice-row:hover {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   NOTICE ICON
+========================================================= */
+
+.notice-symbol {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #f3f6fa;
+
+    color: #073b8f;
+
+    font-size: 18px;
+
+    transition: all 0.3s ease;
+}
+
+.notice-row:hover .notice-symbol {
+    background: #073b8f;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   NOTICE TEXT
+========================================================= */
+
+.notice-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.notice-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    color: #000000;
+
+    font-size: 10px;
+    font-weight: 750;
+
+    letter-spacing: 0.8px;
+}
+
+.new-tag {
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    border-radius: 20px;
+
+    background: #b52f67;
+
+    color: #ffffff;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+.notice-text h4 {
+    margin: 7px 0 5px;
+
+    color: #263750;
+
+    font-size: 15px;
+    line-height: 1.45;
+
+    font-weight: 750;
+}
+
+.notice-text p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 11px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   NOTICE ARROW
+========================================================= */
+
+.notice-arrow {
+    margin-top: 16px;
+
+    color: #062859;
+
+    font-size: 11px;
+
+    transition: all 0.3s ease;
+}
+
+.notice-row:hover .notice-arrow {
+    color: #b52f67;
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   SUBTLE TOP ACCENT
+========================================================= */
+
+.featured-news::before,
+.premium-panel::before {
     content: "";
 
     position: absolute;
@@ -1320,154 +2221,150 @@ ul {
     left: 0;
 
     width: 100%;
-    height: 100%;
+    height: 4px;
 
-    background: linear-gradient(
-        135deg,
-        rgba(255,255,255,.12),
-        transparent 40%
-    );
+    background:
+        linear-gradient(
+            90deg,
+            #073b8f,
+            #b52f67
+        );
+
+    border-radius: 24px 24px 0 0;
+}
+
+
+
+
+
+/* =========================================================
+   PLACEMENT PATTERN SECTION
+========================================================= */
+
+.placement-pattern-section {
+    width: 100%;
+    padding: 55px 30px;
+
+    background:plum;
+
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.placement-pattern-container {
+    position: relative;
+    margin: auto;
+
+    padding:20px;
+
+    background: rgba(255,255,255,.92);
+
+    border: 1px solid #eadfec;
+
+    border-radius: 42px;
+
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FAINT BACKGROUND WORD
+========================================================= */
+
+.placement-bg-word {
+    position: absolute;
+
+    top: -42px;
+    right: 40px;
+
+    z-index: 0;
+
+    color: rgba(101,48,119,.035);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 190px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -8px;
+
+    white-space: nowrap;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.placement-pattern-heading {
+    position: relative;
 
     z-index: 2;
 
-    pointer-events: none;
+    text-align: center;
 }
 
 
-/* =========================================================
-   NUMBER
-========================================================= */
-
-.slide-number {
-    position: absolute;
-
-    left: 28px;
-    bottom: 28px;
-
-    z-index: 5;
-
-    width: 64px;
-    height: 64px;
-
+.placement-main-title {
     display: flex;
+
     align-items: center;
     justify-content: center;
 
-    background: #073b8f;
+    gap: 28px;
+}
 
-    border: 4px solid #ffffff;
 
-    border-radius: 50%;
+.placement-title-main {
+    color: #713084;
 
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 52px;
+
+    line-height: 1;
+
     font-weight: 800;
 
-    color: #ffffff;
-
-    transition: .3s ease;
-}
-
-.department-slide:hover .slide-number {
-    background: #c39b4a;
-
-    transform: scale(1.08);
+    letter-spacing: 1px;
 }
 
 
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.department-slide-content {
-    position: relative;
-
-    padding: 48px 52px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.placement-title-line {
+    width: 9px;
+    height: 76px;
 
     background:
-        radial-gradient(
-            circle at top right,
-            rgba(195,155,74,.07),
-            transparent 35%
-        ),
-        #ffffff;
+        linear-gradient(
+            to bottom,
+            #e87519,
+            #d85819
+        );
+
+    border-radius: 2px;
 }
 
 
-/* Decorative line */
+.placement-title-sub {
+    color: #465879;
 
-.department-slide-content::after {
-    content: "";
+    font-size: 43px;
 
-    position: absolute;
+    line-height: 1;
 
-    right: 25px;
-    bottom: 25px;
+    font-weight: 500;
 
-    width: 70px;
-    height: 70px;
-
-    border-right: 2px solid rgba(195,155,74,.20);
-    border-bottom: 2px solid rgba(195,155,74,.20);
-
-    border-radius: 0 0 15px 0;
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   SMALL TITLE
-========================================================= */
-
-.slide-small-title {
-    margin-bottom: 8px;
-
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #c39b4a;
-}
-
-
-/* =========================================================
-   TITLE
-========================================================= */
-
-.department-slide-content h3 {
-    margin: 0;
-
-    font-family: "Poppins", sans-serif;
-    font-size: 36px;
-    font-weight: 800;
-
-    line-height: 1.25;
-
-    color: #073b8f;
-}
-
-
-/* =========================================================
-   LINE
-========================================================= */
-
-.slide-line {
-    width: 58px;
-    height: 4px;
-
-    margin: 13px 0 20px;
-
-    background: #c39b4a;
-
-    border-radius: 20px;
+    letter-spacing: .5px;
 }
 
 
@@ -1475,161 +2372,1316 @@ ul {
    DESCRIPTION
 ========================================================= */
 
-.department-slide-content > p {
-    margin: 0 0 22px;
+.placement-description {
+    position: relative;
 
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    z-index: 2;
 
-    line-height: 1.9;
+    max-width: 1380px;
+
+    margin: 30px auto 54px;
+
+    text-align: center;
+}
+
+
+.placement-description p {
+    margin: 0;
 
     color: #000000;
+
+    font-size: 20px;
+
+    line-height: 1.85;
+
+    font-weight: 400;
 }
 
 
 /* =========================================================
-   SUBJECT TAGS
+   CARD ROW
 ========================================================= */
 
-.slide-subjects {
-    display: flex;
-    flex-wrap: wrap;
+.placement-card-row {
+    position: relative;
 
-    gap: 9px;
+    z-index: 3;
 
-    margin-bottom: 25px;
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 24px;
+
+    align-items: stretch;
 }
 
-.slide-subjects span {
-    padding: 8px 13px;
 
-    background: #f2f6fc;
+/* =========================================================
+   CARD
+========================================================= */
 
-    border: 1px solid #dce5f1;
+.placement-card {
+    position: relative;
 
-    border-radius: 6px;
+    min-height: 265px;
 
-    font-family: "Poppins", sans-serif;
-    font-size: 11px;
-    font-weight: 600;
+    padding: 13px;
 
-    color: #315582;
+    border-radius: 17px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 14px 28px rgba(35,35,35,.12);
 
     transition:
-        background .25s ease,
-        color .25s ease,
-        border-color .25s ease,
-        transform .25s ease;
+        transform .35s ease,
+        box-shadow .35s ease;
 }
 
-.slide-subjects span:hover {
-    background: #073b8f;
 
-    border-color: #073b8f;
+.placement-card:hover {
+    transform: translateY(-9px);
+
+    box-shadow:
+        0 22px 40px rgba(35,35,35,.18);
+}
+
+
+/* =========================================================
+   CARD COLORS
+========================================================= */
+
+.placement-purple {
+    background:
+        linear-gradient(
+            145deg,
+            #8b4aa0,
+            #70247f
+        );
+}
+
+
+.placement-orange {
+    background:
+        linear-gradient(
+            145deg,
+            #f69232,
+            #e96d0a
+        );
+}
+
+
+.placement-teal {
+    background:
+        linear-gradient(
+            145deg,
+            #29938d,
+            #087c76
+        );
+}
+
+
+.placement-gold {
+    background:
+        linear-gradient(
+            145deg,
+            #dfa927,
+            #ca9000
+        );
+}
+
+
+.placement-blue {
+    background:
+        linear-gradient(
+            145deg,
+            #4a719e,
+            #2d5988
+        );
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.placement-card-number {
+    position: relative;
+
+    z-index: 3;
+
+    text-align: center;
+
+    padding: 9px 0 5px;
+
+    color: rgba(255,255,255,.85);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.placement-card-image {
+    position: relative;
+
+    width: 100%;
+    height: 125px;
+
+    overflow: hidden;
+
+    border-radius: 11px;
+
+    background: #ffffff;
+}
+
+
+.placement-card-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .55s ease;
+}
+
+
+.placement-card:hover
+.placement-card-image img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.placement-card-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.12),
+            transparent
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.placement-card-content {
+    padding: 17px 9px 8px;
+
+    text-align: center;
+}
+
+
+.placement-card-content h3 {
+    margin: 0;
 
     color: #ffffff;
 
-    transform: translateY(-2px);
+    font-size: 15px;
+
+    line-height: 1.35;
+
+    font-weight: 800;
+}
+
+
+.placement-card-content p {
+    margin: 8px 0 0;
+
+    color: rgba(255,255,255,.78);
+
+    font-size: 10px;
+
+    line-height: 1.55;
 }
 
 
 /* =========================================================
-   BUTTON
+   RECRUITING PARTNERS
 ========================================================= */
 
-.slide-button {
-    display: inline-flex;
+.recruiting-partners {
+    position: relative;
+
+    z-index: 3;
+
+    margin-top: 55px;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid #eee7f0;
+}
+
+
+.recruiting-title {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 24px;
+}
+
+
+.recruiting-title span {
+    width: 38px;
+    height: 1px;
+
+    background: #d66a8b;
+}
+
+
+.recruiting-title strong {
+    color: #713084;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   COMPANY LOGOS
+========================================================= */
+
+.company-logo-strip {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 15px;
+}
+
+
+.company-logo {
+    height: 150px;
+
+    display: flex;
+
     align-items: center;
     justify-content: center;
 
-    width: fit-content;
+    padding: 15px;
 
-    gap: 9px;
+    background: #ffffff;
 
-    padding: 12px 22px;
+    border: 1px solid #eee9f1;
 
-    background: #073b8f;
-
-    border: 1px solid #073b8f;
-
-    border-radius: 6px;
-
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-
-    color: #ffffff;
-
-    text-decoration: none;
+    border-radius: 12px;
 
     transition:
-        background .3s ease,
-        border-color .3s ease,
         transform .3s ease,
         box-shadow .3s ease;
 }
 
-.slide-button:hover {
-    background: #c39b4a;
 
-    border-color: #c39b4a;
+.company-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition:
+        transform .3s ease;
+}
+
+
+.company-logo:hover {
+    transform: translateY(-5px);
+
+}
+
+
+.company-logo:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   CAMPUS LIFE - EQUAL IMAGE SIZE
+========================================================= */
+
+.rs-campus-life-thumb {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #f1f1f1;
+}
+
+.rs-campus-life-thumb img {
+    display: block;
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: cover !important;
+    object-position: center center;
+    border-radius: 4px !important;
+    transition: transform 0.5s ease;
+}
+
+
+/* HOVER */
+
+.rs-campus-life-thumb:hover img {
+    transform: scale(1.04);
+}
+
+
+/* TITLE */
+
+.rs-campus-life-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 30px 20px 18px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.80),
+        rgba(0,0,0,.25),
+        transparent
+    );
+}
+
+.rs-campus-life-title {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*==================================================
+                FOOTER AREA
+===================================================*/
+
+.footer-area {
+    background-color: #073b8f;
+    padding:40px;
+    color: #ffffff;
+}
+
+.footer-widget {
+    height: 100%;
+}
+
+
+/*==================================================
+                FOOTER LOGO
+===================================================*/
+
+.footer-logo {
+    margin-bottom: 18px;
+}
+
+.footer-logo img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+
+/*==================================================
+                FOOTER TITLE
+===================================================*/
+
+.footer-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    padding-bottom: 9px;
+    position: relative;
+}
+
+.footer-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 3px;
+    background-color: #f5c542;
+    border-radius: 3px;
+}
+
+
+/*==================================================
+                ABOUT TEXT
+===================================================*/
+
+.footer-text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/*==================================================
+                QUICK LINKS
+===================================================*/
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.footer-links a::before {
+    content: "›";
+    color: #f5c542;
+    font-size: 19px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.footer-links a:hover {
+    color: #f5c542;
+    padding-left: 3px;
+}
+
+
+/*==================================================
+                CONTACT
+===================================================*/
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.footer-contact li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-contact li > i {
+    color: #f5c542;
+    font-size: 17px;
+    min-width: 20px;
+    margin-top: 5px;
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.65;
+    transition: all 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #f5c542;
+}
+
+
+/*==================================================
+                EMAIL
+===================================================*/
+
+.email-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.email-list a {
+    word-break: break-word;
+}
+
+
+/*==================================================
+                MAP
+===================================================*/
+
+.footer-map {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+
+/*==================================================
+                COPYRIGHT AREA
+===================================================*/
+
+.copyright-area {
+    width: 100%;
+    background-color: #052f73;
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+/* Main copyright row */
+.copyright-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 42px;
+}
+
+
+/*==================================================
+                LEFT COPYRIGHT
+===================================================*/
+
+.copyright-left {
+    display: flex;
+    align-items: center;
+}
+
+.copyright-left p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*==================================================
+                RIGHT DEVELOPER
+===================================================*/
+
+.copyright-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.copyright-right span {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+/*==================================================
+                COMPANY LOGO
+===================================================*/
+
+.copyright-right a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright-right img {
+    display: block;
+    width: auto;
+    height: 32px;
+    max-width: 130px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   PREMIUM NOTICE BOARD
+   Fixed Header + Vertical Scrolling Notices
+========================================================= */
+
+.notices-panel {
+    position: relative;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e6eaf1;
+
+    border-radius: 24px;
+
+    padding: 26px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 15px 45px rgba(7, 59, 143, 0.08);
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* =========================================================
+   PANEL HOVER
+========================================================= */
+
+.notices-panel:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 22px 55px rgba(7, 59, 143, 0.13);
+}
+
+
+/* =========================================================
+   PANEL HEADING
+========================================================= */
+
+.notices-panel .panel-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #edf0f5;
+}
+
+
+/* =========================================================
+   HEADING LEFT
+========================================================= */
+
+.notices-panel .panel-heading-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   NOTICE ICON
+========================================================= */
+
+.notices-panel .panel-icon {
+    width: 52px;
+    min-width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #fde3ed
+        );
+
+    color: #b52f67;
+
+    font-size: 21px;
+
+    box-shadow:
+        0 8px 20px rgba(181, 47, 103, 0.10);
+}
+
+
+/* =========================================================
+   SMALL HEADING
+========================================================= */
+
+.notices-panel .panel-heading-left span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #b52f67;
+
+    font-size: 10px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.notices-panel .panel-heading-left h3 {
+    margin: 0;
+
+    color: #18345e;
+
+    font-size: 23px;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.notices-panel .panel-more {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 9px 13px;
+
+    border-radius: 8px;
+
+    color: #073b8f;
+
+    background: #f4f7fc;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.notices-panel .panel-more:hover {
+    background: #073b8f;
 
     color: #ffffff;
 
     transform: translateY(-2px);
-
-    box-shadow: 0 9px 22px rgba(195,155,74,.25);
 }
 
-.slide-button i {
-    transition: transform .3s ease;
+
+/* =========================================================
+   SCROLLING NOTICE AREA
+========================================================= */
+
+.notices-panel .notice-wrapper {
+    height: 350px;
+
+    margin-top: 4px;
+
+    padding-right: 8px;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        #b52f67
+        #f0f2f6;
 }
 
-.slide-button:hover i {
+
+/* =========================================================
+   WEBKIT SCROLLBAR
+========================================================= */
+
+.notices-panel .notice-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.notices-panel .notice-wrapper::-webkit-scrollbar-track {
+    background: #f0f2f6;
+
+    border-radius: 20px;
+}
+
+
+.notices-panel .notice-wrapper::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            to bottom,
+            #073b8f,
+            #b52f67
+        );
+
+    border-radius: 20px;
+}
+
+
+.notices-panel .notice-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #b52f67;
+}
+
+
+/* =========================================================
+   NOTICE ROW
+========================================================= */
+
+.notices-panel .notice-row {
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 19px 5px 19px 0;
+
+    border-bottom: 1px dashed #dfe5ee;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+.notices-panel .notice-row:last-child {
+    border-bottom: none;
+}
+
+
+.notices-panel .notice-row:hover {
+    transform: translateX(5px);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 59, 143, .035),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   NOTICE SYMBOL
+========================================================= */
+
+.notices-panel .notice-symbol {
+    position: relative;
+
+    width: 46px;
+
+    min-width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 1px;
+
+    border-radius: 12px;
+
+    background: #f4f7fb;
+
+    color: #073b8f;
+
+    font-size: 17px;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.notices-panel .notice-symbol::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 9px;
+
+    bottom: 9px;
+
+    width: 3px;
+
+    border-radius: 5px;
+
+    background: #b52f67;
+
+    opacity: 0;
+
+    transition: opacity .3s ease;
+}
+
+
+.notices-panel .notice-row:hover .notice-symbol {
+    background: #073b8f;
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+
+.notices-panel .notice-row:hover .notice-symbol::before {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   NOTICE TEXT
+========================================================= */
+
+.notices-panel .notice-text {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   DATE + NEW
+========================================================= */
+
+.notices-panel .notice-meta {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    color: #8995a8;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    letter-spacing: .7px;
+}
+
+
+/* =========================================================
+   NEW TAG
+========================================================= */
+
+.notices-panel .new-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 4px 8px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b52f67,
+            #cf477d
+        );
+
+    color: #ffffff;
+
+    font-size: 8px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: .8px;
+
+    box-shadow:
+        0 4px 10px rgba(181, 47, 103, .16);
+}
+
+
+/* =========================================================
+   NOTICE TITLE
+========================================================= */
+
+.notices-panel .notice-text h4 {
+    margin: 7px 0 5px;
+
+    color: #263750;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    font-weight: 750;
+
+    transition: color .3s ease;
+}
+
+
+.notices-panel .notice-row:hover .notice-text h4 {
+    color: #073b8f;
+}
+
+
+/* =========================================================
+   NOTICE DESCRIPTION
+========================================================= */
+
+.notices-panel .notice-text p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   RIGHT ARROW
+========================================================= */
+
+.notices-panel .notice-arrow {
+    flex-shrink: 0;
+
+    margin-top: 19px;
+
+    color: #c4cbd5;
+
+    font-size: 10px;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.notices-panel .notice-row:hover .notice-arrow {
+    color: #b52f67;
+
     transform: translateX(5px);
 }
 
 
 /* =========================================================
-   DEPARTMENT SLIDER - ARROWS
+   TOP / BOTTOM FADE EFFECT
 ========================================================= */
 
-.departmentSwiper {
-    position: relative;
+.notices-panel::after {
+    content: "";
 
-    width: 100%;
+    position: absolute;
 
-    padding: 8px 58px 65px;
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 35px;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,0),
+            rgba(255,255,255,.95)
+        );
+}
+
+
+/* =========================================================
+   FOOTER SOCIAL MEDIA
+========================================================= */
+
+.footer-social-area {
+    margin-top: 24px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255,255,255,.16);
+}
+
+
+/* Social title */
+
+.social-title {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* Social container */
+
+.footer-social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* Social button */
+
+.footer-social-link {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
 }
 
 
 
 /* =========================================================
-   SWIPER PAGINATION
+   SOCIAL COLORS
 ========================================================= */
 
-.departmentSwiper .swiper-pagination {
-    bottom: 15px;
+.footer-social-link.facebook{
+    background: #1877f2;
 }
 
-.departmentSwiper .swiper-pagination-bullet {
-    width: 9px;
-    height: 9px;
-
-    background: #cbd5e4;
-
-    opacity: 1;
-
-    transition: .3s ease;
+.footer-social-link.instagram{
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
 }
 
-.departmentSwiper .swiper-pagination-bullet-active {
-    width: 28px;
-
-    border-radius: 10px;
-
-    background: #073b8f;
+.footer-social-link.youtube{
+    background: #ff0000;
 }
 
+.footer-social-link.linkedin{
+    background: #0a66c2;
+}
 
+.footer-social-link.whatsapp{
+    background: #25d366;
+}

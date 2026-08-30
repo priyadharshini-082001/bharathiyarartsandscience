@@ -902,8 +902,8 @@ textarea:focus {
 }
 @media only screen and (max-width: 991px) {
   .section-space {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -917,12 +917,13 @@ textarea:focus {
 }
 @media only screen and (max-width: 991px) {
   .section-space-top {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 
 .section-space-bottom {
-  padding-bottom: 120px;
+    padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 1199px) {
   .section-space-bottom {
@@ -1232,7 +1233,7 @@ textarea:focus {
 /*  2.3 Background
 /*----------------------------------------*/
 .bg-primary {
-  background-color: var(--rs-bg-primary);
+  background-color: #a0b6ff40;
 }
 
 .secondary-bg {
@@ -1267,7 +1268,7 @@ textarea:focus {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background: var(--rs-theme-blue);
+  background:#073b8f;
 }
 .rs-btn:hover {
   background: var(--rs-theme-yellow);
@@ -9544,7 +9545,7 @@ html.lenis body {
   height: 11px;
 }
 .rs-about-one .rs-about-award {
-  background: var(--rs-theme-blue);
+  background: #073b8f;
   border-radius: 12px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -11724,19 +11725,7 @@ html.lenis body {
     padding-inline-start: 15px;
   }
 }
-.rs-campus-life-one .rs-campus-life-item {
-  position: relative;
-  border: 10px solid #F6F4EE;
-  border-radius: 100px;
-}
-.rs-campus-life-one .rs-campus-life-item:hover .rs-campus-life-thumb::before {
-  opacity: 1;
-  visibility: visible;
-}
-.rs-campus-life-one .rs-campus-life-item:hover .rs-campus-life-content {
-  visibility: visible;
-  opacity: 1;
-}
+
 .rs-campus-life-one .rs-campus-life-thumb {
   position: relative;
   overflow: hidden;

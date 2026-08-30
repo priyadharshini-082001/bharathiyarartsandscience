@@ -1096,10 +1096,6 @@
         font-size: 24px;
     }
 
-    .bharathiyar-content .content-text {
-        font-size: 12px;
-    }
-
     .tamil-highlight p {
         font-size: 14px;
     }
@@ -1142,11 +1138,6 @@
         font-size: 22px;
     }
 
-    .bharathiyar-content .content-text {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
     .tamil-highlight {
         padding: 10px 14px;
     }
@@ -1184,407 +1175,189 @@
         font-size: 20px;
     }
 
-    .bharathiyar-content .content-text {
-        font-size: 14px;
-    }
-
     .tamil-highlight p {
         font-size: 14px;
     }
 }
 
-
-
 /* =========================================================
-   DEPARTMENT SLIDER - RESPONSIVE CSS
+   TABLET RESPONSIVE
 ========================================================= */
 
+@media (max-width: 1024px) {
 
-/* =========================================================
-   LARGE TABLET
-   1100px and below
-========================================================= */
-
-@media (max-width: 1100px) {
-
-    .department-slider-section {
-        padding: 70px 0;
+    .dept-rail-section {
+        padding: 55px 0;
     }
 
-    .department-slider-container {
-        width: 92%;
+    .dept-rail-header {
+        margin-bottom: 42px;
+        padding: 0 20px;
     }
 
-    .department-slider-heading h2 {
-        font-size: 40px;
+    .dept-rail-kicker {
+        font-size: 15px;
+        letter-spacing: 2.5px;
     }
 
-    .department-slider-heading p {
-        font-size: 14px;
+    .dept-rail-header h2 {
+        font-size: 38px;
     }
 
-    /* SWIPER */
-
-    .departmentSwiper {
-        width: 100%;
-        position: relative;
-
-        padding: 8px 60px 65px;
-
-        box-sizing: border-box;
-        overflow: visible;
-    }
-
-    /* SLIDE */
-
-    .department-slide {
-        grid-template-columns: 47% 53%;
-        min-height: 420px;
-    }
-
-    .department-slide-image {
-        min-height: 420px;
-    }
-
-    /* CONTENT */
-
-    .department-slide-content {
-        padding: 40px;
-    }
-
-    .slide-small-title {
-        font-size: 12px;
-    }
-
-    .department-slide-content h3 {
-        font-size: 32px;
-    }
-
-    .department-slide-content > p {
-        font-size: 14px;
-        line-height: 1.8;
-    }
-
-    .slide-subjects span {
-        font-size: 11px;
-        padding: 8px 11px;
-    }
-
-    .slide-button {
-        font-size: 12px;
-        padding: 11px 20px;
-    }
-
-
-    /* =====================================================
-       ARROWS
-    ===================================================== */
-
-    .department-prev,
-    .department-next {
-        position: absolute !important;
-
-        top: 50% !important;
-        bottom: auto !important;
-
-        width: 48px !important;
-        height: 48px !important;
-
-        margin: 0 !important;
-        padding: 0 !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-
-        transform: translateY(-50%) !important;
-
-        z-index: 100 !important;
-
-        border-radius: 50%;
-
-        font-size: 14px;
-        line-height: 1;
-
-        box-sizing: border-box;
-    }
-
-    .department-prev {
-        left: -24px !important;
-        right: auto !important;
-    }
-
-    .department-next {
-        right: -24px !important;
-        left: auto !important;
-    }
-
-    .department-prev:hover,
-    .department-next:hover {
-        transform: translateY(-50%) scale(1.08) !important;
-    }
-}
-
-
-/* =========================================================
-   TABLET
-   900px and below
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .department-slider-section {
-        padding: 65px 0;
-    }
-
-    .department-slider-container {
-        width: 92%;
-    }
-
-    .department-slider-heading {
-        margin-bottom: 40px;
-    }
-
-    .department-slider-heading h2 {
-        font-size: 36px;
-    }
-
-    .department-slider-heading p {
-        font-size: 14px;
-        line-height: 1.8;
-    }
-
-
-    /* SWIPER */
-
-    .departmentSwiper {
-        width: 100%;
-        position: relative;
-
-        padding-top: 8px;
-        padding-left: 52px;
-        padding-right: 52px;
-        padding-bottom: 65px;
-
-        box-sizing: border-box;
-
-        overflow: visible;
-    }
-
-
-    /* SLIDE */
-
-    .department-slide {
-        grid-template-columns: 45% 55%;
-
-        min-height: 410px;
-
-        border-radius: 18px;
-    }
-
-    .department-slide-image {
-        min-height: 410px;
-    }
-
-
-    /* CONTENT */
-
-    .department-slide-content {
-        padding: 36px;
-    }
-
-    .slide-small-title {
-        font-size: 12px;
-        letter-spacing: 1.7px;
-    }
-
-    .department-slide-content h3 {
-        font-size: 30px;
-        line-height: 1.3;
-    }
-
-    .slide-line {
-        width: 52px;
-        height: 3px;
-
-        margin: 11px 0 17px;
-    }
-
-    .department-slide-content > p {
+    .dept-rail-header p {
         font-size: 13px;
-        line-height: 1.8;
+        line-height: 1.7;
     }
 
+    /* Department item */
 
-    /* SUBJECTS */
-
-    .slide-subjects {
-        gap: 8px;
-        margin-bottom: 22px;
+    .dept-rail-item {
+        width: 250px;
+        flex: 0 0 250px;
     }
 
-    .slide-subjects span {
-        padding: 8px 11px;
+    /* Square image */
+
+    .dept-rail-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Information */
+
+    .dept-rail-info {
+        margin: -28px 12px 0;
+
+        min-height: 100px;
+
+        padding: 17px 48px 17px 17px;
+    }
+
+    .dept-rail-info span {
         font-size: 10px;
+        letter-spacing: 1px;
     }
 
-
-    /* BUTTON */
-
-    .slide-button {
-        padding: 11px 20px;
-        font-size: 12px;
+    .dept-rail-info h3 {
+        font-size: 17px;
     }
 
+    .dept-rail-arrow {
+        right: 13px;
 
-    /* =====================================================
-       TABLET ARROWS
-    ===================================================== */
-
-    .department-prev,
-    .department-next {
-        width: 46px !important;
-        height: 46px !important;
-
-        top: 50% !important;
-
-        font-size: 13px;
-
-        border-width: 2px;
-
-        transform: translateY(-50%) !important;
+        width: 30px;
+        height: 30px;
     }
 
-    .department-prev {
-        left: -23px !important;
-        right: auto !important;
-    }
+    /* Scroll */
 
-    .department-next {
-        right: -23px !important;
-        left: auto !important;
-    }
+    .dept-rail-track {
+        gap: 20px;
 
-    .department-prev:hover,
-    .department-next:hover {
-        transform: translateY(-50%) scale(1.08) !important;
-    }
-
-
-    /* PAGINATION */
-
-    .departmentSwiper .swiper-pagination {
-        bottom: 12px;
+        animation-duration: 30s;
     }
 }
 
 
 /* =========================================================
    MOBILE
-   768px and below
 ========================================================= */
 
 @media (max-width: 768px) {
 
-    .department-slider-section {
-        padding: 55px 0;
+    .dept-rail-section {
+        padding: 45px 0;
     }
 
-    .department-slider-container {
-        width: 92%;
+    .dept-rail-container {
+        width: 100%;
     }
 
 
     /* =====================================================
-       HEADING
+       HEADER
     ===================================================== */
 
-    .department-slider-heading {
+    .dept-rail-header {
         margin-bottom: 32px;
+
+        padding: 0 18px;
     }
 
-    .department-slider-heading > span {
-        font-size: 12px;
+    .dept-rail-kicker {
+        gap: 8px;
+
+        margin-bottom: 8px;
+
+        font-size: 14px;
         letter-spacing: 2px;
     }
 
-    .department-slider-heading h2 {
-        font-size: 32px;
+    .dept-rail-kicker i {
+        width: 22px;
+    }
+
+    .dept-rail-header h2 {
+        font-size: 30px;
+
         line-height: 1.25;
     }
 
-    .department-slider-heading p {
-        font-size: 13px;
-        line-height: 1.8;
-    }
+    .dept-rail-header p {
+        max-width: 520px;
 
-    .dept-heading-line {
-        width: 58px;
-        height: 3px;
+        margin-top: 10px;
 
-        margin: 12px auto;
+        font-size: 12px;
+        line-height: 1.7;
     }
 
 
     /* =====================================================
-       SWIPER
+       VIEWPORT
     ===================================================== */
 
-    .departmentSwiper {
-        width: 100%;
-
-        position: relative;
-
-        padding-top: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 58px;
-
-        box-sizing: border-box;
-
-        overflow: visible;
+    .dept-rail-viewport {
+        padding: 8px 0 28px;
     }
 
 
     /* =====================================================
-       SLIDE
+       TRACK
     ===================================================== */
 
-    .department-slide {
-        display: flex;
+    .dept-rail-track {
+        gap: 16px;
 
-        flex-direction: column;
-
-        width: 100%;
-
-        min-height: auto;
-
-        border-radius: 17px;
-
-        overflow: hidden;
+        animation-duration: 25s;
     }
 
 
     /* =====================================================
-       IMAGE
+       ITEM
     ===================================================== */
 
-    .department-slide-image {
-        width: 100%;
+    .dept-rail-item {
+        width: 250px;
 
-        height: 280px;
-        min-height: 280px;
-
-        position: relative;
+        flex: 0 0 250px;
     }
 
-    .department-slide-image img {
+
+    /* =====================================================
+       SQUARE IMAGE
+    ===================================================== */
+
+    .dept-rail-photo {
+        width:250px;
+        height:250px;
+    }
+
+    .dept-rail-photo img {
         width: 100%;
         height: 100%;
 
         object-fit: cover;
-
-        display: block;
     }
 
 
@@ -1592,275 +1365,166 @@
        NUMBER
     ===================================================== */
 
-    .slide-number {
-        left: 18px;
-        bottom: 18px;
-
-        width: 56px;
-        height: 56px;
-
-        border-width: 3px;
-
-        font-size: 15px;
-    }
-
-
-    /* =====================================================
-       CONTENT
-    ===================================================== */
-
-    .department-slide-content {
-        width: 100%;
-
-        padding: 32px 26px 35px;
-
-        box-sizing: border-box;
-
-        min-height: auto;
-    }
-
-
-    /* SMALL TITLE */
-
-    .slide-small-title {
-        margin-bottom: 8px;
-
-        font-size: 12px;
-
-        letter-spacing: 1.7px;
-    }
-
-
-    /* TITLE */
-
-    .department-slide-content h3 {
-        font-size: 29px;
-
-        line-height: 1.3;
-
-        margin: 0;
-    }
-
-
-    /* LINE */
-
-    .slide-line {
-        width: 50px;
-        height: 3px;
-
-        margin: 11px 0 17px;
-    }
-
-
-    /* DESCRIPTION */
-
-    .department-slide-content > p {
-        margin: 0 0 21px;
+    .dept-rail-index {
+        top: 13px;
+        left: 13px;
 
         font-size: 14px;
+    }
 
-        line-height: 1.85;
+    .dept-rail-index::after {
+        width: 18px;
+        height: 2px;
+
+        margin-top: 5px;
     }
 
 
     /* =====================================================
-       SUBJECT TAGS
+       VERTICAL DEPARTMENT NAME
     ===================================================== */
 
-    .slide-subjects {
-        display: flex;
+    .dept-rail-name {
+        right: -2px;
 
-        flex-wrap: wrap;
+        bottom: 42px;
 
-        gap: 8px;
+        font-size: 15px;
 
-        margin-bottom: 23px;
-    }
-
-    .slide-subjects span {
-        padding: 8px 11px;
-
-        font-size: 11px;
-
-        line-height: 1.3;
-
-        border-radius: 5px;
+        letter-spacing: 1.5px;
     }
 
 
     /* =====================================================
-       BUTTON
+       INFORMATION BOX
     ===================================================== */
 
-    .slide-button {
-        padding: 12px 21px;
+    .dept-rail-info {
+        margin: -22px 9px 0;
 
-        font-size: 12px;
+        min-height: 82px;
 
-        gap: 9px;
+        padding: 13px 40px 13px 13px;
 
-        border-radius: 5px;
+        border-top-width: 2px;
+    }
+
+    .dept-rail-info span {
+        margin-bottom: 4px;
+
+        font-size:12px;
+
+        letter-spacing: .8px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dept-rail-info h3 {
+        font-size: 15px;
+
+        line-height: 1.35;
     }
 
 
     /* =====================================================
-       MOBILE ARROWS
+       ARROW
     ===================================================== */
 
-    .department-prev,
-    .department-next {
-        position: absolute !important;
+    .dept-rail-arrow {
+        right: 9px;
 
-        top: 50% !important;
-        bottom: auto !important;
+        width: 26px;
+        height: 26px;
 
-        width: 42px !important;
-        height: 42px !important;
-
-        margin: 0 !important;
-        padding: 0 !important;
-
-        display: flex !important;
-
-        align-items: center !important;
-        justify-content: center !important;
-
-        z-index: 100 !important;
-
-        font-size: 12px;
-
-        line-height: 1;
-
-        border-width: 2px;
-
-        box-sizing: border-box;
-
-        transform: translateY(-50%) !important;
+        font-size: 8px;
     }
 
 
-    /* LEFT ARROW */
+    /* =====================================================
+       GOLD HOVER LINE
+    ===================================================== */
 
-    .department-prev {
-        left: -6px !important;
-        right: auto !important;
+    .dept-rail-item::before {
+        top: -4px;
+
+        height: 2px;
     }
 
 
-    /* RIGHT ARROW */
+    /* =====================================================
+       SIDE FADE
+    ===================================================== */
 
-    .department-next {
-        right: -6px !important;
-        left: auto !important;
-    }
-
-
-    /* HOVER */
-
-    .department-prev:hover,
-    .department-next:hover {
-        transform: translateY(-50%) scale(1.08) !important;
-    }
-
-
-    /* DISABLED */
-
-    .department-prev.swiper-button-disabled,
-    .department-next.swiper-button-disabled {
-        opacity: 0.35;
-
-        pointer-events: none;
-    }
-
-
-    /* PAGINATION */
-
-    .departmentSwiper .swiper-pagination {
-        bottom: 9px;
-    }
-
-    .departmentSwiper .swiper-pagination-bullet {
-        width: 9px;
-        height: 9px;
-    }
-
-    .departmentSwiper .swiper-pagination-bullet-active {
-        width: 27px;
+    .dept-rail-viewport::before,
+    .dept-rail-viewport::after {
+        width: 30px;
     }
 }
 
 
 /* =========================================================
    SMALL MOBILE
-   480px and below
 ========================================================= */
 
 @media (max-width: 480px) {
 
-    .department-slider-section {
-        padding: 45px 0;
-    }
-
-    .department-slider-container {
-        width: 94%;
+    .dept-rail-section {
+        padding: 40px 0;
     }
 
 
     /* =====================================================
-       HEADING
+       HEADER
     ===================================================== */
 
-    .department-slider-heading {
-        margin-bottom: 27px;
+    .dept-rail-header {
+        margin-bottom: 28px;
+
+        padding: 0 15px;
     }
 
-    .department-slider-heading > span {
-        font-size: 10px;
+    .dept-rail-kicker {
+        font-size: 14px;
 
-        letter-spacing: 1.8px;
+        letter-spacing: 1.6px;
     }
 
-    .department-slider-heading h2 {
+    .dept-rail-kicker i {
+        width: 18px;
+    }
+
+    .dept-rail-header h2 {
         font-size: 27px;
-
-        line-height: 1.3;
     }
 
-    .department-slider-heading p {
-        font-size: 12px;
+    .dept-rail-header p {
+        font-size: 11px;
 
-        line-height: 1.75;
-    }
-
-    .dept-heading-line {
-        width: 52px;
-
-        height: 3px;
-
-        margin: 10px auto;
+        line-height: 1.65;
     }
 
 
     /* =====================================================
-       SWIPER
+       TRACK
     ===================================================== */
 
-    .departmentSwiper {
-        padding-top: 4px;
+    .dept-rail-track {
+        gap: 13px;
 
-        padding-left: 10px;
-        padding-right: 10px;
-
-        padding-bottom: 55px;
+        animation-duration: 21s;
     }
 
 
     /* =====================================================
-       CARD
+       ITEM
     ===================================================== */
 
-    .department-slide {
-        border-radius: 15px;
+    .dept-rail-item {
+        width:250px;
+
+        flex: 0 0 250px;
     }
 
 
@@ -1868,234 +1532,1585 @@
        IMAGE
     ===================================================== */
 
-    .department-slide-image {
-        height: 235px;
-
-        min-height: 235px;
-    }
-
-
-    /* NUMBER */
-
-    .slide-number {
-        width: 50px;
-        height: 50px;
-
-        left: 15px;
-        bottom: 15px;
-
-        font-size: 13px;
-
-        border-width: 3px;
+    .dept-rail-photo {
+        width: 250px;
+        height: 250px;
     }
 
 
     /* =====================================================
-       CONTENT
+       NUMBER
     ===================================================== */
 
-    .department-slide-content {
-        padding: 27px 21px 30px;
+    .dept-rail-index {
+        top: 10px;
+        left: 10px;
+
+        font-size: 9px;
+    }
+
+    .dept-rail-index::after {
+        width: 15px;
+        height: 2px;
+
+        margin-top: 4px;
     }
 
 
-    /* SMALL TITLE */
+    /* =====================================================
+       VERTICAL NAME
+    ===================================================== */
 
-    .slide-small-title {
+    .dept-rail-name {
+        right: -2px;
+
+        bottom: 35px;
+
+        font-size: 15px;
+
+        letter-spacing: 1.2px;
+    }
+
+
+    /* =====================================================
+       INFO
+    ===================================================== */
+
+    .dept-rail-info {
+        margin: -18px 7px 0;
+
+        min-height: 72px;
+
+        padding: 11px 34px 11px 11px;
+    }
+
+    .dept-rail-info span {
         font-size: 10px;
 
-        letter-spacing: 1.4px;
-
-        margin-bottom: 7px;
+        letter-spacing: .6px;
     }
 
-
-    /* TITLE */
-
-    .department-slide-content h3 {
-        font-size: 25px;
-
-        line-height: 1.3;
-    }
-
-
-    /* LINE */
-
-    .slide-line {
-        width: 45px;
-
-        height: 3px;
-
-        margin: 10px 0 15px;
-    }
-
-
-    /* DESCRIPTION */
-
-    .department-slide-content > p {
+    .dept-rail-info h3 {
         font-size: 13px;
-
-        line-height: 1.8;
-
-        margin-bottom: 19px;
     }
 
 
     /* =====================================================
-       TAGS
+       ARROW
     ===================================================== */
 
-    .slide-subjects {
-        gap: 6px;
+    .dept-rail-arrow {
+        right: 7px;
 
-        margin-bottom: 21px;
-    }
+        width: 23px;
+        height: 23px;
 
-    .slide-subjects span {
-        padding: 7px 9px;
-
-        font-size: 10px;
-
-        border-radius: 5px;
+        font-size: 7px;
     }
 
 
     /* =====================================================
-       BUTTON
+       FADE
     ===================================================== */
 
-    .slide-button {
-        padding: 11px 17px;
-
-        font-size: 11px;
-
-        gap: 7px;
-    }
-
-
-    /* =====================================================
-       SMALL MOBILE ARROWS
-    ===================================================== */
-
-    .department-prev,
-    .department-next {
-        width: 38px !important;
-        height: 38px !important;
-
-        top: 50% !important;
-
-        font-size: 11px;
-
-        border-width: 2px;
-
-        transform: translateY(-50%) !important;
-    }
-
-    .department-prev {
-        left: -9px !important;
-        right: auto !important;
-    }
-
-    .department-next {
-        right: -9px !important;
-        left: auto !important;
-    }
-
-    .department-prev:hover,
-    .department-next:hover {
-        transform: translateY(-50%) scale(1.06) !important;
-    }
-
-
-    /* PAGINATION */
-
-    .departmentSwiper .swiper-pagination {
-        bottom: 8px;
+    .dept-rail-viewport::before,
+    .dept-rail-viewport::after {
+        width: 15px;
     }
 }
 
 
 /* =========================================================
-   EXTRA SMALL MOBILE
-   360px and below
+   EXTRA SMALL DEVICES
 ========================================================= */
 
 @media (max-width: 360px) {
 
-    .department-slider-section {
-        padding: 40px 0;
+    .dept-rail-section {
+        padding: 35px 0;
     }
 
-    .department-slider-container {
-        width: 95%;
-    }
-
-
-    /* HEADING */
-
-    .department-slider-heading {
-        margin-bottom: 24px;
-    }
-
-    .department-slider-heading h2 {
+    .dept-rail-header h2 {
         font-size: 24px;
     }
 
-    .department-slider-heading p {
-        font-size: 11px;
+    .dept-rail-header p {
+        font-size: 10px;
+    }
+
+    .dept-rail-track {
+        gap: 11px;
+
+        animation-duration: 19s;
+    }
+
+    .dept-rail-item {
+        width:250px;
+
+        flex-basis: 250px;
+    }
+
+    .dept-rail-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .dept-rail-info {
+        margin-top: -16px;
+
+        min-height: 68px;
+
+        padding: 10px 32px 10px 10px;
+    }
+
+    .dept-rail-info h3 {
+        font-size: 13px;
+    }
+
+    .dept-rail-info span {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   Prevent unwanted horizontal page scrolling
+========================================================= */
+
+@media (hover: none) {
+
+    .dept-rail-viewport {
+        overflow: hidden;
+    }
+
+    .dept-rail-track {
+        will-change: transform;
+    }
+
+    .dept-rail-item:hover .dept-rail-photo img {
+        transform: none;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .dept-rail-track {
+        animation: none;
+    }
+
+    .dept-rail-photo img,
+    .dept-rail-arrow,
+    .dept-rail-item::before {
+        transition: none;
+    }
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .premium-updates {
+        padding: 115px 25px;
+    }
+
+    .premium-title h2 {
+        font-size: 50px;
+    }
+
+    .premium-update-grid {
+        gap: 32px;
+    }
+
+    .featured-image {
+        height: 305px;
+    }
+
+    .featured-content h3 {
+        font-size: 26px;
+    }
+
+    .timeline-content h4 {
+        font-size: 17px;
+    }
+
+    .notice-text h4 {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .premium-update-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .featured-news {
+        grid-column: span 2;
+    }
+
+    .featured-image {
+        height: 310px;
+    }
+
+    .featured-content h3 {
+        font-size: 25px;
+    }
+
+    .premium-panel {
+        min-height: 570px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET SMALL
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .premium-updates {
+        padding: 80px 18px;
+    }
+
+    .premium-title {
+        margin-bottom: 45px;
+    }
+
+    .premium-title h2 {
+        font-size: 38px;
+    }
+
+    .premium-title p {
+        font-size: 15px;
+    }
+
+    .premium-update-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .featured-news {
+        grid-column: auto;
+    }
+
+    .featured-image {
+        height: 300px;
+    }
+
+    .premium-panel {
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .premium-updates {
+        padding: 65px 14px;
+    }
+
+    .premium-updates::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .premium-updates::after {
+        width: 250px;
+        height: 250px;
     }
 
 
-    /* SWIPER */
+    /* Section title */
 
-    .departmentSwiper {
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-bottom: 52px;
+    .premium-title {
+        margin-bottom: 35px;
     }
 
-
-    /* IMAGE */
-
-    .department-slide-image {
-        height: 210px;
-        min-height: 210px;
+    .title-line {
+        gap: 10px;
     }
 
-
-    /* CONTENT */
-
-    .department-slide-content {
-        padding: 24px 18px 27px;
+    .title-line span {
+        width: 28px;
     }
 
-    .department-slide-content h3 {
-        font-size: 23px;
+    .title-line small {
+        font-size: 13px;
+        letter-spacing: 2px;
     }
 
-    .department-slide-content > p {
-        font-size: 12px;
+    .premium-title h2 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .premium-title p {
+        margin-top: 14px;
+        font-size: 13px;
         line-height: 1.75;
     }
 
 
-    /* TAGS */
+    /* Grid */
 
-    .slide-subjects {
+    .premium-update-grid {
+        gap: 18px;
+    }
+
+
+    /* Featured */
+
+    .featured-news {
+        border-radius: 19px;
+    }
+
+    .featured-image {
+        height: 230px;
+    }
+
+    .featured-label {
+        top: 15px;
+        left: 15px;
+        padding: 7px 11px;
+        font-size: 10px;
+    }
+
+    .featured-date {
+        right: 15px;
+        bottom: 15px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .featured-date strong {
+        font-size: 24px;
+    }
+
+    .featured-date span {
+        font-size: 8px;
+    }
+
+    .featured-content {
+        padding: 22px;
+    }
+
+    .content-tag {
+        font-size: 10px;
+    }
+
+    .featured-content h3 {
+        margin: 10px 0 12px;
+        font-size: 20px;
+    }
+
+    .featured-content p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .premium-read {
+        margin-top: 18px;
+        font-size: 12px;
+    }
+
+
+    /* Panels */
+
+    .premium-panel {
+        padding: 21px;
+        border-radius: 19px;
+    }
+
+    .panel-heading {
+        padding-bottom: 18px;
+    }
+
+    .panel-heading-left {
+        gap: 11px;
+    }
+
+    .panel-icon {
+        width: 47px;
+        height: 47px;
+        border-radius: 12px;
+        font-size: 19px;
+    }
+
+    .panel-heading-left span {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .panel-heading-left h3 {
+        font-size: 19px;
+    }
+
+    .panel-more {
+        font-size: 9px;
+    }
+
+
+    /* Timeline */
+
+    .timeline-item {
+        grid-template-columns:
+            55px
+            16px
+            1fr;
+
+        gap: 10px;
+
+        min-height: 105px;
+
+        padding: 16px 0;
+    }
+
+    .timeline-date {
+        width: 55px;
+        height: 65px;
+    }
+
+    .timeline-date span {
+        padding: 6px 2px;
+        font-size: 8px;
+    }
+
+    .timeline-date strong {
+        padding-top: 7px;
+        font-size: 23px;
+    }
+
+    .timeline-content small {
+        font-size: 9px;
+    }
+
+    .timeline-content h4 {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+    }
+
+
+    /* Notice */
+
+    .notice-row {
+        gap: 11px;
+        padding: 16px 0;
+    }
+
+    .notice-symbol {
+        width: 41px;
+        min-width: 41px;
+        height: 41px;
+        font-size: 16px;
+    }
+
+    .notice-meta {
+        font-size: 8px;
+    }
+
+    .new-tag {
+        padding: 3px 6px;
+        font-size: 7px;
+    }
+
+    .notice-text h4 {
+        font-size: 14px;
+    }
+
+    .notice-text p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .notice-arrow {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .premium-updates {
+        padding: 55px 11px;
+    }
+
+    .premium-title h2 {
+        font-size: 27px;
+    }
+
+    .premium-title p {
+        font-size: 12px;
+    }
+
+    .featured-image {
+        height: 195px;
+    }
+
+    .featured-content {
+        padding: 19px;
+    }
+
+    .featured-content h3 {
+        font-size: 18px;
+    }
+
+    .featured-content p {
+        font-size: 12px;
+    }
+
+    .premium-panel {
+        padding: 18px;
+    }
+
+    .panel-heading-left h3 {
+        font-size: 17px;
+    }
+
+    .panel-more {
+        font-size: 8px;
+    }
+
+    .timeline-item {
+        grid-template-columns:
+            49px
+            13px
+            1fr;
+
+        gap: 8px;
+    }
+
+    .timeline-date {
+        width: 49px;
+        height: 59px;
+    }
+
+    .timeline-date strong {
+        font-size: 20px;
+    }
+
+    .timeline-content h4 {
+        font-size: 14px;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+    }
+
+    .notice-symbol {
+        width: 38px;
+        min-width: 38px;
+        height: 38px;
+    }
+
+    .notice-text h4 {
+        font-size: 12px;
+    }
+
+    .notice-text p {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .premium-title h2 {
+        font-size: 24px;
+    }
+
+    .featured-content h3 {
+        font-size: 17px;
+    }
+
+    .panel-heading-left h3 {
+        font-size: 16px;
+    }
+
+    .panel-more {
+        display: none;
+    }
+
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+    .placement-pattern-container {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+
+    .placement-title-main {
+        font-size: 57px;
+    }
+
+    .placement-title-sub {
+        font-size: 47px;
+    }
+
+    .placement-description p {
+        font-size: 21px;
+    }
+
+    .placement-card {
+        min-height: 285px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .placement-pattern-container {
+        padding: 55px 45px 60px;
+    }
+
+
+    .placement-title-main {
+        font-size: 43px;
+    }
+
+
+    .placement-title-sub {
+        font-size: 34px;
+    }
+
+
+    .placement-title-line {
+        height: 60px;
+        width: 7px;
+    }
+
+
+    .placement-description p {
+        font-size: 16px;
+    }
+
+
+    .placement-card-row {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 20px;
+    }
+
+
+    .placement-card:nth-child(4),
+    .placement-card:nth-child(5) {
+        margin-top: 0;
+    }
+
+
+    .company-logo-strip {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET SMALL
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .placement-pattern-section {
+        padding: 35px 15px;
+    }
+
+
+    .placement-pattern-container {
+        padding: 45px 25px 50px;
+
+        border-radius: 30px;
+    }
+
+
+    .placement-bg-word {
+        font-size: 110px;
+
+        top: -5px;
+
+        right: -20px;
+    }
+
+
+    .placement-main-title {
+        gap: 18px;
+    }
+
+
+    .placement-title-main {
+        font-size: 35px;
+    }
+
+
+    .placement-title-sub {
+        font-size: 27px;
+    }
+
+
+    .placement-title-line {
+        width: 6px;
+        height: 48px;
+    }
+
+
+    .placement-description {
+        margin-top: 23px;
+
+        margin-bottom: 38px;
+    }
+
+
+    .placement-description p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.75;
+    }
+
+
+    .placement-card-row {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .company-logo-strip {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .placement-pattern-section {
+        padding: 22px 10px;
+    }
+
+
+    .placement-pattern-container {
+        padding: 38px 15px 42px;
+
+        border-radius: 23px;
+    }
+
+
+    /* Background */
+
+    .placement-bg-word {
+        top: 5px;
+        right: -35px;
+
+        font-size: 70px;
+
+        letter-spacing: -4px;
+    }
+
+
+    /* Heading */
+
+    .placement-main-title {
+        gap: 10px;
+
+        flex-wrap: nowrap;
+    }
+
+
+    .placement-title-main {
+        font-size: 25px;
+
+        letter-spacing: 0;
+    }
+
+
+    .placement-title-line {
+        width: 4px;
+
+        height: 36px;
+    }
+
+
+    .placement-title-sub {
+        font-size: 16px;
+
+        letter-spacing: 0;
+    }
+
+
+    /* Description */
+
+    .placement-description {
+        margin:
+            19px auto 30px;
+    }
+
+
+    .placement-description p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.75;
+    }
+
+
+    /* Cards */
+
+    .placement-card-row {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .placement-card {
+        min-height: 210px;
+
+        padding: 8px;
+
+        border-radius: 12px;
+    }
+
+
+    .placement-card-number {
+        font-size: 8px;
+
+        padding: 6px 0 4px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .placement-card-image {
+        height: 92px;
+
+        border-radius: 8px;
+    }
+
+
+    .placement-card-content {
+        padding:
+            11px 4px 5px;
+    }
+
+
+    .placement-card-content h3 {
+        font-size: 10px;
+
+        line-height: 1.3;
+    }
+
+
+    .placement-card-content p {
+        margin-top: 5px;
+
+        font-size: 7px;
+
+        line-height: 1.4;
+    }
+
+
+    /* Partners */
+
+    .recruiting-partners {
+        margin-top: 34px;
+
+        padding-top: 22px;
+    }
+
+
+    .recruiting-title {
+        gap: 9px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .recruiting-title span {
+        width: 20px;
+    }
+
+
+    .recruiting-title strong {
+        font-size:14px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .company-logo-strip {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+
+    .company-logo {
+        height: 62px;
+
+        padding: 10px;
+
+        border-radius: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .placement-title-main {
+        font-size: 22px;
+    }
+
+
+    .placement-title-sub {
+        font-size: 14px;
+    }
+
+
+    .placement-title-line {
+        height: 31px;
+    }
+
+
+    .placement-description p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+
+    .placement-card {
+        min-height: 195px;
+    }
+
+
+    .placement-card-image {
+        height: 82px;
+    }
+
+
+    .placement-card-content h3 {
+        font-size: 9px;
+    }
+
+
+    .placement-card-content p {
+        font-size: 6.5px;
+    }
+
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .rs-campus-life-thumb {
+        height: 300px;
+        border-radius: 3px;
+    }
+
+    .rs-campus-life-thumb img {
+        height: 300px !important;
+        border-radius: 3px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .rs-campus-life-thumb {
+        height: 280px;
+        border-radius: 2px;
+    }
+
+    .rs-campus-life-thumb img {
+        height: 280px !important;
+        border-radius: 2px !important;
+    }
+
+    .rs-campus-life-title {
+        font-size: 17px;
+    }
+}
+
+
+
+
+/*==================================================
+                TABLET
+===================================================*/
+
+@media (max-width: 991px) {
+
+    .footer-area {
+        padding: 45px 0 35px;
+    }
+
+    .footer-title {
+        font-size: 21px;
+    }
+
+    .footer-text {
+        font-size: 15px;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer-contact a {
+        font-size: 14.5px;
+    }
+
+    .footer-map {
+        height: 210px;
+    }
+
+}
+
+
+/*==================================================
+                MOBILE
+===================================================*/
+
+@media (max-width: 767px) {
+
+    .footer-area {
+        padding: 40px 0 30px;
+    }
+
+    .footer-widget {
+        margin-bottom: 15px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer-contact a {
+        font-size: 14px;
+    }
+
+    .footer-map {
+        height: 220px;
+    }
+
+}
+
+
+/*==================================================
+                SMALL MOBILE
+===================================================*/
+
+@media (max-width: 480px) {
+
+    .footer-area {
+        padding: 35px 0 25px;
+    }
+
+    .footer-logo img {
+        max-width: 165px;
+    }
+
+    .footer-title {
+        font-size: 19px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-contact a {
+        font-size: 13.5px;
+    }
+
+    .footer-map {
+        height: 200px;
+    }
+
+}
+
+
+/*==================================================
+                TABLET
+===================================================*/
+
+@media (max-width: 991px) {
+
+    .copyright-area {
+        padding: 10px 0;
+    }
+
+    .copyright-content {
+        min-height: 40px;
+    }
+
+    .copyright-left p,
+    .copyright-right span {
+        font-size: 13px;
+    }
+
+    .copyright-right img {
+        height: 30px;
+        max-width: 120px;
+    }
+}
+
+
+/*==================================================
+                MOBILE
+===================================================*/
+
+@media (max-width: 767px) {
+
+    .copyright-area {
+        padding: 12px 0;
+    }
+
+    .copyright-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .copyright-left {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .copyright-left p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .copyright-right {
+        width: 100%;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    .copyright-right span {
+        font-size: 12px;
+    }
+
+    .copyright-right img {
+        height: 28px;
+        max-width: 110px;
+    }
+}
+
+
+/*==================================================
+                SMALL MOBILE
+===================================================*/
+
+@media (max-width: 480px) {
+
+    .copyright-area {
+        padding: 10px 5px;
+    }
+
+    .copyright-content {
+        gap: 6px;
+    }
+
+    .copyright-left p {
+        font-size: 11px;
+    }
+
+    .copyright-right span {
+        font-size: 11px;
+    }
+
+    .copyright-right img {
+        height: 26px;
+        max-width: 100px;
+    }
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .notices-panel {
+        padding: 30px;
+    }
+
+
+    .notices-panel .panel-heading-left h3 {
+        font-size: 25px;
+    }
+
+
+    .notices-panel .notice-wrapper {
+        height: 370px;
+    }
+
+
+    .notices-panel .notice-row {
+        padding-top: 21px;
+
+        padding-bottom: 21px;
+    }
+
+
+    .notices-panel .notice-text h4 {
+        font-size: 16px;
+    }
+
+
+    .notices-panel .notice-text p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .notices-panel {
+        padding: 23px;
+    }
+
+
+    .notices-panel .notice-wrapper {
+        height: 330px;
+    }
+
+
+    .notices-panel .panel-heading-left h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .notices-panel {
+        padding: 20px;
+
+        border-radius: 18px;
+    }
+
+
+    /* Heading */
+
+    .notices-panel .panel-heading {
+        padding-bottom: 16px;
+
+        gap: 10px;
+    }
+
+
+    .notices-panel .panel-heading-left {
+        gap: 10px;
+    }
+
+
+    .notices-panel .panel-icon {
+        width: 43px;
+
+        min-width: 43px;
+
+        height: 43px;
+
+        border-radius: 11px;
+
+        font-size: 17px;
+    }
+
+
+    .notices-panel .panel-heading-left span {
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .notices-panel .panel-heading-left h3 {
+        font-size: 18px;
+    }
+
+
+    /* View all */
+
+    .notices-panel .panel-more {
+        padding: 7px 9px;
+
+        font-size: 8px;
+
         gap: 5px;
     }
 
-    .slide-subjects span {
-        font-size: 9px;
-        padding: 6px 8px;
+
+    /* Scroll area */
+
+    .notices-panel .notice-wrapper {
+        height: 310px;
+
+        padding-right: 5px;
     }
 
 
-    /* BUTTON */
+    /* Notice */
 
-    .slide-button {
-        font-size: 10px;
-        padding: 10px 15px;
+    .notices-panel .notice-row {
+        gap: 10px;
+
+        padding: 16px 3px 16px 0;
+    }
+
+
+    .notices-panel .notice-symbol {
+        width: 39px;
+
+        min-width: 39px;
+
+        height: 39px;
+
+        border-radius: 10px;
+
+        font-size: 14px;
+    }
+
+
+    .notices-panel .notice-meta {
+        font-size: 12px;
+
+        gap: 6px;
+    }
+
+
+    .notices-panel .new-tag {
+        padding: 3px 6px;
+
+        font-size: 6px;
+    }
+
+
+    .notices-panel .notice-text h4 {
+        margin: 5px 0 4px;
+
+        font-size: 14px;
+    }
+
+
+    .notices-panel .notice-text p {
+        font-size:12px;
+
+        line-height: 1.55;
+    }
+
+
+    .notices-panel .notice-arrow {
+        margin-top: 15px;
+
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .notices-panel {
+        padding: 17px;
+
+        border-radius: 16px;
+    }
+
+
+    .notices-panel .panel-icon {
+        width: 39px;
+
+        min-width: 39px;
+
+        height: 39px;
+
+        font-size: 15px;
+    }
+
+
+    .notices-panel .panel-heading-left h3 {
+        font-size: 16px;
+    }
+
+
+    .notices-panel .panel-heading-left span {
+        font-size: 7px;
+    }
+
+
+    .notices-panel .panel-more {
+        padding: 6px 7px;
+
+        font-size: 7px;
+    }
+
+
+    .notices-panel .notice-wrapper {
+        height: 280px;
+    }
+
+
+    .notices-panel .notice-row {
+        gap: 8px;
+
+        padding: 14px 2px 14px 0;
+    }
+
+
+    .notices-panel .notice-symbol {
+        width: 35px;
+
+        min-width: 35px;
+
+        height: 35px;
+
+        border-radius: 8px;
+
+        font-size: 12px;
+    }
+
+
+    .notices-panel .notice-meta {
+        font-size: 12px;
+    }
+
+
+    .notices-panel .notice-text h4 {
+        font-size: 14px;
+    }
+
+
+    .notices-panel .notice-text p {
+        font-size: 12px;
+    }
+
+
+    .notices-panel .notice-arrow {
+        margin-top: 13px;
+
+        font-size: 7px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .footer-social-area {
+        margin-top: 20px;
+
+        padding-top: 15px;
+    }
+
+    .footer-social {
+        gap: 7px;
+    }
+
+    .footer-social-link {
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+
+        border-radius: 7px;
     }
 
 }
