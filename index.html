@@ -35,7 +35,28 @@
 <body>
 
 
+<div id="preloader">
 
+    <div class="preloader-content">
+
+        <img
+            src="assets/logo/logo.jpeg"
+            alt="College Logo"
+            class="preloader-logo"
+        >
+
+        <div class="preloader-quote">
+            ஆணும் பெண்ணும் நிகரெனக் கொள்வதால்<br>
+            அறிவில் ஓங்கி, இவ் வையம் தழைக்குமாம்
+        </div>
+
+        <div class="preloader-loader">
+            <span></span>
+        </div>
+
+    </div>
+
+</div>
 
 
  <!-- =========================================================
@@ -2652,7 +2673,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script>
+window.addEventListener("load", function () {
 
+    const preloader = document.getElementById("preloader");
+
+    setTimeout(function () {
+
+        preloader.classList.add("preloader-hidden");
+
+        setTimeout(function () {
+            preloader.remove();
+        }, 700);
+
+    }, 3000); // 3 seconds
+
+});
+</script>
 
 <!-- =========================================================
      FIXED ADMISSION MARQUEE

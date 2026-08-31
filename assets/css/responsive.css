@@ -1208,15 +1208,15 @@
     /* Department item */
 
     .dept-rail-item {
-        width: 250px;
-        flex: 0 0 250px;
+        width: 400px;
+        flex: 0 0 400px;
     }
 
     /* Square image */
 
     .dept-rail-photo {
-        width: 250px;
-        height: 250px;
+        width: 400px;
+        height: 400px;
     }
 
     /* Information */
@@ -1334,9 +1334,9 @@
     ===================================================== */
 
     .dept-rail-item {
-        width: 250px;
+        width: 350px;
 
-        flex: 0 0 250px;
+        flex: 0 0 350px;
     }
 
 
@@ -1345,8 +1345,8 @@
     ===================================================== */
 
     .dept-rail-photo {
-        width:250px;
-        height:250px;
+        width:350px;
+        height:350px;
     }
 
     .dept-rail-photo img {
@@ -1518,9 +1518,9 @@
     ===================================================== */
 
     .dept-rail-item {
-        width:250px;
+        width:350px;
 
-        flex: 0 0 250px;
+        flex: 0 0 350px;
     }
 
 
@@ -1529,8 +1529,8 @@
     ===================================================== */
 
     .dept-rail-photo {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 
 
@@ -1641,14 +1641,14 @@
     }
 
     .dept-rail-item {
-        width:250px;
+        width:350px;
 
-        flex-basis: 250px;
+        flex-basis: 350px;
     }
 
     .dept-rail-photo {
-        width: 250px;
-        height: 250px;
+        width:350px;
+        height: 350px;
     }
 
     .dept-rail-info {
@@ -1889,7 +1889,7 @@
         top: 15px;
         left: 15px;
         padding: 7px 11px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .featured-date {
@@ -1904,7 +1904,7 @@
     }
 
     .featured-date span {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .featured-content {
@@ -1921,7 +1921,7 @@
     }
 
     .featured-content p {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.75;
     }
 
@@ -1954,7 +1954,7 @@
     }
 
     .panel-heading-left span {
-        font-size: 8px;
+        font-size: 12px;
         letter-spacing: 1.5px;
     }
 
@@ -1963,7 +1963,7 @@
     }
 
     .panel-more {
-        font-size: 9px;
+        font-size:12px;
     }
 
 
@@ -2081,7 +2081,7 @@
     }
 
     .featured-content p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .premium-panel {
@@ -2093,7 +2093,7 @@
     }
 
     .panel-more {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .timeline-item {
@@ -2904,7 +2904,7 @@
 
 
     .notices-panel .panel-heading-left span {
-        font-size: 8px;
+        font-size:12px;
 
         letter-spacing: 1.5px;
     }
@@ -2920,7 +2920,7 @@
     .notices-panel .panel-more {
         padding: 7px 9px;
 
-        font-size: 8px;
+        font-size: 12px;
 
         gap: 5px;
     }
@@ -3024,14 +3024,14 @@
 
 
     .notices-panel .panel-heading-left span {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .notices-panel .panel-more {
         padding: 6px 7px;
 
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -3323,7 +3323,7 @@
     }
 
     .dept-rail-photo {
-        height: 195px;
+        height: 250px;
     }
 
     .dept-rail-info {
@@ -3599,5 +3599,85 @@ body {
     .admission-btn,
     .admission-btn i {
         transition: none;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .preloader-logo {
+        width: 120px;
+        height: 120px;
+
+        margin-bottom: 17px;
+    }
+
+    .preloader-quote {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .preloader-loader {
+        width: 120px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    #preloader {
+        background-position: center center;
+    }
+
+    .preloader-content {
+        width:100%;
+        padding: 15px;
+    }
+
+    .preloader-logo {
+        width: 100px;
+        height: 100px;
+
+        margin-bottom: 15px;
+    }
+
+    .preloader-quote {
+        font-size: 13px;
+        line-height: 1.75;
+
+        margin-bottom: 17px;
+    }
+
+    .preloader-loader {
+        width: 100px;
+        height: 2px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .preloader-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .preloader-quote {
+        font-size: 10px;
+    }
+
+    .preloader-loader {
+        width: 100px;
     }
 }
