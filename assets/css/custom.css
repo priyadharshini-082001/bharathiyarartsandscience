@@ -982,9 +982,9 @@ ul {
 ========================================================= */
 
 .dept-rail-item {
-    width: 300px;
+    width:400px;
 
-    flex: 0 0 300px;
+    flex: 0 0 400px;
 
     position: relative;
 }
@@ -996,8 +996,8 @@ ul {
 
 .dept-rail-photo {
     position: relative;
-    width: 285px;
-    height: 285px;
+    width:400px;
+    height: 350px;
     overflow: hidden;
     background: #dfe6f0;
 
