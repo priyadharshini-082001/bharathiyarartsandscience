@@ -1224,13 +1224,13 @@
     .dept-rail-info {
         margin: -28px 12px 0;
 
-        min-height: 100px;
+        min-height:130px;
 
         padding: 17px 48px 17px 17px;
     }
 
     .dept-rail-info span {
-        font-size: 15px;
+        font-size: 13px;
         letter-spacing: 1px;
     }
 
@@ -1398,7 +1398,7 @@
     .dept-rail-info {
         margin: -22px 9px 0;
 
-        min-height: 82px;
+        min-height: 130px;
 
         padding: 13px 40px 13px 13px;
 
@@ -1408,7 +1408,7 @@
     .dept-rail-info span {
         margin-bottom: 4px;
 
-        font-size:15px;
+        font-size:13px;
 
         letter-spacing: .8px;
 
@@ -1575,13 +1575,13 @@
     .dept-rail-info {
         margin: -18px 7px 0;
 
-        min-height: 72px;
+        min-height:130px;
 
         padding: 11px 34px 11px 11px;
     }
 
     .dept-rail-info span {
-        font-size: 15px;
+        font-size: 13px;
 
         letter-spacing: .6px;
     }
@@ -1654,7 +1654,7 @@
     .dept-rail-info {
         margin-top: -16px;
 
-        min-height: 68px;
+        min-height: 130px;
 
         padding: 10px 32px 10px 10px;
     }
@@ -1664,7 +1664,7 @@
     }
 
     .dept-rail-info span {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
@@ -3215,7 +3215,7 @@
     .dept-rail-info span {
         display: block;
 
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.4;
 
         margin-bottom: 6px;
@@ -3327,7 +3327,7 @@
     }
 
     .dept-rail-info {
-        min-height: 120px;
+        min-height: 130px;
         padding: 16px 52px 16px 16px;
     }
 
@@ -3336,7 +3336,7 @@
     }
 
     .dept-rail-info span {
-        font-size:15px;
+        font-size:13px;
     }
 
     .dept-rail-arrow {
@@ -3363,5 +3363,241 @@
 
     .slider-next {
         right: 3px !important;
+    }
+}
+
+
+
+/* =========================================================
+   BODY FOOTER SAFE SPACE
+========================================================= */
+
+body {
+    padding-bottom: 38px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .admission-label {
+        padding: 0 12px;
+
+        font-size: 12px;
+    }
+
+
+    .marquee-track span {
+        font-size: 12px;
+
+        padding: 0 10px;
+    }
+
+
+    .admission-btn {
+        padding: 0 10px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .admission-marquee {
+        height: 34px;
+        min-height: 34px;
+
+        border-top-width: 1px;
+    }
+
+
+    .admission-label {
+        padding: 0 9px;
+
+        gap: 5px;
+
+        font-size:12px;
+
+        letter-spacing: 0.3px;
+    }
+
+
+    .admission-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+
+    .marquee-window::before,
+    .marquee-window::after {
+        width: 20px;
+    }
+
+
+    .marquee-track {
+        animation-duration: 22s;
+    }
+
+
+    .marquee-track span {
+        font-size: 12px;
+
+        padding: 0 9px;
+    }
+
+
+    .marquee-track .marquee-separator {
+        font-size: 12px;
+
+        padding: 0 2px;
+    }
+
+
+    .admission-btn {
+        height: 24px;
+
+        margin-right: 5px;
+
+        padding: 0 9px;
+
+        border-radius: 3px;
+
+        font-size: 12px;
+    }
+
+
+    .admission-btn i {
+        display: none;
+    }
+
+
+    body {
+        padding-bottom: 34px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .admission-marquee {
+        height: 32px;
+        min-height: 32px;
+    }
+
+
+    .admission-label {
+        padding: 0 7px;
+
+        gap: 4px;
+
+        font-size: 12px;
+    }
+
+
+    .admission-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .marquee-window::before,
+    .marquee-window::after {
+        width: 15px;
+    }
+
+
+    .marquee-track {
+        animation-duration: 20s;
+    }
+
+
+    .marquee-track span {
+        font-size:12px;
+
+        padding: 0 8px;
+    }
+
+
+    .marquee-track .marquee-separator {
+        font-size: 12px;
+
+        padding: 0 2px;
+    }
+
+
+    .admission-btn {
+        height: 22px;
+
+        margin-right: 4px;
+
+        padding: 0 8px;
+
+        font-size: 12px;
+    }
+
+
+    body {
+        padding-bottom: 32px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .admission-label {
+        padding: 0 6px;
+
+        font-size:10px;
+    }
+
+
+    .marquee-track span {
+        font-size:10px;
+
+        padding: 0 7px;
+    }
+
+
+    .admission-btn {
+        padding: 0 7px;
+
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .marquee-track {
+        animation: none;
+    }
+
+    .admission-dot {
+        animation: none;
+    }
+
+    .admission-btn,
+    .admission-btn i {
+        transition: none;
     }
 }
