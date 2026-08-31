@@ -24,7 +24,7 @@
 
         position: absolute;
 
-        top: 110px;
+        top: 20px;
         right: 15px;
 
         width: 44px;
@@ -39,7 +39,7 @@
         border: 0;
         border-radius: 7px;
 
-        background: #08306c;
+        background: #e51d73;
         color: #ffffff;
 
         font-size: 21px;
@@ -48,8 +48,6 @@
         cursor: pointer;
 
         z-index: 10001;
-
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
 
         transition: all 0.3s ease;
     }
@@ -414,8 +412,6 @@
 
         gap: 9px;
 
-        flex: 1;
-
         min-width: 0;
 
         text-align: left;
@@ -533,7 +529,7 @@
 
     .basc-mobile-toggle {
 
-        top:110px;
+        top:8px;
         right: 12px;
 
         width: 40px;
@@ -600,7 +596,7 @@
 
     .video-overlay-header {
 
-        padding: 10px 12px;
+        padding:0px 0px;
     }
 
 
@@ -711,7 +707,7 @@
         width: 100%;
 
         /* Remove desktop fixed height */
-        height: 420px;
+        height:250px;
 
         min-height: 0;
 
@@ -775,7 +771,7 @@
 
         width: 100%;
 
-        height: 300px;
+        height: 250px;
 
         min-height: 0;
 
@@ -808,7 +804,7 @@
 @media (max-width: 400px) {
 
     .banner-video {
-        height: 280px;
+        height: 250px;
     }
 
 }
@@ -1234,7 +1230,7 @@
     }
 
     .dept-rail-info span {
-        font-size: 10px;
+        font-size: 15px;
         letter-spacing: 1px;
     }
 
@@ -1412,7 +1408,7 @@
     .dept-rail-info span {
         margin-bottom: 4px;
 
-        font-size:12px;
+        font-size:15px;
 
         letter-spacing: .8px;
 
@@ -1585,7 +1581,7 @@
     }
 
     .dept-rail-info span {
-        font-size: 10px;
+        font-size: 15px;
 
         letter-spacing: .6px;
     }
@@ -1668,7 +1664,7 @@
     }
 
     .dept-rail-info span {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
@@ -2307,7 +2303,7 @@
 
 
     .placement-description p {
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
         line-height: 1.75;
     }
@@ -2396,7 +2392,7 @@
 
 
     .placement-description p {
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
         line-height: 1.75;
     }
@@ -2528,7 +2524,7 @@
 
 
     .placement-description p {
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
     }
 
@@ -3113,4 +3109,259 @@
         border-radius: 7px;
     }
 
+}
+
+/* =========================================================
+   DEPARTMENT RAIL - MOBILE VIEW
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* SECTION */
+    .dept-rail-section {
+        width: 100%;
+        padding: 35px 0 50px;
+        overflow: hidden !important;
+    }
+
+    /* CONTAINER */
+    .dept-rail-container {
+        width: 100%;
+        padding: 0 42px;
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+    .dept-rail-header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .video-college-text h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    /* VIEWPORT */
+    .dept-rail-viewport {
+        width: 100%;
+        overflow: hidden !important;
+        position: relative;
+    }
+
+    /* TRACK */
+    .dept-rail-track {
+        display: flex !important;
+        gap: 15px !important;
+
+        width: max-content !important;
+
+        animation: none !important;
+
+        transition: transform .55s ease !important;
+
+        will-change: transform;
+    }
+
+    /* =====================================================
+       MOBILE CARD
+    ===================================================== */
+
+    .dept-rail-item {
+        flex: 0 0 calc(100vw - 84px) !important;
+        width: calc(100vw - 84px) !important;
+
+        max-width: 340px;
+
+        min-width: 0;
+
+        border-radius: 16px;
+
+        overflow: hidden;
+
+        pointer-events: none;
+    }
+
+    /* IMAGE */
+    .dept-rail-photo {
+        width: 100%;
+        height: 210px;
+
+        overflow: hidden;
+    }
+
+    .dept-rail-photo img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        display: block;
+
+        pointer-events: none;
+    }
+
+    /* CONTENT */
+    .dept-rail-info {
+        position: relative;
+
+        min-height: 130px;
+
+        padding: 18px 55px 18px 18px;
+
+        pointer-events: none;
+    }
+
+    .dept-rail-info span {
+        display: block;
+
+        font-size: 15px;
+        line-height: 1.4;
+
+        margin-bottom: 6px;
+
+        letter-spacing: .8px;
+    }
+
+    .dept-rail-info h3 {
+        font-size: 22px;
+        line-height: 1.2;
+
+        margin: 0;
+    }
+
+    /* CARD SMALL ARROW */
+    .dept-rail-arrow {
+        width: 38px;
+        height: 38px;
+
+        right: 14px;
+        bottom: 18px;
+
+        font-size: 13px;
+    }
+
+    /* =====================================================
+       MAIN LEFT / RIGHT ARROWS
+    ===================================================== */
+
+    .slider-arrow {
+        position: absolute !important;
+
+        top: 50% !important;
+
+        width: 40px !important;
+        height: 40px !important;
+
+        min-width: 40px !important;
+        min-height: 40px !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        border: 0 !important;
+
+        border-radius: 50% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 18px !important;
+        line-height: 1 !important;
+
+        z-index: 9999999 !important;
+
+        pointer-events: auto !important;
+
+        cursor: pointer !important;
+
+        transform: translateY(-50%) !important;
+    }
+
+    /* LEFT */
+    .slider-prev {
+        left: 4px !important;
+        right: auto !important;
+    }
+
+    /* RIGHT */
+    .slider-next {
+        right: 4px !important;
+        left: auto !important;
+    }
+
+    /* HOVER */
+    .slider-arrow:hover {
+        transform: translateY(-50%) scale(1.05) !important;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dept-rail-section {
+        padding: 30px 0 45px;
+    }
+
+    .dept-rail-container {
+        padding: 0 38px;
+    }
+
+    .video-college-text h1 {
+        font-size: 20px;
+    }
+
+    .dept-rail-item {
+        flex: 0 0 calc(100vw - 76px) !important;
+        width: calc(100vw - 76px) !important;
+    }
+
+    .dept-rail-photo {
+        height: 195px;
+    }
+
+    .dept-rail-info {
+        min-height: 120px;
+        padding: 16px 52px 16px 16px;
+    }
+
+    .dept-rail-info h3 {
+        font-size: 20px;
+    }
+
+    .dept-rail-info span {
+        font-size:15px;
+    }
+
+    .dept-rail-arrow {
+        width: 36px;
+        height: 36px;
+
+        right: 12px;
+        bottom: 15px;
+    }
+
+    .slider-arrow {
+        width: 36px !important;
+        height: 36px !important;
+
+        min-width: 36px !important;
+        min-height: 36px !important;
+
+        font-size: 16px !important;
+    }
+
+    .slider-prev {
+        left: 3px !important;
+    }
+
+    .slider-next {
+        right: 3px !important;
+    }
 }

@@ -891,8 +891,8 @@ textarea:focus {
 	1.1 Default Spacing SCSS
 ---------------------------------*/
 .section-space {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 1199px) {
   .section-space {
@@ -3139,17 +3139,16 @@ input[type=checkbox] ~ label:hover {
 /*----------------------------------------*/
 #backtotop-wrap {
   text-align: center;
-  bottom: 20px;
+  bottom: 40px;
   cursor: pointer;
   display: none;
   position: fixed;
   inset-inline-end: 20px;
   z-index: 10;
   border-radius: 50%;
-  background: var(--rs-theme-blue);
+  background: #e51d73;
   padding: 1px;
   transition: all linear 0.5s;
-  box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
 }
 #backtotop-wrap .scrollprogress .progress-circle {
   transition: stroke-dashoffset 0.5s ease;

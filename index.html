@@ -35,75 +35,37 @@
 <body>
 
 
-<!-- MOBILE MENU TOGGLE -->
-<button class="basc-mobile-toggle" id="bascMobileToggle" aria-label="Open Menu">
-    <i class="fas fa-bars"></i>
-</button>
-
-<!-- MOBILE MENU CLOSE -->
-<button class="basc-mobile-close" id="bascMobileClose" aria-label="Close Menu">
-    <i class="fas fa-times"></i>
-</button>
 
 
-   <!-- =========================================================
-     TOP HEADER
+
+ <!-- =========================================================
+     VIDEO BANNER WITH OVERLAY HEADER
 ========================================================= -->
 
+<section class="banner-video">
 
-<div class="basc-header-top">
+    <!-- BACKGROUND VIDEO -->
+    <video
+        class="banner-video-element"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto">
 
-    <div class="container">
+        <source
+            src="assets/video/WhatsApp Video 2026-08-28 at 5.20.30 PM.mp4"
+            type="video/mp4">
 
-        <div class="basc-top-wrapper">
-
-            <!-- LEFT INFORMATION -->
-            <div class="basc-top-left">
-
-                <div class="basc-info-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>
-                        Deviyakurchi, Thalaivasal, Salem District, Tamil Nadu - 636112
-                    </span>
-                </div>
-
-                <div class="basc-info-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:admissions@bascw.ac.in">
-                        admissions@bascw.ac.in
-                    </a>
-                </div>
-
-                <div class="basc-info-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:9047673999">
-                        9047673999
-                    </a>
-                </div>
-
-            </div>
+    </video>
 
 
-            <!-- RIGHT BUTTONS -->
-            <div class="basc-top-right">
 
-                <a href="admission.html" class="basc-admission-btn">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Admission Open
-                </a>
+    <!-- =====================================================
+         OVERLAY HEADER
+    ====================================================== -->
 
-                <a href="result.html" class="basc-result-btn">
-                    Result
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
+    <div class="video-overlay-header">
 
 <div class="basc-top-bar">
 
@@ -388,37 +350,7 @@
     </div>
 
 </div>
-
- <!-- =========================================================
-     VIDEO BANNER WITH OVERLAY HEADER
-========================================================= -->
-
-<section class="banner-video">
-
-    <!-- BACKGROUND VIDEO -->
-    <video
-        class="banner-video-element"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto">
-
-        <source
-            src="assets/video/WhatsApp Video 2026-08-28 at 5.20.30 PM.mp4"
-            type="video/mp4">
-
-    </video>
-
-
-
-    <!-- =====================================================
-         OVERLAY HEADER
-    ====================================================== -->
-
-    <div class="video-overlay-header">
-
-        <div class="video-header-container ">
+        <div class="video-header-container">
 
 
             <!-- ================= LEFT SIDE ================= -->
@@ -430,7 +362,7 @@
 
                     <img
                         src="assets/logo/logo.jpeg"
-                        alt="College Logo">
+                        alt="College Logo" >
 
                 </div>
 
@@ -454,16 +386,28 @@
 
                     <img
                         src="assets/logo/big.webp"
-                        alt="Periyar University" style="width: 400px;">
+                        alt="Periyar University" style="width:300px;">
 
 
             </div>
 
         </div>
+<!-- MOBILE MENU TOGGLE -->
+<button class="basc-mobile-toggle" id="bascMobileToggle" aria-label="Open Menu">
+    <i class="fas fa-bars"></i>
+</button>
 
+<!-- MOBILE MENU CLOSE -->
+<button class="basc-mobile-close" id="bascMobileClose" aria-label="Close Menu">
+    <i class="fas fa-times"></i>
+</button>
     </div>
 
 </section>
+
+
+
+
 
     <!-- Body main wrapper start -->
     <main>
@@ -528,9 +472,6 @@
 
         <!-- about area start -->
         <section class="rs-about-area section-space-bottom rs-about-one bg-primary">
-            <div class="rs-about-shape">
-                <img src="assets/images/shape/draw-shape.webp" alt="image">
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -593,9 +534,6 @@
                                         </div>
                                     </div>
                                     <div class="rs-about-award">
-                                        <div class="rs-about-award-shape">
-                                            <img src="assets/images/shape/three-line-shape-two.webp" alt="image">
-                                        </div>
                                         <div class="rs-about-award-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="63" viewBox="0 0 50 63">
                                                 <path d="M42.409 51.3402H30.6849C27.0689 48.2864 25.0349 44.3278 25.0349 40.1313C25.0349 31.9654 30.3918 25.6008 38.6374 23.5402L32.0989 20.4376L23.2205 24.6506C20.4538 27.6402 18.7424 31.316 18.2769 35.3001C17.392 42.5491 23.9904 48.7154 27.334 51.3402H24.0622C20.2962 48.0049 15.1212 42.0659 15.9711 35.1091C16.471 30.8234 18.3087 26.8551 21.2726 23.6008L23.364 15.1465L16.1864 9.69336C8.43542 13.1831 4.92013 23.056 7.64349 34.0553C9.49803 41.5035 14.1426 47.9227 20.116 51.3402H7.31755L0 62.0608H49.7266L42.409 51.3402ZM15.4448 60.1137L12.7843 58.8511L10.1234 60.1137L10.7415 57.614L8.47869 55.8947L11.5218 55.6123L12.7843 53.2872L14.0464 55.6123L17.0893 55.8947L14.8267 57.614L15.4448 60.1137ZM27.8053 60.1137L25.1444 58.8511L22.4838 60.1137L23.1019 57.614L20.8391 55.8947L23.8822 55.6123L25.1444 53.2872L26.4068 55.6123L29.4497 55.8947L27.1868 57.614L27.8053 60.1137ZM39.6033 60.1137L36.9426 58.8511L34.2817 60.1137L34.8999 57.614L32.6374 55.8947L35.6802 55.6123L36.9426 53.2872L38.2051 55.6123L41.2477 55.8947L38.985 57.614L39.6033 60.1137Z">
@@ -666,12 +604,6 @@
         <!-- HEADER -->
         <div class="dept-rail-header">
 
-                         <!-- College Name -->
-                <div class="video-college-text">
-
-                    <h1>Our Departments</h1>
-
-                </div>
 
         </div>
 
@@ -1009,6 +941,14 @@ Ph.D.</span>
 
     </div>
 
+<button type="button" class="slider-arrow slider-prev" id="deptPrev">
+    &#10094;
+</button>
+
+<button type="button" class="slider-arrow slider-next" id="deptNext">
+    &#10095;
+</button>
+
 </section>
 
 
@@ -1231,7 +1171,40 @@ Ph.D.</span>
 
                     </div>
 
-                    
+                     <!-- Event 3 -->
+                    <div class="timeline-item">
+
+                        <div class="timeline-date">
+
+                            <span>SEP</span>
+                            <strong>10</strong>
+
+                        </div>
+
+                        <div class="timeline-line">
+                            <span></span>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <small>
+                                <i class="fa-regular fa-clock"></i>
+                                11:00 AM
+                            </small>
+
+                            <h4>
+                                Cultural & Literary Activities
+                            </h4>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                College Auditorium
+                            </p>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
@@ -2141,6 +2114,10 @@ Ph.D.</span>
 
     </div>
 
+
+
+
+
 </footer>
 
 <!--==================================================
@@ -2183,6 +2160,9 @@ Ph.D.</span>
     </div>
 
 </div>
+
+
+
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -2353,44 +2333,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    new Swiper(".departmentSwiper", {
-
-        slidesPerView: 1,
-        spaceBetween: 30,
-
-        loop: true,
-
-        speed: 700,
-
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false
-        },
-
-        navigation: {
-            nextEl: ".department-next",
-            prevEl: ".department-prev"
-        },
-
-        pagination: {
-            el: ".department-pagination",
-            clickable: true
-        },
-
-        grabCursor: true,
-
-        keyboard: {
-            enabled: true
-        }
-
-    });
-
-});
-</script>
-
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -2437,6 +2379,213 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const header3 = document.querySelector(".video-overlay-header");
+
+    if (!header3) return;
+
+    const stickyStart = header3.offsetTop;
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > stickyStart) {
+            header3.classList.add("header-three-sticky");
+        } else {
+            header3.classList.remove("header-three-sticky");
+        }
+
+    });
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const track = document.querySelector(".dept-rail-track");
+    const viewport = document.querySelector(".dept-rail-viewport");
+    const prev = document.getElementById("deptPrev");
+    const next = document.getElementById("deptNext");
+
+    console.log("DEPARTMENT SLIDER STARTED");
+
+    if (!track) {
+        console.error("ERROR: .dept-rail-track not found");
+        return;
+    }
+
+    if (!viewport) {
+        console.error("ERROR: .dept-rail-viewport not found");
+        return;
+    }
+
+    if (!prev) {
+        console.error("ERROR: #deptPrev not found");
+        return;
+    }
+
+    if (!next) {
+        console.error("ERROR: #deptNext not found");
+        return;
+    }
+
+    const items = track.querySelectorAll(".dept-rail-item");
+
+    console.log("Department cards:", items.length);
+
+    let current = 0;
+
+    function getStep() {
+
+        const item = items[0];
+
+        if (!item) return 0;
+
+        const itemWidth = item.getBoundingClientRect().width;
+
+        const style = window.getComputedStyle(track);
+
+        const gap = parseFloat(style.gap) || 0;
+
+        return itemWidth + gap;
+    }
+
+
+    function moveSlider() {
+
+        const step = getStep();
+
+        if (!step) return;
+
+        track.style.transform =
+            "translate3d(-" + (current * step) + "px, 0, 0)";
+
+        console.log("Current slide:", current);
+    }
+
+
+    /* =====================================================
+       NEXT BUTTON
+    ===================================================== */
+
+    next.addEventListener("click", function (e) {
+
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        console.log("NEXT CLICKED");
+
+        current++;
+
+        if (current >= items.length) {
+            current = 0;
+        }
+
+        moveSlider();
+
+    });
+
+
+    /* =====================================================
+       PREVIOUS BUTTON
+    ===================================================== */
+
+    prev.addEventListener("click", function (e) {
+
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        console.log("PREVIOUS CLICKED");
+
+        current--;
+
+        if (current < 0) {
+            current = items.length - 1;
+        }
+
+        moveSlider();
+
+    });
+
+
+    /* =====================================================
+       RESIZE
+    ===================================================== */
+
+    window.addEventListener("resize", function () {
+
+        moveSlider();
+
+    });
+
+
+    /* =====================================================
+       INITIAL
+    ===================================================== */
+
+    moveSlider();
+
+});
+</script>
+
+
+
+<!-- =========================================================
+     FIXED ADMISSION MARQUEE
+========================================================= -->
+<div class="admission-marquee">
+    <div class="admission-label">
+        <span class="admission-dot"></span>
+        ADMISSIONS OPEN
+    </div>
+
+    <div class="marquee-window">
+        <div class="marquee-track">
+            <span>
+                Admissions Open for 2026–2027
+            </span>
+
+            <span class="marquee-separator">✦</span>
+
+            <span>
+                Enroll Now & Build a Bright Future
+            </span>
+
+            <span class="marquee-separator">✦</span>
+
+            <span>
+                Limited Seats Available
+            </span>
+
+            <span class="marquee-separator">✦</span>
+
+            <!-- Duplicate for smooth continuous scrolling -->
+            <span>
+                Admissions Open for 2026–2027
+            </span>
+
+            <span class="marquee-separator">✦</span>
+
+            <span>
+                Enroll Now & Build a Bright Future
+            </span>
+
+            <span class="marquee-separator">✦</span>
+
+            <span>
+                Limited Seats Available
+            </span>
+        </div>
+    </div>
+
+    <a href="admission.html" class="admission-btn">
+       Exam Result
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</div>
 
 
 

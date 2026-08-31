@@ -67,22 +67,11 @@ ul {
 .basc-top-bar {
     position: relative;
     width: 100%;
-    min-height: 64px;
+    height: 54px;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4, 36, 92, 0.98),
-            rgba(7, 59, 143, 0.98),
-            rgba(4, 36, 92, 0.98)
-        );
-
-    border-bottom: 3px solid var(--basc-pink);
+    background:rgb(255, 243, 117);
 
     z-index: 9999;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.18);
 }
 
 
@@ -139,7 +128,7 @@ ul {
 
     padding: 0 17px;
 
-    color: #ffffff;
+    color: #000000;
 
     font-size: 13px;
     font-weight: 600;
@@ -215,7 +204,7 @@ ul {
 
     font-size: 11px;
 
-    color: #ffffff;
+    color: #000000;
 
     transition: var(--basc-transition);
 }
@@ -474,10 +463,10 @@ ul {
 ========================================================= */
 
 .video-college-logo {
-    width: 105px;
-    height: 105px;
+    width: 85px;
+    height: 85px;
 
-    flex: 0 0 100px;
+    flex: 0 0 85px;
 
 
 }
@@ -511,14 +500,14 @@ ul {
 .video-college-text h1 {
     margin: 0;
 
-    font-size: 35px;
+    font-size:25px;
 
     line-height: 1;
 
     font-weight: 800;
 
     letter-spacing: 3px;
-
+    text-align: center;
     color: #ffffff;
 }
 
@@ -530,7 +519,7 @@ ul {
 .video-college-text h2 {
     margin: 8px 0 7px;
 
-    font-size: clamp(19px, 2vw, 30px);
+    font-size: 20px;
 
     line-height: 1.15;
 
@@ -596,247 +585,6 @@ ul {
 
     object-fit: contain;
 }
-
-/* =========================================================
-   BHARATHIYAR ARTS & SCIENCE COLLEGE
-   COMPACT TOP HEADER
-========================================================= */
-
-.basc-header-top {
-    width: 100%;
-    height: 42px;
-
-    background: #e8e8fc;
-
-    color: #073b8f;
-
-    position: relative;
-    z-index: 9999;
-
-    border-bottom: 2px solid #e51d73;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.basc-header-top .container {
-    width: 100%;
-    max-width: 1400px;
-
-    height: 100%;
-
-    margin: 0 auto;
-
-    padding: 0 20px;
-
-    box-sizing: border-box;
-}
-
-
-/* =========================================================
-   MAIN WRAPPER
-========================================================= */
-
-.basc-top-wrapper {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-}
-
-
-/* =========================================================
-   LEFT INFORMATION
-========================================================= */
-
-.basc-top-left {
-    display: flex;
-
-    align-items: center;
-
-    gap: 22px;
-
-    min-width: 0;
-}
-
-
-/* =========================================================
-   INFORMATION ITEM
-========================================================= */
-
-.basc-info-item {
-    display: flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    color: #073b8f;
-
-    font-size: 14px;
-
-    font-weight: 500;
-
-    line-height: 1;
-
-    white-space: nowrap;
-}
-
-
-/* =========================================================
-   ICON
-========================================================= */
-
-.basc-info-item i {
-    color: #e51d73;
-
-    font-size: 14px;
-
-    flex-shrink: 0;
-}
-
-
-/* =========================================================
-   LINKS
-========================================================= */
-
-.basc-info-item a {
-    color: #073b8f;
-
-    text-decoration: none;
-
-    transition: color 0.25s ease;
-}
-
-
-.basc-info-item a:hover {
-    color: #e51d73;
-}
-
-
-/* =========================================================
-   RIGHT SIDE
-========================================================= */
-
-.basc-top-right {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    gap: 8px;
-
-    flex-shrink: 0;
-}
-
-
-/* =========================================================
-   ADMISSION BUTTON
-========================================================= */
-
-.basc-admission-btn {
-    height: 28px;
-
-    padding: 0 13px;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 6px;
-
-    background: #e51d73;
-
-    color: #ffffff;
-
-    border-radius: 5px;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    box-shadow: 0 3px 8px rgba(229, 29, 115, 0.25);
-
-    transition: all 0.3s ease;
-}
-
-
-.basc-admission-btn i {
-    font-size: 14px;
-}
-
-
-.basc-admission-btn:hover {
-    background: #b90f57;
-
-    color: #ffffff;
-
-    transform: translateY(-1px);
-
-    box-shadow: 0 5px 12px rgba(185, 15, 87, 0.30);
-}
-
-
-/* =========================================================
-   RESULT BUTTON
-========================================================= */
-
-.basc-result-btn {
-    height: 28px;
-
-    padding: 0 13px;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: #ffffff;
-
-    color: #073b8f;
-
-    border: 1px solid rgba(7, 59, 143, 0.15);
-
-    border-radius: 5px;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    transition: all 0.3s ease;
-}
-
-
-.basc-result-btn:hover {
-    background: #073b8f;
-
-    color: #ffffff;
-
-    border-color: #073b8f;
-}
-
-
-
 
 
 /* =========================================================
@@ -1118,7 +866,7 @@ ul {
 
 .dept-rail-section {
     width: 100%;
-    padding: 50px 0;
+    padding: 80px 0;
 
     background:pink;
 
@@ -1354,7 +1102,7 @@ ul {
     margin-bottom: 5px;
 
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
 
     letter-spacing: 1.2px;
@@ -1462,7 +1210,6 @@ ul {
     }
 }
 
-
 /* =========================================================
    PREMIUM NEWS • EVENTS • NOTICE
    BHARATHIYAR ARTS & SCIENCE COLLEGE
@@ -1471,8 +1218,8 @@ ul {
 .premium-updates {
     position: relative;
     width: 100%;
-    padding: 50px 10px;
-    background: #a0b6ff40;
+    padding: 30px 10px 35px;
+    background: #073b8f;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -1485,24 +1232,34 @@ ul {
 .premium-updates::before {
     content: "";
     position: absolute;
+
     width: 500px;
     height: 500px;
+
     border-radius: 50%;
+
     background: rgba(7, 59, 143, 0.035);
+
     top: -220px;
     left: -180px;
+
     pointer-events: none;
 }
 
 .premium-updates::after {
     content: "";
     position: absolute;
+
     width: 420px;
     height: 420px;
+
     border-radius: 50%;
+
     background: rgba(181, 47, 103, 0.035);
+
     right: -180px;
     bottom: -180px;
+
     pointer-events: none;
 }
 
@@ -1512,10 +1269,13 @@ ul {
 ========================================================= */
 
 .updates-container {
+    position: relative;
+
     width: 100%;
     max-width: 1320px;
+
     margin: 0 auto;
-    position: relative;
+
     z-index: 2;
 }
 
@@ -1527,54 +1287,90 @@ ul {
 .premium-title {
     width: 100%;
     max-width: 850px;
-    margin: 0 auto 60px;
+
+    margin: 0 auto 30px;
+
     text-align: center;
 }
 
+
+/* =========================================================
+   TITLE LINE
+========================================================= */
+
 .title-line {
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     gap: 15px;
-    margin-bottom: 16px;
+
+    margin-bottom: 10px;
 }
 
 .title-line span {
     width: 45px;
     height: 2px;
+
     display: block;
-    background: #b52f67;
+
+    background: #ffffff;
 }
 
 .title-line small {
-    color: #b52f67;
+    color:  #ffffff;
+
     font-size: 15px;
     font-weight: 800;
+
     letter-spacing: 3px;
+
     text-transform: uppercase;
 }
 
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
 .premium-title h2 {
     margin: 0;
-    color: #092f70;
+
+    color: #ffffff;
+
     font-family: "Poppins", sans-serif;
-    font-size: 46px;
+
+    font-size: 40px;
+
     line-height: 1.25;
+
     font-weight: 800;
+
     letter-spacing: -0.5px;
 }
 
 .premium-title h2 em {
-    color: #b52f67;
+    color: #ffffff;
+
     font-style: normal;
 }
 
+
+/* =========================================================
+   TITLE DESCRIPTION
+========================================================= */
+
 .premium-title p {
     max-width: 760px;
-    margin: 18px auto 0;
+
+    margin: 10px auto 0;
+
     color: #000000;
-    font-size: 16px;
-    line-height: 1.8;
+
+    font-size: 15px;
+
+    line-height: 1.6;
 }
 
 
@@ -1584,8 +1380,14 @@ ul {
 
 .premium-update-grid {
     display: grid;
-    grid-template-columns: 1.18fr 1fr 1fr;
-    gap: 28px;
+
+    grid-template-columns:
+        1.18fr
+        1fr
+        1fr;
+
+    gap: 20px;
+
     align-items: stretch;
 }
 
@@ -1596,15 +1398,25 @@ ul {
 
 .featured-news {
     position: relative;
+
     background: #ffffff;
-    border-radius: 24px;
+
+    border-radius: 20px;
+
     overflow: hidden;
+
     border: 1px solid #e4e9f2;
-    transition: all 0.4s ease;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 .featured-news:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(7, 59, 143, 0.12);
 }
 
 
@@ -1614,21 +1426,26 @@ ul {
 
 .featured-image {
     position: relative;
+
     width: 100%;
-    height: 285px;
+    height: 240px;
+
     overflow: hidden;
 }
 
 .featured-image img {
     width: 100%;
     height: 100%;
+
     display: block;
+
     object-fit: cover;
+
     transition: transform 0.7s ease;
 }
 
 .featured-news:hover .featured-image img {
-    transform: scale(1.07);
+    transform: scale(1.06);
 }
 
 
@@ -1638,14 +1455,17 @@ ul {
 
 .featured-label {
     position: absolute;
-    top: 20px;
-    left: 20px;
+
+    top: 15px;
+    left: 15px;
 
     display: inline-flex;
-    align-items: center;
-    gap: 8px;
 
-    padding: 9px 15px;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 13px;
 
     border-radius: 30px;
 
@@ -1653,13 +1473,17 @@ ul {
 
     color: #073b8f;
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 800;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.10);
 }
 
 .featured-label i {
     color: #b52f67;
-    font-size: 12px;
+
+    font-size: 11px;
 }
 
 
@@ -1670,38 +1494,47 @@ ul {
 .featured-date {
     position: absolute;
 
-    right: 20px;
-    bottom: 20px;
+    right: 15px;
+    bottom: 15px;
 
-    width: 76px;
-    height: 76px;
+    width: 68px;
+    height: 68px;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
 
     background: #ffffff;
 
-    border-radius: 15px;
+    border-radius: 13px;
 
     color: #073b8f;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.15);
 }
 
 .featured-date strong {
-    font-size: 29px;
+    font-size: 26px;
+
     line-height: 1;
+
     font-weight: 800;
 }
 
 .featured-date span {
-    margin-top: 6px;
+    margin-top: 5px;
 
     color: #b52f67;
 
-    font-size: 10px;
+    font-size: 9px;
+
     font-weight: 800;
-    letter-spacing: 0.8px;
+
+    letter-spacing: 0.7px;
 }
 
 
@@ -1710,59 +1543,88 @@ ul {
 ========================================================= */
 
 .featured-content {
-    padding: 30px;
+    padding: 20px;
 }
+
+
+/* =========================================================
+   CONTENT TAG
+========================================================= */
 
 .content-tag {
     display: inline-flex;
+
     align-items: center;
-    gap: 7px;
+
+    gap: 6px;
 
     color: #b52f67;
 
-    font-size: 12px;
+    font-size: 11px;
+
     font-weight: 800;
 
-    letter-spacing: 1.7px;
+    letter-spacing: 1.5px;
+
     text-transform: uppercase;
 }
 
 .content-tag i {
-    font-size: 12px;
+    font-size: 11px;
 }
 
+
+/* =========================================================
+   FEATURED TITLE
+========================================================= */
+
 .featured-content h3 {
-    margin: 13px 0 14px;
+    margin: 9px 0 10px;
 
     color: #182b4a;
 
     font-family: "Poppins", sans-serif;
 
-    font-size: 24px;
-    line-height: 1.4;
+    font-size: 21px;
+
+    line-height: 1.35;
 
     font-weight: 750;
 }
+
+
+/* =========================================================
+   FEATURED DESCRIPTION
+========================================================= */
 
 .featured-content p {
     margin: 0;
 
     color: #000000;
 
-    font-size: 14px;
-    line-height: 1.85;
+    font-size: 13px;
+
+    line-height: 1.65;
 }
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
 
 .premium-read {
     display: inline-flex;
-    align-items: center;
-    gap: 11px;
 
-    margin-top: 23px;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 15px;
 
     color: #073b8f;
 
-    font-size: 13px;
+    font-size: 12px;
+
     font-weight: 800;
 
     text-decoration: none;
@@ -1779,7 +1641,7 @@ ul {
 }
 
 .premium-read:hover i {
-    transform: translateX(6px);
+    transform: translateX(5px);
 }
 
 
@@ -1794,18 +1656,24 @@ ul {
 
     border: 1px solid #e4e9f2;
 
-    border-radius: 24px;
+    border-radius: 20px;
 
-    padding: 28px;
+    padding: 20px;
 
     min-height: 100%;
 
-    transition: all 0.4s ease;
+    box-sizing: border-box;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 .premium-panel:hover {
     transform: translateY(-5px);
 
+    box-shadow:
+        0 18px 40px rgba(7, 59, 143, 0.10);
 }
 
 
@@ -1815,55 +1683,73 @@ ul {
 
 .panel-heading {
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
-    padding-bottom: 22px;
+    padding-bottom: 14px;
 
     border-bottom: 1px solid #e9edf4;
 }
 
 .panel-heading-left {
     display: flex;
+
     align-items: center;
-    gap: 15px;
+
+    gap: 11px;
 }
 
+
+/* =========================================================
+   PANEL ICON
+========================================================= */
+
 .panel-icon {
-    width: 55px;
-    height: 55px;
+    width: 46px;
+    height: 46px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     flex-shrink: 0;
 
-    border-radius: 15px;
+    border-radius: 12px;
 
     background: #edf4ff;
 
     color: #073b8f;
 
-    font-size: 22px;
+    font-size: 19px;
 }
 
 .notice-icon {
     background: #fff0f5;
+
     color: #b52f67;
 }
+
+
+/* =========================================================
+   PANEL TITLE
+========================================================= */
 
 .panel-heading-left span {
     display: block;
 
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 
     color: #b52f67;
 
-    font-size: 10px;
+    font-size: 9px;
+
     font-weight: 800;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
+
     text-transform: uppercase;
 }
 
@@ -1874,20 +1760,29 @@ ul {
 
     font-family: "Poppins", sans-serif;
 
-    font-size: 23px;
+    font-size: 20px;
+
     line-height: 1.25;
 
     font-weight: 750;
 }
 
+
+/* =========================================================
+   PANEL MORE
+========================================================= */
+
 .panel-more {
     display: inline-flex;
+
     align-items: center;
-    gap: 7px;
+
+    gap: 6px;
 
     color: #000000;
 
-    font-size: 11px;
+    font-size: 10px;
+
     font-weight: 750;
 
     white-space: nowrap;
@@ -1907,22 +1802,22 @@ ul {
 ========================================================= */
 
 .event-timeline {
-    padding-top: 7px;
+    padding-top: 0;
 }
 
 .timeline-item {
     display: grid;
 
     grid-template-columns:
-        64px
-        20px
+        58px
+        16px
         1fr;
 
-    gap: 13px;
+    gap: 9px;
 
-    min-height: 118px;
+    min-height: 95px;
 
-    padding: 18px 0;
+    padding: 12px 0;
 
     position: relative;
 }
@@ -1933,29 +1828,29 @@ ul {
 ========================================================= */
 
 .timeline-date {
-    width: 64px;
-    height: 72px;
+    width: 58px;
+    height: 65px;
 
     overflow: hidden;
 
-    border-radius: 13px;
+    border-radius: 11px;
 
     background: #073b8f;
 
     color: #ffffff;
 
     text-align: center;
-
 }
 
 .timeline-date span {
     display: block;
 
-    padding: 7px 3px;
+    padding: 6px 3px;
 
     background: #b52f67;
 
-    font-size: 10px;
+    font-size: 9px;
+
     font-weight: 800;
 
     letter-spacing: 1px;
@@ -1964,9 +1859,10 @@ ul {
 .timeline-date strong {
     display: block;
 
-    padding-top: 7px;
+    padding-top: 6px;
 
-    font-size: 27px;
+    font-size: 24px;
+
     line-height: 1;
 
     font-weight: 800;
@@ -1981,6 +1877,7 @@ ul {
     position: relative;
 
     display: flex;
+
     justify-content: center;
 }
 
@@ -1990,7 +1887,7 @@ ul {
     position: absolute;
 
     top: 0;
-    bottom: -18px;
+    bottom: -12px;
 
     width: 2px;
 
@@ -2002,10 +1899,10 @@ ul {
 
     z-index: 2;
 
-    width: 11px;
-    height: 11px;
+    width: 9px;
+    height: 9px;
 
-    margin-top: 9px;
+    margin-top: 8px;
 
     border-radius: 50%;
 
@@ -2030,22 +1927,25 @@ ul {
 
     color: #000000;
 
-    font-size: 11px;
+    font-size: 10px;
+
     font-weight: 600;
 }
 
 .timeline-content small i {
     margin-right: 5px;
+
     color: #073b8f;
 }
 
 .timeline-content h4 {
-    margin: 7px 0 7px;
+    margin: 5px 0;
 
     color: #263750;
 
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+
+    line-height: 1.4;
 
     font-weight: 750;
 }
@@ -2055,12 +1955,14 @@ ul {
 
     color: #000000;
 
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 12px;
+
+    line-height: 1.4;
 }
 
 .timeline-content p i {
     margin-right: 5px;
+
     color: #b52f67;
 }
 
@@ -2070,16 +1972,17 @@ ul {
 ========================================================= */
 
 .notice-wrapper {
-    padding-top: 5px;
+    padding-top: 0;
 }
 
 .notice-row {
     display: flex;
+
     align-items: flex-start;
 
-    gap: 14px;
+    gap: 10px;
 
-    padding: 18px 0;
+    padding: 12px 0;
 
     border-bottom: 1px dashed #dfe5ee;
 
@@ -2091,7 +1994,7 @@ ul {
 }
 
 .notice-row:hover {
-    transform: translateX(5px);
+    transform: translateX(4px);
 }
 
 
@@ -2100,27 +2003,30 @@ ul {
 ========================================================= */
 
 .notice-symbol {
-    width: 45px;
-    min-width: 45px;
-    height: 45px;
+    width: 40px;
+    min-width: 40px;
+
+    height: 40px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
-    border-radius: 11px;
+    border-radius: 9px;
 
     background: #f3f6fa;
 
     color: #073b8f;
 
-    font-size: 18px;
+    font-size: 16px;
 
     transition: all 0.3s ease;
 }
 
 .notice-row:hover .notice-symbol {
     background: #073b8f;
+
     color: #ffffff;
 }
 
@@ -2131,28 +2037,37 @@ ul {
 
 .notice-text {
     flex: 1;
+
     min-width: 0;
 }
 
 .notice-meta {
     display: flex;
+
     align-items: center;
+
     flex-wrap: wrap;
 
-    gap: 8px;
+    gap: 6px;
 
     color: #000000;
 
-    font-size: 10px;
+    font-size: 9px;
+
     font-weight: 750;
 
     letter-spacing: 0.8px;
 }
 
+
+/* =========================================================
+   NEW TAG
+========================================================= */
+
 .new-tag {
     display: inline-block;
 
-    padding: 4px 8px;
+    padding: 3px 7px;
 
     border-radius: 20px;
 
@@ -2160,30 +2075,43 @@ ul {
 
     color: #ffffff;
 
-    font-size: 8px;
+    font-size: 7px;
+
     font-weight: 800;
 
     letter-spacing: 0.5px;
 }
 
+
+/* =========================================================
+   NOTICE TITLE
+========================================================= */
+
 .notice-text h4 {
-    margin: 7px 0 5px;
+    margin: 5px 0 4px;
 
     color: #263750;
 
-    font-size: 15px;
-    line-height: 1.45;
+    font-size: 14px;
+
+    line-height: 1.35;
 
     font-weight: 750;
 }
+
+
+/* =========================================================
+   NOTICE DESCRIPTION
+========================================================= */
 
 .notice-text p {
     margin: 0;
 
     color: #000000;
 
-    font-size: 11px;
-    line-height: 1.65;
+    font-size: 10px;
+
+    line-height: 1.5;
 }
 
 
@@ -2192,17 +2120,18 @@ ul {
 ========================================================= */
 
 .notice-arrow {
-    margin-top: 16px;
+    margin-top: 12px;
 
     color: #062859;
 
-    font-size: 11px;
+    font-size: 10px;
 
     transition: all 0.3s ease;
 }
 
 .notice-row:hover .notice-arrow {
     color: #b52f67;
+
     transform: translateX(4px);
 }
 
@@ -2221,7 +2150,7 @@ ul {
     left: 0;
 
     width: 100%;
-    height: 4px;
+    height: 3px;
 
     background:
         linear-gradient(
@@ -2230,11 +2159,10 @@ ul {
             #b52f67
         );
 
-    border-radius: 24px 24px 0 0;
+    border-radius: 20px 20px 0 0;
+
+    z-index: 3;
 }
-
-
-
 
 
 /* =========================================================
@@ -2243,7 +2171,7 @@ ul {
 
 .placement-pattern-section {
     width: 100%;
-    padding: 55px 30px;
+    padding: 50px 80px;
 
     background:plum;
 
@@ -2330,7 +2258,7 @@ ul {
 .placement-title-main {
     color: #713084;
 
-    font-size: 52px;
+    font-size: 32px;
 
     line-height: 1;
 
@@ -2358,7 +2286,7 @@ ul {
 .placement-title-sub {
     color: #465879;
 
-    font-size: 43px;
+    font-size: 33px;
 
     line-height: 1;
 
@@ -2390,7 +2318,7 @@ ul {
 
     color: #000000;
 
-    font-size: 20px;
+    font-size: 18px;
 
     line-height: 1.85;
 
@@ -2686,7 +2614,7 @@ ul {
 
 
 .company-logo {
-    height: 150px;
+    height: 100px;
 
     display: flex;
 
@@ -3684,4 +3612,746 @@ ul {
 
 .footer-social-link.whatsapp{
     background: #25d366;
+}
+
+
+/* ==========================================
+   HEADER 3 - NORMAL
+========================================== */
+
+.video-overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.073);
+
+    z-index: 99990;
+
+    transition: all .3s ease;
+}
+
+
+/* ==========================================
+   HEADER 3 - STICKY AFTER SCROLL
+========================================== */
+
+.header-three-sticky {
+    position: fixed !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100%;
+
+    background: #073b8fd6;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    z-index: 999999 !important;
+}
+
+.video-header-container {
+    width: 100%;
+    max-width: 1500px;
+
+    height: 80px;
+
+    margin: 0 auto;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   DEPARTMENT RAIL
+========================================================= */
+
+.dept-rail-section {
+    position: relative !important;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dept-rail-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* VIEWPORT */
+
+.dept-rail-viewport {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* TRACK */
+
+.dept-rail-track {
+    display: flex !important;
+
+    width: max-content !important;
+
+    gap: 25px;
+
+    /* VERY IMPORTANT */
+    animation: none !important;
+
+    transform: translate3d(0, 0, 0);
+
+    transition: transform .6s ease !important;
+}
+
+
+
+/* =========================================================
+   MAIN ARROWS
+========================================================= */
+
+.slider-arrow {
+    position: absolute !important;
+
+    top: 55% !important;
+
+    width: 55px !important;
+    height: 55px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: none !important;
+    outline: none !important;
+
+    border-radius: 50% !important;
+
+    background: #073b8f !important;
+    color: #ffffff !important;
+
+    font-size: 25px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    cursor: pointer !important;
+
+    z-index: 999999 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+
+    user-select: none;
+
+    transition: .3s ease;
+}
+
+.slider-prev {
+    left: 15px !important;
+}
+
+.slider-next {
+    right: 15px !important;
+}
+
+.slider-arrow:hover {
+    background: #e51d73 !important;
+    transform: translateY(-50%) scale(1.08);
+}
+
+/* IMPORTANT:
+   Don't allow cards to catch pointer events
+*/
+
+.dept-rail-item {
+    pointer-events: none;
+}
+
+.dept-rail-photo,
+.dept-rail-photo img,
+.dept-rail-info {
+    pointer-events: none;
+}
+
+/* =========================================================
+   PROFESSIONAL FIXED ADMISSION MARQUEE
+   COMPACT VERSION
+========================================================= */
+
+.admission-marquee {
+    position: fixed;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 38px;
+    min-height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    background: rgba(4, 36, 92, 0.98);
+
+    border-top: 2px solid #FFD54A;
+
+    box-shadow:
+        0 -4px 18px rgba(0, 0, 0, 0.18);
+
+    z-index: 999999;
+
+    overflow: hidden;
+
+    font-family:
+        "Poppins",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================================================
+   ADMISSION LABEL
+========================================================= */
+
+.admission-label {
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 15px;
+
+    flex-shrink: 0;
+
+    background: #FFD54A;
+
+    color: #04245c;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   LIVE / PULSE DOT
+========================================================= */
+
+.admission-dot {
+    width: 7px;
+    height: 7px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #e51d73;
+
+    box-shadow:
+        0 0 0 0 rgba(229, 29, 115, 0.55);
+
+    animation:
+        admissionPulse 1.7s infinite;
+}
+
+
+@keyframes admissionPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(229, 29, 115, 0.55);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 7px rgba(229, 29, 115, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(229, 29, 115, 0);
+    }
+}
+
+
+/* =========================================================
+   MARQUEE WINDOW
+========================================================= */
+
+.marquee-window {
+    position: relative;
+
+    flex: 1;
+
+    min-width: 0;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT / RIGHT FADE
+========================================================= */
+
+.marquee-window::before,
+.marquee-window::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    width: 35px;
+    height: 100%;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.marquee-window::before {
+    left: 0;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(4, 36, 92, 1),
+            rgba(4, 36, 92, 0)
+        );
+}
+
+
+.marquee-window::after {
+    right: 0;
+
+    background:
+        linear-gradient(
+            to left,
+            rgba(4, 36, 92, 1),
+            rgba(4, 36, 92, 0)
+        );
+}
+
+
+/* =========================================================
+   MARQUEE TRACK
+========================================================= */
+
+.marquee-track {
+    display: flex;
+
+    align-items: center;
+
+    width: max-content;
+
+    height: 100%;
+
+    white-space: nowrap;
+
+    will-change: transform;
+
+    animation:
+        admissionMarquee 25s linear infinite;
+}
+
+
+/* =========================================================
+   MARQUEE TEXT
+========================================================= */
+
+.marquee-track span {
+    display: inline-flex;
+
+    align-items: center;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.25px;
+
+    padding: 0 12px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   MARQUEE SEPARATOR
+========================================================= */
+
+.marquee-track .marquee-separator {
+    color: #FFD54A;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    padding: 0 3px;
+}
+
+
+/* =========================================================
+   MARQUEE ANIMATION
+========================================================= */
+
+@keyframes admissionMarquee {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =========================================================
+   PAUSE ON HOVER
+========================================================= */
+
+.marquee-window:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================================
+   APPLY NOW BUTTON
+========================================================= */
+
+.admission-btn {
+    height: 26px;
+
+    margin-right: 7px;
+
+    padding: 0 12px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    flex-shrink: 0;
+
+    background: #e51d73;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 4px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        all 0.3s ease;
+}
+
+
+/* =========================================================
+   APPLY BUTTON ICON
+========================================================= */
+
+.admission-btn i {
+    font-size: 9px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   APPLY BUTTON HOVER
+========================================================= */
+
+.admission-btn:hover {
+    background: #ff4d99;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 12px rgba(229, 29, 115, 0.35);
+}
+
+
+.admission-btn:hover i {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   BODY FOOTER SAFE SPACE
+========================================================= */
+
+body {
+    padding-bottom: 38px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .admission-label {
+        padding: 0 12px;
+
+        font-size: 9px;
+    }
+
+
+    .marquee-track span {
+        font-size: 10px;
+
+        padding: 0 10px;
+    }
+
+
+    .admission-btn {
+        padding: 0 10px;
+
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .admission-marquee {
+        height: 34px;
+        min-height: 34px;
+
+        border-top-width: 1px;
+    }
+
+
+    .admission-label {
+        padding: 0 9px;
+
+        gap: 5px;
+
+        font-size: 8px;
+
+        letter-spacing: 0.3px;
+    }
+
+
+    .admission-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+
+    .marquee-window::before,
+    .marquee-window::after {
+        width: 20px;
+    }
+
+
+    .marquee-track {
+        animation-duration: 22s;
+    }
+
+
+    .marquee-track span {
+        font-size: 10px;
+
+        padding: 0 9px;
+    }
+
+
+    .marquee-track .marquee-separator {
+        font-size: 12px;
+
+        padding: 0 2px;
+    }
+
+
+    .admission-btn {
+        height: 24px;
+
+        margin-right: 5px;
+
+        padding: 0 9px;
+
+        border-radius: 3px;
+
+        font-size: 8px;
+    }
+
+
+    .admission-btn i {
+        display: none;
+    }
+
+
+    body {
+        padding-bottom: 34px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .admission-marquee {
+        height: 32px;
+        min-height: 32px;
+    }
+
+
+    .admission-label {
+        padding: 0 7px;
+
+        gap: 4px;
+
+        font-size: 7px;
+    }
+
+
+    .admission-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .marquee-window::before,
+    .marquee-window::after {
+        width: 15px;
+    }
+
+
+    .marquee-track {
+        animation-duration: 20s;
+    }
+
+
+    .marquee-track span {
+        font-size: 9px;
+
+        padding: 0 8px;
+    }
+
+
+    .marquee-track .marquee-separator {
+        font-size: 11px;
+
+        padding: 0 2px;
+    }
+
+
+    .admission-btn {
+        height: 22px;
+
+        margin-right: 4px;
+
+        padding: 0 8px;
+
+        font-size: 7px;
+    }
+
+
+    body {
+        padding-bottom: 32px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .admission-label {
+        padding: 0 6px;
+
+        font-size: 6.5px;
+    }
+
+
+    .marquee-track span {
+        font-size: 8px;
+
+        padding: 0 7px;
+    }
+
+
+    .admission-btn {
+        padding: 0 7px;
+
+        font-size: 6.5px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .marquee-track {
+        animation: none;
+    }
+
+    .admission-dot {
+        animation: none;
+    }
+
+    .admission-btn,
+    .admission-btn i {
+        transition: none;
+    }
 }
