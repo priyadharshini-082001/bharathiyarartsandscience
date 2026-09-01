@@ -498,7 +498,7 @@ ul {
 .video-college-text h1 {
     margin: 0;
 
-    font-size:25px;
+    font-size:20px;
 
     line-height: 1;
 
@@ -517,7 +517,7 @@ ul {
 .video-college-text h2 {
     margin: 8px 0 7px;
 
-    font-size: 20px;
+    font-size: 16px;
 
     line-height: 1.15;
 
@@ -3656,7 +3656,7 @@ ul {
     width: 100%;
     max-width: 1500px;
 
-    height: 80px;
+    height: 100px;
 
     margin: 0 auto;
     padding: 5px;
