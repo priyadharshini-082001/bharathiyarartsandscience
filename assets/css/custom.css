@@ -67,7 +67,7 @@ ul {
 .basc-top-bar {
     position: relative;
     width: 100%;
-    height: 54px;
+    height: 64px;
 
     background:rgb(255, 243, 117);
 
@@ -4119,32 +4119,25 @@ ul {
     transform: translateX(3px);
 }
 
+
 /* =========================================================
-   PRELOADER — BHARATHIYAR BACKGROUND
+   PRELOADER MAIN
 ========================================================= */
 
 #preloader {
     position: fixed;
+
     inset: 0;
 
     width: 100%;
     height: 100vh;
     height: 100dvh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     overflow: hidden;
 
-    /* BHARATHIYAR IMAGE — NO OVERLAY */
-    background-image: url("/assets/img/bharathiyar.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000a1;
-    background-blend-mode: overlay;
-    z-index: 9999999;
+    z-index: 999999;
+
+    background: #000;
 
     opacity: 1;
     visibility: visible;
@@ -4156,13 +4149,109 @@ ul {
 
 
 /* =========================================================
-   HIDDEN
+   BACKGROUND IMAGE
 ========================================================= */
 
-#preloader.preloader-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.preloader-bg {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image:
+        url("../img/bharathiyar.jpg");
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    transform: scale(1.03);
+
+    animation:
+        preloaderZoom 8s ease-in-out infinite alternate;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   DARK OVERLAY
+========================================================= */
+
+.preloader-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0.48)
+        );
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   LOGO — TOP LEFT CORNER
+========================================================= */
+
+.preloader-logo-box {
+    position: absolute;
+
+    top: 28px;
+    left: 28px;
+
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 20;
+
+    padding: 5px;
+
+    background: transparent;
+
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    animation:
+        logoEntrance 1.2s ease forwards;
+}
+
+
+/* =========================================================
+   LOGO IMAGE
+========================================================= */
+
+.preloader-logo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    background: transparent;
+
+    border: none;
 }
 
 
@@ -4170,68 +4259,119 @@ ul {
    CENTER CONTENT
 ========================================================= */
 
-.preloader-content {
-    position: relative;
+.preloader-center {
+    position: absolute;
 
-    width: 90%;
-    max-width: 650px;
+    top: 50%;
+    left: 50%;
 
-    display: flex;
-    flex-direction: column;
+    transform:
+        translate(-50%, -50%);
 
-    align-items: center;
-    justify-content: center;
+    width: min(900px, 90%);
 
     text-align: center;
 
-    padding: 20px;
+    z-index: 10;
+
+    animation:
+        contentEntrance 1.2s ease forwards;
 }
 
 
 /* =========================================================
-   MAIN LOGO
+   QUOTE WRAPPER
 ========================================================= */
 
-.preloader-logo {
-    display: block;
+.quote-wrapper {
 
-    width: 150px;
-    height: 150px;
+    display: flex;
 
-    object-fit: contain;
+    flex-direction: column;
 
-    margin: 0 auto 20px;
+    align-items: center;
 
+    justify-content: center;
+
+    gap: 18px;
 }
-
 
 /* =========================================================
    TAMIL QUOTE
 ========================================================= */
 
 .preloader-quote {
-    width: 100%;
 
-    margin: 0 auto 22px;
+    margin: 0;
 
-    text-align: center;
+    padding: 0 20px;
+
+    color: #ffffff;
 
     font-family:
         "Noto Sans Tamil",
         "Latha",
-        "Nirmala UI",
         sans-serif;
 
-    font-size: 20px;
+    /* SMALLER TEXT */
 
-    font-weight: 700;
+    font-size:
+        clamp(16px, 1.8vw, 24px);
 
-    line-height: 1.8;
+    font-weight: 600;
 
-    color: #ffffff;
+    line-height: 1.65;
+
+    letter-spacing: 0.1px;
+
+    text-align: center;
 
     text-shadow:
-        0 1px 3px rgba(255,255,255,0.7);
+        0 3px 10px rgba(0, 0, 0, 0.90),
+        0 1px 3px rgba(0, 0, 0, 0.90);
+}
+
+
+/* =========================================================
+   LOADING AREA
+========================================================= */
+
+.preloader-loading {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   LOADING TEXT
+========================================================= */
+
+.loading-text {
+
+    color:
+        rgba(255, 255, 255, 0.85);
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
 }
 
 
@@ -4239,54 +4379,438 @@ ul {
    LOADING BAR
 ========================================================= */
 
-.preloader-loader {
+.loading-bar {
+
     position: relative;
 
     width: 150px;
-    height: 3px;
+
+    height: 2px;
 
     overflow: hidden;
 
-    margin: 0 auto;
+    background:
+        rgba(255, 255, 255, 0.25);
 
     border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.703);
 }
 
 
-.preloader-loader span {
-    position: absolute;
+/* =========================================================
+   ANIMATED LOADING BAR
+========================================================= */
 
-    top: 0;
-    left: -40%;
+.loading-bar span {
+
+    display: block;
 
     width: 40%;
+
     height: 100%;
+
+    background:
+        #ffffff;
 
     border-radius: 10px;
 
-    background: #ffffff;
-
     animation:
-        preloaderLoading 1.4s
-        ease-in-out infinite;
+        loadingMove 1.5s ease-in-out infinite;
 }
 
 
-@keyframes preloaderLoading {
+/* =========================================================
+   BACKGROUND ZOOM ANIMATION
+========================================================= */
+
+@keyframes preloaderZoom {
 
     0% {
-        left: -40%;
-    }
 
-    50% {
-        left: 50%;
+        transform:
+            scale(1.03);
     }
 
     100% {
-        left: 100%;
+
+        transform:
+            scale(1.10);
     }
 }
 
 
+/* =========================================================
+   LOGO ENTRANCE
+========================================================= */
+
+@keyframes logoEntrance {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(-20px)
+            scale(0.85);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =========================================================
+   CENTER CONTENT ENTRANCE
+========================================================= */
+
+@keyframes contentEntrance {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translate(-50%, -45%);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translate(-50%, -50%);
+    }
+}
+
+
+/* =========================================================
+   LOADING BAR ANIMATION
+========================================================= */
+
+@keyframes loadingMove {
+
+    0% {
+
+        transform:
+            translateX(-150%);
+    }
+
+    50% {
+
+        transform:
+            translateX(100%);
+    }
+
+    100% {
+
+        transform:
+            translateX(350%);
+    }
+}
+
+
+/* =========================================================
+   PRELOADER HIDE
+========================================================= */
+
+#preloader.preloader-hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .preloader-logo-box {
+
+        top: 22px;
+        left: 22px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .preloader-center {
+
+        width: 88%;
+    }
+
+
+    .preloader-quote {
+
+        font-size:
+            clamp(16px, 2.5vw, 21px);
+
+        line-height: 1.65;
+    }
+
+
+    .quote-wrapper {
+
+        gap: 16px;
+    }
+
+
+    .preloader-loading {
+
+        margin-top: 26px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------
+       BACKGROUND
+    ----------------------------------------- */
+
+    .preloader-bg {
+
+        background-position:
+            center center;
+
+        transform:
+            scale(1.05);
+
+        animation:
+            preloaderZoomMobile
+            8s
+            ease-in-out
+            infinite
+            alternate;
+    }
+
+
+    /* -----------------------------------------
+       LOGO
+    ----------------------------------------- */
+
+    .preloader-logo-box {
+
+        top: 15px;
+        left: 15px;
+
+        width: 75px;
+        height: 75px;
+
+        padding: 3px;
+    }
+
+
+    /* -----------------------------------------
+       CENTER
+    ----------------------------------------- */
+
+    .preloader-center {
+
+        width: 94%;
+
+        top: 50%;
+    }
+
+
+    /* -----------------------------------------
+       QUOTE
+    ----------------------------------------- */
+
+    .preloader-quote {
+
+        padding: 0 8px;
+
+        font-size: 17px;
+
+        font-weight: 600;
+
+        line-height: 1.7;
+    }
+
+
+    .quote-wrapper {
+
+        gap: 14px;
+    }
+
+
+    /* -----------------------------------------
+       LOADING
+    ----------------------------------------- */
+
+    .preloader-loading {
+
+        margin-top: 22px;
+
+        gap: 9px;
+    }
+
+
+    .loading-text {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .loading-bar {
+
+        width: 120px;
+
+        height: 2px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .preloader-logo-box {
+
+        top: 12px;
+        left: 12px;
+
+        width: 65px;
+        height: 65px;
+    }
+
+
+    .preloader-center {
+
+        width: 95%;
+    }
+
+
+    .preloader-quote {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+
+        padding: 0 5px;
+    }
+
+
+    .quote-wrapper {
+
+        gap: 12px;
+    }
+
+
+    .preloader-loading {
+
+        margin-top: 20px;
+    }
+
+
+    .loading-text {
+
+        font-size: 7px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .loading-bar {
+
+        width: 105px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .preloader-logo-box {
+
+        top: 10px;
+        left: 10px;
+
+        width: 58px;
+        height: 58px;
+    }
+
+
+    .preloader-quote {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    .quote-line {
+
+        width: 35px;
+    }
+
+
+    .preloader-loading {
+
+        margin-top: 17px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE BACKGROUND ZOOM
+========================================================= */
+
+@keyframes preloaderZoomMobile {
+
+    0% {
+
+        transform:
+            scale(1.05);
+    }
+
+    100% {
+
+        transform:
+            scale(1.10);
+    }
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+   Accessibility
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .preloader-bg,
+    .preloader-logo-box,
+    .preloader-center,
+    .loading-bar span {
+
+        animation: none !important;
+    }
+
+    #preloader {
+
+        transition: none;
+    }
+}
