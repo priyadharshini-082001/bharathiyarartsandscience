@@ -368,9 +368,7 @@ ul {
 
     width: 100%;
 
-    height: 620px;
-
-    min-height: 500px;
+    min-height:700px;
 
     overflow: hidden;
 
@@ -4144,7 +4142,7 @@ ul {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #00000098;
+    background-color: #000000a1;
     background-blend-mode: overlay;
     z-index: 9999999;
 
