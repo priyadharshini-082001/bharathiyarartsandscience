@@ -3487,7 +3487,7 @@
 
         padding: 10px 20px 10px 45px;
 
-        font-size: 14px;
+        font-size: 13px;
 
         border-left: 3px solid transparent;
 
@@ -3511,7 +3511,7 @@
 
         background: #e51d73;
 
-        color: #fff;
+        color: #ffffff;
 
         border-radius: 7px;
     }
@@ -3522,6 +3522,19 @@
 
         color: #ffd54a;
     }
+    
+/* HOVER */
+
+.navbar > a:hover,
+.nav-dropdown > a:hover,
+.navbar > a.active,
+.nav-dropdown > a.active {
+
+    background: rgba(255,255,255,.12);
+
+    color:#e51d73;
+}
+
 
 }
 
