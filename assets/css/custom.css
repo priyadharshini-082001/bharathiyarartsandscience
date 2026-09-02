@@ -1,36 +1,9 @@
 
-
 /* =========================================================
-   ROOT VARIABLES
-========================================================= */
-
-:root {
-    --basc-blue: #073b8f;
-    --basc-blue-dark: #04245c;
-    --basc-blue-light: #0b63c9;
-
-    --basc-pink: #e51d73;
-    --basc-pink-dark: #b90f57;
-    --basc-pink-light: #ff4d99;
-
-    --basc-white: #ffffff;
-    --basc-black: #111111;
-
-    --basc-light-bg: #f6f9ff;
-
-    --basc-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
-
-    --basc-transition: all 0.35s ease;
-}
-
-
-/* =========================================================
-   GLOBAL RESET
+   GLOBAL
 ========================================================= */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -40,549 +13,625 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
-    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
-    background: var(--basc-light-bg);
-    color: var(--basc-black);
-}
-
-img {
-    max-width: 100%;
-    display: block;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 25px;
 }
 
 
 /* =========================================================
-   TOP NAVIGATION BAR
+   HEADER 1 - MARQUEE
 ========================================================= */
 
-.basc-top-bar {
-    position: relative;
+.basc-marquee {
     width: 100%;
-    height: 64px;
+    height: 42px;
 
-    background:rgb(255, 243, 117);
+    display: flex;
+    align-items: center;
+
+    background: #04245c;
+    color: #fff;
+
+    overflow: hidden;
+
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* LATEST */
+
+.marquee-badge {
+    height: 100%;
+    min-width: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #e51d73;
+
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: .8px;
+
+    flex-shrink: 0;
+
+    position: relative;
+    z-index: 5;
+
+}
+
+
+/* MOVING AREA */
+
+.marquee-window {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* CONTENT */
+
+.marquee-content {
+    width: max-content;
+
+    display: inline-flex;
+    align-items: center;
+
+    animation: marqueeMove 35s linear infinite;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+
+/* ITEM */
+
+.marquee-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 18px;
+
+    color: #fff;
+
+    font-size: 12px;
+    font-weight:700;
+}
+
+.marquee-item strong {
+    font-weight: 700;
+}
+
+
+/* ICON */
+
+.marquee-icon {
+    width: 22px;
+    height: 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffd54a;
+}
+
+
+/* APPLY */
+
+.marquee-highlight {
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    background: #ffd54a;
+    color: #04245c;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+/* DOT */
+
+.marquee-dot {
+    width: 5px;
+    height: 5px;
+
+    background: #ffd54a;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+
+@keyframes marqueeMove {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* =========================================================
+   STICKY HEADER
+========================================================= */
+
+.sticky-header-area {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
 
     z-index: 9999;
 }
 
 
 /* =========================================================
-   TOP NAV CONTAINER
+   HEADER 2
 ========================================================= */
 
-.basc-top-container {
+.college-header {
     width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 25px;
+
+    background: #fff;
+
+    border-bottom: 1px solid #e8edf5;
+
+    position: relative;
+    z-index: 100;
+}
+
+
+.college-header-inner {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
 }
 
 
 /* =========================================================
-   MAIN MENU
+   COLLEGE BRAND
 ========================================================= */
 
-.basc-top-menu {
-    width: 100%;
+.college-brand {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    color: #111;
+}
+
+
+/* LOGO */
+
+.college-logo {
+    width: 78px;
+    height: 78px;
+
+    flex: 0 0 78px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
-    margin: 0;
-    padding: 0;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: #fff;
+}
+
+.college-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
 }
 
 
-/* =========================================================
-   MAIN MENU ITEM
-========================================================= */
+/* TITLE */
 
-.basc-top-menu > li {
-    position: relative;
-    display: flex;
-    align-items: center;
+.college-title {
+    min-width: 0;
 }
 
+.college-title h1 {
+    margin: 0 0 5px;
 
-/* =========================================================
-   MAIN MENU LINKS
-========================================================= */
+    color: #073b8f;
 
-.basc-top-menu > li > a {
-    position: relative;
+    font-size: 25px;
+    line-height: 1.25;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 800;
+}
 
-    min-height: 64px;
-
-    padding: 0 17px;
-
+.college-subtitle {
     color: #000000;
 
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 15px;
+}
 
-    letter-spacing: 0.5px;
+.college-affiliation {
+    margin-top: 3px;
 
-    white-space: nowrap;
+    color: #e51d73;
 
-    transition: var(--basc-transition);
+    font-size: 14px;
+    font-weight: 700;
 }
 
 
 /* =========================================================
-   MENU UNDERLINE
+   DESKTOP ADMISSION
 ========================================================= */
 
-.basc-top-menu > li > a::after {
+.header-admission {
+    min-width: 175px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 11px 17px;
+
+    border-radius: 8px;
+
+    background: #073b8f;
+
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.header-admission i {
+    color: #ffd54a;
+    font-size: 19px;
+}
+
+.header-admission span {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-admission small {
+    margin-top: 2px;
+
+    color: #ffd54a;
+
+    font-size: 13px;
+}
+
+.header-admission:hover {
+    background: #e51d73;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 45px;
+    height: 42px;
+
+    padding: 0;
+
+    border: 0;
+    outline: none;
+
+    background: #073b8f;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* HAMBURGER */
+
+.menu-toggle span {
+    width: 21px;
+    height: 2px;
+
+    display: block;
+
+    background: #fff;
+
+    border-radius: 5px;
+
+    transition: .3s ease;
+}
+
+
+/* X */
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   HEADER 3
+========================================================= */
+
+.navbar-wrapper {
+    width: 100%;
+
+    background: #073b8f;
+
+    position: relative;
+    z-index: 90;
+}
+
+
+.navbar-inner {
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 2px;
+}
+
+
+/* MAIN LINKS */
+
+.navbar > a,
+.nav-dropdown > a {
+
+    min-height: 34px;
+
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    position: relative;
+
+    transition: .25s ease;
+}
+
+
+/* HOVER */
+
+.navbar > a:hover,
+.nav-dropdown > a:hover,
+.navbar > a.active,
+.nav-dropdown > a.active {
+
+    background: rgba(255,255,255,.12);
+
+    color: #ffd54a;
+}
+
+
+/* ACTIVE LINE */
+
+.navbar > a.active::after,
+.nav-dropdown > a.active::after {
+
     content: "";
 
     position: absolute;
 
-    left: 50%;
+    left: 14px;
+    right: 14px;
     bottom: 0;
 
-    width: 0;
     height: 3px;
 
-    background: var(--basc-pink);
-
-    transform: translateX(-50%);
-
-    transition: var(--basc-transition);
+    background: #ffd54a;
 }
 
 
 /* =========================================================
-   MENU HOVER
+   DROPDOWN
 ========================================================= */
 
-.basc-top-menu > li:hover > a {
-    color:#cf477d;
-
-    background: rgba(255, 255, 255, 0.07);
+.nav-dropdown {
+    position: relative;
 }
 
 
-.basc-top-menu > li:hover > a::after {
-    width: 70%;
+/* ARROW */
+
+.nav-dropdown > a i {
+    font-size: 9px;
+
+    transition: transform .3s ease;
 }
 
 
-/* =========================================================
-   DROPDOWN ARROW
-========================================================= */
+/* SUBMENU */
 
-.basc-top-dropdown > a {
-    padding-right: 30px !important;
-}
-
-
-.basc-top-dropdown > a::before {
-    content: "\f107";
+.submenu {
 
     position: absolute;
 
-    right: 12px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free";
-    font-weight: 900;
-
-    font-size: 11px;
-
-    color: #000000;
-
-    transition: var(--basc-transition);
-}
-
-
-.basc-top-dropdown:hover > a::before {
-    color: var(--basc-pink-light);
-
-    transform:
-        translateY(-50%)
-        rotate(180deg);
-}
-
-
-/* =========================================================
-   DROPDOWN MENU
-========================================================= */
-
-.basc-top-submenu {
-    position: absolute;
-
-    top: calc(100% + 3px);
+    top: 100%;
     left: 0;
 
-    min-width: 235px;
+    min-width: 220px;
 
     padding: 8px 0;
 
-    background: rgba(255, 255, 255, 0.98);
+    background: #fff;
 
-    border-top: 4px solid var(--basc-pink);
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.20);
+    border-radius: 0 0 8px 8px;
 
     opacity: 0;
     visibility: hidden;
 
-    transform:
-        translateY(15px)
-        scale(0.98);
+    transform: translateY(8px);
 
-    transition:
-        opacity 0.3s ease,
-        visibility 0.3s ease,
-        transform 0.3s ease;
+    transition: .25s ease;
 
     z-index: 99999;
 }
 
 
-/* =========================================================
-   SHOW DROPDOWN
-========================================================= */
+/* SUBMENU LINK */
 
-.basc-top-dropdown:hover > .basc-top-submenu {
-    opacity: 1;
-    visibility: visible;
+.submenu a {
 
-    transform:
-        translateY(0)
-        scale(1);
+    display: block;
+
+    padding: 10px 17px;
+
+    color: #333;
+
+    font-size: 12px;
+
+    border-left: 3px solid transparent;
+
+    transition: .25s ease;
+}
+
+.submenu a:hover,
+.submenu a.active {
+
+    background: #f3f7ff;
+
+    color: #073b8f;
+
+    border-left-color: #e51d73;
+}
+
+
+/* DESKTOP HOVER */
+
+@media (min-width: 992px) {
+
+    .nav-dropdown:hover .submenu {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+    .nav-dropdown:hover > a i {
+
+        transform: rotate(180deg);
+    }
+
 }
 
 
 /* =========================================================
-   DROPDOWN ITEM
+   APPLY
 ========================================================= */
 
-.basc-top-submenu li {
-    position: relative;
+.navbar .nav-apply {
 
-    width: 100%;
+    margin-left: 7px;
+
+    min-height: 38px;
+
+    align-self: center;
+
+    padding: 0 18px;
+
+    border-radius: 6px;
+
+    background: #e51d73;
+
+    color: #fff;
 }
 
+.navbar .nav-apply:hover {
 
-/* =========================================================
-   DROPDOWN LINK
-========================================================= */
+    background: #b90f57;
 
-.basc-top-submenu li a {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    min-height: 45px;
-
-    padding: 10px 20px;
-
-    color: #333333;
-
-    font-size: 13px;
-    font-weight: 500;
-
-    border-bottom: 1px solid #eeeeee;
-
-    transition: var(--basc-transition);
+    color: #fff;
 }
 
-
-.basc-top-submenu li:last-child a {
-    border-bottom: none;
-}
-
-
-/* =========================================================
-   DROPDOWN LEFT LINE
-========================================================= */
-
-.basc-top-submenu li a::before {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    top: 0;
-
-    width: 3px;
-    height: 100%;
-
-    background: var(--basc-pink);
-
-    transform: scaleY(0);
-
-    transform-origin: center;
-
-    transition: var(--basc-transition);
-}
-
-
-/* =========================================================
-   DROPDOWN HOVER
-========================================================= */
-
-.basc-top-submenu li a:hover {
-    color: var(--basc-blue);
-
-    background:
-        linear-gradient(
-            90deg,
-            #f2f7ff,
-            #ffffff
-        );
-
-    padding-left: 27px;
-}
-
-
-.basc-top-submenu li a:hover::before {
-    transform: scaleY(1);
-}
-
-
-/* =========================================================
-   VIDEO BANNER
-========================================================= */
-
-.banner-video {
-    position: relative;
-
-    width: 100%;
-
-    min-height:700px;
-
-    overflow: hidden;
-
-    background: #061b40;
-}
-
-
-/* =========================================================
-   VIDEO ELEMENT
-========================================================= */
-
-.banner-video-element {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    width: 100%;
-    height: 100%;
-
-    min-width: 100%;
-    min-height: 100%;
-
-    object-fit: cover;
-
-    transform: translate(-50%, -50%);
-
-    z-index: 1;
-}
-
-
-/* =========================================================
-   VIDEO OVERLAY HEADER
-========================================================= */
-
-.video-overlay-header {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-
-    padding:0px;
-
-    z-index: 5;
-    background-color: #00000064;
-}
-
-
-/* =========================================================
-   VIDEO HEADER CONTAINER
-========================================================= */
-
-.video-header-container {
-    width: 100%;
-    height: 100px;
-    max-width: 1500px;
-
-    margin: 0 auto;
-
-    padding: 5px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 40px;
-}
-
-
-/* =========================================================
-   LEFT COLLEGE INFORMATION
-========================================================= */
-
-.video-college-info {
-    display: flex;
-
-    align-items: center;
-
-    gap: 22px;
-
-    min-width: 0;
-}
-
-
-/* =========================================================
-   COLLEGE LOGO
-========================================================= */
-
-.video-college-logo {
-    width: 85px;
-    height: 85px;
-
-    flex: 0 0 85px;
-
-
-}
-
-.video-college-logo img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
-
-    border-radius: 50%;
-}
-
-
-/* =========================================================
-   COLLEGE TEXT
-========================================================= */
-
-.video-college-text {
-    color: #ffffff;
-
-    text-shadow:
-        0 3px 12px rgba(0, 0, 0, 0.55);
-}
-
-
-/* =========================================================
-   COLLEGE NAME
-========================================================= */
-
-.video-college-text h1 {
-    margin: 0;
-
-    font-size:20px;
-
-    line-height: 1;
-
-    font-weight: 800;
-
-    letter-spacing: 3px;
-    text-align: center;
-    color: #ffffff;
-}
-
-
-/* =========================================================
-   COLLEGE SUB NAME
-========================================================= */
-
-.video-college-text h2 {
-    margin: 8px 0 7px;
-
-    font-size: 16px;
-
-    line-height: 1.15;
-
-    font-weight: 700;
-
-    letter-spacing: 1.4px;
-
-    color: #ffffff;
-}
-
-/* =========================================================
-   RECOGNITION LOGOS
-========================================================= */
-
-.video-recognition-logos {
-    display: flex;
-
-    align-items: center;
-    justify-content: flex-end;
-
-    gap: 13px;
-
-    flex-wrap: wrap;
-
-    max-width: 500px;
-}
-
-
-/* =========================================================
-   INDIVIDUAL RECOGNITION LOGO
-========================================================= */
-
-.video-recognition-logo {
-    width: 72px;
-    height: 72px;
-
-    padding: 7px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(255, 255, 255, 0.94);
-
-    border: 2px solid rgba(255, 255, 255, 0.85);
-
-    border-radius: 12px;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-}
-
-
-/* =========================================================
-   RECOGNITION IMAGE
-========================================================= */
-
-.video-recognition-logo img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
-}
 
 
 /* =========================================================
@@ -617,7 +666,6 @@ ul {
     border-radius: 12px;
     background: #fff;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
 }
 
 .bharathiyar-image img {
@@ -833,7 +881,7 @@ ul {
 
     border-radius: 4px;
 
-    font-family: "Poppins", sans-serif;
+font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 12px;
     font-weight: 600;
 
@@ -896,7 +944,7 @@ ul {
 
     margin-bottom: 10px;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 18px;
     font-weight: 800;
 
@@ -917,7 +965,7 @@ ul {
 .dept-rail-header h2 {
     margin: 0;
 
-    font-family: "Poppins", sans-serif;
+   font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 45px;
     font-weight: 800;
 
@@ -929,7 +977,7 @@ ul {
 
     margin: 13px auto 0;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 14px;
 
     line-height: 1.8;
@@ -1025,7 +1073,7 @@ ul {
 
     z-index: 5;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 17px;
     font-weight: 800;
 
@@ -1060,7 +1108,7 @@ ul {
 
     z-index: 5;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 18px;
     font-weight: 800;
 
@@ -1099,7 +1147,7 @@ ul {
 
     margin-bottom: 5px;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 13px;
     font-weight: 700;
 
@@ -1111,7 +1159,7 @@ ul {
 .dept-rail-info h3 {
     margin: 0;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
     font-size: 18px;
     font-weight: 700;
 
@@ -1337,7 +1385,7 @@ ul {
 
     color: #ffffff;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
 
     font-size: 40px;
 
@@ -1413,8 +1461,6 @@ ul {
 .featured-news:hover {
     transform: translateY(-6px);
 
-    box-shadow:
-        0 18px 40px rgba(7, 59, 143, 0.12);
 }
 
 
@@ -1474,8 +1520,6 @@ ul {
     font-size: 11px;
     font-weight: 800;
 
-    box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.10);
 }
 
 .featured-label i {
@@ -1511,8 +1555,6 @@ ul {
 
     color: #073b8f;
 
-    box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.15);
 }
 
 .featured-date strong {
@@ -1581,7 +1623,7 @@ ul {
 
     color: #182b4a;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
 
     font-size: 21px;
 
@@ -1670,8 +1712,7 @@ ul {
 .premium-panel:hover {
     transform: translateY(-5px);
 
-    box-shadow:
-        0 18px 40px rgba(7, 59, 143, 0.10);
+
 }
 
 
@@ -1756,7 +1797,7 @@ ul {
 
     color: #1c2e49;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
 
     font-size: 20px;
 
@@ -2166,472 +2207,115 @@ ul {
 /* =========================================================
    PLACEMENT PATTERN SECTION
 ========================================================= */
-
-.placement-pattern-section {
-    width: 100%;
-    padding: 50px 80px;
-
-    background:plum;
-
-    box-sizing: border-box;
-
-    font-family: "Poppins", sans-serif;
-}
-
-
 /* =========================================================
-   MAIN CONTAINER
+   PLACEMENT COMPANY LOGOS
+   BHARATHIYAR ARTS & SCIENCE COLLEGE FOR WOMEN
 ========================================================= */
 
-.placement-pattern-container {
-    position: relative;
+.placement-companies {
+    width: 100%;
+    padding: 55px 0 60px;
+    background: #e4ffdf;
+    overflow: hidden;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.companies-title {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+}
+
+.companies-title span {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #16823b;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.companies-title h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #123b24;
+}
+
+.companies-title p {
+    max-width: 750px;
     margin: auto;
-
-    padding:20px;
-
-    background: rgba(255,255,255,.92);
-
-    border: 1px solid #eadfec;
-
-    border-radius: 42px;
-
-
-    overflow: hidden;
-}
-
-
-/* =========================================================
-   FAINT BACKGROUND WORD
-========================================================= */
-
-.placement-bg-word {
-    position: absolute;
-
-    top: -42px;
-    right: 40px;
-
-    z-index: 0;
-
-    color: rgba(101,48,119,.035);
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 190px;
-
-    line-height: 1;
-
-    font-weight: 800;
-
-    letter-spacing: -8px;
-
-    white-space: nowrap;
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.placement-pattern-heading {
-    position: relative;
-
-    z-index: 2;
-
-    text-align: center;
-}
-
-
-.placement-main-title {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 28px;
-}
-
-
-.placement-title-main {
-    color: #713084;
-
-    font-size: 32px;
-
-    line-height: 1;
-
-    font-weight: 800;
-
-    letter-spacing: 1px;
-}
-
-
-.placement-title-line {
-    width: 9px;
-    height: 76px;
-
-    background:
-        linear-gradient(
-            to bottom,
-            #e87519,
-            #d85819
-        );
-
-    border-radius: 2px;
-}
-
-
-.placement-title-sub {
-    color: #465879;
-
-    font-size: 33px;
-
-    line-height: 1;
-
-    font-weight: 500;
-
-    letter-spacing: .5px;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.placement-description {
-    position: relative;
-
-    z-index: 2;
-
-    max-width: 1380px;
-
-    margin: 30px auto 54px;
-
-    text-align: center;
-}
-
-
-.placement-description p {
-    margin: 0;
-
-    color: #000000;
-
-    font-size: 18px;
-
-    line-height: 1.85;
-
-    font-weight: 400;
-}
-
-
-/* =========================================================
-   CARD ROW
-========================================================= */
-
-.placement-card-row {
-    position: relative;
-
-    z-index: 3;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(5, 1fr);
-
-    gap: 24px;
-
-    align-items: stretch;
-}
-
-
-/* =========================================================
-   CARD
-========================================================= */
-
-.placement-card {
-    position: relative;
-
-    min-height: 265px;
-
-    padding: 13px;
-
-    border-radius: 17px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 14px 28px rgba(35,35,35,.12);
-
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
-}
-
-
-.placement-card:hover {
-    transform: translateY(-9px);
-
-    box-shadow:
-        0 22px 40px rgba(35,35,35,.18);
-}
-
-
-/* =========================================================
-   CARD COLORS
-========================================================= */
-
-.placement-purple {
-    background:
-        linear-gradient(
-            145deg,
-            #8b4aa0,
-            #70247f
-        );
-}
-
-
-.placement-orange {
-    background:
-        linear-gradient(
-            145deg,
-            #f69232,
-            #e96d0a
-        );
-}
-
-
-.placement-teal {
-    background:
-        linear-gradient(
-            145deg,
-            #29938d,
-            #087c76
-        );
-}
-
-
-.placement-gold {
-    background:
-        linear-gradient(
-            145deg,
-            #dfa927,
-            #ca9000
-        );
-}
-
-
-.placement-blue {
-    background:
-        linear-gradient(
-            145deg,
-            #4a719e,
-            #2d5988
-        );
-}
-
-
-/* =========================================================
-   NUMBER
-========================================================= */
-
-.placement-card-number {
-    position: relative;
-
-    z-index: 3;
-
-    text-align: center;
-
-    padding: 9px 0 5px;
-
-    color: rgba(255,255,255,.85);
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-}
-
-
-/* =========================================================
-   IMAGE
-========================================================= */
-
-.placement-card-image {
-    position: relative;
-
-    width: 100%;
-    height: 125px;
-
-    overflow: hidden;
-
-    border-radius: 11px;
-
-    background: #ffffff;
-}
-
-
-.placement-card-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition:
-        transform .55s ease;
-}
-
-
-.placement-card:hover
-.placement-card-image img {
-    transform: scale(1.08);
-}
-
-
-/* =========================================================
-   IMAGE OVERLAY
-========================================================= */
-
-.placement-card-image::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            to top,
-            rgba(0,0,0,.12),
-            transparent
-        );
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.placement-card-content {
-    padding: 17px 9px 8px;
-
-    text-align: center;
-}
-
-
-.placement-card-content h3 {
-    margin: 0;
-
-    color: #ffffff;
-
     font-size: 15px;
-
-    line-height: 1.35;
-
-    font-weight: 800;
-}
-
-
-.placement-card-content p {
-    margin: 8px 0 0;
-
-    color: rgba(255,255,255,.78);
-
-    font-size: 10px;
-
-    line-height: 1.55;
+    line-height: 1.7;
+    color: #506458;
 }
 
 
 /* =========================================================
-   RECRUITING PARTNERS
+   SLIDER OUTER AREA
 ========================================================= */
 
-.recruiting-partners {
+.company-logo-slider {
+    width: 100%;
+    overflow: hidden;
     position: relative;
-
-    z-index: 3;
-
-    margin-top: 55px;
-
-    padding-top: 28px;
-
-    border-top:
-        1px solid #eee7f0;
-}
-
-
-.recruiting-title {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 15px;
-
-    margin-bottom: 24px;
-}
-
-
-.recruiting-title span {
-    width: 38px;
-    height: 1px;
-
-    background: #d66a8b;
-}
-
-
-.recruiting-title strong {
-    color: #713084;
-
-    font-size: 14px;
-
-    letter-spacing: 2px;
-
-    font-weight: 800;
+    padding: 10px 0;
 }
 
 
 /* =========================================================
-   COMPANY LOGOS
+   MOVING TRACK
 ========================================================= */
 
-.company-logo-strip {
-    display: grid;
+.company-logo-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
 
-    grid-template-columns:
-        repeat(6, 1fr);
+    /* Important for seamless scrolling */
+    animation: companyLogoScroll 25s linear infinite;
 
-    gap: 15px;
+    will-change: transform;
 }
 
+
+/* =========================================================
+   COMPANY LOGO CARD
+========================================================= */
 
 .company-logo {
-    height: 100px;
+    width: 190px;
+    height: 105px;
+
+    margin: 0 12px;
+
+    flex: 0 0 190px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     padding: 15px;
 
-    background: #ffffff;
-
-    border: 1px solid #eee9f1;
-
-    border-radius: 12px;
+    border: 1px solid rgba(22, 130, 59, 0.10);
 
     transition:
-        transform .3s ease,
-        box-shadow .3s ease;
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
+
+/* =========================================================
+   LOGO IMAGE
+========================================================= */
 
 .company-logo img {
     width: 100%;
@@ -2641,19 +2325,47 @@ ul {
 
     display: block;
 
-    transition:
-        transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
+
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
 
 .company-logo:hover {
     transform: translateY(-5px);
 
 }
 
-
 .company-logo:hover img {
     transform: scale(1.06);
+}
+
+
+/* =========================================================
+   AUTOMATIC LEFT SCROLL
+========================================================= */
+
+@keyframes companyLogoScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* =========================================================
+   PAUSE WHEN MOUSE IS OVER SLIDER
+========================================================= */
+
+.company-logo-slider:hover .company-logo-track {
+    animation-play-state: paused;
 }
 
 
@@ -2998,9 +2710,6 @@ ul {
 
     box-sizing: border-box;
 
-    box-shadow:
-        0 15px 45px rgba(7, 59, 143, 0.08);
-
     overflow: hidden;
 
     transition:
@@ -3016,8 +2725,6 @@ ul {
 .notices-panel:hover {
     transform: translateY(-4px);
 
-    box-shadow:
-        0 22px 55px rgba(7, 59, 143, 0.13);
 }
 
 
@@ -3084,8 +2791,6 @@ ul {
 
     font-size: 21px;
 
-    box-shadow:
-        0 8px 20px rgba(181, 47, 103, 0.10);
 }
 
 
@@ -3411,8 +3116,6 @@ ul {
 
     letter-spacing: .8px;
 
-    box-shadow:
-        0 4px 10px rgba(181, 47, 103, .16);
 }
 
 
@@ -3783,339 +3486,524 @@ ul {
 }
 
 /* =========================================================
-   PROFESSIONAL FIXED ADMISSION MARQUEE
-   COMPACT VERSION
+   VISION • MISSION • MOTTO
+   BHARATHIYAR ARTS & SCIENCE COLLEGE FOR WOMEN
 ========================================================= */
 
-.admission-marquee {
-    position: fixed;
-
-    left: 0;
-    bottom: 0;
-
+.vmm-section {
+    position: relative;
     width: 100%;
-    height: 38px;
-    min-height: 38px;
-
-    display: flex;
-    align-items: center;
-
-    background: rgba(4, 36, 92, 0.98);
-
-    border-top: 2px solid #FFD54A;
-
-    box-shadow:
-        0 -4px 18px rgba(0, 0, 0, 0.18);
-
-    z-index: 999999;
-
+    padding: 50px 0;
+    background: #e4ffdf;
     overflow: hidden;
-
-    font-family:
-        "Poppins",
-        "Segoe UI",
-        Arial,
-        sans-serif;
 }
 
 
 /* =========================================================
-   ADMISSION LABEL
+   CONTAINER
 ========================================================= */
 
-.admission-label {
-    position: relative;
+.vmm-section .container {
+    width: 100%;
+    margin: auto;
+}
 
-    height: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* =========================================================
+   SECTION HEADING
+========================================================= */
 
-    gap: 7px;
+.vmm-heading {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
 
-    padding: 0 15px;
-
-    flex-shrink: 0;
-
-    background: #FFD54A;
-
-    color: #04245c;
+.vmm-heading span {
+    display: inline-block;
+    margin-bottom: 10px;
 
     font-size: 13px;
     font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 
-    letter-spacing: 0.5px;
+    color: #e51d73;
+}
 
-    white-space: nowrap;
+.vmm-heading h2 {
+    margin: 0 0 15px;
 
-    z-index: 5;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 800;
+
+    color: #073b8f;
+}
+
+.vmm-heading p {
+    margin: 0 auto;
+
+    max-width: 700px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #000000;
 }
 
 
 /* =========================================================
-   LIVE / PULSE DOT
+   THREE CARD GRID
 ========================================================= */
 
-.admission-dot {
-    width: 7px;
-    height: 7px;
+.vmm-grid {
+    display: grid;
 
-    flex-shrink: 0;
+    grid-template-columns:
+        repeat(3, 1fr);
 
-    border-radius: 50%;
-
-    background: #e51d73;
-
-    box-shadow:
-        0 0 0 0 rgba(229, 29, 115, 0.55);
-
-    animation:
-        admissionPulse 1.7s infinite;
-}
-
-
-@keyframes admissionPulse {
-
-    0% {
-        box-shadow:
-            0 0 0 0 rgba(229, 29, 115, 0.55);
-    }
-
-    70% {
-        box-shadow:
-            0 0 0 7px rgba(229, 29, 115, 0);
-    }
-
-    100% {
-        box-shadow:
-            0 0 0 0 rgba(229, 29, 115, 0);
-    }
+    gap: 25px;
 }
 
 
 /* =========================================================
-   MARQUEE WINDOW
+   CARD
 ========================================================= */
 
-.marquee-window {
+.vmm-card {
     position: relative;
 
-    flex: 1;
+    background: #ffffff;
 
-    min-width: 0;
+    padding: 38px 30px 35px;
 
-    height: 100%;
+    border-radius: 20px;
 
-    display: flex;
-    align-items: center;
+    text-align: center;
+
+    border: 1px solid rgba(7, 59, 143, 0.08);
 
     overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 
 /* =========================================================
-   LEFT / RIGHT FADE
+   TOP DECORATIVE LINE
 ========================================================= */
 
-.marquee-window::before,
-.marquee-window::after {
+.vmm-card::before {
     content: "";
 
     position: absolute;
 
     top: 0;
-
-    width: 35px;
-    height: 100%;
-
-    z-index: 2;
-
-    pointer-events: none;
-}
-
-
-.marquee-window::before {
     left: 0;
 
-    background:
-        linear-gradient(
-            to right,
-            rgba(4, 36, 92, 1),
-            rgba(4, 36, 92, 0)
-        );
-}
+    width: 100%;
+    height: 4px;
 
-
-.marquee-window::after {
-    right: 0;
-
-    background:
-        linear-gradient(
-            to left,
-            rgba(4, 36, 92, 1),
-            rgba(4, 36, 92, 0)
-        );
+    background: linear-gradient(
+        90deg,
+        #073b8f,
+        #e51d73
+    );
 }
 
 
 /* =========================================================
-   MARQUEE TRACK
+   HOVER
 ========================================================= */
 
-.marquee-track {
+.vmm-card:hover {
+    transform: translateY(-10px);
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.vmm-icon {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 22px;
+
     display: flex;
-
-    align-items: center;
-
-    width: max-content;
-
-    height: 100%;
-
-    white-space: nowrap;
-
-    will-change: transform;
-
-    animation:
-        admissionMarquee 25s linear infinite;
-}
-
-
-/* =========================================================
-   MARQUEE TEXT
-========================================================= */
-
-.marquee-track span {
-    display: inline-flex;
-
-    align-items: center;
-
-    color: #ffffff;
-
-    font-size: 13px;
-
-    font-weight: 500;
-
-    letter-spacing: 0.25px;
-
-    padding: 0 12px;
-
-    line-height: 1;
-}
-
-
-/* =========================================================
-   MARQUEE SEPARATOR
-========================================================= */
-
-.marquee-track .marquee-separator {
-    color: #FFD54A;
-
-    font-size: 13px;
-
-    font-weight: 700;
-
-    padding: 0 3px;
-}
-
-
-/* =========================================================
-   MARQUEE ANIMATION
-========================================================= */
-
-@keyframes admissionMarquee {
-
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-
-/* =========================================================
-   PAUSE ON HOVER
-========================================================= */
-
-.marquee-window:hover .marquee-track {
-    animation-play-state: paused;
-}
-
-
-/* =========================================================
-   APPLY NOW BUTTON
-========================================================= */
-
-.admission-btn {
-    height: 26px;
-
-    margin-right: 7px;
-
-    padding: 0 12px;
-
-    display: inline-flex;
-
     align-items: center;
     justify-content: center;
 
-    gap: 5px;
+    border-radius: 50%;
+
+    background: #eef4ff;
+
+    color: #073b8f;
+
+    font-size: 28px;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        color 0.4s ease;
+}
+
+.vmm-card:hover .vmm-icon {
+    transform: scale(1.08) rotate(5deg);
+
+    background: #073b8f;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.vmm-content {
+    position: relative;
+}
+
+.vmm-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: #e51d73;
+
+    text-transform: uppercase;
+}
+
+.vmm-content h3 {
+    margin: 0 0 16px;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #073b8f;
+}
+
+.vmm-content p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #000000;
+    text-align: justify;
+}
+
+
+/* =========================================================
+   MOTTO TEXT
+========================================================= */
+
+.motto-text {
+    margin-bottom: 15px !important;
+
+    font-size: 21px !important;
+
+    font-weight: 800;
+
+    line-height: 1.5 !important;
+
+    color: #e51d73 !important;
+}
+
+
+/* =========================================================
+   DIFFERENT ICON BACKGROUNDS
+========================================================= */
+
+.vision-card .vmm-icon {
+    background: #eef4ff;
+}
+
+.mission-card .vmm-icon {
+    background: #fff0f6;
+    color: #e51d73;
+}
+
+.motto-card .vmm-icon {
+    background: #fff8e7;
+    color: #c58a00;
+}
+
+.mission-card:hover .vmm-icon,
+.motto-card:hover .vmm-icon {
+    background: #073b8f;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   COLLEGE COUNTS — MODERN COMPACT STYLE
+   BHARATHIYAR ARTS & SCIENCE COLLEGE FOR WOMEN
+========================================================= */
+
+.college-count-mini {
+    position: relative;
+    width: 100%;
+    padding: 50px 10px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP DECORATION
+========================================================= */
+
+.college-count-mini::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #073b8f,
+        #e51d73,
+        #073b8f
+    );
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.count-mini-container {
+    width: 92%;
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.count-mini-heading {
+    text-align: center;
+
+    margin-bottom: 22px;
+}
+
+.count-mini-heading span {
+    display: inline-block;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+
+    color: #e51d73;
+
+    margin-bottom: 4px;
+}
+
+.count-mini-heading h2 {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    color: #073b8f;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.count-mini-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.count-mini-card {
+    position: relative;
+
+    min-height:120px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 13px 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e7edf7;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+
+/* Left accent */
+
+.count-mini-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 12px;
+    bottom: 12px;
+
+    width: 3px;
+
+    border-radius: 0 5px 5px 0;
+
+    background: #073b8f;
+}
+
+
+/* Hover */
+
+.count-mini-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(229,29,115,.25);
+
+    box-shadow:
+        0 10px 25px rgba(7,59,143,.12);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.count-mini-icon {
+    width: 43px;
+    height: 43px;
 
     flex-shrink: 0;
 
-    background: #e51d73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin-right: 12px;
+
+    border-radius: 10px;
+
+    background: #f0f5ff;
+
+    color: #073b8f;
+
+    font-size: 17px;
+
+    transition: .3s ease;
+}
+
+.count-mini-card:hover .count-mini-icon {
+    background: #073b8f;
     color: #ffffff;
 
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
 
-    border-radius: 4px;
 
-    font-size: 13px;
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.count-mini-number {
+    display: flex;
+    align-items: baseline;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    color: #073b8f;
+}
+
+
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.count-mini-card h3 {
+    margin: 5px 0 0;
+
+    font-size: 14px;
 
     font-weight: 700;
 
-    letter-spacing: 0.2px;
-
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    transition:
-        all 0.3s ease;
+    color: #000000;
 }
 
 
 /* =========================================================
-   APPLY BUTTON ICON
+   DIFFERENT CARD ACCENTS
 ========================================================= */
 
-.admission-btn i {
-    font-size: 9px;
-
-    transition:
-        transform 0.3s ease;
+.count-mini-card:nth-child(2)::before {
+    background: #e51d73;
 }
 
-
-/* =========================================================
-   APPLY BUTTON HOVER
-========================================================= */
-
-.admission-btn:hover {
-    background: #ff4d99;
-
-    color: #ffffff;
-
-    transform: translateY(-1px);
-
-    box-shadow:
-        0 4px 12px rgba(229, 29, 115, 0.35);
+.count-mini-card:nth-child(2) .count-mini-icon {
+    background: #fff0f6;
+    color: #e51d73;
 }
 
-
-.admission-btn:hover i {
-    transform: translateX(3px);
+.count-mini-card:nth-child(3)::before {
+    background: #16a34a;
 }
 
+.count-mini-card:nth-child(3) .count-mini-icon {
+    background: #effaf3;
+    color: #16a34a;
+}
+
+.count-mini-card:nth-child(4)::before {
+    background: #d89b00;
+}
+
+.count-mini-card:nth-child(4) .count-mini-icon {
+    background: #fff8e5;
+    color: #c58a00;
+}
