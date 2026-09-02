@@ -3151,7 +3151,7 @@
     }
 
     .vmm-content p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 1.7;
     }
 
@@ -3487,13 +3487,13 @@
 
         padding: 10px 20px 10px 45px;
 
-        font-size: 12px;
+        font-size: 14px;
 
         border-left: 3px solid transparent;
 
         border-bottom: 1px solid #e9edf4;
 
-        color: #555;
+        color: #000000;
     }
 
 
@@ -3557,7 +3557,7 @@
 
     .college-title h1 {
 
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .aff-logo{
@@ -3566,13 +3566,13 @@
 
     .college-subtitle {
 
-        font-size: 10.5px;
+        font-size: 9px;
     }
 
 
     .college-affiliation {
 
-        font-size: 10px;
+        font-size: 9px;
     }
 
 
@@ -3614,14 +3614,14 @@
 
     .college-title h1 {
 
-        font-size: 10px;
+        font-size: 9px;
 
     }
 
 
     .college-subtitle {
 
-        font-size: 9px;
+        font-size: 8.5px;
     }
 
     .aff-logo{
