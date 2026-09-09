@@ -1028,9 +1028,9 @@ font-family: "Noto Sans Tamil", "Latha", sans-serif;
 ========================================================= */
 
 .dept-rail-item {
-    width:400px;
+    width:320px;
 
-    flex: 0 0 400px;
+    flex: 0 0 320px;
 
     position: relative;
 }
@@ -1042,8 +1042,8 @@ font-family: "Noto Sans Tamil", "Latha", sans-serif;
 
 .dept-rail-photo {
     position: relative;
-    width:400px;
-    height: 350px;
+    width:320px;
+    height: 320px;
     overflow: hidden;
     background: #dfe6f0;
 
@@ -1129,7 +1129,7 @@ font-family: "Noto Sans Tamil", "Latha", sans-serif;
 .dept-rail-info {
     position: relative;
 
-    margin: -32px 15px 0;
+    margin: 0px 15px 0;
 
     min-height: 130px;
 
