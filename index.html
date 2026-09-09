@@ -169,17 +169,18 @@
 
                     <div class="college-logo">
 
-                        <img src="assets/logo/logo.jpeg" alt="Bharathiyar Arts and Science College for Women">
+                        <img src="assets/logo/logo.jpeg" alt="Bharathiyar Arts
+                         and Science College for Women">
 
                     </div>
 
                     <div class="college-title">
 
                         <h1>
-                            Bharathiyar Arts and Science College for Women
+                           Bharathiyar Arts & Science College for Women Autonomous
                         </h1>
    <div class="college-affiliation" style="text-align: center;">
-                          (Autonomous) Affiliated to Periyar University
+                           Affiliated to Periyar University
                         </div>
 
                         <div class="college-subtitle" style="text-align: center;">
@@ -190,7 +191,7 @@
                     </div>
 
                 </a>
-                <img src="assets/logo/big.webp" alt="" style="width:300px; height: 100px; margin-left:20px;"
+                <img src="assets/logo/big.webp" alt="" style="width:280px; height:100px; margin-left:10px;"
                     class="aff-logo">
 
                 <!-- DESKTOP ADMISSION -->
@@ -445,21 +446,23 @@
     <div class="college-slider-wrapper">
 
         <!-- SLIDE 1 -->
-        <div class="college-slide college-slide-active">
+                 <div class="college-slide  college-slide-active">
+            <img src="assets/img/infra/infra6.png"
+                 alt="College Arts Campus">
+        </div>
+
+                <div class="college-slide">
+            <img src="assets/img/infra/infra5.png"
+                 alt="College Arts Campus">
+        </div>
+
+        <div class="college-slide">
             <img src="assets/img/infra/infra1.jpg"
                  alt="College Green Campus">
         </div>
 
         <!-- SLIDE 2 -->
-        <div class="college-slide">
-            <img src="assets/img/infra/infra5.png"
-                 alt="College Arts Campus">
-        </div>
 
-                <div class="college-slide">
-            <img src="assets/img/infra/infra6.png"
-                 alt="College Arts Campus">
-        </div>
                 <div class="college-slide">
             <img src="assets/img/infra/infra4.png"
                  alt="College Arts Campus">
@@ -525,6 +528,26 @@
     background: #fff;
 }
 
+
+.college-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 1.5s ease-in-out,
+        visibility 1.5s ease-in-out;
+}
+
+.college-slide-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
 
 /* =========================================================
    SLIDER WRAPPER
@@ -865,40 +888,27 @@
 
 </style>
 
-
 <script>
-
 document.addEventListener("DOMContentLoaded", function () {
 
-    const slider =
-        document.getElementById("collegeImageSlider");
+    const slider = document.getElementById("collegeImageSlider");
 
     if (!slider) return;
 
-
-    const slides =
-        slider.querySelectorAll(".college-slide");
-
-    const dots =
-        slider.querySelectorAll(".college-slider-dot");
-
-    const previous =
-        slider.querySelector(".college-slider-prev");
-
-    const next =
-        slider.querySelector(".college-slider-next");
-
+    const slides = slider.querySelectorAll(".college-slide");
+    const dots = slider.querySelectorAll(".college-slider-dot");
+    const previous = slider.querySelector(".college-slider-prev");
+    const next = slider.querySelector(".college-slider-next");
 
     let currentSlide = 0;
-
     let autoSlide;
-
 
     /* =====================================================
        SHOW SLIDE
     ===================================================== */
-
     function showSlide(index) {
+
+        if (slides.length === 0) return;
 
         if (index >= slides.length) {
             index = 0;
@@ -908,100 +918,70 @@ document.addEventListener("DOMContentLoaded", function () {
             index = slides.length - 1;
         }
 
-
         currentSlide = index;
 
-
-        slides.forEach(function (slide) {
-
-            slide.classList.remove(
-                "college-slide-active"
+        slides.forEach(function (slide, i) {
+            slide.classList.toggle(
+                "college-slide-active",
+                i === currentSlide
             );
-
         });
 
-
-        dots.forEach(function (dot) {
-
-            dot.classList.remove("active");
-
-        });
-
-
-        slides[currentSlide].classList.add(
-            "college-slide-active"
-        );
-
-
-        if (dots[currentSlide]) {
-
-            dots[currentSlide].classList.add(
-                "active"
+        dots.forEach(function (dot, i) {
+            dot.classList.toggle(
+                "active",
+                i === currentSlide
             );
-
-        }
-
+        });
     }
 
 
     /* =====================================================
-       NEXT
+       NEXT SLIDE
     ===================================================== */
-
     function nextSlide() {
-
         showSlide(currentSlide + 1);
-
     }
 
 
     /* =====================================================
-       PREVIOUS
+       PREVIOUS SLIDE
     ===================================================== */
-
     function previousSlide() {
-
         showSlide(currentSlide - 1);
-
     }
 
 
     /* =====================================================
        NEXT BUTTON
     ===================================================== */
-
-    next.addEventListener("click", function () {
-
-        nextSlide();
-
-        restartAutoSlide();
-
-    });
+    if (next) {
+        next.addEventListener("click", function () {
+            nextSlide();
+            restartAutoSlide();
+        });
+    }
 
 
     /* =====================================================
        PREVIOUS BUTTON
     ===================================================== */
-
-    previous.addEventListener("click", function () {
-
-        previousSlide();
-
-        restartAutoSlide();
-
-    });
+    if (previous) {
+        previous.addEventListener("click", function () {
+            previousSlide();
+            restartAutoSlide();
+        });
+    }
 
 
     /* =====================================================
        DOTS
     ===================================================== */
-
     dots.forEach(function (dot, index) {
 
         dot.addEventListener("click", function () {
 
             showSlide(index);
-
             restartAutoSlide();
 
         });
@@ -1011,65 +991,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* =====================================================
        AUTO SLIDER
+       4 SECONDS
     ===================================================== */
-
     function startAutoSlide() {
 
+        clearInterval(autoSlide);
+
         autoSlide = setInterval(function () {
-
             nextSlide();
-
-        }, 5000);
+        }, 4000);
 
     }
 
 
+    /* =====================================================
+       RESTART AUTO SLIDER
+    ===================================================== */
     function restartAutoSlide() {
 
         clearInterval(autoSlide);
-
         startAutoSlide();
 
     }
 
 
     /* =====================================================
-       INITIAL
+       INITIAL SLIDE
     ===================================================== */
-
     showSlide(0);
-
     startAutoSlide();
 
 
     /* =====================================================
        PAUSE ON HOVER
     ===================================================== */
-
-    slider.addEventListener(
-        "mouseenter",
-        function () {
-
-            clearInterval(autoSlide);
-
-        }
-    );
+    slider.addEventListener("mouseenter", function () {
+        clearInterval(autoSlide);
+    });
 
 
-    slider.addEventListener(
-        "mouseleave",
-        function () {
-
-            startAutoSlide();
-
-        }
-    );
+    slider.addEventListener("mouseleave", function () {
+        startAutoSlide();
+    });
 
 });
-
 </script>
-
-
 
 
         <!--==============================
@@ -1376,7 +1342,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div>
                     <div class="count-mini-number">
-                        <span class="counter" data-target="1500">0</span>+
+                        <span class="counter" data-target="3055">0</span>+
                     </div>
                     <h3>Students</h3>
                 </div>
@@ -1391,7 +1357,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div>
                     <div class="count-mini-number">
-                        <span class="counter" data-target="75">0</span>+
+                        <span class="counter" data-target="184">0</span>+
                     </div>
                     <h3>Faculty</h3>
                 </div>
@@ -1406,7 +1372,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div>
                     <div class="count-mini-number">
-                        <span class="counter" data-target="15">0</span>+
+                        <span class="counter" data-target="36">0</span>+
                     </div>
                     <h3>Courses</h3>
                 </div>
@@ -1421,7 +1387,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div>
                     <div class="count-mini-number">
-                        <span class="counter" data-target="10">0</span>+
+                        <span class="counter" data-target="29">0</span>+
                     </div>
                     <h3>Years Excellence</h3>
                 </div>
@@ -1563,9 +1529,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 <h3>Tamil</h3>
 
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
 
                             </div>
 
@@ -1588,9 +1552,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 <h3>English</h3>
 
-                                <div class="dept-rail-arrow">
+                               <!--      <div class="dept-rail-arrow">
                                     <i class="fas fa-arrow-right"></i>
-                                </div>
+                                </div>  -->
+
 
                             </div>
 
@@ -1618,9 +1583,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 <h3>Commerce</h3>
 
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
 
                             </div>
 
@@ -1643,10 +1605,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 <h3>Business Administration</h3>
 
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-
                             </div>
 
                         </article>
@@ -1667,10 +1625,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <span>B.A</span>
 
                                 <h3>History</h3>
-
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
 
                             </div>
 
@@ -1696,10 +1650,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 <h3>Mathametics </h3>
 
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-
                             </div>
 
                         </article>
@@ -1722,11 +1672,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                     M.Phil.,</span>
 
                                 <h3>Physics</h3>
-
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-
                             </div>
 
                         </article>
@@ -1750,11 +1695,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 <h3>Chemistry</h3>
 
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-
-
                         </article>
 
 
@@ -1769,9 +1709,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <span> B.Sc-(AI,Cyber Security)<br>
                                     M.Sc(Data Analytics)M.Phil</span>
                                 <h3>Computer Science</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -1788,9 +1726,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="dept-rail-info">
                                 <span>B.Sc</span>
                                 <h3>Fashion Technology</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -1806,9 +1742,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="dept-rail-info">
                                 <span>B.Sc</span>
                                 <h3>Botany</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -1823,9 +1757,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="dept-rail-info">
                                 <span>Bsc</span>
                                 <h3>Nutrition and Dietetics</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -1842,9 +1774,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <span>B.Sc.,
                                     M.Sc.,</span>
                                 <h3>Zoology</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -1859,9 +1789,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="dept-rail-info">
                                 <span>BSc</span>
                                 <h3>Microbiology</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -1875,9 +1803,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="dept-rail-info">
                                 <span>Bsc</span>
                                 <h3>Statics</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -1892,9 +1818,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="dept-rail-info">
                                 <span>Bsc</span>
                                 <h3>Biotechnology</h3>
-                                <div class="dept-rail-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
+
                             </div>
 
                         </article>
@@ -2457,8 +2381,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="row">
                     <div class="rs-campus-life-wrapper">
-                        <div class="swiper" data-clone-slides="false" data-loop="true" data-speed="1500"
-                            data-autoplay="true" data-dots-dynamic="false" data-effect="false" data-delay="2000"
+                        <div class="swiper" data-clone-slides="false" data-loop="true" data-speed="5000"
+                            data-autoplay="true" data-dots-dynamic="false" data-effect="false" data-delay="1000"
                             data-item="3" data-item-xl="2" data-item-lg="2" data-item-md="2" data-item-sm="1"
                             data-item-xs="1" data-margin="30">
                             <div class="swiper-wrapper">
@@ -2502,7 +2426,26 @@ document.addEventListener("DOMContentLoaded", function () {
                                         </div>
                                     </div>
                                 </div>
-
+      <div class="swiper-slide">
+                                    <div class="rs-campus-life-item">
+                                        <div class="rs-campus-life-thumb">
+                                            <img src="assets/img/acheivement/best.jpeg" alt="image">
+                                            <div class="rs-campus-life-content">
+                                                <h5 class="rs-campus-life-title">Sports & Wellness</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                      <div class="swiper-slide">
+                                    <div class="rs-campus-life-item">
+                                        <div class="rs-campus-life-thumb">
+                                            <img src="assets/img/acheivement/award.jpeg" alt="image">
+                                            <div class="rs-campus-life-content">
+                                                <h5 class="rs-campus-life-title">Sports & Wellness</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2673,6 +2616,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
         <!-- gallery area start -->
         <div class="rs-gallery-area rs-gallery-one">
             <div class="container-fluid g-0">
@@ -2687,7 +2631,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <img src="assets/img/infra/groupgirls.jpg" alt="image">
                                 </div>
                                 <div class="rs-gallery-item">
-                                    <img src="assets/img/infra/nss2.jpg" alt="image">
+                                    <img src="assets/img/infra/bba.jpeg" alt="image">
                                 </div>
                                 <div class="rs-gallery-item">
                                     <img src="assets/img/infra/student.png" alt="image">
@@ -3119,135 +3063,207 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".dept-rail-track");
+    const viewport = document.querySelector(".dept-rail-viewport");
+    const prev = document.getElementById("deptPrev");
+    const next = document.getElementById("deptNext");
 
-            const track = document.querySelector(".dept-rail-track");
-            const viewport = document.querySelector(".dept-rail-viewport");
-            const prev = document.getElementById("deptPrev");
-            const next = document.getElementById("deptNext");
+    console.log("DEPARTMENT SLIDER STARTED");
 
-            console.log("DEPARTMENT SLIDER STARTED");
+    if (!track || !viewport || !prev || !next) {
+        console.error("Department slider elements not found");
+        return;
+    }
 
-            if (!track) {
-                console.error("ERROR: .dept-rail-track not found");
-                return;
-            }
+    const items = track.querySelectorAll(".dept-rail-item");
 
-            if (!viewport) {
-                console.error("ERROR: .dept-rail-viewport not found");
-                return;
-            }
+    if (items.length === 0) {
+        console.error("No department cards found");
+        return;
+    }
 
-            if (!prev) {
-                console.error("ERROR: #deptPrev not found");
-                return;
-            }
-
-            if (!next) {
-                console.error("ERROR: #deptNext not found");
-                return;
-            }
-
-            const items = track.querySelectorAll(".dept-rail-item");
-
-            console.log("Department cards:", items.length);
-
-            let current = 0;
-
-            function getStep() {
-
-                const item = items[0];
-
-                if (!item) return 0;
-
-                const itemWidth = item.getBoundingClientRect().width;
-
-                const style = window.getComputedStyle(track);
-
-                const gap = parseFloat(style.gap) || 0;
-
-                return itemWidth + gap;
-            }
+    let current = 0;
+    let autoSlide;
 
 
-            function moveSlider() {
+    /* =====================================================
+       GET CARD MOVEMENT DISTANCE
+    ===================================================== */
 
-                const step = getStep();
+    function getStep() {
 
-                if (!step) return;
+        const item = items[0];
 
-                track.style.transform =
-                    "translate3d(-" + (current * step) + "px, 0, 0)";
+        if (!item) return 0;
 
-                console.log("Current slide:", current);
-            }
+        const itemWidth = item.getBoundingClientRect().width;
 
+        const trackStyle = window.getComputedStyle(track);
 
-            /* =====================================================
-               NEXT BUTTON
-            ===================================================== */
+        const gap = parseFloat(trackStyle.gap) || 0;
 
-            next.addEventListener("click", function (e) {
-
-                e.preventDefault();
-                e.stopImmediatePropagation();
-
-                console.log("NEXT CLICKED");
-
-                current++;
-
-                if (current >= items.length) {
-                    current = 0;
-                }
-
-                moveSlider();
-
-            });
+        return itemWidth + gap;
+    }
 
 
-            /* =====================================================
-               PREVIOUS BUTTON
-            ===================================================== */
+    /* =====================================================
+       MOVE SLIDER
+    ===================================================== */
 
-            prev.addEventListener("click", function (e) {
+    function moveSlider() {
 
-                e.preventDefault();
-                e.stopImmediatePropagation();
+        const step = getStep();
 
-                console.log("PREVIOUS CLICKED");
+        if (!step) return;
 
-                current--;
-
-                if (current < 0) {
-                    current = items.length - 1;
-                }
-
-                moveSlider();
-
-            });
+        track.style.transform =
+            "translate3d(-" + (current * step) + "px, 0, 0)";
+    }
 
 
-            /* =====================================================
-               RESIZE
-            ===================================================== */
+    /* =====================================================
+       NEXT SLIDE
+    ===================================================== */
 
-            window.addEventListener("resize", function () {
+    function nextSlide() {
 
-                moveSlider();
+        current++;
 
-            });
+        if (current >= items.length) {
+            current = 0;
+        }
+
+        moveSlider();
+    }
 
 
-            /* =====================================================
-               INITIAL
-            ===================================================== */
+    /* =====================================================
+       PREVIOUS SLIDE
+    ===================================================== */
 
-            moveSlider();
+    function previousSlide() {
 
-        });
-    </script>
+        current--;
+
+        if (current < 0) {
+            current = items.length - 1;
+        }
+
+        moveSlider();
+    }
+
+
+    /* =====================================================
+       NEXT BUTTON
+    ===================================================== */
+
+    next.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        nextSlide();
+
+        restartAutoSlide();
+
+    });
+
+
+    /* =====================================================
+       PREVIOUS BUTTON
+    ===================================================== */
+
+    prev.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        previousSlide();
+
+        restartAutoSlide();
+
+    });
+
+
+    /* =====================================================
+       AUTO SCROLL
+    ===================================================== */
+
+    function startAutoSlide() {
+
+        clearInterval(autoSlide);
+
+        autoSlide = setInterval(function () {
+
+            nextSlide();
+
+        }, 3000); // 3 seconds
+
+    }
+
+
+    /* =====================================================
+       RESTART AUTO SCROLL
+    ===================================================== */
+
+    function restartAutoSlide() {
+
+        clearInterval(autoSlide);
+
+        startAutoSlide();
+
+    }
+
+
+    /* =====================================================
+       PAUSE WHEN MOUSE IS OVER SLIDER
+    ===================================================== */
+
+    viewport.addEventListener("mouseenter", function () {
+
+        clearInterval(autoSlide);
+
+    });
+
+
+    /* =====================================================
+       RESUME WHEN MOUSE LEAVES
+    ===================================================== */
+
+    viewport.addEventListener("mouseleave", function () {
+
+        startAutoSlide();
+
+    });
+
+
+    /* =====================================================
+       WINDOW RESIZE
+    ===================================================== */
+
+    window.addEventListener("resize", function () {
+
+        moveSlider();
+
+    });
+
+
+    /* =====================================================
+       INITIAL POSITION
+    ===================================================== */
+
+    moveSlider();
+
+
+    /* =====================================================
+       START AUTO SCROLL
+    ===================================================== */
+
+    startAutoSlide();
+
+});
+</script>
 
 
 
