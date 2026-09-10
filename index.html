@@ -177,7 +177,7 @@
                     <div class="college-title">
 
                         <h1>
-                           Bharathiyar Arts & Science College for Women Autonomous
+                           Bharathiyar Arts & Science College for Women (Autonomous)
                         </h1>
    <div class="college-affiliation" style="text-align: center;">
                            Affiliated to Periyar University
@@ -202,7 +202,7 @@
 
                     <span>
                         Admission Open
-                        <small>2026 - 27</small>
+                        <small>2026 - 2027 UG & PG</small>
                     </span>
 
                 </a>
@@ -424,7 +424,62 @@
                         Result
 
                     </a>
+<!-- ================= CALENDAR BUTTON ================= -->
+<!-- =========================================================
+     CALENDAR
+========================================================= -->
 
+<div class="calendar-wrapper">
+
+    <!-- Calendar Icon -->
+    <button class="calendar-btn" id="calendarBtn">
+        <i class="fa-regular fa-calendar-days"></i>
+    </button>
+
+
+    <!-- Calendar Popup -->
+    <div class="calendar-popup" id="calendarPopup">
+
+        <!-- Calendar Header -->
+        <div class="calendar-header">
+
+            <button class="calendar-arrow" id="prevMonth">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <h3 id="calendarMonth">JULY 2026</h3>
+
+            <button class="calendar-arrow" id="nextMonth">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Divider -->
+        <div class="calendar-line"></div>
+
+
+        <!-- Week Days -->
+        <div class="calendar-weekdays">
+
+            <span>S</span>
+            <span>M</span>
+            <span>T</span>
+            <span>W</span>
+            <span>T</span>
+            <span>F</span>
+            <span>S</span>
+
+        </div>
+
+
+        <!-- Calendar Dates -->
+        <div class="calendar-days" id="calendarDays"></div>
+
+    </div>
+
+</div>
                 </nav>
 
             </div>
@@ -435,7 +490,638 @@
 
 
     <!-- Body main wrapper start -->
+<script>
 
+/* =========================================================
+   CALENDAR
+   ACADEMIC YEAR 2026 - 2027
+   JULY 2026 → JUNE 2027
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   ELEMENTS
+--------------------------------------------------------- */
+
+const calendarBtn =
+    document.getElementById("calendarBtn");
+
+const calendarPopup =
+    document.getElementById("calendarPopup");
+
+const calendarDays =
+    document.getElementById("calendarDays");
+
+const calendarMonth =
+    document.getElementById("calendarMonth");
+
+const prevMonth =
+    document.getElementById("prevMonth");
+
+const nextMonth =
+    document.getElementById("nextMonth");
+
+
+/* ---------------------------------------------------------
+   ACADEMIC YEAR
+--------------------------------------------------------- */
+
+const academicStart = new Date(2026, 6, 1);
+// July 2026
+
+const academicEnd = new Date(2027, 5, 1);
+// June 2027
+
+
+/* ---------------------------------------------------------
+   CURRENT MONTH
+--------------------------------------------------------- */
+
+let currentMonth = new Date(2026, 6, 1);
+
+
+/* =========================================================
+   CELEBRATIONS / EVENTS
+=========================================================
+
+   Format:
+
+   "YYYY-MM-DD": {
+       name: "Celebration Name",
+       type: "blue"
+   }
+
+   Types:
+   blue
+   pink
+   gold
+
+========================================================= */
+
+const celebrations = {
+
+
+    /* =========================
+       JULY 2026
+    ========================= */
+
+    "2026-07-11": {
+        name: "World Population Day",
+        type: "blue"
+    },
+
+    "2026-07-15": {
+        name: "World Youth Skills Day",
+        type: "pink"
+    },
+
+
+    /* =========================
+       AUGUST 2026
+    ========================= */
+
+    "2026-08-15": {
+        name: "Independence Day",
+        type: "pink"
+    },
+
+    "2026-08-29": {
+        name: "National Sports Day",
+        type: "blue"
+    },
+
+
+    /* =========================
+       SEPTEMBER 2026
+    ========================= */
+
+    "2026-09-05": {
+        name: "Teachers' Day",
+        type: "pink"
+    },
+
+    "2026-09-08": {
+        name: "International Literacy Day",
+        type: "blue"
+    },
+
+    "2026-09-14": {
+        name: "Hindi Diwas",
+        type: "gold"
+    },
+
+    "2026-09-15": {
+        name: "Engineers' Day",
+        type: "blue"
+    },
+
+    "2026-09-27": {
+        name: "World Tourism Day",
+        type: "blue"
+    },
+
+
+    /* =========================
+       OCTOBER 2026
+    ========================= */
+
+    "2026-10-02": {
+        name: "Gandhi Jayanti",
+        type: "pink"
+    },
+
+    "2026-10-15": {
+        name: "World Students' Day",
+        type: "blue"
+    },
+
+    "2026-10-24": {
+        name: "United Nations Day",
+        type: "blue"
+    },
+
+
+    /* =========================
+       NOVEMBER 2026
+    ========================= */
+
+    "2026-11-11": {
+        name: "National Education Day",
+        type: "blue"
+    },
+
+    "2026-11-14": {
+        name: "Children's Day",
+        type: "pink"
+    },
+
+    "2026-11-26": {
+        name: "Constitution Day",
+        type: "gold"
+    },
+
+
+    /* =========================
+       DECEMBER 2026
+    ========================= */
+
+    "2026-12-01": {
+        name: "World AIDS Day",
+        type: "pink"
+    },
+
+    "2026-12-05": {
+        name: "World Soil Day",
+        type: "blue"
+    },
+
+    "2026-12-10": {
+        name: "Human Rights Day",
+        type: "blue"
+    },
+
+    "2026-12-25": {
+        name: "Christmas Day",
+        type: "pink"
+    },
+
+
+    /* =========================
+       JANUARY 2027
+    ========================= */
+
+    "2027-01-12": {
+        name: "National Youth Day",
+        type: "blue"
+    },
+
+    "2027-01-26": {
+        name: "Republic Day",
+        type: "pink"
+    },
+
+
+    /* =========================
+       FEBRUARY 2027
+    ========================= */
+
+    "2027-02-04": {
+        name: "World Cancer Day",
+        type: "pink"
+    },
+
+    "2027-02-11": {
+        name: "International Day of Women and Girls in Science",
+        type: "blue"
+    },
+
+    "2027-02-21": {
+        name: "International Mother Language Day",
+        type: "blue"
+    },
+
+
+    /* =========================
+       MARCH 2027
+    ========================= */
+
+    "2027-03-08": {
+        name: "International Women's Day",
+        type: "pink"
+    },
+
+    "2027-03-21": {
+        name: "World Poetry Day",
+        type: "blue"
+    },
+
+    "2027-03-22": {
+        name: "World Water Day",
+        type: "blue"
+    },
+
+
+    /* =========================
+       APRIL 2027
+    ========================= */
+
+    "2027-04-07": {
+        name: "World Health Day",
+        type: "pink"
+    },
+
+    "2027-04-22": {
+        name: "Earth Day",
+        type: "blue"
+    },
+
+
+    /* =========================
+       MAY 2027
+    ========================= */
+
+    "2027-05-01": {
+        name: "International Workers' Day",
+        type: "gold"
+    },
+
+    "2027-05-15": {
+        name: "International Day of Families",
+        type: "blue"
+    },
+
+    "2027-05-31": {
+        name: "World No Tobacco Day",
+        type: "pink"
+    },
+
+
+    /* =========================
+       JUNE 2027
+    ========================= */
+
+    "2027-06-05": {
+        name: "World Environment Day",
+        type: "blue"
+    },
+
+    "2027-06-14": {
+        name: "World Blood Donor Day",
+        type: "pink"
+    },
+
+    "2027-06-21": {
+        name: "International Yoga Day",
+        type: "blue"
+    },
+
+    "2027-06-26": {
+        name: "International Day Against Drug Abuse",
+        type: "pink"
+    }
+
+};
+
+
+/* =========================================================
+   FORMAT DATE
+========================================================= */
+
+function formatDate(year, month, day) {
+
+    const monthNumber =
+        String(month + 1).padStart(2, "0");
+
+    const dayNumber =
+        String(day).padStart(2, "0");
+
+    return `${year}-${monthNumber}-${dayNumber}`;
+
+}
+
+
+/* =========================================================
+   RENDER CALENDAR
+========================================================= */
+
+function renderCalendar() {
+
+    const year =
+        currentMonth.getFullYear();
+
+    const month =
+        currentMonth.getMonth();
+
+
+    /* -----------------------------------------------
+       MONTH NAME
+    ----------------------------------------------- */
+
+    const monthName =
+        currentMonth.toLocaleString("en-US", {
+            month: "long"
+        });
+
+
+    calendarMonth.textContent =
+        `${monthName.toUpperCase()} ${year}`;
+
+
+    /* -----------------------------------------------
+       CLEAR OLD DATES
+    ----------------------------------------------- */
+
+    calendarDays.innerHTML = "";
+
+
+    /* -----------------------------------------------
+       FIRST DAY
+    ----------------------------------------------- */
+
+    const firstDay =
+        new Date(year, month, 1).getDay();
+
+
+    /* -----------------------------------------------
+       NUMBER OF DAYS
+    ----------------------------------------------- */
+
+    const daysInMonth =
+        new Date(year, month + 1, 0).getDate();
+
+
+    /* -----------------------------------------------
+       EMPTY CELLS
+    ----------------------------------------------- */
+
+    for (let i = 0; i < firstDay; i++) {
+
+        const empty =
+            document.createElement("span");
+
+        empty.className =
+            "calendar-day empty";
+
+        calendarDays.appendChild(empty);
+
+    }
+
+
+    /* -----------------------------------------------
+       CREATE DATES
+    ----------------------------------------------- */
+
+    for (let day = 1; day <= daysInMonth; day++) {
+
+        const date =
+            document.createElement("span");
+
+
+        date.className =
+            "calendar-day normal";
+
+
+        date.textContent =
+            day;
+
+
+        /* -------------------------------------------
+           DATE KEY
+        ------------------------------------------- */
+
+        const dateKey =
+            formatDate(year, month, day);
+
+
+        /* -------------------------------------------
+           CHECK CELEBRATION
+        ------------------------------------------- */
+
+        if (celebrations[dateKey]) {
+
+            const event =
+                celebrations[dateKey];
+
+
+            /* Add color */
+
+            date.classList.remove("normal");
+
+            date.classList.add(event.type);
+
+
+            /* ---------------------------------------
+               TOOLTIP
+            --------------------------------------- */
+
+            const tooltip =
+                document.createElement("div");
+
+
+            tooltip.className =
+                "calendar-tooltip";
+
+
+            /* Ordinal date */
+
+            let suffix = "th";
+
+            if (
+                day % 10 === 1 &&
+                day % 100 !== 11
+            ) {
+                suffix = "st";
+            }
+
+            else if (
+                day % 10 === 2 &&
+                day % 100 !== 12
+            ) {
+                suffix = "nd";
+            }
+
+            else if (
+                day % 10 === 3 &&
+                day % 100 !== 13
+            ) {
+                suffix = "rd";
+            }
+
+
+            tooltip.textContent =
+                `${day}${suffix} ${monthName} - ${event.name}`;
+
+
+            date.appendChild(tooltip);
+
+        }
+
+
+        /* -------------------------------------------
+           ADD DATE
+        ------------------------------------------- */
+
+        calendarDays.appendChild(date);
+
+    }
+
+
+    /* =================================================
+       PREVIOUS BUTTON
+    ================================================= */
+
+    if (
+        currentMonth.getFullYear() ===
+        academicStart.getFullYear()
+
+        &&
+
+        currentMonth.getMonth() ===
+        academicStart.getMonth()
+    ) {
+
+        prevMonth.style.opacity = "0.3";
+
+        prevMonth.style.pointerEvents = "none";
+
+    }
+
+    else {
+
+        prevMonth.style.opacity = "1";
+
+        prevMonth.style.pointerEvents = "auto";
+
+    }
+
+
+    /* =================================================
+       NEXT BUTTON
+    ================================================= */
+
+    if (
+        currentMonth.getFullYear() ===
+        academicEnd.getFullYear()
+
+        &&
+
+        currentMonth.getMonth() ===
+        academicEnd.getMonth()
+    ) {
+
+        nextMonth.style.opacity = "0.3";
+
+        nextMonth.style.pointerEvents = "none";
+
+    }
+
+    else {
+
+        nextMonth.style.opacity = "1";
+
+        nextMonth.style.pointerEvents = "auto";
+
+    }
+
+}
+
+
+/* =========================================================
+   OPEN / CLOSE CALENDAR
+========================================================= */
+
+calendarBtn.addEventListener("click", function(event) {
+
+    event.stopPropagation();
+
+    calendarPopup.classList.toggle("active");
+
+});
+
+
+/* =========================================================
+   PREVIOUS MONTH
+========================================================= */
+
+prevMonth.addEventListener("click", function() {
+
+    if (currentMonth > academicStart) {
+
+        currentMonth.setMonth(
+            currentMonth.getMonth() - 1
+        );
+
+        renderCalendar();
+
+    }
+
+});
+
+
+/* =========================================================
+   NEXT MONTH
+========================================================= */
+
+nextMonth.addEventListener("click", function() {
+
+    if (currentMonth < academicEnd) {
+
+        currentMonth.setMonth(
+            currentMonth.getMonth() + 1
+        );
+
+        renderCalendar();
+
+    }
+
+});
+
+
+/* =========================================================
+   CLOSE WHEN CLICKING OUTSIDE
+========================================================= */
+
+document.addEventListener("click", function(event) {
+
+    if (
+        !calendarPopup.contains(event.target) &&
+        !calendarBtn.contains(event.target)
+    ) {
+
+        calendarPopup.classList.remove("active");
+
+    }
+
+});
+
+
+/* =========================================================
+   INITIAL CALENDAR
+========================================================= */
+
+renderCalendar();
+
+</script>
 
 <!-- =========================================================
      COLLEGE IMAGE SLIDER
@@ -454,11 +1140,6 @@
                 <div class="college-slide">
             <img src="assets/img/infra/infra5.png"
                  alt="College Arts Campus">
-        </div>
-
-        <div class="college-slide">
-            <img src="assets/img/infra/infra1.jpg"
-                 alt="College Green Campus">
         </div>
 
         <!-- SLIDE 2 -->
@@ -1275,9 +1956,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                             </svg>
                                         </div>
                                         <div class="rs-about-award-content">
-                                            <h5 class="rs-about-award-title">50+ Award Winning</h5>
-                                            <p class="rs-about-award-desc" style="color: white;">Achieved 50+ awards for
-                                                excellence and innovation.</p>
+                                            <h5 class="rs-about-award-title">29+</h5>
+                                            <p class="rs-about-award-desc" style="color: white;"> Years of Excellence.</p>
                                         </div>
                                     </div>
                                 </div>
