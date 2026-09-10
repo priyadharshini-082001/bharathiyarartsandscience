@@ -1208,15 +1208,15 @@
     /* Department item */
 
     .dept-rail-item {
-        width: 200px;
-        flex: 0 0 200px;
+        width: 300px;
+        flex: 0 0 300px;
     }
 
     /* Square image */
 
     .dept-rail-photo {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     /* Information */
@@ -1334,9 +1334,9 @@
     ===================================================== */
 
     .dept-rail-item {
-        width: 200px;
+        width: 300px;
 
-        flex: 0 0 200px;
+        flex: 0 0 300px;
     }
 
 
@@ -1345,8 +1345,8 @@
     ===================================================== */
 
     .dept-rail-photo {
-        width:200px;
-        height:200px;
+        width:300px;
+        height:300px;
     }
 
     .dept-rail-photo img {
@@ -1518,9 +1518,9 @@
     ===================================================== */
 
     .dept-rail-item {
-        width:200px;
+        width:300px;
 
-        flex: 0 0 200px;
+        flex: 0 0 300px;
     }
 
 
@@ -1529,8 +1529,8 @@
     ===================================================== */
 
     .dept-rail-photo {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
 
@@ -1641,14 +1641,14 @@
     }
 
     .dept-rail-item {
-        width:200px;
+        width:300px;
 
-        flex-basis: 200px;
+        flex-basis: 300px;
     }
 
     .dept-rail-photo {
-        width:200px;
-        height: 200px;
+        width:300px;
+        height: 300px;
     }
 
     .dept-rail-info {
@@ -2783,7 +2783,7 @@
         flex: 0 0 calc(100vw - 84px) !important;
         width: calc(100vw - 84px) !important;
 
-        max-width: 200px;
+        max-width: 300px;
 
         min-width: 0;
 
@@ -2934,7 +2934,7 @@
     }
 
     .dept-rail-photo {
-        height: 200px;
+        height:300px;
     }
 
     .dept-rail-info {
