@@ -118,7 +118,7 @@ a {
 
     color: #fff;
 
-    font-size: 12px;
+    font-size: 14px;
     font-weight:700;
 }
 
@@ -277,27 +277,23 @@ a {
 }
 
 .college-title h1 {
-    margin: 0 0 5px;
-
-    color: #073b8f;
-
-    font-size: 20px;
+    color:#990000;
+    font-size:45px;
     line-height: 1.25;
-
-    font-weight: 800;
+    letter-spacing:9.0px;
+    font-weight:700;
+    border-bottom: 2px solid #990000;
 }
 
 .college-subtitle {
-    color: #000000;
-
-    font-size: 13px;
+    color: #990000;
+    font-size: 14px;
 }
 
 .college-affiliation {
-    margin-top: 3px;
-
-    color: #e51d73;
-
+    margin-top: 4px;
+ color:darkblue;
+  letter-spacing:-0.5px;
     font-size: 15px;
     font-weight: 700;
 }
@@ -629,1332 +625,6 @@ a {
     background: #b90f57;
 
     color: #fff;
-}
-
-
-
-/* =========================================================
-   BHARATHIYAR HIGHLIGHT SECTION
-========================================================= */
-
-.bharathiyar-section {
-    width: 100%;
-    padding: 45px 20px;
-    background: #ffffff;
-}
-
-.bharathiyar-container {
-    width:100%;
-    margin: auto;
- 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-
-    align-items: stretch;
-}
-
-
-/* =========================================================
-   LEFT IMAGE CARD
-========================================================= */
-
-.bharathiyar-image {
-    height: 400px;
-    overflow: hidden;
-    border-radius: 12px;
-    background: #fff;
-
-}
-
-.bharathiyar-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-
-    object-fit: cover;
-    object-position: center;
-
-    transition: transform 0.5s ease;
-}
-
-.bharathiyar-image:hover img {
-    transform: scale(1.04);
-}
-
-
-/* =========================================================
-   NEAT & COMPACT CONTENT
-========================================================= */
-
-.bharathiyar-content {
-    position: relative;
-    height: 400px;
-
-    padding: 30px 36px;
-
-    background: #073b8f;
-    border-radius: 12px;
-
-    color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    overflow: hidden;
-}
-
-
-/* Small heading */
-
-.section-small-title {
-    margin: 0 0 7px;
-
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 1px;
-
-    color: rgba(255,255,255,0.78);
-}
-
-
-/* Main heading */
-
-.bharathiyar-content h2 {
-    margin: 0 0 13px;
-    padding-bottom: 9px;
-
-    font-size: 26px;
-    line-height: 1.2;
-    font-weight: 700;
-
-    color: #fff;
-}
-
-.bharathiyar-content h2::after {
-    width: 45px;
-    height: 3px;
-}
-
-
-/* Description */
-
-.bharathiyar-content .content-text {
-    margin: 0 0 14px;
-
-    font-size: 16px;
-    line-height: 1.65;
-
-    color: rgba(255,255,255,0.92);
-}
-
-
-/* Tamil Quote */
-
-.tamil-highlight {
-    margin: 0 0 5px;
-    padding: 9px 15px;
-
-    background: rgba(255,255,255,0.10);
-
-    border-left: 3px solid #fff;
-    border-radius: 5px;
-}
-
-.tamil-highlight p {
-    margin: 0;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 15px;
-    line-height: 1.55;
-    font-weight: 600;
-
-    color: #fff;
-}
-
-
-/* Author */
-
-.highlight-author {
-    margin: 4px 0 12px;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
-
-    color: rgba(255,255,255,0.75);
-
-    text-align: right;
-}
-
-
-/* Button */
-
-.bharathiyar-btn {
-    padding: 8px 17px;
-
-    font-size: 14px;
-    line-height: 1;
-
-    border-radius: 4px;
-}
-
-
-/* =========================================================
-   TAMIL HIGHLIGHT
-========================================================= */
-
-.tamil-highlight {
-    position: relative;
-    z-index: 2;
-
-    margin: 2px 0 5px;
-
-    padding: 10px 16px;
-
-    background: rgba(255,255,255,0.11);
-
-    border-left: 3px solid #fff;
-    border-radius: 5px;
-}
-
-.tamil-highlight p {
-    margin: 0;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-
-    font-size: 15px;
-    line-height: 1.65;
-    font-weight: 600;
-
-    color: #fff;
-}
-
-
-/* Hide large quote marks */
-
-.quote-mark {
-    display: none;
-}
-
-
-/* =========================================================
-   AUTHOR
-========================================================= */
-
-.highlight-author {
-    position: relative;
-    z-index: 2;
-
-    margin: 4px 0 13px;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 11px;
-
-    color: rgba(255,255,255,0.75);
-
-    text-align: right;
-}
-
-
-/* =========================================================
-   BUTTON
-========================================================= */
-
-.bharathiyar-btn {
-    position: relative;
-    z-index: 2;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-
-    width: fit-content;
-
-    padding: 8px 18px;
-
-    background: #e51d73;
-    color: #ffffff;
-
-    border-radius: 4px;
-
-font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition: all 0.3s ease;
-}
-
-.bharathiyar-btn i {
-    transition: transform 0.3s ease;
-}
-
-.bharathiyar-btn:hover {
-    background: #f0f4ff;
-    color: #052e70;
-
-    transform: translateY(-2px);
-}
-
-.bharathiyar-btn:hover i {
-    transform: translateX(4px);
-}
-
-
-/* =========================================================
-   UNIQUE DEPARTMENT SHOWCASE RAIL
-========================================================= */
-
-.dept-rail-section {
-    width: 100%;
-    padding: 80px 0;
-
-    background:pink;
-
-    overflow: hidden;
-}
-
-
-.dept-rail-container {
-    width: 100%;
-    margin: auto;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-.dept-rail-header {
-    text-align: center;
-    margin-bottom: 55px;
-}
-
-.dept-rail-kicker {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 12px;
-
-    margin-bottom: 10px;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-
-    letter-spacing: 3px;
-
-    color: #c34a74;
-}
-
-.dept-rail-kicker i {
-    display: block;
-
-    width: 35px;
-    height: 1px;
-
-    background: #c39b4a;
-}
-
-.dept-rail-header h2 {
-    margin: 0;
-
-   font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 45px;
-    font-weight: 800;
-
-    color: #073b8f;
-}
-
-.dept-rail-header p {
-    max-width: 680px;
-
-    margin: 13px auto 0;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 14px;
-
-    line-height: 1.8;
-
-    color: #697589;
-}
-
-
-/* =========================================================
-   VIEWPORT
-========================================================= */
-
-.dept-rail-viewport {
-    width: 100%;
-
-    overflow: hidden;
-
-    position: relative;
-
-    padding: 10px 0 35px;
-}
-
-
-
-/* =========================================================
-   TRACK
-========================================================= */
-
-.dept-rail-track {
-    display: flex;
-
-    width: max-content;
-
-    gap: 25px;
-
-    animation:
-        deptRailScroll 35s linear infinite;
-}
-
-.dept-rail-viewport:hover
-.dept-rail-track {
-    animation-play-state: paused;
-}
-
-
-/* =========================================================
-   ITEM
-========================================================= */
-
-.dept-rail-item {
-    width:200px;
-
-    flex: 0 0 200px;
-
-    position: relative;
-}
-
-
-/* =========================================================
-   IMAGE
-========================================================= */
-
-.dept-rail-photo {
-    position: relative;
-    width:200px;
-    height: 200px;
-    overflow: hidden;
-    background: #dfe6f0;
-    border-radius:50%;
-
-}
-
-.dept-rail-photo img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition:
-        transform .7s ease;
-}
-
-/* =========================================================
-   NUMBER
-========================================================= */
-
-.dept-rail-index {
-    position: absolute;
-
-    top: 18px;
-    left: 18px;
-
-    z-index: 5;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 17px;
-    font-weight: 800;
-
-    letter-spacing: 1px;
-
-    color: #ffffff;
-}
-
-.dept-rail-index::after {
-    content: "";
-
-    display: block;
-
-    width: 22px;
-    height: 2px;
-
-    margin-top: 6px;
-
-    background: #c39b4a;
-}
-
-
-/* =========================================================
-   VERTICAL NAME
-========================================================= */
-
-.dept-rail-name {
-    position: absolute;
-
-    right: -4px;
-    bottom: 55px;
-
-    z-index: 5;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-    color: rgba(255,255,255,.9);
-
-    writing-mode: vertical-rl;
-
-    transform: rotate(180deg);
-}
-
-
-/* =========================================================
-   INFO STRIP
-========================================================= */
-
-.dept-rail-info {
-    position: relative;
-
-
-
-    min-height: 100px;
-
-    padding:5px;
-
-    z-index: 8;
-
-    background:  rgb(255, 255, 255);
-
-    border-top: 3px solid #c39b4a;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.dept-rail-info span {
-    display: block;
-
-    margin-bottom: 5px;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-
-    letter-spacing: 1.2px;
-
-    color: var(--basc-pink)
-}
-
-.dept-rail-info h3 {
-    margin: 0;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-
-    line-height: 1.3;
-
-    color: #073b8f;
-}
-
-
-/* =========================================================
-   ARROW
-========================================================= */
-
-.dept-rail-arrow {
-    position: absolute;
-
-    right: 15px;
-    top: 50%;
-
-    width: 31px;
-    height: 31px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transform: translateY(-50%);
-
-    border: 1px solid #dbe2ec;
-    background: #073b8f;
-
-    color: #ffffff;
-
-    font-size: 10px;
-
-    transition:
-        background .3s ease,
-        color .3s ease,
-        transform .3s ease;
-}
-
-.dept-rail-item:hover
-.dept-rail-arrow {
-    background: #073b8f;
-
-    color: #ffffff;
-
-    transform:
-        translateY(-50%)
-        translateX(3px);
-}
-
-
-
-/* =========================================================
-   AUTO SCROLL
-========================================================= */
-
-@keyframes deptRailScroll {
-
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform:
-            translateX(calc(-50% - 12.5px));
-    }
-}
-
-/* =========================================================
-   PREMIUM NEWS • EVENTS • NOTICE
-   BHARATHIYAR ARTS & SCIENCE COLLEGE
-========================================================= */
-
-.premium-updates {
-    position: relative;
-    width: 100%;
-    padding: 50px 20px;
-    background: #073b8f;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-
-/* =========================================================
-   BACKGROUND DECORATION
-========================================================= */
-
-.premium-updates::before {
-    content: "";
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    border-radius: 50%;
-
-    background: rgba(7, 59, 143, 0.035);
-
-    top: -220px;
-    left: -180px;
-
-    pointer-events: none;
-}
-
-.premium-updates::after {
-    content: "";
-    position: absolute;
-
-    width: 420px;
-    height: 420px;
-
-    border-radius: 50%;
-
-    background: rgba(181, 47, 103, 0.035);
-
-    right: -180px;
-    bottom: -180px;
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   MAIN CONTAINER
-========================================================= */
-
-.updates-container {
-    position: relative;
-
-    width: 100%;
-
-
-    margin: 0 auto;
-
-    z-index: 2;
-}
-
-
-/* =========================================================
-   SECTION TITLE
-========================================================= */
-
-.premium-title {
-    width: 100%;
-    max-width: 850px;
-
-    margin: 0 auto 30px;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   TITLE LINE
-========================================================= */
-
-.title-line {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 15px;
-
-    margin-bottom: 10px;
-}
-
-.title-line span {
-    width: 45px;
-    height: 2px;
-
-    display: block;
-
-    background: #ffffff;
-}
-
-.title-line small {
-    color:  #ffffff;
-
-    font-size: 15px;
-    font-weight: 800;
-
-    letter-spacing: 3px;
-
-    text-transform: uppercase;
-}
-
-
-/* =========================================================
-   MAIN TITLE
-========================================================= */
-
-.premium-title h2 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-family: "Noto Sans Tamil", "Latha", sans-serif;
-
-    font-size: 40px;
-
-    line-height: 1.25;
-
-    font-weight: 800;
-
-    letter-spacing: -0.5px;
-}
-
-.premium-title h2 em {
-    color: #ffffff;
-
-    font-style: normal;
-}
-
-
-/* =========================================================
-   TITLE DESCRIPTION
-========================================================= */
-
-.premium-title p {
-    max-width: 760px;
-
-    margin: 10px auto 0;
-
-    color: #000000;
-
-    font-size: 15px;
-
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   MAIN GRID
-========================================================= */
-
-.premium-update-grid {
-    display: grid;
-
-    grid-template-columns:
-        1.18fr
-        1fr;
-
-    gap: 20px;
-
-    align-items: stretch;
-}
-
-/* =========================================================
-   FULL IMAGE EVENT SLIDER
-========================================================= */
-
-.event-image-slider {
-    position: relative;
-    width: 100%;
-    height:450px;
-    overflow: hidden;
-    background: #000;
-}
-
-
-/* =========================================================
-   SLIDE
-========================================================= */
-
-.event-slide {
-    position: absolute;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition:
-        opacity 1s ease-in-out,
-        visibility 1s ease-in-out;
-}
-
-.event-slide.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-
-/* =========================================================
-   IMAGE
-========================================================= */
-
-.event-slide img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit:contain;
-    object-position: center;
-
-    transform: scale(1);
-
-    transition: transform 6s ease;
-}
-
-.event-slide.active img {
-    transform: scale(1.05);
-}
-
-
-/* =========================================================
-   IMAGE DARK OVERLAY
-========================================================= */
-
-.event-slide::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    height: 55%;
-
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.88),
-        rgba(0, 0, 0, 0.40),
-        transparent
-    );
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   EVENT CONTENT OVER IMAGE
-========================================================= */
-
-.event-overlay {
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    z-index: 2;
-
-    display: flex;
-    align-items: center;
-
-    gap: 25px;
-
-    padding: 35px 45px;
-}
-
-
-/* =========================================================
-   DATE BOX
-========================================================= */
-
-.event-date {
-    flex-shrink: 0;
-
-    width: 85px;
-    height: 85px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background: #ffffff;
-
-    text-align: center;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
-}
-
-.event-date strong {
-    font-size: 32px;
-    line-height: 1;
-
-    font-weight: 800;
-
-    color: #006b3c;
-}
-
-.event-date span {
-    margin-top: 5px;
-
-    font-size: 11px;
-    font-weight: 700;
-
-    letter-spacing: 1px;
-
-    color: #333;
-}
-
-
-/* =========================================================
-   EVENT INFORMATION
-========================================================= */
-
-.event-info {
-    color: #fff;
-}
-
-.event-category {
-    display: inline-flex;
-
-    align-items: center;
-    gap: 7px;
-
-    margin-bottom: 7px;
-
-    font-size: 11px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    color: #e5b72f;
-}
-
-.event-category i {
-    font-size: 12px;
-}
-
-
-.event-info h3 {
-    margin: 0;
-
-    font-size: 28px;
-    line-height: 1.2;
-
-    font-weight: 700;
-
-    color: #fff;
-}
-
-
-.event-info p {
-    margin: 7px 0 0;
-
-    font-size: 14px;
-
-    color: rgba(255,255,255,0.82);
-}
-
-
-/* =========================================================
-   COLORFUL NOTICE BOARD
-========================================================= */
-
-.color-notice-panel {
-    width: 100%;
-    height: 450px;
-    background: #ffffff;
-    overflow: hidden;
-
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-.color-notice-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 18px 20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #006b3c,
-            #08306c
-        );
-
-    color: #ffffff;
-}
-
-
-.color-notice-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-
-.notice-bell {
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #e5b72f;
-
-    color: #08306c;
-
-    font-size: 18px;
-}
-
-
-.color-notice-title span {
-    display: block;
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    color: #e5b72f;
-}
-
-
-.color-notice-title h3 {
-    margin: 2px 0 0;
-
-    font-size: 20px;
-    font-weight: 700;
-
-    color: #ffffff;
-}
-
-
-/* =========================================================
-   VIEW ALL
-========================================================= */
-
-.notice-view-all {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-
-    font-size: 11px;
-    font-weight: 700;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    transition: 0.3s;
-}
-
-.notice-view-all:hover {
-    color: #e5b72f;
-}
-
-
-/* =========================================================
-   SCROLL WINDOW
-========================================================= */
-
-.notice-scroll {
-    position: relative;
-
-    height: 390px;
-
-    overflow: hidden;
-
-    background: #f8fafc;
-}
-
-
-/* =========================================================
-   AUTO MOVING TRACK
-========================================================= */
-
-.notice-track {
-    animation: noticeScroll 20s linear infinite;
-}
-
-
-/* PAUSE ON HOVER */
-
-.notice-scroll:hover .notice-track {
-    animation-play-state: paused;
-}
-
-
-/* =========================================================
-   NOTICE ITEM
-========================================================= */
-
-.color-notice-item {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    gap: 12px;
-
-    min-height: 125px;
-
-    padding: 15px 18px;
-
-    background: #ffffff;
-
-    border-bottom: 1px solid #eeeeee;
-
-    transition: 0.3s;
-}
-
-
-.color-notice-item:hover {
-    background: #f4f9ff;
-}
-
-
-/* =========================================================
-   DATE
-========================================================= */
-
-.notice-date-box {
-    flex-shrink: 0;
-
-    width: 55px;
-    height: 58px;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    background: #e12b7b;
-
-    color: #ffffff;
-}
-
-
-.notice-date-box strong {
-    font-size: 22px;
-    line-height: 1;
-
-    font-weight: 800;
-}
-
-
-.notice-date-box span {
-    margin-top: 4px;
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
-
-
-/* =========================================================
-   ICON
-========================================================= */
-
-.notice-icon-box {
-    flex-shrink: 0;
-
-    width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #e8f4ee;
-
-    color: #006b3c;
-
-    font-size: 16px;
-}
-
-
-/* Different colorful icons */
-
-.color-notice-item:nth-child(2) .notice-icon-box {
-    background: #fff3df;
-    color: #e5a300;
-}
-
-.color-notice-item:nth-child(3) .notice-icon-box {
-    background: #eeeaff;
-    color: #6846d8;
-}
-
-.color-notice-item:nth-child(4) .notice-icon-box {
-    background: #ffe8ee;
-    color: #e12b7b;
-}
-
-.color-notice-item:nth-child(5) .notice-icon-box {
-    background: #e7f1ff;
-    color: #08306c;
-}
-
-.color-notice-item:nth-child(6) .notice-icon-box {
-    background: #e9f8f5;
-    color: #008f72;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.color-notice-content {
-    flex: 1;
-    min-width: 0;
-}
-
-
-.notice-label {
-    display: inline-block;
-
-    margin-bottom: 4px;
-
-    padding: 3px 7px;
-
-    background: #e12b7b;
-
-    color: #ffffff;
-
-    font-size: 8px;
-    font-weight: 800;
-
-    letter-spacing: 1px;
-}
-
-
-.color-notice-content h4 {
-    margin: 0;
-
-    font-size: 15px;
-    line-height: 1.3;
-
-    font-weight: 700;
-
-    color: #183153;
-}
-
-
-.color-notice-content p {
-    margin: 5px 0 0;
-
-    font-size: 13px;
-    line-height: 1.5;
-
-    color: #000000;
-}
-
-
-/* =========================================================
-   RIGHT ARROW
-========================================================= */
-
-.notice-go {
-    flex-shrink: 0;
-
-    font-size: 11px;
-
-    color: #b7c0ca;
-
-    transition: 0.3s;
-}
-
-
-.color-notice-item:hover .notice-go {
-    color: #006b3c;
-
-    transform: translateX(3px);
-}
-
-
-/* =========================================================
-   AUTO SCROLL ANIMATION
-========================================================= */
-
-@keyframes noticeScroll {
-
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-750px);
-    }
-
 }
 
 
@@ -2598,117 +1268,6 @@ font-family: "Noto Sans Tamil", "Latha", sans-serif;
     box-sizing: border-box;
 }
 
-/* =========================================================
-   DEPARTMENT RAIL
-========================================================= */
-
-.dept-rail-section {
-    position: relative !important;
-    width: 100%;
-    overflow: hidden;
-}
-
-.dept-rail-container {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    padding:3px;
-}
-
-/* VIEWPORT */
-
-.dept-rail-viewport {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-/* TRACK */
-
-.dept-rail-track {
-    display: flex !important;
-
-    width: max-content !important;
-
-    gap: 25px;
-
-    /* VERY IMPORTANT */
-    animation: none !important;
-
-    transform: translate3d(0, 0, 0);
-
-    transition: transform .6s ease !important;
-}
-
-
-
-/* =========================================================
-   MAIN ARROWS
-========================================================= */
-
-.slider-arrow {
-    position: absolute;
-
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    width: 42px;
-    height: 42px;
-
-    padding: 0;
-    margin: 0;
-
-    border: 0;
-    outline: 0;
-
-    border-radius: 50%;
-
-    background: rgba(0,0,0,.45);
-
-    color: #fff;
-
-    font-size: 22px;
-
-    line-height: 42px;
-
-    text-align: center;
-
-    cursor: pointer;
-
-    z-index: 10;
-
-    transition:
-        background .3s ease,
-        transform .3s ease;
-}
-
-.slider-prev {
-    left: 15px !important;
-}
-
-.slider-next {
-    right: 15px !important;
-}
-
-.slider-arrow:hover {
-    background: #e51d73 !important;
-    transform: translateY(-50%) scale(1.08);
-}
-
-/* IMPORTANT:
-   Don't allow cards to catch pointer events
-*/
-
-.dept-rail-item {
-    pointer-events: none;
-}
-
-.dept-rail-photo,
-.dept-rail-photo img,
-.dept-rail-info {
-    pointer-events: none;
-}
 
 /* =========================================================
    VISION • MISSION • MOTTO
@@ -2923,7 +1482,7 @@ font-family: "Noto Sans Tamil", "Latha", sans-serif;
 .vmm-content p {
     margin: 0;
 
-    font-size: 16px;
+    font-size: 15px;
 
     line-height: 1.8;
 
@@ -3870,3 +2429,4124 @@ font-family: "Noto Sans Tamil", "Latha", sans-serif;
 
 }
 
+/* =========================================================
+   NOTICE + EVENTS SECTION
+========================================================= */
+
+.notice-events-section {
+    width: 100%;
+    padding: 70px 0;
+    background: #f7f9fc;
+    overflow: hidden;
+}
+
+.notice-events-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #062b68;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: .2px;
+}
+
+.section-heading span {
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin-top: 9px;
+
+    background: linear-gradient(
+        90deg,
+        #073b8f,
+        #e51d73
+    );
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   LEFT : ANNOUNCEMENTS
+========================================================= */
+
+.notice-area {
+    min-width: 0;
+}
+
+.notice-wrapper {
+    height: 335px;
+    overflow: hidden;
+    position: relative;
+
+    background: #ffffff;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+}
+
+
+/* Continuous track */
+
+.notice-track {
+    display: flex;
+    flex-direction: column;
+
+    will-change: transform;
+
+    /* IMPORTANT */
+    transition: none;
+}
+
+
+/* Notice card */
+
+.notice-card {
+    flex: 0 0 auto;
+
+    width: 100%;
+    min-height: 92px;
+
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #edf0f5;
+}
+
+
+/* Icon */
+
+.notice-icon {
+    width: 52px;
+    height: 52px;
+
+    flex: 0 0 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #073b8f,
+        #0b63c9
+    );
+
+    color: #ffffff;
+
+    font-size: 19px;
+
+    box-shadow: 0 7px 18px rgba(7, 59, 143, .20);
+}
+
+
+/* Content */
+
+.notice-content {
+    min-width: 0;
+}
+
+.notice-content h3 {
+    margin: 0 0 7px;
+
+    color: #17233b;
+
+    font-size: 15px;
+    line-height: 1.45;
+    font-weight: 700;
+}
+
+.notice-content a {
+    color: #e51d73;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    transition: .3s ease;
+}
+
+.notice-content a:hover {
+    color: #073b8f;
+    gap: 11px;
+}
+
+
+/* =========================================================
+   NOTICE CONTROLS
+========================================================= */
+
+.notice-controls {
+    margin-top: 17px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.notice-controls button {
+    width: 38px;
+    height: 38px;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #073b8f;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.notice-controls button:hover {
+    background: #e51d73;
+    transform: translateY(-2px);
+}
+
+#noticeNumber {
+    min-width: 60px;
+
+    color: #073b8f;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   RIGHT : EVENTS
+========================================================= */
+
+.events-area {
+    min-width: 0;
+}
+
+.event-slider {
+    position: relative;
+
+    height: 335px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+}
+
+
+/* Event slide */
+
+.event-slide {
+    position: absolute;
+
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: 46% 54%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(25px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease,
+        visibility .45s ease;
+}
+
+.event-slide.active {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(0);
+}
+
+
+/* Event image */
+
+.event-image {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Event content */
+
+.event-content {
+    padding: 35px 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-label {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 6px 11px;
+
+    margin-bottom: 14px;
+
+    border-radius: 30px;
+
+    background: #eef4ff;
+    color: #073b8f;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.event-content h3 {
+    margin: 0 0 18px;
+
+    color: #17233b;
+
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.event-date {
+    margin: 0 0 20px;
+
+    color: #68748a;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.event-date i {
+    color: #e51d73;
+    margin-right: 7px;
+}
+
+.event-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    width: fit-content;
+
+    color: #073b8f;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+}
+
+.event-link:hover {
+    color: #e51d73;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   EVENT CONTROLS
+========================================================= */
+
+.event-controls {
+    margin-top: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-controls > button {
+    width: 38px;
+    height: 38px;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #073b8f;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.event-controls > button:hover {
+    background: #e51d73;
+    transform: translateY(-2px);
+}
+
+
+/* Dots */
+
+.event-dots {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.event-dot {
+    width: 8px;
+    height: 8px;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #cbd3df;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.event-dot.active {
+    width: 24px;
+
+    border-radius: 20px;
+
+    background: #e51d73;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .notice-events-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .notice-wrapper,
+    .event-slider {
+        height: 320px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .notice-events-section {
+        padding: 45px 0;
+    }
+
+    .notice-events-container {
+        width: 92%;
+        gap: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .notice-wrapper {
+        height: 320px;
+    }
+
+    .notice-card {
+        min-height: 100px;
+        padding: 16px;
+        gap: 13px;
+    }
+
+    .notice-icon {
+        width: 45px;
+        height: 45px;
+        flex-basis: 45px;
+        font-size: 16px;
+    }
+
+    .notice-content h3 {
+        font-size: 13px;
+    }
+
+    .notice-content a {
+        font-size: 12px;
+    }
+
+    .event-slider {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .event-slide {
+        position: absolute;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px 1fr;
+    }
+
+    .event-image {
+        height: 220px;
+    }
+
+    .event-content {
+        padding: 24px 20px;
+    }
+
+    .event-content h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   BASCW WHY CHOOSE SECTION
+========================================================= */
+
+.basc-why-section {
+    width: 100%;
+    padding:50px 0;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 50%,
+            rgba(7, 59, 143, .07),
+            transparent 32%
+        ),
+        #f2f6ff;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.basc-why-container {
+    width: 90%;
+    max-width: 1350px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 47% 53%;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   LEFT IMAGE AREA
+========================================================= */
+
+.basc-why-image-area {
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   LARGE NAVY CIRCLE
+========================================================= */
+
+.basc-circle-bg {
+    position: absolute;
+
+    width: 470px;
+    height: 470px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #073b8f 0%,
+            #073b8f 65%,
+            #04245c 100%
+        );
+
+    left: 35px;
+    top: 45px;
+}
+
+
+/* =========================================================
+   WHITE CIRCLE BORDER
+========================================================= */
+
+.basc-circle-bg::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -12px;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   PINK OUTER ARC
+========================================================= */
+
+.basc-pink-arc {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: 20px;
+    top: 30px;
+
+    border-radius: 50%;
+
+    border: 7px solid transparent;
+
+    border-top-color: #e51d73;
+    border-left-color: #e51d73;
+
+    transform: rotate(-25deg);
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   STUDENT IMAGE
+========================================================= */
+
+.basc-student-image {
+    position: relative;
+
+    z-index: 3;
+
+    width: 450px;
+
+    margin-top:15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+}
+
+
+.basc-student-image img {
+    width: 100%;
+
+    max-height: 450px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   LOTUS / DECORATIVE SYMBOL
+========================================================= */
+
+.basc-lotus {
+    position: absolute;
+
+    z-index: 4;
+
+    bottom: 45px;
+    left: 55px;
+
+    width: 120px;
+    height: 48px;
+
+    color: #e51d73;
+
+    font-size: 65px;
+
+    line-height: 35px;
+
+    text-align: center;
+
+    transform: rotate(5deg);
+
+    text-shadow:
+        0 3px 10px rgba(229,29,115,.25);
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.basc-why-content {
+    padding:10px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   SMALL TITLE
+========================================================= */
+
+.basc-small-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 10px;
+
+    color: #073b8f;
+
+    font-size:16px;
+
+    font-weight:700;
+}
+
+
+.basc-small-title i {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.basc-why-content h2 {
+    margin: 0 0 18px;
+
+    max-width: 650px;
+
+    color: #062b68;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 42px;
+
+    line-height: 1.12;
+
+    font-weight: 700;
+
+    letter-spacing: -.5px;
+}
+
+
+.basc-why-content h2 span {
+    color: #e51d73;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.basc-description {
+    max-width: 690px;
+
+    margin: 0 0 10px;
+
+    color: #000000;
+
+    font-size:15px;
+
+    line-height: 1.8;
+
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+/* =========================================================
+   FEATURE + BADGE AREA
+========================================================= */
+
+.basc-feature-experience {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    margin-top:3px;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.basc-features {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    flex: 1;
+}
+
+
+.basc-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    color: #17233b;
+
+    font-size: 15px;
+
+    font-weight:500;
+}
+
+
+/* Feature Icon */
+
+.basc-feature-icon {
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid #bcc8dc;
+
+    background: #ffffff;
+
+    color: #073b8f;
+
+    font-size:20px;
+}
+
+
+/* =========================================================
+   EXPERIENCE BADGE
+========================================================= */
+
+.basc-excellence-badge {
+    width: 200px;
+    height: 200px;
+
+    flex: 0 0 200px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f9d66b,
+            #d59b1e,
+            #f5ca4c
+        );
+
+}
+
+
+/* Outer Ring */
+
+.basc-excellence-badge::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 6px;
+
+    border-radius: 50%;
+
+    border: 2px dashed #ffffff;
+}
+
+
+/* Inner Badge */
+
+.basc-badge-inner {
+    position: relative;
+
+    width:150px;
+    height:150px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #0a4aa4,
+            #062d70
+        );
+
+    border: 3px solid #f7cf55;
+
+}
+
+
+/* =========================================================
+   CROWN
+========================================================= */
+
+.basc-crown {
+    position: absolute;
+
+    top: 5px;
+
+    color: #f8d15c;
+
+    font-size:30px;
+}
+
+
+/* =========================================================
+   29+
+========================================================= */
+
+.basc-years {
+    margin-top: 12px;
+
+    color: #ffd65b;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:45px;
+
+    line-height: .9;
+
+    font-weight: 900;
+}
+
+
+.basc-years sup {
+    font-size:18px;
+
+    vertical-align: top;
+
+    top: -1em;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   YEARS OF
+========================================================= */
+
+.basc-years-text {
+    color: #ffffff;
+
+    font-size:18px;
+
+    font-style: italic;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   EXCELLENCE
+========================================================= */
+
+.basc-excellence {
+    margin-top: 5px;
+
+    padding: 4px 12px;
+
+    background: #f2c44c;
+
+    color: #062d70;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    transform: rotate(-4deg);
+
+}
+
+
+/* =========================================================
+   MORE ABOUT BUTTON
+========================================================= */
+
+.basc-about-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 27px;
+
+    padding: 11px 11px 11px 18px;
+
+    border-radius: 40px;
+
+    background: #073b8f;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight:500;
+
+    transition: .3s ease;
+}
+
+
+.basc-about-btn span {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #073b8f;
+
+    transition: .3s ease;
+}
+
+
+.basc-about-btn:hover {
+    background: #e51d73;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+.basc-about-btn:hover span {
+    color: #e51d73;
+    transform: translateX(3px);
+}
+
+
+
+
+/* =========================================================
+   ABOUT COLLEGE - PREMIUM SPLIT PATTERN
+========================================================= */
+
+.about-college-section {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    padding: 50px 20px;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.about-college-container {
+    width: 100%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: center;
+    position: relative;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.about-college-content {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    height: 500px;
+
+    padding:10px;
+
+    background: #ffffff;
+
+    border-radius: 18px 0 0 18px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+/* Blue vertical design */
+
+.about-college-content::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 7px;
+
+}
+
+
+
+/* =========================================================
+   SMALL TITLE
+========================================================= */
+
+.about-small-title {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+
+    margin-bottom: 9px;
+
+    color: #e51d73;
+
+    font-size: 15px;
+
+    font-weight:700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.about-small-title::before {
+    content: "";
+
+    width: 28px;
+    height: 3px;
+
+    margin-right: 10px;
+
+    background: #073b8f;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.about-college-content h2 {
+    position: relative;
+    z-index: 3;
+
+    margin: 0 0 12px;
+
+    color: #073b8f;
+
+    font-size: 28px;
+
+    line-height: 1.22;
+
+    font-weight: 500;
+}
+
+
+.about-college-content h2 strong {
+    color: #04245c;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.about-college-content > p {
+    position: relative;
+    z-index: 3;
+
+    margin: 0px;
+
+    color: #000000;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+    text-align: justify;
+}
+
+
+/* =========================================================
+   TAMIL QUOTE - MODERN CARD
+========================================================= */
+
+.about-tamil-quote {
+    position: relative;
+    z-index: 4;
+
+    margin-top: 10px;
+
+    padding: 11px 35px 11px 20px;
+
+    background: #f7f9fd;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #e51d73;
+
+    box-shadow:
+        inset 0 0 0 1px #edf1f7;
+}
+
+
+.about-tamil-quote::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    width: 45px;
+    height: 100%;
+
+    background: #073b8f;
+
+    clip-path: polygon(
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+
+    opacity: 0.06;
+}
+
+
+.about-tamil-quote p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    color: #04245c;
+
+    font-family:
+        "Noto Serif Tamil",
+        "Latha",
+        serif;
+
+    font-size:15px;
+
+    line-height: 1.55;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   QUOTE MARK
+========================================================= */
+
+.quote-icon {
+    position: absolute;
+
+    left: 7px;
+    top: -4px;
+
+    color: #e51d73;
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    opacity: 0.7;
+}
+
+
+.quote-end {
+    left: auto;
+    right: 8px;
+
+    top: auto;
+    bottom: -7px;
+}
+
+
+/* =========================================================
+   INFO BOXES
+========================================================= */
+
+.about-info-row {
+    position: relative;
+    z-index: 4;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 13px;
+}
+
+
+.about-info-box {
+    position: relative;
+
+    flex: 1;
+
+    padding: 9px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8edf5;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+}
+
+
+.about-info-box::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 3px;
+
+    background: #073b8f;
+}
+
+
+.about-info-box:nth-child(2)::before {
+    background: #e51d73;
+}
+
+
+.about-info-box span {
+    display: block;
+
+    color: #073b8f;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+.about-info-box:nth-child(2) span {
+    color: #e51d73;
+}
+
+
+.about-info-box small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #000000;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE AREA
+========================================================= */
+
+.about-college-image {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    height: 500px;
+
+    padding: 10px;
+
+    border-radius: 0 18px 18px 0;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
+
+.about-image-frame {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #073b8f;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.about-image-frame img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition:
+        transform 0.7s ease;
+}
+
+
+.about-college-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4,36,92,0.02) 25%,
+            rgba(4,36,92,0.12) 45%,
+            rgba(4,36,92,0.90) 100%
+        );
+}
+
+
+/* =========================================================
+   IMAGE CORNER PATTERN
+========================================================= */
+
+.about-image-frame::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 60px;
+    height: 60px;
+
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+
+    border-radius: 0 10px 0 0;
+
+    opacity: 0.85;
+
+    z-index: 4;
+}
+
+
+.about-image-frame::after {
+    content: "";
+
+    position: absolute;
+
+    left: 15px;
+    top: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    border-left: 3px solid #e51d73;
+    border-top: 3px solid #e51d73;
+
+    z-index: 4;
+}
+
+
+/* =========================================================
+   IMAGE BADGE
+========================================================= */
+
+.image-badge {
+    position: absolute;
+
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+
+    z-index: 6;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 15px;
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.image-badge > span {
+    width: 37px;
+    height: 37px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e51d73;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+}
+
+
+.image-badge strong {
+    display: block;
+
+    color: #073b8f;
+
+    font-size: 15px;
+
+    line-height: 1.2;
+
+    letter-spacing: 1px;
+}
+
+
+.image-badge small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #555;
+
+    font-size:12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+
+
+/* =========================================================
+   M.O.P PREMIUM EVENTS
+   NEW DESIGN
+========================================================= */
+
+.mop-premium-events {
+    width: 100%;
+    padding: 95px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f6f7 0%,
+            #ffffff 50%,
+            #f4f6f9 100%
+        );
+
+    overflow: hidden;
+}
+
+
+.mop-premium-container {
+    width: min(1400px, 92%);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.45fr;
+
+    gap: 75px;
+}
+
+
+/* =========================================================
+   COMMON TITLE
+========================================================= */
+
+.mop-top-title span,
+.mop-event-heading span {
+
+    display: block;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    color: #9a1d4d;
+
+    margin-bottom: 10px;
+}
+
+
+.mop-top-title h2,
+.mop-event-heading h2 {
+
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #182b49;
+
+    font-size: 43px;
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+
+.mop-news-line {
+
+    width: 100%;
+    height: 1px;
+
+    margin: 25px 0 0;
+
+    background: #dfe2e7;
+
+    position: relative;
+}
+
+
+.mop-news-line::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: -2px;
+
+    width: 65px;
+    height: 4px;
+
+    background: #9a1d4d;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENTS
+========================================================= */
+
+.mop-news-list {
+    margin-top: 5px;
+}
+
+
+.mop-news-item {
+
+    display: grid;
+
+    grid-template-columns: 72px 1fr;
+
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #e1e3e7;
+
+    position: relative;
+
+    transition: .35s ease;
+}
+
+
+.mop-news-item:hover {
+
+    padding-left: 8px;
+}
+
+
+.mop-news-date {
+
+    width: 64px;
+    height: 67px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 1px solid #d6d9df;
+
+    background: #ffffff;
+
+    position: relative;
+}
+
+
+.mop-news-date::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: #9a1d4d;
+}
+
+
+.mop-news-date b {
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    color: #182b49;
+}
+
+
+.mop-news-date small {
+
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #9a1d4d;
+}
+
+
+.mop-news-text span {
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #9a1d4d;
+}
+
+
+.mop-news-text h3 {
+
+    margin: 6px 0 7px;
+
+    color: #182b49;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+}
+
+
+.mop-news-text p {
+
+    margin: 0 0 8px;
+
+    color: #737a86;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+
+.mop-news-text a {
+
+    display: inline-flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+    color: #182b49;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+}
+
+
+.mop-news-text a:hover {
+
+    color: #9a1d4d;
+
+    gap: 13px;
+}
+
+
+/* VIEW ALL */
+
+.mop-view-all {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #182b49;
+
+    color: #182b49;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition: .3s ease;
+}
+
+
+.mop-view-all:hover {
+
+    color: #9a1d4d;
+
+    border-color: #9a1d4d;
+
+    gap: 17px;
+}
+
+
+/* =========================================================
+   EVENT AREA
+========================================================= */
+
+.mop-event-area {
+    min-width: 0;
+}
+
+
+.mop-event-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.mop-event-arrows {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.mop-event-arrows button {
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid #d5d9df;
+
+    background: #ffffff;
+
+    color: #182b49;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+
+.mop-event-arrows button:hover {
+
+    background: #9a1d4d;
+
+    color: #ffffff;
+
+    border-color: #9a1d4d;
+}
+
+
+/* =========================================================
+   FEATURED EVENT
+========================================================= */
+
+.mop-featured-event {
+
+    width: 100%;
+
+    height: 505px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #182b49;
+}
+
+
+.mop-featured-event > img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        opacity .35s ease,
+        transform .8s ease;
+}
+
+
+.mop-featured-event:hover > img {
+
+    transform: scale(1.025);
+}
+
+
+/* OVERLAY */
+
+.mop-event-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 25, 47, .92) 0%,
+            rgba(10, 25, 47, .65) 42%,
+            rgba(10, 25, 47, .08) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* FEATURED CONTENT */
+
+.mop-featured-content {
+
+    position: absolute;
+
+    left: 55px;
+    bottom: 58px;
+
+    width: min(560px, 70%);
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    color: #ffffff;
+}
+
+
+.mop-event-date-large {
+
+    width: 67px;
+    min-width: 67px;
+
+    padding: 14px 5px;
+
+    border-top: 4px solid #c1265d;
+
+    background: rgba(255,255,255,.95);
+
+    color: #182b49;
+
+    text-align: center;
+}
+
+
+.mop-event-date-large b {
+
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 29px;
+
+    line-height: 1;
+}
+
+
+.mop-event-date-large span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #9a1d4d;
+}
+
+
+.mop-event-info > span {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+    color: #e9a6bb;
+}
+
+
+.mop-event-info h3 {
+
+    margin: 10px 0 12px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 34px;
+
+    line-height: 1.18;
+
+    color: #ffffff;
+}
+
+
+.mop-event-info p {
+
+    margin: 0 0 18px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: rgba(255,255,255,.82);
+}
+
+
+.mop-event-info a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    border-bottom: 1px solid rgba(255,255,255,.6);
+
+    padding-bottom: 6px;
+
+    transition: .3s ease;
+}
+
+
+.mop-event-info a:hover {
+
+    color: #f0b2c5;
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   EVENT COUNTER
+========================================================= */
+
+.mop-event-count {
+
+    position: absolute;
+
+    right: 28px;
+    bottom: 25px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+.mop-event-count em {
+
+    margin: 0 5px;
+
+    color: rgba(255,255,255,.5);
+
+    font-style: normal;
+}
+
+
+/* =========================================================
+   THUMBNAILS
+========================================================= */
+
+.mop-event-thumbs {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 13px;
+
+    margin-top: 15px;
+}
+
+
+.mop-thumb {
+
+    height: 92px;
+
+    padding: 0;
+
+    border: 2px solid transparent;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: .3s ease;
+}
+
+
+.mop-thumb img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .4s ease;
+
+    opacity: .65;
+}
+
+
+.mop-thumb:hover img {
+
+    opacity: 1;
+
+    transform: scale(1.05);
+}
+
+
+.mop-thumb.active {
+
+    border-color: #9a1d4d;
+}
+
+
+.mop-thumb.active img {
+
+    opacity: 1;
+}
+
+
+.mop-thumb span {
+
+    position: absolute;
+
+    left: 8px;
+    bottom: 7px;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow: 0 2px 5px #000;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .mop-premium-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+
+    .mop-featured-event {
+
+        height: 500px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .mop-premium-events {
+
+        padding: 65px 0;
+    }
+
+    .mop-top-title h2,
+    .mop-event-heading h2 {
+
+        font-size: 34px;
+    }
+
+    .mop-event-heading {
+
+        align-items: flex-end;
+    }
+
+    .mop-featured-event {
+
+        height: 520px;
+    }
+
+    .mop-featured-content {
+
+        left: 25px;
+        bottom: 45px;
+
+        width: calc(100% - 50px);
+
+        gap: 15px;
+    }
+
+    .mop-event-info h3 {
+
+        font-size: 27px;
+    }
+
+    .mop-event-info p {
+
+        font-size: 12px;
+    }
+
+    .mop-event-thumbs {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .mop-premium-container {
+
+        width: 90%;
+    }
+
+    .mop-event-heading {
+
+        display: block;
+    }
+
+    .mop-event-arrows {
+
+        margin-top: 20px;
+    }
+
+    .mop-featured-event {
+
+        height: 570px;
+    }
+
+    .mop-event-overlay {
+
+        background:
+            linear-gradient(
+                0deg,
+                rgba(10,25,47,.95),
+                rgba(10,25,47,.2)
+            );
+    }
+
+    .mop-featured-content {
+
+        display: block;
+
+        left: 22px;
+        bottom: 40px;
+
+        width: calc(100% - 44px);
+    }
+
+    .mop-event-date-large {
+
+        margin-bottom: 18px;
+    }
+
+    .mop-event-info h3 {
+
+        font-size: 25px;
+    }
+
+    .mop-news-item {
+
+        grid-template-columns: 58px 1fr;
+
+        gap: 14px;
+    }
+
+    .mop-news-date {
+
+        width: 55px;
+        height: 60px;
+    }
+
+}
+
+
+/* =========================================================
+   ANNOUNCEMENTS + EVENTS
+========================================================= */
+
+.mop-news-events {
+    width: 100%;
+    padding:50px 0;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 8% 15%,
+            rgba(139, 0, 0, 0.08),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 92% 85%,
+            rgba(255, 193, 7, 0.10),
+            transparent 28%
+        ),
+        #fffaf8;
+
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.mop-news-events *,
+.mop-news-events *::before,
+.mop-news-events *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.mop-news-events-container {
+    width: min(1400px, calc(100% - 70px));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:
+        minmax(300px, 0.75fr)
+        minmax(0, 1.7fr);
+
+    gap: 55px;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   COMMON HEADING
+========================================================= */
+
+.mop-panel-heading {
+    margin-bottom: 30px;
+}
+
+.mop-panel-heading span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    color: #d81b60;
+}
+
+.mop-panel-heading h2 {
+    margin: 0;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 29px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    color: #760000;
+}
+
+.mop-title-line {
+    width: 58px;
+    height: 4px;
+
+    margin-top: 13px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #760000 0%,
+        #d81b60 55%,
+        #ffc107 100%
+    );
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT PANEL
+========================================================= */
+
+.mop-announcement-panel {
+    min-width: 0;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(118, 0, 0, 0.10);
+
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT LIST
+========================================================= */
+
+.mop-announcement-list {
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.mop-announcement-list::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+    top: 18px;
+    bottom: 18px;
+
+    width: 2px;
+
+    background: linear-gradient(
+        180deg,
+        #760000,
+        #d81b60,
+        #ffc107
+    );
+
+    opacity: 0.45;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT ITEM
+========================================================= */
+
+.mop-announcement {
+    width: 100%;
+    min-height: 88px;
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        18px
+        minmax(0, 1fr)
+        30px;
+
+    column-gap: 15px;
+
+    align-items: center;
+
+    padding: 15px 0;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #f0dddd;
+
+    transition:
+        padding 0.3s ease,
+        background 0.3s ease;
+}
+
+.mop-announcement:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT DOT
+========================================================= */
+
+.mop-announcement-dot {
+    width: 11px;
+    height: 11px;
+
+    position: relative;
+    z-index: 2;
+
+    margin-left: 3px;
+
+    border-radius: 50%;
+
+    background: #ffc107;
+
+    border: 3px solid #ffffff;
+
+    box-shadow:
+        0 0 0 2px rgba(216, 27, 96, 0.25);
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT CONTENT
+========================================================= */
+
+.mop-announcement-content {
+    min-width: 0;
+}
+
+.mop-announcement-content small {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    color: #d81b60;
+}
+
+.mop-announcement-content h3 {
+    margin: 0 0 4px;
+
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 600;
+
+    color: #760000;
+
+    overflow-wrap: anywhere;
+}
+
+.mop-announcement-content p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.55;
+    font-weight: 400;
+
+    color: #5f5555;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT ARROW
+========================================================= */
+
+.mop-announcement > i {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    color: #760000;
+
+    background: #fff3cd;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT HOVER
+========================================================= */
+
+.mop-announcement:hover {
+    padding-left: 8px;
+}
+
+.mop-announcement:hover .mop-announcement-content h3 {
+    color: #d81b60;
+}
+
+.mop-announcement:hover > i {
+    color: #ffffff;
+
+    background: #d81b60;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.mop-all-notices {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding: 11px 19px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    color: #ffffff;
+
+    background: #760000;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.mop-all-notices i {
+    font-size: 12px;
+}
+
+.mop-all-notices:hover {
+    color: #760000;
+
+    background: #ffc107;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   EVENTS PANEL
+========================================================= */
+
+.mop-events-panel {
+    min-width: 0;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #760000 0%,
+            #970b22 52%,
+            #5c0000 100%
+        );
+
+}
+
+
+/* =========================================================
+   EVENTS TOP
+========================================================= */
+
+.mop-events-top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+.mop-events-panel .mop-panel-heading {
+    margin-bottom: 0;
+}
+
+.mop-events-panel .mop-panel-heading span {
+    color: #ffc107;
+}
+
+.mop-events-panel .mop-panel-heading h2 {
+    color: #ffffff;
+}
+
+.mop-events-panel .mop-title-line {
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #ff4f91,
+        #ffc107
+    );
+}
+
+
+/* =========================================================
+   EVENT CONTROLS
+========================================================= */
+
+.mop-event-controls {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.mop-event-controls button {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.mop-event-controls button:hover {
+    border-color: #ffc107;
+
+    color: #760000;
+
+    background: #ffc107;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   EVENT COUNTER
+========================================================= */
+
+.mop-event-counter {
+    min-width: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.mop-event-counter strong {
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #ffc107;
+}
+
+
+/* =========================================================
+   EVENT VIEWPORT
+========================================================= */
+
+.mop-event-viewport {
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   EVENT TRACK
+========================================================= */
+
+.mop-event-track {
+    width: 100%;
+
+    display: flex;
+
+    gap: 20px;
+
+    transition: transform 0.55s ease;
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   EVENT CARD
+========================================================= */
+
+.mop-event-card {
+    min-width: calc((100% - 40px) / 3);
+
+    flex: 0 0 calc((100% - 40px) / 3);
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.mop-event-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 17px 35px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   EVENT IMAGE
+========================================================= */
+
+.mop-event-image {
+    width: 100%;
+    height: 190px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #f2eeee;
+}
+
+.mop-event-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.mop-event-card:hover .mop-event-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   EVENT NUMBER
+========================================================= */
+
+.mop-event-number {
+    position: absolute;
+
+    top: 13px;
+    left: 13px;
+
+    min-width: 38px;
+    height: 38px;
+
+    padding: 0 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+
+    color: #760000;
+
+    background: #ffc107;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   EVENT CONTENT
+========================================================= */
+
+.mop-event-content {
+    min-height: 145px;
+
+    display: grid;
+
+    grid-template-columns:
+        55px
+        minmax(0, 1fr);
+
+    gap: 15px;
+
+    padding: 20px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   EVENT DATE
+========================================================= */
+
+.mop-event-date {
+    width: 55px;
+    height: 62px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #fff3cd;
+
+    border-left: 4px solid #d81b60;
+}
+
+.mop-event-date strong {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 700;
+
+    color: #760000;
+}
+
+.mop-event-date span {
+    margin-top: 4px;
+
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    color: #d81b60;
+}
+
+
+/* =========================================================
+   EVENT CATEGORY
+========================================================= */
+
+.mop-event-category {
+    display: inline-block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    letter-spacing: 0.7px;
+
+    color: #d81b60;
+}
+
+
+/* =========================================================
+   EVENT TITLE
+========================================================= */
+
+.mop-event-content h3 {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 600;
+
+    color: #760000;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   EVENT LINK
+========================================================= */
+
+.mop-event-content a {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 13px;
+
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    color: #760000;
+
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.mop-event-content a i {
+    font-size: 11px;
+}
+
+.mop-event-content a:hover {
+    gap: 12px;
+
+    color: #d81b60;
+}
+
+
+/* =========================================================
+   EVENT DOTS
+========================================================= */
+
+.mop-event-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 22px;
+}
+
+.mop-event-dots button {
+    width: 8px;
+    height: 8px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    transition:
+        width 0.3s ease,
+        background 0.3s ease;
+}
+
+.mop-event-dots button.active {
+    width: 25px;
+
+    border-radius: 10px;
+
+    background: #ffc107;
+}
+
+
+
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.mop-announcement:focus-visible,
+.mop-all-notices:focus-visible,
+.mop-event-controls button:focus-visible,
+.mop-event-dots button:focus-visible,
+.mop-event-content a:focus-visible {
+    outline: 3px solid rgba(255, 193, 7, 0.55);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .mop-news-events *,
+    .mop-news-events *::before,
+    .mop-news-events *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+
+/* =========================================
+   DEPARTMENT SECTION
+========================================= */
+
+.department-section {
+    position: relative;
+    width: 100%;
+    padding: 65px 0 60px;
+    overflow: hidden;
+
+    /* SECTION BACKGROUND IMAGE */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.374),
+            rgba(1, 0, 0, 0.591)
+        ),
+        url("/assets/img/infra/green.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.department-container {
+    position: relative;
+    z-index: 2;
+
+    width:100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.department-heading {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.department-heading span {
+    display: inline-block;
+
+    margin-bottom: 6px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+
+    color: #f2f4f9;
+}
+
+.department-heading h2 {
+    margin: 0;
+
+    font-size: 38px;
+    line-height: 1.15;
+
+    font-weight: 750;
+
+    color: #fcfdff;
+}
+
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.department-slider {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.department-viewport {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 8px 0 20px;
+
+    cursor: grab;
+}
+
+.department-viewport:active {
+    cursor: grabbing;
+}
+
+.department-track {
+    display: flex;
+
+    gap: 16px;
+
+    width: max-content;
+
+    will-change: transform;
+}
+
+
+/* =========================================
+   COMPACT CARD
+========================================= */
+
+.department-card {
+    position: relative;
+
+    flex: 0 0 255px;
+
+    height: 260px;
+
+    padding: 22px 18px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.87);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* =========================================
+   COLOR TOP LINE
+========================================= */
+
+.department-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #2563eb;
+}
+
+.department-card:nth-child(2)::before {
+    background: #7c3aed;
+}
+
+.department-card:nth-child(3)::before {
+    background: #10b981;
+}
+
+.department-card:nth-child(4)::before {
+    background: #f59e0b;
+}
+
+.department-card:nth-child(5)::before {
+    background: #ef4444;
+}
+
+.department-card:nth-child(6)::before {
+    background: #ec4899;
+}
+
+.department-card:nth-child(7)::before {
+    background: #06b6d4;
+}
+
+.department-card:nth-child(8)::before {
+    background: #8b5cf6;
+}
+
+.department-card:nth-child(9)::before {
+    background: #14b8a6;
+}
+
+.department-card:nth-child(10)::before {
+    background: #f97316;
+}
+
+.department-card:nth-child(11)::before {
+    background: #6366f1;
+}
+
+.department-card:nth-child(12)::before {
+    background: #84cc16;
+}
+
+.department-card:nth-child(13)::before {
+    background: #e11d48;
+}
+
+.department-card:nth-child(14)::before {
+    background: #0ea5e9;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.department-card:hover {
+    transform: translateY(-6px);
+
+}
+
+
+/* =========================================
+   LOGO - MEDIUM SIZE
+========================================= */
+
+.department-logo {
+    width:150px;
+    height:150px;
+
+    margin: 0 auto 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.35s ease;
+}
+
+.department-logo img {
+    width:150px;
+    height:150px;
+border-radius:10%;
+    object-fit: contain;
+}
+
+.department-card:hover .department-logo {
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.department-card h3 {
+    width: 100%;
+
+    min-height: 42px;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #18085c;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.department-card p {
+    margin: 4px 0 0;
+
+    font-size: 13px;
+    line-height: 1.4;
+color: #0a2c6e;
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.department-arrow {
+    flex: 0 0 40px;
+
+    width: 40px;
+    height: 40px;
+
+    margin: 0 8px;
+
+    border: 1px solid #dfe6f0;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #17345f;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 18px rgba(18, 42, 78, 0.09);
+
+    transition: 0.3s ease;
+}
+
+.department-arrow:hover {
+    background: #173f8f;
+
+    color: #ffffff;
+
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   DOTS
+========================================= */
+
+.department-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 5px;
+}
+
+.department-dot {
+    width: 6px;
+    height: 6px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #cdd7e5;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.department-dot.active {
+    width: 21px;
+
+    border-radius: 20px;
+
+    background: #2563eb;
+}
+
+
+
+/* =========================================================
+   BASCW RECOGNITION SECTION
+========================================================= */
+
+.basc-recognition-section {
+    position: relative;
+    width: 100%;
+    padding:30px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   VERY LIGHT PATTERN
+========================================================= */
+
+.basc-recognition-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(7, 59, 143, 0.183) 1px,
+            transparent 1px
+        );
+    background-size: 28px 28px;
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.basc-recognition-container {
+    position: relative;
+    z-index: 2;
+
+    width: min(1380px, calc(100% - 30px));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.basc-recognition-item {
+    position: relative;
+
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e9f2;
+    border-radius: 9px;
+
+    box-shadow: 0 3px 12px rgba(7, 59, 143, 0.08);
+
+    overflow: hidden;
+
+    transition: all 0.25s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.basc-recognition-item:hover {
+    transform: translateY(-2px);
+
+    border-color: #e51d73;
+
+    box-shadow: 0 6px 18px rgba(7, 59, 143, 0.13);
+}
+
+
+/* =========================================================
+   SMALL TOP ACCENT
+========================================================= */
+
+.basc-recognition-item::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 34px;
+    height: 3px;
+
+    background: #e51d73;
+}
+
+
+/* =========================================================
+   BOTTOM ACCENT
+========================================================= */
+
+.basc-recognition-item::after {
+    content: "";
+
+    position: absolute;
+
+    right: 12px;
+    bottom: 0;
+
+    width: 28px;
+    height: 2px;
+
+    background: #ffc107;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.basc-recognition-icon {
+    flex: 0 0 40px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #073b8f;
+
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    box-shadow: 0 3px 8px rgba(7, 59, 143, 0.18);
+}
+
+
+/* Pink alternate icons */
+
+.basc-recognition-item:nth-child(2) .basc-recognition-icon,
+.basc-recognition-item:nth-child(4) .basc-recognition-icon {
+    background: #e51d73;
+}
+
+
+/* Gold final icon */
+
+.basc-recognition-item:last-child .basc-recognition-icon {
+    background: #ffc107;
+    color: #073b8f;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.basc-recognition-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 2px;
+}
+
+
+/* =========================================================
+   ALL TEXT — DARK BLUE
+========================================================= */
+
+.basc-recognition-content strong {
+    display: block;
+
+    color: #073b8f;
+
+    font-size: 13px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* Subtitle also dark blue */
+
+.basc-recognition-content span {
+    display: block;
+
+    color: #073b8f;
+
+    font-size: 10.5px;
+    line-height: 1.2;
+
+    font-weight: 500;
+
+    opacity: 0.78;
+}
+
+
+/* Remove special text colors */
+
+.basc-recognition-item:first-child
+.basc-recognition-content strong,
+
+.basc-recognition-item:last-child
+.basc-recognition-content strong {
+    color: #073b8f;
+}
+
+/* =========================================================
+   CONTINUOUS LOGO SCROLL
+========================================================= */
+
+.logo-scroll-section {
+    width: 100%;
+    padding: 14px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   WRAPPER
+========================================================= */
+
+.logo-scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MOVING TRACK
+========================================================= */
+
+.logo-scroll-track {
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    animation: logoContinuousScroll 28s linear infinite;
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   LOGO ITEM
+========================================================= */
+
+.logo-scroll-item {
+    width: 100px;
+    height: 100px;
+
+    flex: 0 0 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MEDIUM LOGO
+========================================================= */
+
+.logo-scroll-item img {
+    width: auto;
+    height: auto;
+
+    max-width: 100px;
+    max-height: 100px;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.logo-scroll-item:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   INFINITE SCROLL
+========================================================= */
+
+@keyframes logoContinuousScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 14px));
+    }
+
+}
+
+
+
+/* =========================================================
+   SMALL FIXED SOCIAL MEDIA BAR
+========================================================= */
+
+.fixed-social-bar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding: 4px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+
+    border-radius: 8px 0 0 8px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   SMALL SOCIAL ICON
+========================================================= */
+
+.fixed-social {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+.fixed-social.instagram {
+    background: #e1306c;
+}
+
+.fixed-social.facebook {
+    background: #1877f2;
+}
+
+.fixed-social.whatsapp {
+    background: #25d366;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.fixed-social:hover {
+    transform: translateX(-3px);
+
+    color: #ffffff;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .fixed-social-bar {
+        padding: 3px;
+        gap: 3px;
+    }
+
+    .fixed-social {
+        width: 27px;
+        height: 27px;
+
+        font-size: 12px;
+
+        border-radius: 4px;
+    }
+
+}

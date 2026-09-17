@@ -1068,644 +1068,7 @@
 }
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
 
-@media (max-width: 992px) {
-
-    .bharathiyar-container {
-        width: 92%;
-        gap: 15px;
-    }
-
-    .bharathiyar-image,
-    .bharathiyar-content {
-        height: 370px;
-    }
-
-    .bharathiyar-content {
-        padding: 28px 25px;
-    }
-
-    .bharathiyar-content h2 {
-        font-size: 24px;
-    }
-
-    .tamil-highlight p {
-        font-size: 14px;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .bharathiyar-section {
-        padding: 30px 0;
-    }
-
-    .bharathiyar-container {
-        width: 92%;
-
-        grid-template-columns: 1fr;
-
-        gap: 12px;
-    }
-
-    .bharathiyar-image {
-        height: 260px;
-        border-radius: 10px;
-    }
-
-    .bharathiyar-content {
-        height: auto;
-        min-height: 330px;
-
-        padding: 28px 23px;
-
-        border-radius: 10px;
-    }
-
-    .bharathiyar-content h2 {
-        font-size: 22px;
-    }
-
-    .tamil-highlight {
-        padding: 10px 14px;
-    }
-
-    .tamil-highlight p {
-        font-size: 15px;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .bharathiyar-section {
-        padding: 25px 0;
-    }
-
-    .bharathiyar-container {
-        width: 94%;
-        gap: 10px;
-    }
-
-    .bharathiyar-image {
-        height: 230px;
-    }
-
-    .bharathiyar-content {
-        padding: 25px 20px;
-    }
-
-    .bharathiyar-content h2 {
-        font-size: 20px;
-    }
-
-    .tamil-highlight p {
-        font-size: 14px;
-    }
-}
-
-/* =========================================================
-   TABLET RESPONSIVE
-========================================================= */
-
-@media (max-width: 1024px) {
-
-    .dept-rail-section {
-        padding: 55px 0;
-    }
-
-    .dept-rail-header {
-        margin-bottom: 42px;
-        padding: 0 20px;
-    }
-
-    .dept-rail-kicker {
-        font-size: 15px;
-        letter-spacing: 2.5px;
-    }
-
-    .dept-rail-header h2 {
-        font-size: 38px;
-    }
-
-    .dept-rail-header p {
-        font-size: 13px;
-        line-height: 1.7;
-    }
-
-    /* Department item */
-
-    .dept-rail-item {
-        width: 300px;
-        flex: 0 0 300px;
-    }
-
-    /* Square image */
-
-    .dept-rail-photo {
-        width: 300px;
-        height: 300px;
-    }
-
-    /* Information */
-
-    .dept-rail-info {
-        margin: -28px 12px 0;
-
-        min-height:130px;
-
-        padding: 17px 48px 17px 17px;
-    }
-
-    .dept-rail-info span {
-        font-size: 13px;
-        letter-spacing: 1px;
-    }
-
-    .dept-rail-info h3 {
-        font-size: 17px;
-    }
-
-    .dept-rail-arrow {
-        right: 13px;
-
-        width: 30px;
-        height: 30px;
-    }
-
-    /* Scroll */
-
-    .dept-rail-track {
-        gap: 20px;
-
-        animation-duration: 30s;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .dept-rail-section {
-        padding: 45px 0;
-    }
-
-    .dept-rail-container {
-        width: 100%;
-    }
-
-
-    /* =====================================================
-       HEADER
-    ===================================================== */
-
-    .dept-rail-header {
-        margin-bottom: 32px;
-
-        padding: 0 18px;
-    }
-
-    .dept-rail-kicker {
-        gap: 8px;
-
-        margin-bottom: 8px;
-
-        font-size: 14px;
-        letter-spacing: 2px;
-    }
-
-    .dept-rail-kicker i {
-        width: 22px;
-    }
-
-    .dept-rail-header h2 {
-        font-size: 30px;
-
-        line-height: 1.25;
-    }
-
-    .dept-rail-header p {
-        max-width: 520px;
-
-        margin-top: 10px;
-
-        font-size: 12px;
-        line-height: 1.7;
-    }
-
-
-    /* =====================================================
-       VIEWPORT
-    ===================================================== */
-
-    .dept-rail-viewport {
-        padding: 8px 0 28px;
-    }
-
-
-    /* =====================================================
-       TRACK
-    ===================================================== */
-
-    .dept-rail-track {
-        gap: 16px;
-
-        animation-duration: 25s;
-    }
-
-
-    /* =====================================================
-       ITEM
-    ===================================================== */
-
-    .dept-rail-item {
-        width: 300px;
-
-        flex: 0 0 300px;
-    }
-
-
-    /* =====================================================
-       SQUARE IMAGE
-    ===================================================== */
-
-    .dept-rail-photo {
-        width:300px;
-        height:300px;
-    }
-
-    .dept-rail-photo img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-    }
-
-
-    /* =====================================================
-       NUMBER
-    ===================================================== */
-
-    .dept-rail-index {
-        top: 13px;
-        left: 13px;
-
-        font-size: 14px;
-    }
-
-    .dept-rail-index::after {
-        width: 18px;
-        height: 2px;
-
-        margin-top: 5px;
-    }
-
-
-    /* =====================================================
-       VERTICAL DEPARTMENT NAME
-    ===================================================== */
-
-    .dept-rail-name {
-        right: -2px;
-
-        bottom: 42px;
-
-        font-size: 15px;
-
-        letter-spacing: 1.5px;
-    }
-
-
-    /* =====================================================
-       INFORMATION BOX
-    ===================================================== */
-
-    .dept-rail-info {
-        margin: -22px 9px 0;
-
-        min-height: 130px;
-
-        padding: 13px 40px 13px 13px;
-
-        border-top-width: 2px;
-    }
-
-    .dept-rail-info span {
-        margin-bottom: 4px;
-
-        font-size:13px;
-
-        letter-spacing: .8px;
-
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .dept-rail-info h3 {
-        font-size: 15px;
-
-        line-height: 1.35;
-    }
-
-
-    /* =====================================================
-       ARROW
-    ===================================================== */
-
-    .dept-rail-arrow {
-        right: 9px;
-
-        width: 26px;
-        height: 26px;
-
-        font-size: 8px;
-    }
-
-
-    /* =====================================================
-       GOLD HOVER LINE
-    ===================================================== */
-
-    .dept-rail-item::before {
-        top: -4px;
-
-        height: 2px;
-    }
-
-
-    /* =====================================================
-       SIDE FADE
-    ===================================================== */
-
-    .dept-rail-viewport::before,
-    .dept-rail-viewport::after {
-        width: 30px;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .dept-rail-section {
-        padding: 40px 0;
-    }
-
-
-    /* =====================================================
-       HEADER
-    ===================================================== */
-
-    .dept-rail-header {
-        margin-bottom: 28px;
-
-        padding: 0 15px;
-    }
-
-    .dept-rail-kicker {
-        font-size: 14px;
-
-        letter-spacing: 1.6px;
-    }
-
-    .dept-rail-kicker i {
-        width: 18px;
-    }
-
-    .dept-rail-header h2 {
-        font-size: 27px;
-    }
-
-    .dept-rail-header p {
-        font-size: 11px;
-
-        line-height: 1.65;
-    }
-
-
-    /* =====================================================
-       TRACK
-    ===================================================== */
-
-    .dept-rail-track {
-        gap: 13px;
-
-        animation-duration: 21s;
-    }
-
-
-    /* =====================================================
-       ITEM
-    ===================================================== */
-
-    .dept-rail-item {
-        width:300px;
-
-        flex: 0 0 300px;
-    }
-
-
-    /* =====================================================
-       IMAGE
-    ===================================================== */
-
-    .dept-rail-photo {
-        width: 300px;
-        height: 300px;
-    }
-
-
-    /* =====================================================
-       NUMBER
-    ===================================================== */
-
-    .dept-rail-index {
-        top: 10px;
-        left: 10px;
-
-        font-size: 9px;
-    }
-
-    .dept-rail-index::after {
-        width: 15px;
-        height: 2px;
-
-        margin-top: 4px;
-    }
-
-
-    /* =====================================================
-       VERTICAL NAME
-    ===================================================== */
-
-    .dept-rail-name {
-        right: -2px;
-
-        bottom: 35px;
-
-        font-size: 15px;
-
-        letter-spacing: 1.2px;
-    }
-
-
-    /* =====================================================
-       INFO
-    ===================================================== */
-
-    .dept-rail-info {
-        margin: -18px 7px 0;
-
-        min-height:130px;
-
-        padding: 11px 34px 11px 11px;
-    }
-
-    .dept-rail-info span {
-        font-size: 13px;
-
-        letter-spacing: .6px;
-    }
-
-    .dept-rail-info h3 {
-        font-size: 13px;
-    }
-
-
-    /* =====================================================
-       ARROW
-    ===================================================== */
-
-    .dept-rail-arrow {
-        right: 7px;
-
-        width: 23px;
-        height: 23px;
-
-        font-size: 7px;
-    }
-
-
-    /* =====================================================
-       FADE
-    ===================================================== */
-
-    .dept-rail-viewport::before,
-    .dept-rail-viewport::after {
-        width: 15px;
-    }
-}
-
-
-/* =========================================================
-   EXTRA SMALL DEVICES
-========================================================= */
-
-@media (max-width: 360px) {
-
-    .dept-rail-section {
-        padding: 35px 0;
-    }
-
-    .dept-rail-header h2 {
-        font-size: 24px;
-    }
-
-    .dept-rail-header p {
-        font-size: 10px;
-    }
-
-    .dept-rail-track {
-        gap: 11px;
-
-        animation-duration: 19s;
-    }
-
-    .dept-rail-item {
-        width:300px;
-
-        flex-basis: 300px;
-    }
-
-    .dept-rail-photo {
-        width:300px;
-        height: 300px;
-    }
-
-    .dept-rail-info {
-        margin-top: -16px;
-
-        min-height: 130px;
-
-        padding: 10px 32px 10px 10px;
-    }
-
-    .dept-rail-info h3 {
-        font-size: 13px;
-    }
-
-    .dept-rail-info span {
-        font-size: 13px;
-    }
-}
-
-
-/* =========================================================
-   TOUCH DEVICES
-   Prevent unwanted horizontal page scrolling
-========================================================= */
-
-@media (hover: none) {
-
-    .dept-rail-viewport {
-        overflow: hidden;
-    }
-
-    .dept-rail-track {
-        will-change: transform;
-    }
-
-    .dept-rail-item:hover .dept-rail-photo img {
-        transform: none;
-    }
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .dept-rail-track {
-        animation: none;
-    }
-
-    .dept-rail-photo img,
-    .dept-rail-arrow,
-    .dept-rail-item::before {
-        transition: none;
-    }
-}
 
 /* =========================================================
    TABLET
@@ -1955,571 +1318,6 @@
     }
 }
 
-/* =========================================================
-   LARGE DESKTOP
-========================================================= */
-
-@media (min-width: 1400px) {
-
-    .notices-panel {
-        padding: 30px;
-    }
-
-
-    .notices-panel .panel-heading-left h3 {
-        font-size: 25px;
-    }
-
-
-    .notices-panel .notice-wrapper {
-        height: 370px;
-    }
-
-
-    .notices-panel .notice-row {
-        padding-top: 21px;
-
-        padding-bottom: 21px;
-    }
-
-
-    .notices-panel .notice-text h4 {
-        font-size: 16px;
-    }
-
-
-    .notices-panel .notice-text p {
-        font-size: 12px;
-    }
-
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1050px) {
-
-    .notices-panel {
-        padding: 23px;
-    }
-
-
-    .notices-panel .notice-wrapper {
-        height: 330px;
-    }
-
-
-    .notices-panel .panel-heading-left h3 {
-        font-size: 21px;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 700px) {
-
-    .notices-panel {
-        padding: 20px;
-
-        border-radius: 18px;
-    }
-
-
-    /* Heading */
-
-    .notices-panel .panel-heading {
-        padding-bottom: 16px;
-
-        gap: 10px;
-    }
-
-
-    .notices-panel .panel-heading-left {
-        gap: 10px;
-    }
-
-
-    .notices-panel .panel-icon {
-        width: 43px;
-
-        min-width: 43px;
-
-        height: 43px;
-
-        border-radius: 11px;
-
-        font-size: 17px;
-    }
-
-
-    .notices-panel .panel-heading-left span {
-        font-size:12px;
-
-        letter-spacing: 1.5px;
-    }
-
-
-    .notices-panel .panel-heading-left h3 {
-        font-size: 18px;
-    }
-
-
-    /* View all */
-
-    .notices-panel .panel-more {
-        padding: 7px 9px;
-
-        font-size: 12px;
-
-        gap: 5px;
-    }
-
-
-    /* Scroll area */
-
-    .notices-panel .notice-wrapper {
-        height: 310px;
-
-        padding-right: 5px;
-    }
-
-
-    /* Notice */
-
-    .notices-panel .notice-row {
-        gap: 10px;
-
-        padding: 16px 3px 16px 0;
-    }
-
-
-    .notices-panel .notice-symbol {
-        width: 39px;
-
-        min-width: 39px;
-
-        height: 39px;
-
-        border-radius: 10px;
-
-        font-size: 14px;
-    }
-
-
-    .notices-panel .notice-meta {
-        font-size: 12px;
-
-        gap: 6px;
-    }
-
-
-    .notices-panel .new-tag {
-        padding: 3px 6px;
-
-        font-size: 6px;
-    }
-
-
-    .notices-panel .notice-text h4 {
-        margin: 5px 0 4px;
-
-        font-size: 14px;
-    }
-
-
-    .notices-panel .notice-text p {
-        font-size:12px;
-
-        line-height: 1.55;
-    }
-
-
-    .notices-panel .notice-arrow {
-        margin-top: 15px;
-
-        font-size: 8px;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 430px) {
-
-    .notices-panel {
-        padding: 17px;
-
-        border-radius: 16px;
-    }
-
-
-    .notices-panel .panel-icon {
-        width: 39px;
-
-        min-width: 39px;
-
-        height: 39px;
-
-        font-size: 15px;
-    }
-
-
-    .notices-panel .panel-heading-left h3 {
-        font-size: 16px;
-    }
-
-
-    .notices-panel .panel-heading-left span {
-        font-size: 12px;
-    }
-
-
-    .notices-panel .panel-more {
-        padding: 6px 7px;
-
-        font-size: 12px;
-    }
-
-
-    .notices-panel .notice-wrapper {
-        height: 280px;
-    }
-
-
-    .notices-panel .notice-row {
-        gap: 8px;
-
-        padding: 14px 2px 14px 0;
-    }
-
-
-    .notices-panel .notice-symbol {
-        width: 35px;
-
-        min-width: 35px;
-
-        height: 35px;
-
-        border-radius: 8px;
-
-        font-size: 12px;
-    }
-
-
-    .notices-panel .notice-meta {
-        font-size: 12px;
-    }
-
-
-    .notices-panel .notice-text h4 {
-        font-size: 14px;
-    }
-
-
-    .notices-panel .notice-text p {
-        font-size: 12px;
-    }
-
-
-    .notices-panel .notice-arrow {
-        margin-top: 13px;
-
-        font-size: 7px;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .footer-social-area {
-        margin-top: 20px;
-
-        padding-top: 15px;
-    }
-
-    .footer-social {
-        gap: 7px;
-    }
-
-    .footer-social-link {
-        width: 32px;
-        height: 32px;
-
-        font-size: 12px;
-
-        border-radius: 7px;
-    }
-
-}
-
-/* =========================================================
-   DEPARTMENT RAIL - MOBILE VIEW
-========================================================= */
-
-@media (max-width: 768px) {
-
-    /* SECTION */
-    .dept-rail-section {
-        width: 100%;
-        padding: 35px 0 50px;
-        overflow: hidden !important;
-    }
-
-    /* CONTAINER */
-    .dept-rail-container {
-        width: 100%;
-        padding: 0 42px;
-        margin: 0 auto;
-    }
-
-    /* HEADER */
-    .dept-rail-header {
-        text-align: center;
-        margin-bottom: 25px;
-    }
-
-    .video-college-text h1 {
-        font-size: 24px;
-        line-height: 1.2;
-        margin: 0;
-    }
-
-    /* VIEWPORT */
-    .dept-rail-viewport {
-        width: 100%;
-        overflow: hidden !important;
-        position: relative;
-    }
-
-    /* TRACK */
-    .dept-rail-track {
-        display: flex !important;
-        gap: 15px !important;
-
-        width: max-content !important;
-
-        animation: none !important;
-
-        transition: transform .55s ease !important;
-
-        will-change: transform;
-    }
-
-    /* =====================================================
-       MOBILE CARD
-    ===================================================== */
-
-    .dept-rail-item {
-        flex: 0 0 calc(100vw - 84px) !important;
-        width: calc(100vw - 84px) !important;
-
-        max-width: 300px;
-
-        min-width: 0;
-
-        border-radius: 16px;
-
-        overflow: hidden;
-
-        pointer-events: none;
-    }
-
-    /* IMAGE */
-    .dept-rail-photo {
-        width: 300px;
-        height: 300px;
-
-        overflow: hidden;
-    }
-
-    .dept-rail-photo img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-        display: block;
-
-        pointer-events: none;
-    }
-
-    /* CONTENT */
-    .dept-rail-info {
-        position: relative;
-
-        min-height: 100px;
-
-        padding:5px;
-
-        pointer-events: none;
-    }
-
-    .dept-rail-info span {
-        display: block;
-
-        font-size: 13px;
-        line-height: 1.4;
-
-        margin-bottom: 6px;
-
-        letter-spacing: .8px;
-    }
-
-    .dept-rail-info h3 {
-        font-size: 22px;
-        line-height: 1.2;
-
-        margin: 0;
-    }
-
-    /* CARD SMALL ARROW */
-    .dept-rail-arrow {
-        width: 38px;
-        height: 38px;
-
-        right: 14px;
-        bottom: 18px;
-
-        font-size: 13px;
-    }
-
-    /* =====================================================
-       MAIN LEFT / RIGHT ARROWS
-    ===================================================== */
-
-    .slider-arrow {
-        position: absolute !important;
-
-        top: 50% !important;
-
-        width: 40px !important;
-        height: 40px !important;
-
-        min-width: 40px !important;
-        min-height: 40px !important;
-
-        padding: 0 !important;
-        margin: 0 !important;
-
-        border: 0 !important;
-
-        border-radius: 50% !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-
-        font-size: 18px !important;
-        line-height: 1 !important;
-
-        z-index: 9999999 !important;
-
-        pointer-events: auto !important;
-
-        cursor: pointer !important;
-
-        transform: translateY(-50%) !important;
-    }
-
-    /* LEFT */
-    .slider-prev {
-        left: 4px !important;
-        right: auto !important;
-    }
-
-    /* RIGHT */
-    .slider-next {
-        right: 4px !important;
-        left: auto !important;
-    }
-
-    /* HOVER */
-    .slider-arrow:hover {
-        transform: translateY(-50%) scale(1.05) !important;
-    }
-
-}
-
-
-/* =========================================================
-   VERY SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .dept-rail-section {
-        padding: 30px 0 45px;
-    }
-
-    .dept-rail-container {
-        padding: 0 38px;
-    }
-
-    .video-college-text h1 {
-        font-size: 15px;
-    }
-
-    .dept-rail-item {
-        flex: 0 0 calc(100vw - 76px) !important;
-        width: calc(100vw - 76px) !important;
-    }
-
-    .dept-rail-photo {
-        height:300px;
-    }
-
-    .dept-rail-info {
-        min-height:80px;
-        padding:5px;
-    }
-
-    .dept-rail-info h3 {
-        font-size: 20px;
-    }
-
-    .dept-rail-info span {
-        font-size:13px;
-    }
-
-    .dept-rail-arrow {
-        width: 36px;
-        height: 36px;
-
-        right: 12px;
-        bottom: 15px;
-    }
-
-    .slider-arrow {
-        width: 36px !important;
-        height: 36px !important;
-
-        min-width: 36px !important;
-        min-height: 36px !important;
-
-        font-size: 16px !important;
-    }
-
-    .slider-prev {
-        left: 3px !important;
-    }
-
-    .slider-next {
-        right: 3px !important;
-    }
-}
 
 /* =========================================================
    MOBILE
@@ -2657,7 +1455,7 @@
     }
 
     .vmm-heading span {
-        font-size: 10px;
+        font-size: 15px;
         letter-spacing: 1.3px;
     }
 
@@ -2750,7 +1548,7 @@
 
     .marquee-item {
         padding: 0 12px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .marquee-icon {
@@ -2795,10 +1593,10 @@
 
     .college-logo {
 
-        width: 55px;
-        height: 55px;
+        width: 46px;
+        height: 98px;
 
-        flex: 0 0 55px;
+        flex: 0 0 98px;
     }
 
 
@@ -2806,7 +1604,7 @@
 
     .college-title h1 {
 
-        font-size: 15px;
+        font-size:45px;
 
         line-height: 1.2;
 
@@ -2818,6 +1616,7 @@
         -webkit-box-orient: vertical;
 
         overflow: hidden;
+        letter-spacing: 2.5px;
     }
 
 
@@ -2835,7 +1634,7 @@
 
     .college-affiliation {
 
-        font-size: 8px;
+        font-size:12px;
     }
 
 
@@ -3105,16 +1904,17 @@
 
     .college-logo {
 
-        width: 50px;
-        height: 50px;
+        width: 46px;
+        height:66px;
 
-        flex-basis: 50px;
+        flex-basis: 66px;
     }
 
 
     .college-title h1 {
 
-        font-size: 9px;
+        font-size:30px;
+        letter-spacing: 2.5px;
     }
 
     .aff-logo{
@@ -3123,13 +1923,13 @@
 
     .college-subtitle {
 
-        font-size: 9px;
+        font-size: 10px;
     }
 
 
     .college-affiliation {
 
-        font-size: 9px;
+        font-size: 10px;
     }
 
 
@@ -3158,20 +1958,20 @@
    VERY SMALL MOBILE - 380px
 ========================================================= */
 
-@media (max-width: 380px) {
+@media (max-width:450px) {
 
     .college-logo {
 
         width: 46px;
-        height: 46px;
+        height:66px;
 
-        flex-basis: 46px;
+        flex-basis:66px;
     }
 
 
     .college-title h1 {
 
-        font-size:8px;
+        font-size:25px;
 
     }
 
@@ -3199,6 +1999,50 @@
 
 }
 
+/* =========================================================
+   VERY SMALL MOBILE - 380px
+========================================================= */
+
+@media (max-width: 375px) {
+
+    .college-logo {
+
+        width: 46px;
+        height: 66px;
+
+        flex-basis: 66px;
+    }
+
+
+    .college-title h1 {
+
+        font-size:22px;
+
+    }
+
+
+    .college-subtitle {
+
+        font-size:9px;
+    }
+
+    .aff-logo{
+        display: none;
+    }
+
+    .college-affiliation {
+
+        font-size:9px;
+    }
+
+
+    .menu-toggle {
+
+        width: 39px;
+        height: 38px;
+    }
+
+}
 
 /* =========================================================
    REMOVE MOBILE BLUE TAP / FOCUS LINE
@@ -3398,245 +2242,752 @@
 }
 
 
-/* =========================================================
-   MOBILE RESPONSIVE
-   PREMIUM EVENTS + NOTICE BOARD
-========================================================= */
+/* =========================================
+   TABLET
+========================================= */
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
 
-    /* MAIN SECTION */
-    .premium-updates {
-        padding: 40px 15px;
+    .department-card {
+        flex-basis: 245px;
+        height: 255px;
     }
 
-    /* STACK EVENT + NOTICE */
-    .premium-update-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .department-section {
+        padding: 50px 0 45px;
     }
 
-    /* EVENT SLIDER */
-    .event-image-slider {
-        width: 100%;
-        height: 380px;
+    .department-heading {
+        margin-bottom: 28px;
     }
 
-    .event-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+    .department-heading h2 {
+        font-size: 32px;
     }
 
-    /* EVENT TEXT */
-    .event-overlay {
-        padding: 25px 25px;
-        gap: 15px;
+    .department-heading p {
+        font-size: 13px;
     }
 
-    .event-date {
-        width: 70px;
-        height: 70px;
+    .department-card {
+        flex-basis: 225px;
+        height: 245px;
+
+        padding: 20px 16px;
     }
 
-    .event-date strong {
-        font-size: 27px;
+    .department-logo {
+        width:100px;
+        height: 100px;
+
+        margin-bottom: 11px;
     }
 
-    .event-date span {
-        font-size: 9px;
+    .department-logo img {
+        width:100px;
+        height: 100px;
     }
 
-    .event-info h3 {
-        font-size: 23px;
+    .department-card h3 {
+        font-size: 15px;
     }
 
-    .event-info p {
-        font-size: 12px;
+    .department-arrow {
+        display: none;
     }
 
+}
 
-    /* NOTICE BOARD */
-    .color-notice-panel {
-        width: 100%;
-        height: 380px;
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .department-container {
+        width: 90%;
     }
 
-    .notice-scroll {
-        height: 320px;
+    .department-card {
+        flex-basis: 215px;
+        height: 235px;
     }
 
-    .color-notice-item {
-        min-height: 105px;
-        padding: 13px 15px;
-        gap: 10px;
-    }
-
-    .color-notice-content h4 {
-        font-size: 14px;
-    }
-
-    .color-notice-content p {
-        font-size: 12px;
+    .department-track {
+        gap: 13px;
     }
 
 }
 
 
 /* =========================================================
-   TABLET / SMALL MOBILE
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .mop-news-events {
+        padding: 60px 0;
+    }
+
+    .mop-news-events-container {
+        width: min(100% - 45px, 900px);
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .mop-event-card {
+        min-width: calc((100% - 20px) / 2);
+
+        flex-basis: calc((100% - 20px) / 2);
+    }
+
+    .mop-event-image {
+        height: 200px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .mop-news-events {
+        padding: 45px 0;
+    }
+
+    .mop-news-events-container {
+        width: calc(100% - 30px);
+
+        gap: 25px;
+    }
+
+    .mop-announcement-panel,
+    .mop-events-panel {
+        padding: 22px;
+
+        border-radius: 12px;
+    }
+
+    .mop-panel-heading {
+        margin-bottom: 24px;
+    }
+
+    .mop-panel-heading h2 {
+        font-size: 25px;
+    }
+
+    .mop-panel-heading span {
+        font-size: 12px;
+    }
+
+    .mop-events-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .mop-event-controls {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+    .mop-event-card {
+        min-width: 100%;
+
+        flex-basis: 100%;
+    }
+
+    .mop-event-image {
+        height: 210px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .mop-news-events-container {
+        width: calc(100% - 22px);
+    }
+
+    .mop-announcement-panel,
+    .mop-events-panel {
+        padding: 18px;
+    }
+
+    .mop-panel-heading h2 {
+        font-size: 23px;
+    }
+
+    .mop-announcement {
+        min-height: 82px;
+
+        grid-template-columns:
+            18px
+            minmax(0, 1fr)
+            30px;
+
+        column-gap: 12px;
+    }
+
+    .mop-announcement-content small {
+        font-size: 11px;
+    }
+
+    .mop-announcement-content h3 {
+        font-size: 15px;
+    }
+
+    .mop-announcement-content p {
+        font-size: 12px;
+    }
+
+    .mop-event-image {
+        height: 190px;
+    }
+
+    .mop-event-content {
+        grid-template-columns:
+            50px
+            minmax(0, 1fr);
+
+        gap: 13px;
+
+        padding: 17px;
+    }
+
+    .mop-event-date {
+        width: 50px;
+        height: 58px;
+    }
+
+    .mop-event-date strong {
+        font-size: 18px;
+    }
+
+    .mop-event-content h3 {
+        font-size: 15px;
+    }
+
+    .mop-event-content a {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .mop-news-events-container {
+        width: calc(100% - 16px);
+    }
+
+    .mop-announcement-panel,
+    .mop-events-panel {
+        padding: 15px;
+    }
+
+    .mop-panel-heading h2 {
+        font-size: 21px;
+    }
+
+    .mop-event-image {
+        height: 175px;
+    }
+
+    .mop-event-content {
+        padding: 15px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-college-section {
+        padding: 40px 15px;
+    }
+
+    .about-college-content,
+    .about-college-image {
+        height: 400px;
+    }
+
+    .about-college-content {
+        padding: 28px 30px;
+    }
+
+    .about-college-content h2 {
+        font-size: 24px;
+    }
+
+    .about-college-content > p {
+        font-size: 13px;
+    }
+
+    .about-tamil-quote p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-college-section {
+        padding: 35px 15px;
+    }
+
+    .about-college-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-college-content {
+        height: auto;
+        min-height: 0;
+
+        padding: 28px 22px;
+
+        border-radius: 16px;
+    }
+
+    .about-college-image {
+        height: 350px;
+
+        padding: 10px;
+
+        border-radius: 16px;
+    }
+
+    .about-info-row {
+        flex-direction: row;
+    }
+
+    .about-college-content h2 {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-college-content {
+        padding: 24px 18px;
+    }
+
+    .about-college-content h2 {
+        font-size: 21px;
+    }
+
+    .about-college-content > p {
+        font-size: 13px;
+    }
+
+    .about-tamil-quote p {
+        font-size: 13px;
+    }
+
+    .about-info-box span {
+        font-size: 13px;
+    }
+
+    .about-info-box small {
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .basc-why-container {
+        grid-template-columns: 44% 56%;
+    }
+
+    .basc-circle-bg {
+        width: 390px;
+        height: 390px;
+
+        left: 5px;
+    }
+
+    .basc-pink-arc {
+        width: 420px;
+        height: 420px;
+
+        left: -10px;
+    }
+
+    .basc-student-image {
+        width: 430px;
+    }
+
+    .basc-why-content h2 {
+        font-size: 35px;
+    }
+
+    .basc-feature-experience {
+        gap: 15px;
+    }
+
+    .basc-excellence-badge {
+        width: 135px;
+        height: 135px;
+
+        flex-basis: 135px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .basc-why-section {
+        padding: 55px 0;
+    }
+
+    .basc-why-container {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* Image */
+
+    .basc-why-image-area {
+        min-height: 390px;
+
+        order: 1;
+    }
+
+    .basc-circle-bg {
+        width: 310px;
+        height: 310px;
+
+        left: 50%;
+
+        top: 30px;
+
+        transform: translateX(-50%);
+    }
+
+    .basc-pink-arc {
+        width: 330px;
+        height: 330px;
+
+        left: 50%;
+
+        top: 20px;
+
+        transform:
+            translateX(-50%)
+            rotate(-25deg);
+    }
+
+    .basc-student-image {
+        width: 330px;
+
+        margin-top: 30px;
+    }
+
+    .basc-lotus {
+        bottom: 30px;
+        left: 20px;
+
+        font-size: 45px;
+    }
+
+
+    /* Content */
+
+    .basc-why-content {
+        padding: 10px 0;
+
+        order: 2;
+    }
+
+    .basc-small-title {
+        font-size: 12px;
+    }
+
+    .basc-why-content h2 {
+        font-size: 30px;
+
+        line-height: 1.18;
+    }
+
+    .basc-description {
+        font-size: 15px;
+
+        line-height: 1.9;
+    }
+
+
+    /* Feature + badge */
+
+    .basc-feature-experience {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .basc-features {
+        gap: 12px;
+    }
+
+    .basc-feature {
+        font-size: 13px;
+    }
+
+    .basc-excellence-badge {
+        width: 115px;
+        height: 115px;
+
+        flex-basis: 115px;
+    }
+
+    .basc-badge-inner {
+        width: 94px;
+        height: 94px;
+    }
+
+    .basc-years {
+        font-size: 29px;
+    }
+
+    .basc-years-text {
+        font-size: 8px;
+    }
+
+    .basc-excellence {
+        font-size: 6px;
+
+        padding: 3px 7px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .basc-why-image-area {
+        min-height: 340px;
+    }
+
+    .basc-circle-bg {
+        width: 275px;
+        height: 275px;
+    }
+
+    .basc-pink-arc {
+        width: 295px;
+        height: 295px;
+    }
+
+    .basc-student-image {
+        width: 290px;
+    }
+
+    .basc-why-content h2 {
+        font-size: 27px;
+    }
+
+    .basc-feature-experience {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .basc-excellence-badge {
+        align-self: center;
+    }
+
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .basc-recognition-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .basc-recognition-section {
+        padding: 14px 0;
+    }
+
+    .basc-recognition-container {
+        width: calc(100% - 22px);
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+    .basc-recognition-item {
+        min-height: 68px;
+
+        padding: 9px 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .basc-recognition-section {
+        padding: 12px 0;
+    }
+
+    .basc-recognition-container {
+        width: calc(100% - 18px);
+
+        gap: 7px;
+    }
+
+    .basc-recognition-item {
+        min-height: 62px;
+
+        padding: 8px 10px;
+
+        gap: 9px;
+    }
+
+    .basc-recognition-icon {
+        width: 36px;
+        height: 36px;
+
+        flex-basis: 36px;
+
+        font-size: 13px;
+    }
+
+    .basc-recognition-content strong {
+        font-size: 12.5px;
+    }
+
+    .basc-recognition-content span {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .basc-recognition-container {
+        width: calc(100% - 14px);
+    }
+
+    .basc-recognition-item {
+        min-height: 58px;
+    }
+
+    .basc-recognition-content strong {
+        font-size: 12px;
+    }
+
+    .basc-recognition-content span {
+        font-size: 9.5px;
+    }
+
+}
+
+/* =========================================================
+   TABLET
 ========================================================= */
 
 @media (max-width: 768px) {
 
-    .premium-updates {
-        padding: 35px 12px;
+    .logo-scroll-section {
+        padding: 10px 0;
     }
 
-    /* TITLE */
-    .premium-title {
-        margin-bottom: 22px;
+    .logo-scroll-track {
+        gap: 18px;
+
+        animation-duration: 24s;
     }
 
-    .title-line {
-        gap: 10px;
+    .logo-scroll-item {
+        width:100px;
+        height:100px;
+
+        flex-basis: 100px;
+
+        padding: 6px;
     }
 
-    .title-line span {
-        width: 30px;
-    }
-
-    .title-line small {
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-    .premium-title h2 {
-        font-size: 30px;
-    }
-
-    .premium-title p {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-
-
-    /* EVENT IMAGE */
-    .event-image-slider {
-        height: 330px;
-    }
-
-
-    /* EVENT OVERLAY */
-    .event-overlay {
-        padding: 20px;
-        gap: 12px;
-    }
-
-    .event-date {
-        width: 62px;
-        height: 62px;
-    }
-
-    .event-date strong {
-        font-size: 24px;
-    }
-
-    .event-date span {
-        font-size: 8px;
-    }
-
-    .event-category {
-        font-size: 9px;
-        letter-spacing: 1px;
-    }
-
-    .event-info h3 {
-        font-size: 20px;
-        line-height: 1.25;
-    }
-
-    .event-info p {
-        margin-top: 5px;
-        font-size: 11px;
-    }
-
-
-    /* NOTICE HEADER */
-    .color-notice-header {
-        padding: 14px 16px;
-    }
-
-    .notice-bell {
-        width: 38px;
-        height: 38px;
-        font-size: 16px;
-    }
-
-    .color-notice-title {
-        gap: 10px;
-    }
-
-    .color-notice-title span {
-        font-size: 8px;
-    }
-
-    .color-notice-title h3 {
-        font-size: 18px;
-    }
-
-    .notice-view-all {
-        font-size: 10px;
-    }
-
-
-    /* NOTICE SCROLL */
-    .color-notice-panel {
-        height: 350px;
-    }
-
-    .notice-scroll {
-        height: 292px;
-    }
-
-    .color-notice-item {
-        min-height: 97px;
-        padding: 12px;
-        gap: 9px;
-    }
-
-    .notice-date-box {
-        width: 50px;
-        height: 54px;
-    }
-
-    .notice-date-box strong {
-        font-size: 20px;
-    }
-
-    .notice-date-box span {
-        font-size: 8px;
-    }
-
-    .notice-icon-box {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .color-notice-content h4 {
-        font-size: 13px;
-    }
-
-    .color-notice-content p {
-        margin-top: 4px;
-        font-size: 10px;
-        line-height: 1.4;
-    }
-
-    .notice-go {
-        font-size: 9px;
+    .logo-scroll-item img {
+        max-width:100px;
+        max-height:100px;
     }
 
 }
@@ -3648,290 +2999,22 @@
 
 @media (max-width: 480px) {
 
-    .premium-updates {
-        padding: 28px 10px;
+    .logo-scroll-track {
+        gap: 14px;
+
+        animation-duration: 20s;
     }
 
+    .logo-scroll-item {
+        width: 100px;
+        height:100px;
 
-    /* TITLE */
-    .premium-title {
-        margin-bottom: 18px;
+        flex-basis: 100px;
     }
 
-    .title-line {
-        gap: 8px;
-        margin-bottom: 7px;
-    }
-
-    .title-line span {
-        width: 25px;
-    }
-
-    .title-line small {
-        font-size: 9px;
-        letter-spacing: 1.5px;
-    }
-
-    .premium-title h2 {
-        font-size: 25px;
-    }
-
-    .premium-title p {
-        font-size: 11px;
-    }
-
-
-    /* =====================================================
-       EVENT SLIDER
-    ===================================================== */
-
-    .event-image-slider {
-        height: 260px;
-    }
-
-    .event-slide img {
-        object-fit: cover;
-        object-position: center;
-    }
-
-
-    /* EVENT DARK GRADIENT */
-    .event-slide::after {
-        height: 65%;
-    }
-
-
-    /* EVENT CONTENT */
-    .event-overlay {
-        padding: 15px;
-        gap: 10px;
-    }
-
-
-    /* DATE */
-    .event-date {
-        width: 52px;
-        height: 55px;
-    }
-
-    .event-date strong {
-        font-size: 20px;
-    }
-
-    .event-date span {
-        margin-top: 3px;
-        font-size: 7px;
-        letter-spacing: .5px;
-    }
-
-
-    /* EVENT INFO */
-    .event-category {
-        margin-bottom: 4px;
-        font-size: 8px;
-        letter-spacing: .8px;
-    }
-
-    .event-category i {
-        font-size: 9px;
-    }
-
-    .event-info h3 {
-        font-size: 16px;
-        line-height: 1.2;
-    }
-
-    .event-info p {
-        display: none;
-    }
-
-
-    /* =====================================================
-       NOTICE BOARD
-    ===================================================== */
-
-    .color-notice-panel {
-        height: 315px;
-    }
-
-
-    /* NOTICE HEADER */
-    .color-notice-header {
-        min-height: 60px;
-        padding: 11px 12px;
-    }
-
-    .notice-bell {
-        width: 34px;
-        height: 34px;
-        font-size: 14px;
-    }
-
-    .color-notice-title {
-        gap: 8px;
-    }
-
-    .color-notice-title span {
-        font-size: 7px;
-        letter-spacing: 1px;
-    }
-
-    .color-notice-title h3 {
-        font-size: 16px;
-    }
-
-    .notice-view-all {
-        font-size: 9px;
-        gap: 4px;
-    }
-
-
-    /* NOTICE AREA */
-    .notice-scroll {
-        height: 255px;
-    }
-
-
-    /* NOTICE ITEM */
-    .color-notice-item {
-        min-height: 85px;
-        padding: 10px;
-        gap: 7px;
-    }
-
-
-    /* DATE */
-    .notice-date-box {
-        width: 43px;
-        height: 47px;
-    }
-
-    .notice-date-box strong {
-        font-size: 17px;
-    }
-
-    .notice-date-box span {
-        margin-top: 2px;
-        font-size: 7px;
-    }
-
-
-    /* ICON */
-    .notice-icon-box {
-        width: 30px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-
-    /* NOTICE CONTENT */
-    .color-notice-content h4 {
-        font-size: 12px;
-        line-height: 1.25;
-    }
-
-    .color-notice-content p {
-        margin-top: 3px;
-        font-size: 10px;
-        line-height: 1.3;
-    }
-
-
-    /* NEW LABEL */
-    .notice-label {
-        margin-bottom: 2px;
-        padding: 2px 5px;
-        font-size: 6px;
-    }
-
-
-    /* ARROW */
-    .notice-go {
-        display: none;
-    }
-
-}
-
-
-/* =========================================================
-   VERY SMALL MOBILE
-========================================================= */
-
-@media (max-width: 350px) {
-
-    .premium-updates {
-        padding: 25px 8px;
-    }
-
-    .premium-title h2 {
-        font-size: 22px;
-    }
-
-
-    /* EVENT */
-    .event-image-slider {
-        height: 230px;
-    }
-
-    .event-overlay {
-        padding: 12px;
-    }
-
-    .event-date {
-        width: 46px;
-        height: 48px;
-    }
-
-    .event-date strong {
-        font-size: 18px;
-    }
-
-    .event-date span {
-        font-size: 6px;
-    }
-
-    .event-info h3 {
-        font-size: 14px;
-    }
-
-    .event-category {
-        font-size: 7px;
-    }
-
-
-    /* NOTICE */
-    .color-notice-panel {
-        height: 295px;
-    }
-
-    .notice-scroll {
-        height: 240px;
-    }
-
-    .color-notice-item {
-        min-height: 80px;
-        padding: 8px;
-    }
-
-    .notice-date-box {
-        width: 39px;
-        height: 43px;
-    }
-
-    .notice-date-box strong {
-        font-size: 15px;
-    }
-
-    .notice-icon-box {
-        display: none;
-    }
-
-    .color-notice-content h4 {
-        font-size: 12px;
-    }
-
-    .color-notice-content p {
-        font-size:10px;
+    .logo-scroll-item img {
+        max-width:100px;
+        max-height: 100px;
     }
 
 }
