@@ -1414,23 +1414,17 @@
 }
 
 /* =========================================================
-   RESPONSIVE TABLET
+   TABLET
 ========================================================= */
 
-@media (max-width: 992px) {
+@media (max-width: 950px) {
 
-    .vmm-section {
-        padding: 65px 0;
-    }
-
-    .vmm-grid {
+    .vmmx-grid {
         grid-template-columns: 1fr;
-        max-width: 700px;
-        margin: auto;
     }
 
-    .vmm-card {
-        padding: 35px 30px;
+    .vmmx-card {
+        min-height: auto;
     }
 
 }
@@ -1440,86 +1434,53 @@
    MOBILE
 ========================================================= */
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
 
-    .vmm-section {
-        padding: 50px 0;
+    .vmmx-section {
+        padding: 38px 0;
     }
 
-    .vmm-section .container {
-        width: 92%;
+    .vmmx-container {
+        width: calc(100% - 24px);
     }
 
-    .vmm-heading {
-        margin-bottom: 32px;
+    .vmmx-heading {
+        margin-bottom: 24px;
     }
 
-    .vmm-heading span {
-        font-size: 15px;
-        letter-spacing: 1.3px;
+    .vmmx-heading h2 {
+        font-size: 25px;
     }
 
-    .vmm-heading h2 {
-        font-size: 27px;
+    .vmmx-card {
+        padding: 23px 19px 24px;
+
+        border-radius: 14px;
     }
 
-    .vmm-heading p {
-        font-size: 13px;
-        line-height: 1.7;
+    .vmmx-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 18px;
+
+        border-radius: 12px;
     }
 
-    .vmm-grid {
-        gap: 18px;
-    }
-
-    .vmm-card {
-        padding: 30px 22px;
-
-        border-radius: 16px;
-    }
-
-    .vmm-icon {
-        width: 62px;
-        height: 62px;
-
-        margin-bottom: 18px;
-
-        font-size: 23px;
-    }
-
-    .vmm-content h3 {
-        font-size: 22px;
-        margin-bottom: 12px;
-    }
-
-    .vmm-content p {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .motto-text {
-        font-size: 19px !important;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .vmm-heading h2 {
-        font-size: 24px;
-    }
-
-    .vmm-card {
-        padding: 26px 18px;
-    }
-
-    .vmm-content h3 {
+    .vmmx-card h3 {
         font-size: 20px;
+    }
+
+    .vmmx-card p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .vmmx-number {
+        font-size: 34px;
+
+        top: 22px;
+        right: 18px;
     }
 
 }
@@ -3015,6 +2976,29 @@
     .logo-scroll-item img {
         max-width:100px;
         max-height: 100px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .fixed-social-bar {
+        padding: 3px;
+        gap: 3px;
+    }
+
+    .fixed-social {
+        width: 27px;
+        height: 27px;
+
+        font-size: 12px;
+
+        border-radius: 4px;
     }
 
 }

@@ -280,7 +280,7 @@ a {
     color:#990000;
     font-size:45px;
     line-height: 1.25;
-    letter-spacing:9.0px;
+    letter-spacing:4.0px;
     font-weight:700;
     border-bottom: 2px solid #990000;
 }
@@ -294,7 +294,7 @@ a {
     margin-top: 4px;
  color:darkblue;
   letter-spacing:-0.5px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -1268,269 +1268,6 @@ a {
     box-sizing: border-box;
 }
 
-
-/* =========================================================
-   VISION • MISSION • MOTTO
-   BHARATHIYAR ARTS & SCIENCE COLLEGE FOR WOMEN
-========================================================= */
-
-.vmm-section {
-    position: relative;
-    width: 100%;
-    padding: 50px 0;
-    background: #e4ffdf;
-    overflow: hidden;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.vmm-section .container {
-    width: 100%;
-    margin: auto;
-}
-
-
-/* =========================================================
-   SECTION HEADING
-========================================================= */
-
-.vmm-heading {
-    text-align: center;
-    max-width: 780px;
-    margin: 0 auto 50px;
-}
-
-.vmm-heading span {
-    display: inline-block;
-    margin-bottom: 10px;
-
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #e51d73;
-}
-
-.vmm-heading h2 {
-    margin: 0 0 15px;
-
-    font-size: 36px;
-    line-height: 1.2;
-    font-weight: 800;
-
-    color: #073b8f;
-}
-
-.vmm-heading p {
-    margin: 0 auto;
-
-    max-width: 700px;
-
-    font-size: 15px;
-    line-height: 1.8;
-
-    color: #000000;
-}
-
-
-/* =========================================================
-   THREE CARD GRID
-========================================================= */
-
-.vmm-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-
-/* =========================================================
-   CARD
-========================================================= */
-
-.vmm-card {
-    position: relative;
-
-    background: #ffffff;
-
-    padding: 38px 30px 35px;
-
-    border-radius: 20px;
-
-    text-align: center;
-
-    border: 1px solid rgba(7, 59, 143, 0.08);
-
-    overflow: hidden;
-
-    transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease;
-}
-
-
-/* =========================================================
-   TOP DECORATIVE LINE
-========================================================= */
-
-.vmm-card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
-
-    background: linear-gradient(
-        90deg,
-        #073b8f,
-        #e51d73
-    );
-}
-
-
-/* =========================================================
-   HOVER
-========================================================= */
-
-.vmm-card:hover {
-    transform: translateY(-10px);
-
-}
-
-
-/* =========================================================
-   ICON
-========================================================= */
-
-.vmm-icon {
-    width: 72px;
-    height: 72px;
-
-    margin: 0 auto 22px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #eef4ff;
-
-    color: #073b8f;
-
-    font-size: 28px;
-
-    transition:
-        transform 0.4s ease,
-        background 0.4s ease,
-        color 0.4s ease;
-}
-
-.vmm-card:hover .vmm-icon {
-    transform: scale(1.08) rotate(5deg);
-
-    background: #073b8f;
-
-    color: #ffffff;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.vmm-content {
-    position: relative;
-}
-
-.vmm-label {
-    display: block;
-
-    margin-bottom: 6px;
-
-    font-size: 11px;
-    font-weight: 800;
-
-    letter-spacing: 1.5px;
-
-    color: #e51d73;
-
-    text-transform: uppercase;
-}
-
-.vmm-content h3 {
-    margin: 0 0 16px;
-
-    font-size: 25px;
-
-    font-weight: 800;
-
-    color: #073b8f;
-}
-
-.vmm-content p {
-    margin: 0;
-
-    font-size: 15px;
-
-    line-height: 1.8;
-
-    color: #000000;
-    text-align: justify;
-}
-
-
-/* =========================================================
-   MOTTO TEXT
-========================================================= */
-
-.motto-text {
-    margin-bottom: 15px !important;
-
-    font-size: 21px !important;
-
-    font-weight: 800;
-
-    line-height: 1.5 !important;
-
-    color: #e51d73 !important;
-}
-
-
-/* =========================================================
-   DIFFERENT ICON BACKGROUNDS
-========================================================= */
-
-.vision-card .vmm-icon {
-    background: #eef4ff;
-}
-
-.mission-card .vmm-icon {
-    background: #fff0f6;
-    color: #e51d73;
-}
-
-.motto-card .vmm-icon {
-    background: #fff8e7;
-    color: #c58a00;
-}
-
-.mission-card:hover .vmm-icon,
-.motto-card:hover .vmm-icon {
-    background: #073b8f;
-    color: #ffffff;
-}
 
 
 /* =========================================================
@@ -2954,7 +2691,7 @@ a {
 
 .basc-why-section {
     width: 100%;
-    padding:50px 0;
+    padding:30px 0;
 
     position: relative;
     overflow: hidden;
@@ -2974,14 +2711,14 @@ a {
 ========================================================= */
 
 .basc-why-container {
-    width: 90%;
-    max-width: 1350px;
+    width: 100%;
+    max-width: 1400px;
 
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: 47% 53%;
+    grid-template-columns: 47% 47%;
 
     align-items: center;
 
@@ -3382,7 +3119,7 @@ a {
 
     color: #f8d15c;
 
-    font-size:30px;
+    font-size:25px;
 }
 
 
@@ -5744,17 +5481,12 @@ a {
 .department-section {
     position: relative;
     width: 100%;
-    padding: 65px 0 60px;
+    padding: 50px 0 60px;
     overflow: hidden;
 
     /* SECTION BACKGROUND IMAGE */
     background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.374),
-            rgba(1, 0, 0, 0.591)
-        ),
-        url("/assets/img/infra/green.jpg");
-
+        url("../img/infra/green.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5796,16 +5528,7 @@ a {
     color: #f2f4f9;
 }
 
-.department-heading h2 {
-    margin: 0;
 
-    font-size: 38px;
-    line-height: 1.15;
-
-    font-weight: 750;
-
-    color: #fcfdff;
-}
 
 
 /* =========================================
@@ -6529,24 +6252,417 @@ color: #0a2c6e;
 }
 
 
+
+
+
 /* =========================================================
-   MOBILE
+   VISION • MISSION • MOTTO
+   COLORFUL PREMIUM COLLEGE STYLE
 ========================================================= */
 
-@media (max-width: 600px) {
+.vmmx-section {
+    position: relative;
+    width: 100%;
 
-    .fixed-social-bar {
-        padding: 3px;
-        gap: 3px;
-    }
+    padding: 52px 0;
 
-    .fixed-social {
-        width: 27px;
-        height: 27px;
+    background: #f7f9ff;
 
-        font-size: 12px;
+    overflow: hidden;
+}
 
-        border-radius: 4px;
-    }
+
+/* =========================================================
+   SUBTLE PATTERN
+========================================================= */
+
+.vmmx-section::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            rgba(7, 59, 143, 0.07) 1px,
+            transparent 1px
+        );
+
+    background-size: 22px 22px;
+
+    opacity: 0.45;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   DECORATIVE COLOR SHAPES
+========================================================= */
+
+.vmmx-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -120px;
+    bottom: -120px;
+
+    border: 45px solid rgba(229, 29, 115, 0.045);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.vmmx-container {
+    position: relative;
+    z-index: 2;
+
+    width: min(1250px, calc(100% - 35px));
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.vmmx-heading {
+    text-align: center;
+
+    margin-bottom: 34px;
+}
+
+
+.vmmx-heading span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #e51d73;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.vmmx-heading h2 {
+    margin: 0;
+
+    color: #073b8f;
+
+    font-size: 31px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   HEADING LINE
+========================================================= */
+
+.vmmx-line {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 12px;
+}
+
+
+.vmmx-line b {
+    width: 22px;
+    height: 3px;
+
+    background: #ffc107;
+
+    border-radius: 10px;
+}
+
+
+.vmmx-line i {
+    width: 45px;
+    height: 4px;
+
+    background: #e51d73;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.vmmx-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.vmmx-card {
+    position: relative;
+
+    min-height: 330px;
+
+    padding: 30px 25px 25px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid #e2e7f0;
+
+    overflow: hidden;
+
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.vmmx-card:hover {
+    transform: translateY(-8px);
+
 
 }
+
+
+/* =========================================================
+   COLORED TOP BORDER
+========================================================= */
+
+.vmmx-card-blue {
+    border-top: 5px solid #073b8f;
+}
+
+.vmmx-card-pink {
+    border-top: 5px solid #e51d73;
+}
+
+.vmmx-card-gold {
+    border-top: 5px solid #ffc107;
+}
+
+
+/* =========================================================
+   TOP PATTERN
+========================================================= */
+
+.vmmx-top-pattern {
+    position: absolute;
+
+    right: -20px;
+    top: -20px;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    opacity: 0.10;
+}
+
+
+.vmmx-card-blue .vmmx-top-pattern {
+    background: #073b8f;
+}
+
+
+.vmmx-card-pink .vmmx-top-pattern {
+    background: #e51d73;
+}
+
+
+.vmmx-card-gold .vmmx-top-pattern {
+    background: #ffc107;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.vmmx-icon {
+    position: relative;
+    z-index: 2;
+
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 15px;
+
+    font-size: 21px;
+
+}
+
+
+.vmmx-card-blue .vmmx-icon {
+    background: #073b8f;
+    color: #ffffff;
+}
+
+
+.vmmx-card-pink .vmmx-icon {
+    background: #e51d73;
+    color: #ffffff;
+}
+
+
+.vmmx-card-gold .vmmx-icon {
+    background: #ffc107;
+    color: #073b8f;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.vmmx-number {
+    position: absolute;
+
+    top: 26px;
+    right: 25px;
+
+    font-size: 42px;
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    color: #00000036;
+}
+
+
+/* =========================================================
+   SMALL TITLE
+========================================================= */
+
+.vmmx-small-title {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+}
+
+
+.vmmx-card-blue .vmmx-small-title {
+    color: #073b8f;
+}
+
+
+.vmmx-card-pink .vmmx-small-title {
+    color: #e51d73;
+}
+
+
+.vmmx-card-gold .vmmx-small-title {
+    color: #d99e00;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.vmmx-card h3 {
+    margin: 0 0 12px;
+
+    color: #073b8f;
+
+    font-size: 23px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.vmmx-card p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    font-weight: 500;
+    text-align: justify;
+
+}
+
+
+/* =========================================================
+   BOTTOM COLOR LINE
+========================================================= */
+
+.vmmx-bottom-line {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 0;
+
+    height: 3px;
+
+    border-radius: 10px 10px 0 0;
+}
+
+
+.vmmx-card-blue .vmmx-bottom-line {
+    background: #073b8f;
+}
+
+
+.vmmx-card-pink .vmmx-bottom-line {
+    background: #e51d73;
+}
+
+
+.vmmx-card-gold .vmmx-bottom-line {
+    background: #ffc107;
+}
+
+
