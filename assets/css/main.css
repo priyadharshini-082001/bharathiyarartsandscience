@@ -197,13 +197,15 @@ h6 {
   -ms-transition: all 0.3s 0s ease-out;
   -o-transition: all 0.3s 0s ease-out;
   transition: all 0.3s 0s ease-out;
+      font-family: "Montserrat", sans-serif;
+
 }
 
 :root {
   /**  @font family declaration */
-  --rs-ff-body: "Inter", sans-serif;
-  --rs-ff-title: "Bitter", sans-serif;
-  --rs-ff-p: "Inter", sans-serif;
+  --rs-ff-body: "DM Sans", sans-serif;
+  --rs-ff-title: "Montserrat", sans-serif;
+  --rs-ff-p: "Montserrat", sans-serif;
   --rs-ff-remixicon: "remixicon";
   /** @color declaration */
   --rs-white: #FFFFFF;
