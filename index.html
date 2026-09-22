@@ -3662,15 +3662,13 @@ if (logoTrack) {
 }
 
 .event-modal-inner {
-    width: min(900px, 95vw);
+    width: min(300px,95vw);
 
     background: #ffffff;
 
     border-radius: 16px;
 
     overflow: hidden;
-
-    box-shadow: 0 20px 60px rgba(0,0,0,.35);
 
     transform: translateY(20px);
 
@@ -3684,22 +3682,22 @@ if (logoTrack) {
 .event-modal-image {
     width: 100%;
 
-    height: 400px;
+    height:300px;
 
-    background: #f2f2f2;
+    background: #ffffff;
 }
 
 .event-modal-image img {
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
 
     display: block;
 }
 
 .event-modal-content {
-    padding: 28px 32px;
+    padding: 15px;
 }
 
 .event-modal-title {
@@ -3707,7 +3705,7 @@ if (logoTrack) {
 
     color: #092f63;
 
-    font-size: 23px;
+    font-size:18px;
 
     line-height: 1.4;
 
@@ -4116,46 +4114,162 @@ const announcements = [
    Complete 2026 Event List
    Based on Topic (2).docx
 ========================================================= */
-
 const events = [
 
     // 01
     {
-        title: "SKILLS MAX.AI PROGRAMME – 2026",
-        date: "18th June 2026",
+        title: "Vinayagar Chaturthi Celebration – 2026",
+        date: "11th September 2026",
         venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/1.jpg",
+        image: "assets/img/invitations/22.jpg",
         link: "#"
     },
 
     // 02
     {
-        title: "International Yoga Day – 2026",
-        date: "19th June 2026",
-        venue: "Dr A.P.J Abdul Kalam A/C Hall",
-        image: "assets/img/invitations/2.jpg",
+        title: "Tamil Research Department – Alumni Participation Programme",
+        date: "09th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam Seminar Hall",
+        image: "assets/img/invitations/26.jpg",
         link: "#"
     },
 
     // 03
     {
-        title: "Event Programme – 2026",
-        date: "25th June 2026",
-        venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/3.jpg",
+        title: "One Day Training Workshop – Tamil Research Department",
+        date: "10th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam Seminar Hall",
+        image: "assets/img/invitations/27.jpg",
         link: "#"
     },
 
     // 04
     {
-        title: "Faculty Development Programme on Cybersecurity (CISCO)",
-        date: "29th June 2026 – 03rd July 2026",
-        venue: "Computer Science Lab - VI",
-        image: "assets/img/invitations/4.jpg",
+        title: "Teachers Day – 2026",
+        date: "03rd September 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/25.jpg",
         link: "#"
     },
 
     // 05
+    {
+        title: "A Seminar on AI-Powered Innovation Hackathon",
+        date: "02nd September 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/24.jpg",
+        link: "#"
+    },
+
+    // 06
+    {
+        title: "Mega Awareness Programme on Solid Waste Management",
+        date: "1st September 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/23.jpg",
+        link: "#"
+    },
+
+    // 07
+    {
+        title: "One Day Seminar on Group Theory and Elements of Symmetry",
+        date: "16th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/28.jpg",
+        link: "#"
+    },
+
+    // 08
+    {
+        title: "Internal Hackathon for SIH – 2026",
+        date: "17th September 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/29.jpg",
+        link: "#"
+    },
+
+    // 09
+    {
+        title: "One Day National Level Seminar on Innovation of Current Trends in Physics 2K26",
+        date: "17th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/30.jpg",
+        link: "#"
+    },
+
+    // 10
+    {
+        title: "National Handloom Day",
+        date: "07th August 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/14.jpeg",
+        link: "#"
+    },
+
+    // 11
+    {
+        title: "One Day Workshop on Statistical Thinking Through Python",
+        date: "07th August 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/15.jpg",
+        link: "#"
+    },
+
+    // 12
+    {
+        title: "Save the Nature to Save the Nature",
+        date: "08th August 2026",
+        venue: "College Campus",
+        image: "assets/img/invitations/16.jpg",
+        link: "#"
+    },
+
+    // 13
+    {
+        title: "One Day Workshop on Entrepreneurship and Startup Skills for Commerce",
+        date: "14th August 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/17.jpg",
+        link: "#"
+    },
+
+    // 14
+    {
+        title: "Road Safety and Drug Abuse Awareness Programme",
+        date: "14th August 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Multipurpose Hall",
+        image: "assets/img/invitations/18.jpg",
+        link: "#"
+    },
+
+    // 15
+    {
+        title: "80th Independence Day",
+        date: "15th August 2026",
+        venue: "College Campus",
+        image: "assets/img/invitations/19.jpg",
+        link: "#"
+    },
+
+    // 16
+    {
+        title: "Onam Celebration – 2026",
+        date: "25th August 2026",
+        venue: "College Campus",
+        image: "assets/img/invitations/20.jpg",
+        link: "#"
+    },
+
+    // 17
+    {
+        title: "Corporate Training & Youth Inspiration Talk",
+        date: "28th August 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/21.jpg",
+        link: "#"
+    },
+
+    // 18
     {
         title: "One Day Workshop on Future-Ready Business Professionals",
         date: "16th July 2026",
@@ -4164,7 +4278,7 @@ const events = [
         link: "#"
     },
 
-    // 06
+    // 19
     {
         title: "Tech4All – Phase III – A CSR Initiative by Cognizant Foundation",
         date: "20th July 2026",
@@ -4173,7 +4287,7 @@ const events = [
         link: "#"
     },
 
-    // 07
+    // 20
     {
         title: "Thanks Party – 2026",
         date: "21st July 2026",
@@ -4182,7 +4296,7 @@ const events = [
         link: "#"
     },
 
-    // 08
+    // 21
     {
         title: "National Organic Food Expo – 2026",
         subtitle: "Healthy Millet Meal Box",
@@ -4192,7 +4306,7 @@ const events = [
         link: "#"
     },
 
-    // 09
+    // 22
     {
         title: "PG Hearty Welcomes to our Newbies – The Fresh Start Gala",
         date: "27th July 2026",
@@ -4201,7 +4315,7 @@ const events = [
         link: "#"
     },
 
-    // 10
+    // 23
     {
         title: "Literary Forum Inauguration – 2026",
         date: "29th July 2026",
@@ -4210,7 +4324,7 @@ const events = [
         link: "#"
     },
 
-    // 11
+    // 24
     {
         title: "Vetri Nichayam – Competitive Examination Guidance Programme",
         date: "29th July 2026",
@@ -4219,7 +4333,7 @@ const events = [
         link: "#"
     },
 
-    // 12
+    // 25
     {
         title: "One Day Workshop on Foundations of Exploring Mathematical Analysis",
         date: "31st July 2026",
@@ -4228,7 +4342,7 @@ const events = [
         link: "#"
     },
 
-    // 13
+    // 26
     {
         title: "Gen AI: Revolutionizing the Future of Technology and Innovation",
         date: "31st July 2026",
@@ -4238,156 +4352,39 @@ const events = [
         link: "#"
     },
 
-    // 14
-    {
-        title: "National Handloom Day",
-        date: "07th August 2026",
-        venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/14.jpeg",
-        link: "#"
-    },
-
-    // 15
-    {
-        title: "One Day Workshop on Statistical Thinking Through Python",
-        date: "07th August 2026",
-        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
-        image: "assets/img/invitations/15.jpg",
-        link: "#"
-    },
-
-    // 16
-    {
-        title: "Save the Nature to Save the Nature",
-        date: "08th August 2026",
-        venue: "College Campus",
-        image: "assets/img/invitations/16.jpg",
-        link: "#"
-    },
-
-    // 17
-    {
-        title: "One Day Workshop on Entrepreneurship and Startup Skills for Commerce",
-        date: "14th August 2026",
-        venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/17.jpg",
-        link: "#"
-    },
-
-    // 18
-    {
-        title: "Road Safety and Drug Abuse Awareness Programme",
-        date: "14th August 2026",
-        venue: "Dr. A.P.J Abdul Kalam A/C Multipurpose Hall",
-        image: "assets/img/invitations/18.jpg",
-        link: "#"
-    },
-
-    // 19
-    {
-        title: "80th Independence Day",
-        date: "15th August 2026",
-        venue: "College Campus",
-        image: "assets/img/invitations/19.jpg",
-        link: "#"
-    },
-
-    // 20
-    {
-        title: "Onam Celebration – 2026",
-        date: "25th August 2026",
-        venue: "College Campus",
-        image: "assets/img/invitations/20.jpg",
-        link: "#"
-    },
-
-    // 21
-    {
-        title: "Corporate Training & Youth Inspiration Talk",
-        date: "28th August 2026",
-        venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/21.jpg",
-        link: "#"
-    },
-
-    // 22
-    {
-        title: "Vinayagar Chaturthi Celebration – 2026",
-        date: "11th September 2026",
-        venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/22.jpg",
-        link: "#"
-    },
-
-    // 23
-    {
-        title: "Mega Awareness Programme on Solid Waste Management",
-        date: "1st September 2026",
-        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
-        image: "assets/img/invitations/23.jpg",
-        link: "#"
-    },
-
-    // 24
-    {
-        title: "A Seminar on AI-Powered Innovation Hackathon",
-        date: "02nd September 2026",
-        venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/24.jpg",
-        link: "#"
-    },
-
-    // 25
-    {
-        title: "Teachers Day – 2026",
-        date: "03rd September 2026",
-        venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/25.jpg",
-        link: "#"
-    },
-
-    // 26
-    {
-        title: "Tamil Research Department – Alumni Participation Programme",
-        date: "09th September 2026",
-        venue: "Dr. A.P.J Abdul Kalam Seminar Hall",
-        image: "assets/img/invitations/26.jpg",
-        link: "#"
-    },
-
     // 27
     {
-        title: "One Day Training Workshop – Tamil Research Department",
-        date: "10th September 2026",
-        venue: "Dr. A.P.J Abdul Kalam Seminar Hall",
-        image: "assets/img/invitations/27.jpg",
+        title: "SKILLS MAX.AI PROGRAMME – 2026",
+        date: "18th June 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/1.jpg",
         link: "#"
     },
 
     // 28
     {
-        title: "One Day Seminar on Group Theory and Elements of Symmetry",
-        date: "16th September 2026",
-        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
-        image: "assets/img/invitations/28.jpg",
+        title: "International Yoga Day – 2026",
+        date: "19th June 2026",
+        venue: "Dr A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/2.jpg",
         link: "#"
     },
 
     // 29
     {
-        title: "Internal Hackathon for SIH – 2026",
-        date: "17th September 2026",
+        title: "Event Programme – 2026",
+        date: "25th June 2026",
         venue: "Annai Teresa Auditorium",
-        image: "assets/img/invitations/29.jpg",
+        image: "assets/img/invitations/3.jpg",
         link: "#"
     },
 
     // 30
     {
-        title: "One Day National Level Seminar on Innovation of Current Trends in Physics 2K26",
-        date: "17th September 2026",
-        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
-        image: "assets/img/invitations/30.jpg",
+        title: "Faculty Development Programme on Cybersecurity (CISCO)",
+        date: "29th June 2026 – 03rd July 2026",
+        venue: "Computer Science Lab - VI",
+        image: "assets/img/invitations/4.jpg",
         link: "#"
     }
 
