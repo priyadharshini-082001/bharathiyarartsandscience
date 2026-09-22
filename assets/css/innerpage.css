@@ -1,0 +1,162 @@
+/* =====================================================
+   BREADCRUMB WITH BACKGROUND IMAGE
+===================================================== */
+
+.page-breadcrumb {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("/assets/img/infra/infra5.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+/* Dark blue overlay */
+.breadcrumb-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.482);
+
+    z-index: 1;
+}
+
+/* Content */
+.breadcrumb-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1320px;
+
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    box-sizing: border-box;
+}
+
+/* Page title */
+.breadcrumb-container h1 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Breadcrumb */
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    gap: 0;
+}
+
+/* Items */
+.breadcrumb-list li {
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Home link */
+.breadcrumb-list li a {
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-list li a:hover {
+    color: #ff4d99;
+}
+
+/* Separator */
+.breadcrumb-list li + li::before {
+    content: "›";
+
+    margin: 0 12px;
+
+    color: #ff4d99;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Current page */
+.breadcrumb-list li:last-child span {
+    color: #ffb3d2;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .page-breadcrumb {
+        min-height: 220px;
+    }
+
+    .breadcrumb-container {
+        padding: 50px 25px;
+    }
+
+    .breadcrumb-container h1 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .page-breadcrumb {
+        min-height: 190px;
+
+        background-position: center;
+    }
+
+    .breadcrumb-container {
+        padding: 45px 20px;
+    }
+
+    .breadcrumb-container h1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .breadcrumb-list li {
+        font-size: 13px;
+    }
+
+    .breadcrumb-list li + li::before {
+        margin: 0 9px;
+        font-size: 18px;
+    }
+
+}

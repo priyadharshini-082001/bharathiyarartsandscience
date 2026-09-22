@@ -193,7 +193,7 @@
                     </div>
 
                 </a>
-                <img src="assets/logo/big.webp" alt="" style="width:380px; height:130px;" class="aff-logo">
+                <img src="assets/logo/big.webp" alt="" style="width:400px; height:130px;" class="aff-logo">
 
                 <!-- DESKTOP ADMISSION -->
 
@@ -1703,7 +1703,6 @@
     </script>
 
 
-
 <!-- =========================================================
      ACCREDITATION / RECOGNITION SECTION
 ========================================================= -->
@@ -1712,49 +1711,59 @@
 
     <div class="basc-recognition-container">
 
-        <!-- ITEM 01 -->
-        <div class="basc-recognition-item">
+        <!-- ITEM 01 : NAAC -->
+        <div class="basc-recognition-item"
+             onclick="openRecognition('naac')">
+
             <span class="basc-recognition-icon">★</span>
+
             <div class="basc-recognition-content">
                 <strong>NAAC - A++</strong>
                 <span>Accredited</span>
             </div>
+
         </div>
 
-        <!-- ITEM 02 -->
-        <div class="basc-recognition-item">
-            <span class="basc-recognition-icon">✓</span>
-            <div class="basc-recognition-content">
-                <strong>AICTE - Approved</strong>
-                <span>Approved Institution</span>
-            </div>
-        </div>
 
-        <!-- ITEM 03 -->
-        <div class="basc-recognition-item">
+        <!-- ITEM 02 : UGC -->
+        <div class="basc-recognition-item"
+             onclick="openRecognition('ugc')">
+
             <span class="basc-recognition-icon">◆</span>
+
             <div class="basc-recognition-content">
                 <strong>UGC - U/S 2(f) &amp; 12B</strong>
                 <span>Recognised Institution</span>
             </div>
+
         </div>
 
-        <!-- ITEM 04 -->
-        <div class="basc-recognition-item">
+
+        <!-- ITEM 03 : IIC -->
+        <div class="basc-recognition-item"
+             onclick="openRecognition('iic')">
+
             <span class="basc-recognition-icon">4★</span>
+
             <div class="basc-recognition-content">
                 <strong>IIC - 4**</strong>
                 <span>Innovation Council</span>
             </div>
+
         </div>
 
-        <!-- ITEM 05 -->
-        <div class="basc-recognition-item">
+
+        <!-- ITEM 04 : HERITAGE -->
+        <div class="basc-recognition-item"
+             onclick="openRecognition('heritage')">
+
             <span class="basc-recognition-icon">1997</span>
+
             <div class="basc-recognition-content">
                 <strong>Est. Heritage 1997</strong>
                 <span>Years of Excellence</span>
             </div>
+
         </div>
 
     </div>
@@ -1762,12 +1771,81 @@
 </section>
 
 
+<!-- =========================================================
+     RECOGNITION IMAGE POPUP
+========================================================= -->
+
+<div class="recognition-modal" id="recognitionModal">
+
+    <div class="recognition-modal-overlay"
+         onclick="closeRecognition()"></div>
+
+    <div class="recognition-modal-box">
+
+        <button class="recognition-close"
+                onclick="closeRecognition()">
+            &times;
+        </button>
+
+        <img id="recognitionImage"
+             src=""
+             alt="Recognition Certificate">
+
+    </div>
+
+</div>
+
+<script>
+
+function openRecognition(type) {
+
+    const modal = document.getElementById("recognitionModal");
+    const image = document.getElementById("recognitionImage");
+
+    const images = {
+
+        naac: "assets/logo/naac.jpeg",
+
+        ugc: "assets/logo/ff.jpeg",
+
+        iic: "assets/logo/rate.png",
+
+        heritage: "assets/img/recognition/heritage.jpg"
+
+    };
+
+    image.src = images[type];
+
+    modal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
 
 
+function closeRecognition() {
 
-    <!-- =========================================
-     ABOUT OUR COLLEGE
-========================================= -->
+    const modal = document.getElementById("recognitionModal");
+
+    modal.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+/* Close with ESC */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeRecognition();
+    }
+
+});
+
+</script>
+
+
 <!-- =========================
      ABOUT OUR COLLEGE
 ========================= -->
@@ -2911,6 +2989,22 @@ if (logoTrack) {
                         </div>
                         <h3>Years Excellence</h3>
                     </div>
+
+                </div>
+
+                     <!-- YEARS -->
+                <div class="count-mini-card">
+                    <div class="count-mini-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div>
+                        <div class="count-mini-number">
+                            <span class="counter" data-target="73">0</span>+
+                        </div>
+                        <h3>MOU</h3>
+                    </div>
+
                 </div>
 
             </div>
@@ -2998,16 +3092,11 @@ if (logoTrack) {
 
         });
     </script>
-
-
-
-
 <style>
 
 /* =========================================================
    GLOBAL
 ========================================================= */
-
 
 /* =========================================================
    MAIN SECTION
@@ -3015,32 +3104,25 @@ if (logoTrack) {
 
 .announcement-events-section {
     width: 100%;
-    padding:50px 30px;
-    background: rgb(255, 240, 246);
+    padding: 65px 30px;
+    background: #fff7fa;
+    box-sizing: border-box;
 }
 
 .announcement-events-wrapper {
-    max-width: 1250px;
+    width: 100%;
+    max-width: 1350px;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
 
-    gap: 38px;
+    align-items: start;
 }
-
-
-/* =========================================================
-   COLUMN
-========================================================= */
 
 .content-column {
     min-width: 0;
-}
-
-.events-column {
-    border-left: 1px solid #d7d7d7;
-    padding-left: 36px;
 }
 
 
@@ -3049,595 +3131,826 @@ if (logoTrack) {
 ========================================================= */
 
 .section-title {
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 700;
-    letter-spacing:1px;
+    position: relative;
+
+    margin: 0 0 30px;
+
     color: #092f63;
-    margin-bottom: 28px;
+
+    font-size: 28px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    letter-spacing: .4px;
 }
 
 .section-title::after {
     content: "";
+
     display: block;
-    width: 56px;
-    height: 5px;
-    background: #0b3d91;
-    margin-top: 13px;
+
+    width: 55px;
+    height: 4px;
+
+    margin-top: 12px;
+
+    background: #e51d73;
 }
 
 
 /* =========================================================
-   ANNOUNCEMENTS
+   EVENTS COLUMN
+========================================================= */
+
+.events-column {
+    border-left: 1px solid #dedede;
+
+    padding-left: 45px;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT LIST
 ========================================================= */
 
 .announcement-list {
     display: flex;
     flex-direction: column;
+
     gap: 18px;
 }
 
+
+/* =========================================================
+   ANNOUNCEMENT CARD
+========================================================= */
+
 .announcement-card {
     width: 100%;
-    min-height: 110px;
-
-    background: #ffffff;
-    border: 1px solid #e2e2e2;
-    border-radius: 20px;
-
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.13);
+    min-height: 100px;
 
     display: flex;
     align-items: center;
 
-    padding: 16px 22px;
+    padding: 15px 20px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e3e3;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.06);
 
     cursor: pointer;
 
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    transition: all .3s ease;
 }
 
 .announcement-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+
+    border-color: #e51d73;
+
+    box-shadow: 0 10px 25px rgba(7,59,143,.10);
 }
 
-.announcement-icon {
-    width: 72px;
-    height: 72px;
-    flex: 0 0 72px;
 
-    border-radius: 50%;
-    background: #ffffff;
-    border: 7px solid #f0f0f0;
+/* =========================================================
+   ANNOUNCEMENT ICON
+========================================================= */
+
+.announcement-icon {
+    width: 65px;
+    height: 65px;
+
+    flex: 0 0 65px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-right: 24px;
+    margin-right: 18px;
+
+    border-radius: 50%;
+
+    background: #f5f8ff;
+
+    border: 5px solid #edf1f8;
 }
 
 .announcement-icon svg {
-    width: 39px;
-    height: 39px;
+    width: 35px;
+    height: 35px;
 
-    stroke: #0b4f9c;
+    stroke: #073b8f;
+
     fill: none;
+
     stroke-width: 1.8;
 }
+
+
+/* =========================================================
+   ANNOUNCEMENT CONTENT
+========================================================= */
 
 .announcement-content {
     min-width: 0;
 }
 
 .announcement-title {
-    color: #050505;
+    color: #111;
+
     font-size: 14px;
-    line-height: 1.65;
-    font-weight: 500;
-    margin-bottom: 2px;
+
+    line-height: 1.6;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
 }
 
 .announcement-link {
-    color: #003f86;
+    color: #073b8f;
+
     font-size: 12px;
-    font-weight: 500;
+
+    font-weight: 600;
+
     text-decoration: none;
-    display: inline-block;
-    margin-top: 1px;
+}
+
+.announcement-link:hover {
+    color: #e51d73;
 }
 
 
 /* =========================================================
-   EVENTS
+   EVENTS LIST
 ========================================================= */
 
 .event-list {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
+    gap: 22px;
 }
+
+
+/* =========================================================
+   EVENT CARD
+========================================================= */
 
 .event-card {
-    min-height: 164px;
+    position: relative;
 
-    border: 2px dashed #e2e2e2;
+    width: 100%;
+
+    min-height: 185px;
 
     display: flex;
-    align-items: center;
+    align-items: stretch;
 
-    cursor: pointer;
+    overflow: hidden;
+
     background: #ffffff;
 
+    border: 1px solid #e2e2e2;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+
+    cursor: pointer;
+
     transition:
-        background 0.25s ease,
-        border-color 0.25s ease;
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
 }
+
+
+/* =========================================================
+   ALTERNATING IMAGE
+
+   1,3,5 = RIGHT
+   2,4,6 = LEFT
+========================================================= */
+
+.event-card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.event-card:nth-child(even) {
+    flex-direction: row;
+}
+
+
+/* =========================================================
+   EVENT HOVER
+========================================================= */
 
 .event-card:hover {
-    background: #fafafa;
-    border-color: #d4d4d4;
+    transform: translateY(-4px);
+
+    border-color: #e51d73;
+
+    box-shadow:
+        0 12px 30px rgba(7,59,143,.12);
 }
 
+
+/* =========================================================
+   EVENT IMAGE
+========================================================= */
+
 .event-image {
-    width: 165px;
-    height: 160px;
-    flex: 0 0 165px;
+    position: relative;
+
+    width: 190px;
+    min-width: 190px;
+
+    height: 185px;
+
     overflow: hidden;
+
+    background: #f1f1f1;
 }
 
 .event-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
     display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform .5s ease;
 }
 
-.event-content {
-    flex: 1;
-    padding: 20px 28px;
-}
-
-.event-title {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #111111;
-    font-weight: 500;
-    margin-bottom: 16px;
-}
-
-.event-date {
-    font-size: 12px;
-    line-height: 1.6;
-    color: #111111;
-    font-weight: 500;
-}
-
-.event-date span {
-    font-weight: 400;
+.event-card:hover .event-image img {
+    transform: scale(1.07);
 }
 
 
 /* =========================================================
-   PAGINATION
+   IMAGE OVERLAY
+========================================================= */
+
+.event-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(7,59,143,.02),
+        rgba(7,59,143,.12)
+    );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   EVENT CONTENT
+========================================================= */
+
+.event-content {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 25px 28px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EVENT TITLE
+========================================================= */
+
+.event-title {
+    margin: 0 0 14px;
+
+    color: #092f63;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   EVENT DATE
+========================================================= */
+
+.event-date {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 7px;
+
+    color: #555;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    font-weight: 600;
+}
+
+.event-date::before {
+    content: "●";
+
+    color: #e51d73;
+
+    font-size: 8px;
+
+    margin-top: 4px;
+}
+
+.event-date span {
+    color: #555;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   EVENT VENUE
+========================================================= */
+
+.event-venue {
+    margin-top: 8px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   EVENT NAVIGATION
+========================================================= */
+
+.event-navigation {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.event-navigation button {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dcdcdc;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #073b8f;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.event-navigation button:hover {
+    background: #073b8f;
+
+    border-color: #073b8f;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   EVENT PAGE TEXT
+========================================================= */
+
+.event-page-text {
+    color: #777;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT PAGINATION
 ========================================================= */
 
 .pagination {
     display: flex;
+
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    margin-top: 30px;
+
+    gap: 7px;
+
+    margin-top: 25px;
 }
 
 .pagination button {
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
 
-    border: 1px solid #dedede;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ddd;
+
     background: #ffffff;
-    color: #888888;
 
-    font-size: 13px;
+    color: #777;
+
+    font-size: 12px;
+
     cursor: pointer;
 
-    transition: all 0.2s ease;
+    transition: all .25s ease;
 }
 
 .pagination button:hover {
-    background: #f7f7f7;
-    color: #0b3d91;
+    background: #073b8f;
+
+    border-color: #073b8f;
+
+    color: #fff;
 }
 
 .pagination button.active {
-    background: #0b3d91;
-    border-color: #0b3d91;
-    color: #ffffff;
+    background: #073b8f;
+
+    border-color: #073b8f;
+
+    color: #fff;
 }
 
 
 /* =========================================================
-   POPUP
+   MODAL
 ========================================================= */
 
-.announcement-modal {
+.event-modal {
     position: fixed;
+
     inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(25, 25, 25, 0.96);
 
     z-index: 99999;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
+    padding: 25px;
+
+    background: rgba(5,15,30,.92);
+
     opacity: 0;
+
     visibility: hidden;
 
-    transition:
-        opacity 0.25s ease,
-        visibility 0.25s ease;
+    transition: all .3s ease;
+
+    box-sizing: border-box;
 }
 
-.announcement-modal.active {
+.event-modal.active {
     opacity: 1;
+
     visibility: visible;
 }
 
-.modal-inner {
-    width: min(880px, 80vw);
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-card {
-    width: 100%;
-    min-height: 185px;
+.event-modal-inner {
+    width: min(900px, 95vw);
 
     background: #ffffff;
 
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
-
-    display: flex;
-    align-items: center;
-
-    padding: 36px 48px;
-}
-
-.modal-media {
-    width: 330px;
-    flex: 0 0 330px;
-
-    min-height: 130px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 16px;
 
     overflow: hidden;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,.35);
+
+    transform: translateY(20px);
+
+    transition: transform .3s ease;
 }
 
-.modal-media img {
-    max-width: 100%;
-    max-height: 220px;
+.event-modal.active .event-modal-inner {
+    transform: translateY(0);
+}
 
-    width: auto;
-    height: auto;
+.event-modal-image {
+    width: 100%;
 
-    object-fit: contain;
+    height: 400px;
+
+    background: #f2f2f2;
+}
+
+.event-modal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
     display: block;
 }
 
-.modal-announcement-icon {
-    width: 75px;
-    height: 75px;
+.event-modal-content {
+    padding: 28px 32px;
+}
+
+.event-modal-title {
+    margin: 0 0 12px;
+
+    color: #092f63;
+
+    font-size: 23px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+}
+
+.event-modal-date {
+    color: #e51d73;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.event-modal-venue {
+    margin-top: 7px;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+.event-modal-close {
+    position: fixed;
+
+    top: 20px;
+    right: 25px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
 
     border-radius: 50%;
-    border: 7px solid #f0f0f0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    background: rgba(255,255,255,.15);
 
-.modal-announcement-icon svg {
-    width: 42px;
-    height: 42px;
-
-    stroke: #0b4f9c;
-    fill: none;
-    stroke-width: 1.8;
-}
-
-.modal-content {
-    flex: 1;
-    padding-left: 20px;
-}
-
-.modal-title {
-    font-size: 21px;
-    line-height: 1.35;
-    font-weight: 500;
-    color: #111111;
-    margin-bottom: 24px;
-}
-
-.modal-divider {
-    width: 100%;
-    height: 1px;
-    background: #e4e4e4;
-    margin-bottom: 18px;
-}
-
-.modal-link {
-    font-size: 13px;
-    color: #003f86;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.modal-link:hover {
-    text-decoration: underline;
-}
-
-.modal-date {
-    font-size: 13px;
-    color: #111111;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   MODAL ARROWS
-========================================================= */
-
-.modal-arrow {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 39px;
-    height: 55px;
-
-    border: none;
-    background: rgba(255, 255, 255, 0.06);
     color: #ffffff;
+
+    font-size: 25px;
 
     cursor: pointer;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 100000;
 
-    font-size: 38px;
-    font-weight: 200;
-    line-height: 1;
-
-    transition: background 0.2s ease;
+    transition: all .25s ease;
 }
 
-.modal-arrow:hover {
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.modal-prev {
-    left: 50px;
-}
-
-.modal-next {
-    right: 50px;
+.event-modal-close:hover {
+    background: #e51d73;
 }
 
 
 /* =========================================================
-   CLOSE
+   TABLET
 ========================================================= */
 
-.modal-close {
-    position: fixed;
-    top: 22px;
-    right: 28px;
-
-    width: 42px;
-    height: 42px;
-
-    border: none;
-    background: transparent;
-    color: #ffffff;
-
-    font-size: 32px;
-    font-weight: 200;
-
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    opacity: 0.8;
-}
-
-.modal-close:hover {
-    opacity: 1;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .announcement-events-section {
-        padding: 60px 4%;
+        padding: 55px 25px;
+    }
+
+    .announcement-events-wrapper {
+        gap: 30px;
+    }
+
+    .events-column {
+        padding-left: 30px;
+    }
+
+    .event-image {
+        width: 155px;
+        min-width: 155px;
+
+        height: 175px;
+    }
+
+    .event-content {
+        padding: 20px;
+    }
+
+    .event-title {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .announcement-events-section {
+        padding: 45px 18px;
     }
 
     .announcement-events-wrapper {
         grid-template-columns: 1fr;
-        gap: 55px;
+
+        gap: 45px;
     }
 
     .events-column {
         border-left: none;
-        border-top: 1px solid #d7d7d7;
+
+        border-top: 1px solid #ddd;
 
         padding-left: 0;
-        padding-top: 45px;
-    }
 
-    .modal-inner {
-        width: 85vw;
-    }
-
-    .modal-card {
-        padding: 30px;
-    }
-
-    .modal-media {
-        width: 250px;
-        flex-basis: 250px;
-    }
-
-    .modal-prev {
-        left: 20px;
-    }
-
-    .modal-next {
-        right: 20px;
-    }
-}
-
-
-@media (max-width: 650px) {
-
-    .announcement-events-section {
-        padding: 45px 20px;
+        padding-top: 40px;
     }
 
     .section-title {
         font-size: 24px;
     }
 
+    /* Image always on top mobile */
+
+    .event-card,
+    .event-card:nth-child(odd),
+    .event-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .event-image {
+        width: 100%;
+        min-width: 100%;
+
+        height: 220px;
+    }
+
+    .event-content {
+        width: 100%;
+
+        padding: 22px;
+    }
+
+    .event-title {
+        font-size: 16px;
+    }
+
+    .event-date {
+        font-size: 12px;
+    }
+
+    .event-modal-image {
+        height: 280px;
+    }
+
+    .event-modal-content {
+        padding: 22px;
+    }
+
+    .event-modal-title {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .announcement-events-section {
+        padding: 35px 15px;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
     .announcement-card {
-        min-height: 95px;
-        padding: 13px 16px;
+        min-height: 90px;
+
+        padding: 13px;
     }
 
     .announcement-icon {
-        width: 60px;
-        height: 60px;
-        flex-basis: 60px;
-        margin-right: 16px;
-    }
+        width: 55px;
+        height: 55px;
 
-    .announcement-icon svg {
-        width: 32px;
-        height: 32px;
+        flex-basis: 55px;
+
+        margin-right: 13px;
     }
 
     .announcement-title {
         font-size: 12px;
     }
 
-    .event-card {
-        min-height: 120px;
-    }
-
     .event-image {
-        width: 120px;
-        height: 120px;
-        flex-basis: 120px;
+        height: 190px;
     }
 
     .event-content {
-        padding: 15px 18px;
+        padding: 18px;
     }
 
     .event-title {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .event-date {
         font-size: 11px;
     }
 
-    .modal-inner {
-        width: calc(100vw - 80px);
+    .event-modal {
+        padding: 15px;
     }
 
-    .modal-card {
-        min-height: auto;
-        padding: 25px 20px;
-        flex-direction: column;
+    .event-modal-image {
+        height: 220px;
     }
 
-    .modal-media {
-        width: 100%;
-        flex-basis: auto;
-        min-height: 100px;
-        margin-bottom: 20px;
-    }
-
-    .modal-media img {
-        max-height: 180px;
-    }
-
-    .modal-content {
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .modal-title {
-        font-size: 17px;
-    }
-
-    .modal-prev {
-        left: 5px;
-    }
-
-    .modal-next {
-        right: 5px;
-    }
-
-    .modal-close {
-        top: 10px;
-        right: 10px;
-    }
-
-    .pagination {
-        gap: 5px;
-    }
-
-    .pagination button {
-        width: 32px;
-        height: 32px;
+    .event-modal-content {
+        padding: 18px;
     }
 
 }
 
 </style>
+</head>
 
 
-<!-- =============================================================
-     ANNOUNCEMENTS + EVENTS SECTION
-============================================================= -->
+<body>
+
+
+<!-- =========================================================
+     ANNOUNCEMENTS + EVENTS
+========================================================= -->
 
 <section class="announcement-events-section">
 
     <div class="announcement-events-wrapper">
 
-        <!-- ANNOUNCEMENTS -->
+
+        <!-- =================================================
+             ANNOUNCEMENTS
+        ================================================== -->
 
         <div class="content-column">
 
@@ -3645,24 +3958,62 @@ if (logoTrack) {
                 Announcements
             </h2>
 
-            <div class="announcement-list" id="announcementList"></div>
+            <div
+                class="announcement-list"
+                id="announcementList">
+            </div>
 
-            <div class="pagination" id="announcementPagination"></div>
+            <div
+                class="pagination"
+                id="announcementPagination">
+            </div>
 
         </div>
 
 
-        <!-- EVENTS -->
+
+        <!-- =================================================
+             EVENTS
+        ================================================== -->
 
         <div class="content-column events-column">
 
             <h2 class="section-title">
-               Bharathiyar Arts and Science College For women (Autonomous) Events
+                Bharathiyar Arts &amp; Science College
+                For Women Events
             </h2>
 
-            <div class="event-list" id="eventList"></div>
+            <div
+                class="event-list"
+                id="eventList">
+            </div>
 
-            <div class="pagination" id="eventPagination"></div>
+
+            <!-- NO NUMBER PAGINATION -->
+
+            <div class="event-navigation">
+
+                <button
+                    type="button"
+                    id="eventPrev"
+                    aria-label="Previous Events">
+                    ←
+                </button>
+
+                <span
+                    class="event-page-text"
+                    id="eventPageText">
+                    1 / 12
+                </span>
+
+                <button
+                    type="button"
+                    id="eventNext"
+                    aria-label="Next Events">
+                    →
+                </button>
+
+            </div>
 
         </div>
 
@@ -3671,42 +4022,44 @@ if (logoTrack) {
 </section>
 
 
-<!-- =============================================================
-     POPUP / LIGHTBOX
-============================================================= -->
 
-<div class="announcement-modal" id="announcementModal">
+<!-- =========================================================
+     EVENT MODAL
+========================================================= -->
 
-    <button class="modal-close" id="modalClose" aria-label="Close">
+<div
+    class="event-modal"
+    id="eventModal">
+
+    <button
+        class="event-modal-close"
+        id="eventModalClose"
+        aria-label="Close">
         ×
     </button>
 
-    <button class="modal-arrow modal-prev" id="modalPrev" aria-label="Previous">
-        ‹
-    </button>
+    <div class="event-modal-inner">
 
-    <button class="modal-arrow modal-next" id="modalNext" aria-label="Next">
-        ›
-    </button>
+        <div
+            class="event-modal-image"
+            id="eventModalImage">
+        </div>
 
-    <div class="modal-inner" id="modalInner">
+        <div class="event-modal-content">
 
-        <div class="modal-card">
+            <h3
+                class="event-modal-title"
+                id="eventModalTitle">
+            </h3>
 
-            <div class="modal-media" id="modalMedia"></div>
+            <div
+                class="event-modal-date"
+                id="eventModalDate">
+            </div>
 
-            <div class="modal-content">
-
-                <h3 class="modal-title" id="modalTitle"></h3>
-
-                <div class="modal-date" id="modalDate"></div>
-
-                <div class="modal-divider"></div>
-
-                <a href="#" class="modal-link" id="modalLink" target="_blank">
-                    Click Here
-                </a>
-
+            <div
+                class="event-modal-venue"
+                id="eventModalVenue">
             </div>
 
         </div>
@@ -3716,28 +4069,14 @@ if (logoTrack) {
 </div>
 
 
+
 <script>
 
 /* =========================================================
-   DATA
+   ANNOUNCEMENTS
 ========================================================= */
 
 const announcements = [
-
-    {
-        title: "Supplementary Examination Results – Passed Out – March/April 2026",
-        link: "#"
-    },
-
-    {
-        title: "8th Edition M.O.P. Yuva Sammaan Awards",
-        link: "#"
-    },
-
-    {
-        title: "MBA Batch 2025–2027 Class Commencement",
-        link: "#"
-    },
 
     {
         title: "Admission Notification 2026–2027",
@@ -3772,89 +4111,298 @@ const announcements = [
 ];
 
 
+/* =========================================================
+   EVENTS
+   Complete 2026 Event List
+   Based on Topic (2).docx
+========================================================= */
+
 const events = [
 
+    // 01
     {
-        title: "Three Day National Level Seminar",
-        date: "Event Date: 17th September 2026",
-        image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=700&q=80",
+        title: "SKILLS MAX.AI PROGRAMME – 2026",
+        date: "18th June 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/1.jpg",
         link: "#"
     },
 
+    // 02
     {
-        title: "Thirty-First Graduation Day",
-        date: "Event Date: 23rd September 2026",
-        image: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=700&q=80",
+        title: "International Yoga Day – 2026",
+        date: "19th June 2026",
+        venue: "Dr A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/2.jpg",
         link: "#"
     },
 
+    // 03
     {
-        title: "Annual Cultural Festival",
-        date: "Event Date: 28th September 2026",
-        image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=700&q=80",
+        title: "Event Programme – 2026",
+        date: "25th June 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/3.jpg",
         link: "#"
     },
 
+    // 04
     {
-        title: "Faculty Development Programme",
-        date: "Event Date: 5th October 2026",
-        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=80",
+        title: "Faculty Development Programme on Cybersecurity (CISCO)",
+        date: "29th June 2026 – 03rd July 2026",
+        venue: "Computer Science Lab - VI",
+        image: "assets/img/invitations/4.jpg",
         link: "#"
     },
 
+    // 05
     {
-        title: "National Education Conference",
-        date: "Event Date: 12th October 2026",
-        image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=700&q=80",
+        title: "One Day Workshop on Future-Ready Business Professionals",
+        date: "16th July 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/5.jpg",
         link: "#"
     },
 
+    // 06
     {
-        title: "Student Leadership Workshop",
-        date: "Event Date: 20th October 2026",
-        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=80",
+        title: "Tech4All – Phase III – A CSR Initiative by Cognizant Foundation",
+        date: "20th July 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/6.jpg",
         link: "#"
     },
 
+    // 07
     {
-        title: "Entrepreneurship Awareness Programme",
-        date: "Event Date: 27th October 2026",
-        image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80",
+        title: "Thanks Party – 2026",
+        date: "21st July 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/7.jpg",
         link: "#"
     },
 
+    // 08
     {
-        title: "Research and Innovation Meet",
-        date: "Event Date: 3rd November 2026",
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80",
+        title: "National Organic Food Expo – 2026",
+        subtitle: "Healthy Millet Meal Box",
+        date: "23rd July 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/8.jpg",
         link: "#"
     },
 
+    // 09
     {
-        title: "Alumni Interaction Programme",
-        date: "Event Date: 10th November 2026",
-        image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80",
+        title: "PG Hearty Welcomes to our Newbies – The Fresh Start Gala",
+        date: "27th July 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/9.jpg",
         link: "#"
     },
 
+    // 10
     {
-        title: "Annual Sports Meet",
-        date: "Event Date: 18th November 2026",
-        image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=80",
+        title: "Literary Forum Inauguration – 2026",
+        date: "29th July 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/10.jpg",
+        link: "#"
+    },
+
+    // 11
+    {
+        title: "Vetri Nichayam – Competitive Examination Guidance Programme",
+        date: "29th July 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/11.jpg",
+        link: "#"
+    },
+
+    // 12
+    {
+        title: "One Day Workshop on Foundations of Exploring Mathematical Analysis",
+        date: "31st July 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/12.jpg",
+        link: "#"
+    },
+
+    // 13
+    {
+        title: "Gen AI: Revolutionizing the Future of Technology and Innovation",
+        date: "31st July 2026",
+        time: "10.00 a.m.",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/13.png",
+        link: "#"
+    },
+
+    // 14
+    {
+        title: "National Handloom Day",
+        date: "07th August 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/14.jpeg",
+        link: "#"
+    },
+
+    // 15
+    {
+        title: "One Day Workshop on Statistical Thinking Through Python",
+        date: "07th August 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/15.jpg",
+        link: "#"
+    },
+
+    // 16
+    {
+        title: "Save the Nature to Save the Nature",
+        date: "08th August 2026",
+        venue: "College Campus",
+        image: "assets/img/invitations/16.jpg",
+        link: "#"
+    },
+
+    // 17
+    {
+        title: "One Day Workshop on Entrepreneurship and Startup Skills for Commerce",
+        date: "14th August 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/17.jpg",
+        link: "#"
+    },
+
+    // 18
+    {
+        title: "Road Safety and Drug Abuse Awareness Programme",
+        date: "14th August 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Multipurpose Hall",
+        image: "assets/img/invitations/18.jpg",
+        link: "#"
+    },
+
+    // 19
+    {
+        title: "80th Independence Day",
+        date: "15th August 2026",
+        venue: "College Campus",
+        image: "assets/img/invitations/19.jpg",
+        link: "#"
+    },
+
+    // 20
+    {
+        title: "Onam Celebration – 2026",
+        date: "25th August 2026",
+        venue: "College Campus",
+        image: "assets/img/invitations/20.jpg",
+        link: "#"
+    },
+
+    // 21
+    {
+        title: "Corporate Training & Youth Inspiration Talk",
+        date: "28th August 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/21.jpg",
+        link: "#"
+    },
+
+    // 22
+    {
+        title: "Vinayagar Chaturthi Celebration – 2026",
+        date: "11th September 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/22.jpg",
+        link: "#"
+    },
+
+    // 23
+    {
+        title: "Mega Awareness Programme on Solid Waste Management",
+        date: "1st September 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/23.jpg",
+        link: "#"
+    },
+
+    // 24
+    {
+        title: "A Seminar on AI-Powered Innovation Hackathon",
+        date: "02nd September 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/24.jpg",
+        link: "#"
+    },
+
+    // 25
+    {
+        title: "Teachers Day – 2026",
+        date: "03rd September 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/25.jpg",
+        link: "#"
+    },
+
+    // 26
+    {
+        title: "Tamil Research Department – Alumni Participation Programme",
+        date: "09th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam Seminar Hall",
+        image: "assets/img/invitations/26.jpg",
+        link: "#"
+    },
+
+    // 27
+    {
+        title: "One Day Training Workshop – Tamil Research Department",
+        date: "10th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam Seminar Hall",
+        image: "assets/img/invitations/27.jpg",
+        link: "#"
+    },
+
+    // 28
+    {
+        title: "One Day Seminar on Group Theory and Elements of Symmetry",
+        date: "16th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/28.jpg",
+        link: "#"
+    },
+
+    // 29
+    {
+        title: "Internal Hackathon for SIH – 2026",
+        date: "17th September 2026",
+        venue: "Annai Teresa Auditorium",
+        image: "assets/img/invitations/29.jpg",
+        link: "#"
+    },
+
+    // 30
+    {
+        title: "One Day National Level Seminar on Innovation of Current Trends in Physics 2K26",
+        date: "17th September 2026",
+        venue: "Dr. A.P.J Abdul Kalam A/C Hall",
+        image: "assets/img/invitations/30.jpg",
         link: "#"
     }
 
 ];
-
 
 /* =========================================================
    SETTINGS
 ========================================================= */
 
 const announcementsPerPage = 3;
+
 const eventsPerPage = 2;
 
 let announcementPage = 1;
+
 let eventPage = 1;
 
 
@@ -3865,52 +4413,43 @@ let eventPage = 1;
 const announcementList =
     document.getElementById("announcementList");
 
-const eventList =
-    document.getElementById("eventList");
-
 const announcementPagination =
     document.getElementById("announcementPagination");
 
-const eventPagination =
-    document.getElementById("eventPagination");
+const eventList =
+    document.getElementById("eventList");
 
-const modal =
-    document.getElementById("announcementModal");
+const eventPageText =
+    document.getElementById("eventPageText");
 
-const modalMedia =
-    document.getElementById("modalMedia");
+const eventPrev =
+    document.getElementById("eventPrev");
 
-const modalTitle =
-    document.getElementById("modalTitle");
-
-const modalDate =
-    document.getElementById("modalDate");
-
-const modalLink =
-    document.getElementById("modalLink");
-
-let currentType = "announcement";
-let currentIndex = 0;
+const eventNext =
+    document.getElementById("eventNext");
 
 
 /* =========================================================
-   MEGAPHONE ICON
+   ANNOUNCEMENT ICON
 ========================================================= */
 
 function getMegaphoneIcon() {
 
     return `
-        <div class="modal-announcement-icon">
-            <svg viewBox="0 0 64 64">
-                <path d="M12 28h9l26-14v36L21 36h-9z"/>
-                <path d="M21 36v12"/>
-                <path d="M47 22c5 2 7 5 7 10s-2 8-7 10"/>
-                <path d="M55 18l4-2"/>
-                <path d="M55 46l4 2"/>
-            </svg>
-        </div>
-    `;
+        <svg viewBox="0 0 64 64">
 
+            <path d="M12 28h9l26-14v36L21 36h-9z"/>
+
+            <path d="M21 36v12"/>
+
+            <path d="M47 22c5 2 7 5 7 10s-2 8-7 10"/>
+
+            <path d="M55 18l4-2"/>
+
+            <path d="M55 46l4 2"/>
+
+        </svg>
+    `;
 }
 
 
@@ -3921,7 +4460,8 @@ function getMegaphoneIcon() {
 function renderAnnouncements() {
 
     const start =
-        (announcementPage - 1) * announcementsPerPage;
+        (announcementPage - 1) *
+        announcementsPerPage;
 
     const end =
         start + announcementsPerPage;
@@ -3931,42 +4471,33 @@ function renderAnnouncements() {
 
     announcementList.innerHTML = "";
 
-    pageItems.forEach((item, index) => {
 
-        const actualIndex = start + index;
+    pageItems.forEach((item) => {
 
         announcementList.innerHTML += `
 
-            <div
-                class="announcement-card"
-                data-type="announcement"
-                data-index="${actualIndex}"
-            >
+            <div class="announcement-card">
 
                 <div class="announcement-icon">
 
-                    <svg viewBox="0 0 64 64">
-
-                        <path d="M12 28h9l26-14v36L21 36h-9z"/>
-                        <path d="M21 36v12"/>
-                        <path d="M47 22c5 2 7 5 7 10s-2 8-7 10"/>
-                        <path d="M55 18l4-2"/>
-                        <path d="M55 46l4 2"/>
-
-                    </svg>
+                    ${getMegaphoneIcon()}
 
                 </div>
 
                 <div class="announcement-content">
 
                     <div class="announcement-title">
+
                         ${item.title}
+
                     </div>
 
-                    <a href="${item.link}"
-                       class="announcement-link"
-                       onclick="return false;">
+                    <a
+                        href="${item.link}"
+                        class="announcement-link">
+
                         Know More
+
                     </a>
 
                 </div>
@@ -3977,20 +4508,105 @@ function renderAnnouncements() {
 
     });
 
-    renderPagination(
-        announcementPagination,
-        announcements.length,
-        announcementsPerPage,
-        announcementPage,
-        function(page) {
 
-            announcementPage = page;
+    renderAnnouncementPagination();
+
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT PAGINATION
+========================================================= */
+
+function renderAnnouncementPagination() {
+
+    const totalPages =
+        Math.ceil(
+            announcements.length /
+            announcementsPerPage
+        );
+
+    announcementPagination.innerHTML = "";
+
+
+    if (totalPages <= 1) {
+        return;
+    }
+
+
+    /* PREVIOUS */
+
+    const prev =
+        document.createElement("button");
+
+    prev.innerHTML = "←";
+
+    prev.onclick = function() {
+
+        announcementPage =
+            announcementPage > 1
+                ? announcementPage - 1
+                : totalPages;
+
+        renderAnnouncements();
+
+    };
+
+    announcementPagination.appendChild(prev);
+
+
+    /* NUMBERS */
+
+    for (
+        let i = 1;
+        i <= totalPages;
+        i++
+    ) {
+
+        const button =
+            document.createElement("button");
+
+        button.innerText = i;
+
+
+        if (i === announcementPage) {
+            button.classList.add("active");
+        }
+
+
+        button.onclick = function() {
+
+            announcementPage = i;
+
             renderAnnouncements();
 
-        }
-    );
+        };
 
-    attachCardEvents();
+
+        announcementPagination.appendChild(button);
+
+    }
+
+
+    /* NEXT */
+
+    const next =
+        document.createElement("button");
+
+    next.innerHTML = "→";
+
+    next.onclick = function() {
+
+        announcementPage =
+            announcementPage < totalPages
+                ? announcementPage + 1
+                : 1;
+
+        renderAnnouncements();
+
+    };
+
+    announcementPagination.appendChild(next);
 
 }
 
@@ -4002,7 +4618,8 @@ function renderAnnouncements() {
 function renderEvents() {
 
     const start =
-        (eventPage - 1) * eventsPerPage;
+        (eventPage - 1) *
+        eventsPerPage;
 
     const end =
         start + eventsPerPage;
@@ -4010,38 +4627,51 @@ function renderEvents() {
     const pageItems =
         events.slice(start, end);
 
+
     eventList.innerHTML = "";
 
-    pageItems.forEach((item, index) => {
 
-        const actualIndex = start + index;
+    pageItems.forEach((item) => {
 
         eventList.innerHTML += `
 
             <div
                 class="event-card"
-                data-type="event"
-                data-index="${actualIndex}"
-            >
+                data-index="${events.indexOf(item)}">
 
                 <div class="event-image">
 
                     <img
                         src="${item.image}"
                         alt="${item.title}"
-                    >
+                        loading="lazy">
 
                 </div>
+
 
                 <div class="event-content">
 
                     <div class="event-title">
+
                         ${item.title}
+
                     </div>
 
+
                     <div class="event-date">
-                        Event Date:
-                        <span>${item.date.replace("Event Date: ", "")}</span>
+
+                        <span>
+                            ${item.date}
+                        </span>
+
+                    </div>
+
+
+                    <div class="event-venue">
+
+                        Venue:
+                        ${item.venue}
+
                     </div>
 
                 </div>
@@ -4052,209 +4682,157 @@ function renderEvents() {
 
     });
 
-    renderPagination(
-        eventPagination,
-        events.length,
-        eventsPerPage,
-        eventPage,
-        function(page) {
 
-            eventPage = page;
-            renderEvents();
-
-        }
-    );
-
-    attachCardEvents();
-
-}
-
-
-/* =========================================================
-   PAGINATION GENERATOR
-========================================================= */
-
-function renderPagination(
-    container,
-    totalItems,
-    perPage,
-    currentPage,
-    callback
-) {
+    /* PAGE TEXT */
 
     const totalPages =
-        Math.ceil(totalItems / perPage);
-
-    container.innerHTML = "";
-
-    if (totalPages <= 1) {
-        return;
-    }
-
-    /* Previous */
-
-    const prev =
-        document.createElement("button");
-
-    prev.type = "button";
-    prev.textContent = "←";
-
-    prev.addEventListener("click", function() {
-
-        callback(
-            currentPage > 1
-                ? currentPage - 1
-                : totalPages
+        Math.ceil(
+            events.length /
+            eventsPerPage
         );
 
-    });
+    eventPageText.innerText =
+        eventPage + " / " + totalPages;
 
-    container.appendChild(prev);
 
+    /* CLICK EVENTS */
 
-    /* Number buttons */
+    document
+        .querySelectorAll(".event-card")
+        .forEach(card => {
 
-    for (
-        let i = 1;
-        i <= totalPages;
-        i++
-    ) {
+            card.addEventListener(
+                "click",
+                function() {
 
-        const button =
-            document.createElement("button");
+                    const index =
+                        Number(
+                            this.dataset.index
+                        );
 
-        button.type = "button";
-        button.textContent = i;
+                    openEventModal(index);
 
-        if (i === currentPage) {
-            button.classList.add("active");
-        }
-
-        button.addEventListener("click", function() {
-
-            callback(i);
+                }
+            );
 
         });
-
-        container.appendChild(button);
-
-    }
-
-
-    /* Next */
-
-    const next =
-        document.createElement("button");
-
-    next.type = "button";
-    next.textContent = "→";
-
-    next.addEventListener("click", function() {
-
-        callback(
-            currentPage < totalPages
-                ? currentPage + 1
-                : 1
-        );
-
-    });
-
-    container.appendChild(next);
 
 }
 
 
 /* =========================================================
-   CARD CLICK EVENTS
+   EVENT PREVIOUS
 ========================================================= */
 
-function attachCardEvents() {
+eventPrev.addEventListener(
+    "click",
+    function() {
 
-    document
-        .querySelectorAll(
-            ".announcement-card, .event-card"
-        )
-        .forEach(card => {
+        const totalPages =
+            Math.ceil(
+                events.length /
+                eventsPerPage
+            );
 
-            card.addEventListener("click", function() {
 
-                openModal(
-                    this.dataset.type,
-                    Number(this.dataset.index)
-                );
+        eventPage =
+            eventPage > 1
+                ? eventPage - 1
+                : totalPages;
 
-            });
 
-        });
+        renderEvents();
 
-}
+    }
+);
+
+
+/* =========================================================
+   EVENT NEXT
+========================================================= */
+
+eventNext.addEventListener(
+    "click",
+    function() {
+
+        const totalPages =
+            Math.ceil(
+                events.length /
+                eventsPerPage
+            );
+
+
+        eventPage =
+            eventPage < totalPages
+                ? eventPage + 1
+                : 1;
+
+
+        renderEvents();
+
+    }
+);
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+const eventModal =
+    document.getElementById("eventModal");
+
+const eventModalImage =
+    document.getElementById("eventModalImage");
+
+const eventModalTitle =
+    document.getElementById("eventModalTitle");
+
+const eventModalDate =
+    document.getElementById("eventModalDate");
+
+const eventModalVenue =
+    document.getElementById("eventModalVenue");
+
+const eventModalClose =
+    document.getElementById("eventModalClose");
 
 
 /* =========================================================
    OPEN MODAL
 ========================================================= */
 
-function openModal(type, index) {
+function openEventModal(index) {
 
-    currentType = type;
-    currentIndex = index;
-
-    updateModal();
-
-    modal.classList.add("active");
-
-    document.body.style.overflow = "hidden";
-
-}
+    const event =
+        events[index];
 
 
-/* =========================================================
-   UPDATE MODAL
-========================================================= */
+    eventModalImage.innerHTML = `
 
-function updateModal() {
+        <img
+            src="${event.image}"
+            alt="${event.title}">
 
-    let data;
+    `;
 
-    if (currentType === "announcement") {
 
-        data = announcements[currentIndex];
+    eventModalTitle.innerText =
+        event.title;
 
-        modalMedia.innerHTML =
-            getMegaphoneIcon();
 
-        modalTitle.textContent =
-            data.title;
+    eventModalDate.innerText =
+        event.date;
 
-        modalDate.textContent =
-            "";
 
-        modalLink.href =
-            data.link;
+    eventModalVenue.innerText =
+        "Venue: " + event.venue;
 
-    } else {
 
-        data = events[currentIndex];
+    eventModal.classList.add("active");
 
-        modalMedia.innerHTML = `
 
-            <img
-                src="${data.image}"
-                alt="${data.title}"
-            >
-
-        `;
-
-        modalTitle.textContent =
-            data.title;
-
-        modalDate.textContent =
-            data.date;
-
-        modalLink.href =
-            data.link;
-
-    }
+    document.body.style.overflow =
+        "hidden";
 
 }
 
@@ -4263,112 +4841,63 @@ function updateModal() {
    CLOSE MODAL
 ========================================================= */
 
-function closeModal() {
+function closeEventModal() {
 
-    modal.classList.remove("active");
+    eventModal.classList.remove(
+        "active"
+    );
 
-    document.body.style.overflow = "";
-
-}
-
-
-/* =========================================================
-   MODAL PREVIOUS
-========================================================= */
-
-function showPrevious() {
-
-    const list =
-        currentType === "announcement"
-            ? announcements
-            : events;
-
-    currentIndex--;
-
-    if (currentIndex < 0) {
-        currentIndex = list.length - 1;
-    }
-
-    updateModal();
+    document.body.style.overflow =
+        "";
 
 }
 
 
-/* =========================================================
-   MODAL NEXT
-========================================================= */
-
-function showNext() {
-
-    const list =
-        currentType === "announcement"
-            ? announcements
-            : events;
-
-    currentIndex++;
-
-    if (currentIndex >= list.length) {
-        currentIndex = 0;
-    }
-
-    updateModal();
-
-}
+eventModalClose.addEventListener(
+    "click",
+    closeEventModal
+);
 
 
 /* =========================================================
-   BUTTON EVENTS
+   CLOSE WHEN CLICKING OUTSIDE
 ========================================================= */
 
-document
-    .getElementById("modalClose")
-    .addEventListener("click", closeModal);
+eventModal.addEventListener(
+    "click",
+    function(e) {
 
-document
-    .getElementById("modalPrev")
-    .addEventListener("click", showPrevious);
+        if (
+            e.target === eventModal
+        ) {
 
-document
-    .getElementById("modalNext")
-    .addEventListener("click", showNext);
+            closeEventModal();
+
+        }
+
+    }
+);
 
 
 /* =========================================================
-   CLICK OUTSIDE MODAL
+   ESCAPE KEY
 ========================================================= */
 
-modal.addEventListener("click", function(event) {
+document.addEventListener(
+    "keydown",
+    function(e) {
 
-    if (event.target === modal) {
-        closeModal();
+        if (
+            e.key === "Escape" &&
+            eventModal.classList.contains("active")
+        ) {
+
+            closeEventModal();
+
+        }
+
     }
-
-});
-
-
-/* =========================================================
-   KEYBOARD
-========================================================= */
-
-document.addEventListener("keydown", function(event) {
-
-    if (!modal.classList.contains("active")) {
-        return;
-    }
-
-    if (event.key === "Escape") {
-        closeModal();
-    }
-
-    if (event.key === "ArrowLeft") {
-        showPrevious();
-    }
-
-    if (event.key === "ArrowRight") {
-        showNext();
-    }
-
-});
+);
 
 
 /* =========================================================
@@ -4376,6 +4905,7 @@ document.addEventListener("keydown", function(event) {
 ========================================================= */
 
 renderAnnouncements();
+
 renderEvents();
 
 </script>
@@ -4577,7 +5107,41 @@ renderEvents();
                     <img src="assets/logo/bus.png" alt="MedPlus">
                 </div>
 
+                <div class="company-logo">
+                    <img src="assets/logo/TATAELECTRONICS.png" alt="MedPlus">
+                </div>
 
+                     <div class="company-logo">
+                    <img src="assets/logo/SRIRUNWAYENTERPRISES.png" alt="MedPlus">
+                </div>
+
+                     <div class="company-logo">
+                    <img src="assets/logo/oil.jpg" alt="MedPlus">
+                </div>
+
+                   <div class="company-logo">
+                    <img src="assets/logo/MITSUBA.png" alt="MedPlus">
+                </div>
+
+                  <div class="company-logo">
+                    <img src="assets/logo/hiremeelogo.jpg" alt="MedPlus">
+                </div>
+
+                   <div class="company-logo">
+                    <img src="assets/logo/codebuilders.jpeg" alt="MedPlus">
+                </div>
+
+                   <div class="company-logo">
+                    <img src="assets/logo/HUMETIS.jpg" alt="MedPlus">
+                </div>
+
+                 <div class="company-logo">
+                    <img src="assets/logo/GBK.jpg" alt="MedPlus">
+                </div>
+
+                  <div class="company-logo">
+                    <img src="assets/logo/lapiz.jpg" alt="MedPlus">
+                </div>
                 <!-- Set 2 - Duplicate for seamless loop -->
 
                 <div class="company-logo">
@@ -4643,6 +5207,43 @@ renderEvents();
                 <div class="company-logo">
                     <img src="assets/logo/bus.png" alt="MedPlus">
                 </div>
+
+                <div class="company-logo">
+                    <img src="assets/logo/TATAELECTRONICS.png" alt="MedPlus">
+                </div>
+
+                     <div class="company-logo">
+                    <img src="assets/logo/SRIRUNWAYENTERPRISES.png" alt="MedPlus">
+                </div>
+
+                     <div class="company-logo">
+                    <img src="assets/logo/oil.jpg" alt="MedPlus">
+                </div>
+
+                   <div class="company-logo">
+                    <img src="assets/logo/MITSUBA.png" alt="MedPlus">
+                </div>
+
+                  <div class="company-logo">
+                    <img src="assets/logo/hiremeelogo.jpg" alt="MedPlus">
+                </div>
+
+                   <div class="company-logo">
+                    <img src="assets/logo/codebuilders.jpeg" alt="MedPlus">
+                </div>
+
+                   <div class="company-logo">
+                    <img src="assets/logo/HUMETIS.jpg" alt="MedPlus">
+                </div>
+
+                 <div class="company-logo">
+                    <img src="assets/logo/GBK.jpg" alt="MedPlus">
+                </div>
+
+                  <div class="company-logo">
+                    <img src="assets/logo/lapiz.jpg" alt="MedPlus">
+                </div>
+
             </div>
 
         </div>
@@ -5081,52 +5682,6 @@ renderEvents();
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const noticeWrapper =
-                document.querySelector(".notices-panel .notice-wrapper");
-
-            if (!noticeWrapper) return;
-
-            let scrollSpeed = 1;
-
-            function autoScrollNotices() {
-
-                noticeWrapper.scrollTop += scrollSpeed;
-
-                if (
-                    noticeWrapper.scrollTop +
-                    noticeWrapper.clientHeight >=
-                    noticeWrapper.scrollHeight
-                ) {
-                    noticeWrapper.scrollTop = 0;
-                }
-
-            }
-
-            let noticeTimer =
-                setInterval(autoScrollNotices, 45);
-
-
-            /* Pause while mouse is over notices */
-
-            noticeWrapper.addEventListener("mouseenter", function () {
-                clearInterval(noticeTimer);
-            });
-
-
-            noticeWrapper.addEventListener("mouseleave", function () {
-
-                noticeTimer =
-                    setInterval(autoScrollNotices, 45);
-
-            });
-
-        });
-    </script>
-
-
 
     <script>
 
@@ -5412,30 +5967,7 @@ renderEvents();
     </script>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const slides = document.querySelectorAll(".event-slide");
-
-            let currentSlide = 0;
-
-            function showNextSlide() {
-
-                slides[currentSlide].classList.remove("active");
-
-                currentSlide++;
-
-                if (currentSlide >= slides.length) {
-                    currentSlide = 0;
-                }
-
-                slides[currentSlide].classList.add("active");
-            }
-
-            setInterval(showNextSlide, 4000);
-
-        });
-    </script>
+   
 
 </body>
 
