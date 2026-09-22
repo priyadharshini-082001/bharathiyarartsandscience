@@ -5549,10 +5549,10 @@ color: #0a2c6e;
 ========================================================= */
 
 .basc-recognition-icon {
-    flex: 0 0 40px;
+    flex: 0 0 50px;
 
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 
     display: flex;
     align-items: center;
@@ -5700,8 +5700,8 @@ color: #0a2c6e;
 /* ICON */
 
 .basc-recognition-icon {
-    min-width: 48px;
-    height: 48px;
+    min-width: 58px;
+    height:58px;
 
     display: flex;
     align-items: center;
@@ -5730,7 +5730,7 @@ color: #0a2c6e;
 .basc-recognition-content strong {
     color: #073b8f;
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .basc-recognition-content span {

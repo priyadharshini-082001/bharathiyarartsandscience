@@ -2870,24 +2870,15 @@
     }
 
     .basc-recognition-item {
-        min-height: 62px;
+        min-height: 52px;
 
         padding: 8px 10px;
 
         gap: 9px;
     }
 
-    .basc-recognition-icon {
-        width: 36px;
-        height: 36px;
-
-        flex-basis: 36px;
-
-        font-size: 13px;
-    }
-
     .basc-recognition-content strong {
-        font-size: 12.5px;
+        font-size: 11px;
     }
 
     .basc-recognition-content span {
