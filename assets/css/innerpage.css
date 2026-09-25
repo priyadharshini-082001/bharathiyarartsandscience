@@ -1,3 +1,29 @@
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
 /* =====================================================
    BREADCRUMB WITH BACKGROUND IMAGE
 ===================================================== */
@@ -158,5 +184,2257 @@
         margin: 0 9px;
         font-size: 18px;
     }
+
+}
+/* =====================================================
+   BHARATHIYAR COLLEGE - PROFILE & HISTORY
+   COMPLETELY NEW CLASS NAMES
+   NO FONT FAMILY OVERRIDE
+===================================================== */
+
+.bwc-history-section {
+    --bwc-red: #8b1e2d;
+    --bwc-red-light: #c32d48;
+    --bwc-blue: #08306c;
+    --bwc-blue-light: #12569a;
+    --bwc-gold: #e5b72f;
+    --bwc-pink: #e12b7b;
+
+    position: relative;
+    width: 100%;
+    padding: 65px 20px 70px;
+    overflow: hidden;
+    isolation: isolate;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf3 0%,
+            #ffffff 50%,
+            #f1f5fb 100%
+        );
+
+    box-sizing: border-box;
+}
+
+.bwc-history-section *,
+.bwc-history-section *::before,
+.bwc-history-section *::after {
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BACKGROUND DECORATIONS
+===================================================== */
+
+.bwc-history-decor {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bwc-history-decor-one {
+    width: 380px;
+    height: 380px;
+    top: 100px;
+    left: -250px;
+
+    border: 55px solid rgba(139, 30, 45, 0.045);
+    border-radius: 50%;
+}
+
+.bwc-history-decor-two {
+    width: 350px;
+    height: 350px;
+    right: -240px;
+    bottom: 30px;
+
+    border: 55px solid rgba(8, 48, 108, 0.045);
+    border-radius: 50%;
+}
+
+.bwc-history-section::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: 5%;
+
+    width: 75px;
+    height: 75px;
+
+    border: 2px solid rgba(229, 183, 47, 0.4);
+    transform: rotate(45deg);
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bwc-history-section::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom: 70px;
+
+    width: 70px;
+    height: 70px;
+
+    background-image:
+        radial-gradient(
+            var(--bwc-gold) 2px,
+            transparent 2px
+        );
+
+    background-size: 12px 12px;
+
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.bwc-history-container {
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.bwc-history-header {
+    width: 100%;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.bwc-history-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 10px;
+
+    color: var(--bwc-red);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bwc-history-eyebrow span {
+    display: block;
+    width: 38px;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--bwc-red),
+            var(--bwc-gold)
+        );
+}
+
+.bwc-history-header h2 {
+    margin: 0;
+
+    color: var(--bwc-blue);
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.bwc-history-header h2 strong {
+    color: var(--bwc-gold);
+    padding: 0 5px;
+}
+
+.bwc-history-header p {
+    max-width: 680px;
+    margin: 12px auto 0;
+
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.bwc-history-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.85fr)
+        minmax(0, 1.15fr);
+
+    gap: 45px;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+/* =====================================================
+   IMAGE SECTION
+===================================================== */
+
+.bwc-history-visual {
+    position: relative;
+    min-width: 0;
+    width: 100%;
+
+    padding: 12px 12px 25px 0;
+}
+
+.bwc-history-photo {
+    position: relative;
+    width: 100%;
+    height: 550px;
+
+    overflow: hidden;
+    background: var(--bwc-blue);
+
+    border-radius: 0 60px 0 60px;
+
+    box-shadow:
+        12px 12px 0 var(--bwc-gold),
+        0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+.bwc-history-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+.bwc-history-photo:hover img {
+    transform: scale(1.035);
+}
+
+
+/* Image overlay */
+
+.bwc-history-photo-shade {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 48, 108, 0.92) 0%,
+            rgba(8, 48, 108, 0.38) 35%,
+            rgba(8, 48, 108, 0.02) 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   IMAGE CAPTION
+===================================================== */
+
+.bwc-history-photo-text {
+    position: absolute;
+    left: 25px;
+    right: 20px;
+    bottom: 30px;
+
+    z-index: 2;
+
+    padding-left: 16px;
+    border-left: 4px solid var(--bwc-gold);
+}
+
+.bwc-history-photo-text > span {
+    display: block;
+    margin-bottom: 6px;
+
+    color: var(--bwc-gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bwc-history-photo-text h3 {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: clamp(22px, 2.2vw, 29px);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.bwc-history-photo-line {
+    width: 55px;
+    height: 3px;
+
+    margin: 12px 0 8px;
+
+    background: var(--bwc-gold);
+}
+
+.bwc-history-photo-text p {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   ESTABLISHED BADGE
+===================================================== */
+
+.bwc-history-established {
+    position: absolute;
+    top: 38px;
+    right: -12px;
+
+    z-index: 4;
+
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--bwc-red),
+            var(--bwc-red-light)
+        );
+
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+
+    box-shadow:
+        0 10px 28px rgba(139, 30, 45, 0.25);
+}
+
+.bwc-history-established::before {
+    content: "";
+    position: absolute;
+    inset: 5px;
+
+    border: 1px dashed rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+}
+
+.bwc-history-established span,
+.bwc-history-established strong,
+.bwc-history-established small {
+    position: relative;
+    z-index: 1;
+}
+
+.bwc-history-established span {
+    color: var(--bwc-gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.bwc-history-established strong {
+    margin: 3px 0;
+
+    color: #ffffff;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.bwc-history-established small {
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   IMAGE BOTTOM LABEL
+===================================================== */
+
+.bwc-history-image-label {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding:5px;
+
+    background: #ffffff;
+
+    border-left: 4px solid var(--bwc-red);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    z-index: 5;
+}
+
+.bwc-history-label-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    color: var(--bwc-blue);
+    background: #fff2c5;
+
+    font-size: 20px;
+}
+
+.bwc-history-image-label strong {
+    display: block;
+
+    color: var(--bwc-blue);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bwc-history-image-label small {
+    display: block;
+    margin-top: 3px;
+
+    color: #000000;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   RIGHT CONTENT
+===================================================== */
+
+.bwc-history-details {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.bwc-history-intro {
+    display: grid;
+    grid-template-columns: 43px minmax(0, 1fr);
+    gap: 16px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid rgba(8, 48, 108, 0.15);
+}
+
+.bwc-history-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    color: #ffffff;
+    background:
+        linear-gradient(
+            145deg,
+            var(--bwc-red),
+            var(--bwc-red-light)
+        );
+
+    font-size: 18px;
+    font-weight: 700;
+
+    box-shadow: 4px 4px 0 var(--bwc-gold);
+}
+
+.bwc-history-section-label {
+    display: block;
+    margin-bottom: 4px;
+
+    color: var(--bwc-red);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.bwc-history-intro-content h3 {
+    margin: 0 0 10px;
+
+    color: var(--bwc-blue);
+    font-size: clamp(23px, 2.3vw, 30px);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.bwc-history-intro-content p {
+    margin: 0;
+
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.bwc-history-intro-content p strong {
+    color: var(--bwc-red);
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   INFORMATION CARDS
+===================================================== */
+
+.bwc-history-info-card {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 15px;
+
+    margin-top: 18px;
+    padding: 18px;
+
+    background: #ffffff;
+
+    border-left: 4px solid var(--bwc-blue);
+
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.055);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.bwc-history-info-card:nth-of-type(3) {
+    border-left-color: var(--bwc-red);
+}
+
+.bwc-history-info-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Card icons */
+
+.bwc-history-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.bwc-history-icon-blue {
+    background:
+        linear-gradient(
+            145deg,
+            var(--bwc-blue),
+            var(--bwc-blue-light)
+        );
+
+    box-shadow: 0 5px 14px rgba(8, 48, 108, 0.2);
+}
+
+.bwc-history-icon-red {
+    background:
+        linear-gradient(
+            145deg,
+            var(--bwc-red),
+            var(--bwc-red-light)
+        );
+
+    box-shadow: 0 5px 14px rgba(139, 30, 45, 0.2);
+}
+
+
+/* Card text */
+
+.bwc-history-card-content {
+    min-width: 0;
+}
+
+.bwc-history-card-content h4 {
+    margin: 0 0 6px;
+
+    color: var(--bwc-blue);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.bwc-history-card-content p {
+    margin: 0;
+
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.bwc-history-card-content p strong {
+    color: var(--bwc-red);
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   RECOGNITION PANEL
+===================================================== */
+
+.bwc-history-recognition {
+    position: relative;
+
+    margin-top: 22px;
+    padding: 19px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            125deg,
+            var(--bwc-blue),
+            #0b4384
+        );
+}
+
+.bwc-history-recognition::after {
+    content: "";
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    right: -50px;
+    top: -50px;
+
+    border: 20px solid rgba(229, 183, 47, 0.13);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Recognition heading */
+
+.bwc-history-recognition-title {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.bwc-history-recognition-title i {
+    color: var(--bwc-gold);
+    font-size: 18px;
+}
+
+.bwc-history-recognition-title span {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* Recognition grid */
+
+.bwc-history-recognition-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.bwc-history-recognition-item {
+    min-width: 0;
+    padding: 13px 10px;
+
+    background: rgba(255, 255, 255, 0.09);
+
+    border-top: 3px solid var(--bwc-gold);
+}
+
+.bwc-history-recognition-item:nth-child(2) {
+    border-top-color: #ffffff;
+}
+
+.bwc-history-recognition-item:nth-child(3) {
+    border-top-color: var(--bwc-pink);
+}
+
+.bwc-history-recognition-item strong {
+    display: block;
+    margin-bottom: 6px;
+
+    color: var(--bwc-gold);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.bwc-history-recognition-item:nth-child(2) strong {
+    color: #ffffff;
+}
+
+.bwc-history-recognition-item:nth-child(3) strong {
+    color: #ff83b2;
+}
+
+.bwc-history-recognition-item span {
+    display: block;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   MOTTO
+===================================================== */
+
+.bwc-history-motto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 18px;
+    padding: 15px 18px;
+
+    background: #fff7dc;
+
+    border-left: 4px solid var(--bwc-gold);
+}
+
+.bwc-history-motto-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    color: var(--bwc-blue);
+    background: var(--bwc-gold);
+
+    font-size: 15px;
+}
+
+.bwc-history-motto-content {
+    min-width: 0;
+}
+
+.bwc-history-motto-content > span {
+    display: block;
+
+    color: var(--bwc-red);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.bwc-history-motto-content h4 {
+    margin: 4px 0 0;
+
+    color: var(--bwc-blue);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.bwc-history-motto-content h4 b {
+    margin: 0 4px;
+    color: var(--bwc-red);
+}
+
+/* =====================================================
+   BASCW EDITORIAL DESIGN
+   Unique Layout - Green, Gold, Cream
+   Paragraph: 15px Black
+===================================================== */
+
+.bascw-editorial {
+    width: 100%;
+    padding:50px 20px;
+    background: aliceblue;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.bascw-editorial *,
+.bascw-editorial *::before,
+.bascw-editorial *::after {
+    box-sizing: border-box;
+}
+
+.bascw-editorial-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* HEADING */
+
+.bascw-editorial-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.bascw-editorial-heading > span {
+    color: #a77a16;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.bascw-editorial-heading h2 {
+    color: #064b30;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.bascw-editorial-heading h2 b {
+    color: #bd8b20;
+}
+
+.bascw-editorial-heading p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #000;
+    margin: 0;
+}
+
+
+/* =====================================================
+   VISION FEATURE
+===================================================== */
+
+.bascw-vision-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 45px;
+}
+
+
+/* VISION IMAGE */
+
+.bascw-vision-photo {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+    background: #dce5d4;
+}
+
+.bascw-vision-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.bascw-vision-feature:hover .bascw-vision-photo img {
+    transform: scale(1.04);
+}
+
+.bascw-photo-tag {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    color: #064b30;
+    padding: 12px 20px 12px 12px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.bascw-photo-tag span {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5b72f;
+    color: #173b27;
+    font-size: 13px;
+}
+
+
+/* VISION TEXT */
+
+.bascw-vision-text {
+    position: relative;
+    padding: 55px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+        linear-gradient(
+            135deg,
+            #fff 65%,
+            #f5f1df 100%
+        );
+}
+
+.bascw-editorial-symbol {
+    position: absolute;
+    top: 20px;
+    right: 28px;
+    color: rgba(0, 107, 60, 0.10);
+    font-size: 100px;
+    line-height: 1;
+}
+
+.bascw-editorial-kicker {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #a77a16;
+    margin-bottom: 12px;
+}
+
+.bascw-vision-text h3 {
+    color: #064b30;
+    font-size: 31px;
+    line-height: 1.35;
+    font-weight: 800;
+    margin: 0 0 20px;
+    position: relative;
+}
+
+.bascw-vision-text > p {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.bascw-vision-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 2px solid #e8e3d1;
+}
+
+.bascw-vision-bottom span {
+    background: #e8f0e7;
+    color: #075333;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   MISSION HEADING
+===================================================== */
+
+.bascw-editorial-mission {
+    margin-bottom: 40px;
+}
+
+.bascw-mission-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #ddd7c3;
+}
+
+.bascw-mission-heading h2 {
+    font-size: 32px;
+    color: #064b30;
+    font-weight: 800;
+    margin: 0;
+}
+
+.bascw-mission-heading > p {
+    max-width: 450px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #000;
+    margin: 0;
+}
+
+
+/* =====================================================
+   COLORFUL MISSION CARDS
+===================================================== */
+
+.bascw-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.bascw-mission-item {
+    grid-column: span 2;
+    position: relative;
+    min-height: 240px;
+    padding: 25px 22px;
+    background: #fff;
+    overflow: hidden;
+    border-bottom: 4px solid var(--mission-color);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.bascw-mission-item:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.bascw-mission-item:hover {
+    transform: translateY(-5px);
+}
+
+.mission-green {
+    --mission-color: #087442;
+    --mission-light: #e6f2e9;
+}
+
+.mission-gold {
+    --mission-color: #c08b18;
+    --mission-light: #fbf2dc;
+}
+
+.mission-red {
+    --mission-color: #b13c45;
+    --mission-light: #f9e8e8;
+}
+
+.mission-blue {
+    --mission-color: #245f9b;
+    --mission-light: #e8f0fa;
+}
+
+.mission-purple {
+    --mission-color: #76529b;
+    --mission-light: #f0eafa;
+}
+
+
+/* CARD NUMBER */
+
+.bascw-mission-no {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--mission-color);
+    opacity: 0.15;
+}
+
+
+/* CARD ICON */
+
+.bascw-mission-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mission-color);
+    background: var(--mission-light);
+    font-size: 24px;
+    margin-bottom: 18px;
+    border-radius: 3px 15px 3px 15px;
+}
+
+.bascw-mission-item h3 {
+    color: var(--mission-color);
+    font-size: 19px;
+    font-weight: 800;
+    margin: 0 0 12px;
+    line-height: 1.35;
+}
+
+.bascw-mission-item p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #000;
+    margin: 0;
+}
+
+
+/* =====================================================
+   MOTTO & QUALITY POLICY
+===================================================== */
+
+.bascw-editorial-bottom {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+
+/* MOTTO */
+
+.bascw-motto-feature {
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    background: #064b30;
+    color: #fff;
+}
+
+.bascw-motto-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bascw-motto-top > span {
+    color: #f1d36c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.bascw-motto-star {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5b72f;
+    color: #064b30;
+    font-size: 23px;
+}
+
+.bascw-motto-feature h3 {
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1.45;
+    margin: 0;
+    color: #fff;
+}
+
+.bascw-motto-feature h3 strong {
+    color: #f1d36c;
+}
+
+.bascw-motto-line {
+    width: 70px;
+    height: 4px;
+    background: #e5b72f;
+    margin: 22px 0 16px;
+}
+
+.bascw-motto-feature > p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* QUALITY POLICY */
+
+.bascw-policy-feature {
+    position: relative;
+    padding: 35px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e5ddc6;
+    border-left: 6px solid #c08b18;
+}
+
+.bascw-policy-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.bascw-policy-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f2e6;
+    color: #087442;
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 50%;
+}
+
+.bascw-policy-heading span {
+    display: block;
+    font-size: 11px;
+    color: #b17c12;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.bascw-policy-heading h3 {
+    font-size: 27px;
+    color: #064b30;
+    font-weight: 800;
+    margin: 0;
+}
+
+.bascw-policy-feature > p {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.9;
+    margin: 0 0 25px;
+}
+
+.bascw-policy-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e0d1;
+}
+
+.bascw-policy-footer span {
+    font-size: 11px;
+    font-weight: 800;
+    color: #064b30;
+    background: #edf3e9;
+    padding: 9px 12px;
+}
+
+/* =====================================================
+   BASCW CHAIRMAN MESSAGE
+   Premium Green & Gold Design
+===================================================== */
+
+.bascw-chairman-section {
+    width: 100%;
+    padding: 65px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #f7f5ed;
+    box-sizing: border-box;
+}
+
+.bascw-chairman-section *,
+.bascw-chairman-section *::before,
+.bascw-chairman-section *::after {
+    box-sizing: border-box;
+}
+
+.bascw-chairman-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* HEADING */
+
+.bascw-chairman-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bascw-chairman-heading > span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #b17c12;
+    margin-bottom: 10px;
+}
+
+.bascw-chairman-heading h2 {
+    color: #064b30;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.bascw-chairman-heading h2 strong {
+    color: #b17c12;
+}
+
+.bascw-heading-line {
+    width: 75px;
+    height: 4px;
+    margin: 15px auto 0;
+    background: linear-gradient(
+        to right,
+        #006b3c 50%,
+        #e5b72f 50%
+    );
+}
+
+
+/* =====================================================
+   LANGUAGE BUTTONS
+===================================================== */
+
+.bascw-language-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.bascw-lang-btn {
+    border: 1px solid #006b3c;
+    padding: 11px 30px;
+    background: #fff;
+    color: #006b3c;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bascw-lang-btn.active,
+.bascw-lang-btn:hover {
+    background: #006b3c;
+    color: #fff;
+    border-color: #006b3c;
+}
+
+.bascw-lang-btn:focus-visible {
+    outline: 3px solid #e5b72f;
+    outline-offset: 3px;
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.bascw-chairman-layout {
+    display: grid;
+    grid-template-columns: 340px minmax(0, 1fr);
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* =====================================================
+   CHAIRMAN PROFILE
+===================================================== */
+
+.bascw-chairman-profile {
+    position: sticky;
+    top: 30px;
+    text-align: center;
+    background: #fff;
+    padding: 18px;
+    border: 1px solid #e4ddc7;
+    box-shadow: 0 12px 35px rgba(0, 50, 25, 0.08);
+}
+
+
+/* PHOTO */
+
+.bascw-chairman-photo-frame {
+    width: 100%;
+    height: 390px;
+    position: relative;
+    padding: 8px;
+    background: #e5b72f;
+}
+
+.bascw-chairman-photo-border {
+    position: absolute;
+    inset: 0;
+    border: 1px solid #006b3c;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.bascw-chairman-photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    background: #e8e8e0;
+}
+
+
+/* PHOTO LABEL */
+
+.bascw-chairman-photo-label {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    z-index: 3;
+    background: #006b3c;
+    padding: 10px 18px;
+    border-left: 4px solid #e5b72f;
+}
+
+.bascw-chairman-photo-label span {
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+
+/* CHAIRMAN NAME */
+
+.bascw-chairman-name {
+    padding: 23px 10px 12px;
+}
+
+.bascw-chairman-designation {
+    display: inline-block;
+    color: #b17c12;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+}
+
+.bascw-chairman-name h3 {
+    color: #064b30;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.bascw-name-divider {
+    width: 55px;
+    height: 3px;
+    background: #e5b72f;
+    margin: 15px auto;
+}
+
+.bascw-chairman-college {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000;
+    margin: 0;
+}
+
+
+/* =====================================================
+   MESSAGE CONTENT
+===================================================== */
+
+.bascw-chairman-message {
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #e8e1ce;
+    padding: 35px 38px;
+    box-shadow: 0 12px 35px rgba(0, 50, 25, 0.06);
+}
+
+
+/* HIDE / SHOW LANGUAGE */
+
+.bascw-message-content {
+    display: none;
+    animation: bascwMessageFade 0.4s ease;
+}
+
+.bascw-message-content.active {
+    display: block;
+}
+
+@keyframes bascwMessageFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* MESSAGE HEADER */
+
+.bascw-message-top {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 18px;
+}
+
+.bascw-quote-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f0e5;
+    color: #006b3c;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.bascw-message-label {
+    font-size: 12px;
+    color: #b17c12;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+/* MESSAGE TITLE */
+
+.bascw-message-content > h3 {
+    font-size: 27px;
+    font-weight: 800;
+    color: #064b30;
+    line-height: 1.4;
+    margin: 0 0 22px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #e8e3d5;
+}
+
+
+/* PARAGRAPHS */
+
+.bascw-message-content > p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.9;
+    margin: 0 0 19px;
+    text-align: justify;
+}
+
+.bascw-message-content > p strong {
+    color: #064b30;
+    font-weight: 700;
+}
+
+
+/* TAMIL CONTENT */
+
+#bascw-message-ta {
+    font-family: inherit;
+}
+
+#bascw-message-ta > p {
+    line-height: 2;
+}
+
+
+/* =====================================================
+   BHARATHIYAR QUOTE
+===================================================== */
+
+.bascw-chairman-quote {
+    position: relative;
+    padding: 24px 28px;
+    margin: 25px 0;
+    background: #f2f5e9;
+    border-left: 5px solid #006b3c;
+    border-bottom: 1px solid #e5b72f;
+}
+
+.bascw-chairman-quote > span {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #a77a16;
+    margin-bottom: 12px;
+}
+
+.bascw-chairman-quote h4 {
+    font-size: 20px;
+    color: #064b30;
+    font-weight: 700;
+    line-height: 1.8;
+    margin: 0;
+}
+
+#bascw-message-ta .bascw-chairman-quote h4 {
+    line-height: 2;
+}
+
+
+/* =====================================================
+   SIGNATURE
+===================================================== */
+
+.bascw-chairman-signature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 25px;
+    margin-top: 30px;
+    border-top: 1px solid #e5e0d2;
+}
+
+.bascw-signature-line {
+    width: 5px;
+    height: 65px;
+    background: linear-gradient(
+        to bottom,
+        #006b3c 50%,
+        #e5b72f 50%
+    );
+    flex-shrink: 0;
+}
+
+.bascw-signature-label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.bascw-sign-name {
+    font-size: 20px;
+    font-weight: 800;
+    color: #064b30;
+    margin: 0 0 4px;
+}
+
+.bascw-sign-designation {
+    font-size: 14px;
+    color: #b17c12;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* =====================================================
+   SECRETARY SECTION - ROYAL BLUE / VIOLET / SILVER
+   Same Layout - New Color Theme
+===================================================== */
+
+.bascw-secretary-section {
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(105, 76, 160, 0.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #f5f5fc,
+            #eef0f8,
+            #faf9ff
+        );
+}
+
+/* HEADING */
+
+.bascw-secretary-section .bascw-chairman-heading > span {
+    color: #7252a0;
+}
+
+.bascw-secretary-section .bascw-chairman-heading h2 {
+    color: #172d60;
+}
+
+.bascw-secretary-section .bascw-chairman-heading h2 strong {
+    color: #7655a7;
+}
+
+.bascw-secretary-section .bascw-heading-line {
+    background: linear-gradient(
+        to right,
+        #172d60 50%,
+        #9c83c5 50%
+    );
+}
+
+
+/* LANGUAGE BUTTONS */
+
+.bascw-secretary-section .bascw-lang-btn {
+    border-color: #263f7d;
+    color: #263f7d;
+}
+
+.bascw-secretary-section .bascw-lang-btn.active,
+.bascw-secretary-section .bascw-lang-btn:hover {
+    background: #263f7d;
+    border-color: #263f7d;
+    color: #fff;
+}
+
+
+/* PHOTO FRAME */
+
+.bascw-secretary-section .bascw-chairman-photo-frame {
+    background: #a18ac7;
+}
+
+.bascw-secretary-section .bascw-chairman-photo-border {
+    border-color: #263f7d;
+}
+
+.bascw-secretary-section .bascw-chairman-photo-label {
+    background: #263f7d;
+    border-left-color: #c4b5dc;
+}
+
+
+/* SECRETARY NAME */
+
+.bascw-secretary-section .bascw-chairman-designation {
+    color: #7655a7;
+}
+
+.bascw-secretary-section .bascw-chairman-name h3 {
+    color: #172d60;
+}
+
+.bascw-secretary-section .bascw-name-divider {
+    background: #9c83c5;
+}
+
+
+/* MESSAGE */
+
+.bascw-secretary-section .bascw-chairman-message {
+    border-color: #dedbed;
+}
+
+.bascw-secretary-section .bascw-quote-icon {
+    background: #ece8f5;
+    color: #263f7d;
+}
+
+.bascw-secretary-section .bascw-message-label {
+    color: #7655a7;
+}
+
+.bascw-secretary-section .bascw-message-content > h3 {
+    color: #172d60;
+    border-bottom-color: #e2dfed;
+}
+
+.bascw-secretary-section .bascw-message-content > p strong {
+    color: #263f7d;
+}
+
+
+/* QUOTATION BOX */
+
+.bascw-secretary-section .bascw-chairman-quote {
+    background: linear-gradient(
+        120deg,
+        #f0edf8,
+        #f8f7fc
+    );
+    border-left-color: #7655a7;
+    border-bottom-color: #b6a4d3;
+}
+
+.bascw-secretary-section .bascw-chairman-quote > span {
+    color: #7655a7;
+}
+
+.bascw-secretary-section .bascw-chairman-quote h4 {
+    color: #172d60;
+}
+
+
+/* SIGNATURE */
+
+.bascw-secretary-section .bascw-chairman-signature {
+    border-top-color: #e2dfed;
+}
+
+.bascw-secretary-section .bascw-signature-line {
+    background: linear-gradient(
+        to bottom,
+        #263f7d 50%,
+        #9c83c5 50%
+    );
+}
+
+.bascw-secretary-section .bascw-sign-name {
+    color: #172d60;
+}
+
+.bascw-secretary-section .bascw-sign-designation {
+    color: #7655a7;
+}
+
+
+/* =====================================================
+BASCW TREASURER SECTION
+PREMIUM ROYAL BLUE / BURGUNDY / CHAMPAGNE GOLD
+===================================================== */
+
+.bascw-secretary-section {
+
+
+background:
+    radial-gradient(
+        circle at top left,
+        rgba(201, 164, 92, 0.10),
+        transparent 34%
+    ),
+    radial-gradient(
+        circle at bottom right,
+        rgba(139, 30, 63, 0.07),
+        transparent 35%
+    ),
+    linear-gradient(
+        135deg,
+        #faf8f3,
+        #f4f6fa,
+        #ffffff
+    );
+
+
+}
+
+/* ================= HEADING ================= */
+
+.bascw-secretary-section .bascw-chairman-heading > span {
+color: #8B1E3F;
+letter-spacing: 2px;
+}
+
+.bascw-secretary-section .bascw-chairman-heading h2 {
+color: #071F45;
+}
+
+.bascw-secretary-section .bascw-chairman-heading h2 strong {
+color: #8B1E3F;
+}
+
+.bascw-secretary-section .bascw-heading-line {
+background: linear-gradient(
+to right,
+#123B78 45%,
+#C9A45C 45%,
+#C9A45C 55%,
+#8B1E3F 55%
+);
+}
+
+/* ================= LANGUAGE BUTTONS ================= */
+
+.bascw-secretary-section .bascw-lang-btn {
+border-color: #123B78;
+color: #123B78;
+background: transparent;
+}
+
+.bascw-secretary-section .bascw-lang-btn.active,
+.bascw-secretary-section .bascw-lang-btn:hover {
+background: #123B78;
+border-color: #123B78;
+color: #ffffff;
+}
+
+/* ================= PHOTO FRAME ================= */
+
+.bascw-secretary-section .bascw-chairman-photo-frame {
+background: linear-gradient(
+145deg,
+#C9A45C,
+#E4CF9B,
+#8B1E3F
+);
+}
+
+.bascw-secretary-section .bascw-chairman-photo-border {
+border-color: #071F45;
+}
+
+.bascw-secretary-section .bascw-chairman-photo-label {
+background: #071F45;
+border-left-color: #C9A45C;
+}
+
+/* ================= TREASURER NAME ================= */
+
+.bascw-secretary-section .bascw-chairman-designation {
+color: #8B1E3F;
+}
+
+.bascw-secretary-section .bascw-chairman-name h3 {
+color: #071F45;
+}
+
+.bascw-secretary-section .bascw-name-divider {
+background: linear-gradient(
+to right,
+#123B78,
+#C9A45C,
+#8B1E3F
+);
+}
+
+/* ================= MESSAGE ================= */
+
+.bascw-secretary-section .bascw-chairman-message {
+border-color: #D9DCE3;
+background: rgba(255, 255, 255, 0.72);
+}
+
+.bascw-secretary-section .bascw-quote-icon {
+background: #F1E8D5;
+color: #8B1E3F;
+}
+
+.bascw-secretary-section .bascw-message-label {
+color: #8B1E3F;
+}
+
+.bascw-secretary-section .bascw-message-content > h3 {
+color: #071F45;
+border-bottom-color: #E1E3E8;
+}
+
+.bascw-secretary-section .bascw-message-content > p strong {
+color: #123B78;
+}
+
+/* ================= QUOTATION BOX ================= */
+
+.bascw-secretary-section .bascw-chairman-quote {
+
+
+background:
+    linear-gradient(
+        135deg,
+        #fbf8f0,
+        #f3f5f9
+    );
+
+border-left-color: #8B1E3F;
+border-bottom-color: #C9A45C;
+
+
+}
+
+.bascw-secretary-section .bascw-chairman-quote > span {
+color: #8B1E3F;
+}
+
+.bascw-secretary-section .bascw-chairman-quote h4 {
+color: #071F45;
+}
+
+/* ================= SIGNATURE ================= */
+
+.bascw-secretary-section .bascw-chairman-signature {
+border-top-color: #D9DCE3;
+}
+
+.bascw-secretary-section .bascw-signature-line {
+background: linear-gradient(
+to bottom,
+#123B78 45%,
+#C9A45C 45%,
+#C9A45C 55%,
+#8B1E3F 55%
+);
+}
+
+.bascw-secretary-section .bascw-sign-name {
+color: #071F45;
+}
+
+.bascw-secretary-section .bascw-sign-designation {
+color: #8B1E3F;
+}
+
+/* ================= COLLEGE NAME ================= */
+
+.bascw-secretary-section .bascw-chairman-college {
+color: #536176;
+}
+
+/* =====================================================
+BASCW PRINCIPAL SECTION
+EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
+===================================================== */
+
+.bascw-principal-section {
+
+
+background:
+    radial-gradient(
+        circle at top left,
+        rgba(8, 127, 91, 0.10),
+        transparent 35%
+    ),
+    radial-gradient(
+        circle at bottom right,
+        rgba(197, 162, 83, 0.09),
+        transparent 35%
+    ),
+    linear-gradient(
+        135deg,
+        #fbfaf6,
+        #f0f6f3,
+        #ffffff
+    );
+
+}
+
+/* ================= HEADING ================= */
+
+.bascw-principal-section .bascw-chairman-heading > span {
+color: #087F5B;
+letter-spacing: 2px;
+}
+
+.bascw-principal-section .bascw-chairman-heading h2 {
+color: #063F45;
+}
+
+.bascw-principal-section .bascw-chairman-heading h2 strong {
+color: #087F5B;
+}
+
+.bascw-principal-section .bascw-heading-line {
+background: linear-gradient(
+to right,
+#063F45 42%,
+#C5A253 42%,
+#C5A253 58%,
+#087F5B 58%
+);
+}
+
+/* ================= LANGUAGE BUTTONS ================= */
+
+.bascw-principal-section .bascw-lang-btn {
+border-color: #063F45;
+color: #063F45;
+background: transparent;
+}
+
+.bascw-principal-section .bascw-lang-btn.active,
+.bascw-principal-section .bascw-lang-btn:hover {
+background: #063F45;
+border-color: #063F45;
+color: #ffffff;
+}
+
+/* ================= PHOTO FRAME ================= */
+
+.bascw-principal-section .bascw-chairman-photo-frame {
+background: linear-gradient(
+145deg,
+#087F5B,
+#C5A253,
+#063F45
+);
+}
+
+.bascw-principal-section .bascw-chairman-photo-border {
+border-color: #063F45;
+}
+
+.bascw-principal-section .bascw-chairman-photo-label {
+background: #063F45;
+border-left-color: #C5A253;
+}
+
+/* ================= PRINCIPAL NAME ================= */
+
+.bascw-principal-section .bascw-chairman-designation {
+color: #087F5B;
+}
+
+.bascw-principal-section .bascw-chairman-name h3 {
+color: #063F45;
+}
+
+.bascw-principal-section .bascw-name-divider {
+background: linear-gradient(
+to right,
+#063F45,
+#C5A253,
+#087F5B
+);
+}
+
+/* ================= MESSAGE ================= */
+
+.bascw-principal-section .bascw-chairman-message {
+border-color: #D9E1DF;
+background: rgba(255, 255, 255, 0.78);
+}
+
+.bascw-principal-section .bascw-quote-icon {
+background: #EAF5F1;
+color: #087F5B;
+}
+
+.bascw-principal-section .bascw-message-label {
+color: #087F5B;
+}
+
+.bascw-principal-section .bascw-message-content > h3 {
+color: #063F45;
+border-bottom-color: #DCE5E2;
+}
+
+.bascw-principal-section .bascw-message-content > p strong {
+color: #087F5B;
+}
+
+/* ================= QUOTATION BOX ================= */
+
+.bascw-principal-section .bascw-chairman-quote {
+
+
+background:
+    linear-gradient(
+        135deg,
+        #F7F4E9,
+        #EEF6F2
+    );
+
+border-left-color: #087F5B;
+border-bottom-color: #C5A253;
+
+
+}
+
+.bascw-principal-section .bascw-chairman-quote > span {
+color: #087F5B;
+}
+
+.bascw-principal-section .bascw-chairman-quote h4 {
+color: #063F45;
+}
+
+/* ================= SIGNATURE ================= */
+
+.bascw-principal-section .bascw-chairman-signature {
+border-top-color: #D9E1DF;
+}
+
+.bascw-principal-section .bascw-signature-line {
+background: linear-gradient(
+to bottom,
+#063F45 42%,
+#C5A253 42%,
+#C5A253 58%,
+#087F5B 58%
+);
+}
+
+.bascw-principal-section .bascw-sign-name {
+color: #063F45;
+}
+
+.bascw-principal-section .bascw-sign-designation {
+color: #087F5B;
+}
+
+/* ================= COLLEGE NAME ================= */
+
+.bascw-principal-section .bascw-chairman-college {
+color: #536766;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+
+.bascw-principal-section {
+    background:
+        linear-gradient(
+            145deg,
+            #fbfaf6,
+            #f0f6f3
+        );
+}
+
+.bascw-principal-section .bascw-chairman-photo-frame {
+    background: linear-gradient(
+        145deg,
+        #087F5B,
+        #C5A253,
+        #063F45
+    );
+}
 
 }

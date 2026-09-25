@@ -6975,3 +6975,217 @@ color: #0a2c6e;
         font-size: 11px;
     }
 }
+
+/* =========================================
+   ABOUT US MAIN DROPDOWN
+========================================= */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-dropdown > .nav-link i {
+    font-size: 11px;
+    transition: transform 0.3s ease;
+}
+
+/* MAIN SUBMENU */
+
+.nav-dropdown > .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 280px;
+    width: max-content;
+    max-width: 340px;
+
+    background: #ffffff;
+    padding: 8px 0;
+
+    border-top: 3px solid #8b1e2d;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+/* MAIN DROPDOWN LINKS */
+
+.nav-dropdown > .submenu > a,
+.nav-dropdown-sub > .submenu-link,
+.submenu-child a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 18px;
+
+    color: #252525;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-decoration: none;
+    white-space: normal;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.nav-dropdown > .submenu > a:hover,
+.nav-dropdown-sub > .submenu-link:hover,
+.submenu-child a:hover {
+    background: #8b1e2d;
+    color: #ffffff;
+    padding-left: 24px;
+}
+
+/* SHOW MAIN DROPDOWN */
+
+.nav-dropdown:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-dropdown:hover > .nav-link i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================
+   LEADERSHIP NESTED DROPDOWN
+========================================= */
+
+.nav-dropdown-sub {
+    position: relative;
+    width: 100%;
+}
+
+.nav-dropdown-sub > .submenu-link {
+    cursor: pointer;
+    gap: 15px;
+}
+
+.nav-dropdown-sub > .submenu-link i {
+    font-size: 11px;
+    flex-shrink: 0;
+}
+
+/* SECOND LEVEL MENU */
+
+.submenu-child {
+    position: absolute;
+
+    top: -8px;
+    left: 100%;
+
+    min-width: 270px;
+    width: max-content;
+    max-width: 320px;
+
+    background: #ffffff;
+    padding: 8px 0;
+
+    border-top: 3px solid #e5b72f;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+/* SHOW LEADERSHIP SUBMENU */
+
+.nav-dropdown-sub:hover > .submenu-child {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* LEADERSHIP ARROW */
+
+.nav-dropdown-sub:hover > .submenu-link i {
+    color: #e5b72f;
+}
+
+
+/* =========================================
+   TABLET & MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .nav-dropdown > .submenu {
+        position: static;
+
+        display: none;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        border-top: none;
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        transition: none;
+    }
+
+    .nav-dropdown:hover > .submenu {
+        display: block;
+    }
+
+    .submenu-child {
+        position: static;
+
+        display: none;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 0 0 0 15px;
+
+        border-top: none;
+        border-left: 2px solid #e5b72f;
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        transition: none;
+    }
+
+    .nav-dropdown-sub:hover > .submenu-child {
+        display: block;
+    }
+
+    .nav-dropdown > .submenu > a,
+    .nav-dropdown-sub > .submenu-link,
+    .submenu-child a {
+        padding: 11px 15px;
+        font-size: 14px;
+    }
+
+}

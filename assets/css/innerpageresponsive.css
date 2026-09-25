@@ -1,0 +1,999 @@
+
+/* =====================================================
+   TABLET - 1100px
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .bwc-history-layout {
+        grid-template-columns:
+            minmax(0, 0.85fr)
+            minmax(0, 1.15fr);
+
+        gap: 30px;
+    }
+
+    .bwc-history-photo {
+        height: 510px;
+    }
+
+    .bwc-history-established {
+        right: -5px;
+        width: 110px;
+        height: 110px;
+    }
+
+    .bwc-history-info-card {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .bwc-history-card-content h4 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET - 991px
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .bwc-history-section {
+        padding: 55px 20px 60px;
+    }
+
+    .bwc-history-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 42px;
+
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .bwc-history-visual {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .bwc-history-photo {
+        height: 520px;
+    }
+
+    .bwc-history-established {
+        right: -10px;
+    }
+
+    .bwc-history-details {
+        width: 100%;
+    }
+
+    .bwc-history-intro-content h3 {
+        font-size: 29px;
+    }
+
+    .bwc-history-card-content h4 {
+        font-size: 23px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE - 767px
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .bwc-history-section {
+        padding: 45px 15px 50px;
+    }
+
+    .bwc-history-header {
+        margin-bottom: 32px;
+    }
+
+    .bwc-history-eyebrow {
+        gap: 8px;
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+    .bwc-history-eyebrow span {
+        width: 25px;
+    }
+
+    .bwc-history-header h2 {
+        font-size: 36px;
+        line-height: 1.12;
+    }
+
+    .bwc-history-header p {
+        max-width: 520px;
+        margin-top: 10px;
+
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .bwc-history-layout {
+        gap: 35px;
+    }
+
+
+    /* IMAGE */
+
+    .bwc-history-visual {
+        padding: 8px 8px 22px 0;
+    }
+
+    .bwc-history-photo {
+        height: 450px;
+
+        border-radius: 0 42px 0 42px;
+
+        box-shadow:
+            8px 8px 0 var(--bwc-gold),
+            0 14px 30px rgba(0, 0, 0, 0.13);
+    }
+
+    .bwc-history-photo img {
+        object-position: center;
+    }
+
+    .bwc-history-established {
+        top: 22px;
+        right: -5px;
+
+        width: 100px;
+        height: 100px;
+
+        border-width: 5px;
+    }
+
+    .bwc-history-established strong {
+        font-size: 27px;
+    }
+
+    .bwc-history-established span {
+        font-size: 8px;
+    }
+
+    .bwc-history-established small {
+        font-size: 7px;
+    }
+
+    .bwc-history-photo-text {
+        left: 20px;
+        right: 15px;
+        bottom: 25px;
+
+        padding-left: 12px;
+    }
+
+    .bwc-history-photo-text h3 {
+        font-size: 25px;
+    }
+
+    .bwc-history-photo-text p {
+        font-size: 12px;
+    }
+
+    .bwc-history-image-label {
+        left: -3px;
+    padding:5px;
+    }
+
+    .bwc-history-image-label strong {
+        font-size: 13px;
+    }
+
+
+    /* INTRO */
+
+    .bwc-history-intro {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 13px;
+
+        padding-bottom: 18px;
+    }
+
+    .bwc-history-index {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+
+        box-shadow: 4px 4px 0 var(--bwc-gold);
+    }
+
+    .bwc-history-section-label {
+        font-size: 10px;
+    }
+
+    .bwc-history-intro-content h3 {
+        font-size: 25px;
+    }
+
+    .bwc-history-intro-content p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* INFO CARDS */
+
+    .bwc-history-info-card {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 12px;
+
+        margin-top: 16px;
+        padding: 15px;
+    }
+
+    .bwc-history-card-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .bwc-history-card-content h4 {
+        font-size: 21px;
+    }
+
+    .bwc-history-card-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* RECOGNITION */
+
+    .bwc-history-recognition {
+        margin-top: 18px;
+        padding: 16px;
+    }
+
+    .bwc-history-recognition-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 7px;
+    }
+
+    .bwc-history-recognition-item {
+        padding: 12px 8px;
+    }
+
+    .bwc-history-recognition-item strong {
+        font-size: 18px;
+    }
+
+    .bwc-history-recognition-item span {
+        font-size: 13px;
+    }
+
+
+    /* MOTTO */
+
+    .bwc-history-motto {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .bwc-history-motto-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .bwc-history-motto-content h4 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .bwc-history-section {
+        padding: 38px 12px 42px;
+    }
+
+    .bwc-history-header {
+        margin-bottom: 27px;
+    }
+
+    .bwc-history-header h2 {
+        font-size: 31px;
+    }
+
+    .bwc-history-header h2 strong {
+        padding: 0 2px;
+    }
+
+    .bwc-history-header p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .bwc-history-layout {
+        gap: 30px;
+    }
+
+
+    /* IMAGE */
+
+    .bwc-history-visual {
+        padding: 6px 6px 19px 0;
+    }
+
+    .bwc-history-photo {
+        height: 390px;
+        border-radius: 0 32px 0 32px;
+    }
+
+    .bwc-history-photo img {
+        object-position: center;
+    }
+
+    .bwc-history-established {
+        top: 16px;
+        right: -4px;
+
+        width: 85px;
+        height: 85px;
+
+        border-width: 4px;
+    }
+
+    .bwc-history-established strong {
+        font-size: 23px;
+    }
+
+    .bwc-history-established span {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+    }
+
+    .bwc-history-established small {
+        font-size: 6px;
+        letter-spacing: 0.5px;
+    }
+
+    .bwc-history-photo-text {
+        left: 15px;
+        right: 12px;
+        bottom: 20px;
+
+        padding-left: 10px;
+        border-left-width: 3px;
+    }
+
+    .bwc-history-photo-text > span {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .bwc-history-photo-text h3 {
+        font-size: 21px;
+    }
+
+    .bwc-history-photo-line {
+        margin: 9px 0 6px;
+    }
+
+    .bwc-history-photo-text p {
+        font-size: 11px;
+    }
+
+    .bwc-history-image-label {
+        gap: 8px;
+        padding: 9px 11px;
+    }
+
+    .bwc-history-label-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+    }
+
+    .bwc-history-image-label strong {
+        font-size: 12px;
+    }
+
+    .bwc-history-image-label small {
+        font-size: 10px;
+    }
+
+
+    /* INTRO */
+
+    .bwc-history-intro {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .bwc-history-index {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .bwc-history-intro-content h3 {
+        font-size: 24px;
+    }
+
+    .bwc-history-intro-content p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* INFO CARDS */
+
+    .bwc-history-info-card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+    .bwc-history-card-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bwc-history-card-content h4 {
+        font-size: 21px;
+    }
+
+    .bwc-history-card-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* RECOGNITION */
+
+    .bwc-history-recognition {
+        padding: 14px 12px;
+    }
+
+    .bwc-history-recognition-title {
+        gap: 8px;
+    }
+
+    .bwc-history-recognition-title span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .bwc-history-recognition-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .bwc-history-recognition-item {
+        display: grid;
+        grid-template-columns: 85px minmax(0, 1fr);
+        align-items: center;
+        gap: 8px;
+
+        padding: 11px 12px;
+    }
+
+    .bwc-history-recognition-item strong {
+        margin: 0;
+        font-size: 19px;
+    }
+
+    .bwc-history-recognition-item span {
+        font-size: 13px;
+    }
+
+
+    /* MOTTO */
+
+    .bwc-history-motto {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .bwc-history-motto-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .bwc-history-motto-content > span {
+        font-size: 9px;
+    }
+
+    .bwc-history-motto-content h4 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .bwc-history-motto-content h4 b {
+        margin: 0 2px;
+    }
+
+}
+
+
+/* =====================================================
+   EXTRA SMALL MOBILE - 350px
+===================================================== */
+
+@media (max-width: 350px) {
+
+    .bwc-history-section {
+        padding: 32px 10px 38px;
+    }
+
+    .bwc-history-header h2 {
+        font-size: 27px;
+    }
+
+    .bwc-history-header p {
+        font-size: 14px;
+    }
+
+    .bwc-history-eyebrow {
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+
+    .bwc-history-eyebrow span {
+        width: 18px;
+    }
+
+
+    /* IMAGE */
+
+    .bwc-history-photo {
+        height: 340px;
+    }
+
+    .bwc-history-established {
+        width: 76px;
+        height: 76px;
+    }
+
+    .bwc-history-established strong {
+        font-size: 21px;
+    }
+
+    .bwc-history-photo-text h3 {
+        font-size: 19px;
+    }
+
+    .bwc-history-image-label {
+        padding: 8px;
+    }
+
+    .bwc-history-image-label strong {
+        font-size: 11px;
+    }
+
+    .bwc-history-image-label small {
+        font-size: 9px;
+    }
+
+
+    /* CONTENT */
+
+    .bwc-history-intro-content h3 {
+        font-size: 22px;
+    }
+
+    .bwc-history-intro-content p,
+    .bwc-history-card-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .bwc-history-info-card {
+        padding: 13px;
+    }
+
+    .bwc-history-card-content h4 {
+        font-size: 19px;
+    }
+
+
+    /* RECOGNITION */
+
+    .bwc-history-recognition-title span {
+        font-size: 9px;
+    }
+
+    .bwc-history-recognition-item {
+        grid-template-columns: 75px minmax(0, 1fr);
+    }
+
+    .bwc-history-recognition-item strong {
+        font-size: 17px;
+    }
+
+    .bwc-history-recognition-item span {
+        font-size: 13px;
+    }
+
+
+    /* MOTTO */
+
+    .bwc-history-motto {
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .bwc-history-motto-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .bwc-history-motto-content h4 {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .bascw-editorial {
+        padding: 45px 18px;
+    }
+
+    .bascw-vision-text {
+        padding: 35px 28px;
+    }
+
+    .bascw-vision-text h3 {
+        font-size: 27px;
+    }
+
+    .bascw-vision-photo,
+    .bascw-vision-photo img {
+        min-height: 350px;
+    }
+
+    .bascw-mission-grid {
+        gap: 12px;
+    }
+
+    .bascw-mission-item {
+        padding: 22px 17px;
+    }
+
+    .bascw-mission-item h3 {
+        font-size: 18px;
+    }
+
+    .bascw-editorial-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bascw-motto-feature,
+    .bascw-policy-feature {
+        padding: 25px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .bascw-editorial {
+        padding: 35px 14px;
+    }
+
+    .bascw-editorial-heading {
+        margin-bottom: 25px;
+    }
+
+    .bascw-editorial-heading h2 {
+        font-size: 27px;
+    }
+
+    .bascw-vision-feature {
+        grid-template-columns: 1fr;
+        margin-bottom: 35px;
+    }
+
+    .bascw-vision-photo,
+    .bascw-vision-photo img {
+        min-height: 280px;
+        height: 280px;
+    }
+
+    .bascw-vision-text {
+        padding: 30px 24px;
+    }
+
+    .bascw-vision-text h3 {
+        font-size: 26px;
+    }
+
+    .bascw-mission-heading {
+        display: block;
+    }
+
+    .bascw-mission-heading h2 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .bascw-mission-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bascw-mission-item,
+    .bascw-mission-item:nth-child(4) {
+        grid-column: auto;
+    }
+
+    .bascw-mission-item:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .bascw-editorial-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .bascw-motto-feature h3 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .bascw-editorial-heading h2 {
+        font-size: 24px;
+    }
+
+    .bascw-vision-photo,
+    .bascw-vision-photo img {
+        height: 230px;
+        min-height: 230px;
+    }
+
+    .bascw-vision-text {
+        padding: 25px 20px;
+    }
+
+    .bascw-vision-text h3 {
+        font-size: 24px;
+    }
+
+    .bascw-vision-bottom span {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+
+    .bascw-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .bascw-mission-item,
+    .bascw-mission-item:last-child {
+        grid-column: auto;
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .bascw-motto-feature,
+    .bascw-policy-feature {
+        padding: 25px 20px;
+    }
+
+    .bascw-motto-feature h3 {
+        font-size: 25px;
+    }
+
+    .bascw-policy-heading h3 {
+        font-size: 23px;
+    }
+
+    .bascw-policy-footer span {
+        font-size: 10px;
+    }
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .bascw-chairman-section {
+        padding: 45px 18px;
+    }
+
+    .bascw-chairman-layout {
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .bascw-chairman-photo-frame {
+        height: 340px;
+    }
+
+    .bascw-chairman-message {
+        padding: 28px 24px;
+    }
+
+    .bascw-chairman-heading h2 {
+        font-size: 30px;
+    }
+
+    .bascw-message-content > h3 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .bascw-chairman-section {
+        padding: 35px 14px;
+    }
+
+    .bascw-chairman-heading h2 {
+        font-size: 26px;
+    }
+
+    .bascw-chairman-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .bascw-chairman-profile {
+        position: relative;
+        top: auto;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bascw-chairman-photo-frame {
+        height: 380px;
+    }
+
+    .bascw-chairman-message {
+        padding: 25px 20px;
+    }
+
+    .bascw-message-content > h3 {
+        font-size: 23px;
+    }
+
+    .bascw-message-content > p {
+        text-align: left;
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .bascw-chairman-quote {
+        padding: 20px;
+    }
+
+    .bascw-chairman-quote h4 {
+        font-size: 18px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .bascw-chairman-heading h2 {
+        font-size: 23px;
+    }
+
+    .bascw-chairman-photo-frame {
+        height: 320px;
+    }
+
+    .bascw-chairman-message {
+        padding: 22px 16px;
+    }
+
+    .bascw-message-label {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .bascw-message-content > h3 {
+        font-size: 21px;
+    }
+
+    .bascw-message-content > p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .bascw-lang-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .bascw-chairman-name h3 {
+        font-size: 21px;
+    }
+
+    .bascw-chairman-quote h4 {
+        font-size: 17px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .bascw-secretary-section .bascw-chairman-profile {
+        border-color: #dedbed;
+    }
+
+    .bascw-secretary-section .bascw-chairman-message {
+        border-color: #dedbed;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+
+.bascw-secretary-section {
+    background:
+        linear-gradient(
+            145deg,
+            #faf8f3,
+            #f4f6fa
+        );
+}
+
+.bascw-secretary-section .bascw-chairman-photo-frame {
+    background: linear-gradient(
+        145deg,
+        #C9A45C,
+        #8B1E3F
+    );
+}
+
+}
