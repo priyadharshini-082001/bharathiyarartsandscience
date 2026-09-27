@@ -2993,3 +2993,344 @@
     }
 
 }
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .announcement-events-section {
+        padding: 55px 25px;
+    }
+
+    .announcement-events-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .events-column {
+        padding-left: 30px;
+    }
+
+    .event-image {
+        width: 155px;
+        min-width: 155px;
+
+        height: 175px;
+    }
+
+    .event-content {
+        padding: 20px;
+    }
+
+    .event-title {
+        font-size: 15px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .announcement-events-section {
+        padding: 45px 18px;
+    }
+
+    .announcement-events-wrapper {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .events-column {
+        border-left: none;
+
+        border-top: 1px solid #ddd;
+
+        padding-left: 0;
+        padding-top: 40px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    /* Mobile: image always top */
+
+    .event-card,
+    .event-card:nth-child(odd),
+    .event-card:nth-child(even) {
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+    .event-image {
+        width: 100%;
+        min-width: 100%;
+
+        height: 220px;
+    }
+
+    .event-content {
+        width: 100%;
+
+        padding: 22px;
+    }
+
+    .event-title {
+        font-size: 16px;
+    }
+
+    .event-date {
+        font-size: 12px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .announcement-events-section {
+        padding: 35px 15px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .event-image {
+        height: 190px;
+    }
+
+    .event-content {
+        padding: 18px;
+    }
+
+    .event-title {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .event-date {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================
+   TABLET & MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .nav-dropdown > .submenu {
+        position: static;
+
+        display: none;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        border-top: none;
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        transition: none;
+    }
+
+    .nav-dropdown:hover > .submenu {
+        display: block;
+    }
+
+    .submenu-child {
+        position: static;
+
+        display: none;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 0 0 0 15px;
+
+        border-top: none;
+        border-left: 2px solid #e5b72f;
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        transition: none;
+    }
+
+    .nav-dropdown-sub:hover > .submenu-child {
+        display: block;
+    }
+
+    .nav-dropdown > .submenu > a,
+    .nav-dropdown-sub > .submenu-link,
+    .submenu-child a {
+        padding: 11px 15px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-college {
+        padding: 18px 20px 25px;
+    }
+
+    .about-title {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .about-wrapper {
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .about-image {
+        flex: 0 0 125px;
+    }
+
+    .about-image img {
+        width: 125px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+        
+        margin-top:12%;
+    }
+
+    .about-content h3 {
+        font-size: 19px;
+        
+        margin-top:5%;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.7;
+        
+        margin-top:5%;
+    }
+
+    .quote-text {
+        font-size: 21px;
+        margin-top: 15%;
+    }
+
+    .quote-left {
+        left: 10px;
+    }
+
+    .quote-right {
+        right: 10px;
+    }
+
+    .quote-author {
+        width: 90%;
+        font-size: 17px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+    .about-college {
+        padding: 15px;
+    }
+
+    .about-title {
+        font-size: 17px;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .about-wrapper {
+        display: block;
+    }
+
+    .about-image {
+        width: 150px;
+        margin: 0 auto 5px;
+          margin-top: -5%;
+    }
+
+    .about-image img {
+        width: 150px;
+                margin-top: -25%;
+
+    }
+
+    .about-content h2 {
+        font-size: 29px;
+        text-align: center;
+            margin-top: -5%;
+    }
+
+    .about-content h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1.7;
+    }
+
+    .about-quote {
+        padding: 0 15px;
+            margin-top: -5%;
+    }
+
+    .quote-text {
+        font-size: 19px;
+        line-height: 1.7;
+    }
+
+    .quote-mark {
+        font-size: 30px;
+    }
+
+    .quote-left {
+        left: 0;
+        top: -4px;
+    }
+
+    .quote-right {
+        right: 0;
+        bottom: 24px;
+    }
+
+    .quote-author {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+}

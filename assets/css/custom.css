@@ -13,7 +13,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -278,7 +278,7 @@ a {
 }
 
 .college-title h1 {
-    color:#990000;
+    color:crimson;
     font-size:45px;
     line-height: 1.25;
     letter-spacing:4.0px;
@@ -287,7 +287,7 @@ a {
 }
 
 .college-subtitle {
-    color: #990000;
+    color: crimson;
     font-size: 14px;
 }
 
@@ -431,7 +431,7 @@ a {
 
 .navbar-inner {
     min-height: 54px;
-
+    padding: 0px;
     display: flex;
     align-items: center;
 }
@@ -1559,8 +1559,8 @@ a {
 
 .calendar-btn {
 
-    width: 42px;
-    height: 42px;
+    width: 2px;
+    height: 2px;
 
     padding: 0;
     margin: 0;
@@ -3377,151 +3377,6 @@ a {
     font-weight: 700;
 }
 
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 768px) {
-
-    .about-college {
-        padding: 18px 20px 25px;
-    }
-
-    .about-title {
-        font-size: 18px;
-        letter-spacing: 3px;
-    }
-
-    .about-wrapper {
-        gap: 15px;
-        align-items: flex-start;
-    }
-
-    .about-image {
-        flex: 0 0 125px;
-    }
-
-    .about-image img {
-        width: 125px;
-    }
-
-    .about-content h2 {
-        font-size: 30px;
-        
-        margin-top:12%;
-    }
-
-    .about-content h3 {
-        font-size: 19px;
-        
-        margin-top:5%;
-    }
-
-    .about-content p {
-        font-size: 15px;
-        line-height: 1.7;
-        
-        margin-top:5%;
-    }
-
-    .quote-text {
-        font-size: 21px;
-        margin-top: 15%;
-    }
-
-    .quote-left {
-        left: 10px;
-    }
-
-    .quote-right {
-        right: 10px;
-    }
-
-    .quote-author {
-        width: 90%;
-        font-size: 17px;
-    }
-}
-
-
-/* MOBILE */
-@media (max-width: 576px) {
-
-    .about-college {
-        padding: 15px;
-    }
-
-    .about-title {
-        font-size: 17px;
-        text-align: center;
-        letter-spacing: 2px;
-        margin-bottom: 12px;
-    }
-
-    .about-wrapper {
-        display: block;
-    }
-
-    .about-image {
-        width: 150px;
-        margin: 0 auto 5px;
-          margin-top: -5%;
-    }
-
-    .about-image img {
-        width: 150px;
-                margin-top: -25%;
-
-    }
-
-    .about-content h2 {
-        font-size: 29px;
-        text-align: center;
-            margin-top: -5%;
-    }
-
-    .about-content h3 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .about-content p {
-        font-size: 15px;
-        text-align: justify;
-        line-height: 1.7;
-    }
-
-    .about-quote {
-        padding: 0 15px;
-            margin-top: -5%;
-    }
-
-    .quote-text {
-        font-size: 19px;
-        line-height: 1.7;
-    }
-
-    .quote-mark {
-        font-size: 30px;
-    }
-
-    .quote-left {
-        left: 0;
-        top: -4px;
-    }
-
-    .quote-right {
-        right: 0;
-        bottom: 24px;
-    }
-
-    .quote-author {
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 16px;
-    }
-}
 
 
 /* =========================================================
@@ -5412,22 +5267,23 @@ color: #0a2c6e;
 }
 
 
-
 /* =========================================================
-   BASCW RECOGNITION SECTION
+   BASCW RECOGNITION / ACCREDITATION SECTION
+   BLUE + PINK + GOLD
+   CLEAN COMPLETE CSS
 ========================================================= */
 
 .basc-recognition-section {
     position: relative;
     width: 100%;
-    padding:30px 0;
+    padding: 30px 0;
     background: #ffffff;
     overflow: hidden;
 }
 
 
 /* =========================================================
-   VERY LIGHT PATTERN
+   LIGHT GRID PATTERN
 ========================================================= */
 
 .basc-recognition-section::before {
@@ -5438,10 +5294,17 @@ color: #0a2c6e;
     background-image:
         linear-gradient(
             90deg,
-            rgba(7, 59, 143, 0.183) 1px,
+            rgba(7, 59, 143, 0.10) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            0deg,
+            rgba(229, 29, 115, 0.06) 1px,
             transparent 1px
         );
+
     background-size: 28px 28px;
+
     pointer-events: none;
 }
 
@@ -5454,60 +5317,54 @@ color: #0a2c6e;
     position: relative;
     z-index: 2;
 
-    width: min(1380px, calc(100% - 30px));
+    width: 92%;
+    max-width: 1400px;
+
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
-    gap: 10px;
+    gap: 14px;
 }
 
 
 /* =========================================================
-   CARD
+   RECOGNITION CARD
 ========================================================= */
 
 .basc-recognition-item {
     position: relative;
 
-    min-height: 72px;
-
+    min-height: 78px;
+    width: 200px;
     display: flex;
     align-items: center;
 
-    gap: 10px;
+    gap: 12px;
 
-    padding: 10px 12px;
+    padding: 12px 14px;
 
     background: #ffffff;
 
-    border: 1px solid #e4e9f2;
-    border-radius: 9px;
+    border: 1px solid #dce7f5;
 
-    box-shadow: 0 3px 12px rgba(7, 59, 143, 0.08);
+    border-radius: 10px;
+
+    cursor: pointer;
 
     overflow: hidden;
 
-    transition: all 0.25s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
 }
 
 
 /* =========================================================
-   HOVER
-========================================================= */
-
-.basc-recognition-item:hover {
-    transform: translateY(-2px);
-
-    border-color: #e51d73;
-
-    box-shadow: 0 6px 18px rgba(7, 59, 143, 0.13);
-}
-
-
-/* =========================================================
-   SMALL TOP ACCENT
+   CARD TOP ACCENT
 ========================================================= */
 
 .basc-recognition-item::before {
@@ -5518,15 +5375,17 @@ color: #0a2c6e;
     top: 0;
     left: 0;
 
-    width: 34px;
+    width: 42px;
     height: 3px;
 
     background: #e51d73;
+
+    transition: width 0.3s ease;
 }
 
 
 /* =========================================================
-   BOTTOM ACCENT
+   CARD BOTTOM ACCENT
 ========================================================= */
 
 .basc-recognition-item::after {
@@ -5537,10 +5396,36 @@ color: #0a2c6e;
     right: 12px;
     bottom: 0;
 
-    width: 28px;
-    height: 2px;
+    width: 32px;
+    height: 3px;
 
     background: #ffc107;
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.basc-recognition-item{
+    transform: translateY(-4px);
+
+    background: #ffffff;
+
+    border-color: #073b8f;
+
+}
+
+
+.basc-recognition-item:hover::before {
+    width: 75px;
+}
+
+
+.basc-recognition-item:hover::after {
+    width: 55px;
 }
 
 
@@ -5549,41 +5434,84 @@ color: #0a2c6e;
 ========================================================= */
 
 .basc-recognition-icon {
-    flex: 0 0 50px;
+    flex: 0 0 54px;
 
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    border-radius: 50%;
+
     background: #073b8f;
 
     color: #ffffff;
 
-    border-radius: 8px;
-
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 800;
 
-    box-shadow: 0 3px 8px rgba(7, 59, 143, 0.18);
+    line-height: 1;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 
-/* Pink alternate icons */
+/* =========================================================
+   ICON COLORS
+========================================================= */
 
-.basc-recognition-item:nth-child(2) .basc-recognition-icon,
-.basc-recognition-item:nth-child(4) .basc-recognition-icon {
+/* NAAC */
+.basc-recognition-item:nth-child(1)
+.basc-recognition-icon {
+    background: #073b8f;
+}
+
+
+/* UGC */
+.basc-recognition-item:nth-child(2)
+.basc-recognition-icon {
     background: #e51d73;
 }
 
 
-/* Gold final icon */
-
-.basc-recognition-item:last-child .basc-recognition-icon {
+/* IIC */
+.basc-recognition-item:nth-child(3)
+.basc-recognition-icon {
     background: #ffc107;
     color: #073b8f;
+}
+
+
+/* AUTONOMOUS */
+.basc-recognition-item:nth-child(4)
+.basc-recognition-icon {
+    background: #073b8f;
+}
+
+
+/* HERITAGE */
+.basc-recognition-item:nth-child(5)
+.basc-recognition-icon {
+    background: #e51d73;
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.basc-recognition-item:hover
+.basc-recognition-icon {
+    transform: scale(1.06);
+
+    box-shadow:
+        0 6px 14px rgba(7, 59, 143, 0.25);
 }
 
 
@@ -5599,244 +5527,356 @@ color: #0a2c6e;
 
     justify-content: center;
 
-    gap: 2px;
-}
-
-
-/* =========================================================
-   ALL TEXT — DARK BLUE
-========================================================= */
-
-.basc-recognition-content strong {
-    display: block;
-
-    color: #073b8f;
-
-    font-size: 13px;
-    line-height: 1.2;
-
-    font-weight: 700;
-}
-
-
-/* Subtitle also dark blue */
-
-.basc-recognition-content span {
-    display: block;
-
-    color: #073b8f;
-
-    font-size: 10.5px;
-    line-height: 1.2;
-
-    font-weight: 500;
-
-    opacity: 0.78;
-}
-
-
-/* Remove special text colors */
-
-.basc-recognition-item:first-child
-.basc-recognition-content strong,
-
-.basc-recognition-item:last-child
-.basc-recognition-content strong {
-    color: #073b8f;
-}
-
-
-
-
-/* =========================================================
-   ACCREDITATION / RECOGNITION
-========================================================= */
-
-.basc-recognition-section {
-    width: 100%;
-    background: #ffffff;
-    padding: 20px 0;
-}
-
-.basc-recognition-container {
-    width: 92%;
-    max-width: 1400px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-
-
-/* CARD */
-
-.basc-recognition-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-
-    padding: 17px 20px;
-
-    background: #f8fbff;
-    border: 1px solid #dce7f5;
-    border-radius: 12px;
-
-    cursor: pointer;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-}
-
-.basc-recognition-item:hover {
-    transform: translateY(-4px);
-    background: #ffffff;
-    border-color: #073b8f;
-}
-
-
-/* ICON */
-
-.basc-recognition-icon {
-    min-width: 58px;
-    height:58px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #073b8f;
-    color: #ffffff;
-
-    font-size: 18px;
-    font-weight: 800;
-
-    flex-shrink: 0;
-}
-
-
-/* CONTENT */
-
-.basc-recognition-content {
-    display: flex;
-    flex-direction: column;
     gap: 4px;
 }
 
-.basc-recognition-content strong {
-    color: #073b8f;
-    font-size: 15px;
-    font-weight: 600;
-}
 
-.basc-recognition-content span {
-    color: #555;
-    font-size: 12px;
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.basc-recognition-content strong {
+    display: block;
+
+    margin: 0;
+
+    color: #073b8f;
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
 }
 
 
 /* =========================================================
-   POPUP
+   SUBTITLE
 ========================================================= */
 
-.recognition-modal {
+.basc-recognition-content span {
+    display: block;
+
+    margin: 0;
+
+    color: #555555;
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   =========================================================
+   IMAGE POPUP
+   =========================================================
+========================================================= */
+
+.recognition-image-modal {
     position: fixed;
+
     inset: 0;
 
-    display: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
 
     align-items: center;
     justify-content: center;
 
+    visibility: hidden;
+    opacity: 0;
+
     z-index: 99999;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
 }
 
-.recognition-modal.active {
-    display: flex;
+
+/* ACTIVE */
+
+.recognition-image-modal.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 
-/* DARK BACKGROUND */
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
 
-.recognition-modal-overlay {
+.recognition-image-overlay {
     position: absolute;
+
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.78);
+    background: rgba(0, 0, 0, 0.82);
 
     backdrop-filter: blur(5px);
 }
 
 
-/* POPUP BOX */
+/* =========================================================
+   IMAGE POPUP BOX
+========================================================= */
 
-.recognition-modal-box {
+.recognition-image-box {
     position: relative;
-    z-index: 2;
-    max-height: 90vh;
 
-    padding: 15px;
+    z-index: 2;
+
+    width: 400px;
+
+    height:400px;
+
+    padding:0px;
 
     background: #ffffff;
-    border-radius: 14px;
 
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
 
-    animation: recognitionZoom 0.3s ease;
+    overflow: hidden;
+
+    animation:
+        recognitionZoom 0.3s ease;
 }
 
-.recognition-modal-box img {
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+#recognitionImage {
     display: block;
 
     width: 100%;
-    max-height: 82vh;
+    height: 100%;
 
     object-fit: contain;
 
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
 
-/* CLOSE BUTTON */
+/* =========================================================
+   IMAGE CLOSE BUTTON
+========================================================= */
 
-.recognition-close {
+.recognition-image-close {
     position: absolute;
 
-    top: -15px;
-    right: -15px;
+    top: 8px;
+    right: 10px;
 
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border: none;
+
     border-radius: 50%;
 
     background: #e51d73;
+
     color: #ffffff;
 
-    font-size: 28px;
+    font-size: 27px;
+
     line-height: 1;
 
     cursor: pointer;
 
-    z-index: 5;
+    z-index: 10;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
 
-    transition: 0.3s;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
 }
 
-.recognition-close:hover {
+
+.recognition-image-close:hover {
     background: #b90f57;
+
     transform: rotate(90deg);
 }
 
 
-/* ANIMATION */
+/* =========================================================
+   =========================================================
+   PDF POPUP
+   =========================================================
+========================================================= */
+
+.recognition-pdf-modal {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    z-index: 99999;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+
+/* ACTIVE */
+
+.recognition-pdf-modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   PDF OVERLAY
+========================================================= */
+
+.recognition-pdf-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.82);
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* =========================================================
+   PDF POPUP BOX
+========================================================= */
+
+.recognition-pdf-box {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1000px, 94%);
+
+    height: 90vh;
+
+    padding: 10px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.40);
+
+    animation:
+        recognitionZoom 0.3s ease;
+}
+
+
+/* =========================================================
+   PDF
+========================================================= */
+
+#recognitionPDF {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   PDF CLOSE BUTTON
+========================================================= */
+
+.recognition-pdf-close {
+    position: absolute;
+
+    top: 8px;
+    right: 10px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #8b1e2d;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.recognition-pdf-close:hover {
+    background: #000000;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   POPUP ANIMATION
+========================================================= */
 
 @keyframes recognitionZoom {
 
@@ -5854,36 +5894,161 @@ color: #0a2c6e;
 
 
 /* =========================================================
-   MOBILE
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .basc-recognition-container {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
 ========================================================= */
 
 @media (max-width: 900px) {
 
     .basc-recognition-container {
         grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
     }
 
 }
 
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 550px) {
 
-    .basc-recognition-container {
-        grid-template-columns: 1fr;
+    .basc-recognition-section {
+        padding: 22px 0;
     }
+
+
+    .basc-recognition-container {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
 
     .basc-recognition-item {
-        padding: 14px;
+        min-height: 70px;
+
+        padding: 11px 13px;
+
+        gap: 11px;
     }
 
-    .recognition-modal-box {
+
+    .basc-recognition-icon {
+        flex: 0 0 50px;
+
+        width: 50px;
+        height: 50px;
+
+        font-size: 14px;
+    }
+
+
+    .basc-recognition-content strong {
+        font-size: 13px;
+    }
+
+
+    .basc-recognition-content span {
+        font-size: 10.5px;
+    }
+
+
+    /* IMAGE POPUP */
+
+    .recognition-image-box {
         width: 94%;
+        height: 85vh;
+
+        padding: 8px;
+    }
+
+
+    .recognition-image-close {
+        width: 35px;
+        height: 35px;
+
+        top: 6px;
+        right: 6px;
+
+        font-size: 24px;
+    }
+
+
+    /* PDF POPUP */
+
+    .recognition-pdf-box {
+        width: 96%;
+        height: 85vh;
+
+        padding: 6px;
+    }
+
+
+    .recognition-pdf-close {
+        width: 35px;
+        height: 35px;
+
+        top: 6px;
+        right: 6px;
+
+        font-size: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .basc-recognition-container {
+        width: 94%;
+    }
+
+
+    .basc-recognition-item {
         padding: 10px;
     }
 
-    .recognition-close {
-        width: 36px;
-        height: 36px;
-        font-size: 24px;
+
+    .basc-recognition-icon {
+        flex: 0 0 46px;
+
+        width: 46px;
+        height: 46px;
+
+        font-size: 12px;
+    }
+
+
+    .basc-recognition-content strong {
+        font-size: 12px;
+    }
+
+
+    .basc-recognition-content span {
+        font-size: 10px;
     }
 
 }
@@ -6848,134 +7013,6 @@ color: #0a2c6e;
     margin: auto;
 }
 
-/* =========================================================
-   RESPONSIVE - TABLET
-========================================================= */
-
-@media (max-width: 1100px) {
-
-    .announcement-events-section {
-        padding: 55px 25px;
-    }
-
-    .announcement-events-wrapper {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .events-column {
-        padding-left: 30px;
-    }
-
-    .event-image {
-        width: 155px;
-        min-width: 155px;
-
-        height: 175px;
-    }
-
-    .event-content {
-        padding: 20px;
-    }
-
-    .event-title {
-        font-size: 15px;
-    }
-}
-
-/* =========================================================
-   RESPONSIVE - MOBILE
-========================================================= */
-
-@media (max-width: 800px) {
-
-    .announcement-events-section {
-        padding: 45px 18px;
-    }
-
-    .announcement-events-wrapper {
-        grid-template-columns: 1fr;
-
-        gap: 45px;
-    }
-
-    .events-column {
-        border-left: none;
-
-        border-top: 1px solid #ddd;
-
-        padding-left: 0;
-        padding-top: 40px;
-    }
-
-    .section-title {
-        font-size: 24px;
-    }
-
-    /* Mobile: image always top */
-
-    .event-card,
-    .event-card:nth-child(odd),
-    .event-card:nth-child(even) {
-        flex-direction: column;
-
-        min-height: auto;
-    }
-
-    .event-image {
-        width: 100%;
-        min-width: 100%;
-
-        height: 220px;
-    }
-
-    .event-content {
-        width: 100%;
-
-        padding: 22px;
-    }
-
-    .event-title {
-        font-size: 16px;
-    }
-
-    .event-date {
-        font-size: 12px;
-    }
-}
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .announcement-events-section {
-        padding: 35px 15px;
-    }
-
-    .section-title {
-        font-size: 22px;
-    }
-
-    .event-image {
-        height: 190px;
-    }
-
-    .event-content {
-        padding: 18px;
-    }
-
-    .event-title {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .event-date {
-        font-size: 11px;
-    }
-}
-
 /* =========================================
    ABOUT US MAIN DROPDOWN
 ========================================= */
@@ -7002,14 +7039,14 @@ color: #0a2c6e;
     top: 100%;
     left: 0;
 
-    min-width: 280px;
+    min-width: 180px;
     width: max-content;
-    max-width: 340px;
+    max-width: 300px;
 
     background: #ffffff;
     padding: 8px 0;
 
-    border-top: 3px solid #8b1e2d;
+    border-top: 3px solid crimson;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 
     opacity: 0;
@@ -7047,7 +7084,7 @@ color: #0a2c6e;
 .nav-dropdown > .submenu > a:hover,
 .nav-dropdown-sub > .submenu-link:hover,
 .submenu-child a:hover {
-    background: #8b1e2d;
+    background: crimson;
     color: #ffffff;
     padding-left: 24px;
 }
@@ -7088,20 +7125,14 @@ color: #0a2c6e;
 
 .submenu-child {
     position: absolute;
-
     top: -8px;
     left: 100%;
-
     min-width: 270px;
     width: max-content;
     max-width: 320px;
-
     background: #ffffff;
     padding: 8px 0;
-
     border-top: 3px solid #e5b72f;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-
     opacity: 0;
     visibility: hidden;
     transform: translateX(10px);
@@ -7124,68 +7155,3 @@ color: #0a2c6e;
     color: #e5b72f;
 }
 
-
-/* =========================================
-   TABLET & MOBILE
-========================================= */
-
-@media (max-width: 991px) {
-
-    .nav-dropdown > .submenu {
-        position: static;
-
-        display: none;
-
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-
-        padding: 0;
-        border-top: none;
-        box-shadow: none;
-
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-
-        transition: none;
-    }
-
-    .nav-dropdown:hover > .submenu {
-        display: block;
-    }
-
-    .submenu-child {
-        position: static;
-
-        display: none;
-
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-
-        padding: 0 0 0 15px;
-
-        border-top: none;
-        border-left: 2px solid #e5b72f;
-        box-shadow: none;
-
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-
-        transition: none;
-    }
-
-    .nav-dropdown-sub:hover > .submenu-child {
-        display: block;
-    }
-
-    .nav-dropdown > .submenu > a,
-    .nav-dropdown-sub > .submenu-link,
-    .submenu-child a {
-        padding: 11px 15px;
-        font-size: 14px;
-    }
-
-}

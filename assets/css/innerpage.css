@@ -14,8 +14,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "DM Sans", sans-serif;
-
+       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -36,7 +35,7 @@ a {
     display: flex;
     align-items: center;
 
-    background-image: url("/assets/img/infra/infra5.png");
+    background-image: url("../img/infra/infra5.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
