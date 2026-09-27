@@ -346,7 +346,8 @@ a {
 }
 
 .header-admission:hover {
-    background: #e51d73;
+    background:crimson;
+    color: white;
 }
 
 
@@ -5291,17 +5292,8 @@ color: #0a2c6e;
     position: absolute;
     inset: 0;
 
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(7, 59, 143, 0.10) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            0deg,
-            rgba(229, 29, 115, 0.06) 1px,
-            transparent 1px
-        );
+    background-image:linear-gradient(90deg, rgb(7 59 143 / 29%) 1px, transparent 1px),
+     linear-gradient(0deg, rgb(229 29 115 / 13%) 1px, transparent 1px);
 
     background-size: 28px 28px;
 
@@ -5337,7 +5329,7 @@ color: #0a2c6e;
     position: relative;
 
     min-height: 78px;
-    width: 200px;
+    width: 220px;
     display: flex;
     align-items: center;
 
@@ -5945,7 +5937,7 @@ color: #0a2c6e;
 
     .basc-recognition-item {
         min-height: 70px;
-        width: 200px;
+        width:180px;
         padding: 11px 13px;
 
         gap: 11px;
@@ -7156,3 +7148,198 @@ color: #0a2c6e;
     color: #e5b72f;
 }
 
+/* =========================================
+   BASC COMPACT TOP HEADER
+========================================= */
+
+.basc-topbar {
+    width: 100%;
+    position: relative;
+    background: #c8102e;
+    color: #ffffff;
+}
+
+.basc-topbar,
+.basc-topbar * {
+    box-sizing: border-box;
+}
+
+.basc-topbar-inner {
+    width: 100%;
+    min-height: 34px;
+    padding: 0 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* LEFT LINKS */
+
+.basc-topbar-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.basc-topbar-links a {
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+
+    padding: 0 15px;
+    line-height: 16px;
+
+    border-right: 1px solid rgba(255,255,255,0.3);
+    transition: color 0.3s ease;
+}
+
+.basc-topbar-links a:first-child {
+    padding-left: 0;
+}
+
+.basc-topbar-links a:last-child {
+    border-right: none;
+}
+
+.basc-topbar-links a:hover,
+.basc-topbar-email:hover,
+.basc-topbar-career:hover {
+    color: #ffe15a;
+}
+
+/* RIGHT SIDE */
+
+.basc-topbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.basc-topbar-email {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.basc-email-icon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.basc-topbar-divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255,255,255,0.35);
+}
+
+.basc-topbar-career {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.basc-career-arrow {
+    font-size: 17px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.basc-topbar-career:hover .basc-career-arrow {
+    transform: translateX(3px);
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+    .basc-topbar-inner {
+        padding: 7px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 15px;
+    }
+
+    .basc-topbar-links a {
+        font-size: 12px;
+        padding: 0 11px;
+    }
+
+    .basc-topbar-right {
+        gap: 12px;
+    }
+
+    .basc-topbar-email,
+    .basc-topbar-career {
+        font-size: 12px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    .basc-topbar-inner {
+        padding: 7px 10px;
+        gap: 8px;
+    }
+
+    .basc-topbar-links {
+        width: 100%;
+        justify-content: center;
+        gap: 5px 0;
+    }
+
+    .basc-topbar-links a {
+        font-size: 11px;
+        padding: 0 8px;
+    }
+
+    .basc-topbar-right {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+    }
+
+    .basc-topbar-email {
+        font-size: 11px;
+        gap: 6px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .basc-email-icon {
+        font-size: 14px;
+    }
+
+    .basc-topbar-divider {
+        height: 15px;
+    }
+
+    .basc-topbar-career {
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .basc-career-arrow {
+        font-size: 15px;
+    }
+}
