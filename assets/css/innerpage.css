@@ -2413,27 +2413,2742 @@ color: #087F5B;
 color: #536766;
 }
 
-/* ================= MOBILE ================= */
+/* =========================================================
+   BASCW - GOVERNING BODY
+========================================================= */
 
-@media (max-width: 768px) {
-
-
-.bascw-principal-section {
-    background:
-        linear-gradient(
-            145deg,
-            #fbfaf6,
-            #f0f6f3
-        );
+.bascw-governing-section {
+    width: 100%;
+    padding:50px 20px;
+    background: #fcffd4;
+    position: relative;
+    overflow: hidden;
 }
 
-.bascw-principal-section .bascw-chairman-photo-frame {
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.bascw-governing-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.bascw-governing-header {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+
+.bascw-governing-kicker {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #8b1e2d;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.bascw-governing-header h2 {
+    margin: 0;
+
+    color: #08306c;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+.bascw-governing-header h2 span {
+    color: #8b1e2d;
+}
+
+
+.bascw-governing-line {
+    width: 65px;
+    height: 3px;
+
+    margin: 17px auto 20px;
+
+    background: #e5b72f;
+
+    border-radius: 10px;
+}
+
+
+.bascw-governing-header p {
+    margin: 0;
+
+    color: #111111;
+
+    text-align: justify;    
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.bascw-governing-content {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 45px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT INTRO
+========================================================= */
+
+.bascw-governing-intro {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 45px 40px;
+
+    background: #f8f4e9;
+
+    border-top: 5px solid #8b1e2d;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+
+/* Decorative Gold Circle */
+
+.bascw-governing-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -80px;
+    bottom: -90px;
+
+    border: 25px solid rgba(229, 183, 47, 0.14);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.bascw-governing-number {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 28px;
+
+    background: #08306c;
+
+    border-radius: 50%;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.bascw-governing-number span {
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   INTRO TEXT
+========================================================= */
+
+.bascw-small-title {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #8b1e2d;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+}
+
+
+.bascw-governing-intro-text h3 {
+    margin: 0 0 18px;
+
+    color: #08306c;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+.bascw-governing-intro-text h3 strong {
+    color: #8b1e2d;
+    font-weight: 700;
+}
+
+
+.bascw-governing-intro-text p {
+    margin: 0;
+
+    color: #111111;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIBILITY BOX
+========================================================= */
+
+.bascw-responsibility-box {
+    padding: 40px;
+
+    background: #ffffff;
+
+    border:3px solid #e6b435;
+
+    border-radius: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIBILITY HEADER
+========================================================= */
+
+.bascw-responsibility-header {
+    margin-bottom: 25px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #e4e0d7;
+}
+
+
+.bascw-responsibility-kicker {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #e5a900;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+}
+
+
+.bascw-responsibility-header h3 {
+    margin: 0;
+
+    color: #08306c;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIBILITY LIST
+========================================================= */
+
+.bascw-responsibility-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+}
+
+
+/* =========================================================
+   RESPONSIBILITY ITEM
+========================================================= */
+
+.bascw-responsibility-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 17px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #ebe8e1;
+}
+
+
+.bascw-responsibility-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* =========================================================
+   ITEM NUMBER
+========================================================= */
+
+.bascw-responsibility-icon {
+    flex: 0 0 40px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #8b1e2d;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ITEM CONTENT
+========================================================= */
+
+.bascw-responsibility-item h4 {
+    margin: 0 0 5px;
+
+    color: #08306c;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.bascw-responsibility-item p {
+    margin: 0;
+
+    color: #111111;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+/* =========================================================
+   BASCW - ORGANOGRAM SECTION
+========================================================= */
+
+.bascw-organogram-section {
+    width: 100%;
+    padding: 75px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.bascw-organogram-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.bascw-organogram-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.bascw-organogram-header span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #8b1e2d;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.bascw-organogram-header h2 {
+    margin: 0;
+
+    color: #08306c;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+
+.bascw-organogram-header h2 strong {
+    color: #8b1e2d;
+}
+
+
+.bascw-organogram-line {
+    width: 60px;
+    height: 3px;
+
+    margin: 15px auto 0;
+
+    background: #e5b72f;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   ORGANOGRAM IMAGE WRAPPER
+========================================================= */
+
+.bascw-organogram-image {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    background: #faf9f5;
+
+    border: 1px solid #e4dfd4;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   ORGANOGRAM IMAGE
+========================================================= */
+
+.bascw-organogram-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 1150px;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 5px;
+}
+
+/* =========================================================
+   BASCW – JOURNEY TO EXCELLENCE
+   COMPACT MILESTONE CARD DESIGN
+========================================================= */
+
+.bascw-excellence-journey {
+    width: 100%;
+    padding: 55px 20px;
+    background: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.bascw-excellence-inner {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.bascw-excellence-title {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 42px;
+}
+
+.bascw-excellence-title span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #8b1e2d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bascw-excellence-title h2 {
+    margin: 0 0 10px;
+    color: #08306c;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.bascw-excellence-title h2 strong {
+    color: #8b1e2d;
+}
+
+.bascw-excellence-title p {
+    margin: 0;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MILESTONE GRID
+========================================================= */
+
+.bascw-milestone-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.bascw-milestone-card {
+    position: relative;
+    display: flex;
+    min-height: 215px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    border-color: #e5b72f;
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   YEAR PANEL
+========================================================= */
+
+.bascw-milestone-year {
+    flex: 0 0 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d7e3f4;
+    color: #000000;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* Alternating year colors */
+
+.bascw-milestone-card:nth-child(2n) .bascw-milestone-year {
+    background: #ffffb7;
+}
+
+.bascw-milestone-card:nth-child(3n) .bascw-milestone-year {
+    background: #ffc4f2;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.bascw-milestone-info {
+    position: relative;
+    flex: 1;
+    padding: 25px 22px;
+}
+
+.bascw-milestone-info > span {
+    display: block;
+    margin-bottom: 8px;
+    color: #e5b72f;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+.bascw-milestone-info h3 {
+    margin: 0 0 10px;
+    color: #08306c;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+.bascw-milestone-info p {
+    margin: 0;
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+.bascw-milestone-info p strong {
+    color: #8b1e2d;
+}
+
+
+/* =========================================================
+   FUTURE CARD
+========================================================= */
+
+.bascw-milestone-future {
+    border-color: #e5b72f;
+    background: #fffdf5;
+}
+
+.bascw-milestone-future .bascw-milestone-year {
+    background: #e5b72f;
+    color: #08306c;
+}
+
+.bascw-milestone-future .bascw-milestone-info h3 {
+    color: #8b1e2d;
+}
+
+.bascw-milestone-future small {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #8b1e2d;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================================================
+   BASCW – ACADEMIC COUNCIL
+========================================================= */
+
+.bascw-academic-council {
+    position: relative;
+    width: 100%;
+    padding:50px 30px;
+    background: #ffffff;
+    overflow: hidden;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.bascw-academic-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TOP SECTION
+========================================================= */
+
+.bascw-academic-top {
+    display: grid;
+    grid-template-columns: 43% 49%;
+    align-items: center;
+    gap: 55px;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.bascw-academic-gallery {
+    position: relative;
+    height: 470px;
+    width: 100%;
+}
+
+
+/* Common image */
+
+.bascw-academic-img {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #eeeeee;
+    transition: all 0.45s ease;
+}
+
+
+/* Image 1 */
+
+.bascw-academic-img.img-one {
+    width: 68%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+/* Image 2 */
+
+.bascw-academic-img.img-two {
+    width: 57%;
+    height: 240px;
+    right: 0;
+    bottom: 5px;
+    z-index: 3;
+}
+
+
+/* Image 3 */
+
+.bascw-academic-img.img-three {
+    width: 45%;
+    height: 190px;
+    left: 16%;
+    bottom: 35px;
+    z-index: 4;
+    border: 7px solid #ffffff;
+}
+
+
+/* Image */
+
+.bascw-academic-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+
+/* Hover */
+
+.bascw-academic-img:hover {
+    z-index: 10;
+    transform: translateY(-6px);
+}
+
+.bascw-academic-img:hover img {
+    transform: scale(1.06);
+}
+
+
+/* Decorative gold line */
+
+.bascw-academic-gallery::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 8px;
+    top: 25px;
+    border-top: 3px solid #e5b72f;
+    border-right: 3px solid #e5b72f;
+    z-index: 1;
+}
+
+.bascw-academic-gallery::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 8px;
+    bottom: 0;
+    border-left: 3px solid #8b1e2d;
+    border-bottom: 3px solid #8b1e2d;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.bascw-academic-content {
+    padding: 5px 0;
+}
+
+
+.bascw-academic-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #8b1e2d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.bascw-academic-content h2 {
+    margin: 0;
+    color: #08306c;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+
+.bascw-academic-content h2 strong {
+    color: #8b1e2d;
+}
+
+
+/* Gold line */
+
+.bascw-academic-line {
+    width: 55px;
+    height: 3px;
+    margin: 16px 0 20px;
+    background: #e5b72f;
+}
+
+
+.bascw-academic-intro {
+    margin: 0 0 25px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+/* =========================================================
+   FUNCTIONS TITLE
+========================================================= */
+
+.bascw-functions-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 13px;
+}
+
+
+.bascw-functions-title span {
+    width: 24px;
+    height: 3px;
+    background: #8b1e2d;
+}
+
+
+.bascw-functions-title h3 {
+    margin: 0;
+    color: #08306c;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FUNCTIONS LIST
+========================================================= */
+
+.bascw-functions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.bascw-function {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 9px 12px;
+    border-left: 3px solid transparent;
+    background: #fdbeff;
+    transition: all 0.3s ease;
+    border-left-color: #785c09;
+    transform: translateX(5px);
+}
+
+
+.bascw-function > span {
+    flex: 0 0 25px;
+    color: #8b1e2d;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+.bascw-function p {
+    margin: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.55;
+    text-align: justify;
+}
+
+
+/* =========================================================
+   LEADERSHIP SECTION
+========================================================= */
+
+.bascw-academic-leadership {
+    position: relative;
+    margin-top: 55px;
+    padding: 35px;
+    background: #e1ebff;
+    border-top: 4px solid #08306c;
+    border-radius: 8px;
+}
+
+
+/* Small gold accent */
+
+.bascw-academic-leadership::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 130px;
+    height: 4px;
+    background: #e5b72f;
+}
+
+
+/* =========================================================
+   LEADERSHIP HEADING
+========================================================= */
+
+.bascw-leadership-heading {
+    margin-bottom: 25px;
+}
+
+
+.bascw-leadership-label {
+    display: block;
+    margin-bottom: 7px;
+    color: #8b1e2d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+
+.bascw-leadership-heading h3 {
+    margin: 0;
+    color: #08306c;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.bascw-leadership-heading h3 strong {
+    color: #8b1e2d;
+}
+
+
+/* =========================================================
+   LEADERSHIP GRID
+========================================================= */
+
+.bascw-leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+
+/* Leadership card */
+
+.bascw-leader-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    min-height: 135px;
+    padding: 20px 17px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    transition: all 0.35s ease;
+    transform: translateY(-5px);
+    border-color: #e5b72f;
+}
+
+
+/* Number */
+
+.bascw-leader-icon {
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #08306c;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.bascw-leader-card:nth-child(2) .bascw-leader-icon {
+    background: #8b1e2d;
+}
+
+.bascw-leader-card:nth-child(3) .bascw-leader-icon {
+    background: #a98619;
+}
+
+.bascw-leader-card:nth-child(4) .bascw-leader-icon {
+    background: #08306c;
+}
+
+
+/* Small title */
+
+.bascw-leader-card small {
+    display: block;
+    margin-bottom: 6px;
+    color: #8b1e2d;
+    font-size: 9px;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+
+/* Name */
+
+.bascw-leader-card h4 {
+    margin: 0 0 5px;
+    color: #08306c;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+
+/* Description */
+
+.bascw-leader-card p {
+    margin: 0;
+    color: #444444;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes bascwAcademicImageFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+
+.bascw-academic-img.img-one {
+    animation: bascwAcademicImageFloat 5s ease-in-out infinite;
+}
+
+
+.bascw-academic-img.img-two {
+    animation: bascwAcademicImageFloat 5s ease-in-out infinite 1s;
+}
+
+
+.bascw-academic-img.img-three {
+    animation: bascwAcademicImageFloat 5s ease-in-out infinite 2s;
+}
+/* =========================================================
+   BASCW - BOARD OF TRUSTEES TABLE
+   COMPLETE RESPONSIVE CSS
+========================================================= */
+
+.bascw-trustees-table-section {
+    width: 100%;
+    padding: 60px 20px;
+    background: #ffffff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bascw-trustees-table-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.bascw-trustees-table-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 35px;
+    box-sizing: border-box;
+}
+
+.bascw-trustees-table-heading span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #8b1e2d;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bascw-trustees-table-heading h2 {
+    margin: 0 0 12px;
+    color: #08306c;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.bascw-trustees-table-heading h2 strong {
+    color: #8b1e2d;
+}
+
+.bascw-trustees-table-heading p {
+    margin: 0;
+    color: #222222;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.bascw-trustees-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background: #ffffff;
+    box-sizing: border-box;
+
+    /* Prevent hover content from creating page overflow */
+    position: relative;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.bascw-trustees-table {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.bascw-trustees-table thead {
+    background: #08306c;
+}
+
+.bascw-trustees-table thead th {
+    padding: 16px 18px;
+    color: #ffffff;
+    background: #08306c;
+    border: none;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: left;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.bascw-trustees-table thead th:first-child {
+    width: 90px;
+    text-align: center;
+}
+
+.bascw-trustees-table thead th:nth-child(2) {
+    width: 48%;
+}
+
+.bascw-trustees-table thead th:nth-child(3) {
+    width: auto;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.bascw-trustees-table tbody tr {
+    background: #ffffff;
+    transition: background-color 0.25s ease;
+    
+    /* IMPORTANT:
+       No transform on hover.
+       Prevents unwanted bottom/side scrolling. */
+    transform: none !important;
+}
+
+.bascw-trustees-table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.bascw-trustees-table tbody tr:hover {
+    background: #fff9e8;
+    transform: none !important;
+}
+
+
+/* =========================================================
+   TABLE CELLS
+========================================================= */
+
+.bascw-trustees-table tbody td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #eeeeee;
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.5;
+    vertical-align: middle;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.bascw-trustees-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   SERIAL NUMBER
+========================================================= */
+
+.bascw-trustees-table tbody td:first-child {
+    color: #8b1e2d;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.bascw-trustees-table tbody td:nth-child(2) {
+    color: #08306c;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   POSITION BADGES
+========================================================= */
+
+.bascw-position {
+    display: inline-block;
+    max-width: 100%;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1.35;
+    font-weight: 600;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+
+    /* No transform on hover */
+    transform: none !important;
+    transition: background-color 0.25s ease;
+}
+
+
+/* Chairperson */
+
+.bascw-position.chairperson {
+    color: #ffffff;
+    background: #8b1e2d;
+}
+
+
+/* Secretary */
+
+.bascw-position.secretary {
+    color: #ffffff;
+    background: #08306c;
+}
+
+
+/* Treasurer */
+
+.bascw-position.treasurer {
+    color: #08306c;
+    background: #e5b72f;
+}
+
+
+/* Other positions */
+
+.bascw-position:not(.chairperson):not(.secretary):not(.treasurer) {
+    color: #08306c;
+    background: #eef3f9;
+}
+
+
+/* =========================================================
+   HOVER - SAFE
+========================================================= */
+
+.bascw-trustees-table tbody td {
+    transition: background-color 0.25s ease;
+}
+
+.bascw-trustees-table tbody tr:hover td {
+    background: transparent;
+}
+
+
+/* =========================================================
+   SCROLLBAR - TABLE ONLY
+========================================================= */
+
+.bascw-trustees-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.bascw-trustees-table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.bascw-trustees-table-wrapper::-webkit-scrollbar-thumb {
+    background: #08306c;
+    border-radius: 10px;
+}
+
+.bascw-trustees-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #8b1e2d;
+}
+
+
+/* =========================================================
+   BASCW - BOARD OF STUDIES
+   ACADEMIC DIRECTORY / SPLIT ROW PATTERN
+========================================================= */
+
+.bascw-bos-section {
+    width: 100%;
+    padding:50px 20px;
+    background: #f8f9fb;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bascw-bos-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.bascw-bos-header {
+    max-width: 850px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.bascw-bos-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: crimson;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bascw-bos-kicker span {
+    width: 28px;
+    height: 2px;
+    display: block;
+    background: #e5b72f;
+}
+
+.bascw-bos-header h2 {
+    margin: 0 0 12px;
+    color: #08306c;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.bascw-bos-header h2 strong {
+    color: crimson;
+}
+
+.bascw-bos-header p {
+    margin: 0;
+    color: #222222;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   DIRECTORY
+========================================================= */
+
+.bascw-bos-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   INDIVIDUAL ROW
+========================================================= */
+
+.bascw-bos-item {
+    width: 100%;
+    min-height:82px;
+    display: grid;
+    grid-template-columns:65px 1fr 1.25fr;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    transition:
+        border-color 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.bascw-bos-item:hover {
+    background: #fffdf7;
+    border-color: #d5b85c;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.bascw-bos-number {
+    height: 100%;
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background: #08306c;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DISCIPLINE
+========================================================= */
+
+.bascw-bos-discipline {
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.bascw-bos-discipline small,
+.bascw-bos-expert small {
+    display: block;
+    margin-bottom: 4px;
+    color: crimson;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 1.3;
+}
+
+.bascw-bos-discipline h3 {
+    margin: 0;
+    color: #08306c;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   EXPERT
+========================================================= */
+
+.bascw-bos-expert {
+    min-height: 54px;
+    margin: 12px 18px 12px 0;
+    padding: 10px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #dceaff;
+    border-left: 3px solid #e52fd3;
+
+    box-sizing: border-box;
+}
+
+.bascw-bos-expert small {
+    color: #000000;
+    margin-bottom: 3px;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.bascw-bos-expert strong {
+    color: #222222;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   HOVER DETAILS
+========================================================= */
+
+.bascw-bos-item:hover .bascw-bos-number {
+    background: crimson;
+}
+
+.bascw-bos-item:hover .bascw-bos-expert {
+    background: #fff9e8;
+}
+
+
+/* =========================================================
+   INSTITUTIONAL DEVELOPMENT PLAN
+   EDITORIAL ROADMAP STYLE
+
+   DARK BLUE  : #082f63
+   LOTUS PINK : #e78baa
+   CRIMSON    : #a7193b
+========================================================= */
+
+.idp-roadmap {
+    width: 100%;
+    padding: 90px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.idp-roadmap-container {
+    width: 92%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.idp-roadmap-header {
+    max-width: 850px;
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.idp-roadmap-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    color: #a7193b;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.idp-roadmap-kicker span {
+    width: 35px;
+    height: 2px;
+    background: #e78baa;
+}
+
+
+.idp-roadmap-header h2 {
+    margin: 16px 0 18px;
+
+    color: #082f63;
+
+    font-size: clamp(40px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.idp-roadmap-header h2 em {
+    display: block;
+
+    color: #a7193b;
+
+    font-style: normal;
+}
+
+
+.idp-roadmap-header p {
+    max-width: 720px;
+    margin: auto;
+
+    color: #222222;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAIN ROADMAP
+========================================================= */
+
+.idp-roadmap-line {
+    position: relative;
+    padding: 5px 0;
+}
+
+
+/* CENTRAL LINE */
+
+.idp-roadmap-line::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 50%;
+
+    width: 2px;
+
+    background: #e78baa;
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   ROADMAP ITEM
+========================================================= */
+
+.idp-roadmap-item {
+    position: relative;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    margin-bottom: 65px;
+}
+
+.idp-roadmap-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.idp-roadmap-content {
+    position: relative;
+
+    padding: 30px 35px;
+
+    background: #fdf5f8;
+
+    border-top: 4px solid #a7193b;
+}
+
+.idp-roadmap-right .idp-roadmap-content {
+    border-top-color: #082f63;
+}
+
+
+.idp-roadmap-content::after {
+    content: "";
+
+    position: absolute;
+
+    top: 30px;
+
+    width: 18px;
+    height: 18px;
+
+    background: #e78baa;
+
+    transform: rotate(45deg);
+}
+
+
+/* Arrow toward center */
+
+.idp-roadmap-left .idp-roadmap-content::after {
+    right: -9px;
+}
+
+.idp-roadmap-right .idp-roadmap-content::after {
+    left: -9px;
+}
+
+
+/* =========================================================
+   PHASE LABEL
+========================================================= */
+
+.idp-roadmap-phase {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    color: #a7193b;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.idp-roadmap-right .idp-roadmap-phase {
+    color: #082f63;
+}
+
+.idp-roadmap-phase span {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #082f63;
+
+    color: #ffffff;
+
+    font-size: 12px;
+}
+
+.idp-roadmap-right .idp-roadmap-phase span {
+    background: #a7193b;
+}
+
+
+/* =========================================================
+   CONTENT TITLE
+========================================================= */
+
+.idp-roadmap-content h3 {
+    margin: 0;
+
+    color: #082f63;
+
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+.idp-years {
+    margin: 7px 0 17px;
+
+    color: #a7193b;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.idp-years b {
+    color: #e78baa;
+    padding: 0 5px;
+}
+
+
+.idp-roadmap-content ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.idp-roadmap-content li {
+    position: relative;
+
+    padding-left: 18px;
+    margin-bottom: 8px;
+
+    color: #222222;
+
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.idp-roadmap-content li:last-child {
+    margin-bottom: 0;
+}
+
+.idp-roadmap-content li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 9px;
+
+    width: 6px;
+    height: 6px;
+
+    background: #e78baa;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CENTER NUMBER DOT
+========================================================= */
+
+.idp-roadmap-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 30px;
+
+    width: 17px;
+    height: 17px;
+
+    background: #a7193b;
+
+    border: 4px solid #ffffff;
+
+    border-radius: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+.idp-roadmap-image {
+    position: relative;
+
+    min-height: 330px;
+
+    overflow: hidden;
+
+    background: #082f63;
+}
+
+.idp-roadmap-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+.idp-roadmap-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* IMAGE BORDER */
+
+.idp-roadmap-image::before {
+    content: "";
+
+    position: absolute;
+
+    left: 14px;
+    top: 14px;
+    right: 14px;
+    bottom: 14px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* IMAGE GRADIENT */
+
+.idp-roadmap-image::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 40%;
+
     background: linear-gradient(
-        145deg,
-        #087F5B,
-        #C5A253,
-        #063F45
+        to top,
+        rgba(8,47,99,0.9),
+        transparent
     );
+
+    z-index: 1;
 }
 
+
+/* =========================================================
+   IMAGE TAG
+========================================================= */
+
+.idp-image-tag {
+    position: absolute;
+
+    left: 30px;
+    bottom: 28px;
+
+    z-index: 3;
+
+    padding: 8px 14px;
+
+    background: #e78baa;
+
+    color: #082f63;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
 }
+
+
+/* =========================================================
+   DEVELOPMENT THEMES
+========================================================= */
+
+.idp-themes {
+    margin-top: 80px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid #eadde2;
+}
+
+
+.idp-themes-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+}
+
+.idp-themes-number {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #082f63;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.idp-themes-heading span {
+    color: #e78baa;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.idp-themes-heading h3 {
+    margin: 3px 0 0;
+
+    color: #a7193b;
+
+    font-size: 29px;
+}
+
+
+/* =========================================================
+   THEME GRID
+========================================================= */
+
+.idp-themes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 14px;
+}
+
+.idp-theme {
+    position: relative;
+
+    min-height: 170px;
+
+    padding: 22px 19px;
+
+    background: #ffffff;
+
+    border: 1px solid #eadde2;
+
+    transition: all 0.3s ease;
+}
+
+.idp-theme::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #e78baa;
+}
+
+.idp-theme:nth-child(2)::before {
+    background: #082f63;
+}
+
+.idp-theme:nth-child(3)::before {
+    background: #a7193b;
+}
+
+.idp-theme:nth-child(4)::before {
+    background: #082f63;
+}
+
+.idp-theme:nth-child(5)::before {
+    background: #e78baa;
+}
+
+.idp-theme:hover {
+    transform: translateY(-5px);
+    border-color: #e78baa;
+}
+
+
+.idp-theme strong {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #a7193b;
+
+    font-size: 18px;
+}
+
+
+.idp-theme p {
+    margin: 0;
+
+    color: #222222;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DOWNLOAD DOCUMENT
+========================================================= */
+
+.idp-document {
+    margin-top: 30px;
+
+    padding: 22px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #082f63;
+}
+
+.idp-document small {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #e78baa;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.idp-document h4 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 18px;
+}
+
+.idp-document h4 span {
+    color: #e78baa;
+}
+
+
+.idp-document a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 12px 18px;
+
+    background: #a7193b;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.idp-document a:hover {
+    background: #e78baa;
+    color: #082f63;
+}
+
+.idp-document a b {
+    font-size: 20px;
+}
+
+/* =========================================================
+   BASCW - ACCREDITATION & RANKING
+   TOP IMAGE + BOTTOM CONTENT
+========================================================= */
+
+.basc-accreditation {
+    padding: 50px 20px;
+    background: #ffedfb;
+    overflow: hidden;
+}
+
+.basc-accreditation-wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 55px;
+}
+
+
+/* =========================================================
+   TOP IMAGE
+========================================================= */
+
+.basc-accreditation-visual {
+    width: 100%;
+}
+
+.basc-main-image {
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 28px;
+
+    border: 1px solid #6e0e0e;
+
+}
+
+
+/* IMAGE */
+
+.basc-main-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    padding: 15px 10px;
+
+    transition: transform 0.6s ease;
+}
+
+.basc-main-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   IMAGE DECORATION
+========================================================= */
+
+.basc-main-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    left: -60px;
+    top: -60px;
+
+    border-radius: 50%;
+
+    background: #e8f6f2;
+
+    z-index: 0;
+}
+
+.basc-main-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    right: -60px;
+    bottom: -70px;
+
+    border-radius: 50%;
+
+    background: #fff0df;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   IMAGE CAPTION
+========================================================= */
+
+.basc-image-overlay {
+    position: absolute;
+    z-index: 5;
+    left: 10px;
+    bottom: 25px;
+    padding: 17px 5px;
+    min-width: 170px;
+    background: #0f7d2c;
+    border-radius: 15px;
+    border-left: 5px solid #e76f51;
+}
+.basc-image-overlay span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #7aff95;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.basc-image-overlay h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   BOTTOM CONTENT
+========================================================= */
+
+.basc-accreditation-content {
+    width: 70%;
+}
+
+
+/* TAG */
+
+.basc-section-tag {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    margin-bottom: 15px;
+
+    border-radius: 30px;
+
+    background: #e8f7f3;
+
+    color: #168c78;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* HEADING */
+
+.basc-accreditation-content h2 {
+    margin: 0;
+
+    color: #203864;
+
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+.basc-accreditation-content h2 span {
+    color: #e76f51;
+}
+
+
+/* HEADING LINE */
+
+.basc-heading-line {
+    width: 75px;
+    height: 4px;
+
+    margin: 18px 0 22px;
+
+    border-radius: 10px;
+
+    background: #f4b942;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.basc-accreditation-intro {
+    max-width: 1000px;
+
+    margin: 0 0 35px;
+
+    color: #000000;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+/* =========================================================
+   DOCUMENTS - 2 COLUMN
+========================================================= */
+
+.basc-document-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+/* CARD */
+
+.basc-document-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 50px 1fr auto;
+
+    align-items: center;
+
+    min-height: 90px;
+
+    padding: 14px 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 16px;
+
+    box-shadow: 0 7px 22px rgba(0,0,0,0.06);
+
+    transition: all 0.3s ease;
+}
+
+.basc-document-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 13px 30px rgba(0,0,0,0.11);
+}
+
+
+/* =========================================================
+   COLOUR BAR
+========================================================= */
+
+.basc-document-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 15px;
+    bottom: 15px;
+
+    width: 5px;
+
+    border-radius: 0 8px 8px 0;
+
+    background: #e76f51;
+}
+
+.basc-document-item:nth-child(2)::before {
+    background: #16a085;
+}
+
+.basc-document-item:nth-child(3)::before {
+    background: #3498db;
+}
+
+.basc-document-item:nth-child(4)::before {
+    background: #f39c12;
+}
+
+.basc-document-item:nth-child(5)::before {
+    background: #8e44ad;
+}
+
+.basc-document-item:nth-child(6)::before {
+    background: #00a8cc;
+}
+
+.basc-document-item:nth-child(7)::before {
+    background: #27ae60;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.basc-document-number {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0ec;
+
+    color: #e76f51;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+/* NUMBER COLORS */
+
+.basc-document-item:nth-child(2) .basc-document-number {
+    background: #e6f7f3;
+    color: #16a085;
+}
+
+.basc-document-item:nth-child(3) .basc-document-number {
+    background: #e8f3fb;
+    color: #3498db;
+}
+
+.basc-document-item:nth-child(4) .basc-document-number {
+    background: #fff3df;
+    color: #f39c12;
+}
+
+.basc-document-item:nth-child(5) .basc-document-number {
+    background: #f3eafa;
+    color: #8e44ad;
+}
+
+.basc-document-item:nth-child(6) .basc-document-number {
+    background: #e4f8fc;
+    color: #00a8cc;
+}
+
+.basc-document-item:nth-child(7) .basc-document-number {
+    background: #e6f7ed;
+    color: #27ae60;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.basc-document-info {
+    padding-right: 10px;
+}
+
+.basc-document-info small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #e76f51;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.basc-document-item:nth-child(2) .basc-document-info small {
+    color: #16a085;
+}
+
+.basc-document-item:nth-child(3) .basc-document-info small {
+    color: #3498db;
+}
+
+.basc-document-item:nth-child(4) .basc-document-info small {
+    color: #f39c12;
+}
+
+.basc-document-item:nth-child(5) .basc-document-info small {
+    color: #8e44ad;
+}
+
+.basc-document-item:nth-child(6) .basc-document-info small {
+    color: #00a8cc;
+}
+
+.basc-document-item:nth-child(7) .basc-document-info small {
+    color: #27ae60;
+}
+
+.basc-document-info h3 {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   VIEW BUTTON
+========================================================= */
+
+.basc-document-btn {
+    min-width: 65px;
+
+    padding: 9px 15px;
+
+    border-radius: 25px;
+
+    background: #203864;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.basc-document-btn:hover {
+    background: #e76f51;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+

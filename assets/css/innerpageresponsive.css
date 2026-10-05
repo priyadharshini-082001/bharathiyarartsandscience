@@ -997,3 +997,1980 @@
 }
 
 }
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .bascw-governing-section {
+        padding: 65px 20px;
+    }
+
+
+    .bascw-governing-header {
+        margin-bottom: 40px;
+    }
+
+
+    .bascw-governing-header h2 {
+        font-size: 36px;
+    }
+
+
+    .bascw-governing-content {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .bascw-governing-intro {
+        padding: 38px;
+    }
+
+
+    .bascw-responsibility-box {
+        padding: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .bascw-governing-section {
+        padding: 55px 15px;
+    }
+
+
+    .bascw-governing-header {
+        margin-bottom: 32px;
+    }
+
+
+    .bascw-governing-kicker {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+
+    .bascw-governing-header h2 {
+        font-size: 30px;
+    }
+
+
+    .bascw-governing-header p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    .bascw-governing-content {
+        gap: 22px;
+    }
+
+
+    .bascw-governing-intro {
+        padding: 30px 24px;
+
+        border-radius: 11px;
+    }
+
+
+    .bascw-governing-number {
+        width: 50px;
+        height: 50px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .bascw-governing-intro-text h3 {
+        font-size: 25px;
+    }
+
+
+    .bascw-governing-intro-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    .bascw-responsibility-box {
+        padding: 27px 22px;
+
+        border-radius: 11px;
+    }
+
+
+    .bascw-responsibility-header {
+        margin-bottom: 15px;
+    }
+
+
+    .bascw-responsibility-header h3 {
+        font-size: 23px;
+    }
+
+
+    .bascw-responsibility-item {
+        gap: 12px;
+
+        padding: 16px 0;
+    }
+
+
+    .bascw-responsibility-icon {
+        flex: 0 0 35px;
+
+        width: 35px;
+        height: 35px;
+
+        font-size: 10px;
+    }
+
+
+    .bascw-responsibility-item h4 {
+        font-size: 15px;
+    }
+
+
+    .bascw-responsibility-item p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .bascw-governing-section {
+        padding: 45px 12px;
+    }
+
+
+    .bascw-governing-header h2 {
+        font-size: 26px;
+    }
+
+
+    .bascw-governing-header p {
+        font-size: 15px;
+    }
+
+
+    .bascw-governing-intro {
+        padding: 25px 18px;
+    }
+
+
+    .bascw-governing-intro-text h3 {
+        font-size: 22px;
+    }
+
+
+    .bascw-governing-intro-text p {
+        font-size: 15px;
+    }
+
+
+    .bascw-responsibility-box {
+        padding: 24px 16px;
+    }
+
+
+    .bascw-responsibility-header h3 {
+        font-size: 21px;
+    }
+
+
+    .bascw-responsibility-item {
+        gap: 10px;
+    }
+
+
+    .bascw-responsibility-icon {
+        flex: 0 0 32px;
+
+        width: 32px;
+        height: 32px;
+
+        font-size: 9px;
+    }
+
+
+    .bascw-responsibility-item h4 {
+        font-size: 14px;
+    }
+
+
+    .bascw-responsibility-item p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .bascw-governing-header h2 {
+        font-size: 23px;
+    }
+
+
+    .bascw-governing-header p {
+        font-size: 14px;
+    }
+
+
+    .bascw-governing-intro {
+        padding: 22px 15px;
+    }
+
+
+    .bascw-responsibility-box {
+        padding: 22px 13px;
+    }
+
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .bascw-organogram-section {
+        padding: 60px 20px;
+    }
+
+    .bascw-organogram-header {
+        margin-bottom: 32px;
+    }
+
+    .bascw-organogram-header h2 {
+        font-size: 34px;
+    }
+
+    .bascw-organogram-image {
+        padding: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .bascw-organogram-section {
+        padding: 50px 15px;
+    }
+
+    .bascw-organogram-header {
+        margin-bottom: 25px;
+    }
+
+    .bascw-organogram-header span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .bascw-organogram-header h2 {
+        font-size: 28px;
+    }
+
+    .bascw-organogram-image {
+        padding: 8px;
+
+        border-radius: 9px;
+    }
+
+    .bascw-organogram-image img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .bascw-organogram-section {
+        padding: 42px 10px;
+    }
+
+    .bascw-organogram-header h2 {
+        font-size: 24px;
+    }
+
+    .bascw-organogram-image {
+        padding: 5px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .bascw-organogram-header h2 {
+        font-size: 22px;
+    }
+
+    .bascw-organogram-header span {
+        font-size: 9px;
+    }
+
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .bascw-excellence-journey {
+        padding: 50px 18px;
+    }
+
+    .bascw-milestone-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .bascw-excellence-title {
+        margin-bottom: 35px;
+    }
+
+    .bascw-excellence-title h2 {
+        font-size: 32px;
+    }
+
+    .bascw-milestone-card {
+        min-height: 205px;
+    }
+
+    .bascw-milestone-year {
+        flex-basis: 70px;
+        font-size: 18px;
+    }
+
+    .bascw-milestone-info {
+        padding: 22px 19px;
+    }
+
+    .bascw-milestone-info h3 {
+        font-size: 18px;
+    }
+
+    .bascw-milestone-info p {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+
+    .bascw-excellence-journey {
+        padding: 45px 14px;
+    }
+
+    .bascw-excellence-title {
+        margin-bottom: 30px;
+    }
+
+    .bascw-excellence-title span {
+        font-size: 11px;
+    }
+
+    .bascw-excellence-title h2 {
+        font-size: 28px;
+    }
+
+    .bascw-excellence-title p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .bascw-milestone-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .bascw-milestone-card {
+        min-height: auto;
+    }
+
+    .bascw-milestone-year {
+        flex-basis: 65px;
+        font-size: 17px;
+    }
+
+    .bascw-milestone-info {
+        padding: 20px 18px;
+    }
+
+    .bascw-milestone-info > span {
+        font-size: 10px;
+    }
+
+    .bascw-milestone-info h3 {
+        font-size: 18px;
+    }
+
+    .bascw-milestone-info p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .bascw-excellence-journey {
+        padding: 40px 10px;
+    }
+
+    .bascw-excellence-title h2 {
+        font-size: 25px;
+    }
+
+    .bascw-milestone-card {
+        border-radius: 6px;
+    }
+
+    .bascw-milestone-year {
+        flex-basis: 58px;
+        font-size: 15px;
+    }
+
+    .bascw-milestone-info {
+        padding: 18px 15px;
+    }
+
+    .bascw-milestone-info h3 {
+        font-size: 17px;
+    }
+
+    .bascw-milestone-info p {
+        font-size: 14px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .bascw-academic-council {
+        padding: 55px 18px;
+    }
+
+    .bascw-academic-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .bascw-academic-gallery {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .bascw-academic-content h2 {
+        font-size: 36px;
+    }
+
+    .bascw-leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+
+    .bascw-academic-council {
+        padding: 45px 14px;
+    }
+
+    .bascw-academic-gallery {
+        height: 390px;
+    }
+
+    .bascw-academic-img.img-one {
+        width: 70%;
+        height: 245px;
+    }
+
+    .bascw-academic-img.img-two {
+        width: 58%;
+        height: 205px;
+        bottom: 0;
+    }
+
+    .bascw-academic-img.img-three {
+        width: 48%;
+        height: 160px;
+        left: 15%;
+        bottom: 30px;
+        border-width: 5px;
+    }
+
+    .bascw-academic-content h2 {
+        font-size: 30px;
+    }
+
+    .bascw-academic-intro {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .bascw-function {
+        padding: 9px 10px;
+    }
+
+    .bascw-function p {
+        font-size: 14px;
+    }
+
+    .bascw-academic-leadership {
+        margin-top: 40px;
+        padding: 25px 18px;
+    }
+
+    .bascw-leadership-heading h3 {
+        font-size: 24px;
+    }
+
+    .bascw-leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .bascw-leader-card {
+        min-height: auto;
+        padding: 17px 14px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .bascw-academic-gallery {
+        height: 330px;
+    }
+
+    .bascw-academic-img.img-one {
+        height: 210px;
+    }
+
+    .bascw-academic-img.img-two {
+        height: 175px;
+    }
+
+    .bascw-academic-img.img-three {
+        height: 135px;
+    }
+
+    .bascw-academic-content h2 {
+        font-size: 27px;
+    }
+
+    .bascw-academic-label {
+        font-size: 10px;
+    }
+
+    .bascw-academic-leadership {
+        padding: 22px 14px;
+    }
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bascw-academic-img {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .bascw-function,
+    .bascw-leader-card,
+    .bascw-academic-img img {
+        transition: none !important;
+    }
+}
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .bascw-trustees-table-section {
+        padding: 50px 18px;
+    }
+
+    .bascw-trustees-table-heading {
+        margin-bottom: 30px;
+    }
+
+    .bascw-trustees-table-heading h2 {
+        font-size: 30px;
+    }
+
+    .bascw-trustees-table-heading p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .bascw-trustees-table thead th {
+        padding: 14px 14px;
+        font-size: 14px;
+    }
+
+    .bascw-trustees-table tbody td {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .bascw-position {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+
+    .bascw-trustees-table-section {
+        padding: 45px 15px;
+        overflow: hidden;
+    }
+
+    .bascw-trustees-table-container {
+        width: 100%;
+    }
+
+    .bascw-trustees-table-heading {
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .bascw-trustees-table-heading span {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .bascw-trustees-table-heading h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .bascw-trustees-table-heading p {
+        font-size: 15px;
+        line-height: 1.65;
+        text-align: center;
+    }
+
+
+    /* Hide normal desktop table header */
+
+    .bascw-trustees-table-wrapper {
+        border: none;
+        overflow: visible;
+        background: transparent;
+    }
+
+    .bascw-trustees-table,
+    .bascw-trustees-table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .bascw-trustees-table thead {
+        display: none;
+    }
+
+
+    /* =====================================================
+       MOBILE ROW AS CARD
+    ===================================================== */
+
+    .bascw-trustees-table tbody tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 14px;
+        padding: 15px;
+        border: 1px solid #e7e7e7;
+        border-left: 4px solid #08306c;
+        border-radius: 7px;
+        background: #ffffff !important;
+        box-sizing: border-box;
+
+        /* Prevent hover movement */
+        transform: none !important;
+    }
+
+    .bascw-trustees-table tbody tr:hover {
+        background: #ffffff !important;
+        transform: none !important;
+    }
+
+
+    /* =====================================================
+       MOBILE CELLS
+    ===================================================== */
+
+    .bascw-trustees-table tbody td {
+        display: flex;
+        width: 100%;
+        min-width: 0;
+        padding: 7px 0;
+        border: none;
+        background: transparent !important;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .bascw-trustees-table tbody td:first-child {
+        justify-content: flex-start;
+        padding-bottom: 5px;
+        color: #8b1e2d;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+
+    /* Label */
+
+    .bascw-trustees-table tbody td::before {
+        flex: 0 0 85px;
+        width: 85px;
+        margin-right: 10px;
+        color: #666666;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+    }
+
+    .bascw-trustees-table tbody td[data-label="S.No."]::before {
+        content: "S.No.";
+    }
+
+    .bascw-trustees-table tbody td[data-label="Name"]::before {
+        content: "Name";
+    }
+
+    .bascw-trustees-table tbody td[data-label="Position"]::before {
+        content: "Position";
+    }
+
+
+    /* =====================================================
+       MOBILE NAME
+    ===================================================== */
+
+    .bascw-trustees-table tbody td:nth-child(2) {
+        color: #08306c;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       MOBILE POSITION
+    ===================================================== */
+
+    .bascw-trustees-table tbody td:nth-child(3) {
+        align-items: flex-start;
+    }
+
+    .bascw-position {
+        max-width: calc(100% - 95px);
+        padding: 5px 9px;
+        font-size: 11px;
+        line-height: 1.4;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .bascw-trustees-table-section {
+        padding: 40px 12px;
+    }
+
+    .bascw-trustees-table-heading h2 {
+        font-size: 23px;
+    }
+
+    .bascw-trustees-table-heading p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .bascw-trustees-table tbody tr {
+        padding: 13px;
+        margin-bottom: 12px;
+    }
+
+    .bascw-trustees-table tbody td {
+        font-size: 13px;
+    }
+
+    .bascw-trustees-table tbody td::before {
+        flex: 0 0 72px;
+        width: 72px;
+        margin-right: 8px;
+        font-size: 11px;
+    }
+
+    .bascw-position {
+        max-width: calc(100% - 80px);
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .bascw-trustees-table-section {
+        padding: 35px 10px;
+    }
+
+    .bascw-trustees-table-heading h2 {
+        font-size: 21px;
+    }
+
+    .bascw-trustees-table-heading p {
+        font-size: 13px;
+    }
+
+    .bascw-trustees-table tbody tr {
+        padding: 11px;
+    }
+
+    .bascw-trustees-table tbody td {
+        display: block;
+    }
+
+    .bascw-trustees-table tbody td::before {
+        display: block;
+        width: auto;
+        margin: 0 0 3px;
+    }
+
+    .bascw-position {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bascw-trustees-table tbody tr,
+    .bascw-trustees-table tbody td,
+    .bascw-position {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .bascw-bos-section {
+        padding: 55px 18px;
+    }
+
+    .bascw-bos-header {
+        margin-bottom: 35px;
+    }
+
+    .bascw-bos-header h2 {
+        font-size: 31px;
+    }
+
+    .bascw-bos-header p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .bascw-bos-item {
+        grid-template-columns: 65px 1fr 1.15fr;
+    }
+
+    .bascw-bos-number {
+        min-height: 76px;
+    }
+
+    .bascw-bos-discipline {
+        padding: 13px 18px;
+    }
+
+    .bascw-bos-discipline h3 {
+        font-size: 15px;
+    }
+
+    .bascw-bos-expert {
+        margin-right: 14px;
+        padding: 9px 13px;
+    }
+
+    .bascw-bos-expert strong {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+
+    .bascw-bos-section {
+        padding: 45px 15px;
+    }
+
+    .bascw-bos-header {
+        margin-bottom: 28px;
+    }
+
+    .bascw-bos-kicker {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        gap: 7px;
+    }
+
+    .bascw-bos-kicker span {
+        width: 20px;
+    }
+
+    .bascw-bos-header h2 {
+        font-size: 27px;
+    }
+
+    .bascw-bos-header p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       MOBILE CARD
+    ===================================================== */
+
+    .bascw-bos-list {
+        gap: 12px;
+    }
+
+    .bascw-bos-item {
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        min-height: 0;
+        border-radius: 6px;
+    }
+
+
+    /* Number */
+
+    .bascw-bos-number {
+        grid-row: 1 / span 2;
+        min-height: 112px;
+        height: 100%;
+
+        font-size: 13px;
+    }
+
+
+    /* Discipline */
+
+    .bascw-bos-discipline {
+        padding: 14px 15px 8px;
+    }
+
+    .bascw-bos-discipline small {
+        margin-bottom: 3px;
+        font-size: 8px;
+    }
+
+    .bascw-bos-discipline h3 {
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+
+    /* Expert */
+
+    .bascw-bos-expert {
+        min-height: 0;
+        margin: 0 12px 13px 15px;
+        padding: 9px 11px;
+        border-left-width: 2px;
+    }
+
+    .bascw-bos-expert small {
+        margin-bottom: 3px;
+        font-size: 7px;
+    }
+
+    .bascw-bos-expert strong {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .bascw-bos-section {
+        padding: 40px 12px;
+    }
+
+    .bascw-bos-header h2 {
+        font-size: 24px;
+    }
+
+    .bascw-bos-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .bascw-bos-item {
+        grid-template-columns: 46px 1fr;
+    }
+
+    .bascw-bos-number {
+        min-height: 108px;
+        font-size: 12px;
+    }
+
+    .bascw-bos-discipline {
+        padding: 13px 12px 7px;
+    }
+
+    .bascw-bos-discipline h3 {
+        font-size: 14px;
+    }
+
+    .bascw-bos-expert {
+        margin-left: 12px;
+        margin-right: 10px;
+        margin-bottom: 11px;
+        padding: 8px 10px;
+    }
+
+    .bascw-bos-expert strong {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .bascw-bos-section {
+        padding: 35px 10px;
+    }
+
+    .bascw-bos-header h2 {
+        font-size: 22px;
+    }
+
+    .bascw-bos-header p {
+        font-size: 13px;
+    }
+
+    .bascw-bos-item {
+        grid-template-columns: 42px 1fr;
+    }
+
+    .bascw-bos-number {
+        min-height: 105px;
+    }
+
+    .bascw-bos-discipline {
+        padding-left: 10px;
+        padding-right: 8px;
+    }
+
+    .bascw-bos-expert {
+        margin-left: 10px;
+        margin-right: 8px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bascw-bos-item,
+    .bascw-bos-number,
+    .bascw-bos-expert {
+        transition: none !important;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .idp-roadmap-item {
+        gap: 45px;
+    }
+
+    .idp-themes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .idp-roadmap {
+        padding: 70px 0;
+    }
+
+    .idp-roadmap-header {
+        margin-bottom: 55px;
+    }
+
+    .idp-roadmap-item {
+        grid-template-columns: 1fr;
+        gap: 18px;
+
+        margin-bottom: 45px;
+    }
+
+    .idp-roadmap-line::before {
+        display: none;
+    }
+
+    .idp-roadmap-item::before {
+        display: none;
+    }
+
+    .idp-roadmap-content::after {
+        display: none;
+    }
+
+    .idp-roadmap-image {
+        min-height: 300px;
+    }
+
+    .idp-roadmap-right .idp-roadmap-image {
+        order: 2;
+    }
+
+    .idp-roadmap-right .idp-roadmap-content {
+        order: 1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .idp-roadmap {
+        padding: 50px 0;
+    }
+
+    .idp-roadmap-container {
+        width: 92%;
+    }
+
+    .idp-roadmap-header {
+        margin-bottom: 40px;
+    }
+
+    .idp-roadmap-kicker {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .idp-roadmap-kicker span {
+        width: 22px;
+    }
+
+    .idp-roadmap-header h2 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .idp-roadmap-header p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+
+    .idp-roadmap-content {
+        padding: 22px 18px;
+    }
+
+    .idp-roadmap-content h3 {
+        font-size: 23px;
+    }
+
+    .idp-roadmap-content li {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+
+    .idp-roadmap-image {
+        min-height: 230px;
+    }
+
+    .idp-image-tag {
+        left: 25px;
+        bottom: 24px;
+    }
+
+
+    .idp-themes {
+        margin-top: 55px;
+        padding-top: 30px;
+    }
+
+    .idp-themes-heading {
+        gap: 12px;
+    }
+
+    .idp-themes-number {
+        width: 45px;
+        height: 45px;
+    }
+
+    .idp-themes-heading h3 {
+        font-size: 23px;
+    }
+
+    .idp-themes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .idp-theme {
+        min-height: auto;
+    }
+
+
+    .idp-document {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+
+        padding: 20px;
+    }
+
+    .idp-document a {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .idp-roadmap-header h2 {
+        font-size: 30px;
+    }
+
+    .idp-roadmap-content h3 {
+        font-size: 21px;
+    }
+
+    .idp-roadmap-image {
+        min-height: 200px;
+    }
+
+}
+/* =========================================================
+   TABLET VIEW
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .basc-accreditation {
+        padding: 45px 18px;
+    }
+
+    .basc-accreditation-wrap {
+        width: 94%;
+        gap: 45px;
+    }
+
+    /* TOP IMAGE */
+
+    .basc-main-image {
+        height: 240px;
+        border-radius: 24px;
+    }
+
+    .basc-main-image img {
+        padding: 12px 20px;
+    }
+
+    .basc-image-overlay {
+        left: 15px;
+        bottom: 18px;
+
+        min-width: 180px;
+
+        padding: 14px 12px;
+    }
+
+    .basc-image-overlay h3 {
+        font-size: 15px;
+    }
+
+    /* CONTENT */
+
+    .basc-accreditation-content {
+        width: 85%;
+    }
+
+    .basc-accreditation-content h2 {
+        font-size: 42px;
+    }
+
+    .basc-accreditation-intro {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* DOCUMENTS */
+
+    .basc-document-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .basc-document-item {
+        min-height: 85px;
+        padding: 12px 14px;
+    }
+
+    .basc-document-number {
+        width: 34px;
+        height: 34px;
+    }
+
+    .basc-document-info h3 {
+        font-size: 13px;
+    }
+
+    .basc-document-btn {
+        min-width: 60px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .basc-accreditation {
+        padding: 45px 20px;
+    }
+
+    .basc-accreditation-wrap {
+        width: 94%;
+        gap: 40px;
+    }
+
+    /* TOP IMAGE */
+
+    .basc-main-image {
+        height: 280px;
+        border-radius: 24px;
+    }
+
+    .basc-main-image img {
+        padding: 15px 30px;
+    }
+
+    .basc-image-overlay {
+        left: 18px;
+        bottom: 18px;
+
+        min-width: 190px;
+
+        padding: 15px 14px;
+    }
+
+    .basc-image-overlay span {
+        font-size: 9px;
+    }
+
+    .basc-image-overlay h3 {
+        font-size: 18px;
+    }
+
+    /* CONTENT */
+
+    .basc-accreditation-content {
+        width: 90%;
+    }
+
+    .basc-section-tag {
+        font-size: 9px;
+        padding: 7px 13px;
+    }
+
+    .basc-accreditation-content h2 {
+        font-size: 40px;
+    }
+
+    .basc-heading-line {
+        margin: 15px 0 20px;
+    }
+
+    .basc-accreditation-intro {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+    /* DOCUMENTS */
+
+    .basc-document-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .basc-document-item {
+        grid-template-columns: 42px 1fr;
+
+        min-height: 82px;
+
+        padding: 12px 13px;
+    }
+
+    .basc-document-number {
+        width: 34px;
+        height: 34px;
+
+        font-size: 10px;
+    }
+
+    .basc-document-info {
+        padding-right: 0;
+    }
+
+    .basc-document-info small {
+        font-size:12px;
+    }
+
+    .basc-document-info h3 {
+        font-size: 13px;
+    }
+
+    .basc-document-btn {
+        grid-column: 2;
+
+        width: fit-content;
+
+        margin-top: 7px;
+
+        min-width: 58px;
+
+        padding: 7px 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE LANDSCAPE
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .basc-accreditation {
+        padding: 40px 18px;
+    }
+
+    .basc-accreditation-wrap {
+        width: 94%;
+        gap: 35px;
+    }
+
+    /* IMAGE */
+
+    .basc-main-image {
+        height: 250px;
+        border-radius: 22px;
+    }
+
+    .basc-main-image img {
+        padding: 15px 25px;
+    }
+
+    .basc-image-overlay {
+        left: 15px;
+        bottom: 15px;
+
+        min-width: 180px;
+
+        padding: 13px 12px;
+    }
+
+    .basc-image-overlay h3 {
+        font-size: 17px;
+    }
+
+    /* CONTENT */
+
+    .basc-accreditation-content {
+        width: 100%;
+    }
+
+    .basc-section-tag {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .basc-accreditation-content h2 {
+        font-size: 36px;
+    }
+
+    .basc-accreditation-intro {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* DOCUMENTS */
+
+    .basc-document-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .basc-document-item {
+        grid-template-columns: 45px 1fr auto;
+
+        min-height: 82px;
+
+        padding: 12px 14px;
+    }
+
+    .basc-document-number {
+        width: 35px;
+        height: 35px;
+    }
+
+    .basc-document-info h3 {
+        font-size: 14px;
+    }
+
+    .basc-document-btn {
+        min-width: 62px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   UP TO 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .basc-accreditation {
+        padding: 35px 12px;
+    }
+
+    .basc-accreditation-wrap {
+        width: 100%;
+        gap: 30px;
+    }
+
+
+    /* =====================================================
+       TOP IMAGE
+    ===================================================== */
+
+    .basc-main-image {
+        width: 100%;
+        height: 220px;
+
+        border-radius: 20px;
+    }
+
+    .basc-main-image img {
+        width: 100%;
+        height: 100%;
+
+        padding: 12px 8px;
+
+        object-fit: contain;
+    }
+
+
+    /* IMAGE DECORATION */
+
+    .basc-main-image::before {
+        width: 100px;
+        height: 100px;
+
+        left: -45px;
+        top: -45px;
+    }
+
+    .basc-main-image::after {
+        width: 110px;
+        height: 110px;
+
+        right: -45px;
+        bottom: -50px;
+    }
+
+
+    /* =====================================================
+       IMAGE CAPTION
+    ===================================================== */
+
+    .basc-image-overlay {
+        left: 10px;
+        bottom: 10px;
+
+        min-width: 145px;
+
+        padding: 11px 10px;
+
+        border-radius: 12px;
+
+        border-left-width: 4px;
+    }
+
+    .basc-image-overlay span {
+        margin-bottom: 3px;
+
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+    .basc-image-overlay h3 {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .basc-accreditation-content {
+        width: 100%;
+    }
+
+
+    /* TAG */
+
+    .basc-section-tag {
+        padding: 7px 11px;
+
+        margin-bottom: 12px;
+
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+
+    /* HEADING */
+
+    .basc-accreditation-content h2 {
+        font-size: 30px;
+
+        line-height: 1.2;
+    }
+
+    .basc-accreditation-content h2 span {
+        color: #e76f51;
+    }
+
+
+    /* LINE */
+
+    .basc-heading-line {
+        width: 60px;
+        height: 3px;
+
+        margin: 14px 0 18px;
+    }
+
+
+    /* PARAGRAPH */
+
+    .basc-accreditation-intro {
+        margin-bottom: 25px;
+
+        color: #000000;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       DOCUMENT LIST
+    ===================================================== */
+
+    .basc-document-list {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+    }
+
+
+    /* DOCUMENT CARD */
+
+    .basc-document-item {
+        display: grid;
+
+        grid-template-columns: 40px 1fr auto;
+
+        align-items: center;
+
+        min-height: 78px;
+
+        padding: 11px 10px 11px 12px;
+
+        border-radius: 13px;
+    }
+
+
+    /* COLOUR BAR */
+
+    .basc-document-item::before {
+        top: 12px;
+        bottom: 12px;
+
+        width: 4px;
+    }
+
+
+    /* NUMBER */
+
+    .basc-document-number {
+        width: 32px;
+        height: 32px;
+
+        font-size: 9px;
+    }
+
+
+    /* TEXT */
+
+    .basc-document-info {
+        padding-right: 5px;
+    }
+
+    .basc-document-info small {
+        margin-bottom: 3px;
+
+        font-size: 12px;
+
+        letter-spacing: 0.8px;
+    }
+
+    .basc-document-info h3 {
+        font-size: 12px;
+
+        line-height: 1.35;
+    }
+
+
+    /* VIEW BUTTON */
+
+    .basc-document-btn {
+        min-width: 52px;
+
+        padding: 7px 9px;
+
+        font-size: 8px;
+
+        letter-spacing: 0.5px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   UP TO 380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .basc-accreditation {
+        padding: 30px 10px;
+    }
+
+    .basc-accreditation-wrap {
+        gap: 25px;
+    }
+
+    .basc-main-image {
+        height: 190px;
+    }
+
+    .basc-image-overlay {
+        min-width: 125px;
+
+        padding: 9px 9px;
+    }
+
+    .basc-image-overlay h3 {
+        font-size: 12px;
+    }
+
+    .basc-accreditation-content h2 {
+        font-size: 27px;
+    }
+
+    .basc-accreditation-intro {
+        font-size: 15px;
+    }
+
+    .basc-document-item {
+        grid-template-columns: 35px 1fr auto;
+
+        min-height: 72px;
+
+        padding: 9px 8px 9px 10px;
+    }
+
+    .basc-document-number {
+        width: 29px;
+        height: 29px;
+    }
+
+    .basc-document-info h3 {
+        font-size: 11px;
+    }
+
+    .basc-document-info small {
+        font-size: 12px;
+    }
+
+    .basc-document-btn {
+        min-width: 47px;
+
+        padding: 6px 7px;
+
+        font-size: 7px;
+    }
+}
+
