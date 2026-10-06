@@ -2420,7 +2420,7 @@ color: #536766;
 .bascw-governing-section {
     width: 100%;
     padding:50px 20px;
-    background: #fcffd4;
+    background: #fdffe3;
     position: relative;
     overflow: hidden;
 }
@@ -2496,7 +2496,7 @@ color: #536766;
 .bascw-governing-header p {
     margin: 0;
 
-    color: #111111;
+    color: #000000;
 
     text-align: justify;    
     font-size: 17px;
@@ -2635,8 +2635,8 @@ color: #536766;
 .bascw-governing-intro-text p {
     margin: 0;
 
-    color: #111111;
-
+    color: #000000;
+text-align: justify;
     font-size: 16px;
     line-height: 1.8;
 }
@@ -2772,7 +2772,7 @@ color: #536766;
 .bascw-responsibility-item p {
     margin: 0;
 
-    color: #111111;
+    color: #000000;
 
     font-family: "Segoe UI", Arial, sans-serif;
 
@@ -2935,8 +2935,8 @@ color: #536766;
 .bascw-excellence-title span {
     display: inline-block;
     margin-bottom: 8px;
-    color: #8b1e2d;
-    font-size: 12px;
+    color: crimson;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -2951,7 +2951,7 @@ color: #536766;
 }
 
 .bascw-excellence-title h2 strong {
-    color: #8b1e2d;
+    color: crimson;
 }
 
 .bascw-excellence-title p {
@@ -3001,12 +3001,12 @@ color: #536766;
     align-items: center;
     justify-content: center;
 
-    background: #d7e3f4;
+    background: #ffffff;
     color: #000000;
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-
+    border: 1px solid #e5b72f;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -3016,11 +3016,11 @@ color: #536766;
 /* Alternating year colors */
 
 .bascw-milestone-card:nth-child(2n) .bascw-milestone-year {
-    background: #ffffb7;
+    background: #ffffff;
 }
 
 .bascw-milestone-card:nth-child(3n) .bascw-milestone-year {
-    background: #ffc4f2;
+    background: #ffffff;
 }
 
 
@@ -3062,7 +3062,7 @@ color: #536766;
 
 
 .bascw-milestone-info p strong {
-    color: #8b1e2d;
+    color:crimson;
 }
 
 
@@ -3081,7 +3081,7 @@ color: #536766;
 }
 
 .bascw-milestone-future .bascw-milestone-info h3 {
-    color: #8b1e2d;
+    color: crimson;
 }
 
 .bascw-milestone-future small {
@@ -3089,7 +3089,7 @@ color: #536766;
     margin-top: 15px;
     padding: 5px 10px;
     border-radius: 3px;
-    background: #8b1e2d;
+    background: crimson;
     color: #ffffff;
     font-size: 9px;
     font-weight: 700;
@@ -3235,8 +3235,8 @@ color: #536766;
     height: 75px;
     left: 8px;
     bottom: 0;
-    border-left: 3px solid #8b1e2d;
-    border-bottom: 3px solid #8b1e2d;
+    border-left: 3px solid crimson;
+    border-bottom: 3px solid crimson;
     z-index: 1;
 }
 
@@ -3253,8 +3253,8 @@ color: #536766;
 .bascw-academic-label {
     display: inline-block;
     margin-bottom: 10px;
-    color: #8b1e2d;
-    font-size: 12px;
+    color: crimson;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -3270,7 +3270,7 @@ color: #536766;
 
 
 .bascw-academic-content h2 strong {
-    color: #8b1e2d;
+    color: crimson;
 }
 
 
@@ -3308,7 +3308,7 @@ color: #536766;
 .bascw-functions-title span {
     width: 24px;
     height: 3px;
-    background: #8b1e2d;
+    background: crimson;
 }
 
 
@@ -3327,26 +3327,27 @@ color: #536766;
 .bascw-functions-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+    width:100%;
 }
 
 
 .bascw-function {
     display: flex;
     align-items: flex-start;
-    gap: 13px;
-    padding: 9px 12px;
+    gap: 23px;
+    padding:12px;
     border-left: 3px solid transparent;
-    background: #fdbeff;
+    background: #f3ffd6;
     transition: all 0.3s ease;
-    border-left-color: #785c09;
+    border-left: 3px solid #785c09;
     transform: translateX(5px);
 }
 
 
 .bascw-function > span {
     flex: 0 0 25px;
-    color: #8b1e2d;
+    color: crimson;
     font-size: 11px;
     font-weight: 800;
 }
@@ -3620,7 +3621,8 @@ color: #536766;
     margin: 0 auto;
     overflow-x: auto;
     overflow-y: hidden;
-    border: 1px solid #e6e6e6;
+   border: 1px solid #d8d7d7;
+
     border-radius: 8px;
     background: #ffffff;
     box-sizing: border-box;
@@ -3668,7 +3670,7 @@ color: #536766;
 }
 
 .bascw-trustees-table thead th:first-child {
-    width: 90px;
+    width: 70px;
     text-align: center;
 }
 
@@ -3688,7 +3690,7 @@ color: #536766;
 .bascw-trustees-table tbody tr {
     background: #ffffff;
     transition: background-color 0.25s ease;
-    
+
     /* IMPORTANT:
        No transform on hover.
        Prevents unwanted bottom/side scrolling. */
@@ -3711,7 +3713,7 @@ color: #536766;
 
 .bascw-trustees-table tbody td {
     padding: 15px 18px;
-    border-bottom: 1px solid #eeeeee;
+border: 1px solid #d8d7d7;
     color: #222222;
     font-size: 15px;
     line-height: 1.5;
@@ -3877,7 +3879,7 @@ color: #536766;
     margin-bottom: 10px;
     color: crimson;
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -3904,8 +3906,9 @@ color: #536766;
 
 .bascw-bos-header p {
     margin: 0;
-    color: #222222;
+    color: #000000;
     font-family: "Segoe UI", Arial, sans-serif;
+    text-align: justify;
     font-size: 16px;
     line-height: 1.75;
 }
@@ -3986,7 +3989,7 @@ color: #536766;
     margin-bottom: 4px;
     color: crimson;
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 9px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 1.2px;
     line-height: 1.3;
@@ -4023,8 +4026,8 @@ color: #536766;
 .bascw-bos-expert small {
     color: #000000;
     margin-bottom: 3px;
-    font-size: 8px;
-    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 0px;
 }
 
 .bascw-bos-expert strong {
@@ -4090,7 +4093,7 @@ color: #536766;
 
     color: #a7193b;
 
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 2.5px;
 }
@@ -4317,7 +4320,7 @@ color: #536766;
     padding-left: 18px;
     margin-bottom: 8px;
 
-    color: #222222;
+    color: #000000;
 
     font-size: 15px;
     line-height: 1.55;
@@ -4510,8 +4513,8 @@ color: #536766;
 .idp-themes-heading span {
     color: #e78baa;
 
-    font-size: 11px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 800;
     letter-spacing: 2px;
 }
 

@@ -1055,7 +1055,7 @@
 
 
     .bascw-governing-kicker {
-        font-size: 11px;
+        font-size: 14px;
         letter-spacing: 1.5px;
     }
 
@@ -1409,7 +1409,7 @@
     }
 
     .bascw-excellence-title span {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .bascw-excellence-title h2 {
@@ -1990,7 +1990,7 @@
     }
 
     .bascw-bos-expert strong {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -2010,7 +2010,7 @@
     }
 
     .bascw-bos-kicker {
-        font-size: 10px;
+        font-size: 14px;
         letter-spacing: 1.5px;
         gap: 7px;
     }
@@ -2064,7 +2064,7 @@
 
     .bascw-bos-discipline small {
         margin-bottom: 3px;
-        font-size: 8px;
+        font-size:11px;
     }
 
     .bascw-bos-discipline h3 {
@@ -2084,11 +2084,11 @@
 
     .bascw-bos-expert small {
         margin-bottom: 3px;
-        font-size: 7px;
+        font-size: 13px;
     }
 
     .bascw-bos-expert strong {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.4;
     }
 }
@@ -2138,7 +2138,7 @@
     }
 
     .bascw-bos-expert strong {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -2278,7 +2278,7 @@
     }
 
     .idp-roadmap-kicker {
-        font-size: 9px;
+        font-size:14px;
         letter-spacing: 1.5px;
     }
 
