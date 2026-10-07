@@ -5155,3 +5155,4072 @@ border: 1px solid #d8d7d7;
 }
 
 
+/* =========================================================
+   ANNUAL REPORTS
+   GRAND COLLEGE INNER PAGE DESIGN
+========================================================= */
+
+.annual-reports {
+    position: relative;
+
+    padding: 50px 20px;
+
+background-color:seagreen;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circles */
+
+.annual-reports::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    top: -180px;
+    left: -120px;
+}
+
+.annual-reports::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    bottom: -280px;
+    right: -180px;
+}
+
+
+/* Main container */
+
+.annual-container {
+    position: relative;
+    z-index: 2;
+    width: 92%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.annual-heading {
+    max-width: 800px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.annual-small-title {
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.annual-heading h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.annual-line {
+    width: 70px;
+    height: 3px;
+    margin: 18px auto;
+    background: #d8b45a;
+}
+
+
+
+
+/* =========================================================
+   REPORT GRID
+========================================================= */
+
+.annual-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================================================
+   REPORT CARD
+========================================================= */
+
+.report-card {
+    position: relative;
+    min-height: 260px;
+    padding: 30px 25px;
+    background: rgba(255,255,255,0.96);
+    border: 2px solid crimson;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.report-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: #d8b45a;
+}
+
+.report-card:hover {
+    transform: translateY(-9px);
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   YEAR
+========================================================= */
+
+.report-year {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    padding: 6px 11px;
+    background: #0c3561;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PDF ICON
+========================================================= */
+
+.report-icon {
+    width: 70px;
+    height: 70px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f6f9;
+    border-radius: 50%;
+    color: #b3261e;
+    font-size: 30px;
+    transition: 0.4s ease;
+}
+
+.report-card:hover .report-icon {
+    transform: scale(1.08);
+    background: #fff0ef;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.report-content h3 {
+    margin: 0 0 8px;
+    color: #153b62;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.report-content p {
+    margin: 0 0 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PDF BUTTON
+========================================================= */
+
+.report-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 125px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    background: #153b62;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.report-btn:hover {
+    background: #b18a32;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* =========================================================
+   ANNUAL ACCOUNTS
+   GRAND COLLEGE DOCUMENT DESIGN
+========================================================= */
+
+.annual-accounts {
+    position: relative;
+
+    padding: 50px 20px;
+
+background-color:seagreen;
+
+    overflow: hidden;
+}
+
+
+
+/* DECORATIVE CIRCLE */
+
+.annual-accounts::before {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 50%;
+
+    top: -180px;
+    left: -120px;
+}
+
+
+.annual-accounts::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 50%;
+
+    right: -180px;
+    bottom: -280px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.accounts-container {
+    position: relative;
+
+    z-index: 2;
+
+    width:100%;
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.accounts-heading {
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.accounts-small-title {
+    display: inline-block;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+.accounts-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 42px;
+
+    font-weight: 700;
+}
+
+
+.accounts-line {
+    width: 70px;
+    height: 3px;
+
+    margin: 18px auto;
+
+    background: #d8b45a;
+}
+
+
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.accounts-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   ACCOUNT CARD
+========================================================= */
+
+.account-card {
+    position: relative;
+
+    min-height: 265px;
+
+    padding: 30px 22px;
+
+    background: rgba(255,255,255,0.97);
+
+    border-radius: 16px;
+
+    border: 2px solid
+        crimson;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition: 0.4s ease;
+}
+
+
+/* GOLD TOP BORDER */
+
+.account-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #d8b45a;
+}
+
+
+.account-card:hover {
+    transform: translateY(-9px);
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   YEAR BADGE
+========================================================= */
+
+.account-year {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    padding: 6px 11px;
+
+    background: #153b62;
+
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.account-icon {
+    width: 70px;
+    height: 70px;
+
+    margin-top: 15px;
+    margin-bottom: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f4f6f9;
+
+    color: #153b62;
+
+    font-size: 28px;
+
+    transition: 0.4s ease;
+}
+
+
+.account-card:hover .account-icon {
+    transform: scale(1.08);
+
+    background: #eef4fa;
+
+    color: #b18a32;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.account-content h3 {
+    margin: 0 0 8px;
+
+    color: #153b62;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.account-content p {
+    margin: 0 0 20px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PDF BUTTON
+========================================================= */
+
+.account-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 120px;
+
+    padding: 10px 17px;
+
+    border-radius: 5px;
+
+    background: #153b62;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.account-btn:hover {
+    background: #b18a32;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   COLLEGE COMMITTEE - MEMBERS
+   GRAND COLLEGE DOCUMENT DESIGN
+========================================================= */
+
+.committee-members {
+    position: relative;
+
+    padding: 50px 20px;
+
+background-color:seagreen;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLES
+========================================================= */
+
+.committee-members::before {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border: 1px solid
+        rgba(255,255,255,0.12);
+
+    border-radius: 50%;
+
+    top: -180px;
+    left: -120px;
+}
+
+
+.committee-members::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid
+        rgba(255,255,255,0.08);
+
+    border-radius: 50%;
+
+    right: -180px;
+    bottom: -280px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.committee-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: 92%;
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.committee-heading {
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.committee-small-title {
+    display: inline-block;
+
+    color:white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+.committee-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 42px;
+
+    font-weight: 700;
+}
+
+
+.committee-line {
+    width: 70px;
+    height: 3px;
+
+    margin: 18px auto;
+
+    background: #d8b45a;
+}
+
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.committee-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.committee-card {
+    position: relative;
+
+    min-height: 265px;
+
+    padding: 30px 22px;
+
+    background: rgba(255,255,255,0.97);
+
+    border-radius: 16px;
+
+    border: 2px solid
+       crimson;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition: 0.4s ease;
+}
+
+
+/* GOLD TOP LINE */
+
+.committee-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #d8b45a;
+}
+
+
+.committee-card:hover {
+    transform: translateY(-9px);
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   YEAR BADGE
+========================================================= */
+
+.committee-year {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    padding: 6px 11px;
+
+    background: #153b62;
+
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   COMMITTEE ICON
+========================================================= */
+
+.committee-icon {
+    width: 70px;
+    height: 70px;
+
+    margin-top: 15px;
+    margin-bottom: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f2f5f8;
+
+    color: #153b62;
+
+    font-size: 28px;
+
+    transition: 0.4s ease;
+}
+
+
+.committee-card:hover .committee-icon {
+    transform: scale(1.08);
+
+    background: #eef4fa;
+
+    color: #b18a32;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.committee-content h3 {
+    margin: 0 0 8px;
+
+    color: #153b62;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.committee-content p {
+    margin: 0 0 20px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PDF BUTTON
+========================================================= */
+
+.committee-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 120px;
+
+    padding: 10px 17px;
+
+    border-radius: 5px;
+
+    background: #153b62;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.committee-btn:hover {
+    background: #b18a32;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+/* =========================================================
+   COLLEGE COMMITTEE - MINUTES
+   GRAND COLLEGE DOCUMENT DESIGN
+========================================================= */
+
+.committee-minutes {
+    position: relative;
+
+    padding: 50px 20px;
+
+background-color:seagreen;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLES
+========================================================= */
+
+.committee-minutes::before {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border: 1px solid
+        rgba(255,255,255,0.12);
+
+    border-radius: 50%;
+
+    top: -180px;
+    left: -120px;
+}
+
+
+.committee-minutes::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid
+        rgba(255,255,255,0.08);
+
+    border-radius: 50%;
+
+    right: -180px;
+    bottom: -280px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.minutes-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: 92%;
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.minutes-heading {
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.minutes-small-title {
+    display: inline-block;
+
+    color:white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+.minutes-heading h2 {
+    margin: 0;
+
+    color:white;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.minutes-line {
+    width: 70px;
+    height: 3px;
+
+    margin: 18px auto;
+
+    background: #d8b45a;
+}
+
+
+.minutes-heading p {
+    max-width: 760px;
+
+    margin: auto;
+
+    color: rgba(255,255,255,0.82);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.minutes-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.minutes-card {
+    position: relative;
+
+    min-height: 265px;
+
+    padding: 30px 22px;
+
+    background: rgba(255,255,255,0.97);
+
+    border-radius: 16px;
+
+    border: 2px solid
+      crimson;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition: 0.4s ease;
+}
+
+
+/* GOLD TOP LINE */
+
+.minutes-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #d8b45a;
+}
+
+
+.minutes-card:hover {
+    transform: translateY(-9px);
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   YEAR BADGE
+========================================================= */
+
+.minutes-year {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    padding: 6px 11px;
+
+    background: #153b62;
+
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MINUTES ICON
+========================================================= */
+
+.minutes-icon {
+    width: 70px;
+    height: 70px;
+
+    margin-top: 15px;
+    margin-bottom: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f2f5f8;
+
+    color: #153b62;
+
+    font-size: 28px;
+
+    transition: 0.4s ease;
+}
+
+
+.minutes-card:hover .minutes-icon {
+    transform: scale(1.08);
+
+    background: #eef4fa;
+
+    color: #b18a32;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.minutes-content h3 {
+    margin: 0 0 8px;
+
+    color: #153b62;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.minutes-content p {
+    margin: 0 0 20px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PDF BUTTON
+========================================================= */
+
+.minutes-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 120px;
+
+    padding: 10px 17px;
+
+    border-radius: 5px;
+
+    background: #153b62;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.minutes-btn:hover {
+    background: #b18a32;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+/* =========================================================
+   INTERNAL COMPLAINTS COMMITTEE
+   BASCW PREMIUM COLORFUL SECTION
+========================================================= */
+
+.icc-section {
+    position: relative;
+    padding: 90px 20px 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f8ff 0%,
+            #ffffff 45%,
+            #f7fbff 100%
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   BACKGROUND SHAPES
+========================================================= */
+
+.icc-shape {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.icc-shape-one {
+    width: 420px;
+    height: 420px;
+    top: -210px;
+    right: -130px;
+    background: rgba(78, 115, 210, 0.08);
+}
+
+.icc-shape-two {
+    width: 300px;
+    height: 300px;
+    bottom: -150px;
+    left: -100px;
+    background: rgba(226, 94, 145, 0.07);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.icc-container {
+    position: relative;
+    z-index: 2;
+
+    width: 92%;
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.icc-hero {
+    position: relative;
+
+    min-height: 360px;
+    padding: 55px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            120deg,
+            #123d70,
+            #1b568e
+        );
+
+    color: #ffffff;
+
+    border: 3px solid rgba(255,255,255,0.12);
+}
+
+.icc-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    right: -140px;
+    top: -190px;
+
+    border: 70px solid rgba(255,255,255,0.06);
+
+    border-radius: 50%;
+}
+
+.icc-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 820px;
+}
+
+.icc-label {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.13);
+
+    color: #f4d27a;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.icc-hero h1 {
+    margin: 0 0 22px;
+
+    color: #ffffff;
+
+    font-size: 44px;
+    line-height: 1.15;
+
+    font-weight: 700;
+}
+
+.icc-hero h1 span {
+    color: #f3ca63;
+}
+
+.icc-hero p {
+    margin: 0;
+
+    max-width: 790px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    line-height: 1.85;
+
+    text-align: justify;
+}
+
+
+/* =========================================================
+   HERO ICON
+========================================================= */
+
+.icc-hero-icon {
+    position: relative;
+    z-index: 3;
+
+    min-width: 220px;
+
+    text-align: center;
+}
+
+.icc-icon-circle {
+    width: 125px;
+    height: 125px;
+
+    margin: 0 auto 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    color: #f3ca63;
+
+    font-size: 52px;
+}
+
+.icc-hero-icon span {
+    color: #ffffff;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.icc-title {
+    margin: 75px auto 40px;
+
+    text-align: center;
+}
+
+.icc-title > span {
+    color: #426da2;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.icc-title h2 {
+    margin: 8px 0 0;
+
+    color: #173b62;
+
+    font-size: 34px;
+
+    font-weight: 700;
+}
+
+.icc-title-line {
+    width: 65px;
+    height: 3px;
+
+    margin: 16px auto 0;
+
+    background: #e2b94f;
+}
+
+
+/* =========================================================
+   RESPONSIBILITY GRID
+========================================================= */
+
+.icc-responsibilities {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.icc-card {
+    position: relative;
+
+    min-height: 245px;
+
+    padding: 30px 27px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 2px solid #e2b94f;
+
+    transition: 0.35s ease;
+}
+
+.icc-card:hover {
+    transform: translateY(-7px);
+}
+
+.icc-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+}
+
+.icc-blue::before {
+    background: #3778c2;
+}
+
+.icc-purple::before {
+    background: #8056c7;
+}
+
+.icc-green::before {
+    background: #3a9b72;
+}
+
+.icc-orange::before {
+    background: #e28a3b;
+}
+
+.icc-pink::before {
+    background: #d85d8c;
+}
+
+.icc-teal::before {
+    background: #289a9a;
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.icc-card-icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 23px;
+}
+
+.icc-blue .icc-card-icon {
+    background: #edf5ff;
+    color: #3778c2;
+}
+
+.icc-purple .icc-card-icon {
+    background: #f4efff;
+    color: #8056c7;
+}
+
+.icc-green .icc-card-icon {
+    background: #edf9f3;
+    color: #3a9b72;
+}
+
+.icc-orange .icc-card-icon {
+    background: #fff4e9;
+    color: #e28a3b;
+}
+
+.icc-pink .icc-card-icon {
+    background: #fff0f5;
+    color: #d85d8c;
+}
+
+.icc-teal .icc-card-icon {
+    background: #ebfafa;
+    color: #289a9a;
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.icc-card h3 {
+    margin: 0 0 10px;
+
+    color: #173b62;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+.icc-card p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.icc-number {
+    position: absolute;
+
+    right: 20px;
+    bottom: 15px;
+
+    color: #e9edf3;
+
+    font-size: 42px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   CONFIDENTIALITY BANNER
+========================================================= */
+
+.icc-confidence {
+    margin-top: 35px;
+
+    padding: 30px 35px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    border-radius: 18px;
+
+    background: #fff8e8;
+
+    border: 2px solid #e2b94f;
+}
+
+.icc-confidence-icon {
+    min-width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f4c95d;
+
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+.icc-confidence-content h3 {
+    margin: 0 0 7px;
+
+    color: #684e16;
+
+    font-size: 20px;
+}
+
+.icc-confidence-content p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   WEBSITE ACTION
+========================================================= */
+
+.icc-action {
+    margin-top: 25px;
+
+    padding: 30px 35px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 22px;
+
+    border-radius: 18px;
+
+    background: #edf5ff;
+
+    border: 2px solid #3979c5;
+}
+
+.icc-action-icon {
+    min-width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #3979c5;
+
+    color: #ffffff;
+
+    font-size: 20px;
+}
+
+.icc-action-label {
+    color: #3979c5;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.icc-action-content h3 {
+    margin: 5px 0 7px;
+
+    color: #173b62;
+
+    font-size: 20px;
+}
+
+.icc-action-content p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   QUICK LINKS
+========================================================= */
+
+.icc-links {
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.icc-link {
+    padding: 17px 18px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    background: #ffffff;
+
+    border: 1px solid #e7ebf1;
+
+    border-radius: 12px;
+
+    color: #173b62;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.icc-link > i:first-child {
+    color: #3979c5;
+
+    font-size: 17px;
+}
+
+.icc-link > i:last-child {
+    margin-left: auto;
+
+    font-size: 15px;
+
+    color: #9aa6b4;
+}
+
+.icc-link:hover {
+    transform: translateY(-4px);
+
+    border-color: #3979c5;
+
+    color: #3979c5;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   BASCW ADMISSION PROCEDURE
+   COLORFUL ANIMATED CARDS
+========================================= */
+
+
+/* =========================================
+   RESET
+========================================= */
+
+.basc-admission-area *,
+.basc-admission-area *::before,
+.basc-admission-area *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.basc-admission-area {
+    position: relative;
+
+    width: 100%;
+
+    padding: 90px 20px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* Background decoration */
+
+.basc-admission-area::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -280px;
+    right: -220px;
+
+    border-radius: 50%;
+
+    background: #fff1d6;
+
+    opacity: 0.55;
+}
+
+
+/* Background decoration */
+
+.basc-admission-area::after {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    bottom: -230px;
+    left: -190px;
+
+    border-radius: 50%;
+
+    background: #e9f5ff;
+
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.basc-admission-wrap {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.basc-admission-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    margin-bottom: 55px;
+}
+
+
+/* =========================================
+   TITLE BLOCK
+========================================= */
+
+.basc-title-block {
+    max-width: 900px;
+}
+
+
+/* =========================================
+   TITLE TAG
+========================================= */
+
+.basc-title-tag {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    color: #a51d2d;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.basc-title-tag span {
+    display: block;
+
+    width: 25px;
+
+    height: 2px;
+
+    background: #e3ad18;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.basc-title-block h2 {
+    margin: 0;
+
+    color: #173f73;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.basc-title-block p {
+    max-width: 850px;
+
+    margin: 18px 0 0;
+
+    color: #333333;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   ROUND NUMBER
+========================================= */
+
+.basc-round-number {
+    position: relative;
+
+    flex: 0 0 140px;
+
+    width: 140px;
+
+    height: 140px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #173f73;
+
+    border-radius: 50%;
+
+}
+
+
+.basc-round-number::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -10px;
+
+    border: 2px dashed #e3ad18;
+
+    border-radius: 50%;
+
+}
+
+
+.basc-round-number span {
+    color: #ffffff;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+.basc-round-number small {
+    margin-top: 6px;
+
+    color: #f4c43d;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   CARD LAYOUT
+========================================= */
+
+.basc-admission-layout {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 24px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   BASE CARD
+========================================= */
+
+.basc-flow-card {
+    position: relative;
+
+    min-height: 335px;
+
+    padding: 30px 25px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+/* =========================================
+   CARD COLORS
+========================================= */
+
+.basc-card-one {
+    background: #fff0e7;
+
+    color: #79331c;
+
+}
+
+
+.basc-card-two {
+    background: #e8f3ff;
+
+    color: #174d7a;
+
+}
+
+
+.basc-card-three {
+    background: #eaf8ee;
+
+    color: #21623a;
+
+}
+
+
+.basc-card-four {
+    background: #fff5cf;
+
+    color: #705512;
+
+}
+
+
+.basc-card-five {
+    background: #f8e9f4;
+
+    color: #733d68;
+
+}
+
+
+.basc-card-six {
+    background: #e9edff;
+
+    color: #35478a;
+
+}
+
+
+.basc-card-seven {
+    grid-column: span 2;
+
+    background: #fce7e9;
+
+    color: #8b2633;
+
+}
+
+
+/* =========================================
+   DECORATIVE CARD SHAPE
+========================================= */
+
+.basc-card-shape {
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    right: -45px;
+    top: -45px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    transition: transform 0.5s ease;
+}
+
+
+.basc-flow-card:hover .basc-card-shape {
+    transform: scale(1.5);
+}
+
+
+/* =========================================
+   NUMBER CIRCLE
+========================================= */
+
+.basc-card-circle {
+    position: relative;
+
+    z-index: 3;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 27px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease;
+}
+
+
+.basc-flow-card:hover .basc-card-circle {
+    transform: rotate(12deg) scale(1.08);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.basc-flow-content {
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* Step label */
+
+.basc-step-text {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    opacity: 0.7;
+}
+
+
+/* Card heading */
+
+.basc-flow-content h3 {
+    max-width: 245px;
+
+    margin: 0 0 13px;
+
+    color: #222222;
+
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+}
+
+
+/* Card paragraph */
+
+.basc-flow-content p {
+    margin: 0;
+
+    color: #333333;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CARD ICON
+========================================= */
+
+.basc-card-symbol {
+    position: absolute;
+
+    right: 22px;
+
+    bottom: 22px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease;
+}
+
+
+.basc-flow-card:hover .basc-card-symbol {
+    transform: rotate(-12deg) scale(1.12);
+
+    background: #ffffff;
+}
+
+
+
+/* Preserve hover transform */
+
+.basc-card-one:hover,
+.basc-card-two:hover,
+.basc-card-three:hover,
+.basc-card-four:hover,
+.basc-card-five:hover,
+.basc-card-six:hover,
+.basc-card-seven:hover {
+    transform: translateY(-12px) rotate(0deg);
+}
+
+
+/* =========================================
+   FOOTER MESSAGE
+========================================= */
+
+.basc-admission-footer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+    padding: 22px 25px;
+
+    background: #173f73;
+
+    border-radius: 15px;
+
+    color: #ffffff;
+}
+
+
+/* Footer icon */
+
+.basc-footer-icon {
+    flex: 0 0 48px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f4c43d;
+
+    color: #173f73;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    animation: bascPulse 2.5s infinite;
+}
+
+
+/* Footer content */
+
+.basc-footer-text {
+    flex: 1;
+}
+
+
+.basc-footer-text strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+}
+
+
+.basc-footer-text p {
+    margin: 0;
+
+    color: #e9f0f8;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes bascFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+
+@keyframes bascRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes bascPulse {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(244, 196, 61, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(244, 196, 61, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(244, 196, 61, 0);
+    }
+}
+
+
+@keyframes bascCardAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(40px)
+            scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   BASCW ELIGIBILITY & DOCUMENTS
+========================================================= */
+
+.basc-eligibility-section {
+    position: relative;
+    width: 100%;
+    padding: 50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.basc-eligibility-container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT VISUAL
+========================================================= */
+
+.basc-eligibility-visual {
+    position: relative;
+
+    min-height: 650px;
+
+    padding: 20px;
+}
+
+
+/* Main image */
+
+.basc-image-main {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 25px 25px 25px 5px;
+
+    box-shadow:
+        18px 18px 0 #e5b72f;
+
+    animation: bascImageFloat 5s ease-in-out infinite;
+}
+
+.basc-image-main img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+.basc-eligibility-visual:hover .basc-image-main img {
+    transform: scale(1.06);
+}
+
+
+/* Small image */
+
+.basc-image-small {
+    position: absolute;
+
+    right: 0;
+    bottom: -40px;
+
+    width: 48%;
+    height: 220px;
+
+    padding: 7px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+  box-shadow:
+        18px 18px 0 #e5b72f;
+
+    z-index: 3;
+}
+
+.basc-image-small img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 13px;
+}
+
+
+/* =========================================================
+   IMAGE CAPTION
+========================================================= */
+
+.basc-image-caption {
+    position: absolute;
+
+    left: 5px;
+    bottom: 5px;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 14px 18px;
+
+    background: #8b1e2d;
+
+    color: #ffffff;
+
+    border-radius: 12px;
+
+}
+
+.basc-image-caption > span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    background: #e5b72f;
+
+    color: #08306c;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.basc-image-caption strong {
+    display: block;
+
+    font-size: 16px;
+}
+
+.basc-image-caption small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #f5e7e9;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   IMAGE DECORATION
+========================================================= */
+
+.basc-image-decoration {
+    position: absolute;
+
+    top: 40px;
+    right: 5px;
+
+    width: 100px;
+    height: 100px;
+
+    border: 18px solid rgba(8, 48, 108, 0.08);
+
+    border-radius: 50%;
+
+    animation: bascDecoration 8s linear infinite;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.basc-eligibility-content {
+    width: 100%;
+}
+
+
+/* Kicker */
+
+.basc-section-kicker {
+    margin-bottom: 12px;
+
+    color: #8b1e2d;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* Main heading */
+
+.basc-eligibility-content h2 {
+    margin: 0;
+
+    color: #08306c;
+
+    font-size: 38px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+.basc-eligibility-content h2 span {
+    color: #8b1e2d;
+}
+
+
+/* Heading line */
+
+.basc-title-line {
+    width: 65px;
+    height: 4px;
+
+    margin: 15px 0 20px;
+
+    background: #e5b72f;
+}
+
+
+/* Intro */
+
+.basc-eligibility-intro {
+    margin: 0 0 30px;
+
+    color: #222222;
+text-align: justify;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DOCUMENT HEADING
+========================================================= */
+
+.basc-document-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+.basc-document-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #08306c;
+
+    color: #ffffff;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+}
+
+.basc-document-heading small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #8b1e2d;
+
+    font-size:14px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.basc-document-heading h3 {
+    margin: 0;
+
+    color: #08306c;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DOCUMENT GRID
+========================================================= */
+
+.basc-document-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+}
+
+
+/* =========================================================
+   DOCUMENT CARD
+========================================================= */
+
+.basc-document-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 35px 45px 1fr;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 112px;
+
+    padding: 16px;
+
+    background: #f8f9fb;
+
+    border: 1px solid #e6e9ee;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.basc-document-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: #e5b72f;
+
+    transform: scaleY(0);
+
+    transform-origin: bottom;
+
+    transition: transform 0.3s ease;
+}
+
+.basc-document-card:hover {
+    transform: translateY(-5px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 28px rgba(8, 48, 108, 0.09);
+}
+
+.basc-document-card:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* Number */
+
+.basc-document-number {
+    color: #b8bdc5;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* Icon */
+
+.basc-document-card-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf0f8;
+
+    color: #08306c;
+
+    border-radius: 11px;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+.basc-document-card:hover .basc-document-card-icon {
+    background: #08306c;
+
+    color: #ffffff;
+
+    transform: rotate(-5deg);
+}
+
+
+/* Card heading */
+
+.basc-document-card h4 {
+    margin: 0 0 5px;
+
+    color: #08306c;
+
+    font-size: 15px;
+    line-height: 1.35;
+
+    font-weight: 700;
+}
+
+
+/* Card paragraph */
+
+.basc-document-card p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+
+/* Wide card */
+
+.basc-document-wide {
+    grid-column: span 2;
+}
+
+
+/* =========================================================
+   IMPORTANT NOTE
+========================================================= */
+
+.basc-eligibility-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-top: 18px;
+
+    padding: 17px 18px;
+
+    background: #fff8df;
+
+    border-left: 4px solid #e5b72f;
+
+    border-radius: 0 12px 12px 0;
+}
+
+.basc-note-icon {
+    flex: 0 0 35px;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e5b72f;
+
+    color: #08306c;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+}
+
+.basc-eligibility-note strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #08306c;
+
+    font-size: 15px;
+}
+
+.basc-eligibility-note p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes bascImageFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+@keyframes bascDecoration {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   BASCW - UGC FEE REFUND POLICY
+   Creative Design
+   No Box Shadow
+   Desktop Font: 15-16px
+   Fully Responsive
+========================================================= */
+
+.basc-fee-refund-section {
+    width: 100%;
+    padding: 75px 6%;
+    background: #fffaf3;
+    overflow: hidden;
+}
+
+.basc-fee-refund-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT VISUAL
+========================================================= */
+
+.basc-fee-refund-visual {
+    position: relative;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basc-refund-image-wrap {
+    position: relative;
+    width: 88%;
+    z-index: 2;
+}
+
+.basc-refund-main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px 30px 30px 8px;
+    border: 7px solid #ffffff;
+    outline: 2px solid #e5b72f;
+    animation: bascRefundImage 5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   IMAGE BADGE
+========================================================= */
+
+.basc-refund-badge {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: -35px;
+    top: 35px;
+    background: #8b1e2d;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    animation: bascRefundBadge 4s ease-in-out infinite;
+}
+
+.basc-refund-badge span {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.basc-refund-badge small {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   DECORATIONS
+========================================================= */
+
+.basc-refund-decoration {
+    position: absolute;
+    z-index: 1;
+}
+
+.basc-refund-dot-one {
+    width: 115px;
+    height: 115px;
+    background: #e5b72f;
+    border-radius: 50%;
+    left: 0;
+    top: 20px;
+    animation: bascRefundDot 5s ease-in-out infinite;
+}
+
+.basc-refund-dot-two {
+    width: 90px;
+    height: 90px;
+    background: #08306c;
+    border-radius: 20px;
+    right: 5px;
+    bottom: 20px;
+    transform: rotate(25deg);
+    animation: bascRefundSquare 7s linear infinite;
+}
+
+
+/* =========================================================
+   IMAGE CAPTION
+========================================================= */
+
+.basc-refund-image-caption {
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 18px;
+    background: #08306c;
+    color: #ffffff;
+    border-radius: 12px;
+    z-index: 5;
+    animation: bascCaptionFloat 4s ease-in-out infinite;
+}
+
+.basc-refund-image-caption i {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5b72f;
+    color: #08306c;
+    border-radius: 9px;
+    font-size: 16px;
+}
+
+.basc-refund-image-caption strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.basc-refund-image-caption span {
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.basc-fee-refund-content {
+    width: 100%;
+}
+
+.basc-refund-kicker {
+    display: inline-block;
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 10px;
+    color: #8b1e2d;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.basc-refund-kicker::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e5b72f;
+}
+
+.basc-fee-refund-content h2 {
+    margin: 0 0 15px;
+    color: #08306c;
+    font-size: 37px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.basc-refund-intro {
+    margin: 0 0 24px;
+    color: #111111;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   POLICY BOX
+========================================================= */
+
+.basc-refund-policy-box {
+    display: flex;
+    gap: 17px;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 22px;
+    background: #eaf3ff;
+    border-left: 5px solid #08306c;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+}
+
+.basc-refund-policy-box:hover {
+    transform: translateX(5px);
+}
+
+.basc-policy-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #08306c;
+    color: #e5b72f;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.basc-refund-policy-box h3 {
+    margin: 0 0 6px;
+    color: #08306c;
+    font-size: 19px;
+}
+
+.basc-refund-policy-box p {
+    margin: 0 0 10px;
+    color: #111111;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.basc-policy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 13px;
+    background: #8b1e2d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.basc-policy-link:hover {
+    background: #6f1724;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   REFUND POINTS
+========================================================= */
+
+.basc-refund-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.basc-refund-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 13px;
+    transition: transform 0.3s ease;
+}
+
+.basc-refund-point:hover {
+    transform: translateY(-5px);
+}
+
+.refund-red {
+    background: #fff0ed;
+    border: 1px solid #efc2ba;
+}
+
+.refund-blue {
+    background: #edf5ff;
+    border: 1px solid #c2d8f2;
+}
+
+.refund-gold {
+    background: #fff8dc;
+    border: 1px solid #ead88f;
+}
+
+.refund-green {
+    background: #edf8ef;
+    border: 1px solid #c1dfc7;
+}
+
+.basc-point-number {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.refund-red .basc-point-number {
+    background: #8b1e2d;
+}
+
+.refund-blue .basc-point-number {
+    background: #08306c;
+}
+
+.refund-gold .basc-point-number {
+    background: #b38a00;
+}
+
+.refund-green .basc-point-number {
+    background: #347a43;
+}
+
+.basc-refund-point h4 {
+    margin: 0 0 5px;
+    color: #111111;
+    font-size: 16px;
+}
+
+.basc-refund-point p {
+    margin: 0;
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   REFUND PROCESS
+========================================================= */
+
+.basc-refund-process {
+    max-width: 1250px;
+    margin: 70px auto 0;
+}
+
+.basc-process-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.basc-process-heading > span {
+    display: inline-block;
+    color: #8b1e2d;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+.basc-process-heading h3 {
+    margin: 0 0 10px;
+    color: #08306c;
+    font-size: 29px;
+}
+
+.basc-process-heading p {
+    margin: 0;
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROCESS GRID
+========================================================= */
+
+.basc-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.basc-process-card {
+    position: relative;
+    padding: 28px 23px;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.35s ease;
+}
+
+.basc-process-card:hover {
+    transform: translateY(-8px);
+}
+
+.process-one {
+    background: #fff0ed;
+    border-top: 5px solid #8b1e2d;
+}
+
+.process-two {
+    background: #edf5ff;
+    border-top: 5px solid #08306c;
+}
+
+.process-three {
+    background: #fff8dc;
+    border-top: 5px solid #e5b72f;
+}
+
+.basc-process-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.process-one .basc-process-icon {
+    background: #8b1e2d;
+}
+
+.process-two .basc-process-icon {
+    background: #08306c;
+}
+
+.process-three .basc-process-icon {
+    background: #b28a00;
+}
+
+.basc-process-number {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 34px;
+    font-weight: 800;
+    opacity: 0.12;
+    color: #111111;
+}
+
+.basc-process-card h4 {
+    margin: 0 0 8px;
+    color: #111111;
+    font-size: 19px;
+}
+
+.basc-process-card p {
+    margin: 0;
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   CURRENT CYCLE NOTICE
+========================================================= */
+
+.basc-current-cycle {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 20px;
+    background: #08306c;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.basc-cycle-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5b72f;
+    color: #08306c;
+    border-radius: 11px;
+    font-size: 18px;
+}
+
+.basc-cycle-content {
+    flex: 1;
+}
+
+.basc-cycle-content h4 {
+    margin: 0 0 4px;
+    color: #e5b72f;
+    font-size: 17px;
+}
+
+.basc-cycle-content p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.basc-cycle-label {
+    min-width: 105px;
+    text-align: center;
+    padding-left: 15px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.basc-cycle-label span {
+    display: block;
+    color: #e5b72f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.basc-cycle-label strong {
+    display: block;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes bascRefundImage {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes bascRefundBadge {
+    0%,
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(6deg) translateY(-7px);
+    }
+}
+
+@keyframes bascRefundDot {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(12px, 10px);
+    }
+}
+
+@keyframes bascRefundSquare {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes bascCaptionFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* =========================================================
+   TABLET - 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .basc-fee-refund-section {
+        padding: 60px 5%;
+    }
+
+    .basc-fee-refund-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .basc-fee-refund-visual {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 500px;
+    }
+
+    .basc-refund-image-wrap {
+        width: 82%;
+    }
+
+    .basc-refund-main-image {
+        height: 450px;
+    }
+
+    .basc-fee-refund-content h2 {
+        font-size: 33px;
+    }
+
+    .basc-process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .basc-fee-refund-section {
+        padding: 50px 20px;
+    }
+
+    .basc-fee-refund-container {
+        gap: 35px;
+    }
+
+    .basc-fee-refund-visual {
+        min-height: 410px;
+    }
+
+    .basc-refund-image-wrap {
+        width: 85%;
+    }
+
+    .basc-refund-main-image {
+        height: 370px;
+        border-width: 5px;
+        border-radius: 23px 23px 23px 7px;
+    }
+
+    .basc-refund-badge {
+        width: 85px;
+        height: 85px;
+        right: -25px;
+        top: 25px;
+    }
+
+    .basc-refund-badge span {
+        font-size: 19px;
+    }
+
+    .basc-refund-badge small {
+        font-size: 10px;
+    }
+
+    .basc-refund-dot-one {
+        width: 85px;
+        height: 85px;
+    }
+
+    .basc-refund-dot-two {
+        width: 65px;
+        height: 65px;
+    }
+
+    .basc-refund-image-caption {
+        left: 5px;
+        bottom: 15px;
+        padding: 10px 13px;
+    }
+
+    .basc-refund-image-caption i {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .basc-refund-image-caption strong {
+        font-size: 14px;
+    }
+
+    .basc-refund-image-caption span {
+        font-size: 12px;
+    }
+
+    .basc-refund-kicker {
+        font-size: 13px;
+    }
+
+    .basc-fee-refund-content h2 {
+        font-size: 29px;
+    }
+
+    .basc-refund-intro {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .basc-refund-policy-box {
+        padding: 17px;
+    }
+
+    .basc-refund-policy-box p {
+        font-size: 15px;
+    }
+
+    .basc-refund-points {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-refund-point p {
+        font-size: 15px;
+    }
+
+    .basc-refund-process {
+        margin-top: 50px;
+    }
+
+    .basc-process-heading h3 {
+        font-size: 25px;
+    }
+
+    .basc-process-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .basc-process-card {
+        padding: 23px 20px;
+    }
+
+    .basc-process-card p {
+        font-size: 15px;
+    }
+
+    .basc-current-cycle {
+        align-items: flex-start;
+    }
+
+    .basc-cycle-label {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - 468px
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .basc-fee-refund-section {
+        padding: 40px 15px;
+    }
+
+    .basc-fee-refund-container {
+        gap: 28px;
+    }
+
+    .basc-fee-refund-visual {
+        min-height: 330px;
+    }
+
+    .basc-refund-image-wrap {
+        width: 88%;
+    }
+
+    .basc-refund-main-image {
+        height: 290px;
+        border-width: 4px;
+        border-radius: 18px 18px 18px 6px;
+    }
+
+    .basc-refund-badge {
+        width: 70px;
+        height: 70px;
+        right: -17px;
+        top: 20px;
+        border-width: 3px;
+    }
+
+    .basc-refund-badge span {
+        font-size: 16px;
+    }
+
+    .basc-refund-badge small {
+        font-size: 8px;
+    }
+
+    .basc-refund-dot-one {
+        width: 60px;
+        height: 60px;
+    }
+
+    .basc-refund-dot-two {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+
+    .basc-refund-image-caption {
+        left: 0;
+        bottom: 7px;
+        gap: 8px;
+        padding: 8px 10px;
+        border-radius: 9px;
+    }
+
+    .basc-refund-image-caption i {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .basc-refund-image-caption strong {
+        font-size: 12px;
+    }
+
+    .basc-refund-image-caption span {
+        font-size: 10px;
+    }
+
+    .basc-refund-kicker {
+        padding-left: 33px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .basc-refund-kicker::before {
+        width: 24px;
+    }
+
+    .basc-fee-refund-content h2 {
+        font-size: 25px;
+    }
+
+    .basc-refund-intro {
+        font-size: 15px;
+    }
+
+    .basc-refund-policy-box {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .basc-policy-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 16px;
+    }
+
+    .basc-refund-policy-box h3 {
+        font-size: 17px;
+    }
+
+    .basc-refund-policy-box p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .basc-policy-link {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+    .basc-refund-point {
+        padding: 14px;
+        gap: 10px;
+    }
+
+    .basc-point-number {
+        width: 33px;
+        height: 33px;
+        min-width: 33px;
+        font-size: 11px;
+    }
+
+    .basc-refund-point h4 {
+        font-size: 15px;
+    }
+
+    .basc-refund-point p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .basc-process-heading h3 {
+        font-size: 23px;
+    }
+
+    .basc-process-heading p {
+        font-size: 15px;
+    }
+
+    .basc-process-card {
+        padding: 20px 17px;
+    }
+
+    .basc-process-card h4 {
+        font-size: 17px;
+    }
+
+    .basc-process-card p {
+        font-size: 15px;
+    }
+
+    .basc-current-cycle {
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .basc-cycle-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 15px;
+    }
+
+    .basc-cycle-content h4 {
+        font-size: 15px;
+    }
+
+    .basc-cycle-content p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE - 350px
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-fee-refund-section {
+        padding: 35px 12px;
+    }
+
+    .basc-fee-refund-visual {
+        min-height: 290px;
+    }
+
+    .basc-refund-main-image {
+        height: 250px;
+    }
+
+    .basc-refund-badge {
+        width: 62px;
+        height: 62px;
+        right: -12px;
+    }
+
+    .basc-refund-badge span {
+        font-size: 14px;
+    }
+
+    .basc-refund-badge small {
+        font-size: 7px;
+    }
+
+    .basc-fee-refund-content h2 {
+        font-size: 22px;
+    }
+
+    .basc-refund-intro,
+    .basc-refund-policy-box p,
+    .basc-refund-point p,
+    .basc-process-card p,
+    .basc-current-cycle p {
+        font-size: 15px;
+    }
+
+    .basc-refund-image-caption {
+        padding: 7px 8px;
+    }
+
+    .basc-refund-image-caption strong {
+        font-size: 11px;
+    }
+
+    .basc-refund-image-caption span {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .basc-refund-main-image,
+    .basc-refund-badge,
+    .basc-refund-dot-one,
+    .basc-refund-dot-two,
+    .basc-refund-image-caption {
+        animation: none;
+    }
+
+    .basc-refund-policy-box,
+    .basc-refund-point,
+    .basc-process-card {
+        transition: none;
+    }
+}
