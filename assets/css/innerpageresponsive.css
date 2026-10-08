@@ -5107,3 +5107,424 @@
         height: 38px;
     }
 }
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .basc-student-support {
+        padding: 70px 5%;
+    }
+
+    .basc-student-container {
+        grid-template-columns: 40% 60%;
+        gap: 35px;
+    }
+
+    .basc-main-image {
+        height: 590px;
+    }
+
+    .basc-student-heading h2 {
+        font-size: 29px;
+    }
+
+    .basc-support-list {
+        column-gap: 18px;
+    }
+
+    .basc-support-item {
+        min-height: 145px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .basc-student-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /*
+       Important:
+       Image is no longer forced to match
+       the height of the content.
+    */
+
+    .basc-student-visual {
+        max-width: 620px;
+        margin: 0 auto;
+
+        padding: 0 15px 15px 0;
+    }
+
+    .basc-main-image {
+        height: 420px;
+    }
+
+    .basc-support-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .basc-student-content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .basc-student-support {
+        padding: 55px 20px;
+    }
+
+    .basc-student-container {
+        display: block;
+    }
+
+
+    /* -----------------------------------------
+       IMAGE
+    ----------------------------------------- */
+
+    .basc-student-visual {
+        width: 100%;
+        max-width: none;
+
+        padding: 0 10px 10px 0;
+
+        margin-bottom: 35px;
+    }
+
+    .basc-main-image {
+        width: 100%;
+        height:750px;
+
+        border-radius: 20px;
+    }
+
+    .basc-main-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* Decorative shapes */
+
+    .basc-shape-one {
+        width: 70px;
+        height: 70px;
+
+        top: -10px;
+        left: -8px;
+
+        border-radius: 12px;
+    }
+
+    .basc-shape-two {
+        width: 85px;
+        height: 85px;
+
+        right: -3px;
+        bottom: -4px;
+
+        border-radius: 12px;
+    }
+
+
+    /* Image text */
+
+    .basc-image-label {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .basc-image-label span {
+        font-size: 9px;
+
+        padding: 5px 9px;
+    }
+
+    .basc-image-label strong {
+        font-size: 21px;
+    }
+
+
+    /* Floating badge */
+
+    .basc-visual-badge {
+        left: 15px;
+        bottom: -5px;
+
+        padding: 9px 13px;
+
+        gap: 9px;
+    }
+
+    .basc-badge-icon {
+        width: 34px;
+        height: 34px;
+
+        font-size: 13px;
+    }
+
+    .basc-visual-badge strong {
+        font-size: 12px;
+    }
+
+    .basc-visual-badge small {
+        font-size: 10px;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .basc-student-content {
+        width: 100%;
+    }
+
+    .basc-student-heading {
+        margin-bottom: 25px;
+    }
+
+    .basc-student-heading > span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .basc-student-heading h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .basc-student-heading p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------
+       SUPPORT ITEMS
+    ----------------------------------------- */
+
+    .basc-support-list {
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+    }
+
+    .basc-support-item {
+        min-height: auto;
+
+        padding: 17px 30px 17px 0;
+    }
+
+    .basc-support-icon {
+        flex-basis: 40px;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 14px;
+    }
+
+    .basc-support-info h3 {
+        font-size: 16px;
+    }
+
+    .basc-support-info p {
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        color: #000000;
+    }
+
+    /*
+       Arrow always visible on mobile
+       because hover is unavailable.
+    */
+
+    .basc-support-arrow {
+        opacity: 1;
+
+        transform: none;
+
+        right: 0;
+    }
+
+
+    /* -----------------------------------------
+       BUTTON
+    ----------------------------------------- */
+
+    .basc-support-button {
+        margin-top: 25px;
+    }
+
+    .basc-support-button a {
+        width: 100%;
+
+        min-height: 46px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .basc-student-support {
+        padding: 45px 15px;
+    }
+
+
+    /* IMAGE */
+
+    .basc-student-visual {
+        padding-right: 7px;
+        padding-bottom: 7px;
+
+        margin-bottom: 32px;
+    }
+
+    .basc-main-image {
+        height:500px;
+
+        border-radius: 17px;
+    }
+
+    .basc-image-label {
+        left: 16px;
+        right: 16px;
+        bottom: 17px;
+    }
+
+    .basc-image-label strong {
+        font-size: 19px;
+    }
+
+
+    /* BADGE */
+
+    .basc-visual-badge {
+        left: 8px;
+        bottom: -4px;
+
+        padding: 8px 11px;
+    }
+
+    .basc-badge-icon {
+        width: 31px;
+        height: 31px;
+    }
+
+
+    /* CONTENT */
+
+    .basc-student-heading h2 {
+        font-size: 25px;
+    }
+
+    .basc-student-heading p {
+        font-size: 15px;
+    }
+
+
+    /* ITEMS */
+
+    .basc-support-item {
+        gap: 10px;
+
+        padding: 16px 24px 16px 0;
+    }
+
+    .basc-support-icon {
+        flex-basis: 37px;
+
+        width: 37px;
+        height: 37px;
+
+        border-radius: 9px;
+    }
+
+    .basc-support-info h3 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .basc-support-info p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-student-support {
+        padding: 40px 12px;
+    }
+
+    .basc-main-image {
+        height:400px;
+    }
+
+    .basc-image-label strong {
+        font-size: 17px;
+    }
+
+    .basc-student-heading h2 {
+        font-size: 23px;
+    }
+
+    .basc-support-item {
+        gap: 8px;
+    }
+
+    .basc-support-icon {
+        flex-basis: 34px;
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 12px;
+    }
+
+    .basc-support-info h3 {
+        font-size: 14px;
+    }
+
+    .basc-support-info p {
+        font-size: 15px;
+    }
+
+}
