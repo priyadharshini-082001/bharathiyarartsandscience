@@ -6971,7 +6971,7 @@ background-color:seagreen;
 
     width: 100%;
 
-    padding: 90px 20px;
+    padding:50px 20px;
 
     background: #ffffff;
 
@@ -7079,7 +7079,7 @@ background-color:seagreen;
 
     color: #a51d2d;
 
-    font-size: 12px;
+    font-size: 15px;
 
     font-weight: 700;
 
@@ -7124,8 +7124,8 @@ background-color:seagreen;
 
     margin: 18px 0 0;
 
-    color: #333333;
-
+    color: black;
+text-align: justify;
     font-size: 17px;
 
     line-height: 1.8;
@@ -7190,7 +7190,7 @@ background-color:seagreen;
 
     color: #f4c43d;
 
-    font-size: 10px;
+    font-size: 15px;
 
     font-weight: 700;
 
@@ -7229,7 +7229,6 @@ background-color:seagreen;
 
     overflow: hidden;
 
-    border: 2px solid rgba(0, 0, 0, 0.08);
 }
 
 
@@ -7241,6 +7240,7 @@ background-color:seagreen;
 
 .basc-card-one {
     background: #fff0e7;
+    border:1px solid  palevioletred;
 
     color: #79331c;
 
@@ -7249,7 +7249,7 @@ background-color:seagreen;
 
 .basc-card-two {
     background: #e8f3ff;
-
+ border:1px solid  blue;
     color: #174d7a;
 
 }
@@ -7257,7 +7257,7 @@ background-color:seagreen;
 
 .basc-card-three {
     background: #eaf8ee;
-
+ border:1px solid  green;
     color: #21623a;
 
 }
@@ -7265,7 +7265,7 @@ background-color:seagreen;
 
 .basc-card-four {
     background: #fff5cf;
-
+ border:1px solid  orange;
     color: #705512;
 
 }
@@ -7273,7 +7273,7 @@ background-color:seagreen;
 
 .basc-card-five {
     background: #f8e9f4;
-
+ border:1px solid  purple;
     color: #733d68;
 
 }
@@ -7281,7 +7281,7 @@ background-color:seagreen;
 
 .basc-card-six {
     background: #e9edff;
-
+ border:1px solid  darkblue;
     color: #35478a;
 
 }
@@ -7291,7 +7291,7 @@ background-color:seagreen;
     grid-column: span 2;
 
     background: #fce7e9;
-
+ border:1px solid  purple;
     color: #8b2633;
 
 }
@@ -7382,7 +7382,7 @@ background-color:seagreen;
 
     margin-bottom: 9px;
 
-    font-size: 10px;
+    font-size: 14px;
 
     font-weight: 800;
 
@@ -7414,10 +7414,10 @@ background-color:seagreen;
 .basc-flow-content p {
     margin: 0;
 
-    color: #333333;
+    color: black;
 
     font-size: 15px;
-
+text-align: justify;
     line-height: 1.7;
 }
 
@@ -7543,10 +7543,10 @@ background-color:seagreen;
 .basc-footer-text p {
     margin: 0;
 
-    color: #e9f0f8;
+    color:white;
 
-    font-size: 14px;
-
+    font-size: 15px;
+text-align: justify;
     line-height: 1.6;
 }
 
@@ -7972,6 +7972,13 @@ text-align: justify;
         transform 0.3s ease,
         box-shadow 0.3s ease,
         background 0.3s ease;
+
+    transform: translateY(-5px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 28px rgba(8, 48, 108, 0.09);
 }
 
 .basc-document-card::before {
@@ -7994,28 +8001,12 @@ text-align: justify;
     transition: transform 0.3s ease;
 }
 
-.basc-document-card:hover {
-    transform: translateY(-5px);
-
-    background: #ffffff;
-
-    box-shadow:
-        0 12px 28px rgba(8, 48, 108, 0.09);
-}
 
 .basc-document-card:hover::before {
     transform: scaleY(1);
 }
 
 
-/* Number */
-
-.basc-document-number {
-    color: #b8bdc5;
-
-    font-size: 12px;
-    font-weight: 800;
-}
 
 
 /* Icon */
