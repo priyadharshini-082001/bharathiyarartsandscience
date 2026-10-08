@@ -7279,7 +7279,7 @@ color: #0a2c6e;
     }
 
     .basc-topbar-links a {
-        font-size: 12px;
+        font-size: 13px;
         padding: 0 11px;
     }
 
@@ -7289,7 +7289,7 @@ color: #0a2c6e;
 
     .basc-topbar-email,
     .basc-topbar-career {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
@@ -7308,7 +7308,7 @@ color: #0a2c6e;
     }
 
     .basc-topbar-links a {
-        font-size: 11px;
+        font-size: 13px;
         padding: 0 8px;
     }
 
@@ -7320,7 +7320,7 @@ color: #0a2c6e;
     }
 
     .basc-topbar-email {
-        font-size: 11px;
+        font-size: 13px;
         gap: 6px;
         white-space: normal;
         overflow-wrap: anywhere;
@@ -7335,7 +7335,7 @@ color: #0a2c6e;
     }
 
     .basc-topbar-career {
-        font-size: 11px;
+        font-size: 13px;
         gap: 6px;
     }
 

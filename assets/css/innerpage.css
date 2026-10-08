@@ -8779,439 +8779,346 @@ text-align: justify;
 }
 
 
-/* =========================================================
-   TABLET - 991px
-========================================================= */
+/* =========================================
+   PROSPECTUS SECTION
+========================================= */
 
-@media (max-width: 991px) {
+.basc-prospectus {
+    width: 100%;
+    padding:50px;
+    background: #ffffff;
+    overflow: hidden;
+}
 
-    .basc-fee-refund-section {
-        padding: 60px 5%;
-    }
+.basc-prospectus-container {
+    max-width: 1200px;
+    margin: 0 auto;
 
-    .basc-fee-refund-container {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .basc-fee-refund-visual {
-        max-width: 700px;
-        width: 100%;
-        margin: 0 auto;
-        min-height: 500px;
-    }
-
-    .basc-refund-image-wrap {
-        width: 82%;
-    }
-
-    .basc-refund-main-image {
-        height: 450px;
-    }
-
-    .basc-fee-refund-content h2 {
-        font-size: 33px;
-    }
-
-    .basc-process-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 70px;
+    align-items: center;
 }
 
 
-/* =========================================================
-   MOBILE - 768px
-========================================================= */
+/* =========================================
+   PROSPECTUS COVER
+========================================= */
 
-@media (max-width: 768px) {
+.basc-prospectus-cover {
+    display: flex;
+    justify-content: center;
+}
 
-    .basc-fee-refund-section {
-        padding: 50px 20px;
-    }
+.basc-document-card {
+    width: 100%;
+    max-width: 360px;
+    background: #ffffff;
 
-    .basc-fee-refund-container {
-        gap: 35px;
-    }
+    border: 1px solid #e8dfd0;
+    border-radius: 18px;
 
-    .basc-fee-refund-visual {
-        min-height: 410px;
-    }
+    overflow: hidden;
 
-    .basc-refund-image-wrap {
-        width: 85%;
-    }
+    box-shadow: 0 15px 40px rgba(8, 48, 108, 0.12);
 
-    .basc-refund-main-image {
-        height: 370px;
-        border-width: 5px;
-        border-radius: 23px 23px 23px 7px;
-    }
+    transform: rotate(-2deg);
+    transition: 0.4s ease;
+}
 
-    .basc-refund-badge {
-        width: 85px;
-        height: 85px;
-        right: -25px;
-        top: 25px;
-    }
-
-    .basc-refund-badge span {
-        font-size: 19px;
-    }
-
-    .basc-refund-badge small {
-        font-size: 10px;
-    }
-
-    .basc-refund-dot-one {
-        width: 85px;
-        height: 85px;
-    }
-
-    .basc-refund-dot-two {
-        width: 65px;
-        height: 65px;
-    }
-
-    .basc-refund-image-caption {
-        left: 5px;
-        bottom: 15px;
-        padding: 10px 13px;
-    }
-
-    .basc-refund-image-caption i {
-        width: 34px;
-        height: 34px;
-        font-size: 14px;
-    }
-
-    .basc-refund-image-caption strong {
-        font-size: 14px;
-    }
-
-    .basc-refund-image-caption span {
-        font-size: 12px;
-    }
-
-    .basc-refund-kicker {
-        font-size: 13px;
-    }
-
-    .basc-fee-refund-content h2 {
-        font-size: 29px;
-    }
-
-    .basc-refund-intro {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .basc-refund-policy-box {
-        padding: 17px;
-    }
-
-    .basc-refund-policy-box p {
-        font-size: 15px;
-    }
-
-    .basc-refund-points {
-        grid-template-columns: 1fr;
-    }
-
-    .basc-refund-point p {
-        font-size: 15px;
-    }
-
-    .basc-refund-process {
-        margin-top: 50px;
-    }
-
-    .basc-process-heading h3 {
-        font-size: 25px;
-    }
-
-    .basc-process-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .basc-process-card {
-        padding: 23px 20px;
-    }
-
-    .basc-process-card p {
-        font-size: 15px;
-    }
-
-    .basc-current-cycle {
-        align-items: flex-start;
-    }
-
-    .basc-cycle-label {
-        display: none;
-    }
+.basc-document-card:hover {
+    transform: rotate(0deg) translateY(-8px);
 }
 
 
-/* =========================================================
-   SMALL MOBILE - 468px
-========================================================= */
+/* Top document strip */
 
-@media (max-width: 468px) {
+.basc-document-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .basc-fee-refund-section {
-        padding: 40px 15px;
-    }
+    padding: 14px 18px;
 
-    .basc-fee-refund-container {
-        gap: 28px;
-    }
+    background: #08306c;
+    color: #ffffff;
 
-    .basc-fee-refund-visual {
-        min-height: 330px;
-    }
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
 
-    .basc-refund-image-wrap {
-        width: 88%;
-    }
-
-    .basc-refund-main-image {
-        height: 290px;
-        border-width: 4px;
-        border-radius: 18px 18px 18px 6px;
-    }
-
-    .basc-refund-badge {
-        width: 70px;
-        height: 70px;
-        right: -17px;
-        top: 20px;
-        border-width: 3px;
-    }
-
-    .basc-refund-badge span {
-        font-size: 16px;
-    }
-
-    .basc-refund-badge small {
-        font-size: 8px;
-    }
-
-    .basc-refund-dot-one {
-        width: 60px;
-        height: 60px;
-    }
-
-    .basc-refund-dot-two {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-    }
-
-    .basc-refund-image-caption {
-        left: 0;
-        bottom: 7px;
-        gap: 8px;
-        padding: 8px 10px;
-        border-radius: 9px;
-    }
-
-    .basc-refund-image-caption i {
-        width: 30px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    .basc-refund-image-caption strong {
-        font-size: 12px;
-    }
-
-    .basc-refund-image-caption span {
-        font-size: 10px;
-    }
-
-    .basc-refund-kicker {
-        padding-left: 33px;
-        font-size: 12px;
-        letter-spacing: 1px;
-    }
-
-    .basc-refund-kicker::before {
-        width: 24px;
-    }
-
-    .basc-fee-refund-content h2 {
-        font-size: 25px;
-    }
-
-    .basc-refund-intro {
-        font-size: 15px;
-    }
-
-    .basc-refund-policy-box {
-        gap: 12px;
-        padding: 14px;
-    }
-
-    .basc-policy-icon {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        font-size: 16px;
-    }
-
-    .basc-refund-policy-box h3 {
-        font-size: 17px;
-    }
-
-    .basc-refund-policy-box p {
-        font-size: 15px;
-        line-height: 1.55;
-    }
-
-    .basc-policy-link {
-        font-size: 13px;
-        padding: 7px 10px;
-    }
-
-    .basc-refund-point {
-        padding: 14px;
-        gap: 10px;
-    }
-
-    .basc-point-number {
-        width: 33px;
-        height: 33px;
-        min-width: 33px;
-        font-size: 11px;
-    }
-
-    .basc-refund-point h4 {
-        font-size: 15px;
-    }
-
-    .basc-refund-point p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .basc-process-heading h3 {
-        font-size: 23px;
-    }
-
-    .basc-process-heading p {
-        font-size: 15px;
-    }
-
-    .basc-process-card {
-        padding: 20px 17px;
-    }
-
-    .basc-process-card h4 {
-        font-size: 17px;
-    }
-
-    .basc-process-card p {
-        font-size: 15px;
-    }
-
-    .basc-current-cycle {
-        gap: 12px;
-        padding: 15px;
-    }
-
-    .basc-cycle-icon {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        font-size: 15px;
-    }
-
-    .basc-cycle-content h4 {
-        font-size: 15px;
-    }
-
-    .basc-cycle-content p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
+    letter-spacing: 0.8px;
 }
 
 
-/* =========================================================
-   EXTRA SMALL MOBILE - 350px
-========================================================= */
+/* Image */
 
-@media (max-width: 350px) {
+.basc-document-image {
+    width: 100%;
+    height: 430px;
+    background: #f6f2e9;
+    overflow: hidden;
+}
 
-    .basc-fee-refund-section {
-        padding: 35px 12px;
-    }
+.basc-document-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 
-    .basc-fee-refund-visual {
-        min-height: 290px;
-    }
+    transition: transform 0.5s ease;
+}
 
-    .basc-refund-main-image {
-        height: 250px;
-    }
-
-    .basc-refund-badge {
-        width: 62px;
-        height: 62px;
-        right: -12px;
-    }
-
-    .basc-refund-badge span {
-        font-size: 14px;
-    }
-
-    .basc-refund-badge small {
-        font-size: 7px;
-    }
-
-    .basc-fee-refund-content h2 {
-        font-size: 22px;
-    }
-
-    .basc-refund-intro,
-    .basc-refund-policy-box p,
-    .basc-refund-point p,
-    .basc-process-card p,
-    .basc-current-cycle p {
-        font-size: 15px;
-    }
-
-    .basc-refund-image-caption {
-        padding: 7px 8px;
-    }
-
-    .basc-refund-image-caption strong {
-        font-size: 11px;
-    }
-
-    .basc-refund-image-caption span {
-        font-size: 9px;
-    }
+.basc-document-card:hover .basc-document-image img {
+    transform: scale(1.04);
 }
 
 
-/* =========================================================
-   REDUCE MOTION
-========================================================= */
+/* Footer */
 
-@media (prefers-reduced-motion: reduce) {
+.basc-document-footer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 
-    .basc-refund-main-image,
-    .basc-refund-badge,
-    .basc-refund-dot-one,
-    .basc-refund-dot-two,
-    .basc-refund-image-caption {
-        animation: none;
-    }
+    padding: 18px 20px;
 
-    .basc-refund-policy-box,
-    .basc-refund-point,
-    .basc-process-card {
-        transition: none;
-    }
+    background: #faf8f2;
+}
+
+.basc-document-footer i {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #8b1e2d;
+    color: #ffffff;
+
+    font-size: 19px;
+}
+
+.basc-document-footer strong {
+    display: block;
+
+    color: #08306c;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.basc-document-footer small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #666666;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.basc-prospectus-content {
+    position: relative;
+}
+
+.basc-section-label {
+    display: inline-block;
+
+    margin-bottom: 13px;
+
+    color: #8b1e2d;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.basc-prospectus-content h2 {
+    margin: 0 0 20px;
+
+    color: #08306c;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.basc-prospectus-content h2 span {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #8b1e2d;
+
+    font-size: 24px;
+}
+
+.basc-prospectus-intro {
+    margin: 0 0 28px;
+
+    color:black;
+text-align: justify;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   INFORMATION ITEMS
+========================================= */
+
+.basc-prospectus-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.basc-info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 14px 16px;
+
+    background: #faf8f2;
+
+    border-left: 4px solid #e5b72f;
+
+    transition: 0.3s ease;
+}
+
+.basc-info-item:hover {
+    transform: translateX(7px);
+    background: #f4f0e5;
+}
+
+.basc-info-item i {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #08306c;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+}
+
+.basc-info-item strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #08306c;
+
+    font-size: 16px;
+}
+
+.basc-info-item p {
+    margin: 0;
+
+    color:black;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.basc-prospectus-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    margin-top: 10px;
+}
+
+.basc-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-height: 48px;
+    padding: 0 23px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.basc-btn-primary {
+    background: #08306c;
+    color: #ffffff;
+}
+
+.basc-btn-primary:hover {
+    background: #8b1e2d;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.basc-btn-secondary {
+    background: #e5b72f;
+    color: #1c1c1c;
+}
+
+.basc-btn-secondary:hover {
+    background: #08306c;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.basc-prospectus-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-top: 22px;
+    padding: 13px 15px;
+
+    background: #f7f4eb;
+
+    color: #555555;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.basc-prospectus-note i {
+    margin-top: 3px;
+    color: #8b1e2d;
 }
