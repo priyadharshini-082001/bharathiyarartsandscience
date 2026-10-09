@@ -5528,3 +5528,3032 @@
     }
 
 }
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .basc-facilities-container {
+        width: 91%;
+    }
+
+    .basc-facilities-intro .basc-facilities-container {
+        gap: 40px;
+    }
+
+    .basc-feature-facility .basc-facilities-container {
+        gap: 40px;
+    }
+
+    .basc-facility-grid {
+        gap: 22px;
+    }
+
+    .basc-card-content {
+        padding: 21px 20px 24px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .basc-facilities-intro {
+        padding: 60px 0;
+    }
+
+    .basc-facilities-intro .basc-facilities-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .basc-intro-heading h2 {
+        max-width: 650px;
+    }
+
+    .basc-intro-text {
+        padding-left: 22px;
+    }
+
+
+    /* Featured */
+
+    .basc-feature-facility {
+        padding: 35px 0 70px;
+    }
+
+    .basc-feature-facility .basc-facilities-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .basc-feature-image {
+        height: 420px;
+    }
+
+
+    /* Grid */
+
+    .basc-facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Highlight */
+
+    .basc-highlight-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .basc-highlight-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .basc-highlight-item:nth-child(1),
+    .basc-highlight-item:nth-child(2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .basc-facilities-container {
+        width: 91%;
+    }
+
+
+    /* Introduction */
+
+    .basc-facilities-intro {
+        padding: 50px 0;
+    }
+
+    .basc-intro-heading span {
+        font-size: 14px;
+        letter-spacing: 1.7px;
+    }
+
+    .basc-intro-heading h2 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .basc-intro-text {
+        padding-left: 17px;
+        border-left-width: 3px;
+    }
+
+    .basc-intro-text p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* Featured */
+
+    .basc-feature-facility {
+        padding: 25px 0 60px;
+    }
+
+    .basc-feature-image {
+        height: 340px;
+        border-radius: 0 35px 0 35px;
+    }
+
+    .basc-image-label {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .basc-image-label span {
+        width: 40px;
+        height: 40px;
+    }
+
+    .basc-image-label strong {
+        font-size: 16px;
+    }
+
+    .basc-feature-content h2 {
+        font-size: 31px;
+    }
+
+    .basc-feature-content > p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .basc-feature-points p {
+        font-size: 15px;
+    }
+
+
+    /* Facility Grid */
+
+    .basc-facility-grid-section {
+        padding: 55px 0 60px;
+    }
+
+    .basc-grid-heading {
+        margin-bottom: 32px;
+    }
+
+    .basc-grid-heading h2 {
+        font-size: 33px;
+    }
+
+    .basc-grid-heading p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .basc-facility-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .basc-card-image {
+        height: 235px;
+    }
+
+    .basc-card-content {
+        padding: 22px 20px 25px;
+    }
+
+    .basc-card-content h3 {
+        font-size: 21px;
+    }
+
+    .basc-card-content p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* Highlight */
+
+    .basc-facility-highlight {
+        padding: 5px 0 60px;
+    }
+
+    .basc-highlight-box {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-highlight-item {
+        padding: 27px 22px;
+
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .basc-highlight-item:last-child {
+        border-bottom: none;
+    }
+
+    .basc-highlight-item p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .basc-facilities-container {
+        width: 90%;
+    }
+
+
+    /* Intro */
+
+    .basc-facilities-intro {
+        padding: 42px 0;
+    }
+
+    .basc-intro-heading h2 {
+        font-size: 27px;
+    }
+
+    .basc-intro-text {
+        padding-left: 15px;
+    }
+
+    .basc-intro-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* Featured */
+
+    .basc-feature-facility {
+        padding: 20px 0 50px;
+    }
+
+    .basc-feature-image {
+        height: 270px;
+        border-radius: 0 28px 0 28px;
+    }
+
+    .basc-image-label {
+        gap: 9px;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .basc-image-label span {
+        width: 36px;
+        height: 36px;
+        font-size: 10px;
+    }
+
+    .basc-image-label strong {
+        font-size: 14px;
+    }
+
+    .basc-section-tag {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .basc-feature-content h2 {
+        font-size: 28px;
+    }
+
+    .basc-feature-content > p {
+        font-size: 15px;
+    }
+
+    .basc-feature-points {
+        gap: 8px;
+    }
+
+    .basc-feature-points div {
+        padding: 10px;
+    }
+
+    .basc-feature-points span {
+        width: 31px;
+        height: 31px;
+        min-width: 31px;
+    }
+
+    .basc-feature-points p {
+        font-size: 14px;
+    }
+
+
+    /* Grid */
+
+    .basc-facility-grid-section {
+        padding: 48px 0 52px;
+    }
+
+    .basc-grid-heading span {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .basc-grid-heading h2 {
+        font-size: 29px;
+    }
+
+    .basc-grid-heading p {
+        font-size: 15px;
+    }
+
+    .basc-card-image {
+        height: 210px;
+    }
+
+    .basc-card-content {
+        padding: 20px 18px 23px;
+    }
+
+    .basc-card-content h3 {
+        font-size: 20px;
+    }
+
+    .basc-card-content p {
+        font-size: 15px;
+    }
+
+
+    /* Highlight */
+
+    .basc-highlight-item {
+        padding: 24px 19px;
+    }
+
+    .basc-highlight-item h3 {
+        font-size: 19px;
+    }
+
+    .basc-highlight-item p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-facilities-container {
+        width: 90%;
+    }
+
+    .basc-intro-heading h2 {
+        font-size: 25px;
+    }
+
+    .basc-feature-image {
+        height: 230px;
+    }
+
+    .basc-feature-content h2 {
+        font-size: 26px;
+    }
+
+    .basc-card-image {
+        height: 185px;
+    }
+
+    .basc-card-content {
+        padding: 18px 16px 21px;
+    }
+
+    .basc-card-content h3 {
+        font-size: 19px;
+    }
+
+    .basc-card-content p {
+        font-size: 14px;
+    }
+
+    .basc-highlight-item p {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .basc-nss-v2 {
+        padding: 65px 20px;
+    }
+
+    .basc-nss-v2-intro {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .basc-nss-v2-image-area {
+        padding-right: 20px;
+    }
+
+    .basc-nss-v2-image-border img {
+        height: 450px;
+    }
+
+    .basc-nss-v2-content {
+        padding: 0;
+    }
+
+    .basc-nss-v2-content h1 {
+        font-size: 40px;
+    }
+
+    .basc-nss-v2-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .basc-nss-v2-camp {
+        grid-template-columns: 120px 1fr;
+    }
+
+    .basc-nss-v2-camp-content {
+        padding-right: 40px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .basc-nss-v2 {
+        padding: 50px 15px;
+    }
+
+    .basc-nss-v2-intro {
+        margin-bottom: 60px;
+        gap: 38px;
+    }
+
+    .basc-nss-v2-image-area {
+        padding: 15px 10px 20px 0;
+    }
+
+    .basc-nss-v2-image-border {
+        padding: 8px;
+    }
+
+    .basc-nss-v2-image-border img {
+        height: 330px;
+    }
+
+    .basc-nss-v2-image-border::before {
+        width: 50px;
+        height: 50px;
+        left: -10px;
+        bottom: -10px;
+        border-width: 5px;
+    }
+
+    .basc-nss-v2-image-border::after {
+        width: 55px;
+        height: 55px;
+        right: -10px;
+        top: -10px;
+        border-width: 5px;
+    }
+
+    .basc-nss-v2-tag {
+        padding: 7px 11px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .tag-one {
+        top: 25px;
+        right: 0;
+    }
+
+    .tag-two {
+        bottom: 40px;
+        left: -5px;
+    }
+
+    .tag-three {
+        right: 5px;
+        bottom: 0;
+    }
+
+    .basc-nss-v2-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .basc-nss-v2-content p,
+    .basc-nss-v2-heading p,
+    .basc-nss-v2-camp-content p,
+    .basc-nss-v2-closing p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .basc-nss-v2-stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .nss-v2-stat {
+        min-height: 85px;
+    }
+
+    .basc-nss-v2-heading {
+        margin-bottom: 30px;
+    }
+
+    .basc-nss-v2-heading h2 {
+        font-size: 29px;
+    }
+
+    .basc-nss-v2-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .nss-v2-card {
+        min-height: auto;
+        padding: 24px 20px;
+    }
+
+    .nss-v2-card h3 {
+        font-size: 19px;
+    }
+
+    .basc-nss-v2-camp {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 50px;
+        padding: 35px 25px;
+    }
+
+    .basc-nss-v2-camp-number {
+        width: 80px;
+        height: 80px;
+        font-size: 17px;
+    }
+
+    .basc-nss-v2-camp-content {
+        padding-right: 15px;
+    }
+
+    .basc-nss-v2-camp-content h2 {
+        font-size: 25px;
+    }
+
+    .basc-nss-v2-camp-accent {
+        width: 90px;
+        height: 90px;
+        right: -35px;
+        top: -35px;
+        border-width: 15px;
+    }
+
+    .basc-nss-v2-closing {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 25px 20px;
+    }
+
+    .basc-nss-v2-closing-mark {
+        width: 62px;
+        height: 62px;
+        font-size: 12px;
+    }
+
+    .basc-nss-v2-closing h3 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .basc-nss-v2 {
+        padding: 40px 12px;
+    }
+
+    .basc-nss-v2-content h1 {
+        font-size: 28px;
+    }
+
+    .basc-nss-v2-kicker {
+        font-size: 14px;
+        letter-spacing: 1.8px;
+    }
+
+    .basc-nss-v2-image-border img {
+        height: 270px;
+    }
+
+    .basc-nss-v2-heading h2 {
+        font-size: 26px;
+    }
+
+    .basc-nss-v2-camp-content h2 {
+        font-size: 23px;
+    }
+
+    .basc-nss-v2-closing {
+        border-left-width: 5px;
+        border-right-width: 5px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-nss-v2-content h1 {
+        font-size: 25px;
+    }
+
+    .basc-nss-v2-image-border img {
+        height: 230px;
+    }
+
+    .basc-nss-v2-tag {
+        font-size: 8px;
+        padding: 6px 8px;
+    }
+
+    .basc-nss-v2-heading h2 {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .basc-ncc-section {
+        padding: 70px 18px;
+    }
+
+    .basc-ncc-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .basc-ncc-card:nth-child(1),
+    .basc-ncc-card:nth-child(2),
+    .basc-ncc-card:nth-child(3),
+    .basc-ncc-card:nth-child(4),
+    .basc-ncc-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .basc-ncc-report-list {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-ncc-card p {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .basc-ncc-section {
+        padding: 55px 15px;
+    }
+
+    .basc-ncc-heading {
+        margin-bottom: 38px;
+    }
+
+    .basc-ncc-kicker {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .basc-ncc-heading h2 {
+        font-size: 32px;
+    }
+
+    .basc-ncc-heading p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .basc-ncc-intro {
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+
+    .basc-ncc-intro-number {
+        min-height: 145px;
+        padding: 25px;
+    }
+
+    .basc-ncc-intro-number span {
+        font-size: 35px;
+    }
+
+    .basc-ncc-intro-content {
+        padding: 28px 24px;
+    }
+
+    .basc-ncc-intro-content h3 {
+        font-size: 23px;
+    }
+
+    .basc-ncc-intro-content p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .basc-ncc-section-title {
+        gap: 14px;
+    }
+
+    .basc-ncc-section-title span,
+    .basc-ncc-report-heading > span {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+        font-size: 11px;
+    }
+
+    .basc-ncc-section-title h3 {
+        font-size: 24px;
+    }
+
+    .basc-ncc-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .basc-ncc-card:nth-child(1),
+    .basc-ncc-card:nth-child(2),
+    .basc-ncc-card:nth-child(3),
+    .basc-ncc-card:nth-child(4),
+    .basc-ncc-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .basc-ncc-card {
+        min-height: auto;
+        padding: 24px 20px;
+    }
+
+    .basc-ncc-card h4 {
+        font-size: 19px;
+    }
+
+    .basc-ncc-card p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .basc-ncc-reports {
+        margin-top: 55px;
+        padding: 28px 20px;
+    }
+
+    .basc-ncc-report-heading {
+        align-items: flex-start;
+        gap: 17px;
+    }
+
+    .basc-ncc-report-heading h3 {
+        font-size: 23px;
+    }
+
+    .basc-ncc-report-heading p {
+        font-size: 15px;
+    }
+
+    .basc-ncc-report {
+        grid-template-columns: 75px 1fr 25px;
+        padding: 11px 14px;
+    }
+
+    .report-year,
+    .report-name {
+        font-size: 14px;
+    }
+
+    .basc-ncc-highlight {
+        align-items: flex-start;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+
+    .basc-ncc-highlight-mark {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        font-size: 14px;
+    }
+
+    .basc-ncc-highlight h3 {
+        font-size: 20px;
+    }
+
+    .basc-ncc-highlight p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .basc-ncc-section {
+        padding: 45px 12px;
+    }
+
+    .basc-ncc-heading h2 {
+        font-size: 28px;
+    }
+
+    .basc-ncc-heading p {
+        font-size: 15px;
+    }
+
+    .basc-ncc-intro-number {
+        min-height: 125px;
+    }
+
+    .basc-ncc-intro-number span {
+        font-size: 32px;
+    }
+
+    .basc-ncc-intro-content {
+        padding: 24px 18px;
+    }
+
+    .basc-ncc-card {
+        gap: 13px;
+        padding: 21px 16px;
+    }
+
+    .basc-ncc-icon {
+        width: 37px;
+        height: 37px;
+        min-width: 37px;
+        font-size: 10px;
+    }
+
+    .basc-ncc-card h4 {
+        font-size: 18px;
+    }
+
+    .basc-ncc-card p {
+        font-size: 15px;
+    }
+
+    .basc-ncc-reports {
+        padding: 24px 15px;
+    }
+
+    .basc-ncc-report {
+        grid-template-columns: 1fr 25px;
+        gap: 5px;
+    }
+
+    .report-year {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .report-name {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .report-arrow {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .basc-ncc-highlight {
+        flex-direction: column;
+    }
+
+    .basc-ncc-highlight-mark {
+        margin-left: 10px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-ncc-heading h2 {
+        font-size: 25px;
+    }
+
+    .basc-ncc-section-title h3 {
+        font-size: 21px;
+    }
+
+    .basc-ncc-intro-content h3 {
+        font-size: 21px;
+    }
+
+    .basc-ncc-card {
+        padding: 18px 14px;
+    }
+
+    .basc-ncc-card h4 {
+        font-size: 17px;
+    }
+
+    .basc-ncc-card p {
+        font-size: 14px;
+    }
+}
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .yrc-modern {
+        padding: 75px 18px;
+    }
+
+    .yrc-editorial {
+        grid-template-columns: 1fr;
+    }
+
+    .yrc-visual {
+        min-height: 450px;
+    }
+
+    .yrc-visual img {
+        min-height: 450px;
+    }
+
+    .yrc-editorial-content {
+        margin: -35px 25px 0;
+        padding: 45px 40px;
+    }
+
+    .yrc-focus-heading {
+        grid-template-columns: 1fr;
+    }
+
+    .yrc-list-item {
+        grid-template-columns: 50px 55px 1fr 35px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .yrc-modern {
+        padding: 55px 15px;
+    }
+
+    .yrc-modern::before {
+        font-size: 100px;
+        top: 25px;
+    }
+
+    .yrc-top {
+        margin-bottom: 40px;
+    }
+
+    .yrc-top-label {
+        font-size: 10px;
+        letter-spacing: 1.4px;
+    }
+
+    .yrc-top h2 {
+        font-size: 34px;
+        letter-spacing: -0.5px;
+    }
+
+    .yrc-top p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* Main image */
+
+    .yrc-visual {
+        min-height: 310px;
+        height: 310px;
+    }
+
+    .yrc-visual img {
+        min-height: 310px;
+        height: 310px;
+    }
+
+    .yrc-year-badge {
+        width: 82px;
+        height: 82px;
+        top: 18px;
+        left: 18px;
+        border-width: 4px;
+    }
+
+    .yrc-year-badge strong {
+        font-size: 22px;
+    }
+
+    .yrc-year-badge small {
+        font-size: 9px;
+    }
+
+    .yrc-image-caption {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .yrc-image-caption strong {
+        font-size: 19px;
+    }
+
+    .yrc-image-caption span {
+        font-size: 11px;
+    }
+
+
+    /* Content */
+
+    .yrc-editorial-content {
+        margin: -25px 12px 0;
+        padding: 32px 22px;
+    }
+
+    .yrc-editorial-content h3 {
+        font-size: 27px;
+    }
+
+    .yrc-editorial-content > p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .yrc-stat {
+        margin-top: 25px;
+        padding-top: 20px;
+    }
+
+    .yrc-stat-number {
+        font-size: 40px;
+    }
+
+
+    /* Focus */
+
+    .yrc-focus {
+        margin-top: 65px;
+    }
+
+    .yrc-focus-heading {
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .yrc-focus-heading h3 {
+        font-size: 28px;
+    }
+
+    .yrc-focus-heading > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* List */
+
+    .yrc-list-item {
+        grid-template-columns: 35px 48px 1fr;
+        gap: 12px;
+        padding: 20px 5px;
+    }
+
+    .yrc-list-item:hover {
+        padding-left: 10px;
+    }
+
+    .yrc-list-no {
+        font-size: 11px;
+    }
+
+    .yrc-list-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 18px;
+    }
+
+    .yrc-list-content h4 {
+        font-size: 18px;
+    }
+
+    .yrc-list-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .yrc-list-arrow {
+        display: none;
+    }
+
+
+    /* Bottom */
+
+    .yrc-statement {
+        margin-top: 55px;
+        padding: 28px 22px;
+        gap: 18px;
+    }
+
+    .yrc-statement-mark {
+        width: 62px;
+        height: 62px;
+        min-width: 62px;
+        font-size: 14px;
+    }
+
+    .yrc-statement-text h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .yrc-modern {
+        padding: 45px 12px;
+    }
+
+    .yrc-top h2 {
+        font-size: 29px;
+    }
+
+    .yrc-visual,
+    .yrc-visual img {
+        height: 255px;
+        min-height: 255px;
+    }
+
+    .yrc-editorial-content {
+        margin: -20px 7px 0;
+        padding: 27px 18px;
+    }
+
+    .yrc-editorial-content h3 {
+        font-size: 23px;
+    }
+
+    .yrc-stat-number {
+        font-size: 36px;
+    }
+
+    .yrc-focus-heading h3 {
+        font-size: 25px;
+    }
+
+    .yrc-list-item {
+        grid-template-columns: 30px 42px 1fr;
+        gap: 9px;
+    }
+
+    .yrc-list-icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .yrc-list-content h4 {
+        font-size: 17px;
+    }
+
+    .yrc-list-content p {
+        font-size: 15px;
+    }
+
+    .yrc-statement {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .yrc-top h2 {
+        font-size: 26px;
+    }
+
+    .yrc-editorial-content h3 {
+        font-size: 21px;
+    }
+
+    .yrc-list-content h4 {
+        font-size: 16px;
+    }
+
+    .yrc-list-content p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .basc-rrc-modern {
+        padding: 75px 20px;
+    }
+
+    .rrc-modern-wrap {
+        grid-template-columns: 42% 58%;
+    }
+
+    .rrc-visual {
+        padding-right: 35px;
+    }
+
+    .rrc-content {
+        padding-left: 40px;
+    }
+
+    .rrc-image-frame {
+        height: 530px;
+    }
+
+    .rrc-content h2 {
+        font-size: 52px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .basc-rrc-modern {
+        padding: 65px 20px;
+    }
+
+    .rrc-modern-wrap {
+        grid-template-columns: 1fr;
+        max-width: 760px;
+    }
+
+    .rrc-visual {
+        min-height: auto;
+        padding: 0 35px 50px 0;
+    }
+
+    .rrc-image-frame {
+        width: 100%;
+        height: 480px;
+        border-radius: 0 90px 0 90px;
+    }
+
+    .rrc-ribbon-mark {
+        right: -2px;
+        top: 50px;
+    }
+
+    .rrc-side-label {
+        right: -5px;
+        bottom: 20px;
+    }
+
+    .rrc-content {
+        padding: 10px 0 0;
+    }
+
+    .rrc-content h2 {
+        font-size: 50px;
+    }
+
+    .rrc-intro {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .basc-rrc-modern {
+        padding: 50px 16px;
+    }
+
+    .rrc-modern-wrap {
+        width: 100%;
+    }
+
+    .rrc-visual {
+        padding: 0 22px 45px 0;
+    }
+
+    .rrc-image-frame {
+        height: 390px;
+        border-radius: 0 65px 0 65px;
+    }
+
+    .rrc-image-frame::before {
+        width: 7px;
+    }
+
+    .rrc-image-frame::after {
+        height: 6px;
+    }
+
+    .rrc-ribbon-mark {
+        transform: scale(0.75) rotate(-12deg);
+        transform-origin: top right;
+        right: -2px;
+        top: 35px;
+    }
+
+    .rrc-side-label {
+        width: 105px;
+        min-height: 105px;
+        border-width: 6px;
+        bottom: 8px;
+        right: -4px;
+    }
+
+    .rrc-side-label strong {
+        font-size: 24px;
+    }
+
+    .rrc-side-label small {
+        font-size: 8px;
+    }
+
+    .rrc-heading-line {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .rrc-heading-line span {
+        font-size: 9px;
+        letter-spacing: 1.2px;
+    }
+
+    .rrc-heading-line i {
+        width: 28px;
+    }
+
+    .rrc-content h2 {
+        font-size: 42px;
+        margin-bottom: 18px;
+    }
+
+    .rrc-intro {
+        font-size: 15px;
+        line-height: 1.75;
+        margin-bottom: 28px;
+    }
+
+    .rrc-activity {
+        grid-template-columns: 45px 1fr;
+        gap: 12px;
+        padding: 18px 0;
+    }
+
+    .rrc-number {
+        font-size: 19px;
+    }
+
+    .rrc-activity-text h3 {
+        font-size: 16px;
+    }
+
+    .rrc-activity-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .rrc-message {
+        margin-top: 25px;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .rrc-message-symbol {
+        flex: 0 0 38px;
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .rrc-message strong {
+        font-size: 14px;
+    }
+
+    .rrc-message p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .basc-rrc-modern {
+        padding: 40px 13px;
+    }
+
+    .rrc-visual {
+        padding-right: 14px;
+        padding-bottom: 38px;
+    }
+
+    .rrc-image-frame {
+        height: 330px;
+        border-radius: 0 45px 0 45px;
+    }
+
+    .rrc-ribbon-mark {
+        transform: scale(0.58) rotate(-12deg);
+        right: -14px;
+        top: 25px;
+    }
+
+    .rrc-side-label {
+        width: 85px;
+        min-height: 85px;
+        bottom: 0;
+        right: -8px;
+        border-width: 5px;
+    }
+
+    .rrc-side-label strong {
+        font-size: 19px;
+    }
+
+    .rrc-side-label small {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .rrc-content h2 {
+        font-size: 36px;
+    }
+
+    .rrc-heading-line {
+        margin-bottom: 14px;
+    }
+
+    .rrc-intro {
+        font-size: 15px;
+    }
+
+    .rrc-activity {
+        grid-template-columns: 38px 1fr;
+        gap: 8px;
+    }
+
+    .rrc-number {
+        font-size: 17px;
+    }
+
+    .rrc-activity-text h3 {
+        font-size: 15px;
+    }
+
+    .rrc-activity-text p {
+        font-size: 15px;
+    }
+
+    .rrc-message {
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-rrc-modern {
+        padding: 35px 10px;
+    }
+
+    .rrc-image-frame {
+        height: 285px;
+    }
+
+    .rrc-content h2 {
+        font-size: 31px;
+    }
+
+    .rrc-intro,
+    .rrc-activity-text p {
+        font-size: 15px;
+    }
+        .rrc-activity {
+        grid-template-columns: 32px 1fr;
+        gap: 7px;
+    }
+
+    .rrc-activity-text h3 {
+        font-size: 14px;
+    }
+
+    .rrc-message {
+        padding: 13px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .basc-rangers {
+        padding: 75px 20px;
+    }
+
+    .rangers-top {
+        gap: 35px;
+    }
+
+    .rangers-main {
+        gap: 35px;
+    }
+
+    .rangers-gallery {
+        min-height: 600px;
+    }
+
+    .rangers-image-main {
+        height: 500px;
+    }
+
+    .rangers-item {
+        gap: 12px;
+    }
+
+    .ranger-leader {
+        min-width: 145px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / MOBILE TRANSITION
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .rangers-top {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .rangers-intro {
+        padding-left: 25px;
+    }
+
+    .rangers-main {
+        grid-template-columns: 1fr;
+    }
+
+    .rangers-gallery {
+        min-height: 570px;
+        max-width: 680px;
+        width: 100%;
+    }
+
+    .rangers-image-main {
+        width: 82%;
+        height: 500px;
+    }
+
+    .rangers-image-small {
+        width: 40%;
+    }
+
+    .rangers-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rangers-value:nth-child(2) {
+        border-right: 0;
+    }
+
+    .rangers-value:nth-child(-n+2) {
+        border-bottom: 1px solid #d8d1c5;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .basc-rangers {
+        padding: 55px 16px;
+    }
+
+    .rangers-title h2 {
+        font-size: 48px;
+    }
+
+    .rangers-intro {
+        padding-left: 18px;
+    }
+
+    .rangers-intro p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .rangers-gallery {
+        min-height: 470px;
+    }
+
+    .rangers-image-main {
+        width: 84%;
+        height: 410px;
+        border-radius: 65px 0 65px 0;
+    }
+
+    .rangers-image-small {
+        height: 165px;
+        width: 43%;
+        bottom: 10px;
+    }
+
+    .rangers-number {
+        left: -10px;
+        top: 50px;
+        width: 95px;
+        height: 95px;
+        border-width: 6px;
+    }
+
+    .rangers-number strong {
+        font-size: 29px;
+    }
+
+    .rangers-number span {
+        font-size: 7px;
+    }
+
+    .rangers-circle {
+        width: 60px;
+        height: 60px;
+        border-width: 9px;
+        right: 4%;
+    }
+
+    .rangers-section-heading {
+        gap: 12px;
+    }
+
+    .rangers-section-heading h3 {
+        font-size: 30px;
+    }
+
+    .ranger-item {
+        grid-template-columns: 42px 1fr;
+        gap: 10px;
+        padding: 17px 5px;
+    }
+
+    .ranger-leader {
+        grid-column: 2;
+        min-width: 0;
+        margin-top: -4px;
+    }
+
+    .ranger-leader span {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+        font-size: 14px;
+    }
+
+    .ranger-leader strong {
+        font-size: 13px;
+    }
+
+    .ranger-name h4 {
+        font-size: 15px;
+    }
+
+    .ranger-name p {
+        font-size: 14px;
+    }
+
+    .rangers-values {
+        margin-top: 50px;
+    }
+
+    .rangers-value {
+        padding: 22px 17px;
+    }
+
+    .rangers-value strong {
+        font-size: 19px;
+    }
+
+    .rangers-value p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .basc-rangers {
+        padding: 45px 13px;
+    }
+
+    .rangers-kicker {
+        font-size: 9px;
+        letter-spacing: 1.2px;
+    }
+
+    .rangers-title h2 {
+        font-size: 39px;
+    }
+
+    .rangers-title-line {
+        width: 70px;
+        height: 4px;
+    }
+
+    .rangers-gallery {
+        min-height: 385px;
+    }
+
+    .rangers-image-main {
+        width: 88%;
+        height: 325px;
+        border-radius: 48px 0 48px 0;
+    }
+
+    .rangers-image-small {
+        width: 43%;
+        height: 125px;
+        padding: 5px;
+    }
+
+    .rangers-number {
+        width: 76px;
+        height: 76px;
+        top: 35px;
+        left: -6px;
+        border-width: 5px;
+    }
+
+    .rangers-number strong {
+        font-size: 23px;
+    }
+
+    .rangers-number span {
+        font-size:14px;
+        letter-spacing: 1px;
+    }
+
+    .rangers-circle {
+        width: 45px;
+        height: 45px;
+        border-width: 7px;
+        top: 4px;
+    }
+
+    .rangers-section-heading small {
+        font-size: 14px;
+        letter-spacing: 1.1px;
+    }
+
+    .rangers-section-heading h3 {
+        font-size: 26px;
+    }
+
+    .ranger-item {
+        grid-template-columns: 32px 1fr;
+        padding: 15px 3px;
+    }
+
+    .ranger-index {
+        font-size: 15px;
+    }
+
+    .ranger-name h4 {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .ranger-leader {
+        margin-top: 0;
+    }
+
+    .ranger-leader strong {
+        font-size: 14px;
+    }
+
+    .rangers-values {
+        grid-template-columns: 1fr;
+    }
+
+    .rangers-value,
+    .rangers-value:nth-child(2) {
+        border-right: 0;
+        border-bottom: 1px solid #d8d1c5;
+    }
+
+    .rangers-value:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+   ========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-rangers {
+        padding: 38px 10px;
+    }
+
+    .rangers-title h2 {
+        font-size: 34px;
+    }
+
+    .rangers-intro p {
+        font-size: 15px;
+    }
+
+    .rangers-gallery {
+        min-height: 340px;
+    }
+
+    .rangers-image-main {
+        height: 285px;
+        border-radius: 40px 0 40px 0;
+    }
+
+    .rangers-image-small {
+        height: 105px;
+    }
+
+    .rangers-number {
+        width: 65px;
+        height: 65px;
+    }
+
+    .rangers-number strong {
+        font-size: 20px;
+    }
+
+    .rangers-section-heading h3 {
+        font-size: 23px;
+    }
+
+    .ranger-item {
+        grid-template-columns: 28px 1fr;
+    }
+
+    .ranger-name h4 {
+        font-size: 14px;
+    }
+
+    .ranger-leader strong {
+        font-size: 14px;
+    }
+
+    .rangers-value {
+        padding: 20px 14px;
+    }
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+    .basc-coe-modern .cm-container {
+        width: 94%;
+    }
+
+    .basc-coe-modern .cm-quick-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .basc-coe-modern .cm-team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .basc-coe-modern .cm-hero {
+        padding: 40px 28px;
+    }
+
+    .basc-coe-modern .cm-section {
+        padding: 32px 0;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+    .basc-coe-modern {
+        padding: 20px 0;
+    }
+
+    .basc-coe-modern .cm-container {
+        width: 92%;
+    }
+
+    .basc-coe-modern p {
+        font-size: 15px !important;
+        line-height: 1.75;
+        text-align: justify !important;
+    }
+
+    .basc-coe-modern h1 {
+        font-size: 28px;
+    }
+
+    .basc-coe-modern h2 {
+        font-size: 24px;
+    }
+
+    .basc-coe-modern h3 {
+        font-size: 19px;
+    }
+
+    .basc-coe-modern .cm-hero {
+        padding: 30px 20px;
+        border-radius: 11px;
+    }
+
+    .basc-coe-modern .cm-hero-inner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .basc-coe-modern .cm-hero-symbol {
+        align-self: center;
+        width: 90px;
+        height: 90px;
+        flex-basis: 90px;
+        border-width: 4px;
+        font-size: 25px;
+    }
+
+    .basc-coe-modern .cm-hero p {
+        font-size: 15px !important;
+    }
+
+    .basc-coe-modern .cm-section {
+        padding: 28px 0;
+    }
+
+    .basc-coe-modern .cm-quick-links {
+        gap: 9px;
+        margin-top: 20px;
+    }
+
+    .basc-coe-modern .cm-quick-links a {
+        min-height: 50px;
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .basc-coe-modern .cm-info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .basc-coe-modern .cm-info-card {
+        padding: 20px;
+    }
+
+    .basc-coe-modern .cm-intro-panel,
+    .basc-coe-modern .cm-forms-panel,
+    .basc-coe-modern .cm-grievance-panel {
+        padding: 20px;
+    }
+
+    .basc-coe-modern .cm-forms-tools {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .basc-coe-modern .cm-form-search {
+        max-width: none;
+    }
+
+    .basc-coe-modern .cm-form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px;
+    }
+
+    .basc-coe-modern .cm-form-info h3 {
+        font-size: 16px;
+    }
+
+    .basc-coe-modern .cm-form-actions {
+        width: 100%;
+    }
+
+    .basc-coe-modern .cm-btn {
+        min-width: 100px;
+    }
+
+    .basc-coe-modern .cm-team-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .basc-coe-modern .cm-contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+    .basc-coe-modern .cm-container {
+        width: 94%;
+    }
+
+    .basc-coe-modern .cm-hero {
+        padding: 25px 16px;
+    }
+
+    .basc-coe-modern h1 {
+        font-size: 25px;
+    }
+
+    .basc-coe-modern h2 {
+        font-size: 22px;
+    }
+
+    .basc-coe-modern h3 {
+        font-size: 18px;
+    }
+
+    .basc-coe-modern .cm-quick-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .basc-coe-modern .cm-quick-links a {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    .basc-coe-modern .cm-section-heading {
+        padding-left: 12px;
+        margin-bottom: 20px;
+    }
+
+    .basc-coe-modern .cm-intro-panel,
+    .basc-coe-modern .cm-forms-panel,
+    .basc-coe-modern .cm-grievance-panel {
+        padding: 16px;
+    }
+
+    .basc-coe-modern .cm-form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .basc-coe-modern .cm-form-actions .cm-btn {
+        width: 100%;
+    }
+
+    .basc-coe-modern .cm-form-info p {
+        font-size: 15px !important;
+    }
+}
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 350px) {
+    .basc-coe-modern .cm-container {
+        width: 96%;
+    }
+
+    .basc-coe-modern .cm-quick-links {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-coe-modern .cm-hero-symbol {
+        width: 75px;
+        height: 75px;
+        flex-basis: 75px;
+        font-size: 22px;
+    }
+
+    .basc-coe-modern .cm-hero h1 {
+        font-size: 23px;
+    }
+}
+
+/* ===========================================
+   TABLET
+=========================================== */
+
+@media (max-width: 1000px) {
+    .basc-alumnae .al-container {
+        width: 94%;
+    }
+
+    .basc-alumnae .al-hero {
+        grid-template-columns: 1fr 0.65fr;
+        padding: 38px 30px;
+    }
+
+    .basc-alumnae .al-hero-art {
+        max-width: 280px;
+    }
+
+    .basc-alumnae .al-objectives-grid,
+    .basc-alumnae .al-alumnae-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .basc-alumnae .al-registration-section {
+        padding: 30px;
+    }
+
+    .basc-alumnae .al-registration-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media (max-width: 767px) {
+    .basc-alumnae {
+        padding: 18px 0;
+    }
+
+    .basc-alumnae .al-container {
+        width: 92%;
+    }
+
+    .basc-alumnae p {
+        font-size: 15px !important;
+        line-height: 1.75;
+        text-align: justify !important;
+    }
+
+    .basc-alumnae h2 {
+        font-size: 25px;
+    }
+
+    .basc-alumnae h3 {
+        font-size: 19px;
+    }
+
+    .basc-alumnae .al-section {
+        padding: 32px 0;
+    }
+
+    .basc-alumnae .al-hero {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 30px 22px;
+        border-radius: 4px 24px 4px 24px;
+    }
+
+    .basc-alumnae .al-hero h1 {
+        font-size: 30px;
+    }
+
+    .basc-alumnae .al-hero p {
+        font-size: 15px !important;
+    }
+
+    .basc-alumnae .al-hero-art {
+        width: 220px;
+        max-width: 100%;
+        margin: 8px auto 0;
+    }
+
+    .basc-alumnae .al-art-main {
+        font-size: 17px;
+    }
+
+    .basc-alumnae .al-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .basc-alumnae .al-btn {
+        width: 100%;
+    }
+
+    .basc-alumnae .al-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 5px 0;
+    }
+
+    .basc-alumnae .al-intro-title {
+        padding: 0 0 18px;
+        border-right: 0;
+        border-bottom: 3px solid #e5b72f;
+    }
+
+    .basc-alumnae .al-intro-title h2 {
+        font-size: 27px;
+    }
+
+    .basc-alumnae .al-purpose {
+        padding: 25px 18px;
+    }
+
+    .basc-alumnae .al-purpose-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .basc-alumnae .al-purpose-card {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .basc-alumnae .al-objectives-grid,
+    .basc-alumnae .al-alumnae-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .basc-alumnae .al-objective-card {
+        padding: 22px;
+    }
+
+    .basc-alumnae .al-committee-section {
+        padding: 30px 15px;
+    }
+
+    .basc-alumnae .al-committee-note {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 16px;
+    }
+
+    .basc-alumnae .al-table-wrap {
+        overflow-x: auto;
+    }
+
+    .basc-alumnae .al-committee-table {
+        min-width: 510px;
+    }
+
+    .basc-alumnae .al-committee-table th,
+    .basc-alumnae .al-committee-table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .basc-alumnae .al-events-banner {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 23px 18px;
+    }
+
+    .basc-alumnae .al-events-copy h2 {
+        font-size: 28px;
+    }
+
+    .basc-alumnae .al-event-item {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .basc-alumnae .al-profile-top {
+        min-height: 110px;
+    }
+
+    .basc-alumnae .al-profile-body {
+        padding: 20px;
+    }
+
+    .basc-alumnae .al-registration-section {
+        padding: 23px 15px;
+    }
+
+    .basc-alumnae .al-registration-intro h2 {
+        font-size: 27px;
+    }
+
+    .basc-alumnae .al-form-panel {
+        padding: 20px 15px;
+    }
+
+    .basc-alumnae .al-form-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .basc-alumnae .al-field-full {
+        grid-column: auto;
+    }
+
+    .basc-alumnae .al-interest-field,
+    .basc-alumnae .al-consent-options {
+        grid-column: 1;
+    }
+
+    .basc-alumnae .al-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+    }
+
+    .basc-alumnae .al-footer h2 {
+        font-size: 22px;
+    }
+}
+
+/* ===========================================
+   SMALL MOBILE
+=========================================== */
+
+@media (max-width: 480px) {
+    .basc-alumnae .al-container {
+        width: 94%;
+    }
+
+    .basc-alumnae .al-hero {
+        padding: 25px 17px;
+    }
+
+    .basc-alumnae .al-hero h1 {
+        font-size: 27px;
+    }
+
+    .basc-alumnae .al-kicker {
+        font-size: 10px;
+    }
+
+    .basc-alumnae h2 {
+        font-size: 23px;
+    }
+
+    .basc-alumnae .al-section-heading {
+        margin-bottom: 23px;
+    }
+
+    .basc-alumnae .al-purpose-heading h2 {
+        font-size: 23px;
+    }
+
+    .basc-alumnae .al-purpose-number {
+        font-size: 58px;
+    }
+
+    .basc-alumnae .al-objective-card {
+        padding: 20px 17px;
+    }
+
+    .basc-alumnae .al-event-item h3 {
+        font-size: 17px;
+    }
+
+    .basc-alumnae .al-profile-top {
+        padding: 18px;
+    }
+
+    .basc-alumnae .al-profile-field {
+        font-size: 10px;
+    }
+
+    .basc-alumnae .al-interest-field {
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .basc-alumnae .al-check {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .basc-alumnae .al-registration-section {
+        padding: 20px 12px;
+    }
+}
+
+/* EXTRA SMALL SCREENS */
+
+@media (max-width: 350px) {
+    .basc-alumnae .al-container {
+        width: 96%;
+    }
+
+    .basc-alumnae .al-hero h1 {
+        font-size: 24px;
+    }
+
+    .basc-alumnae .al-hero-art {
+        width: 190px;
+    }
+
+    .basc-alumnae .al-art-main {
+        font-size: 15px;
+    }
+
+    .basc-alumnae .al-footer {
+        padding: 20px 15px;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE: TABLETS
+   ========================================== */
+
+@media (max-width: 1024px) {
+    .td-section {
+        padding: 60px 5%;
+    }
+
+    .td-about {
+        gap: 30px;
+    }
+
+    .td-programme-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .td-career-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .td-syllabus-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .td-resource-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .td-gallery-grid {
+        grid-auto-rows: 190px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE: MOBILE AND TABLET
+   ========================================== */
+
+@media (max-width: 768px) {
+    .td-section {
+        padding: 48px 5%;
+    }
+
+    .td-section-heading {
+        margin-bottom: 30px;
+    }
+
+    .td-section-heading h2,
+    .td-about-content h2,
+    .td-contact-content h2 {
+        font-size: 30px;
+    }
+
+    .td-about,
+    .td-rank-layout,
+    .td-contact {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .td-about-visual {
+        padding-right: 8px;
+    }
+
+    .td-image-frame {
+        min-height: 360px;
+    }
+
+    .td-programme-grid,
+    .td-syllabus-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .td-staff-grid,
+    .td-student-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .td-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 22px 5%;
+    }
+
+    .td-highlight-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .td-highlight-item:nth-child(-n+2) {
+        border-bottom: 1px solid #ddc5a8;
+    }
+
+    .td-centum-banner {
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .td-centum-mark {
+        flex-basis: 90px;
+        width: 90px;
+        height: 90px;
+        font-size: 30px;
+    }
+
+    .td-event-panel {
+        padding: 20px;
+    }
+
+    .td-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 180px;
+    }
+
+    .td-gallery-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .td-table {
+        min-width: 650px;
+    }
+
+    .td-quick-nav {
+        padding: 17px 4%;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE: SMALL MOBILE
+   ========================================== */
+
+@media (max-width: 480px) {
+    .tamil-department h1 {
+        font-size: 30px;
+    }
+
+    .tamil-department h2,
+    .td-section-heading h2,
+    .td-about-content h2,
+    .td-contact-content h2 {
+        font-size: 27px;
+    }
+
+    .tamil-department h3 {
+        font-size: 21px;
+    }
+
+    .tamil-department h4 {
+        font-size: 18px;
+    }
+
+    .tamil-department p,
+    .tamil-department li,
+    .td-btn,
+    .td-quick-nav a,
+    .td-text-link,
+    .td-download-btn,
+    .td-table th,
+    .td-table td,
+    .td-table .td-empty {
+        font-size: 16px;
+    }
+
+    .td-section {
+        padding: 38px 18px;
+    }
+
+    .td-section-heading {
+        margin-bottom: 25px;
+    }
+
+    .td-quick-nav {
+        gap: 8px;
+        padding: 14px 12px;
+    }
+
+    .td-quick-nav a {
+        padding: 8px 11px;
+    }
+
+    .td-about {
+        gap: 23px;
+    }
+
+    .td-image-frame {
+        min-height: 290px;
+        border-width: 4px;
+        border-radius: 5px 32px 5px 5px;
+    }
+
+    .td-image-label {
+        padding: 18px;
+    }
+
+    .td-image-label span {
+        font-size: 29px;
+    }
+
+    .td-vision-box,
+    .td-mission-box {
+        padding: 17px;
+    }
+
+    .td-programme-grid,
+    .td-career-grid,
+    .td-staff-grid,
+    .td-syllabus-grid,
+    .td-student-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .td-programme-card {
+        padding: 22px 19px;
+    }
+
+    .td-staff-photo {
+        height: 290px;
+    }
+
+    .td-student-card img {
+        height: 250px;
+    }
+
+    .td-rank-intro {
+        padding: 25px 21px;
+    }
+
+    .td-rank-records {
+        padding: 14px;
+    }
+
+    .td-table-heading {
+        align-items: flex-start;
+    }
+
+    .td-centum-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 21px;
+    }
+
+    .td-centum-mark {
+        flex-basis: 80px;
+        width: 80px;
+        height: 80px;
+        font-size: 28px;
+    }
+
+    .td-event-panel {
+        padding: 15px;
+    }
+
+    .td-event-heading {
+        align-items: flex-start;
+        gap: 13px;
+    }
+
+    .td-event-letter {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    .td-event-heading h3 {
+        font-size: 21px;
+    }
+
+    .td-gallery-grid {
+        grid-auto-rows: 145px;
+        gap: 10px;
+    }
+
+    .td-gallery-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .td-contact-art {
+        min-height: 200px;
+        border-radius: 5px 30px 5px 5px;
+    }
+
+    .td-contact-art span {
+        font-size: 48px;
+    }
+
+    .td-btn {
+        max-width: 100%;
+        white-space: normal;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE: EXTRA SMALL MOBILE
+   ========================================== */
+
+@media (max-width: 350px) {
+    .td-section {
+        padding: 32px 14px;
+    }
+
+    .td-section-heading h2,
+    .td-about-content h2,
+    .td-contact-content h2 {
+        font-size: 24px;
+    }
+
+    .td-highlights {
+        padding: 15px 10px;
+    }
+
+    .td-highlight-item {
+        padding: 14px 8px;
+    }
+
+    .td-highlight-number {
+        font-size: 27px;
+    }
+
+    .td-programme-card,
+    .td-syllabus-card {
+        padding: 17px 14px;
+    }
+
+    .td-syllabus-card {
+        flex-direction: column;
+    }
+
+    .td-gallery-grid {
+        grid-auto-rows: 125px;
+        gap: 8px;
+    }
+
+    .td-table-heading h3 {
+        font-size: 20px;
+    }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .tamil-department *,
+    .tamil-department *::before,
+    .tamil-department *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (min-width: 1200px) {
+    .basc-gallery-card.wide {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 991px) {
+    .basc-event-gallery {
+        padding: 65px 20px 50px;
+    }
+
+    .basc-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .basc-gallery-card.tall .basc-gallery-image,
+    .basc-gallery-image,
+    .basc-gallery-card.wide .basc-gallery-image {
+        height: 240px;
+    }
+
+    .basc-gallery-caption {
+        padding: 18px;
+    }
+
+    .basc-gallery-caption h3 {
+        font-size: 18px;
+    }
+
+    .basc-gallery-zoom {
+        opacity: 1;
+        transform: none;
+    }
+
+    .basc-gallery-card.wide {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .basc-event-gallery {
+        padding: 48px 14px 38px;
+    }
+
+    .basc-gallery-heading {
+        margin-bottom: 28px;
+    }
+
+    .basc-gallery-heading h2 {
+        font-size: 31px;
+    }
+
+    .basc-gallery-heading p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .basc-gallery-filters {
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+    .basc-filter-btn {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .basc-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .basc-gallery-image,
+    .basc-gallery-card.tall .basc-gallery-image,
+    .basc-gallery-card.wide .basc-gallery-image {
+        height: 245px;
+    }
+
+    .basc-gallery-caption {
+        padding: 17px;
+    }
+
+    .basc-gallery-caption h3 {
+        margin-top: 11px;
+        font-size: 18px;
+    }
+
+    .basc-gallery-caption p {
+        font-size: 15px;
+    }
+
+    .basc-gallery-footer {
+        flex-direction: column;
+        gap: 9px;
+        margin-top: 30px;
+    }
+
+    .basc-gallery-lightbox {
+        gap: 8px;
+        padding: 65px 10px 20px;
+    }
+
+    .basc-lightbox-figure {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .basc-lightbox-figure img {
+        max-height: 65vh;
+    }
+
+    .basc-lightbox-figure figcaption {
+        font-size: 14px;
+    }
+
+    .basc-lightbox-close,
+    .basc-lightbox-prev,
+    .basc-lightbox-next {
+        width: 36px;
+        height: 36px;
+        font-size: 19px;
+    }
+
+    .basc-lightbox-close {
+        top: 15px;
+        right: 15px;
+        font-size: 27px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .basc-event-gallery *,
+    .basc-gallery-lightbox {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+

@@ -1846,20 +1846,18 @@
 <section class="basc-recognition-section">
 
     <div class="basc-recognition-container">
-
-        <!-- ITEM 01 : NAAC -->
+        <!-- ITEM 05 : HERITAGE -->
         <div class="basc-recognition-item"
-             onclick="openRecognitionImage('naac')">
+             onclick="openRecognitionPDF('heritage')">
 
-            <span class="basc-recognition-icon">★</span>
+            <span class="basc-recognition-icon">1997</span>
 
             <div class="basc-recognition-content">
-                <strong>NAAC - A++</strong>
-                <span>Accredited</span>
+                <strong>Est. Heritage 1997</strong>
+                <span>Years of Excellence</span>
             </div>
 
         </div>
-
 
         <!-- ITEM 02 : UGC -->
         <div class="basc-recognition-item"
@@ -1874,6 +1872,18 @@
 
         </div>
 
+        <!-- ITEM 01 : NAAC -->
+        <div class="basc-recognition-item"
+             onclick="openRecognitionImage('naac')">
+
+            <span class="basc-recognition-icon">★</span>
+
+            <div class="basc-recognition-content">
+                <strong>NAAC - A++</strong>
+                <span>Accredited</span>
+            </div>
+
+        </div>
 
         <!-- ITEM 03 : IIC -->
         <div class="basc-recognition-item"
@@ -1903,18 +1913,7 @@
         </div>
 
 
-        <!-- ITEM 05 : HERITAGE -->
-        <div class="basc-recognition-item"
-             onclick="openRecognitionPDF('heritage')">
 
-            <span class="basc-recognition-icon">1997</span>
-
-            <div class="basc-recognition-content">
-                <strong>Est. Heritage 1997</strong>
-                <span>Years of Excellence</span>
-            </div>
-
-        </div>
 
     </div>
 
@@ -2431,589 +2430,480 @@ if (logoTrack) {
 
 
 
-
-    <!-- ================================
+<!-- ================================
      DEPARTMENT SECTION
 ================================ -->
 
-    <section class="department-section">
+<section class="department-section" id="departments">
+    <div class="department-container">
 
-        <div class="department-container">
+        <div class="department-slider">
 
+            <!-- Previous Button -->
+            <button type="button" class="department-arrow prev"
+                    id="departmentPrev" aria-label="Previous department">
+                &#10094;
+            </button>
 
-            <!-- Slider -->
-            <div class="department-slider">
+            <!-- Slider Viewport -->
+            <div class="department-viewport" id="departmentViewport">
 
-                <!-- Previous -->
-                <button class="department-arrow prev" id="departmentPrev">
-                    &#10094;
-                </button>
+                <div class="department-track" id="departmentTrack">
 
-
-                <!-- Viewport -->
-                <div class="department-viewport" id="departmentViewport">
-
-                    <div class="department-track" id="departmentTrack">
-
-
-                        <!-- Department 01 -->
-                        <div class="department-card">
-
+                    <!-- 01. Tamil -->
+                    <div class="department-card">
+                        <a href="tamil-department.html" class="department-link"
+                           aria-label="Visit Tamil Department">
                             <div class="department-logo">
-                                <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/tamil.jpeg"
-                                    alt="Tamil Department">
+                                <img src="assets/img/deplogos/tamil.jpeg"
+                                     alt="Tamil Department">
                             </div>
-
                             <h3>Tamil</h3>
-                         
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 02 -->
-                        <div class="department-card">
-
+                    <!-- 02. English -->
+                    <div class="department-card">
+                        <a href="departments/english.html" class="department-link"
+                           aria-label="Visit English Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/english.jpeg"
-                                    alt="English Department">
+                                     alt="English Department">
                             </div>
-
                             <h3>English</h3>
-                    
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 03 -->
-                        <div class="department-card">
-
+                    <!-- 03. Commerce -->
+                    <div class="department-card">
+                        <a href="departments/commerce.html" class="department-link"
+                           aria-label="Visit Commerce Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/commerce.jpeg"
-                                    alt="Commerce Department">
+                                     alt="Commerce Department">
                             </div>
-
                             <h3>Commerce</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 04 -->
-                        <div class="department-card">
-
+                    <!-- 04. Business Administration -->
+                    <div class="department-card">
+                        <a href="departments/business-administration.html"
+                           class="department-link"
+                           aria-label="Visit Business Administration Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/management.jpeg"
-                                    alt="Business Administration Department">
+                                     alt="Business Administration Department">
                             </div>
-
                             <h3>Business Administration</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 05 -->
-                        <div class="department-card">
-
+                    <!-- 05. History -->
+                    <div class="department-card">
+                        <a href="departments/history.html" class="department-link"
+                           aria-label="Visit History Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/history.jpeg"
-                                    alt="History Department">
+                                     alt="History Department">
                             </div>
-
                             <h3>History</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 06 -->
-                        <div class="department-card">
-
+                    <!-- 06. Mathematics -->
+                    <div class="department-card">
+                        <a href="departments/mathematics.html" class="department-link"
+                           aria-label="Visit Mathematics Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/maths.jpeg"
-                                    alt="Mathematics Department">
+                                     alt="Mathematics Department">
                             </div>
-
                             <h3>Mathematics</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 07 -->
-                        <div class="department-card">
-
+                    <!-- 07. Physics -->
+                    <div class="department-card">
+                        <a href="departments/physics.html" class="department-link"
+                           aria-label="Visit Physics Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/physics.jpeg"
-                                    alt="Physics Department">
+                                     alt="Physics Department">
                             </div>
-
                             <h3>Physics</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 08 -->
-                        <div class="department-card">
-
+                    <!-- 08. Chemistry -->
+                    <div class="department-card">
+                        <a href="departments/chemistry.html" class="department-link"
+                           aria-label="Visit Chemistry Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/chem.jpg"
-                                    alt="Chemistry Department">
+                                     alt="Chemistry Department">
                             </div>
-
                             <h3>Chemistry</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 09 -->
-                        <div class="department-card">
-
+                    <!-- 09. Computer Science -->
+                    <div class="department-card">
+                        <a href="departments/computer-science.html"
+                           class="department-link"
+                           aria-label="Visit Computer Science Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/cs.jpeg"
-                                    alt="Computer Science Department">
+                                     alt="Computer Science Department">
                             </div>
-
                             <h3>Computer Science</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 10 -->
-                        <div class="department-card">
-
+                    <!-- 10. Fashion Technology -->
+                    <div class="department-card">
+                        <a href="departments/fashion-technology.html"
+                           class="department-link"
+                           aria-label="Visit Fashion Technology Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/fashion.jpeg"
-                                    alt="Fashion Technology Department">
+                                     alt="Fashion Technology Department">
                             </div>
-
                             <h3>Fashion Technology</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 11 -->
-                        <div class="department-card">
-
+                    <!-- 11. Botany -->
+                    <div class="department-card">
+                        <a href="departments/botany.html" class="department-link"
+                           aria-label="Visit Botany Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/botony.jpeg"
-                                    alt="Botany Department">
+                                     alt="Botany Department">
                             </div>
-
                             <h3>Botany</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 12 -->
-                        <div class="department-card">
-
+                    <!-- 12. Nutrition and Dietetics -->
+                    <div class="department-card">
+                        <a href="departments/nutrition-and-dietetics.html"
+                           class="department-link"
+                           aria-label="Visit Nutrition and Dietetics Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/nutri.jpeg"
-                                    alt="Nutrition and Dietetics Department">
+                                     alt="Nutrition and Dietetics Department">
                             </div>
-
                             <h3>Nutrition and Dietetics</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 13 -->
-                        <div class="department-card">
-
+                    <!-- 13. Zoology -->
+                    <div class="department-card">
+                        <a href="departments/zoology.html" class="department-link"
+                           aria-label="Visit Zoology Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/zoology.jpeg"
-                                    alt="Zoology Department">
+                                     alt="Zoology Department">
                             </div>
-
                             <h3>Zoology</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 14 -->
-                        <div class="department-card">
-
+                    <!-- 14. Microbiology -->
+                    <div class="department-card">
+                        <a href="departments/microbiology.html"
+                           class="department-link"
+                           aria-label="Visit Microbiology Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/microbio.jpeg"
-                                    alt="Microbiology Department">
+                                     alt="Microbiology Department">
                             </div>
-
                             <h3>Microbiology</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 15 -->
-                        <div class="department-card">
-
+                    <!-- 15. Statistics -->
+                    <div class="department-card">
+                        <a href="departments/statistics.html" class="department-link"
+                           aria-label="Visit Statistics Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/statics.jpeg"
-                                    alt="Statistics Department">
+                                     alt="Statistics Department">
                             </div>
-
                             <h3>Statistics</h3>
+                        </a>
+                    </div>
 
-                        </div>
-
-
-                        <!-- Department 16 -->
-                        <div class="department-card">
-
+                    <!-- 16. Biotechnology -->
+                    <div class="department-card">
+                        <a href="departments/biotechnology.html"
+                           class="department-link"
+                           aria-label="Visit Biotechnology Department">
                             <div class="department-logo">
                                 <img src="https://priyadharshini-082001.github.io/bharathiyarartsandscience/assets/img/deplogos/biotech.jpeg"
-                                    alt="Biotechnology Department">
+                                     alt="Biotechnology Department">
                             </div>
-
                             <h3>Biotechnology</h3>
-
-                        </div>
-
-
+                        </a>
                     </div>
+
                 </div>
-
-
-                <!-- Next -->
-                <button class="department-arrow next" id="departmentNext">
-                    &#10095;
-                </button>
-
             </div>
+
+            <!-- Next Button -->
+            <button type="button" class="department-arrow next"
+                    id="departmentNext" aria-label="Next department">
+                &#10095;
+            </button>
 
         </div>
 
-    </section>
-
-
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const viewport = document.getElementById("departmentViewport");
-            const track = document.getElementById("departmentTrack");
-            const prevBtn = document.getElementById("departmentPrev");
-            const nextBtn = document.getElementById("departmentNext");
-            const dotsContainer = document.getElementById("departmentDots");
-
-            if (!viewport || !track) return;
-
-            const originalCards = Array.from(
-                track.querySelectorAll(".department-card")
-            );
-
-            const totalCards = originalCards.length;
-
-            if (totalCards === 0) return;
-
-            /* ==========================================
-               CLONE CARDS FOR INFINITE LOOP
-            ========================================== */
-
-            originalCards.forEach(card => {
-                const clone = card.cloneNode(true);
-                clone.setAttribute("aria-hidden", "true");
-                track.appendChild(clone);
-            });
-
-            /* ==========================================
-               SETTINGS
-            ========================================== */
-
-            let position = 0;
-            let cardWidth = 0;
-            let gap = 0;
-            let loopWidth = 0;
-
-            const speed = 0.45;
-
-            let animationId;
-            let isPaused = false;
-            let isDragging = false;
-
-            let startX = 0;
-            let startPosition = 0;
-
-            /* ==========================================
-               CALCULATE DIMENSIONS
-            ========================================== */
-
-            function calculateDimensions() {
-
-                const firstCard = track.querySelector(".department-card");
-
-                if (!firstCard) return;
-
-                const cardStyle = window.getComputedStyle(firstCard);
-
-                cardWidth = firstCard.getBoundingClientRect().width;
-
-                gap = parseFloat(
-                    window.getComputedStyle(track).gap
-                ) || 0;
-
-                loopWidth = (cardWidth + gap) * totalCards;
-            }
-
-            /* ==========================================
-               APPLY TRANSFORM
-            ========================================== */
-
-            function updateSlider() {
-
-                track.style.transform =
-                    `translate3d(${-position}px, 0, 0)`;
-
-                updateDots();
-            }
-
-            /* ==========================================
-               INFINITE POSITION
-            ========================================== */
-
-            function normalizePosition() {
-
-                if (position >= loopWidth) {
-                    position -= loopWidth;
-                }
-
-                if (position < 0) {
-                    position += loopWidth;
-                }
-            }
-
-            /* ==========================================
-               AUTO SCROLL
-            ========================================== */
-
-            function animate() {
-
-                if (!isPaused && !isDragging) {
-
-                    position += speed;
-
-                    normalizePosition();
-
-                    updateSlider();
-                }
-
-                animationId = requestAnimationFrame(animate);
-            }
-
-            /* ==========================================
-               PAUSE ON HOVER
-            ========================================== */
-
-            viewport.addEventListener("mouseenter", function () {
-                isPaused = true;
-            });
-
-            viewport.addEventListener("mouseleave", function () {
-                isPaused = false;
-            });
-
-            /* ==========================================
-               NEXT BUTTON
-            ========================================== */
-
-            if (nextBtn) {
-
-                nextBtn.addEventListener("click", function () {
-
-                    isPaused = true;
-
-                    position += cardWidth + gap;
-
-                    normalizePosition();
-
-                    updateSlider();
-
-                    setTimeout(() => {
-                        isPaused = false;
-                    }, 700);
-                });
-            }
-
-            /* ==========================================
-               PREVIOUS BUTTON
-            ========================================== */
-
-            if (prevBtn) {
-
-                prevBtn.addEventListener("click", function () {
-
-                    isPaused = true;
-
-                    position -= cardWidth + gap;
-
-                    normalizePosition();
-
-                    updateSlider();
-
-                    setTimeout(() => {
-                        isPaused = false;
-                    }, 700);
-                });
-            }
-
-            /* ==========================================
-               DRAG / SWIPE START
-            ========================================== */
-
-            viewport.addEventListener("pointerdown", function (e) {
-
-                isDragging = true;
-
-                startX = e.clientX;
-                startPosition = position;
-
-                viewport.setPointerCapture(e.pointerId);
-
-                track.style.transition = "none";
-            });
-
-            /* ==========================================
-               DRAG / SWIPE MOVE
-            ========================================== */
-
-            viewport.addEventListener("pointermove", function (e) {
-
-                if (!isDragging) return;
-
-                const difference = startX - e.clientX;
-
-                position = startPosition + difference;
-
-                normalizePosition();
-
-                track.style.transform =
-                    `translate3d(${-position}px, 0, 0)`;
-            });
-
-            /* ==========================================
-               DRAG / SWIPE END
-            ========================================== */
-
-            viewport.addEventListener("pointerup", function (e) {
-
-                if (!isDragging) return;
-
-                isDragging = false;
-
-                try {
-                    viewport.releasePointerCapture(e.pointerId);
-                } catch (error) { }
-
-                updateSlider();
-            });
-
-            viewport.addEventListener("pointercancel", function () {
-
-                isDragging = false;
-
-                updateSlider();
-            });
-
-            /* ==========================================
-               DOTS
-            ========================================== */
-
-            function createDots() {
-
-                if (!dotsContainer) return;
-
-                dotsContainer.innerHTML = "";
-
-                for (let i = 0; i < totalCards; i++) {
-
-                    const dot = document.createElement("button");
-
-                    dot.className = "department-dot";
-
-                    dot.setAttribute(
-                        "aria-label",
-                        `Go to department ${i + 1}`
-                    );
-
-                    dot.addEventListener("click", function () {
-
-                        position = i * (cardWidth + gap);
-
-                        updateSlider();
-                    });
-
-                    dotsContainer.appendChild(dot);
-                }
-
-                updateDots();
-            }
-
-            /* ==========================================
-               ACTIVE DOT
-            ========================================== */
-
-            function updateDots() {
-
-                if (!dotsContainer) return;
-
-                const dots =
-                    dotsContainer.querySelectorAll(".department-dot");
-
-                if (!dots.length || !loopWidth) return;
-
-                let currentIndex =
-                    Math.round(position / (cardWidth + gap));
-
-                currentIndex =
-                    currentIndex % totalCards;
-
-                dots.forEach((dot, index) => {
-
-                    dot.classList.toggle(
-                        "active",
-                        index === currentIndex
-                    );
-                });
-            }
-
-            /* ==========================================
-               RESIZE
-            ========================================== */
-
-            let resizeTimer;
-
-            window.addEventListener("resize", function () {
-
-                clearTimeout(resizeTimer);
-
-                resizeTimer = setTimeout(function () {
-
-                    calculateDimensions();
-
-                    position = position % loopWidth;
-
-                    updateSlider();
-
-                    createDots();
-
-                }, 150);
-            });
-
-            /* ==========================================
-               INITIALIZE
-            ========================================== */
-
-            calculateDimensions();
-
-            createDots();
-
-            updateSlider();
-
-            animationId = requestAnimationFrame(animate);
-
+        <!-- Pagination Dots -->
+        <div class="department-dots" id="departmentDots"></div>
+
+    </div>
+</section>
+<script>
+    
+document.addEventListener("DOMContentLoaded", function () {
+    const viewport = document.getElementById("departmentViewport");
+    const track = document.getElementById("departmentTrack");
+    const prevBtn = document.getElementById("departmentPrev");
+    const nextBtn = document.getElementById("departmentNext");
+    const dotsContainer = document.getElementById("departmentDots");
+
+    if (!viewport || !track) return;
+
+    const originalCards = Array.from(
+        track.querySelectorAll(".department-card")
+    );
+
+    const totalCards = originalCards.length;
+    if (!totalCards) return;
+
+    // Clone cards for seamless infinite scrolling
+    originalCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+
+        // Keep cloned links out of keyboard navigation
+        clone.querySelectorAll("a").forEach(link => {
+            link.setAttribute("tabindex", "-1");
         });
 
+        track.appendChild(clone);
+    });
 
+    let position = 0;
+    let cardWidth = 0;
+    let gap = 0;
+    let loopWidth = 0;
 
-    </script>
+    const speed = 0.45;
 
+    let isPaused = false;
+    let isDragging = false;
+    let pointerStartX = 0;
+    let startPosition = 0;
+    let pointerId = null;
+    let moved = false;
+    let animationId;
+    let resumeTimer;
 
+    const dragThreshold = 8;
+
+    function calculateDimensions() {
+        const firstCard = track.querySelector(".department-card");
+        if (!firstCard) return;
+
+        cardWidth = firstCard.getBoundingClientRect().width;
+        gap = parseFloat(getComputedStyle(track).gap) || 0;
+        loopWidth = (cardWidth + gap) * totalCards;
+
+        if (loopWidth > 0) {
+            position = ((position % loopWidth) + loopWidth) % loopWidth;
+        }
+    }
+
+    function updateSlider() {
+        track.style.transform = `translate3d(${-position}px, 0, 0)`;
+        updateDots();
+    }
+
+    function normalizePosition() {
+        if (loopWidth <= 0) return;
+
+        position = ((position % loopWidth) + loopWidth) % loopWidth;
+    }
+
+    function updateDots() {
+        if (!dotsContainer || !loopWidth || !cardWidth) return;
+
+        const dots = dotsContainer.querySelectorAll(".department-dot");
+        const currentIndex =
+            Math.round(position / (cardWidth + gap)) % totalCards;
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+            dot.setAttribute(
+                "aria-current",
+                index === currentIndex ? "true" : "false"
+            );
+        });
+    }
+
+    function createDots() {
+        if (!dotsContainer) return;
+
+        dotsContainer.innerHTML = "";
+
+        for (let i = 0; i < totalCards; i++) {
+            const dot = document.createElement("button");
+
+            dot.type = "button";
+            dot.className = "department-dot";
+            dot.setAttribute("aria-label", `Go to department ${i + 1}`);
+
+            dot.addEventListener("click", function () {
+                position = i * (cardWidth + gap);
+                normalizePosition();
+                updateSlider();
+            });
+
+            dotsContainer.appendChild(dot);
+        }
+
+        updateDots();
+    }
+
+    function moveOneCard(direction) {
+        if (cardWidth <= 0) return;
+
+        clearTimeout(resumeTimer);
+        isPaused = true;
+
+        position += direction * (cardWidth + gap);
+        normalizePosition();
+        updateSlider();
+
+        resumeTimer = setTimeout(() => {
+            isPaused = false;
+        }, 1500);
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener("click", () => moveOneCard(1));
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener("click", () => moveOneCard(-1));
+    }
+
+    // Pause while the pointer is over the slider
+    viewport.addEventListener("mouseenter", () => {
+        isPaused = true;
+    });
+
+    viewport.addEventListener("mouseleave", () => {
+        if (!isDragging) isPaused = false;
+    });
+
+    // Drag/swipe: do not start dragging on a department link or button
+    viewport.addEventListener("pointerdown", function (event) {
+        if (event.target.closest("a, button")) return;
+        if (event.pointerType === "mouse" && event.button !== 0) return;
+
+        isDragging = true;
+        moved = false;
+        pointerId = event.pointerId;
+        pointerStartX = event.clientX;
+        startPosition = position;
+
+        viewport.setPointerCapture(event.pointerId);
+        track.style.transition = "none";
+    });
+
+    viewport.addEventListener("pointermove", function (event) {
+        if (!isDragging || event.pointerId !== pointerId) return;
+
+        const difference = pointerStartX - event.clientX;
+
+        if (Math.abs(difference) > dragThreshold) {
+            moved = true;
+        }
+
+        if (!moved) return;
+
+        position = startPosition + difference;
+        normalizePosition();
+        track.style.transform = `translate3d(${-position}px, 0, 0)`;
+    });
+
+    function finishDrag(event) {
+        if (!isDragging) return;
+        if (event && event.pointerId !== pointerId) return;
+
+        isDragging = false;
+        pointerId = null;
+
+        if (event && viewport.hasPointerCapture(event.pointerId)) {
+            viewport.releasePointerCapture(event.pointerId);
+        }
+
+        if (moved) {
+            updateSlider();
+        }
+
+        track.style.transition = "";
+        moved = false;
+    }
+
+    viewport.addEventListener("pointerup", finishDrag);
+    viewport.addEventListener("pointercancel", finishDrag);
+    viewport.addEventListener("lostpointercapture", function () {
+        isDragging = false;
+        pointerId = null;
+        moved = false;
+        track.style.transition = "";
+    });
+
+    // Automatic scrolling
+    function animate() {
+        if (!isPaused && !isDragging && loopWidth > 0) {
+            position += speed;
+            normalizePosition();
+            updateSlider();
+        }
+
+        animationId = requestAnimationFrame(animate);
+    }
+
+    // Recalculate when the viewport changes size
+    let resizeTimer;
+
+    window.addEventListener("resize", function () {
+        clearTimeout(resizeTimer);
+
+        resizeTimer = setTimeout(function () {
+            calculateDimensions();
+            createDots();
+            updateSlider();
+        }, 150);
+    });
+
+    // Pause automatic movement when the browser tab is hidden
+    document.addEventListener("visibilitychange", function () {
+        isPaused = document.hidden;
+    });
+
+    calculateDimensions();
+    createDots();
+    updateSlider();
+
+    animationId = requestAnimationFrame(animate);
+});
+</script>
     <!-- about area start -->
     <!-- =========================================================
      WHY CHOOSE BASCW SECTION
@@ -5286,6 +5176,7 @@ renderEvents();
                                     </div>
                                 </div>
                             </div>
+                              
                         </div>
                     </div>
                 </div>
@@ -5593,38 +5484,63 @@ renderEvents();
     </main>
     <!-- Body main wrapper end -->
 
-<!-- =========================================================
-     FIXED SOCIAL MEDIA SIDE BAR
-========================================================= -->
-
+    
+<!-- FIXED RIGHT SOCIAL MEDIA + PROSPECTUS BAR -->
 <div class="fixed-social-bar">
 
-    <!-- Instagram -->
-    <a href="#" class="fixed-social instagram"
-       aria-label="Instagram"
-       target="_blank">
-        <i class="fab fa-instagram"></i>
+    <a href="https://www.youtube.com/results?search_query=bharathiyar+arts+and+science+college+deviyakurichi"
+       class="fixed-social youtube"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+        <span>YouTube</span>
     </a>
 
-    <!-- Facebook -->
-    <a href="#" class="fixed-social facebook"
-       aria-label="Facebook"
-       target="_blank">
+    <a href="https://www.facebook.com/bharathiyar.deviyakurichi?mibextid=ZbWKwL"
+       class="fixed-social facebook"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
     </a>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/919047673999"
-       class="fixed-social whatsapp"
-       aria-label="WhatsApp"
-       target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://www.instagram.com/bharathiyar_arts1997?igsi=djJqb2Q0eHVlMmIw"
+       class="fixed-social instagram"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
     </a>
 
+    <a href="https://www.linkedin.com/in/bharathiyar-iic-022536317/"
+       class="fixed-social linkedin"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+    </a>
 
-    
+    <a href="https://x.com/Bharathiyariic"
+       class="fixed-social x-twitter"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="X">
+        <i class="fab fa-x-twitter"></i>
+        <span>X.com</span>
+    </a>
+
+    <a href="assets/logo/prospectus1.pdf"
+       class="fixed-social prospectus"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Prospectus">
+        <i class="fas fa-book-open"></i>
+        <span>Prospectus</span>
+    </a>
 
 </div>
+
+
+
+
 
     <!--==================================================
                 FOOTER START

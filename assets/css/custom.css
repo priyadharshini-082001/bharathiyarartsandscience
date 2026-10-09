@@ -6156,92 +6156,154 @@ color: #0a2c6e;
 }
 
 
-
-/* =========================================================
-   SMALL FIXED SOCIAL MEDIA BAR
-========================================================= */
+/* =========================================
+   FIXED RIGHT SOCIAL MEDIA TOOLBAR
+========================================= */
 
 .fixed-social-bar {
     position: fixed;
+    top: 60%;
     right: 0;
-    top: 50%;
-
     transform: translateY(-50%);
-
-    z-index: 9999;
-
     display: flex;
     flex-direction: column;
-
-    gap: 4px;
-
-    padding: 4px;
-
-    background: #ffffff;
-
-    border: 1px solid #e5e5e5;
-    border-right: 0;
-
-    border-radius: 8px 0 0 8px;
-
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    gap: 0;
+    z-index: 99999;
 }
 
-
-/* =========================================================
-   SMALL SOCIAL ICON
-========================================================= */
-
-.fixed-social {
-    width: 30px;
-    height: 30px;
-
+/* Individual icon */
+.fixed-social-bar .fixed-social {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: 38px;
+    height: 38px;
     color: #ffffff;
-
     text-decoration: none;
-
-    border-radius: 5px;
-
-    font-size: 14px;
-
-    transition: 0.25s ease;
+    font-size: 16px;
+    overflow: visible;
+    transition:
+        width 0.3s ease,
+        background-color 0.3s ease;
 }
 
-
-/* =========================================================
-   COLORS
-========================================================= */
-
-.fixed-social.instagram {
-    background: #e1306c;
+/* Remove all gaps */
+.fixed-social-bar .fixed-social + .fixed-social {
+    margin-top: 0;
 }
 
-.fixed-social.facebook {
+/* Brand colors */
+.fixed-social-bar .youtube {
+    background: #ff0000;
+}
+
+.fixed-social-bar .facebook {
     background: #1877f2;
 }
 
-.fixed-social.whatsapp {
-    background: #25d366;
+.fixed-social-bar .instagram {
+    background: #c13584;
 }
 
-
-/* =========================================================
-   HOVER
-========================================================= */
-
-.fixed-social:hover {
-    transform: translateX(-3px);
-
-    color: #ffffff;
-
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+.fixed-social-bar .linkedin {
+    background: #0a66c2;
 }
 
+.fixed-social-bar .x-twitter {
+    background: #000000;
+}
 
+.fixed-social-bar .prospectus {
+    background: #245331;
+}
+
+/* Hover: expand to the left */
+.fixed-social-bar .fixed-social:hover {
+    width: 125px;
+    justify-content: flex-start;
+    padding-left: 12px;
+}
+
+/* Hover brand colors */
+.fixed-social-bar .youtube:hover {
+    background: #cc0000;
+}
+
+.fixed-social-bar .facebook:hover {
+    background: #0866d9;
+}
+
+.fixed-social-bar .instagram:hover {
+    background: #e1306c;
+}
+
+.fixed-social-bar .linkedin:hover {
+    background: #004182;
+}
+
+.fixed-social-bar .x-twitter:hover {
+    background: #333333;
+}
+
+.fixed-social-bar .prospectus:hover {
+    background: #a66a32;
+}
+
+/* Icon sizing */
+.fixed-social-bar .fixed-social i {
+    min-width: 16px;
+    text-align: center;
+}
+
+/* Names hidden until hover */
+.fixed-social-bar .fixed-social span {
+    position: absolute;
+    right: 42px;
+    top: 50%;
+    transform: translate(8px, -50%);
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.25s ease;
+    pointer-events: none;
+}
+
+/* Show names on hover */
+.fixed-social-bar .fixed-social:hover span {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    margin-left: 10px;
+}
+
+/* Keyboard accessibility */
+.fixed-social-bar .fixed-social:focus-visible {
+    outline: 2px solid #222222;
+    outline-offset: 2px;
+}
+
+/* Mobile responsive */
+@media (max-width: 576px) {
+    .fixed-social-bar .fixed-social {
+        width: 32px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .fixed-social-bar .fixed-social:hover {
+        width: 108px;
+        padding-left: 8px;
+    }
+
+    .fixed-social-bar .fixed-social span {
+        font-size: 11px;
+    }
+}
 
 
 
@@ -7342,4 +7404,15 @@ color: #0a2c6e;
     .basc-career-arrow {
         font-size: 15px;
     }
+}
+.department-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.department-link .department-card {
+    height: 100%;
+    cursor: pointer;
 }
