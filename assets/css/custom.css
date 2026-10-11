@@ -7416,4 +7416,61 @@ color: #0a2c6e;
     height: 100%;
     cursor: pointer;
 }
+/* Department dropdown only */
+.department-dropdown {
+    position: relative;
+}
 
+.department-dropdown .department-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #ffffff;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Show Department submenu */
+.department-dropdown:hover .department-submenu {
+    display: block;
+}
+
+/* Department links */
+.department-dropdown .department-submenu a {
+    display: block;
+    padding: 11px 16px;
+    color: #222222;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+/* Hover effect */
+.department-dropdown .department-submenu a:hover {
+    background: crimson;
+    color: white;
+}
+
+/* Custom scrollbar - Department only */
+.department-dropdown .department-submenu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.department-dropdown .department-submenu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.department-dropdown .department-submenu::-webkit-scrollbar-thumb {
+    background: #073b8f;
+    border-radius: 10px;
+}
+
+.department-dropdown .department-submenu::-webkit-scrollbar-thumb:hover {
+    background: #052b68;
+}
