@@ -1642,7 +1642,7 @@
 
     .navbar-wrapper.menu-open {
 
-        max-height: calc(100vh - 112px);
+        max-height: calc(85vh - 112px);
     }
 
 
