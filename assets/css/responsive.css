@@ -1642,7 +1642,7 @@
 
     .navbar-wrapper.menu-open {
 
-        max-height: 60vh;
+        max-height: 100vh;
     }
 
 
@@ -1670,7 +1670,6 @@
 
         max-height:fit-content;
 
-        overflow-y: auto;
     }
 
 
