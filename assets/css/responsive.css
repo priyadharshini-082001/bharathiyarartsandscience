@@ -1668,7 +1668,7 @@
 
         gap: 0;
 
-        max-height: calc(100vh - 112px);
+        max-height:fit-content;
 
         overflow-y: auto;
     }
@@ -3334,3 +3334,6 @@
         font-size: 16px;
     }
 }
+
+
+
