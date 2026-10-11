@@ -2898,202 +2898,280 @@ text-align: justify;
     border-radius: 5px;
 }
 
-/* =========================================================
-   BASCW – JOURNEY TO EXCELLENCE
-   COMPACT MILESTONE CARD DESIGN
-========================================================= */
+/* =====================================================
+   BASCW - JOURNEY TO EXCELLENCE
+   WIDE CARDS + 14PX DESKTOP PARAGRAPHS
+===================================================== */
 
 .bascw-excellence-journey {
     width: 100%;
-    padding: 55px 20px;
+    padding: 70px 25px 80px;
     background: #ffffff;
-    font-family: "Segoe UI", Arial, sans-serif;
+    overflow: hidden;
 }
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
 
 .bascw-excellence-inner {
     width: 100%;
-    max-width: 1180px;
+    max-width: 1700px;
     margin: 0 auto;
 }
 
-
-/* =========================================================
-   HEADING
-========================================================= */
+/* ================= SECTION HEADING ================= */
 
 .bascw-excellence-title {
+    max-width: 850px;
+    margin: 0 auto 65px;
     text-align: center;
-    max-width: 720px;
-    margin: 0 auto 42px;
 }
 
-.bascw-excellence-title span {
+.bascw-excellence-title > span {
     display: inline-block;
-    margin-bottom: 8px;
-    color: crimson;
-    font-size: 16px;
+    margin-bottom: 12px;
+    color: #8c2635;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    letter-spacing: 2.5px;
 }
 
 .bascw-excellence-title h2 {
-    margin: 0 0 10px;
-    color: #08306c;
+    margin: 0 0 14px;
+    color: #183568;
     font-size: 36px;
-    line-height: 1.2;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 .bascw-excellence-title h2 strong {
-    color: crimson;
+    color: #8c2635;
 }
 
 .bascw-excellence-title p {
-    margin: 0;
-    color: #333333;
-    font-size: 16px;
-    line-height: 1.7;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: center;
 }
 
+/* ================= DESKTOP TIMELINE ================= */
 
-/* =========================================================
-   MILESTONE GRID
-========================================================= */
-
-.bascw-milestone-grid {
+.bascw-timeline {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-
-/* =========================================================
-   CARD
-========================================================= */
-
-.bascw-milestone-card {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    align-items: stretch;
     position: relative;
-    display: flex;
-    min-height: 215px;
-    overflow: hidden;
-    background: #ffffff;
-    border: 1px solid #e6e6e6;
-    border-radius: 8px;
-    transition: 0.3s ease;
-    border-color: #e5b72f;
-    transform: translateY(-4px);
+    isolation: isolate;
 }
 
+/* Horizontal connecting line */
 
-/* =========================================================
-   YEAR PANEL
-========================================================= */
+.bascw-timeline::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #e2e5ed;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
 
-.bascw-milestone-year {
-    flex: 0 0 78px;
+/* Individual milestone */
+
+.bascw-timeline-item {
+    position: relative;
+    min-width: 0;
+    height: 570px;
+}
+
+/* ================= YEAR ARROW ================= */
+
+.bascw-timeline-marker {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: -2px;
+    right: -2px;
+
+    height: 46px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: #ffffff;
-    color: #000000;
-
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    border: 1px solid #e5b72f;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-
-/* Alternating year colors */
-
-.bascw-milestone-card:nth-child(2n) .bascw-milestone-year {
-    background: #ffffff;
-}
-
-.bascw-milestone-card:nth-child(3n) .bascw-milestone-year {
-    background: #ffffff;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.bascw-milestone-info {
-    position: relative;
-    flex: 1;
-    padding: 25px 22px;
-}
-
-.bascw-milestone-info > span {
-    display: block;
-    margin-bottom: 8px;
-    color: #e5b72f;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-}
-
-
-.bascw-milestone-info h3 {
-    margin: 0 0 10px;
-    color: #08306c;
-    font-size: 20px;
-    line-height: 1.3;
-    font-weight: 700;
-}
-
-
-.bascw-milestone-info p {
-    margin: 0;
-    color: #222222;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-
-.bascw-milestone-info p strong {
-    color:crimson;
-}
-
-
-/* =========================================================
-   FUTURE CARD
-========================================================= */
-
-.bascw-milestone-future {
-    border-color: #e5b72f;
-    background: #fffdf5;
-}
-
-.bascw-milestone-future .bascw-milestone-year {
-    background: #e5b72f;
-    color: #08306c;
-}
-
-.bascw-milestone-future .bascw-milestone-info h3 {
-    color: crimson;
-}
-
-.bascw-milestone-future small {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    background: crimson;
     color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+
+    transform: translateY(-50%);
+
+    clip-path: polygon(
+        0 0,
+        76% 0,
+        100% 50%,
+        76% 100%,
+        0 100%,
+        22% 50%
+    );
+
+    transition: filter 0.25s ease;
+}
+
+.bascw-timeline-marker span {
+    padding-left: 4px;
+}
+
+/* ================= CONNECTOR LINES ================= */
+
+.bascw-timeline-item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 30px;
+    background: #b9bfcb;
+    transform: translateX(-50%);
+}
+
+.bascw-timeline-item.top::after {
+    top: calc(50% - 53px);
+}
+
+.bascw-timeline-item.bottom::after {
+    top: calc(50% + 23px);
+}
+
+/* ================= INDIVIDUAL CONTENT CARDS ================= */
+
+.bascw-timeline-content {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+
+    padding: 17px 14px;
+
+    background: #ffffff;
+    border: 1px solid #e2e5ec;
+    border-top: 3px solid #8c2635;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    transition: border-color 0.25s ease;
+}
+
+/* Cards above the timeline */
+
+.bascw-timeline-item.top .bascw-timeline-content {
+    bottom: calc(50% + 68px);
+}
+
+/* Cards below the timeline */
+
+.bascw-timeline-item.bottom .bascw-timeline-content {
+    top: calc(50% + 68px);
+}
+
+/* Alternate card accent colours */
+
+.bascw-timeline-item:nth-child(3n) .bascw-timeline-content {
+    border-top-color: #3455b4;
+}
+
+.bascw-timeline-item:nth-child(3n + 2) .bascw-timeline-content {
+    border-top-color: #139b67;
+}
+
+/* ================= CARD HEADINGS ================= */
+
+.bascw-timeline-content h3 {
+    color: #183568;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 0 10px;
+    overflow-wrap: break-word;
+}
+
+/* ================= DESKTOP PARAGRAPHS ================= */
+
+.bascw-timeline-content p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: left;
+    margin: 0;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+}
+
+.bascw-timeline-content strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Future goal label */
+
+.bascw-timeline-content small {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 8px;
+    background: #f7f0e1;
+    border-radius: 3px;
+    color: #856014;
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+/* ================= YEAR COLOURS ================= */
+
+.bascw-timeline-marker.navy {
+    background: #302078;
+}
+
+.bascw-timeline-marker.maroon {
+    background: #92264d;
+}
+
+.bascw-timeline-marker.blue {
+    background: #3455b4;
+}
+
+.bascw-timeline-marker.green {
+    background: #139b67;
+}
+
+.bascw-timeline-marker.orange {
+    background: #d85b20;
+}
+
+.bascw-timeline-marker.purple {
+    background: #4932a1;
+}
+
+.bascw-timeline-marker.teal {
+    background: #168b87;
+}
+
+.bascw-timeline-marker.gold {
+    background: #a87518;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.bascw-timeline-item:hover .bascw-timeline-content {
+    border-color: #c5cddd;
+}
+
+.bascw-timeline-item:hover .bascw-timeline-marker {
+    filter: brightness(1.1);
 }
 
 
@@ -15989,293 +16067,2958 @@ body.basc-lightbox-open {
     font-size: 27px;
 }
 
-/* ==========================================
-   TABLET RESPONSIVE
-   ========================================== */
 
-@media (max-width: 991px) {
-    .basc-placement {
-        padding: 50px 4%;
-    }
 
-    .basc-placement .pc-intro {
-        grid-template-columns: 1fr;
-        gap: 23px;
-    }
+/* =========================================
+   BASCW - COLOURFUL RANGERS SECTION
+   Clean white background | No box cards
+========================================= */
 
-    .basc-placement .pc-intro-image img {
-        height: 340px;
-    }
+.basc-rangers {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 10px;
+    background: #ffffff;
+    color: #172d51;
+}
 
-    .basc-placement .pc-gallery {
-        gap: 16px;
-    }
+.basc-rangers *,
+.basc-rangers *::before,
+.basc-rangers *::after {
+    box-sizing: border-box;
+}
 
-    .basc-placement .pc-gallery-image img {
-        height: 190px;
-    }
+.rangers-container {
+    width: 92%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
-    .basc-placement .pc-gallery-content {
-        padding: 13px 9px;
-    }
+/* TOP INTRO */
 
-    .basc-placement .pc-gallery-content h4 {
-        font-size: 17px;
-    }
+.rangers-top {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 45px;
+}
 
-    .basc-placement .pc-columns {
-        gap: 18px;
-    }
+.rangers-heading {
+    text-align: center;
+}
 
-    .basc-placement .pc-info-card {
-        padding: 22px 19px;
-    }
+.rangers-kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-bottom: 16px;
+    color: #e49b00;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
 
-    .basc-placement .pc-journey-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+.rangers-kicker i {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #d21b72;
+}
+
+.rangers-kicker i:last-child {
+    background: #078e65;
+}
+
+.rangers-heading h2 {
+    margin: 0;
+    color: #12366e;
+    font-size: clamp(30px, 3.5vw, 55px);
+    line-height: 1.13;
+    font-weight: 800;
+}
+
+.rangers-heading h2 span {
+    display: block;
+    margin-top: 4px;
+    color: #c51b70;
+    font-family: cursive;
+    font-size: 1.15em;
+    font-style: italic;
+}
+
+.heading-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 17px;
+    color: #f3aa00;
+}
+
+.heading-decoration span {
+    width: 65px;
+    height: 2px;
+    background: #f3aa00;
+}
+
+.rangers-intro {
+    margin: 0;
+    padding-left: 28px;
+    border-left: 2px solid #f3b22a;
+    color: #292d35;
+    font-size: 16px;
+    line-height: 1.95;
+    text-align: left;
+}
+
+/* MAIN CONTENT */
+
+.rangers-main {
+    display: grid;
+    grid-template-columns: 0.85fr 1.35fr;
+    align-items: center;
+    gap: 45px;
+}
+
+/* IMAGE COLLAGE */
+
+.rangers-gallery {
+    min-width: 0;
+    min-height: 440px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 10px 55px;
+}
+
+.rangers-image-main {
+    position: relative;
+    z-index: 1;
+    width: 91%;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 45% 45% 25% 25%;
+    transform: rotate(-2deg);
+}
+
+.rangers-image-main img,
+.rangers-image-small img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.rangers-image-main:hover img,
+.rangers-image-small:hover img {
+    transform: scale(1.05);
+}
+
+.rangers-image-small {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 35px;
+    width: 53%;
+    height: 180px;
+    overflow: hidden;
+    border: 7px solid #ffffff;
+    border-radius: 35% 22% 38% 22%;
+    transform: rotate(3deg);
+}
+
+.rangers-number {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    bottom: 15px;
+    width: 165px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    background: #103875;
+    box-shadow: 0 0 0 3px #f3b323;
+    color: #ffffff;
+    text-align: center;
+}
+
+.rangers-number strong {
+    font-family: Georgia, serif;
+    font-size: 64px;
+    line-height: 1;
+}
+
+.rangers-number span {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+
+.rangers-number i {
+    margin-top: 4px;
+    color: #ffbf28;
+    font-size: 21px;
+    font-style: normal;
+}
+
+.rangers-orbit {
+    position: absolute;
+    z-index: 0;
+    border: 2px solid #f5b928;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.orbit-one {
+    left: 2%;
+    bottom: 22px;
+    width: 95%;
+    height: 70%;
+    transform: rotate(-20deg);
+}
+
+.orbit-two {
+    top: 2px;
+    right: 0;
+    width: 60%;
+    height: 55%;
+    border-color: #b5d9ff;
+    border-left-color: transparent;
+    transform: rotate(20deg);
+}
+
+/* SECTION HEADING */
+
+.rangers-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.heading-number {
+    flex-shrink: 0;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #123875;
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+.rangers-section-heading small {
+    display: block;
+    margin-bottom: 6px;
+    color: #123875;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.rangers-section-heading h3 {
+    margin: 0;
+    color: #123875;
+    font-size: clamp(23px, 2.3vw, 35px);
+    line-height: 1.2;
+}
+
+.rangers-section-heading h3 em {
+    color: #c51b70;
+    font-family: cursive;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* TEAM LAYOUT - NO BOXES */
+
+.ranger-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 12px;
+}
+
+.ranger-item {
+    --team-color: #c51b70;
+    --team-light: #fff0f6;
+
+    position: relative;
+    min-width: 0;
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 10px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    isolation: isolate;
+    transition: transform 0.25s ease;
+}
+
+.ranger-item::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-radius: 48% 15% 38% 18%;
+    background: var(--team-light);
+    opacity: 0.9;
+    transform: skewX(-4deg);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.ranger-item:hover {
+    transform: translateY(-3px);
+}
+
+.ranger-item:hover::before {
+    opacity: 1;
+    transform: skewX(-2deg) scale(1.02);
+}
+
+.ranger-red {
+    --team-color: #c51b70;
+    --team-light: #ffe6f0;
+}
+
+.ranger-blue {
+    --team-color: #0872d4;
+    --team-light: #e5f2ff;
+}
+
+.ranger-gold {
+    --team-color: #d18c00;
+    --team-light: #fff4d7;
+}
+
+.ranger-green {
+    --team-color: #078b56;
+    --team-light: #dff8ec;
+}
+
+.ranger-purple {
+    --team-color: #7028bd;
+    --team-light: #f1e5ff;
+}
+
+.ranger-orange {
+    --team-color: #ef650b;
+    --team-light: #fff0e2;
+}
+
+.ranger-index {
+    flex: 0 0 66px;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--team-color);
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    box-shadow: 0 5px 0 rgba(20, 40, 70, 0.08);
+}
+
+.ranger-details {
+    min-width: 0;
+    padding-left: 15px;
+    border-left: 2px solid var(--team-color);
+}
+
+.ranger-details h4 {
+    margin: 0 0 5px;
+    color: #16345f;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.ranger-details p {
+    margin: 0 0 7px;
+    color: #424956;
+    font-size: 13px;
+}
+
+.ranger-details strong {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #1d2c43;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ranger-details strong span {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--team-color);
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.ranger-leaf {
+    align-self: flex-end;
+    margin-left: auto;
+    padding: 0 5px 3px;
+    color: var(--team-color);
+    font-size: 23px;
+}
+
+/* VALUES STRIP */
+
+.rangers-values {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    margin-top: 55px;
+    padding: 35px 0 45px;
+}
+
+.rangers-values::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: -10%;
+    bottom: 0;
+    left: -10%;
+    background: #f1f8ff;
+    border-radius: 50% 50% 0 0 / 12% 12% 0 0;
+}
+
+.rangers-value {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    min-width: 0;
+    padding: 8px 20px;
+}
+
+.rangers-value + .rangers-value {
+    border-left: 1px solid #cbd6e3;
+}
+
+.value-icon {
+    flex: 0 0 70px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--value-color);
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.value-pink {
+    --value-color: #c51b70;
+}
+
+.value-blue {
+    --value-color: #0872d4;
+}
+
+.value-green {
+    --value-color: #078b56;
+}
+
+.value-purple {
+    --value-color: #7028bd;
+}
+
+.rangers-value > div:last-child {
+    min-width: 0;
+}
+
+.rangers-value span {
+    color: var(--value-color);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.rangers-value h4 {
+    margin: 3px 0 7px;
+    color: #123875;
+    font-size: 21px;
+}
+
+.rangers-value p {
+    margin: 0;
+    color: #25354b;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BASCW - SPORTS & PHYSICAL EDUCATION
+   Alice Blue Theme | Responsive Design
+========================================= */
+
+.basc-sports {
+    --sports-bg: #F0F8FF;
+    --sports-white: #ffffff;
+    --sports-navy: #123568;
+    --sports-blue: #2478BD;
+    --sports-sky: #69B7E8;
+    --sports-teal: #168B83;
+    --sports-gold: #E5AD35;
+    --sports-purple: #7653B5;
+    --sports-pink: #C34B86;
+    --sports-text: black;
+    --sports-muted: black;
+
+    padding:50px 10px;
+    overflow: hidden;
+    background: var(--sports-bg);
+    color: var(--sports-text);
+}
+
+.basc-sports *,
+.basc-sports *::before,
+.basc-sports *::after {
+    box-sizing: border-box;
+}
+
+.basc-sports img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sports-container,
+.sports-facilities,
+.sports-competition,
+.sports-gallery-section,
+.sports-quick-links {
+    width: 91%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.sports-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.sports-intro {
+    padding: 10px 0;
+}
+
+.sports-label,
+.competition-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--sports-teal);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.sports-intro h2 {
+    margin: 0 0 22px;
+    color: var(--sports-navy);
+    font-size: clamp(36px, 4vw, 58px);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.sports-intro h2 span {
+    display: block;
+    color: var(--sports-blue);
+    font-style: italic;
+}
+
+.sports-intro > p {
+    max-width: 620px;
+    margin: 0 0 28px;
+    color: var(--sports-text);
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.sports-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+    padding: 14px 23px;
+    border: 1px solid var(--sports-navy);
+    border-radius: 40px;
+    background: var(--sports-navy);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sports-button span {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.sports-button:hover {
+    border-color: var(--sports-teal);
+    background: var(--sports-teal);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   HERO IMAGE COLLAGE
+========================================= */
+
+.sports-hero {
+    position: relative;
+    min-width: 0;
+    min-height: 410px;
+    padding: 0 12px 35px 25px;
+}
+
+.sports-hero-image {
+    height: 370px;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    border-radius: 48% 48% 12% 12%;
+    background: #DCEFFC;
+}
+
+.sports-hero-image img {
+    transition: transform 0.6s ease;
+}
+
+.sports-hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.sports-image-caption {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 300px;
+    padding: 15px 22px;
+    border: 1px solid #D5E7F5;
+    border-radius: 35px;
+    background: #ffffff;
+}
+
+.caption-star {
+    color: var(--sports-gold);
+    font-size: 38px;
+}
+
+.sports-image-caption strong {
+    display: block;
+    color: var(--sports-navy);
+    font-size: 17px;
+}
+
+.sports-image-caption p {
+    margin: 5px 0 0;
+    color: var(--sports-muted);
+    font-size: 16px;
+}
+
+.sports-round-text {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: var(--sports-gold);
+    color: var(--sports-navy);
+    transform: rotate(-10deg);
+}
+
+.sports-round-text span {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.sports-round-text strong {
+    font-size: 22px;
+}
+
+/* =========================================
+   SPORTS BENEFITS
+========================================= */
+
+.sports-benefits {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 91%;
+    max-width: 1400px;
+    margin: 55px auto 80px;
+    padding: 30px 0;
+    border-top: 1px solid #D5E6F5;
+    border-bottom: 1px solid #D5E6F5;
+}
+
+.sports-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    min-width: 0;
+}
+
+.benefit-icon {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.benefit-green {
+    background: #D9F2E9;
+    color: #147A58;
+}
+
+.benefit-orange {
+    background: #FFF0D5;
+    color: #A96800;
+}
+
+.benefit-purple {
+    background: #EDE6FA;
+    color: #6842A7;
+}
+
+.benefit-blue {
+    background: #DDEEFF;
+    color: #1F69AD;
+}
+
+.sports-benefit h3 {
+    margin: 3px 0 7px;
+    color: var(--sports-navy);
+    font-size: 17px;
+}
+
+.sports-benefit p {
+    margin: 0;
+    color: var(--sports-muted);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* =========================================
+   COMMON SECTION HEADINGS
+========================================= */
+
+.sports-heading {
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.sports-heading > span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--sports-teal);
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.sports-heading h2 {
+    margin: 0 0 12px;
+    color: var(--sports-navy);
+    font-size: clamp(30px, 3.2vw, 44px);
+    line-height: 1.2;
+}
+
+.sports-heading h2 em {
+    color: var(--sports-blue);
+}
+
+.sports-heading > p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--sports-text);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   SPORTS FACILITIES
+========================================= */
+
+.sports-facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+}
+
+.sports-facility {
+    min-width: 0;
+}
+
+.facility-image {
+    position: relative;
+    height: 250px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    border-radius: 12px 12px 65px 12px;
+    background: #DDEFFC;
+}
+
+.facility-image img {
+    transition: transform 0.5s ease;
+}
+
+.sports-facility:hover .facility-image img {
+    transform: scale(1.06);
+}
+
+.facility-image > span {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background: var(--sports-gold);
+    color: var(--sports-navy);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.sports-facility h3 {
+    margin: 0 0 12px;
+    color: var(--sports-navy);
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.sports-facility p {
+    margin: 0;
+    color: var(--sports-text);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* =========================================
+   COMPETITION FEATURE
+========================================= */
+
+.sports-competition {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+    margin-bottom: 95px;
+    padding: 35px;
+    border: 1px solid #D9EAF7;
+    border-radius: 22px;
+    background: #E5F3FF;
+}
+
+.competition-image {
+    height: 420px;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    border-radius: 100px 12px 100px 12px;
+    background: #D6EAFB;
+}
+
+.competition-image img {
+    transition: transform 0.5s ease;
+}
+
+.competition-image:hover img {
+    transform: scale(1.04);
+}
+
+.competition-content h2 {
+    margin: 0 0 20px;
+    color: var(--sports-navy);
+    font-size: clamp(30px, 3.2vw, 45px);
+    line-height: 1.2;
+}
+
+.competition-content h2 em {
+    color: var(--sports-blue);
+}
+
+.competition-content > p {
+    margin: 0 0 20px;
+    color: var(--sports-text);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.competition-content ul {
+    margin: 0 0 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.competition-content li {
+    position: relative;
+    margin-bottom: 13px;
+    padding-left: 30px;
+    color: var(--sports-text);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.competition-content li::before {
+    content: "✓";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--sports-teal);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.sports-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--sports-gold);
+    color: var(--sports-navy);
+    font-size: 17px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.sports-text-link span {
+    color: var(--sports-blue);
+    font-size: 22px;
+    transition: transform 0.25s ease;
+}
+
+.sports-text-link:hover {
+    color: var(--sports-teal);
+}
+
+.sports-text-link:hover span {
+    transform: translateX(5px);
+}
+
+/* =========================================
+   SPORTS GALLERY
+========================================= */
+
+.sports-gallery-section {
+    margin-bottom: 75px;
+}
+
+.sports-gallery {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 18px;
+}
+
+.sports-gallery-item {
+    position: relative;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    background: #DDEFFC;
+}
+
+.sports-gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.sports-gallery-item:hover img {
+    transform: scale(1.07);
+}
+
+.sports-gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(
+        transparent,
+        rgba(13, 43, 78, 0.82)
+    );
+    pointer-events: none;
+}
+
+.sports-gallery-item figcaption {
+    position: absolute;
+    z-index: 1;
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.gallery-large {
+    grid-row: span 2;
+}
+
+/* =========================================
+   QUICK LINKS
+========================================= */
+
+.sports-quick-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    padding: 30px;
+    border: 1px solid #D9EAF7;
+    border-radius: 18px;
+    background: #E5F3FF;
+}
+
+.sports-quick-links > a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    padding: 12px 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.quick-icon {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #D2E9FF;
+    color: var(--sports-blue);
+    font-size: 24px;
+}
+
+.sports-quick-links > a:nth-child(2) .quick-icon {
+    background: #FFF0D5;
+    color: #A96800;
+}
+
+.sports-quick-links > a:nth-child(3) .quick-icon {
+    background: #D9F2E9;
+    color: #147A58;
+}
+
+.sports-quick-links > a > span:nth-child(2) {
+    flex: 1;
+    min-width: 0;
+}
+
+.sports-quick-links strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--sports-navy);
+    font-size: 17px;
+}
+
+.sports-quick-links small {
+    display: block;
+    color: var(--sports-muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.sports-quick-links > a > b {
+    color: var(--sports-blue);
+    font-size: 23px;
+    transition: transform 0.25s ease;
+}
+
+.sports-quick-links > a:hover > b {
+    transform: translateX(5px);
+}
+
+
+/* =====================================================
+   BASCW - SCHOLARSHIPS & FINANCIAL ASSISTANCE
+   Alice Blue Background + Colorful Cards
+   Black Paragraph Text + Justified Alignment
+===================================================== */
+
+.basc-scholarship {
+    --sch-bg: #F0F8FF;
+    --sch-blue: #2167B2;
+    --sch-navy: #15345B;
+    --sch-green: #16866B;
+    --sch-purple: #7950B5;
+    --sch-gold: #D99B20;
+    --sch-text: #000000;
+    --sch-muted: #000000;
+    --sch-white: #FFFFFF;
+
+    padding: 75px 5%;
+    background: var(--sch-bg);
+    color: #000000;
+    overflow: hidden;
+}
+
+.basc-scholarship *,
+.basc-scholarship *::before,
+.basc-scholarship *::after {
+    box-sizing: border-box;
+}
+
+.basc-scholarship img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.basc-scholarship a {
+    text-decoration: none;
+}
+
+/* ALL PARAGRAPHS */
+
+.basc-scholarship p {
+    color: #000000 !important;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* SECTION HEADING */
+
+.basc-scholarship-heading {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.basc-scholarship-tag {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 30px;
+    background: #DDEEFF;
+    color: #2167B2;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.basc-scholarship-heading h2 {
+    margin: 18px 0 15px;
+    color: #15345B;
+    font-size: clamp(28px, 4vw, 43px);
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.basc-scholarship-heading p {
+    max-width: 680px;
+    margin: auto;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* INTRODUCTION */
+
+.basc-scholarship-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    max-width: 1200px;
+    margin: 0 auto 70px;
+}
+
+.basc-scholarship-intro-image {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.basc-scholarship-intro-image > img {
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    object-fit: cover;
+}
+
+.basc-scholarship-image-label {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px 20px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.97);
+}
+
+.basc-scholarship-label-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #FFF1CB;
+    color: #B77C0B;
+    font-size: 23px;
+}
+
+.basc-scholarship-image-label strong,
+.basc-scholarship-image-label small {
+    display: block;
+}
+
+.basc-scholarship-image-label strong {
+    color: #15345B;
+    font-size: 16px;
+}
+
+.basc-scholarship-image-label small {
+    margin-top: 5px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.basc-scholarship-intro-content {
+    padding: 10px 0;
+}
+
+.basc-scholarship-subtitle {
+    color: #16866B;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.basc-scholarship-intro-content h3,
+.basc-scholarship-process-content h3 {
+    margin: 15px 0 20px;
+    color: #15345B;
+    font-size: clamp(25px, 3vw, 34px);
+    line-height: 1.35;
+    font-weight: 800;
+}
+
+.basc-scholarship-intro-content p,
+.basc-scholarship-process-content > p {
+    margin: 0 0 17px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* PRIMARY BUTTON */
+
+.basc-scholarship-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 14px 23px;
+    border-radius: 8px;
+    background: #2167B2;
+    color: #FFFFFF !important;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.basc-scholarship-btn span,
+.basc-scholarship-contact-btn span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.basc-scholarship-btn:hover {
+    background: #15345B;
+    transform: translateY(-3px);
+}
+
+/* COLORFUL SUPPORT CARDS */
+
+.basc-scholarship-support {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+.basc-scholarship-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 28px 23px;
+    border-radius: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E1EAF4;
+    border-top: 5px solid var(--card-color);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.basc-scholarship-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--card-color);
+}
+
+.scholarship-blue {
+    --card-color: #2675CA;
+    --card-soft: #E6F2FF;
+}
+
+.scholarship-green {
+    --card-color: #169879;
+    --card-soft: #E1F7EF;
+}
+
+.scholarship-purple {
+    --card-color: #8156C6;
+    --card-soft: #F0E8FF;
+}
+
+.scholarship-gold {
+    --card-color: #D49A22;
+    --card-soft: #FFF3D8;
+}
+
+.basc-scholarship-card-icon {
+    display: grid;
+    place-items: center;
+    width: 57px;
+    height: 57px;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    background: var(--card-soft);
+    font-size: 27px;
+}
+
+.basc-scholarship-number {
+    position: absolute;
+    top: 30px;
+    right: 22px;
+    color: var(--card-color);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.basc-scholarship-card h3 {
+    margin: 0 0 13px;
+    color: #15345B;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.basc-scholarship-card p {
+    flex-grow: 1;
+    margin: 0 0 23px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.basc-scholarship-card > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--card-color);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.basc-scholarship-card > a span {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.basc-scholarship-card > a:hover span {
+    transform: translateX(5px);
+}
+
+/* APPLICATION PROCESS */
+
+.basc-scholarship-process {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 35px;
+    border-radius: 22px;
+    background: #FFFFFF;
+}
+
+.basc-scholarship-process-image {
+    min-height: 460px;
+    overflow: hidden;
+    border-radius: 17px;
+}
+
+.basc-scholarship-process-image img {
+    min-height: 460px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.basc-scholarship-process-image:hover img {
+    transform: scale(1.04);
+}
+
+.basc-scholarship-process-content h3 {
+    margin-bottom: 12px;
+}
+
+.basc-scholarship-process-content > p {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.basc-scholarship-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    margin-top: 20px;
+}
+
+.basc-scholarship-step > span {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background: #E1F0FF;
+    color: #2167B2;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.basc-scholarship-step:nth-of-type(2) > span {
+    background: #DFF7EC;
+    color: #16866B;
+}
+
+.basc-scholarship-step:nth-of-type(3) > span {
+    background: #F0E8FF;
+    color: #7950B5;
+}
+
+.basc-scholarship-step:nth-of-type(4) > span {
+    background: #FFF0CE;
+    color: #A8730A;
+}
+
+.basc-scholarship-step h4 {
+    margin: 0 0 6px;
+    color: #15345B;
+    font-size: 16px;
+}
+
+.basc-scholarship-step p {
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* DOCUMENT REMINDER */
+
+.basc-scholarship-documents {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto 35px;
+    padding: 26px 30px;
+    border-left: 5px solid #DCA32E;
+    border-radius: 12px;
+    background: #FFF8E8;
+}
+
+.basc-scholarship-documents-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 58px;
+    height: 58px;
+    border-radius: 15px;
+    background: #FFE7B2;
+    font-size: 27px;
+}
+
+.basc-scholarship-documents h3 {
+    margin: 0 0 8px;
+    color: #76520F;
+    font-size: 18px;
+}
+
+.basc-scholarship-documents p {
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* CONTACT BANNER */
+
+.basc-scholarship-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+    padding: 35px 40px;
+    border-radius: 18px;
+    background: #173F70;
+}
+
+.basc-scholarship-contact-text > span {
+    color: #A9D9FF;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.basc-scholarship-contact-text h3 {
+    margin: 10px 0;
+    color: #FFFFFF;
+    font-size: clamp(21px, 2.5vw, 28px);
+    line-height: 1.4;
+}
+
+.basc-scholarship-contact-text p {
+    max-width: 700px;
+    margin: 0;
+    color: white !important;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.basc-scholarship-contact-action {
+    flex-shrink: 0;
+}
+
+.basc-scholarship-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 22px;
+    border-radius: 8px;
+    background: #F4C65E;
+    color: #173F70 !important;
+    font-size: 14px;
+    font-weight: 800;
+    transition: background 0.25s ease;
+}
+
+.basc-scholarship-contact-btn:hover {
+    background: #FFFFFF;
+}
+
+/* VERIFIED RECORD NOTE */
+
+.basc-scholarship-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 18px;
+    border-radius: 10px;
+    background: #E0EEFC;
+}
+
+.basc-scholarship-note > span {
+    color: #2167B2;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.basc-scholarship-note p {
+    margin: 0;
+    font-size: 13px;
+    text-align: justify;
 }
 
 /* ==========================================
-   MOBILE RESPONSIVE
-   ========================================== */
+   BASCW CONTACT FORM
+   Left Image | Center Form | Right Image
+========================================== */
 
-@media (max-width: 650px) {
-    .basc-placement {
-        padding: 38px 15px;
+.basc-contact-section {
+    padding: 75px 4%;
+    background: #F0F8FF;
+    overflow: hidden;
+}
+
+.basc-contact-section * {
+    box-sizing: border-box;
+}
+
+/* SECTION HEADING */
+
+.basc-contact-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.basc-contact-heading > span {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #DDEEFF;
+    color: #2167B2;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.basc-contact-heading h2 {
+    margin: 17px 0 12px;
+    color: #15345B;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+}
+
+.basc-contact-heading p {
+    margin: auto;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* THREE-COLUMN LAYOUT */
+
+.basc-contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.3fr) minmax(0, 0.85fr);
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1350px;
+    margin: auto;
+}
+
+/* SIDE IMAGES */
+
+.basc-contact-side {
+    position: relative;
+    min-height: 650px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #DDEEFF;
+}
+
+.basc-contact-side > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.basc-contact-side:hover > img {
+    transform: scale(1.04);
+}
+
+.basc-contact-left {
+    border-bottom: 6px solid #2C80C5;
+}
+
+.basc-contact-right {
+    border-bottom: 6px solid #1A967D;
+}
+
+/* IMAGE CAPTIONS */
+
+.basc-contact-image-caption {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.basc-contact-image-caption > span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #2478BD;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.basc-contact-right .basc-contact-image-caption > span {
+    color: #16866B;
+}
+
+.basc-contact-image-caption h3 {
+    margin: 0 0 8px;
+    color: #15345B;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.basc-contact-image-caption p {
+    margin: 0;
+    color: #000000;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* FORM CONTAINER */
+
+.basc-contact-form-wrapper {
+    padding: 32px 28px;
+    border-radius: 18px;
+    background: #FFFFFF;
+    border: 1px solid #DFEAF5;
+}
+
+.basc-contact-form-title {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.basc-contact-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background: #E3F1FF;
+    color: #2167B2;
+    font-size: 28px;
+}
+
+.basc-contact-form-title h3 {
+    margin: 15px 0 7px;
+    color: #15345B;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.basc-contact-form-title p {
+    margin: 0;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* FORM FIELDS */
+
+.basc-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.basc-contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.basc-contact-field label {
+    color: #15345B;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.basc-contact-field input,
+.basc-contact-field select,
+.basc-contact-field textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #D6E1ED;
+    border-radius: 8px;
+    outline: none;
+    background: #F9FCFF;
+    color: #000000;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.basc-contact-field input,
+.basc-contact-field select {
+    min-height: 47px;
+}
+
+.basc-contact-field textarea {
+    min-height: 115px;
+    resize: vertical;
+}
+
+.basc-contact-field input::placeholder,
+.basc-contact-field textarea::placeholder {
+    color: #707B88;
+}
+
+.basc-contact-field input:focus,
+.basc-contact-field select:focus,
+.basc-contact-field textarea:focus {
+    border-color: #2478BD;
+    background: #FFFFFF;
+}
+
+.basc-contact-field input:focus-visible,
+.basc-contact-field select:focus-visible,
+.basc-contact-field textarea:focus-visible,
+.basc-contact-submit:focus-visible {
+    outline: 2px solid #2478BD;
+    outline-offset: 3px;
+}
+
+/* SUBMIT BUTTON */
+
+.basc-contact-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 5px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2167B2;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.basc-contact-submit span {
+    font-size: 21px;
+}
+
+.basc-contact-submit:hover {
+    background: #15345B;
+    transform: translateY(-2px);
+}
+
+.basc-contact-privacy {
+    margin: 0;
+    color: #000000;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+/* =====================================================
+   BASCW CAREER PAGE
+   Alice Blue + Navy + Colorful Accents
+===================================================== */
+
+.basc-career {
+    --career-bg: #F0F8FF;
+    --career-navy: #15345B;
+    --career-blue: #2167B2;
+    --career-green: #16866B;
+    --career-purple: #7950B5;
+    --career-gold: #D99B20;
+    --career-text: #000000;
+    --career-white: #FFFFFF;
+
+    padding:50px 10px;
+    background: var(--career-bg);
+    color: var(--career-text);
+    overflow: hidden;
+}
+
+.basc-career *,
+.basc-career *::before,
+.basc-career *::after {
+    box-sizing: border-box;
+}
+
+.basc-career img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.basc-career p {
+    color: #000000;
+    text-align: justify;
+    line-height: 1.85;
+}
+
+.basc-career a {
+    text-decoration: none;
+}
+
+
+
+/* SECTION HEADING */
+
+.basc-career-section-heading {
+    max-width: 780px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.basc-career-section-heading > span {
+    color: var(--career-green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.basc-career-section-heading h2 {
+    margin: 13px 0;
+    color: var(--career-navy);
+    font-size: clamp(27px, 3.5vw, 38px);
+    line-height: 1.3;
+}
+
+.basc-career-section-heading p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* CAREER AREA CARDS */
+
+.basc-career-areas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.basc-career-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 27px 23px;
+    border: 1px solid #DDE8F3;
+    border-top: 5px solid var(--card-color);
+    border-radius: 14px;
+    background: #FFFFFF;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.basc-career-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--card-color);
+}
+
+.career-blue {
+    --card-color: #2675CA;
+    --card-soft: #E5F1FF;
+}
+
+.career-green {
+    --card-color: #16866B;
+    --card-soft: #E1F7EF;
+}
+
+.career-purple {
+    --card-color: #7950B5;
+    --card-soft: #F0E8FF;
+}
+
+.career-gold {
+    --card-color: #C58A17;
+    --card-soft: #FFF2D5;
+}
+
+.basc-career-card-icon {
+    display: grid;
+    place-items: center;
+    width: 57px;
+    height: 57px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: var(--card-soft);
+    font-size: 26px;
+}
+
+.basc-career-card-number {
+    position: absolute;
+    top: 31px;
+    right: 20px;
+    color: var(--card-color);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.basc-career-card h3 {
+    margin: 0 0 13px;
+    color: var(--career-navy);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.basc-career-card p {
+    flex-grow: 1;
+    margin: 0 0 22px;
+    font-size: 14px;
+}
+
+.basc-career-card > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--card-color);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.basc-career-card > a span {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.basc-career-card > a:hover span {
+    transform: translateX(5px);
+}
+
+/* RECRUITMENT OPENINGS */
+
+.basc-career-openings {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 45px;
+    max-width: 1160px;
+    margin: 0 auto 80px;
+    padding: 32px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.basc-career-opening-image {
+    min-height: 350px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.basc-career-opening-image img {
+    min-height: 350px;
+    transition: transform 0.5s ease;
+}
+
+.basc-career-opening-image:hover img {
+    transform: scale(1.04);
+}
+
+.basc-career-opening-content > p {
+    margin: 0 0 20px;
+    font-size: 15px;
+}
+
+.basc-career-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin: 22px 0;
+    padding: 17px;
+    border-left: 4px solid #D99B20;
+    border-radius: 8px;
+    background: #FFF6DF;
+}
+
+.basc-career-notice > span {
+    color: #A16B0C;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.basc-career-notice p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* APPLICATION PROCESS */
+
+.basc-career-process {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.basc-career-process-step {
+    position: relative;
+    padding: 26px 22px;
+    border-radius: 13px;
+    background: #FFFFFF;
+    border-bottom: 4px solid var(--step-color);
+}
+
+.basc-career-process-step:nth-child(1) {
+    --step-color: #2675CA;
+}
+
+.basc-career-process-step:nth-child(2) {
+    --step-color: #16866B;
+}
+
+.basc-career-process-step:nth-child(3) {
+    --step-color: #7950B5;
+}
+
+.basc-career-process-step:nth-child(4) {
+    --step-color: #C58A17;
+}
+
+.basc-career-step-number {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: var(--step-color);
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.basc-career-process-step h3 {
+    margin: 0 0 12px;
+    color: var(--career-navy);
+    font-size: 17px;
+}
+
+.basc-career-process-step p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* CAREER ENQUIRY FORM */
+
+.basc-career-apply {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 45px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 35px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.basc-career-form-image {
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #15345B;
+}
+
+.basc-career-form-image > img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+
+.basc-career-form-image::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(15, 40, 70, 0.05),
+        rgba(15, 40, 70, 0.9)
+    );
+    content: "";
+}
+
+.basc-career-form-image-caption {
+    position: absolute;
+    z-index: 1;
+    right: 22px;
+    bottom: 25px;
+    left: 22px;
+}
+
+.basc-career-form-image-caption > span {
+    color: #F5C75E;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.basc-career-form-image-caption h3 {
+    margin: 12px 0;
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+.basc-career-form-image-caption p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.basc-career-form-content {
+    min-width: 0;
+    padding: 8px 0;
+}
+
+.basc-career-form-content > p {
+    margin: 0 0 25px;
+    font-size: 14px;
+}
+
+.basc-career-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.basc-career-form-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 8px;
+}
+
+.basc-career-full {
+    grid-column: 1 / -1;
+}
+
+.basc-career-form-field label {
+    color: var(--career-navy);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.basc-career-form-field input,
+.basc-career-form-field select,
+.basc-career-form-field textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    border: 1px solid #D7E3EF;
+    border-radius: 8px;
+    outline: none;
+    background: #F9FCFF;
+    color: #000000;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.basc-career-form-field input,
+.basc-career-form-field select {
+    min-height: 47px;
+}
+
+.basc-career-form-field textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.basc-career-form-field input::placeholder,
+.basc-career-form-field textarea::placeholder {
+    color: #68778A;
+}
+
+.basc-career-form-field input:focus,
+.basc-career-form-field select:focus,
+.basc-career-form-field textarea:focus {
+    border-color: #2167B2;
+    background: #FFFFFF;
+}
+
+.basc-career-form-field input:focus-visible,
+.basc-career-form-field select:focus-visible,
+.basc-career-form-field textarea:focus-visible,
+.basc-career-submit:focus-visible {
+    outline: 2px solid #2167B2;
+    outline-offset: 3px;
+}
+
+.basc-career-form-field small {
+    color: #000000;
+    font-size: 12px;
+}
+
+.basc-career-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2167B2;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.basc-career-submit span {
+    font-size: 20px;
+}
+
+.basc-career-submit:hover {
+    background: #15345B;
+    transform: translateY(-2px);
+}
+
+/* FOOTER NOTE */
+
+.basc-career-footer-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 22px;
+    border-radius: 10px;
+    background: #DDEEFF;
+}
+
+.basc-career-footer-note > span {
+    color: #2167B2;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.basc-career-footer-note p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   BASCW - ADMISSION ENQUIRY SECTION
+========================================== */
+
+.basc-admission,
+.basc-admission * {
+    box-sizing: border-box;
+}
+
+.basc-admission {
+    width: 100%;
+    padding: 45px 20px;
+    background: #F0F8FF;
+    color: #222;
+}
+
+/* MAIN HEADING */
+
+.basc-admission-heading {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.basc-admission-heading > span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #2478BD;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.basc-admission-heading h1 {
+    margin: 0 0 10px;
+    color: #123568;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basc-admission-heading p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* TWO-COLUMN LAYOUT */
+
+.basc-admission-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* LEFT IMAGE CARD */
+
+.basc-admission-info {
+    min-width: 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e1eaf3;
+}
+
+.basc-admission-info img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.admission-info-text {
+    padding: 22px;
+}
+
+.admission-info-text h2 {
+    margin: 0 0 12px;
+    color: #123568;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.admission-info-text p {
+    margin: 0 0 18px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* BENEFITS */
+
+.admission-benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #26384c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.benefit-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #e5f3ff;
+    color: #1765a8;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* RIGHT FORM CARD */
+
+.basc-admission-form {
+    min-width: 0;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #e1eaf3;
+    border-top: 4px solid #2478BD;
+    border-radius: 10px;
+}
+
+.form-heading {
+    margin-bottom: 22px;
+}
+
+.form-heading h2 {
+    margin: 0 0 8px;
+    color: #123568;
+    font-size: 23px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.form-heading p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* FORM ROWS */
+
+.basc-admission-form .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.basc-admission-form .form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin-bottom: 15px;
+}
+
+.basc-admission-form .form-row .form-group {
+    margin-bottom: 0;
+}
+
+/* LABELS */
+
+.basc-admission-form label {
+    display: block;
+    margin-bottom: 7px;
+    color: #26384c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.basc-admission-form label span,
+.form-note span {
+    color: #d62828;
+}
+
+/* INPUTS */
+
+.basc-admission-form input,
+.basc-admission-form select,
+.basc-admission-form textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 10px 11px;
+    border: 1px solid #ccd8e5;
+    border-radius: 5px;
+    background: #fff;
+    color: #222;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.basc-admission-form input,
+.basc-admission-form select {
+    height: 42px;
+}
+
+.basc-admission-form textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+.basc-admission-form input::placeholder,
+.basc-admission-form textarea::placeholder {
+    color: #8995a3;
+    opacity: 1;
+}
+
+.basc-admission-form input:focus,
+.basc-admission-form select:focus,
+.basc-admission-form textarea:focus {
+    border-color: #2478BD;
+}
+
+/* SUBMIT BUTTON */
+
+.admission-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 45px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    background: #123568;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.admission-submit:hover {
+    background: #2478BD;
+}
+
+.admission-submit span {
+    font-size: 19px;
+    line-height: 1;
+}
+
+.form-note {
+    margin: 12px 0 0;
+    color: #777;
+    font-size: 11px;
+}
+
+
+/* ======================================
+   BASCW - EXAMINATION RESULTS
+====================================== */
+
+.basc-results,
+.basc-results * {
+    box-sizing: border-box;
+}
+
+.basc-results {
+    width: 100%;
+    padding: 55px 20px;
+    background: #F0F8FF;
+    color: #222;
+}
+
+.basc-results-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.basc-results-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 32px;
+}
+
+.results-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #2478BD;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.basc-results-heading h2 {
+    margin: 0 0 12px;
+    color: #123568;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basc-results-heading p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* RESULT CARD */
+
+.basc-results-card {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #dce7f2;
+    border-top: 4px solid #123568;
+    border-radius: 10px;
+}
+
+/* ICON */
+
+.results-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background: #e6f2ff;
+    color: #123568;
+    font-size: 38px;
+}
+
+/* CONTENT */
+
+.results-status {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: #2478BD;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.results-content h3 {
+    margin: 0 0 12px;
+    color: #123568;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.results-description {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* PUBLICATION AND HELP DETAILS */
+
+.results-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.results-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    padding: 14px;
+    background: #f6f9fc;
+    border: 1px solid #e4edf5;
+    border-radius: 6px;
+}
+
+.results-detail-item > i {
+    flex-shrink: 0;
+    color: #2478BD;
+    font-size: 20px;
+}
+
+.results-detail-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.results-detail-item span {
+    color: #666;
+    font-size: 12px;
+}
+
+.results-detail-item strong {
+    color: #123568;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* RESULTS BUTTON */
+
+.results-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 48px;
+    padding: 13px 22px;
+    border-radius: 5px;
+    background: #123568;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.results-button:hover {
+    background: #2478BD;
+    color: #fff;
+}
+
+.results-button i {
+    font-size: 13px;
+}
+
+/* OFFICIAL RECORD NOTICE */
+
+.results-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 22px 0 0;
+    padding: 13px 15px;
+    border-left: 3px solid #2478BD;
+    background: #f3f8fd;
+    color: #4a5562;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.results-note i {
+    flex-shrink: 0;
+    margin-top: 4px;
+    color: #2478BD;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+    .basc-results {
+        padding: 40px 16px;
     }
 
-    .basc-placement::before {
-        top: 10px;
-        right: 5px;
+    .basc-results-card {
+        grid-template-columns: 70px minmax(0, 1fr);
+        gap: 18px;
+        padding: 24px;
+    }
+
+    .results-icon {
         width: 65px;
         height: 65px;
+        font-size: 28px;
     }
 
-    .basc-placement .pc-heading {
-        margin-bottom: 29px;
-    }
-
-    .basc-placement .pc-eyebrow,
-    .basc-placement .pc-gallery-heading > span,
-    .basc-placement .pc-journey-heading > span {
-        font-size: 11px;
-        letter-spacing: 1.3px;
-    }
-
-    .basc-placement .pc-heading h2 {
-        font-size: 27px;
-        line-height: 1.35;
-    }
-
-    .basc-placement .pc-heading p {
-        font-size: 15px;
-        line-height: 1.8;
-    }
-
-    .basc-placement .pc-intro {
-        gap: 17px;
-        margin-bottom: 37px;
-        padding: 10px;
-        border-radius: 16px;
-    }
-
-    .basc-placement .pc-intro-image {
-        padding: 6px;
-    }
-
-    .basc-placement .pc-intro-image img {
-        height: 225px;
-    }
-
-    .basc-placement .pc-image-label {
-        right: 13px;
-        bottom: 14px;
-        left: 13px;
-        padding: 9px;
-        font-size: 13px;
-    }
-
-    .basc-placement .pc-intro-content {
-        padding: 9px 5px 12px;
-    }
-
-    .basc-placement .pc-intro-content h3 {
-        font-size: 22px;
-    }
-
-    .basc-placement .pc-intro-content p {
-        font-size: 15px;
-        line-height: 1.8;
-    }
-
-    .basc-placement .pc-highlight {
-        font-size: 14px;
-    }
-
-    .basc-placement .pc-gallery-heading {
-        margin-bottom: 22px;
-    }
-
-    .basc-placement .pc-gallery-heading h3 {
-        font-size: 24px;
-    }
-
-    .basc-placement .pc-gallery {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-bottom: 38px;
-    }
-
-    .basc-placement .pc-gallery-card {
-        padding: 7px;
-        border-radius: 15px;
-    }
-
-    .basc-placement .pc-gallery-image img {
-        height: 225px;
-    }
-
-    .basc-placement .pc-gallery-content {
-        padding: 14px 11px 13px;
-    }
-
-    .basc-placement .pc-gallery-content h4 {
-        font-size: 19px;
-    }
-
-    .basc-placement .pc-gallery-content p {
-        font-size: 15px;
-    }
-
-    .basc-placement .pc-columns {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-bottom: 36px;
-    }
-
-    .basc-placement .pc-info-card {
-        padding: 21px 17px;
-        border-radius: 15px;
-    }
-
-    .basc-placement .pc-info-top {
-        gap: 12px;
-    }
-
-    .basc-placement .pc-info-number {
-        flex-basis: 45px;
-        width: 45px;
-        height: 45px;
-        font-size: 17px;
-    }
-
-    .basc-placement .pc-info-kicker {
-        font-size: 10px;
-        letter-spacing: 0.8px;
-    }
-
-    .basc-placement .pc-info-card h3 {
-        font-size: 22px;
-    }
-
-    .basc-placement .pc-info-description {
-        font-size: 15px;
-    }
-
-    .basc-placement .pc-info-card ul {
-        gap: 12px;
-    }
-
-    .basc-placement .pc-info-card li {
-        padding-left: 24px;
-        font-size: 15px;
-        line-height: 1.75;
-    }
-
-    .basc-placement .pc-journey {
-        margin-bottom: 28px;
-        padding: 23px 13px;
-        border-radius: 17px;
-    }
-
-    .basc-placement .pc-journey-heading {
-        margin-bottom: 22px;
-    }
-
-    .basc-placement .pc-journey-heading h3 {
-        font-size: 23px;
-    }
-
-    .basc-placement .pc-journey-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .basc-placement .pc-journey-item {
-        padding: 18px 14px;
-    }
-
-    .basc-placement .pc-journey-item p {
-        font-size: 15px;
-    }
-
-    .basc-placement .pc-closing {
-        gap: 10px;
-        padding: 20px 12px;
-        border-right-width: 4px;
-        border-left-width: 4px;
-    }
-
-    .basc-placement .pc-closing h3 {
+    .results-content h3 {
         font-size: 21px;
     }
 
-    .basc-placement .pc-closing p {
-        font-size: 15px;
-        line-height: 1.8;
-    }
-
-    .basc-placement .pc-closing-decoration {
-        font-size: 18px;
+    .results-details {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 }
 
-/* Small mobile screens */
-@media (max-width: 380px) {
-    .basc-placement {
-        padding: 32px 11px;
+/* MOBILE */
+
+@media (max-width: 520px) {
+    .basc-results {
+        padding: 32px 14px;
     }
 
-    .basc-placement .pc-heading h2 {
-        font-size: 24px;
+    .basc-results-heading {
+        margin-bottom: 22px;
     }
 
-    .basc-placement .pc-intro-image img {
-        height: 190px;
+    .basc-results-heading h2 {
+        font-size: 26px;
     }
 
-    .basc-placement .pc-gallery-image img {
-        height: 190px;
+    .basc-results-heading p {
+        font-size: 14px;
     }
 
-    .basc-placement .pc-info-card {
-        padding: 18px 13px;
+    .basc-results-card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 20px;
     }
 
-    .basc-placement .pc-info-card h3 {
+    .results-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 25px;
+    }
+
+    .results-content h3 {
         font-size: 20px;
     }
 
-    .basc-placement .pc-closing-decoration {
-        display: none;
+    .results-description {
+        font-size: 13px;
     }
-}
 
-/* Reduced motion accessibility */
-@media (prefers-reduced-motion: reduce) {
-    .basc-placement .pc-gallery-card,
-    .basc-placement .pc-gallery-image img {
-        transition: none;
+    .results-button {
+        display: flex;
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    .results-note {
+        font-size: 11px;
     }
 }

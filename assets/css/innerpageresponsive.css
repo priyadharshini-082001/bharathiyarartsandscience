@@ -1348,19 +1348,105 @@
 
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* =====================================================
+   LAPTOP: GIVE CARDS MORE WIDTH
+===================================================== */
 
-@media (max-width: 991px) {
+@media (min-width: 1101px) and (max-width: 1450px) {
 
     .bascw-excellence-journey {
-        padding: 50px 18px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
-    .bascw-milestone-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
+    .bascw-timeline-content {
+        left: 0;
+        right: 0;
+        padding: 14px 9px;
+    }
+
+    .bascw-timeline-content h3 {
+        font-size: 13px;
+    }
+
+    .bascw-timeline-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .bascw-timeline-marker {
+        font-size: 13px;
+    }
+}
+
+/* =====================================================
+   TABLET: THREE-COLUMN CARDS
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .bascw-excellence-journey {
+        padding: 55px 22px;
+    }
+
+    .bascw-timeline {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 28px 22px;
+    }
+
+    .bascw-timeline::before {
+        display: none;
+    }
+
+    .bascw-timeline-item {
+        height: auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bascw-timeline-item::after {
+        display: none;
+    }
+
+    .bascw-timeline-marker {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: 45px;
+        margin-bottom: 14px;
+        transform: none;
+        flex-shrink: 0;
+    }
+
+    .bascw-timeline-content,
+    .bascw-timeline-item.top .bascw-timeline-content,
+    .bascw-timeline-item.bottom .bascw-timeline-content {
+        position: static;
+        width: 100%;
+        height: 100%;
+        padding: 17px 15px;
+    }
+
+    .bascw-timeline-content h3 {
+        font-size: 15px;
+    }
+
+    .bascw-timeline-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+}
+
+/* =====================================================
+   MOBILE: SINGLE-COLUMN CARDS
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .bascw-excellence-journey {
+        padding: 40px 16px;
     }
 
     .bascw-excellence-title {
@@ -1368,125 +1454,47 @@
     }
 
     .bascw-excellence-title h2 {
-        font-size: 32px;
-    }
-
-    .bascw-milestone-card {
-        min-height: 205px;
-    }
-
-    .bascw-milestone-year {
-        flex-basis: 70px;
-        font-size: 18px;
-    }
-
-    .bascw-milestone-info {
-        padding: 22px 19px;
-    }
-
-    .bascw-milestone-info h3 {
-        font-size: 18px;
-    }
-
-    .bascw-milestone-info p {
-        font-size: 15px;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 680px) {
-
-    .bascw-excellence-journey {
-        padding: 45px 14px;
-    }
-
-    .bascw-excellence-title {
-        margin-bottom: 30px;
-    }
-
-    .bascw-excellence-title span {
-        font-size: 14px;
-    }
-
-    .bascw-excellence-title h2 {
-        font-size: 28px;
+        font-size: 27px;
     }
 
     .bascw-excellence-title p {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-    .bascw-milestone-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .bascw-milestone-card {
-        min-height: auto;
-    }
-
-    .bascw-milestone-year {
-        flex-basis: 65px;
-        font-size: 17px;
-    }
-
-    .bascw-milestone-info {
-        padding: 20px 18px;
-    }
-
-    .bascw-milestone-info > span {
-        font-size: 10px;
-    }
-
-    .bascw-milestone-info h3 {
-        font-size: 18px;
-    }
-
-    .bascw-milestone-info p {
-        font-size: 15px;
-        line-height: 1.65;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 420px) {
-
-    .bascw-excellence-journey {
-        padding: 40px 10px;
-    }
-
-    .bascw-excellence-title h2 {
-        font-size: 25px;
-    }
-
-    .bascw-milestone-card {
-        border-radius: 6px;
-    }
-
-    .bascw-milestone-year {
-        flex-basis: 58px;
-        font-size: 15px;
-    }
-
-    .bascw-milestone-info {
-        padding: 18px 15px;
-    }
-
-    .bascw-milestone-info h3 {
-        font-size: 17px;
-    }
-
-    .bascw-milestone-info p {
         font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .bascw-timeline {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .bascw-timeline-item {
+        height: auto;
+        min-height: 0;
+    }
+
+    .bascw-timeline-marker {
+        width: 145px;
+        height: 43px;
+        margin-bottom: 13px;
+        font-size: 15px;
+    }
+
+    .bascw-timeline-content,
+    .bascw-timeline-item.top .bascw-timeline-content,
+    .bascw-timeline-item.bottom .bascw-timeline-content {
+        width: 100%;
+        padding: 17px;
+    }
+
+    .bascw-timeline-content h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .bascw-timeline-content p {
+        font-size: 14px;
+        line-height: 1.8;
+        text-align: left;
     }
 }
 
@@ -8557,3 +8565,1334 @@
     }
 }
 
+/* ==========================================
+   TABLET RESPONSIVE
+   ========================================== */
+
+@media (max-width: 991px) {
+    .basc-placement {
+        padding: 50px 4%;
+    }
+
+    .basc-placement .pc-intro {
+        grid-template-columns: 1fr;
+        gap: 23px;
+    }
+
+    .basc-placement .pc-intro-image img {
+        height: 340px;
+    }
+
+    .basc-placement .pc-gallery {
+        gap: 16px;
+    }
+
+    .basc-placement .pc-gallery-image img {
+        height: 190px;
+    }
+
+    .basc-placement .pc-gallery-content {
+        padding: 13px 9px;
+    }
+
+    .basc-placement .pc-gallery-content h4 {
+        font-size: 17px;
+    }
+
+    .basc-placement .pc-columns {
+        gap: 18px;
+    }
+
+    .basc-placement .pc-info-card {
+        padding: 22px 19px;
+    }
+
+    .basc-placement .pc-journey-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+   ========================================== */
+
+@media (max-width: 650px) {
+    .basc-placement {
+        padding: 38px 15px;
+    }
+
+    .basc-placement::before {
+        top: 10px;
+        right: 5px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .basc-placement .pc-heading {
+        margin-bottom: 29px;
+    }
+
+    .basc-placement .pc-eyebrow,
+    .basc-placement .pc-gallery-heading > span,
+    .basc-placement .pc-journey-heading > span {
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+    .basc-placement .pc-heading h2 {
+        font-size: 27px;
+        line-height: 1.35;
+    }
+
+    .basc-placement .pc-heading p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .basc-placement .pc-intro {
+        gap: 17px;
+        margin-bottom: 37px;
+        padding: 10px;
+        border-radius: 16px;
+    }
+
+    .basc-placement .pc-intro-image {
+        padding: 6px;
+    }
+
+    .basc-placement .pc-intro-image img {
+        height: 225px;
+    }
+
+    .basc-placement .pc-image-label {
+        right: 13px;
+        bottom: 14px;
+        left: 13px;
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .basc-placement .pc-intro-content {
+        padding: 9px 5px 12px;
+    }
+
+    .basc-placement .pc-intro-content h3 {
+        font-size: 22px;
+    }
+
+    .basc-placement .pc-intro-content p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .basc-placement .pc-highlight {
+        font-size: 14px;
+    }
+
+    .basc-placement .pc-gallery-heading {
+        margin-bottom: 22px;
+    }
+
+    .basc-placement .pc-gallery-heading h3 {
+        font-size: 24px;
+    }
+
+    .basc-placement .pc-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 38px;
+    }
+
+    .basc-placement .pc-gallery-card {
+        padding: 7px;
+        border-radius: 15px;
+    }
+
+    .basc-placement .pc-gallery-image img {
+        height: 225px;
+    }
+
+    .basc-placement .pc-gallery-content {
+        padding: 14px 11px 13px;
+    }
+
+    .basc-placement .pc-gallery-content h4 {
+        font-size: 19px;
+    }
+
+    .basc-placement .pc-gallery-content p {
+        font-size: 15px;
+    }
+
+    .basc-placement .pc-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 36px;
+    }
+
+    .basc-placement .pc-info-card {
+        padding: 21px 17px;
+        border-radius: 15px;
+    }
+
+    .basc-placement .pc-info-top {
+        gap: 12px;
+    }
+
+    .basc-placement .pc-info-number {
+        flex-basis: 45px;
+        width: 45px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    .basc-placement .pc-info-kicker {
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    .basc-placement .pc-info-card h3 {
+        font-size: 22px;
+    }
+
+    .basc-placement .pc-info-description {
+        font-size: 15px;
+    }
+
+    .basc-placement .pc-info-card ul {
+        gap: 12px;
+    }
+
+    .basc-placement .pc-info-card li {
+        padding-left: 24px;
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .basc-placement .pc-journey {
+        margin-bottom: 28px;
+        padding: 23px 13px;
+        border-radius: 17px;
+    }
+
+    .basc-placement .pc-journey-heading {
+        margin-bottom: 22px;
+    }
+
+    .basc-placement .pc-journey-heading h3 {
+        font-size: 23px;
+    }
+
+    .basc-placement .pc-journey-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .basc-placement .pc-journey-item {
+        padding: 18px 14px;
+    }
+
+    .basc-placement .pc-journey-item p {
+        font-size: 15px;
+    }
+
+    .basc-placement .pc-closing {
+        gap: 10px;
+        padding: 20px 12px;
+        border-right-width: 4px;
+        border-left-width: 4px;
+    }
+
+    .basc-placement .pc-closing h3 {
+        font-size: 21px;
+    }
+
+    .basc-placement .pc-closing p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .basc-placement .pc-closing-decoration {
+        font-size: 18px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 380px) {
+    .basc-placement {
+        padding: 32px 11px;
+    }
+
+    .basc-placement .pc-heading h2 {
+        font-size: 24px;
+    }
+
+    .basc-placement .pc-intro-image img {
+        height: 190px;
+    }
+
+    .basc-placement .pc-gallery-image img {
+        height: 190px;
+    }
+
+    .basc-placement .pc-info-card {
+        padding: 18px 13px;
+    }
+
+    .basc-placement .pc-info-card h3 {
+        font-size: 20px;
+    }
+
+    .basc-placement .pc-closing-decoration {
+        display: none;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .basc-placement .pc-gallery-card,
+    .basc-placement .pc-gallery-image img {
+        transition: none;
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+    .rangers-container {
+        width: 94%;
+    }
+
+    .rangers-top {
+        gap: 30px;
+    }
+
+    .rangers-main {
+        grid-template-columns: 0.75fr 1.25fr;
+        gap: 25px;
+    }
+
+    .rangers-gallery {
+        min-height: 390px;
+    }
+
+    .rangers-image-main {
+        height: 280px;
+    }
+
+    .rangers-image-small {
+        height: 145px;
+    }
+
+    .rangers-number {
+        width: 130px;
+        height: 130px;
+    }
+
+    .rangers-number strong {
+        font-size: 48px;
+    }
+
+    .rangers-number span {
+        font-size: 13px;
+    }
+
+    .ranger-list {
+        column-gap: 12px;
+    }
+
+    .ranger-item {
+        gap: 10px;
+        padding: 12px 5px;
+    }
+
+    .ranger-index {
+        flex-basis: 54px;
+        width: 54px;
+        height: 54px;
+        font-size: 21px;
+    }
+
+    .ranger-details {
+        padding-left: 10px;
+    }
+
+    .ranger-details h4 {
+        font-size: 15px;
+    }
+
+    .rangers-value {
+        gap: 10px;
+        padding: 8px 12px;
+    }
+
+    .value-icon {
+        flex-basis: 55px;
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+
+    .rangers-value h4 {
+        font-size: 18px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+    .basc-rangers {
+        padding-top: 40px;
+    }
+
+    .rangers-container {
+        width: 91%;
+    }
+
+    .rangers-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .rangers-kicker {
+        gap: 8px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .rangers-heading h2 {
+        font-size: clamp(29px, 7vw, 42px);
+    }
+
+    .rangers-intro {
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .rangers-main {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .rangers-gallery {
+        width: 100%;
+        max-width: 450px;
+        min-height: 390px;
+        margin: 0 auto;
+    }
+
+    .rangers-image-main {
+        width: 88%;
+        height: 290px;
+    }
+
+    .rangers-image-small {
+        right: 2%;
+        bottom: 30px;
+        width: 52%;
+        height: 145px;
+    }
+
+    .rangers-number {
+        left: 1%;
+        bottom: 10px;
+        width: 125px;
+        height: 125px;
+    }
+
+    .rangers-number strong {
+        font-size: 45px;
+    }
+
+    .rangers-section-heading {
+        gap: 13px;
+    }
+
+    .heading-number {
+        width: 58px;
+        height: 58px;
+        font-size: 23px;
+    }
+
+    .rangers-section-heading small {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .rangers-section-heading h3 {
+        font-size: clamp(20px, 5.5vw, 29px);
+    }
+
+    .ranger-list {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .ranger-item {
+        min-height: 100px;
+        padding: 12px 10px;
+    }
+
+    .ranger-index {
+        flex-basis: 60px;
+        width: 60px;
+        height: 60px;
+        font-size: 23px;
+    }
+
+    .ranger-details h4 {
+        font-size: 16px;
+    }
+
+    .ranger-details p {
+        font-size: 13px;
+    }
+
+    .ranger-details strong {
+        font-size: 12px;
+    }
+
+    .rangers-values {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 25px;
+        margin-top: 40px;
+        padding: 35px 0;
+    }
+
+    .rangers-values::before {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .rangers-value {
+        gap: 10px;
+        padding: 8px 10px;
+    }
+
+    .rangers-value + .rangers-value {
+        border-left: 0;
+    }
+
+    .rangers-value:nth-child(even) {
+        border-left: 1px solid #cbd6e3;
+    }
+
+    .value-icon {
+        flex-basis: 43px;
+        width: 43px;
+        height: 43px;
+        font-size: 23px;
+    }
+
+    .rangers-value span {
+        font-size: 14px;
+    }
+
+    .rangers-value h4 {
+        font-size: 17px;
+    }
+
+    .rangers-value p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+    .rangers-container {
+        width: 93%;
+    }
+
+    .rangers-gallery {
+        min-height: 330px;
+    }
+
+    .rangers-image-main {
+        height: 245px;
+    }
+
+    .rangers-image-small {
+        height: 125px;
+        border-width: 5px;
+    }
+
+    .rangers-number {
+        width: 105px;
+        height: 105px;
+    }
+
+    .rangers-number strong {
+        font-size: 37px;
+    }
+
+    .rangers-number span {
+        font-size: 11px;
+    }
+
+    .rangers-section-heading h3 {
+        font-size: 19px;
+    }
+
+    .rangers-value {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .rangers-value h4 {
+        font-size: 16px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .basc-rangers *,
+    .basc-rangers *::before,
+    .basc-rangers *::after {
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+    .sports-container {
+        gap: 35px;
+    }
+
+    .sports-hero {
+        min-height: 350px;
+    }
+
+    .sports-hero-image {
+        height: 315px;
+    }
+
+    .sports-benefits {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 30px;
+    }
+
+    .sports-facility-grid {
+        gap: 22px;
+    }
+
+    .facility-image {
+        height: 210px;
+    }
+
+    .sports-competition {
+        gap: 35px;
+        padding: 25px;
+    }
+
+    .competition-image {
+        height: 360px;
+    }
+
+    .sports-gallery {
+        grid-template-rows: 180px 180px;
+    }
+
+    .sports-quick-links {
+        gap: 15px;
+        padding: 22px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+    .basc-sports {
+        padding: 42px 0 45px;
+    }
+
+    .sports-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sports-intro h2 {
+        font-size: clamp(34px, 9vw, 46px);
+    }
+
+    .sports-intro > p {
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .sports-label,
+    .competition-label {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .sports-hero {
+        min-height: 340px;
+        padding-left: 15px;
+    }
+
+    .sports-hero-image {
+        height: 300px;
+    }
+
+    .sports-round-text {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sports-round-text span {
+        font-size: 12px;
+    }
+
+    .sports-image-caption {
+        right: 0;
+        padding: 12px 16px;
+    }
+
+    .sports-benefits {
+        margin-top: 45px;
+        margin-bottom: 55px;
+        padding: 25px 0;
+        gap: 25px 15px;
+    }
+
+    .sports-benefit {
+        gap: 10px;
+    }
+
+    .benefit-icon {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+    }
+
+    .sports-benefit h3 {
+        font-size: 15px;
+    }
+
+    .sports-benefit p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .sports-heading {
+        margin-bottom: 28px;
+    }
+
+    .sports-heading h2 {
+        font-size: 32px;
+    }
+
+    .sports-heading > p {
+        font-size: 15px;
+    }
+
+    .sports-facility-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .facility-image {
+        height: 245px;
+        margin-bottom: 17px;
+    }
+
+    .sports-facility h3 {
+        font-size: 21px;
+    }
+
+    .sports-facility p {
+        font-size: 15px;
+    }
+
+    .sports-competition {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .competition-image {
+        height: 280px;
+        border-radius: 65px 10px 65px 10px;
+    }
+
+    .competition-content h2 {
+        font-size: 32px;
+    }
+
+    .competition-content > p {
+        font-size: 15px;
+    }
+
+    .sports-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 180px 160px 160px;
+        gap: 12px;
+    }
+
+    .gallery-large {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .sports-gallery-item figcaption {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        font-size: 16px;
+    }
+
+    .sports-gallery-section {
+        margin-bottom: 50px;
+    }
+
+    .sports-quick-links {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .sports-quick-links > a {
+        padding: 12px 0;
+        border-bottom: 1px solid #D5E6F5;
+    }
+
+    .sports-quick-links > a:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+    .sports-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .sports-hero {
+        min-height: 290px;
+    }
+
+    .sports-hero-image {
+        height: 255px;
+    }
+
+    .sports-image-caption {
+        max-width: 240px;
+    }
+
+    .sports-gallery {
+        grid-template-rows: 160px 140px 140px;
+    }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .basc-sports *,
+    .basc-sports *::before,
+    .basc-sports *::after {
+        transition: none !important;
+    }
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .basc-scholarship {
+        padding: 60px 4%;
+    }
+
+    .basc-scholarship-intro {
+        gap: 35px;
+    }
+
+    .basc-scholarship-support {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .basc-scholarship-process {
+        gap: 35px;
+        padding: 25px;
+    }
+
+    .basc-scholarship-process-image,
+    .basc-scholarship-process-image img {
+        min-height: 500px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+    .basc-scholarship {
+        padding: 45px 18px;
+    }
+
+    .basc-scholarship-heading {
+        margin-bottom: 35px;
+    }
+
+    .basc-scholarship-heading p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .basc-scholarship-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 45px;
+    }
+
+    .basc-scholarship-intro-image {
+        min-height: 300px;
+    }
+
+    .basc-scholarship-image-label {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        padding: 13px;
+    }
+
+    .basc-scholarship-intro-content p {
+        font-size: 15px;
+    }
+
+    .basc-scholarship-support {
+        grid-template-columns: 1fr;
+        gap: 17px;
+        margin-bottom: 45px;
+    }
+
+    .basc-scholarship-card {
+        padding: 24px;
+    }
+
+    .basc-scholarship-card p {
+        font-size: 14px;
+    }
+
+    .basc-scholarship-process {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 18px;
+        margin-bottom: 35px;
+    }
+
+    .basc-scholarship-process-image,
+    .basc-scholarship-process-image img {
+        min-height: 280px;
+        height: 280px;
+    }
+
+    .basc-scholarship-step p {
+        font-size: 14px;
+    }
+
+    .basc-scholarship-documents {
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .basc-scholarship-documents-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    .basc-scholarship-contact {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 26px 22px;
+    }
+
+    .basc-scholarship-contact-text p {
+        font-size: 14px;
+    }
+
+    .basc-scholarship-contact-action {
+        width: 100%;
+    }
+
+    .basc-scholarship-contact-btn {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+    .basc-scholarship {
+        padding: 35px 13px;
+    }
+
+    .basc-scholarship-heading h2 {
+        font-size: 26px;
+    }
+
+    .basc-scholarship-card {
+        padding: 21px 18px;
+    }
+
+    .basc-scholarship-process {
+        padding: 14px;
+    }
+
+    .basc-scholarship-documents {
+        flex-direction: column;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .basc-scholarship *,
+    .basc-scholarship *::before,
+    .basc-scholarship *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+/* TABLET */
+
+@media (max-width: 1100px) {
+    .basc-contact-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+        gap: 22px;
+    }
+
+    .basc-contact-left {
+        display: none;
+    }
+
+    .basc-contact-right {
+        min-height: 500px;
+    }
+
+    .basc-contact-right > img {
+        min-height: 500px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .basc-contact-section {
+        padding: 45px 18px;
+    }
+
+    .basc-contact-heading {
+        margin-bottom: 30px;
+    }
+
+    .basc-contact-heading p {
+        font-size: 14px;
+    }
+
+    .basc-contact-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .basc-contact-left,
+    .basc-contact-right {
+        display: block;
+        min-height: 260px;
+    }
+
+    .basc-contact-side > img {
+        min-height: 260px;
+        height: 260px;
+    }
+
+    .basc-contact-image-caption {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        padding: 15px;
+    }
+
+    .basc-contact-image-caption h3 {
+        font-size: 17px;
+    }
+
+    .basc-contact-form-wrapper {
+        padding: 25px 19px;
+    }
+
+    .basc-contact-form-title h3 {
+        font-size: 23px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+    .basc-contact-section {
+        padding: 35px 12px;
+    }
+
+    .basc-contact-form-wrapper {
+        padding: 22px 14px;
+    }
+
+    .basc-contact-field input,
+    .basc-contact-field select,
+    .basc-contact-field textarea {
+        font-size: 13px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .basc-contact-section *,
+    .basc-contact-section *::before,
+    .basc-contact-section *::after {
+        transition: none !important;
+    }
+}
+/* TABLET */
+
+@media (max-width: 1050px) {
+    .basc-career-intro {
+        gap: 30px;
+    }
+
+    .basc-career-areas,
+    .basc-career-process {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .basc-career-openings {
+        gap: 28px;
+    }
+
+    .basc-career-apply {
+        gap: 28px;
+        padding: 25px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .basc-career-hero {
+        min-height: 350px;
+        padding: 50px 22px;
+    }
+
+    .basc-career-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .basc-career-hero-content p {
+        font-size: 14px;
+    }
+
+    .basc-career-intro {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin: 45px auto;
+        padding: 0 18px;
+    }
+
+    .basc-career-intro-image {
+        height: 280px;
+    }
+
+    .basc-career-areas,
+    .basc-career-process {
+        grid-template-columns: 1fr;
+        gap: 17px;
+        margin-bottom: 50px;
+        padding: 0 18px;
+    }
+
+    .basc-career-section-heading {
+        margin-bottom: 30px;
+    }
+
+    .basc-career-openings {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 0 18px 55px;
+        padding: 18px;
+    }
+
+    .basc-career-opening-image,
+    .basc-career-opening-image img {
+        min-height: 260px;
+        height: 260px;
+    }
+
+    .basc-career-apply {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin: 0 18px 30px;
+        padding: 20px;
+    }
+
+    .basc-career-form-image {
+        min-height: 300px;
+    }
+
+    .basc-career-form {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-career-full {
+        grid-column: auto;
+    }
+
+    .basc-career-footer-note {
+        margin: 0 18px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+    .basc-career-hero-content h1 {
+        font-size: 29px;
+    }
+
+    .basc-career-card {
+        padding: 22px 18px;
+    }
+
+    .basc-career-form-content h2 {
+        font-size: 26px;
+    }
+
+    .basc-career-apply {
+        padding: 15px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .basc-career *,
+    .basc-career *::before,
+    .basc-career *::after {
+        transition: none !important;
+    }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .basc-admission-content {
+        gap: 18px;
+    }
+
+    .basc-admission-form {
+        padding: 20px;
+    }
+
+    .basc-admission-info img {
+        height: 260px;
+    }
+
+    .form-heading h2 {
+        font-size: 21px;
+    }
+
+    .basc-admission-form .form-row {
+        gap: 10px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .basc-admission {
+        padding: 32px 14px;
+    }
+
+    .basc-admission-heading {
+        margin-bottom: 22px;
+    }
+
+    .basc-admission-heading h1 {
+        font-size: 27px;
+    }
+
+    .basc-admission-heading p {
+        font-size: 14px;
+    }
+
+    .basc-admission-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .basc-admission-info img {
+        height: 250px;
+    }
+
+    .admission-info-text {
+        padding: 18px;
+    }
+
+    .admission-info-text h2 {
+        font-size: 22px;
+    }
+
+    .basc-admission-form {
+        padding: 20px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 420px) {
+    .basc-admission-heading h1 {
+        font-size: 24px;
+    }
+
+    .basc-admission-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 14px;
+    }
+
+    .basc-admission-form .form-row .form-group {
+        margin-bottom: 0;
+    }
+
+    .basc-admission-info img {
+        height: 215px;
+    }
+
+    .basc-admission-form {
+        padding: 16px;
+    }
+
+    .form-heading h2 {
+        font-size: 20px;
+    }
+}
