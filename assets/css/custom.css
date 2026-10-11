@@ -280,10 +280,11 @@ a {
 .college-title h1 {
     color:crimson;
     font-size:45px;
-    line-height: 1.25;
+    line-height: 1.2;
     letter-spacing:4.0px;
-    font-weight:700;
+    font-weight:600;
     border-bottom: 2px solid crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .college-subtitle {

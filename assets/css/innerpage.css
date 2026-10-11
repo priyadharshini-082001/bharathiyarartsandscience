@@ -5369,23 +5369,6 @@ background-color:seagreen;
 
 
 /* =========================================================
-   YEAR
-========================================================= */
-
-.report-year {
-    position: absolute;
-    top: 16px;
-    right: 18px;
-    padding: 6px 11px;
-    background: #0c3561;
-    color: #ffffff;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 700;
-}
-
-
-/* =========================================================
    PDF ICON
 ========================================================= */
 
@@ -8046,17 +8029,11 @@ text-align: justify;
 
     overflow: hidden;
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-
     transform: translateY(-5px);
 
     background: #ffffff;
 
-    box-shadow:
-        0 12px 28px rgba(8, 48, 108, 0.09);
+
 }
 
 .basc-document-card::before {
@@ -8897,16 +8874,9 @@ text-align: justify;
     border-radius: 18px;
 
     overflow: hidden;
-
-    box-shadow: 0 15px 40px rgba(8, 48, 108, 0.12);
-
-    transform: rotate(-2deg);
     transition: 0.4s ease;
 }
 
-.basc-document-card:hover {
-    transform: rotate(0deg) translateY(-8px);
-}
 
 
 /* Top document strip */
@@ -8947,9 +8917,6 @@ text-align: justify;
     transition: transform 0.5s ease;
 }
 
-.basc-document-card:hover .basc-document-image img {
-    transform: scale(1.04);
-}
 
 
 /* Footer */
@@ -10983,7 +10950,6 @@ text-align: justify;
     color: #08306c;
     font-size: 14px;
     font-weight: 900;
-    transform: rotate(45deg);
 }
 
 .basc-ncc-section-title span {
@@ -11243,7 +11209,7 @@ text-align: justify;
     right: -80px;
     top: -80px;
     border: 25px solid rgba(255,255,255,0.06);
-    transform: rotate(45deg);
+
 }
 
 .basc-ncc-highlight-mark {
@@ -11257,12 +11223,9 @@ text-align: justify;
     color: #e5b72f;
     font-size: 18px;
     font-weight: 900;
-    transform: rotate(45deg);
+
 }
 
-.basc-ncc-highlight-mark::first-line {
-    transform: rotate(-45deg);
-}
 
 .basc-ncc-highlight h3 {
     margin: 0 0 8px;
@@ -19984,7 +19947,7 @@ body.basc-lightbox-open {
 
 .iqac-modern {
     background: #f7f9ff;
-    color: #263653;
+    color:black;
     overflow: hidden;
 }
 
@@ -20071,11 +20034,12 @@ body.basc-lightbox-open {
 }
 
 .iqac-modern .iqac-hero-content p {
-    color: #e1eaff;
-    font-size: 15px;
+    color: white;
+    font-size: 16px;
     line-height: 1.9;
     margin: 0 0 24px;
     max-width: 590px;
+    text-align: justify;
 }
 
 /* FEATURE ITEMS */
@@ -20220,7 +20184,7 @@ body.basc-lightbox-open {
 }
 
 .iqac-modern .iqac-section-heading p {
-    color: #63728a;
+    color: black;
     font-size: 15px;
     line-height: 1.8;
     margin: 0;
@@ -20283,7 +20247,7 @@ body.basc-lightbox-open {
 }
 
 .iqac-modern .iqac-info-card p {
-    color: #65738a;
+    color: black;
     font-size: 14px;
     line-height: 1.9;
     margin: 0;
@@ -20363,9 +20327,9 @@ body.basc-lightbox-open {
 }
 
 .iqac-modern .resource-text p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.7;
-    color: #536580;
+    color: black;
     margin: 0;
 }
 
@@ -20508,7 +20472,7 @@ body.basc-lightbox-open {
     }
 
     .iqac-modern .iqac-hero-content p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .iqac-modern .iqac-buttons {

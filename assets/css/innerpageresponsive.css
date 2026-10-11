@@ -4327,11 +4327,6 @@
     .basc-eligibility-intro {
         font-size: 16px;
     }
-
-    .basc-document-list {
-        grid-template-columns: 1fr;
-    }
-
     .basc-document-wide {
         grid-column: span 1;
     }
@@ -5082,7 +5077,7 @@
     }
 
     .basc-document-card {
-        max-width: 290px;
+        max-width: 390px;
     }
 
     .basc-document-image {
@@ -9498,13 +9493,6 @@
         padding: 18px;
         margin-bottom: 35px;
     }
-
-    .basc-scholarship-process-image,
-    .basc-scholarship-process-image img {
-        min-height: 280px;
-        height: 280px;
-    }
-
     .basc-scholarship-step p {
         font-size: 14px;
     }
@@ -9620,11 +9608,6 @@
     .basc-contact-right {
         display: block;
         min-height: 260px;
-    }
-
-    .basc-contact-side > img {
-        min-height: 260px;
-        height: 260px;
     }
 
     .basc-contact-image-caption {
