@@ -11999,578 +11999,371 @@ text-align: justify;
 
 
 /* ==========================================
-   BASCW CONTROLLER OF EXAMINATIONS
+   BHARATHIYAR COLLEGE - COE PAGE
+   Royal Blue | Navy | Gold | White
 ========================================== */
 
-.basc-coe-modern {
+.basc-coe-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 28px;
     width: 100%;
-    padding: 50px 0;
-    background-color: #ffffff;
-    color: #222222;
-    overflow: hidden;
+    align-items: start;
+    padding: 25px 18px;
+    background: #f5f7fc;
+    color: #293449;
+    font-size: 15px;
+    line-height: 1.8;
 }
 
-.basc-coe-modern *,
-.basc-coe-modern *::before,
-.basc-coe-modern *::after {
+.basc-coe-layout * {
     box-sizing: border-box;
 }
 
-.basc-coe-modern .cm-container {
-    width: 92%;
-    max-width: 1240px;
-    margin: 0 auto;
-}
-
-/* PARAGRAPHS */
-
-.basc-coe-modern p {
-    color: #000000 !important;
-    font-size: 17px !important;
-    line-height: 1.8;
-    text-align: justify !important;
-    margin: 0 0 16px;
-}
-
-.basc-coe-modern a {
-    text-decoration: none;
-}
-
-.basc-coe-modern h1,
-.basc-coe-modern h2,
-.basc-coe-modern h3,
-.basc-coe-modern h4 {
-    margin-top: 0;
-    line-height: 1.35;
-}
-
-.basc-coe-modern h1 {
-    color: #ffffff;
-    font-size: 42px;
-    font-weight: 800;
-    margin-bottom: 14px;
-}
-
-.basc-coe-modern h2 {
-    color: #08306c;
-    font-size: 30px;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-
-.basc-coe-modern h3 {
-    color: crimson;
-    font-size: 21px;
-    font-weight: 750;
-    margin-bottom: 12px;
-}
-
-/* SECTION LAYOUT */
-
-.basc-coe-modern .cm-section {
-    padding: 40px 0;
-    scroll-margin-top: 25px;
-}
-
-.basc-coe-modern .cm-section-heading {
-    padding-left: 16px;
-    margin-bottom: 25px;
-    border-left: 5px solid #e5b72f;
-}
-
-.basc-coe-modern .cm-section-heading p {
-    margin-top: 8px;
-}
-
-/* HERO */
-
-.basc-coe-modern .cm-hero {
-    position: relative;
-    padding: 55px 35px;
+/* LEFT SIDEBAR */
+.basc-coe-sidebar {
+    position: sticky;
+    top: 20px;
     overflow: hidden;
-    background: linear-gradient(120deg, #08306c, #12549a 58%, #8b1e2d);
-    border-bottom: 7px solid #e5b72f;
-    border-radius: 15px;
+    border: 1px solid #dce5f5;
+    border-radius: 12px;
+    background: #ffffff;
 }
 
-.basc-coe-modern .cm-hero::before {
-    content: "";
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    top: -100px;
-    right: 90px;
-    border: 25px solid rgba(255, 255, 255, 0.13);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.basc-coe-modern .cm-hero::after {
-    content: "";
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    right: -45px;
-    bottom: -80px;
-    background-color: rgba(229, 183, 47, 0.22);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.basc-coe-modern .cm-hero-inner {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.basc-coe-modern .cm-hero-content {
-    flex: 1;
-    min-width: 0;
-}
-
-.basc-coe-modern .cm-eyebrow {
-    display: inline-block;
-    margin-bottom: 17px;
-    padding: 8px 13px;
-    background-color: #e5b72f;
-    color: #222222;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.6px;
-}
-
-.basc-coe-modern .cm-hero p {
-    color: #ffffff !important;
-    font-size: 17px !important;
-    text-align: justify !important;
-    max-width: 800px;
-    margin-bottom: 0;
-}
-
-.basc-coe-modern .cm-hero-symbol {
-    flex: 0 0 145px;
-    width: 145px;
-    height: 145px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 7px solid #e5b72f;
-    border-radius: 50%;
-    background-color: #ffffff;
-    color:crimson;
-    font-size: 36px;
-    font-weight: 900;
-}
-
-/* NAVIGATION */
-
-.basc-coe-modern .cm-quick-links {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 14px;
-    margin: 28px 0 5px;
-}
-
-.basc-coe-modern .cm-quick-links a {
-    display: flex;
-    align-items: center;
-    min-height: 58px;
-    padding: 14px;
-    background-color: #eaf1ff;
-    color: #08306c;
-    border: 1px solid #c7d8f1;
-    border-bottom: 4px solid #12549a;
-    border-radius: 7px;
-    font-size: 15px;
-    font-weight: 750;
-    line-height: 1.45;
-    transition: 0.25s ease;
-}
-
-.basc-coe-modern .cm-quick-links a:nth-child(4n + 2) {
-    background-color: #fff2e2;
-    color: #854d0e;
-    border-color: #f0d1a7;
-    border-bottom-color: #d97706;
-}
-
-.basc-coe-modern .cm-quick-links a:nth-child(4n + 3) {
-    background-color: #fcebed;
-    color: crimson;
-    border-color: #efc2ca;
-    border-bottom-color:crimson;
-}
-
-.basc-coe-modern .cm-quick-links a:nth-child(4n + 4) {
-    background-color: #eaf7ef;
-    color: #175b32;
-    border-color: #b7dfc5;
-    border-bottom-color: #237344;
-}
-
-.basc-coe-modern .cm-quick-links a:hover {
-    background-color: #08306c;
+/* Sidebar title */
+.basc-coe-sidebar-title {
+    padding: 22px 12px;
     color: #ffffff;
-    border-color: #08306c;
-    border-bottom-color: #e5b72f;
-}
-
-/* INTRODUCTION */
-
-.basc-coe-modern .cm-intro-panel {
-    padding: 28px;
-    background-color: #fffaf0;
-    border: 1px solid #ead8a6;
-    border-left: 6px solid #e5b72f;
-    border-radius: 9px;
-}
-
-.basc-coe-modern .cm-intro-panel p {
-    color: #000000 !important;
-}
-
-.basc-coe-modern .cm-intro-panel p:last-child {
-    margin-bottom: 0;
-}
-
-/* EXAM INFORMATION CARDS */
-
-.basc-coe-modern .cm-info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-}
-
-.basc-coe-modern .cm-info-card {
-    padding: 25px;
-    background-color: #f2f7ff;
-    border: 1px solid #cdddf4;
-    border-top: 5px solid #12549a;
-    border-radius: 9px;
-    transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.basc-coe-modern .cm-info-card:nth-child(4n + 2) {
-    background-color: #fff7ed;
-    border-color: #f2d2ae;
-    border-top-color: #d97706;
-}
-
-.basc-coe-modern .cm-info-card:nth-child(4n + 3) {
-    background-color: #fff3f5;
-    border-color: #efc9d0;
-    border-top-color:crimson;
-}
-
-.basc-coe-modern .cm-info-card:nth-child(4n + 4) {
-    background-color: #f0faf3;
-    border-color: #c6e4cf;
-    border-top-color: #237344;
-}
-
-.basc-coe-modern .cm-info-card:hover {
-    transform: translateY(-3px);
-    border-bottom-color: #e5b72f;
-}
-
-.basc-coe-modern .cm-card-label {
-    display: inline-block;
-    padding: 6px 10px;
-    margin-bottom: 14px;
-    border-radius: 4px;
-    background-color: #dce9fb;
-    color: #08306c;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-}
-
-.basc-coe-modern .cm-info-card:nth-child(4n + 2) .cm-card-label {
-    background-color: #ffe6c7;
-    color: #854d0e;
-}
-
-.basc-coe-modern .cm-info-card:nth-child(4n + 3) .cm-card-label {
-    background-color: #f8dce1;
-    color:crimson;
-}
-
-.basc-coe-modern .cm-info-card:nth-child(4n + 4) .cm-card-label {
-    background-color: #d8f0df;
-    color: #175b32;
-}
-
-.basc-coe-modern .cm-info-card p {
-    color: #000000 !important;
-}
-
-/* BUTTONS */
-
-.basc-coe-modern .cm-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 42px;
-    padding: 10px 16px;
-    border: 2px solid #08306c;
-    border-radius: 5px;
-    background-color: #08306c;
-    color: #ffffff !important;
-    font-size: 14px;
-    font-weight: 750;
-    line-height: 1.4;
+    background: linear-gradient(135deg, #082b68, #1261c9);
     text-align: center;
-    transition: 0.2s ease;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    border-bottom: 4px solid #e7b847;
 }
 
-.basc-coe-modern .cm-btn:hover {
-    background-color: #ffffff;
-    color: #08306c !important;
-}
-
-.basc-coe-modern .cm-btn-download {
-    background-color: #237344;
-    border-color: #237344;
-    color: #ffffff !important;
-}
-
-.basc-coe-modern .cm-btn-download:hover {
-    background-color: #ffffff;
-    color: #175b32 !important;
-    border-color: #237344;
-}
-
-/* FORMS */
-
-.basc-coe-modern .cm-forms-panel {
-    padding: 28px;
-    background-color: #f2f6fc;
-    border: 1px solid #d4dfed;
-    border-radius: 11px;
-}
-
-.basc-coe-modern .cm-forms-tools {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 22px;
-}
-
-.basc-coe-modern .cm-forms-tools p {
-    margin: 0;
-}
-
-.basc-coe-modern .cm-form-search {
-    width: 100%;
-    max-width: 330px;
-    min-height: 45px;
-    padding: 11px 14px;
-    background-color: #ffffff;
-    color: #222222;
-    border: 1px solid #aabbd1;
-    border-radius: 6px;
-    font-size: 15px;
-    outline: none;
-}
-
-.basc-coe-modern .cm-form-search:focus {
-    border-color: #12549a;
-    outline: 2px solid #d4e5ff;
-}
-
-.basc-coe-modern .cm-forms-list {
-    display: grid;
-    gap: 12px;
-}
-
-.basc-coe-modern .cm-form-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-    padding: 18px;
-    background-color: #ffffff;
-    border: 1px solid #d9e1eb;
-    border-left: 5px solid #12549a;
-    border-radius: 7px;
-}
-
-.basc-coe-modern .cm-form-row:nth-child(4n + 2) {
-    border-left-color: #d97706;
-}
-
-.basc-coe-modern .cm-form-row:nth-child(4n + 3) {
-    border-left-color:crimson;
-}
-
-.basc-coe-modern .cm-form-row:nth-child(4n + 4) {
-    border-left-color: #237344;
-}
-
-.basc-coe-modern .cm-form-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.basc-coe-modern .cm-form-info h3 {
-    color: #08306c;
-    font-size: 17px;
-    margin-bottom: 7px;
-}
-
-.basc-coe-modern .cm-form-info p {
-    color: #000000 !important;
-    font-size: 15px !important;
-    line-height: 1.65;
-    margin-bottom: 0;
-}
-
-.basc-coe-modern .cm-pdf-label {
-    display: inline-block;
-    padding: 5px 8px;
-    margin-top: 9px;
-    background-color: #fce7e7;
-    color: #a11b1b;
-    border-radius: 3px;
-    font-size: 11px;
+.basc-coe-sidebar-title span {
+    color: #ffd978;
     font-weight: 800;
 }
 
-.basc-coe-modern .cm-form-actions {
+/* Sidebar navigation */
+.basc-coe-menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    border: 0;
+    border-bottom: 1px solid #e8edf5;
+    background: #ffffff;
+    color: #42536c;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    cursor: pointer;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                padding-left 0.25s ease;
+}
+
+.basc-coe-menu::first-letter {
+    color: #1766cc;
+}
+
+.basc-coe-menu:hover {
+    padding-left: 22px;
+    color: #104caa;
+    background: #edf4ff;
+}
+
+.basc-coe-menu.active {
+    padding-left: 22px;
+    color: #ffffff;
+    background: linear-gradient(100deg, #0a347c, #176bd1);
+    font-weight: 700;
+    border-left: 4px solid #f1c34f;
+}
+
+.coe-new {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #e74848;
+    font-size: 9px;
+    font-weight: 800;
+    line-height: 1.6;
+    vertical-align: middle;
+}
+
+/* RIGHT CONTENT AREA */
+.basc-coe-content {
+    min-width: 0;
+    padding: 28px;
+    border: 1px solid #e1e8f3;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 22px rgba(23, 55, 105, 0.07);
+}
+
+/* Switchable panels */
+.basc-coe-panel {
+    display: none;
+}
+
+.basc-coe-panel.active {
+    display: block;
+    animation: coePanelEnter 0.35s ease;
+}
+
+@keyframes coePanelEnter {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main section headings */
+.basc-coe-panel h2 {
+    position: relative;
+    margin: 0 0 24px;
+    padding: 0 0 13px 16px;
+    border-left: 5px solid #1766cc;
+    border-bottom: 2px solid #e7b847;
+    color: #103c80;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.basc-coe-panel h2::after {
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin-top: 10px;
+    background: #e7b847;
+    content: "";
+}
+
+.basc-coe-panel h3 {
+    color: #123f83;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.basc-coe-panel p {
+    margin: 0 0 17px;
+    color: #465268;
+    font-size: 15px;
+    line-height: 1.95;
+    text-align: justify;
+}
+
+/* Responsibility list */
+.basc-coe-list {
+    padding-left: 38px;
+    margin: 15px 0;
+    list-style: none;
+}
+
+.basc-coe-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 9px 13px;
+    border-radius: 6px;
+    color: #3b4b63;
+    background: #f4f7fc;
+    transition: background 0.2s ease;
+}
+
+.basc-coe-list li:hover {
+    background: #e9f1ff;
+}
+
+.basc-coe-list li::before {
+    position: absolute;
+    left: -26px;
+    color: #16805d;
+    font-weight: 800;
+    content: "✔";
+}
+
+/* Document list */
+.basc-coe-document-list {
+    padding: 0;
+    margin: 18px 0;
+    list-style: none;
+}
+
+.basc-coe-document-list li {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 9px;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 12px;
+    padding: 16px 18px;
+    border: 1px solid #e0e8f5;
+    border-left: 4px solid #1766cc;
+    border-radius: 8px;
+    background: #f8faff;
+    transition: border-color 0.2s ease,
+                background 0.2s ease;
+}
+
+.basc-coe-document-list li:hover {
+    border-left-color: #e1ad30;
+    background: #eef4ff;
+}
+
+.basc-coe-document-list li span {
+    color: #33435b;
+    font-weight: 600;
+}
+
+.basc-coe-document-list a {
+    display: inline-block;
     flex-shrink: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #1459b5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: background 0.2s ease;
 }
 
-/* NO SEARCH RESULTS */
-
-.basc-coe-modern .cm-no-results {
-    display: none;
-    margin-top: 15px;
-    padding: 18px;
-    background-color: #fff2e2;
-    color: #78350f;
-    border: 1px solid #f0d1a7;
-    border-radius: 7px;
-    font-size: 15px;
+.basc-coe-document-list a:hover {
+    color: #ffffff;
+    background: #0a347c;
 }
 
-/* TEAM */
-
-.basc-coe-modern .cm-team-grid {
+/* Team member cards */
+.basc-coe-team {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+    margin-top: 20px;
 }
 
-.basc-coe-modern .cm-team-card {
-    padding: 25px 20px;
-    background-color: #fff3f5;
-    border: 1px solid #efc9d0;
-    border-bottom: 5px solid crimson;
-    border-radius: 9px;
+.basc-coe-team > div {
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid #e0e8f5;
+    border-radius: 10px;
+    background: #f8faff;
     text-align: center;
 }
 
-.basc-coe-modern .cm-team-card:nth-child(3n + 2) {
-    background-color: #f2f7ff;
-    border-color: #cdddf4;
-    border-bottom-color: #12549a;
-}
-
-.basc-coe-modern .cm-team-card:nth-child(3n + 3) {
-    background-color: #f0faf3;
-    border-color: #c6e4cf;
-    border-bottom-color: #237344;
-}
-
-.basc-coe-modern .cm-team-image {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 17px;
-    overflow: hidden;
-    border: 4px solid #e5b72f;
-    border-radius: 50%;
-    background-color: #e5edfb;
-    color: #08306c;
-    font-size: 26px;
-    font-weight: 800;
-}
-
-.basc-coe-modern .cm-team-image img {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
+.basc-coe-team img {
     width: 100%;
-    height: 100%;
+    height: 190px;
     object-fit: cover;
-}
-
-.basc-coe-modern .cm-team-card h3 {
-    color: #08306c;
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.basc-coe-modern .cm-team-card p {
-    color: #000000 !important;
-    font-size: 15px !important;
-    text-align: center !important;
-    margin-bottom: 0;
-}
-
-/* GRIEVANCE */
-
-.basc-coe-modern .cm-grievance-panel {
-    padding: 30px;
-    background-color: #fff3f5;
-    border: 1px solid #efc9d0;
-    border-left: 6px solid crimson;
-    border-radius: 9px;
-}
-
-.basc-coe-modern .cm-grievance-panel h3 {
-    color:crimson;
-}
-
-.basc-coe-modern .cm-contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-    margin-top: 22px;
-}
-
-.basc-coe-modern .cm-contact-item {
-    padding: 18px;
-    background-color: #ffffff;
-    border: 1px solid #e9cbd0;
     border-radius: 7px;
+    background: #e8eef9;
 }
 
-.basc-coe-modern .cm-contact-item strong {
-    display: block;
-    margin-bottom: 7px;
-    color:crimson;
+.basc-coe-team h3 {
+    margin: 13px 0 3px;
     font-size: 14px;
+    line-height: 1.6;
 }
 
-.basc-coe-modern .cm-contact-item a,
-.basc-coe-modern .cm-contact-item span {
-    color: #000000;
-    font-size: 16px;
+/* Contact information */
+.basc-coe-contact,
+.basc-coe-panel .basc-coe-contact {
+    padding: 22px;
+    border: 1px solid #dfe8f6;
+    border-left: 5px solid #1766cc;
+    border-radius: 8px;
+    background: #f5f8ff;
+}
+
+.basc-coe-contact strong {
+    color: #103c80;
+}
+
+.basc-coe-contact a {
+    color: #1459b5;
     overflow-wrap: anywhere;
 }
+
+/* Keyboard focus */
+.basc-coe-menu:focus-visible,
+.basc-coe-document-list a:focus-visible {
+    outline: 3px solid #e7b847;
+    outline-offset: 3px;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .basc-coe-layout {
+        grid-template-columns: 245px minmax(0, 1fr);
+        gap: 18px;
+        padding: 18px 10px;
+    }
+
+    .basc-coe-content {
+        padding: 22px;
+    }
+
+    .basc-coe-team {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+    .basc-coe-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        padding: 12px 8px;
+    }
+
+    .basc-coe-sidebar {
+        position: static;
+    }
+
+    .basc-coe-sidebar-title {
+        padding: 17px 10px;
+    }
+
+    .basc-coe-content {
+        padding: 19px 14px;
+    }
+
+    .basc-coe-panel h2 {
+        font-size: 21px;
+    }
+
+    .basc-coe-panel p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .basc-coe-document-list li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .basc-coe-team {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-coe-team img {
+        max-width: 280px;
+    }
+}
+
+
 
 /* ===========================================
    BASCW ALUMNAE ASSOCIATION
