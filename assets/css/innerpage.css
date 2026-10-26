@@ -9167,533 +9167,8 @@ text-align: justify;
     margin-top: 3px;
     color:crimson;
 }
-/* =========================================================
-   BASCW STUDENT SUPPORT
-   MODERN ASYMMETRICAL DESIGN
-========================================================= */
 
-.basc-student-support {
-    width: 100%;
-    padding:50px 6%;
-    background: #ffffff;
-    overflow: hidden;
-}
 
-.basc-student-container {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 42% 58%;
-
-    align-items: center;
-
-    gap: 55px;
-}
-
-
-/* =========================================================
-   LEFT VISUAL AREA
-========================================================= */
-
-.basc-student-visual {
-    position: relative;
-
-    width: 100%;
-
-    padding: 0 18px 18px 0;
-}
-
-
-/* =========================================================
-   DECORATIVE SHAPES
-========================================================= */
-
-.basc-visual-shape {
-    position: absolute;
-
-    z-index: 0;
-
-    border-radius: 18px;
-}
-
-.basc-shape-one {
-    width: 105px;
-    height: 105px;
-
-    top: -18px;
-    left: -18px;
-
-    background: #e5b72f;
-}
-
-.basc-shape-two {
-    width: 135px;
-    height: 135px;
-
-    right: -8px;
-    bottom: -10px;
-
-    background: crimson;
-}
-
-
-/* =========================================================
-   MAIN IMAGE
-========================================================= */
-
-.basc-main-image {
-    position: relative;
-
-    z-index: 2;
-
-    width: 100%;
-    height: 570px;
-
-    overflow: hidden;
-
-    border-radius: 25px;
-
-    background: #08306c;
-
-    box-shadow:
-        0 20px 45px rgba(8, 48, 108, 0.14);
-}
-
-.basc-main-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition: transform 0.8s ease;
-}
-
-.basc-main-image:hover img {
-    transform: scale(1.045);
-}
-
-
-/* =========================================================
-   IMAGE GRADIENT
-========================================================= */
-
-.basc-image-gradient {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            to top,
-            rgba(8, 48, 108, 0.82),
-            rgba(8, 48, 108, 0.05) 58%
-        );
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   IMAGE LABEL
-========================================================= */
-
-.basc-image-label {
-    position: absolute;
-
-    left: 28px;
-    right: 28px;
-    bottom: 30px;
-
-    z-index: 3;
-}
-
-.basc-image-label span {
-    display: inline-block;
-
-    margin-bottom: 9px;
-
-    padding: 6px 11px;
-
-    background: #e5b72f;
-
-    color: #08306c;
-
-    border-radius: 3px;
-
-    font-size: 10px;
-    font-weight: 800;
-
-    letter-spacing: 1.5px;
-}
-
-.basc-image-label strong {
-    display: block;
-
-    color: #ffffff;
-
-    font-family: "Segoe UI", sans-serif;
-
-    font-size: 25px;
-    line-height: 1.3;
-
-    font-weight: 700;
-}
-
-
-/* =========================================================
-   FLOATING BADGE
-========================================================= */
-
-.basc-visual-badge {
-    position: absolute;
-
-    z-index: 5;
-
-    left: -20px;
-    bottom: 45px;
-
-    display: flex;
-    align-items: center;
-
-    gap: 11px;
-
-    padding: 12px 17px;
-
-    background: #ffffff;
-
-    border-radius: 10px;
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.14);
-}
-
-.basc-badge-icon {
-    width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #08306c;
-
-    color: #ffffff;
-
-    font-size: 15px;
-}
-
-.basc-visual-badge strong {
-    display: block;
-
-    color: #08306c;
-
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.basc-visual-badge small {
-    display: block;
-
-    margin-top: 2px;
-
-    color: #000000;
-
-    font-size: 11px;
-}
-
-
-/* =========================================================
-   RIGHT CONTENT
-========================================================= */
-
-.basc-student-content {
-    width: 100%;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.basc-student-heading {
-    margin-bottom: 25px;
-}
-
-.basc-student-heading > span {
-    display: inline-block;
-
-    margin-bottom: 8px;
-
-    color: crimson;
-
-    font-size: 12px;
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
-.basc-student-heading h2 {
-    margin: 0 0 13px;
-
-    color: #08306c;
-
-    font-family: "Segoe UI", sans-serif;
-
-    font-size: 34px;
-    line-height: 1.25;
-
-    font-weight: 700;
-}
-
-.basc-student-heading h2 strong {
-    color:crimson;
-}
-
-.basc-student-heading p {
-    margin: 0;
-
-    color: #000000;
-
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   SUPPORT LIST
-========================================================= */
-
-.basc-support-list {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    column-gap: 28px;
-}
-
-
-/* =========================================================
-   SUPPORT ITEM
-========================================================= */
-
-.basc-support-item {
-    position: relative;
-
-    display: flex;
-    align-items: flex-start;
-
-    gap: 12px;
-
-    min-height: 135px;
-
-    padding: 18px 24px 18px 0;
-
-    text-decoration: none;
-
-    border-bottom: 1px solid #dedbd3;
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease;
-}
-
-.basc-support-item:hover {
-    transform: translateY(-3px);
-}
-
-
-/* =========================================================
-   ICON
-========================================================= */
-
-.basc-support-icon {
-    flex: 0 0 42px;
-
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 11px;
-
-    color: #ffffff;
-
-    font-size: 15px;
-
-    transition:
-        transform 0.3s ease,
-        border-radius 0.3s ease;
-}
-
-.basc-support-item:hover .basc-support-icon {
-    transform: translateY(-3px);
-
-    border-radius: 50%;
-}
-
-
-/* =========================================================
-   ICON COLORS
-========================================================= */
-
-.basc-icon-red {
-    background: crimson;
-}
-
-.basc-icon-blue {
-    background: #08306c;
-}
-
-.basc-icon-gold {
-    background: #c69b16;
-}
-
-.basc-icon-green {
-    background: #287a4b;
-}
-
-.basc-icon-orange {
-    background: #c85c19;
-}
-
-.basc-icon-purple {
-    background: #72519a;
-}
-
-
-/* =========================================================
-   SUPPORT TEXT
-========================================================= */
-
-.basc-support-info {
-    padding-right: 3px;
-}
-
-.basc-support-info h3 {
-    margin: 0 0 6px;
-
-    color: #08306c;
-
-    font-family: "Segoe UI", sans-serif;
-
-    font-size: 16px;
-    line-height: 1.4;
-
-    font-weight: 700;
-
-    transition: color 0.3s ease;
-}
-
-.basc-support-item:hover .basc-support-info h3 {
-    color: crimson;
-}
-
-
-/* =========================================================
-   PARAGRAPH
-   EXACTLY 15PX + BLACK
-========================================================= */
-
-.basc-support-info p {
-    margin: 0;
-
-    color: #000000;
-
-    font-family: "Segoe UI", sans-serif;
-
-    font-size: 15px;
-
-    line-height: 1.6;
-
-    font-weight: 400;
-}
-
-
-/* =========================================================
-   ARROW
-========================================================= */
-
-.basc-support-arrow {
-    position: absolute;
-
-    right: 2px;
-    top: 21px;
-
-    width: 24px;
-    height: 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: crimson;
-
-    font-size: 10px;
-
-    opacity: 0;
-
-    transform: translateX(-6px);
-
-    transition: 0.3s ease;
-}
-
-.basc-support-item:hover .basc-support-arrow {
-    opacity: 1;
-
-    transform: translateX(0);
-}
-
-
-/* =========================================================
-   BOTTOM BUTTON
-========================================================= */
-
-.basc-support-button {
-    margin-top: 27px;
-}
-
-.basc-support-button a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
-    padding: 12px 21px;
-
-    background: #08306c;
-
-    color: #ffffff;
-
-    border-radius: 4px;
-
-    text-decoration: none;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    transition:
-        background 0.3s ease,
-        transform 0.3s ease;
-}
-
-.basc-support-button a:hover {
-    background:crimson;
-
-    transform: translateY(-3px);
-}
-
-.basc-support-button i {
-    font-size: 11px;
-}
 
 /* =========================================================
    BASCW FACILITIES INNER PAGE
@@ -10243,1757 +9718,6 @@ text-align: justify;
     color: #ffffff;
     font-size: 15px;
     line-height: 1.65;
-}
-
-
-
-/* =========================================================
-   BASCW NSS V2
-   MODERN COLORFUL DESIGN
-   NO BOX SHADOW
-========================================================= */
-
-.basc-nss-v2 {
-    width: 100%;
-    padding: 80px 20px;
-    background: #f8faf9;
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: #111111;
-}
-
-.basc-nss-v2-wrap {
-    width: min(1180px, 100%);
-    margin: auto;
-}
-
-
-/* =========================================================
-   INTRO SECTION
-========================================================= */
-
-.basc-nss-v2-intro {
-    display: grid;
-    grid-template-columns: 47% 53%;
-    align-items: center;
-    margin-bottom: 90px;
-}
-
-
-/* IMAGE AREA */
-
-.basc-nss-v2-image-area {
-    position: relative;
-    padding: 25px 25px 25px 0;
-}
-
-.basc-nss-v2-image-border {
-    position: relative;
-    padding: 12px;
-    background: #ffffff;
-    border: 3px solid #18a999;
-}
-
-.basc-nss-v2-image-border::before {
-    content: "";
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    left: -18px;
-    bottom: -18px;
-    border-left: 7px solid #f26b5b;
-    border-bottom: 7px solid #f26b5b;
-    z-index: 1;
-}
-
-.basc-nss-v2-image-border::after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    right: -18px;
-    top: -18px;
-    border-right: 7px solid #e5b72f;
-    border-top: 7px solid #e5b72f;
-    z-index: 1;
-}
-
-.basc-nss-v2-image-border img {
-    display: block;
-    width: 100%;
-    height: 480px;
-    object-fit: cover;
-}
-
-
-/* FLOATING LABELS */
-
-.basc-nss-v2-tag {
-    position: absolute;
-    padding: 9px 17px;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-    z-index: 3;
-}
-
-.tag-one {
-    top: 45px;
-    right: 0;
-    background: darkblue;
-}
-
-.tag-two {
-    bottom: 70px;
-    left: -18px;
-    background: #f26b5b;
-}
-
-.tag-three {
-    right: 10px;
-    bottom: 15px;
-    background: #278a58;
-}
-
-
-/* =========================================================
-   INTRO CONTENT
-========================================================= */
-
-.basc-nss-v2-content {
-    padding: 15px 0 15px 65px;
-}
-
-.basc-nss-v2-kicker {
-    display: inline-block;
-    color: #18a999;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 2.5px;
-    margin-bottom: 15px;
-}
-
-.basc-nss-v2-content h1 {
-    margin: 0;
-    color: #202d3d;
-    font-size: 46px;
-    line-height: 1.15;
-    font-weight: 750;
-    letter-spacing: -1px;
-}
-
-.basc-nss-v2-content h1 span {
-    color: darkblue;
-}
-
-.basc-nss-v2-line {
-    width: 90px;
-    height: 5px;
-    background: #f26b5b;
-    margin: 25px 0;
-}
-
-.basc-nss-v2-content p {
-    margin: 0;
-    color: #000000;
-    font-size: 17px;
-    text-align: justify;
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   STATISTICS
-========================================================= */
-
-.basc-nss-v2-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-top: 32px;
-}
-
-.nss-v2-stat {
-    min-height: 105px;
-    padding: 18px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #ffffff;
-    border-top: 5px solid;
-}
-
-.nss-v2-stat strong {
-    font-size: 29px;
-    line-height: 1;
-    margin-bottom: 7px;
-}
-
-.nss-v2-stat span {
-    font-size: 14px;
-    line-height: 1.35;
-    font-weight: 700;
-    color: black;
-}
-
-.stat-teal {
-    border-color: #18a999;
-}
-
-.stat-teal strong {
-    color: #18a999;
-}
-
-.stat-coral {
-    border-color: #f26b5b;
-}
-
-.stat-coral strong {
-    color: #f26b5b;
-}
-
-.stat-yellow {
-    border-color: #d09d08;
-}
-
-.stat-yellow strong {
-    color: #b07d00;
-}
-
-
-/* =========================================================
-   ACTIVITIES
-========================================================= */
-
-.basc-nss-v2-activities {
-    padding-top: 20px;
-}
-
-.basc-nss-v2-heading {
-    max-width: 720px;
-    margin-bottom: 42px;
-}
-
-.basc-nss-v2-heading > span {
-    color: #f26b5b;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 2.5px;
-}
-
-.basc-nss-v2-heading h2 {
-    margin: 8px 0 12px;
-    font-size: 37px;
-    color: #202d3d;
-    line-height: 1.2;
-}
-
-.basc-nss-v2-heading p {
-    margin: 0;
-    color: #000000;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   ACTIVITY GRID
-========================================================= */
-
-.basc-nss-v2-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.nss-v2-card {
-    position: relative;
-    min-height: 225px;
-    padding: 28px 25px 25px;
-    background: #ffffff;
-    border: 1px solid #e4e7e6;
-    border-top: 6px solid;
-    overflow: hidden;
-}
-
-.nss-v2-card::after {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    right: -35px;
-    bottom: -35px;
-    border-radius: 50%;
-    border: 12px solid;
-    opacity: .18;
-}
-
-.nss-v2-card-number {
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-}
-
-.nss-v2-card h3 {
-    margin: 0 0 12px;
-    color: #202d3d;
-    font-size: 20px;
-    line-height: 1.3;
-}
-
-.nss-v2-card p {
-    margin: 0;
-    color: #000000;
-    font-size: 15px;
-    line-height: 1.75;
-    text-align: justify;
-}
-
-
-/* CARD COLORS */
-
-.card-teal {
-    border-color: #18a999;
-    background:  #cffffa
-}
-
-.card-teal .nss-v2-card-number {
-    color: #18a999;
-}
-
-.card-teal::after {
-    border-color: #18a999;
-}
-
-
-.card-coral {
-    border-color: #f26b5b;
-    background-color: #ffc7c0;
-}
-
-.card-coral .nss-v2-card-number {
-    color: #f26b5b;
-}
-
-.card-coral::after {
-    border-color: #f26b5b;
-}
-
-
-.card-green {
-    border-color: #278a58;
-    background-color: #ccffe5;
-}
-
-.card-green .nss-v2-card-number {
-    color: #278a58;
-}
-
-.card-green::after {
-    border-color: #278a58;
-}
-
-
-.card-violet {
-    border-color: darkblue;
-    background-color: #c8c8fb;
-}
-
-.card-violet .nss-v2-card-number {
-    color: darkblue;
-}
-
-.card-violet::after {
-    border-color: darkblue;
-}
-
-
-.card-yellow {
-    border-color: #d09d08;
-    background-color: #ffeaae;
-}
-
-.card-yellow .nss-v2-card-number {
-    color: #b07d00;
-}
-
-.card-yellow::after {
-    border-color: #d09d08;
-}
-
-
-.card-blue {
-    border-color: #2878b5;
-    background-color: #e8f4fd;
-}
-
-.card-blue .nss-v2-card-number {
-    color: #2878b5;
-}
-
-.card-blue::after {
-    border-color: #2878b5;
-}
-
-
-/* =========================================================
-   SPECIAL CAMP
-========================================================= */
-
-.basc-nss-v2-camp {
-    position: relative;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    margin-top: 70px;
-    padding: 45px 50px;
-    background: #202d3d;
-    overflow: hidden;
-}
-
-.basc-nss-v2-camp-number {
-    width: 105px;
-    height: 105px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid #e5b72f;
-    color: #e5b72f;
-    font-size: 21px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    border-radius: 50%;
-}
-
-.basc-nss-v2-camp-content {
-    padding-right: 100px;
-}
-
-.basc-nss-v2-camp-content > span {
-    color: #f26b5b;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.basc-nss-v2-camp-content h2 {
-    margin: 8px 0 12px;
-    color: #ffffff;
-    font-size: 30px;
-}
-
-.basc-nss-v2-camp-content p {
-    margin: 0;
-    color: #ffffff;
-    font-size: 17px;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-.basc-nss-v2-camp-accent {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    right: -40px;
-    top: -40px;
-    border: 22px solid #18a999;
-    border-radius: 50%;
-}
-
-
-/* =========================================================
-   CLOSING
-========================================================= */
-
-.basc-nss-v2-closing {
-    position: relative;
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 25px;
-    align-items: center;
-    margin-top: 35px;
-    padding: 30px 35px;
-    background: #ffffff;
-    border-left: 7px solid #f26b5b;
-    border-right: 7px solid #18a999;
-}
-
-.basc-nss-v2-closing-mark {
-    width: 72px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: darkblue;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    border-radius: 50%;
-}
-
-.basc-nss-v2-closing h3 {
-    margin: 0 0 8px;
-    color: #202d3d;
-    font-size: 23px;
-}
-
-.basc-nss-v2-closing p {
-    margin: 0;
-    color: #000000;
-    font-size: 17px;
-    line-height: 1.75;
-}
-
-
-
-/* =========================================================
-   BASCW - NATIONAL CADET CORPS (NCC)
-   Modern | Colorful | Responsive
-========================================================= */
-
-.basc-ncc-section {
-    position: relative;
-    padding: 90px 20px;
-    background:
-        linear-gradient(135deg, rgba(139, 30, 45, 0.035), transparent 35%),
-        linear-gradient(315deg, rgba(8, 48, 108, 0.04), transparent 40%),
-        #ffffff;
-    overflow: hidden;
-}
-
-/* Decorative military-style pattern */
-.basc-ncc-section::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    top: -100px;
-    right: -80px;
-    border: 22px solid rgba(139, 30, 45, 0.06);
-    transform: rotate(45deg);
-}
-
-.basc-ncc-section::after {
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    bottom: -80px;
-    left: -60px;
-    border: 18px solid rgba(8, 48, 108, 0.055);
-    transform: rotate(45deg);
-}
-
-.basc-ncc-container {
-    width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.basc-ncc-heading {
-    text-align: center;
-    max-width: 820px;
-    margin: 0 auto 55px;
-}
-
-.basc-ncc-kicker {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: crimson;
-    margin-bottom: 13px;
-}
-
-.basc-ncc-heading h2 {
-    margin: 0;
-    font-size: clamp(34px, 4vw, 52px);
-    line-height: 1.1;
-    font-weight: 800;
-    color: #08306c;
-}
-
-.basc-ncc-heading h2 span {
-    color:crimson;
-}
-
-.basc-ncc-line {
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(
-        90deg,
-        crimson 0 50%,
-        #e5b72f 50% 100%
-    );
-    margin: 20px auto;
-}
-
-.basc-ncc-heading p {
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.8;
-    color: #111111;
-}
-
-
-/* =========================================================
-   INTRODUCTION
-========================================================= */
-
-.basc-ncc-intro {
-    display: grid;
-    grid-template-columns: 210px 1fr;
-    align-items: stretch;
-    margin-bottom: 70px;
-    border: 1px solid #e1d7c9;
-    background: #fffaf2;
-    overflow: hidden;
-    position: relative;
-}
-
-.basc-ncc-intro::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 7px;
-    height: 100%;
-    background: crimson;
-}
-
-.basc-ncc-intro-number {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 35px 20px;
-    background: #08306c;
-    color: #ffffff;
-    position: relative;
-    overflow: hidden;
-}
-
-.basc-ncc-intro-number::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 18px solid rgba(255,255,255,0.08);
-    transform: rotate(45deg);
-}
-
-.basc-ncc-intro-number span {
-    position: relative;
-    z-index: 2;
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 900;
-}
-
-.basc-ncc-intro-number small {
-    position: relative;
-    z-index: 2;
-    margin-top: 10px;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.basc-ncc-intro-content {
-    padding: 38px 45px;
-}
-
-.basc-ncc-intro-content h3 {
-    margin: 0 0 12px;
-    font-size: 28px;
-    color:crimson;
-    font-weight: 800;
-}
-
-.basc-ncc-intro-content p {
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.85;
-    color: #111111;
-}
-
-
-/* =========================================================
-   SECTION TITLE
-========================================================= */
-
-.basc-ncc-section-title {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-bottom: 30px;
-}
-
-.basc-ncc-section-title span,
-.basc-ncc-report-heading > span {
-    width: 48px;
-    height: 48px;
-    flex: 0 0 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #e5b72f;
-    color: #08306c;
-    font-size: 14px;
-    font-weight: 900;
-}
-
-.basc-ncc-section-title span {
-    border-radius: 4px;
-}
-
-.basc-ncc-section-title span::first-letter {
-    display: inline-block;
-}
-
-.basc-ncc-section-title h3 {
-    margin: 0;
-    color: #08306c;
-    font-size: 30px;
-    font-weight: 800;
-}
-
-
-/* =========================================================
-   ACTIVITY CARDS
-========================================================= */
-
-.basc-ncc-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-}
-
-.basc-ncc-card {
-    position: relative;
-    display: flex;
-    gap: 18px;
-    padding: 28px 24px;
-    min-height: 190px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    overflow: hidden;
-    transition: transform 0.35s ease, border-color 0.35s ease;
-}
-
-.basc-ncc-card:nth-child(1),
-.basc-ncc-card:nth-child(2),
-.basc-ncc-card:nth-child(3) {
-    grid-column: span 2;
-}
-
-.basc-ncc-card:nth-child(4),
-.basc-ncc-card:nth-child(5) {
-    grid-column: span 3;
-}
-
-.basc-ncc-card::before {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    right: -25px;
-    bottom: -25px;
-    border-radius: 50%;
-    opacity: 0.13;
-}
-
-.ncc-card-one {
-    border-top: 4px solid crimson;
-}
-
-.ncc-card-one::before {
-    background: crimson;
-}
-
-.ncc-card-two {
-    border-top: 4px solid #08306c;
-}
-
-.ncc-card-two::before {
-    background: #08306c;
-}
-
-.ncc-card-three {
-    border-top: 4px solid #e5b72f;
-}
-
-.ncc-card-three::before {
-    background: #e5b72f;
-}
-
-.ncc-card-four {
-    border-top: 4px solid #28745b;
-}
-
-.ncc-card-four::before {
-    background: #28745b;
-}
-
-.ncc-card-five {
-    border-top: 4px solid #b45f06;
-}
-
-.ncc-card-five::before {
-    background: #b45f06;
-}
-
-.basc-ncc-card:hover {
-    transform: translateY(-6px);
-}
-
-.basc-ncc-icon {
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #08306c;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 800;
-}
-
-.ncc-card-one .basc-ncc-icon {
-    background:crimson;
-}
-
-.ncc-card-two .basc-ncc-icon {
-    background: #08306c;
-}
-
-.ncc-card-three .basc-ncc-icon {
-    background: #c79800;
-}
-
-.ncc-card-four .basc-ncc-icon {
-    background: #28745b;
-}
-
-.ncc-card-five .basc-ncc-icon {
-    background: #b45f06;
-}
-
-.basc-ncc-card h4 {
-    margin: 0 0 10px;
-    color: #08306c;
-    font-size: 20px;
-    line-height: 1.3;
-    font-weight: 800;
-}
-
-.basc-ncc-card p {
-    margin: 0;
-    color: #111111;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   REPORTS
-========================================================= */
-
-.basc-ncc-reports {
-    margin-top: 75px;
-    padding: 42px;
-    background: #f7f3ed;
-    border-left: 7px solid crimson;
-}
-
-.basc-ncc-report-heading {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    margin-bottom: 28px;
-}
-
-.basc-ncc-report-heading > span {
-    background: crimson;
-    color: #ffffff;
-}
-
-.basc-ncc-report-heading h3 {
-    margin: 0 0 7px;
-    color: #08306c;
-    font-size: 28px;
-    font-weight: 800;
-}
-
-.basc-ncc-report-heading p {
-    margin: 0;
-    color: #111111;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.basc-ncc-report-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-
-.basc-ncc-report {
-    display: grid;
-    grid-template-columns: 90px 1fr 30px;
-    align-items: center;
-    gap: 12px;
-    min-height: 72px;
-    padding: 12px 18px;
-    background: #ffffff;
-    border: 1px solid #ddd2c4;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.basc-ncc-report:hover {
-    border-color:crimson;
-    transform: translateX(5px);
-}
-
-.report-year {
-    font-size: 15px;
-    font-weight: 900;
-    color: crimson;
-}
-
-.report-name {
-    color: #111111;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.report-arrow {
-    font-size: 22px;
-    color: #08306c;
-    text-align: right;
-}
-
-
-/* =========================================================
-   FINAL HIGHLIGHT
-========================================================= */
-
-.basc-ncc-highlight {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-top: 50px;
-    padding: 30px 35px;
-    background: #08306c;
-    position: relative;
-    overflow: hidden;
-}
-
-.basc-ncc-highlight::after {
-    content: "";
-    position: absolute;
-    width: 190px;
-    height: 190px;
-    right: -80px;
-    top: -80px;
-    border: 25px solid rgba(255,255,255,0.06);
-
-}
-
-.basc-ncc-highlight-mark {
-    width: 75px;
-    height: 75px;
-    min-width: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #e5b72f;
-    color: #e5b72f;
-    font-size: 18px;
-    font-weight: 900;
-
-}
-
-
-.basc-ncc-highlight h3 {
-    margin: 0 0 8px;
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 800;
-}
-
-.basc-ncc-highlight p {
-    margin: 0;
-    max-width: 850px;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-/* =========================================================
-   BASCW - MODERN YOUTH RED CROSS
-   Editorial / Asymmetric / Premium Layout
-========================================================= */
-
-.yrc-modern {
-    position: relative;
-    padding: 100px 20px;
-    background: #f8f6f1;
-    overflow: hidden;
-}
-
-.yrc-modern::before {
-    content: "YRC";
-    position: absolute;
-    top: 40px;
-    right: -25px;
-    font-size: 180px;
-    line-height: 1;
-    font-weight: 900;
-    color: rgba(139, 30, 45, 0.035);
-    pointer-events: none;
-}
-
-.yrc-modern-wrap {
-    width: 100%;
-    max-width: 1180px;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-}
-
-
-/* =========================================================
-   TOP HEADING
-========================================================= */
-
-.yrc-top {
-    max-width: 850px;
-    margin-bottom: 65px;
-}
-
-.yrc-top-label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    color: crimson;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.yrc-top-label span {
-    width: 35px;
-    height: 2px;
-    background: #e5b72f;
-}
-
-.yrc-top h2 {
-    margin: 0;
-    color: #08306c;
-    font-size: clamp(40px, 5vw, 64px);
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: -1.5px;
-}
-
-.yrc-top h2 em {
-    color:crimson;
-    font-style: normal;
-}
-
-.yrc-top p {
-    max-width: 760px;
-    margin: 22px 0 0;
-    color: #111111;
-    font-size: 17px;
-    line-height: 1.85;
-}
-
-
-/* =========================================================
-   EDITORIAL FEATURE
-========================================================= */
-
-.yrc-editorial {
-    display: grid;
-    grid-template-columns: 53% 47%;
-    min-height: 570px;
-    position: relative;
-}
-
-
-/* =========================================================
-   IMAGE
-========================================================= */
-
-.yrc-visual {
-    position: relative;
-    min-height: 570px;
-    overflow: hidden;
-    background: #d9d4ca;
-}
-
-.yrc-visual img {
-    width: 100%;
-    height: 100%;
-    min-height: 570px;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.8s ease;
-}
-
-.yrc-editorial:hover .yrc-visual img {
-    transform: scale(1.035);
-}
-
-.yrc-visual-overlay {
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.02) 40%,
-            rgba(0, 0, 0, 0.7) 100%
-        );
-}
-
-.yrc-image-caption {
-    position: absolute;
-    left: 35px;
-    bottom: 32px;
-    z-index: 3;
-}
-
-.yrc-image-caption strong {
-    display: block;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 800;
-}
-
-.yrc-image-caption span {
-    display: block;
-    margin-top: 5px;
-    color: #ffffff;
-    font-size: 13px;
-    letter-spacing: 1px;
-}
-
-
-/* =========================================================
-   YEAR BADGE
-========================================================= */
-
-.yrc-year-badge {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    z-index: 4;
-    width: 105px;
-    height: 105px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: crimson;
-    color: #ffffff;
-    border-radius: 50%;
-    border: 6px solid rgba(255,255,255,0.8);
-}
-
-.yrc-year-badge small {
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.yrc-year-badge strong {
-    margin-top: 3px;
-    font-size: 28px;
-    line-height: 1;
-}
-
-
-/* =========================================================
-   EDITORIAL CONTENT
-========================================================= */
-
-.yrc-editorial-content {
-    position: relative;
-    align-self: center;
-    margin-left: -45px;
-    padding: 55px 55px 55px 70px;
-    background: #ffffff;
-    border-top: 7px solid crimson;
-    z-index: 5;
-}
-
-.yrc-side-number {
-    position: absolute;
-    top: 22px;
-    right: 28px;
-    color: #e5b72f;
-    font-size: 14px;
-    font-weight: 900;
-}
-
-.yrc-small-title {
-    display: block;
-    margin-bottom: 15px;
-    color: #176b3a;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.yrc-editorial-content h3 {
-    margin: 0 0 20px;
-    color: #08306c;
-    font-size: 36px;
-    line-height: 1.2;
-    font-weight: 800;
-}
-
-.yrc-editorial-content > p {
-    margin: 0;
-    color: #111111;
-    font-size: 17px;
-    line-height: 1.85;
-}
-
-
-/* =========================================================
-   STAT
-========================================================= */
-
-.yrc-stat {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-top: 32px;
-    padding-top: 25px;
-    border-top: 1px solid #dedbd4;
-}
-
-.yrc-stat-number {
-    color: crimson;
-    font-size: 48px;
-    line-height: 1;
-    font-weight: 900;
-}
-
-.yrc-stat-text strong {
-    display: block;
-    color: #08306c;
-    font-size: 16px;
-}
-
-.yrc-stat-text span {
-    display: block;
-    margin-top: 4px;
-    color: #555555;
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   FOCUS SECTION
-========================================================= */
-
-.yrc-focus {
-    margin-top: 100px;
-}
-
-.yrc-focus-heading {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    align-items: end;
-    gap: 30px;
-    margin-bottom: 38px;
-}
-
-.yrc-focus-heading span {
-    color: crimson;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.yrc-focus-heading h3 {
-    margin: 12px 0 0;
-    color: #08306c;
-    font-size: 38px;
-    line-height: 1.2;
-    font-weight: 800;
-}
-
-.yrc-focus-heading > p {
-    margin: 0;
-    color: #111111;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   MODERN LIST
-========================================================= */
-
-.yrc-list {
-    border-top: 1px solid #cfc9bf;
-}
-
-.yrc-list-item {
-    display: grid;
-    grid-template-columns: 60px 65px 1fr 45px;
-    align-items: center;
-    gap: 20px;
-    padding: 25px 10px;
-    border-bottom: 1px solid #cfc9bf;
-    transition: background 0.3s ease, padding 0.3s ease;
-}
-
-.yrc-list-item:hover {
-    padding-left: 20px;
-    background: #ffffff;
-}
-
-.yrc-list-no {
-    color: #77716a;
-    font-size: 13px;
-    font-weight: 800;
-}
-
-.yrc-list-icon {
-    width: 52px;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 23px;
-    font-weight: 400;
-}
-
-.yrc-icon-red {
-    background: crimson;
-}
-
-.yrc-icon-blue {
-    background: #08306c;
-}
-
-.yrc-icon-gold {
-    background: #c49608;
-}
-
-.yrc-icon-green {
-    background: #176b3a;
-}
-
-.yrc-list-content h4 {
-    margin: 0 0 5px;
-    color: #08306c;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.yrc-list-content p {
-    max-width: 800px;
-    margin: 0;
-    color: #111111;
-    font-size: 17px;
-    line-height: 1.65;
-}
-
-.yrc-list-arrow {
-    color: crimson;
-    font-size: 26px;
-    text-align: right;
-    transition: transform 0.3s ease;
-}
-
-.yrc-list-item:hover .yrc-list-arrow {
-    transform: translate(4px, -4px);
-}
-
-
-/* =========================================================
-   BOTTOM STATEMENT
-========================================================= */
-
-.yrc-statement {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-top: 75px;
-    padding: 38px 45px;
-    background: #08306c;
-    position: relative;
-    overflow: hidden;
-}
-
-.yrc-statement::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    right: -130px;
-    top: -120px;
-    border: 35px solid rgba(255,255,255,0.06);
-    border-radius: 50%;
-}
-
-.yrc-statement-mark {
-    width: 85px;
-    height: 85px;
-    min-width: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #e5b72f;
-    border-radius: 50%;
-    color: #e5b72f;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.yrc-statement-text span {
-    color: #e5b72f;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.yrc-statement-text h3 {
-    margin: 7px 0 0;
-    color: #ffffff;
-    font-size: 28px;
-    line-height: 1.35;
-    font-weight: 700;
-}
-
-
-
-/* =========================================================
-   BASCW - RED RIBBON CLUB
-   MODERN EDITORIAL / ASYMMETRIC DESIGN
-   ========================================================= */
-
-.basc-rrc-modern {
-    width: 100%;
-    padding: 50px 20px;
-    background: #fffdf9;
-    overflow: hidden;
-}
-
-.rrc-modern-wrap {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 43% 57%;
-    align-items: center;
-}
-
-
-/* =========================================================
-   LEFT VISUAL
-   ========================================================= */
-
-.rrc-visual {
-    position: relative;
-    min-height: 620px;
-    display: flex;
-    align-items: center;
-    padding-right: 55px;
-}
-
-.rrc-image-frame {
-    width: 100%;
-    height: 570px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0 110px 0 110px;
-    border: 1px solid #e5b72f;
-    background: #f4eee4;
-}
-
-.rrc-image-frame::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 9px;
-    height: 100%;
-    background: crimson;
-    z-index: 2;
-}
-
-.rrc-image-frame::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 45%;
-    height: 8px;
-    background: #08306c;
-    z-index: 2;
-}
-
-.rrc-image-frame img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.7s ease;
-}
-
-.rrc-image-frame:hover img {
-    transform: scale(1.05);
-}
-
-
-/* =========================================================
-   DECORATIVE RIBBON
-   ========================================================= */
-
-.rrc-ribbon-mark {
-    position: absolute;
-    right: 12px;
-    top: 95px;
-    width: 100px;
-    height: 125px;
-    transform: rotate(-12deg);
-    z-index: 5;
-}
-
-.rrc-ribbon-mark span {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 105px;
-    background: crimson;
-    border-radius: 18px 18px 4px 4px;
-}
-
-.rrc-ribbon-mark span:first-child {
-    left: 27px;
-    transform: rotate(28deg);
-}
-
-.rrc-ribbon-mark span:last-child {
-    left: 45px;
-    transform: rotate(-28deg);
-}
-
-.rrc-side-label {
-    position: absolute;
-    bottom: 45px;
-    right: 0;
-    width: 135px;
-    min-height: 135px;
-    padding: 22px 15px;
-    background: #08306c;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-radius: 50%;
-    border: 8px solid #fffdf9;
-}
-
-.rrc-side-label strong {
-    font-size: 30px;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.rrc-side-label small {
-    margin-top: 9px;
-    font-size: 10px;
-    line-height: 1.4;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-}
-
-
-/* =========================================================
-   CONTENT
-   ========================================================= */
-
-.rrc-content {
-    padding: 25px 0 25px 70px;
-}
-
-.rrc-heading-line {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 18px;
-}
-
-.rrc-heading-line span {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.8px;
-    color: crimson;
-}
-
-.rrc-heading-line i {
-    display: block;
-    width: 45px;
-    height: 2px;
-    background: #e5b72f;
-}
-
-
-.rrc-content h2 {
-    margin: 0 0 22px;
-    font-size: clamp(42px, 5vw, 68px);
-    line-height: 1;
-    font-weight: 700;
-    color: #08306c;
-}
-
-.rrc-content h2 em {
-    color: crimson;
-    font-style: normal;
-}
-
-.rrc-intro {
-    max-width: 690px;
-    margin: 0 0 35px;
-    color: #111111;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   ACTIVITIES
-   ========================================================= */
-
-.rrc-activities {
-    width: 100%;
-    border-top: 1px solid #d8d2c8;
-}
-
-.rrc-activity {
-    display: grid;
-    grid-template-columns: 65px 1fr;
-    gap: 20px;
-    padding: 22px 0;
-    border-bottom: 1px solid #d8d2c8;
-    position: relative;
-    transition: padding-left 0.3s ease;
-}
-
-.rrc-activity::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 4px;
-    height: 0;
-    background: crimson;
-    transition: height 0.3s ease;
-}
-
-.rrc-activity:hover {
-    padding-left: 12px;
-}
-
-.rrc-activity:hover::before {
-    height: 100%;
-}
-
-.rrc-number {
-    font-size: 22px;
-    font-weight: 700;
-    color: #e5b72f;
-    padding-top: 2px;
-}
-
-.rrc-activity:nth-child(even) .rrc-number {
-    color: crimson;
-}
-
-.rrc-activity-text h3 {
-    margin: 0 0 6px;
-    color: #08306c;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.rrc-activity-text p {
-    margin: 0;
-    color: #111111;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.65;
-}
-
-
-/* =========================================================
-   BOTTOM MESSAGE
-   ========================================================= */
-
-.rrc-message {
-    margin-top: 32px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 18px 20px;
-    background: #f4eee4;
-    border-left: 6px solid #e5b72f;
-}
-
-.rrc-message-symbol {
-    flex: 0 0 45px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:crimson;
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.rrc-message strong {
-    display: block;
-    margin-bottom: 3px;
-    color: #08306c;
-    font-size: 16px;
-}
-
-.rrc-message p {
-    margin: 0;
-    color: #111111;
-    font-size: 14px;
-    line-height: 1.5;
 }
 
 
@@ -20297,5 +18021,728 @@ body.basc-lightbox-open {
 
     .iqac-modern .iqac-info-card {
         padding: 24px;
+    }
+}
+
+/* ==========================================
+   BASCW STUDENT LIFE
+   CENTRED STUDENT IMAGE OVERLAY
+   RESPONSIVE LAYOUT & ANIMATIONS
+========================================== */
+
+.bascw-life {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #fffdf8;
+    color: #222;
+    isolation: isolate;
+}
+
+.bascw-life,
+.bascw-life * {
+    box-sizing: border-box;
+}
+
+.bascw-life p {
+    color: #222;
+    font-size: 17px;
+    line-height: 1.85;
+    text-align: justify;
+}
+
+.bascw-life h1,
+.bascw-life h2,
+.bascw-life h3 {
+    line-height: 1.35;
+}
+
+.bascw-life h1,
+.bascw-life h2 {
+    color: #173f32;
+}
+
+/* ==========================================
+   MAIN CONTENT AREA
+========================================== */
+
+.bascw-life-main {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    padding:35px 2%;
+    overflow: hidden;
+    background: #fffdf8;
+}
+
+/* Central background image layer */
+
+.bascw-content-student-overlay {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width:80%;
+    height:80%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    overflow: hidden;
+    opacity: 0.13;
+    border-radius: 48% 52% 42% 58% / 42% 40% 60% 58%;
+}
+
+.bascw-content-student-overlay img {
+    display: block;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(0.8);
+}
+
+/* Soft white overlay keeps text readable */
+
+.bascw-content-student-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            #fffdf8 0%,
+            rgba(255, 253, 248, 0.28) 30%,
+            rgba(255, 253, 248, 0.20) 70%,
+            #fffdf8 100%
+        ),
+        linear-gradient(
+            180deg,
+            #fffdf8 0%,
+            transparent 28%,
+            transparent 72%,
+            #fffdf8 100%
+        );
+}
+
+/* Keep content above the decorative background */
+
+.bascw-student-content,
+.bascw-committee-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+/* ==========================================
+   SECTION LABELS
+========================================== */
+
+.bascw-section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    color: #a52a3a;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bascw-section-label i {
+    color: #b48a37;
+    font-size: 20px;
+}
+
+.bascw-script-heading {
+    margin: 0 0 18px;
+    font-size: clamp(30px, 3.5vw, 44px);
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #173f32;
+}
+
+.bascw-heading-underline {
+    position: relative;
+    width: 100px;
+    height: 4px;
+    margin: 0 0 25px;
+    background: #a52a3a;
+    border-radius: 10px;
+}
+
+.bascw-heading-underline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 108px;
+    width: 30px;
+    height: 4px;
+    background: #c7a14a;
+    border-radius: 10px;
+}
+
+.bascw-section-description {
+    max-width: 1050px;
+    margin: 0 0 38px;
+    color: #222;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+/* ==========================================
+   STUDENT LIFE FEATURE GRID
+========================================== */
+
+.bascw-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 45px;
+    row-gap: 0;
+    width: 100%;
+}
+
+.bascw-feature {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    min-width: 0;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(23, 63, 50, 0.15);
+    background: transparent;
+    transition: padding-left 0.3s ease;
+}
+
+.bascw-feature:hover {
+    padding-left: 7px;
+}
+
+.bascw-feature h3,
+.bascw-committee h3 {
+    margin: 0 0 8px;
+    color: #173f32;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bascw-feature p,
+.bascw-committee p {
+    margin: 0;
+    color: #222;
+    font-size: 17px;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+/* ==========================================
+   ICONS
+========================================== */
+
+.bascw-feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 54px;
+    width: 54px;
+    height: 54px;
+    font-size: 23px;
+    border-radius: 50%;
+    background: #f3ead8;
+}
+
+.bascw-feature-icon.green {
+    color: #276b48;
+    background: #e5f0e7;
+}
+
+.bascw-feature-icon.gold {
+    color: #a77b1d;
+    background: #f8efd8;
+}
+
+.bascw-feature-icon.pink {
+    color: #a52a59;
+    background: #f7e5ec;
+}
+
+.bascw-feature-icon.purple {
+    color: #76519b;
+    background: #eee6f7;
+}
+
+.bascw-feature-icon.teal {
+    color: #177b79;
+    background: #dff2ee;
+}
+
+.bascw-feature-icon.blue {
+    color: #2c639d;
+    background: #e4edf8;
+}
+
+.bascw-feature-icon.orange {
+    color: #b86624;
+    background: #f9eadc;
+}
+
+.bascw-feature-icon.forest {
+    color: #24583b;
+    background: #e1eee4;
+}
+
+.bascw-feature-icon.red {
+    color: #a52a3a;
+    background: #f6e3e4;
+}
+
+/* ==========================================
+   CELLS & COMMITTEES
+========================================== */
+
+.bascw-committee-content {
+    margin-top: 100px;
+    padding-top: 65px;
+    border-top: 1px solid rgba(23, 63, 50, 0.18);
+}
+
+.bascw-committee-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 55px;
+    row-gap: 0;
+    width: 100%;
+}
+
+.bascw-committee {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    min-width: 0;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(23, 63, 50, 0.15);
+    background: transparent;
+    transition: padding-left 0.3s ease;
+}
+
+.bascw-committee:hover {
+    padding-left: 7px;
+}
+
+.bascw-committee .bascw-feature-icon {
+    flex-shrink: 0;
+}
+
+/* ==========================================
+   HERO IMAGE GALLERY
+========================================== */
+
+.bascw-life-hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 25px;
+    min-height:300px;
+    padding: 25px 2%;
+    overflow: hidden;
+    background: #f5f0e5;
+}
+
+.bascw-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.bascw-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    color: #a52a3a;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bascw-eyebrow span {
+    width: 35px;
+    height: 3px;
+    background: #b48a37;
+}
+
+.bascw-hero-content h1 {
+    margin: 0;
+    color: #173f32;
+    font-size: clamp(36px, 4.4vw, 38px);
+    line-height: 1.2;
+}
+
+.bascw-hero-content h1 em {
+    color: #a52a3a;
+    font-style: italic;
+}
+
+.bascw-title-line {
+    width: 100px;
+    height: 4px;
+    margin: 25px 0;
+    background: #b48a37;
+}
+
+.bascw-hero-content p {
+    margin: 0 0 28px;
+    color: #222;
+    font-size: 17px;
+    line-height: 1.85;
+    text-align: justify;
+}
+
+.bascw-explore {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 24px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    background: #a52a3a;
+    transition: background 0.3s ease, gap 0.3s ease;
+}
+
+.bascw-explore:hover {
+    gap: 22px;
+    color: #fff;
+    background: #173f32;
+}
+
+.bascw-hero-gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 22px;
+}
+
+.bascw-gallery-card {
+    position: relative;
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.bascw-gallery-two {
+    margin-top: 65px;
+}
+
+.bascw-gallery-three {
+    grid-column: 1 / -1;
+    width: 65%;
+    margin: -5px auto 0;
+}
+
+.bascw-gallery-image {
+    position: relative;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 45% 45% 8px 8px;
+    background: #e8dfce;
+}
+
+.bascw-gallery-three .bascw-gallery-image {
+    height: 190px;
+}
+
+.bascw-gallery-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.bascw-gallery-card:hover .bascw-gallery-image img {
+    transform: scale(1.05);
+}
+
+.bascw-gallery-card h2 {
+    margin: 17px 0 5px;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.bascw-gallery-card p {
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+.bascw-gallery-card p span {
+    color: #a52a3a;
+}
+
+/* ==========================================
+   DECORATIVE LEAVES
+========================================== */
+
+.bascw-leaf {
+    position: absolute;
+    z-index: 0;
+    color: rgba(180, 138, 55, 0.16);
+    font-size: 140px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.bascw-leaf-left {
+    top: 15px;
+    left: -20px;
+}
+
+.bascw-leaf-right {
+    right: -20px;
+    bottom: 15px;
+}
+
+/* ==========================================
+   BOTTOM VALUES STRIP
+========================================== */
+
+.bascw-values-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    padding: 35px 5%;
+    color: #fff;
+    background: #173f32;
+}
+
+.bascw-value {
+    display: flex;
+    flex: 1 1 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    min-height: 75px;
+    padding: 15px 18px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bascw-value i {
+    flex-shrink: 0;
+    color: #dfbd6e;
+    font-size: 24px;
+}
+
+.bascw-value span {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.bascw-value-last {
+    border-right: none;
+}
+
+/* ==========================================
+   FADE-IN ANIMATION
+========================================== */
+
+.bascw-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.75s ease,
+        transform 0.75s ease;
+}
+
+.bascw-reveal.bascw-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+    .bascw-life-hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 60px 6%;
+    }
+
+    .bascw-hero-content {
+        max-width: 800px;
+    }
+
+    .bascw-hero-gallery {
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bascw-life-main {
+        padding: 65px 5%;
+    }
+
+    .bascw-feature-grid,
+    .bascw-committee-grid {
+        column-gap: 30px;
+    }
+
+    .bascw-content-student-overlay {
+        width: 85%;
+        height: 550px;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 650px) {
+    .bascw-life-hero {
+        gap: 35px;
+        padding: 45px 6%;
+    }
+
+    .bascw-hero-content h1 {
+        font-size: 36px;
+    }
+
+    .bascw-eyebrow {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .bascw-hero-gallery {
+        gap: 15px;
+    }
+
+    .bascw-gallery-image {
+        height: 170px;
+    }
+
+    .bascw-gallery-three {
+        width: 80%;
+    }
+
+    .bascw-gallery-three .bascw-gallery-image {
+        height: 160px;
+    }
+
+    .bascw-life-main {
+        padding: 50px 6%;
+    }
+
+    .bascw-content-student-overlay {
+        width: 100%;
+        height: 450px;
+        opacity: 0.09;
+    }
+
+    .bascw-script-heading {
+        font-size: 30px;
+    }
+
+    .bascw-section-description {
+        margin-bottom: 25px;
+    }
+
+    .bascw-feature-grid,
+    .bascw-committee-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .bascw-feature,
+    .bascw-committee {
+        gap: 16px;
+        padding: 22px 0;
+    }
+
+    .bascw-feature-icon {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+        font-size: 21px;
+    }
+
+    .bascw-feature h3,
+    .bascw-committee h3 {
+        font-size: 20px;
+    }
+
+    .bascw-committee-content {
+        margin-top: 65px;
+        padding-top: 45px;
+    }
+
+    .bascw-value {
+        flex-basis: 50%;
+        justify-content: flex-start;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+    .bascw-life-hero {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .bascw-hero-content h1 {
+        font-size: 31px;
+    }
+
+    .bascw-gallery-image {
+        height: 140px;
+    }
+
+    .bascw-gallery-card h2 {
+        font-size: 20px;
+    }
+
+    .bascw-feature,
+    .bascw-committee {
+        gap: 12px;
+    }
+
+    .bascw-feature-icon {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+    }
+
+    .bascw-value {
+        flex-basis: 100%;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .bascw-life *,
+    .bascw-life *::before,
+    .bascw-life *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .bascw-reveal {
+        opacity: 1;
+        transform: none;
     }
 }
