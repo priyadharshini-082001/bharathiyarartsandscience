@@ -189,7 +189,6 @@ a {
 ========================================================= */
 
 .sticky-header-area {
-    position: sticky;
     top: 0;
 
     width: 100%;
@@ -6156,157 +6155,202 @@ color: #0a2c6e;
 
 }
 
-
 /* =========================================
-   FIXED RIGHT SOCIAL MEDIA TOOLBAR
+   FIXED RIGHT SOCIAL MEDIA + PROSPECTUS BAR
+   Same CSS classes for both HTML versions
 ========================================= */
 
 .fixed-social-bar {
     position: fixed;
-    top: 60%;
+    top: 50%;
     right: 0;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     gap: 0;
+    padding: 0;
+    margin: 0;
     z-index: 99999;
 }
 
-/* Individual icon */
+/* SOCIAL ICONS */
 .fixed-social-bar .fixed-social {
-    position: relative;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 0;
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
-    overflow: visible;
-    transition:
-        width 0.3s ease,
-        background-color 0.3s ease;
+    font-size: 14px;
+    line-height: 1;
+    transition: background-color 0.25s ease;
 }
 
-/* Remove all gaps */
-.fixed-social-bar .fixed-social + .fixed-social {
-    margin-top: 0;
+/* Hide social media names in the first HTML version */
+.fixed-social-bar .fixed-social:not(.prospectus) span {
+    display: none;
 }
 
-/* Brand colors */
+/* ICON SIZE */
+.fixed-social-bar .fixed-social i {
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* SOCIAL BRAND COLORS */
 .fixed-social-bar .youtube {
-    background: #ff0000;
+    background-color: #ff0000;
 }
 
 .fixed-social-bar .facebook {
-    background: #1877f2;
+    background-color: #1877f2;
 }
 
 .fixed-social-bar .instagram {
-    background: #c13584;
+    background-color: #c13584;
 }
 
 .fixed-social-bar .linkedin {
-    background: #0a66c2;
+    background-color: #0077b5;
 }
 
 .fixed-social-bar .x-twitter {
-    background: #000000;
+    background-color: #161616;
 }
 
-.fixed-social-bar .prospectus {
-    background: #245331;
-}
-
-/* Hover: expand to the left */
-.fixed-social-bar .fixed-social:hover {
-    width: 125px;
-    justify-content: flex-start;
-    padding-left: 12px;
-}
-
-/* Hover brand colors */
+/* HOVER EFFECTS */
 .fixed-social-bar .youtube:hover {
-    background: #cc0000;
+    background-color: #cc0000;
 }
 
 .fixed-social-bar .facebook:hover {
-    background: #0866d9;
+    background-color: #125dc0;
 }
 
 .fixed-social-bar .instagram:hover {
-    background: #e1306c;
+    background-color: #a52b70;
 }
 
 .fixed-social-bar .linkedin:hover {
-    background: #004182;
+    background-color: #005b8e;
 }
 
 .fixed-social-bar .x-twitter:hover {
-    background: #333333;
+    background-color: #333333;
+}
+
+/* =========================================
+   PROSPECTUS - VERTICAL TEXT ONLY
+========================================= */
+
+.fixed-social-bar .prospectus {
+    width: 32px;
+    min-width: 32px;
+    height: 100px;
+    padding: 6px 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    background-color: #8b1e2d;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    transition: background-color 0.25s ease;
+}
+
+/* Hide prospectus icon if using the first HTML version */
+.fixed-social-bar .prospectus i {
+    display: none;
+}
+
+/* Keep Prospectus text visible in both HTML versions */
+.fixed-social-bar .prospectus span {
+    display: inline;
 }
 
 .fixed-social-bar .prospectus:hover {
-    background: #a66a32;
+    background-color: #651320;
+    color: #ffffff;
 }
 
-/* Icon sizing */
-.fixed-social-bar .fixed-social i {
-    min-width: 16px;
-    text-align: center;
-}
-
-/* Names hidden until hover */
-.fixed-social-bar .fixed-social span {
-    position: absolute;
-    right: 42px;
-    top: 50%;
-    transform: translate(8px, -50%);
-    opacity: 0;
-    visibility: hidden;
-    white-space: nowrap;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    transition: 0.25s ease;
-    pointer-events: none;
-}
-
-/* Show names on hover */
-.fixed-social-bar .fixed-social:hover span {
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    margin-left: 10px;
-}
-
-/* Keyboard accessibility */
+/* KEYBOARD ACCESSIBILITY */
 .fixed-social-bar .fixed-social:focus-visible {
-    outline: 2px solid #222222;
+    outline: 2px solid #e5b72f;
     outline-offset: 2px;
+    position: relative;
+    z-index: 2;
 }
 
-/* Mobile responsive */
-@media (max-width: 576px) {
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
     .fixed-social-bar .fixed-social {
-        width: 32px;
-        height: 34px;
-        font-size: 14px;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        font-size: 13px;
     }
 
-    .fixed-social-bar .fixed-social:hover {
-        width: 108px;
-        padding-left: 8px;
+    .fixed-social-bar .fixed-social i {
+        font-size: 13px;
     }
 
-    .fixed-social-bar .fixed-social span {
-        font-size: 11px;
+    .fixed-social-bar .prospectus {
+        width: 30px;
+        min-width: 30px;
+        height: 90px;
+        font-size: 10px;
     }
 }
 
+/* =========================================
+   MOBILE
+========================================= */
 
+@media (max-width: 468px) {
+    .fixed-social-bar .fixed-social {
+        width: 28px;
+        min-width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .fixed-social-bar .fixed-social i {
+        font-size: 12px;
+    }
+
+    .fixed-social-bar .prospectus {
+        width: 28px;
+        min-width: 28px;
+        height: 84px;
+        font-size: 10px;
+        letter-spacing: 0.3px;
+    }
+}
 
 /* =========================================================
    VISION • MISSION • MOTTO
