@@ -29,14 +29,12 @@ a {
 .page-breadcrumb {
     position: relative;
     width: 100%;
-    min-height:300px;
+    min-height:350px;
     display: flex;
     align-items: center;
-
     background-size: cover;
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
-
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -45,7 +43,7 @@ a {
 .breadcrumb-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.281);
+    background: rgba(0, 0, 0, 0.427);
     z-index: 1;
 }
 
@@ -121,54 +119,88 @@ a {
     background-image: url("../img/infra/cap.jpg");
 }
 
+/* ==========================================
+   DEPARTMENT BREADCRUMB BACKGROUND IMAGES
+========================================== */
+
 /* Tamil Department */
 .breadcrumb-tamil {
-    background-image: url("../img/department/bread-tamil.jpg");
+    background-image: url("../img/departmentcover/department_cover_01.jpg");
 }
 
 /* English Department */
 .breadcrumb-english {
-    background-image: url("../img/departments/english.jpg");
+    background-image: url("../img/departmentcover/department_cover_06.jpg");
 }
 
 /* Commerce Department */
 .breadcrumb-commerce {
-    background-image: url("../img/departments/commerce.jpg");
+    background-image: url("../img/departmentcover/department_cover_16.jpeg");
 }
 
-/* Business Administration */
-.breadcrumb-bba {
-    background-image: url("../img/departments/business.jpg");
-}
-
-/* Mathematics Department */
-.breadcrumb-mathematics {
-    background-image: url("../img/departments/mathematics.jpg");
-}
-
-/* Physics Department */
-.breadcrumb-physics {
-    background-image: url("../img/departments/physics.jpg");
-}
-
-/* Chemistry Department */
-.breadcrumb-chemistry {
-    background-image: url("../img/departments/chemistry.jpg");
-}
-
-/* Computer Science Department */
-.breadcrumb-computer {
-    background-image: url("../img/departments/computer-science.jpg");
+/* Business Administration Department */
+.breadcrumb-business-administration {
+    background-image: url("../img/departmentcover/department_cover_15.jpeg");
 }
 
 /* History Department */
 .breadcrumb-history {
-    background-image: url("../img/departments/history.jpg");
+    background-image: url("../img/departmentcover/department_cover_18.jpg");
+}
+
+/* Mathematics Department */
+.breadcrumb-mathematics {
+    background-image: url("../img/departmentcover/department_cover_05.jpg");
+}
+
+/* Physics Department */
+.breadcrumb-physics {
+    background-image: url("../img/departmentcover/department_cover_07.jpg");
+}
+
+/* Computer Science Department */
+.breadcrumb-computer-science {
+    background-image: url("../img/departmentcover/department_cover_08.jpg");
 }
 
 /* Fashion Technology Department */
-.breadcrumb-fashion {
-    background-image: url("../img/departments/fashion.jpg");
+.breadcrumb-fashion-technology {
+    background-image: url("../img/departmentcover/department_cover_13.jpg");
+}
+
+/* Biotechnology Department */
+.breadcrumb-biotechnology {
+    background-image: url("../img/departmentcover/department_cover_14.jpg");
+}
+
+/* Nutrition and Dietetics Department */
+.breadcrumb-nutrition-dietetics {
+    background-image: url("../img/departmentcover/department_cover_17.jpg");
+}
+
+/* Statistics Department */
+.breadcrumb-statistics {
+    background-image: url("../img/departmentcover/department_cover_11.jpg");
+}
+
+/* Botany Department */
+.breadcrumb-botany {
+    background-image: url("../img/departmentcover/department_cover_09.jpg");
+}
+
+/* Microbiology Department */
+.breadcrumb-microbiology {
+    background-image: url("../img/departmentcover/department_cover_02.jpeg");
+}
+
+/* Chemistry Department */
+.breadcrumb-chemistry {
+    background-image: url("../img/departmentcover/department_cover_03.jpeg");
+}
+
+/* Zoology Department */
+.breadcrumb-zoology {
+    background-image: url("../img/departmentcover/department_cover_04.jpg");
 }
 
 /* Vision and Mission */

@@ -144,9 +144,7 @@
 
         </header>
 
-
   
-      
         <!-- =====================================================
          HEADER 3 - NAVIGATION
     ====================================================== -->
@@ -185,7 +183,7 @@
             Vision, Mission, Motto and Quality Policy
         </a>
 
-        <!-- LEADERSHIP SUBMENU -->
+                     <!-- LEADERSHIP SUBMENU -->
         <div class="nav-dropdown-sub">
 
             <a  class="submenu-link">
@@ -207,9 +205,17 @@
                     Treasurer's Message
                 </a>
 
-                <a href="principal-message.html">
-                    Principal's Message
-                </a>
+                                <div class="nav-dropdown-sub">
+                    <a href="#" class="submenu-link">
+                        Principal Message
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+
+                <!-- ARTS DEPARTMENTS -->
+<div class="submenu-child">
+    <a href="princiawards.html">Principal Awards & Recognitions</a>
+</div>
+                </div>
 
             </div>
 
@@ -230,7 +236,6 @@
     </div>
 
 </div>
-
            
 <!-- ACADEMIC DROPDOWN -->
 <div class="nav-dropdown">
@@ -620,7 +625,6 @@
 <a href="ugc.html">
    UGC
 </a>
-
                
                     <!-- =========================================================
      CALENDAR
@@ -1375,7 +1379,7 @@
 
 
 <!-- ================= BREADCRUMB ================= -->
-<section class="page-breadcrumb">
+<section class="page-breadcrumb breadcrumb-commerce ">
     <div class="breadcrumb-overlay"></div>
     <div class="breadcrumb-container">
         <h1>Department of Commerce</h1>
@@ -2787,6 +2791,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
     </script>
 
+<script>
+    
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navbar = document.querySelector(".navbar-wrapper");
+    const spacer = document.querySelector(".navbar-sticky-spacer");
+
+    if (!navbar) return;
+
+    // Prevent duplicate sticky handlers
+    const stickyStart =
+        navbar.getBoundingClientRect().top + window.scrollY;
+
+    function updateStickyNavbar() {
+
+        const shouldStick = window.scrollY >= stickyStart;
+
+        if (shouldStick) {
+            if (spacer) {
+                spacer.style.height = navbar.offsetHeight + "px";
+            }
+
+            navbar.classList.add("is-fixed");
+        } else {
+            navbar.classList.remove("is-fixed");
+
+            if (spacer) {
+                spacer.style.height = "0px";
+            }
+        }
+    }
+
+    window.addEventListener("scroll", updateStickyNavbar, {
+        passive: true
+    });
+
+    window.addEventListener("resize", updateStickyNavbar);
+
+    updateStickyNavbar();
+});
+
+</script>
 
 </body>
 
