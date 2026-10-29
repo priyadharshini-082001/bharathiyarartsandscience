@@ -5245,1164 +5245,310 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 }
 
 
-/* =========================================================
-   ANNUAL REPORTS
-   GRAND COLLEGE INNER PAGE DESIGN
-========================================================= */
+/* ==========================================
+   BASCW ANNUAL REPORTS
+   ANIMATED EDITORIAL TIMELINE
+========================================== */
 
 .annual-reports {
+    --annual-navy: #173b5b;
+    --annual-blue: #247a94;
+    --annual-gold: #c59b48;
+    --annual-text: #202b35;
+    --annual-muted: #697780;
+    --annual-line: #dce5e9;
+
     position: relative;
-
-    padding: 50px 20px;
-
-    background-color: seagreen;
-
+    width: 100%;
+    padding:35px 22px;
     overflow: hidden;
+    background:
+        radial-gradient(circle at 5% 10%,
+            rgba(36, 122, 148, 0.07), transparent 25%),
+        radial-gradient(circle at 95% 90%,
+            rgba(197, 155, 72, 0.09), transparent 25%),
+        #ffffff;
+    box-sizing: border-box;
 }
 
+.annual-reports *,
+.annual-reports *::before,
+.annual-reports *::after {
+    box-sizing: border-box;
+}
 
-/* Decorative circles */
-
-.annual-reports::before {
-    content: "";
+.annual-overlay {
     position: absolute;
-    width: 380px;
-    height: 380px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    top: -180px;
-    left: -120px;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.18;
+    background-image: radial-gradient(#8ca8b6 0.7px, transparent 0.7px);
+    background-size: 22px 22px;
 }
-
-.annual-reports::after {
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 50%;
-    bottom: -280px;
-    right: -180px;
-}
-
-
-/* Main container */
 
 .annual-container {
     position: relative;
-    z-index: 2;
-    width: 92%;
+    z-index: 1;
+    width: 100%;
     max-width: 1250px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-
-/* =========================================================
-   HEADING
-========================================================= */
+/* ==========================================
+   SECTION HEADING
+========================================== */
 
 .annual-heading {
-    max-width: 800px;
-    margin: 0 auto 55px;
+    position: relative;
     text-align: center;
+    margin-bottom: 38px;
+    animation: annualHeadingIn 0.8s ease both;
 }
 
 .annual-small-title {
     display: inline-block;
-    color: white;
-    font-size: 13px;
-    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--annual-blue);
+    font-size: 12px;
+    font-weight: 800;
     letter-spacing: 3px;
-    margin-bottom: 12px;
 }
 
 .annual-heading h2 {
     margin: 0;
-    color: #ffffff;
-    font-size: 42px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    color: var(--annual-navy);
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.2;
 }
 
 .annual-line {
-    width: 70px;
-    height: 3px;
-    margin: 18px auto;
-    background: #d8b45a;
+    position: relative;
+    width: 75px;
+    height: 4px;
+    margin: 16px auto 0;
+    overflow: hidden;
+    background: #e5e9ec;
 }
 
+.annual-line::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(
+        90deg,
+        var(--annual-blue),
+        var(--annual-gold)
+    );
+    transform-origin: left;
+    animation: annualLineGrow 1s 0.3s ease both;
+}
 
-
-
-/* =========================================================
+/* ==========================================
    REPORT GRID
-========================================================= */
+========================================== */
 
 .annual-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 60px;
 }
 
-
-/* =========================================================
-   REPORT CARD
-========================================================= */
+/* Each report is a timeline row, not a card */
 
 .report-card {
     position: relative;
-    min-height: 260px;
-    padding: 30px 25px;
-    background: rgba(255, 255, 255, 0.96);
-    border: 2px solid crimson;
-    border-radius: 16px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 105px 43px minmax(0, 1fr);
     align-items: center;
-    text-align: center;
-    transition: 0.4s ease;
+    gap: 14px;
+    min-width: 0;
+    padding: 20px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--annual-line);
+    border-radius: 0;
+    animation: annualRowIn 0.65s ease both;
+    transition: border-color 0.3s ease;
 }
 
+/* Stagger the entrance animation */
+
+.report-card:nth-child(1)  { animation-delay: 0.08s; }
+.report-card:nth-child(2)  { animation-delay: 0.14s; }
+.report-card:nth-child(3)  { animation-delay: 0.20s; }
+.report-card:nth-child(4)  { animation-delay: 0.26s; }
+.report-card:nth-child(5)  { animation-delay: 0.32s; }
+.report-card:nth-child(6)  { animation-delay: 0.38s; }
+.report-card:nth-child(7)  { animation-delay: 0.44s; }
+.report-card:nth-child(8)  { animation-delay: 0.50s; }
+.report-card:nth-child(9)  { animation-delay: 0.56s; }
+
 .report-card::before {
-    content: "";
     position: absolute;
-    width: 100%;
-    height: 5px;
     left: 0;
-    top: 0;
-    background: #d8b45a;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: linear-gradient(
+        90deg,
+        var(--annual-blue),
+        var(--annual-gold)
+    );
+    transition: width 0.4s ease;
+}
+
+.report-card:hover::before {
+    width: 100%;
 }
 
 .report-card:hover {
-    transform: translateY(-9px);
-    background: #ffffff;
+    border-bottom-color: transparent;
 }
 
+/* ==========================================
+   YEAR NUMBER
+========================================== */
 
-/* =========================================================
+.report-year {
+    position: relative;
+    display: inline-block;
+    color: var(--annual-navy);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+    white-space: nowrap;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.report-card:hover .report-year {
+    color: var(--annual-blue);
+    transform: translateX(5px);
+}
+
+/* ==========================================
    PDF ICON
-========================================================= */
+========================================== */
 
 .report-icon {
-    width: 70px;
-    height: 70px;
-    margin-top: 12px;
-    margin-bottom: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f4f6f9;
-    border-radius: 50%;
-    color: #b3261e;
-    font-size: 30px;
-    transition: 0.4s ease;
+    width: 42px;
+    height: 46px;
+    flex-shrink: 0;
+    color: #c74343;
+    background: transparent;
+    font-size: 26px;
+    border-radius: 0;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .report-card:hover .report-icon {
-    transform: scale(1.08);
-    background: #fff0ef;
+    color: var(--annual-gold);
+    transform: translateY(-4px);
 }
 
+/* ==========================================
+   REPORT INFORMATION
+========================================== */
 
-/* =========================================================
-   CONTENT
-========================================================= */
+.report-content {
+    min-width: 0;
+    padding: 0;
+}
 
 .report-content h3 {
-    margin: 0 0 8px;
-    color: #153b62;
-    font-size: 20px;
-    font-weight: 700;
+    margin: 0 0 5px;
+    color: var(--annual-text);
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 1.45;
+    transition: color 0.3s ease;
+}
+
+.report-card:hover .report-content h3 {
+    color: var(--annual-blue);
 }
 
 .report-content p {
-    margin: 0 0 20px;
-    color: #777;
-    font-size: 14px;
+    margin: 0 0 9px;
+    color: var(--annual-muted);
+    font-size: 13px;
+    line-height: 1.5;
 }
 
-
-/* =========================================================
-   PDF BUTTON
-========================================================= */
+/* ==========================================
+   VIEW PDF LINK
+========================================== */
 
 .report-btn {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-width: 125px;
-    padding: 10px 18px;
-    border-radius: 5px;
-    background: #153b62;
-    color: #ffffff;
-    text-decoration: none;
+    gap: 7px;
+    padding: 0 0 3px;
+    color: var(--annual-blue);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
     font-size: 13px;
-    font-weight: 600;
-    transition: 0.3s ease;
+    font-weight: 800;
+    text-decoration: none;
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease,
+        gap 0.25s ease;
 }
 
 .report-btn:hover {
-    background: #b18a32;
-    color: #ffffff;
-    text-decoration: none;
+    gap: 11px;
+    color: #a5792c;
+    border-bottom-color: var(--annual-gold);
 }
 
-/* =========================================================
-   ANNUAL ACCOUNTS
-   GRAND COLLEGE DOCUMENT DESIGN
-========================================================= */
+/* ==========================================
+   ANIMATIONS
+========================================== */
 
-.annual-accounts {
-    position: relative;
+@keyframes annualHeadingIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
 
-    padding: 50px 20px;
-
-    background-color: seagreen;
-
-    overflow: hidden;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+@keyframes annualLineGrow {
+    from {
+        transform: scaleX(0);
+    }
 
-
-/* DECORATIVE CIRCLE */
-
-.annual-accounts::before {
-    content: "";
-
-    position: absolute;
-
-    width: 380px;
-    height: 380px;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-
-    border-radius: 50%;
-
-    top: -180px;
-    left: -120px;
+    to {
+        transform: scaleX(1);
+    }
 }
 
-
-.annual-accounts::after {
-    content: "";
-
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    border: 1px solid rgba(255, 255, 255, 0.08);
-
-    border-radius: 50%;
-
-    right: -180px;
-    bottom: -280px;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.accounts-container {
-    position: relative;
-
-    z-index: 2;
-
-    width: 100%;
-    max-width: 1250px;
-
-    margin: auto;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.accounts-heading {
-    max-width: 800px;
-
-    margin: 0 auto 55px;
-
-    text-align: center;
-}
-
-
-.accounts-small-title {
-    display: inline-block;
-
-    color: white;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 12px;
-}
-
-
-.accounts-heading h2 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 42px;
-
-    font-weight: 700;
-}
-
-
-.accounts-line {
-    width: 70px;
-    height: 3px;
-
-    margin: 18px auto;
-
-    background: #d8b45a;
-}
-
-
-
-
-/* =========================================================
-   GRID
-========================================================= */
-
-.accounts-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 24px;
-}
-
-
-/* =========================================================
-   ACCOUNT CARD
-========================================================= */
-
-.account-card {
-    position: relative;
-
-    min-height: 265px;
-
-    padding: 30px 22px;
-
-    background: rgba(255, 255, 255, 0.97);
-
-    border-radius: 16px;
-
-    border: 2px solid crimson;
-
-    overflow: hidden;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
-
-    transition: 0.4s ease;
-}
-
-
-/* GOLD TOP BORDER */
-
-.account-card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 5px;
-
-    background: #d8b45a;
-}
-
-
-.account-card:hover {
-    transform: translateY(-9px);
-
-    background: #ffffff;
-}
-
-
-/* =========================================================
-   YEAR BADGE
-========================================================= */
-
-.account-year {
-    position: absolute;
-
-    top: 16px;
-    right: 16px;
-
-    padding: 6px 11px;
-
-    background: #153b62;
-
-    color: #ffffff;
-
-    border-radius: 20px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-}
-
-
-/* =========================================================
-   ICON
-========================================================= */
-
-.account-icon {
-    width: 70px;
-    height: 70px;
-
-    margin-top: 15px;
-    margin-bottom: 18px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #f4f6f9;
-
-    color: #153b62;
-
-    font-size: 28px;
-
-    transition: 0.4s ease;
-}
-
-
-.account-card:hover .account-icon {
-    transform: scale(1.08);
-
-    background: #eef4fa;
-
-    color: #b18a32;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.account-content h3 {
-    margin: 0 0 8px;
-
-    color: #153b62;
-
-    font-size: 18px;
-
-    font-weight: 700;
-}
-
-
-.account-content p {
-    margin: 0 0 20px;
-
-    color: #777;
-
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   PDF BUTTON
-========================================================= */
-
-.account-btn {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
-
-    min-width: 120px;
-
-    padding: 10px 17px;
-
-    border-radius: 5px;
-
-    background: #153b62;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-
-.account-btn:hover {
-    background: #b18a32;
-
-    color: #ffffff;
-
-    text-decoration: none;
-}
-
-
-/* =========================================================
-   COLLEGE COMMITTEE - MEMBERS
-   GRAND COLLEGE DOCUMENT DESIGN
-========================================================= */
-
-.committee-members {
-    position: relative;
-
-    padding: 50px 20px;
-
-    background-color: seagreen;
-
-    overflow: hidden;
-}
-
-
-/* =========================================================
-   DECORATIVE CIRCLES
-========================================================= */
-
-.committee-members::before {
-    content: "";
-
-    position: absolute;
-
-    width: 380px;
-    height: 380px;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-
-    border-radius: 50%;
-
-    top: -180px;
-    left: -120px;
-}
-
-
-.committee-members::after {
-    content: "";
-
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    border: 1px solid rgba(255, 255, 255, 0.08);
-
-    border-radius: 50%;
-
-    right: -180px;
-    bottom: -280px;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.committee-container {
-    position: relative;
-
-    z-index: 2;
-
-    width: 92%;
-    max-width: 1250px;
-
-    margin: auto;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.committee-heading {
-    max-width: 850px;
-
-    margin: 0 auto 55px;
-
-    text-align: center;
-}
-
-
-.committee-small-title {
-    display: inline-block;
-
-    color: white;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 12px;
-}
-
-
-.committee-heading h2 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 42px;
-
-    font-weight: 700;
-}
-
-
-.committee-line {
-    width: 70px;
-    height: 3px;
-
-    margin: 18px auto;
-
-    background: #d8b45a;
-}
-
-
-
-/* =========================================================
-   GRID
-========================================================= */
-
-.committee-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-
-/* =========================================================
-   CARD
-========================================================= */
-
-.committee-card {
-    position: relative;
-
-    min-height: 265px;
-
-    padding: 30px 22px;
-
-    background: rgba(255, 255, 255, 0.97);
-
-    border-radius: 16px;
-
-    border: 2px solid crimson;
-
-    overflow: hidden;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
-
-    transition: 0.4s ease;
-}
-
-
-/* GOLD TOP LINE */
-
-.committee-card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 5px;
-
-    background: #d8b45a;
-}
-
-
-.committee-card:hover {
-    transform: translateY(-9px);
-
-    background: #ffffff;
-}
-
-
-/* =========================================================
-   YEAR BADGE
-========================================================= */
-
-.committee-year {
-    position: absolute;
-
-    top: 16px;
-    right: 16px;
-
-    padding: 6px 11px;
-
-    background: #153b62;
-
-    color: #ffffff;
-
-    border-radius: 20px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-}
-
-
-/* =========================================================
-   COMMITTEE ICON
-========================================================= */
-
-.committee-icon {
-    width: 70px;
-    height: 70px;
-
-    margin-top: 15px;
-    margin-bottom: 18px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #f2f5f8;
-
-    color: #153b62;
-
-    font-size: 28px;
-
-    transition: 0.4s ease;
-}
-
-
-.committee-card:hover .committee-icon {
-    transform: scale(1.08);
-
-    background: #eef4fa;
-
-    color: #b18a32;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.committee-content h3 {
-    margin: 0 0 8px;
-
-    color: #153b62;
-
-    font-size: 18px;
-
-    font-weight: 700;
-}
-
-
-.committee-content p {
-    margin: 0 0 20px;
-
-    color: #777;
-
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   PDF BUTTON
-========================================================= */
-
-.committee-btn {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
-
-    min-width: 120px;
-
-    padding: 10px 17px;
-
-    border-radius: 5px;
-
-    background: #153b62;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-
-.committee-btn:hover {
-    background: #b18a32;
-
-    color: #ffffff;
-
-    text-decoration: none;
-}
-
-/* =========================================================
-   COLLEGE COMMITTEE - MINUTES
-   GRAND COLLEGE DOCUMENT DESIGN
-========================================================= */
-
-.committee-minutes {
-    position: relative;
-
-    padding: 50px 20px;
-
-    background-color: seagreen;
-
-    overflow: hidden;
-}
-
-
-/* =========================================================
-   DECORATIVE CIRCLES
-========================================================= */
-
-.committee-minutes::before {
-    content: "";
-
-    position: absolute;
-
-    width: 380px;
-    height: 380px;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
-
-    border-radius: 50%;
-
-    top: -180px;
-    left: -120px;
-}
-
-
-.committee-minutes::after {
-    content: "";
-
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    border: 1px solid rgba(255, 255, 255, 0.08);
-
-    border-radius: 50%;
-
-    right: -180px;
-    bottom: -280px;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.minutes-container {
-    position: relative;
-
-    z-index: 2;
-
-    width: 92%;
-    max-width: 1250px;
-
-    margin: auto;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.minutes-heading {
-    max-width: 850px;
-
-    margin: 0 auto 55px;
-
-    text-align: center;
-}
-
-
-.minutes-small-title {
-    display: inline-block;
-
-    color: white;
-
-    font-size: 15px;
-
-    font-weight: 700;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 12px;
-}
-
-
-.minutes-heading h2 {
-    margin: 0;
-
-    color: white;
-
-    font-size: 42px;
-
-    font-weight: 700;
-
-    line-height: 1.2;
-}
-
-
-.minutes-line {
-    width: 70px;
-    height: 3px;
-
-    margin: 18px auto;
-
-    background: #d8b45a;
-}
-
-
-.minutes-heading p {
-    max-width: 760px;
-
-    margin: auto;
-
-    color: rgba(255, 255, 255, 0.82);
-
-    font-size: 16px;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   GRID
-========================================================= */
-
-.minutes-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-
-/* =========================================================
-   CARD
-========================================================= */
-
-.minutes-card {
-    position: relative;
-
-    min-height: 265px;
-
-    padding: 30px 22px;
-
-    background: rgba(255, 255, 255, 0.97);
-
-    border-radius: 16px;
-
-    border: 2px solid crimson;
-
-    overflow: hidden;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
-
-    transition: 0.4s ease;
-}
-
-
-/* GOLD TOP LINE */
-
-.minutes-card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 5px;
-
-    background: #d8b45a;
-}
-
-
-.minutes-card:hover {
-    transform: translateY(-9px);
-
-    background: #ffffff;
-}
-
-
-/* =========================================================
-   YEAR BADGE
-========================================================= */
-
-.minutes-year {
-    position: absolute;
-
-    top: 16px;
-    right: 16px;
-
-    padding: 6px 11px;
-
-    background: #153b62;
-
-    color: #ffffff;
-
-    border-radius: 20px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-}
-
-
-/* =========================================================
-   MINUTES ICON
-========================================================= */
-
-.minutes-icon {
-    width: 70px;
-    height: 70px;
-
-    margin-top: 15px;
-    margin-bottom: 18px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #f2f5f8;
-
-    color: #153b62;
-
-    font-size: 28px;
-
-    transition: 0.4s ease;
-}
-
-
-.minutes-card:hover .minutes-icon {
-    transform: scale(1.08);
-
-    background: #eef4fa;
-
-    color: #b18a32;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.minutes-content h3 {
-    margin: 0 0 8px;
-
-    color: #153b62;
-
-    font-size: 18px;
-
-    font-weight: 700;
-}
-
-
-.minutes-content p {
-    margin: 0 0 20px;
-
-    color: #777;
-
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   PDF BUTTON
-========================================================= */
-
-.minutes-btn {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
-
-    min-width: 120px;
-
-    padding: 10px 17px;
-
-    border-radius: 5px;
-
-    background: #153b62;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-
-.minutes-btn:hover {
-    background: #b18a32;
-
-    color: #ffffff;
-
-    text-decoration: none;
+@keyframes annualRowIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -19251,3 +18397,1147 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
         transition: none !important;
     }
 }
+
+/* =========================================
+   BASCW ANNUAL ACCOUNTS
+   ANIMATED EDITORIAL DESIGN
+========================================= */
+
+.annual-accounts {
+    position: relative;
+    width: 100%;
+    padding: 55px 20px;
+    background-color: #ffffff;
+    background-image:
+        radial-gradient(circle at 8% 15%,
+        rgba(23, 55, 105, 0.06) 0,
+        transparent 24%),
+        radial-gradient(circle at 92% 85%,
+        rgba(190, 145, 55, 0.09) 0,
+        transparent 25%);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.annual-accounts *,
+.annual-accounts *::before,
+.annual-accounts *::after {
+    box-sizing: border-box;
+}
+
+/* Background Overlay */
+
+.accounts-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(
+            135deg,
+            transparent 49.8%,
+            rgba(23, 55, 105, 0.035) 50%,
+            transparent 50.2%
+        );
+    background-size: 45px 45px;
+    opacity: 0.45;
+}
+
+/* Main Container */
+
+.accounts-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.accounts-heading {
+    position: relative;
+    text-align: center;
+    margin-bottom: 45px;
+    animation: accountsHeadingIn 0.8s ease both;
+}
+
+.accounts-small-title {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #b58a35;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.accounts-heading h2 {
+    margin: 0;
+    color: #173765;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+.accounts-line {
+    position: relative;
+    width: 90px;
+    height: 3px;
+    margin: 18px auto 0;
+    background: #c39a45;
+    border-radius: 10px;
+    animation: accountsLineGrow 0.9s ease 0.3s both;
+}
+
+.accounts-line::before,
+.accounts-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    background: #173765;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.accounts-line::before {
+    left: -13px;
+}
+
+.accounts-line::after {
+    right: -13px;
+}
+
+/* =========================================
+   ACCOUNTS GRID
+========================================= */
+
+.accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 45px;
+    row-gap: 0;
+    width: 100%;
+}
+
+/* =========================================
+   ACCOUNT ROW
+   Editorial Style - Not Box Cards
+========================================= */
+
+.account-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 95px 55px minmax(0, 1fr);
+    align-items: center;
+    gap: 18px;
+    min-width: 0;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(23, 55, 101, 0.17);
+    background: transparent;
+    animation: accountRowIn 0.7s ease both;
+    transition: border-color 0.3s ease;
+}
+
+/* Staggered Entrance Animation */
+
+.account-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.account-card:nth-child(2) {
+    animation-delay: 0.18s;
+}
+
+.account-card:nth-child(3) {
+    animation-delay: 0.26s;
+}
+
+.account-card:nth-child(4) {
+    animation-delay: 0.34s;
+}
+
+.account-card:nth-child(5) {
+    animation-delay: 0.42s;
+}
+
+.account-card:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+/* Animated Gold Underline */
+
+.account-card::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c39a45;
+    transition: width 0.4s ease;
+}
+
+.account-card:hover::after {
+    width: 100%;
+}
+
+.account-card:hover {
+    border-bottom-color: rgba(195, 154, 69, 0.45);
+}
+
+/* =========================================
+   YEAR
+========================================= */
+
+.account-year {
+    color: #173765;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.account-card:hover .account-year {
+    color: #b58a35;
+    transform: translateX(4px);
+}
+
+/* =========================================
+   PDF ICON
+========================================= */
+
+.account-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 55px;
+    color: #b58a35;
+    font-size: 35px;
+    transition:
+        color 0.3s ease,
+        transform 0.35s ease;
+}
+
+.account-card:hover .account-icon {
+    color: #173765;
+    transform: translateY(-4px) scale(1.06);
+}
+
+/* =========================================
+   ACCOUNT CONTENT
+========================================= */
+
+.account-content {
+    min-width: 0;
+}
+
+.account-content h3 {
+    margin: 0 0 7px;
+    color: #173765;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.45;
+    transition: color 0.3s ease;
+}
+
+.account-card:hover .account-content h3 {
+    color: #a77b24;
+}
+
+.account-content p {
+    margin: 0 0 13px;
+    color: #555f6d;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   VIEW PDF BUTTON
+========================================= */
+
+.account-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 9px 17px;
+    color: #ffffff;
+    background: #173765;
+    border: 1px solid #173765;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow: hidden;
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.account-btn i {
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.account-btn:hover {
+    color: #173765;
+    background: #ffffff;
+    border-color: #c39a45;
+    transform: translateY(-2px);
+}
+
+.account-btn:hover i {
+    transform: scale(1.12);
+}
+
+/* Keyboard Accessibility */
+
+.account-btn:focus-visible {
+    outline: 3px solid #c39a45;
+    outline-offset: 4px;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes accountsHeadingIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes accountsLineGrow {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes accountRowIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==========================================
+   BASCW COLLEGE COMMITTEE
+   EDITORIAL GOVERNANCE TIMELINE
+========================================== */
+
+.governance-section {
+    position: relative;
+    width: 100%;
+    padding: 35px 20px;
+    overflow: hidden;
+    background-color: white;
+    color: #1a2f50;
+    box-sizing: border-box;
+}
+
+.governance-section *,
+.governance-section *::before,
+.governance-section *::after {
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   DECORATIVE BACKGROUND
+========================================== */
+
+.governance-bg-shape {
+    position: absolute;
+    pointer-events: none;
+    border: 1px solid rgba(25, 65, 117, 0.09);
+    transform: rotate(45deg);
+}
+
+.governance-shape-one {
+    width: 250px;
+    height: 250px;
+    top: 90px;
+    right: -150px;
+}
+
+.governance-shape-two {
+    width: 180px;
+    height: 180px;
+    bottom: 80px;
+    left: -115px;
+    border-color: rgba(190, 146, 55, 0.18);
+}
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.governance-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.governance-heading {
+    text-align: center;
+    margin-bottom: 55px;
+    animation: governanceFadeIn 0.8s ease both;
+}
+
+.governance-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 14px;
+    color: #ae812d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.governance-eyebrow i {
+    font-size: 16px;
+}
+
+.governance-heading h2 {
+    margin: 0;
+    color: #173765;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.governance-heading > p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #58677b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.governance-heading-line {
+    width: 90px;
+    height: 3px;
+    margin: 22px auto 0;
+    background: #d5b36b;
+    overflow: hidden;
+}
+
+.governance-heading-line span {
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: #173765;
+    animation: governanceLineMove 2s ease-in-out infinite alternate;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.governance-timeline {
+    position: relative;
+    width: 100%;
+}
+
+/* Vertical timeline line */
+
+.governance-timeline::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 139px;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        #c5a45d,
+        rgba(23, 55, 101, 0.16),
+        #c5a45d
+    );
+}
+
+/* ==========================================
+   TIMELINE ITEM
+========================================== */
+
+.governance-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 105px 70px minmax(0, 1fr);
+    align-items: start;
+    gap: 0;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(23, 55, 101, 0.12);
+    animation: governanceItemIn 0.7s ease both;
+}
+
+.governance-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.governance-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.governance-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.governance-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.governance-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+/* ==========================================
+   YEAR LABEL
+========================================== */
+
+.governance-year {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 7px 20px 0 0;
+    line-height: 1.15;
+}
+
+.governance-year span {
+    color: #173765;
+    font-size: 26px;
+    font-weight: 800;
+    transition: color 0.3s ease;
+}
+
+.governance-year small {
+    margin-top: 5px;
+    color: #b18a3c;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.governance-item:hover .governance-year span {
+    color: #b18a3c;
+}
+
+/* ==========================================
+   TIMELINE MARKER
+========================================== */
+
+.governance-marker {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    color: #ffffff;
+    background: #173765;
+    border: 4px solid #f7f9fc;
+    outline: 1px solid rgba(195, 154, 69, 0.65);
+    border-radius: 50%;
+    font-size: 18px;
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.governance-item:hover .governance-marker {
+    color: #173765;
+    background: #e5c67e;
+    transform: scale(1.12) rotate(-5deg);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.governance-details {
+    min-width: 0;
+    padding: 3px 0 4px 20px;
+}
+
+.governance-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #a77c2b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.governance-details h3 {
+    margin: 0 0 9px;
+    color: #173765;
+    font-size: 21px;
+    font-weight: 750;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.governance-item:hover .governance-details h3 {
+    color: #a77c2b;
+}
+
+.governance-details p {
+    max-width: 650px;
+    margin: 0 0 13px;
+    color: #58677b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   DOCUMENT LINK
+========================================== */
+
+.governance-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    color: #173765;
+    border-bottom: 1px solid #c8a455;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.governance-link i {
+    color: #b18a3c;
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.governance-link:hover {
+    gap: 15px;
+    color: #a77c2b;
+    border-color: #173765;
+}
+
+.governance-link:hover i {
+    transform: translateX(3px);
+}
+
+.governance-link:focus-visible {
+    outline: 2px solid #173765;
+    outline-offset: 5px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.governance-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 35px;
+    color: #5d6a7b;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.governance-footer > i {
+    color: #b18a3c;
+    font-size: 17px;
+}
+
+.governance-footer-dot {
+    width: 5px;
+    height: 5px;
+    background: #b18a3c;
+    border-radius: 50%;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes governanceFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes governanceItemIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes governanceLineMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(150%);
+    }
+}
+
+/* ==========================================
+   BASCW COMMITTEE MINUTES
+   GOVERNANCE TIMELINE DESIGN
+========================================== */
+
+.minutes-section {
+    position: relative;
+    width: 100%;
+    padding: 65px 20px;
+    overflow: hidden;
+    background: #f7f9fc;
+    color: #1a2f50;
+    box-sizing: border-box;
+}
+
+.minutes-section *,
+.minutes-section *::before,
+.minutes-section *::after {
+    box-sizing: border-box;
+}
+
+/* Decorative Background */
+
+.minutes-bg-shape {
+    position: absolute;
+    pointer-events: none;
+    border: 1px solid rgba(23, 55, 101, 0.09);
+    transform: rotate(45deg);
+}
+
+.minutes-shape-one {
+    width: 250px;
+    height: 250px;
+    top: 90px;
+    right: -150px;
+}
+
+.minutes-shape-two {
+    width: 180px;
+    height: 180px;
+    bottom: 80px;
+    left: -115px;
+    border-color: rgba(190, 146, 55, 0.2);
+}
+
+/* Main Container */
+
+.minutes-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.minutes-heading {
+    text-align: center;
+    margin-bottom: 55px;
+    animation: minutesFadeIn 0.8s ease both;
+}
+
+.minutes-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 14px;
+    color: #ae812d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.minutes-eyebrow i {
+    font-size: 16px;
+}
+
+.minutes-heading h2 {
+    margin: 0;
+    color: #173765;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.minutes-heading > p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #58677b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.minutes-heading-line {
+    width: 90px;
+    height: 3px;
+    margin: 22px auto 0;
+    background: #d5b36b;
+    overflow: hidden;
+}
+
+.minutes-heading-line span {
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: #173765;
+    animation: minutesLineMove 2s ease-in-out infinite alternate;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.minutes-timeline {
+    position: relative;
+    width: 100%;
+}
+
+/* Vertical Timeline Line */
+
+.minutes-timeline::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 139px;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        #c5a45d,
+        rgba(23, 55, 101, 0.16),
+        #c5a45d
+    );
+}
+
+/* ==========================================
+   TIMELINE ITEM
+========================================== */
+
+.minutes-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 105px 70px minmax(0, 1fr);
+    align-items: start;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(23, 55, 101, 0.12);
+    animation: minutesItemIn 0.7s ease both;
+}
+
+.minutes-item:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.minutes-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.minutes-item:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.minutes-item:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.minutes-item:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.minutes-item:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.minutes-item:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.minutes-item:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+.minutes-item:nth-child(9) {
+    animation-delay: 0.45s;
+}
+
+.minutes-item:nth-child(10) {
+    animation-delay: 0.5s;
+}
+
+.minutes-item:nth-child(11) {
+    animation-delay: 0.55s;
+}
+
+/* ==========================================
+   YEAR
+========================================== */
+
+.minutes-year {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 7px 20px 0 0;
+    line-height: 1.15;
+}
+
+.minutes-year span {
+    color: #173765;
+    font-size: 26px;
+    font-weight: 800;
+    transition: color 0.3s ease;
+}
+
+.minutes-year small {
+    margin-top: 5px;
+    color: #b18a3c;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.minutes-item:hover .minutes-year span {
+    color: #b18a3c;
+}
+
+/* ==========================================
+   MEETING ICON
+========================================== */
+
+.minutes-marker {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    color: #ffffff;
+    background: #173765;
+    border: 4px solid #f7f9fc;
+    outline: 1px solid rgba(195, 154, 69, 0.65);
+    border-radius: 50%;
+    font-size: 18px;
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.minutes-item:hover .minutes-marker {
+    color: #173765;
+    background: #e5c67e;
+    transform: scale(1.12) rotate(-5deg);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.minutes-details {
+    min-width: 0;
+    padding: 3px 0 4px 20px;
+}
+
+.minutes-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #a77c2b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.minutes-details h3 {
+    margin: 0 0 9px;
+    color: #173765;
+    font-size: 21px;
+    font-weight: 750;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.minutes-item:hover .minutes-details h3 {
+    color: #a77c2b;
+}
+
+.minutes-details p {
+    max-width: 650px;
+    margin: 0 0 13px;
+    color: #58677b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   VIEW DOCUMENT LINK
+========================================== */
+
+.minutes-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    color: #173765;
+    border-bottom: 1px solid #c8a455;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.minutes-link i {
+    color: #b18a3c;
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.minutes-link:hover {
+    gap: 15px;
+    color: #a77c2b;
+    border-color: #173765;
+}
+
+.minutes-link:hover i {
+    transform: translateX(3px);
+}
+
+.minutes-link:focus-visible {
+    outline: 2px solid #173765;
+    outline-offset: 5px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.minutes-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 35px;
+    color: #5d6a7b;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.minutes-footer > i {
+    color: #b18a3c;
+    font-size: 17px;
+}
+
+.minutes-footer-dot {
+    width: 5px;
+    height: 5px;
+    background: #b18a3c;
+    border-radius: 50%;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes minutesFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes minutesItemIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes minutesLineMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(150%);
+    }
+}
+

@@ -2982,339 +2982,127 @@
     }
 }
 
-
-
-/* =========================================================
+/* ==========================================
    TABLET
-========================================================= */
+========================================== */
 
-@media (max-width: 991px) {
-
+@media (max-width: 1000px) {
     .annual-reports {
-        padding: 70px 20px 80px;
-        background-attachment: scroll;
+        padding: 45px 22px;
     }
 
     .annual-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .annual-heading h2 {
-        font-size: 36px;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .annual-reports {
-        padding: 60px 15px 70px;
-    }
-
-    .annual-container {
-        width: 100%;
-    }
-
-    .annual-heading {
-        margin-bottom: 35px;
-    }
-
-    .annual-small-title {
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-    .annual-heading h2 {
-        font-size: 30px;
-    }
-
-    .annual-heading p {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    .annual-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
+        column-gap: 32px;
     }
 
     .report-card {
-        min-height: 240px;
-        padding: 28px 20px;
+        grid-template-columns: 83px 36px minmax(0, 1fr);
+        gap: 10px;
     }
 
-    .report-content h3 {
-        font-size: 18px;
+    .report-year {
+        font-size: 21px;
     }
 
     .report-icon {
-        width: 65px;
-        height: 65px;
-        font-size: 27px;
+        font-size: 23px;
     }
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1100px) {
-
-    .accounts-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-}
-
-
-/* =========================================================
+/* ==========================================
    MOBILE
-========================================================= */
+========================================== */
 
-@media (max-width: 600px) {
-
-    .annual-accounts {
-        padding: 60px 15px 70px;
-
-        background-attachment: scroll;
+@media (max-width: 650px) {
+    .annual-reports {
+        padding: 35px 18px;
     }
 
-
-    .accounts-container {
-        width: 100%;
+    .annual-heading {
+        margin-bottom: 25px;
     }
 
-
-    .accounts-heading {
-        margin-bottom: 35px;
-    }
-
-
-    .accounts-small-title {
-        font-size: 11px;
-
-        letter-spacing: 2px;
-    }
-
-
-    .accounts-heading h2 {
-        font-size: 30px;
-    }
-
-
-    .accounts-heading p {
-        font-size: 14px;
-
-        line-height: 1.7;
-    }
-
-
-    .accounts-grid {
-        grid-template-columns: 1fr;
-
-        gap: 18px;
-    }
-
-
-    .account-card {
-        min-height: 245px;
-
-        padding: 28px 20px;
-    }
-
-
-    .account-icon {
-        width: 65px;
-        height: 65px;
-
-        font-size: 26px;
-    }
-
-
-    .account-content h3 {
-        font-size: 18px;
-    }
-
-}
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1000px) {
-
-    .committee-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .committee-members {
-        padding: 60px 15px 70px;
-
-        background-attachment: scroll;
-    }
-
-
-    .committee-container {
-        width: 100%;
-    }
-
-
-    .committee-heading {
-        margin-bottom: 35px;
-    }
-
-
-    .committee-small-title {
-        font-size: 11px;
-
-        letter-spacing: 2px;
-    }
-
-
-    .committee-heading h2 {
+    .annual-heading h2 {
         font-size: 29px;
-
-        line-height: 1.25;
     }
 
-
-    .committee-heading p {
-        font-size: 14px;
-
-        line-height: 1.7;
-    }
-
-
-    .committee-grid {
-        grid-template-columns: 1fr;
-
-        gap: 18px;
-    }
-
-
-    .committee-card {
-        min-height: 245px;
-
-        padding: 28px 20px;
-    }
-
-
-    .committee-icon {
-        width: 65px;
-        height: 65px;
-
-        font-size: 26px;
-    }
-
-
-    .committee-content h3 {
-        font-size: 18px;
-    }
-
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1000px) {
-
-    .minutes-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .committee-minutes {
-        padding: 60px 15px 70px;
-
-        background-attachment: scroll;
-    }
-
-
-    .minutes-container {
-        width: 100%;
-    }
-
-
-    .minutes-heading {
-        margin-bottom: 35px;
-    }
-
-
-    .minutes-small-title {
-        font-size: 11px;
-
+    .annual-small-title {
+        font-size: 10px;
         letter-spacing: 2px;
     }
 
-
-    .minutes-heading h2 {
-        font-size: 29px;
-
-        line-height: 1.3;
-    }
-
-
-    .minutes-heading p {
-        font-size: 14px;
-
-        line-height: 1.7;
-    }
-
-
-    .minutes-grid {
+    .annual-grid {
         grid-template-columns: 1fr;
-
-        gap: 18px;
+        column-gap: 0;
     }
 
-
-    .minutes-card {
-        min-height: 245px;
-
-        padding: 28px 20px;
+    .report-card {
+        grid-template-columns: 78px 34px minmax(0, 1fr);
+        gap: 10px;
+        padding: 18px 0;
     }
 
-
-    .minutes-icon {
-        width: 65px;
-        height: 65px;
-
-        font-size: 26px;
+    .report-year {
+        font-size: 20px;
     }
 
-
-    .minutes-content h3 {
-        font-size: 18px;
+    .report-icon {
+        width: 32px;
+        height: 40px;
+        font-size: 22px;
     }
 
+    .report-content h3 {
+        font-size: 15px;
+    }
+
+    .report-content p {
+        font-size: 13px;
+    }
 }
 
+/* Very small screens */
+
+@media (max-width: 380px) {
+    .annual-reports {
+        padding-right: 13px;
+        padding-left: 13px;
+    }
+
+    .report-card {
+        grid-template-columns: 67px 27px minmax(0, 1fr);
+        gap: 7px;
+    }
+
+    .report-year {
+        font-size: 17px;
+        letter-spacing: -0.5px;
+    }
+
+    .report-icon {
+        font-size: 20px;
+    }
+
+    .report-content h3 {
+        font-size: 14px;
+    }
+
+    .report-btn {
+        font-size: 12px;
+    }
+}
+
+/* Accessibility: respect reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .annual-reports *,
+    .annual-reports *::before,
+    .annual-reports *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
 
 /* =========================================================
    LARGE TABLET
@@ -7992,6 +7780,459 @@
     .ipr-editorial *,
     .ipr-editorial *::before,
     .ipr-editorial *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+    .governance-section {
+        padding: 48px 20px;
+    }
+
+    .governance-heading {
+        margin-bottom: 40px;
+    }
+
+    .governance-heading h2 {
+        font-size: 30px;
+    }
+
+    .governance-timeline::before {
+        left: 111px;
+    }
+
+    .governance-item {
+        grid-template-columns: 82px 58px minmax(0, 1fr);
+        padding: 22px 0;
+    }
+
+    .governance-year {
+        padding-right: 12px;
+    }
+
+    .governance-year span {
+        font-size: 22px;
+    }
+
+    .governance-year small {
+        font-size: 14px;
+    }
+
+    .governance-marker {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .governance-details {
+        padding-left: 15px;
+    }
+
+    .governance-details h3 {
+        font-size: 19px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 520px) {
+
+    .governance-section {
+        padding: 38px 16px;
+    }
+
+    .governance-heading h2 {
+        font-size: 26px;
+    }
+
+    .governance-heading > p {
+        font-size: 15px;
+    }
+
+    .governance-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.8px;
+    }
+
+    .governance-timeline::before {
+        left: 19px;
+    }
+
+    .governance-item {
+        grid-template-columns: 40px minmax(0, 1fr);
+        column-gap: 14px;
+        padding: 22px 0;
+    }
+
+    .governance-year {
+        grid-column: 2;
+        grid-row: 1;
+        align-items: flex-start;
+        padding: 0 0 12px;
+    }
+
+    .governance-year span {
+        font-size: 23px;
+    }
+
+    .governance-year small {
+        display: inline;
+        margin-top: 3px;
+    }
+
+    .governance-marker {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .governance-details {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 0;
+    }
+
+    .governance-label {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+    .governance-details h3 {
+        font-size: 18px;
+    }
+
+    .governance-details p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .governance-footer {
+        gap: 8px;
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .governance-section *,
+    .governance-section *::before,
+    .governance-section *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .annual-accounts {
+        padding: 45px 22px;
+    }
+
+    .accounts-grid {
+        column-gap: 30px;
+    }
+
+    .account-card {
+        grid-template-columns: 82px 42px minmax(0, 1fr);
+        gap: 12px;
+        padding: 22px 0;
+    }
+
+    .account-year {
+        font-size: 20px;
+    }
+
+    .account-icon {
+        width: 40px;
+        font-size: 30px;
+    }
+
+    .account-content h3 {
+        font-size: 17px;
+    }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .annual-accounts {
+        padding: 35px 18px;
+    }
+
+    .accounts-heading {
+        margin-bottom: 28px;
+    }
+
+    .accounts-small-title {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .accounts-heading h2 {
+        font-size: 28px;
+    }
+
+    .accounts-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .account-card {
+        grid-template-columns: 78px 42px minmax(0, 1fr);
+        gap: 12px;
+        padding: 22px 0;
+    }
+
+    .account-year {
+        font-size: 19px;
+    }
+
+    .account-icon {
+        width: 38px;
+        height: 45px;
+        font-size: 28px;
+    }
+
+    .account-content h3 {
+        font-size: 16px;
+    }
+
+    .account-content p {
+        font-size: 14px;
+    }
+
+    .account-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+    .annual-accounts {
+        padding: 30px 14px;
+    }
+
+    .accounts-heading h2 {
+        font-size: 25px;
+    }
+
+    .account-card {
+        grid-template-columns: 1fr 35px;
+        gap: 10px;
+        align-items: start;
+        padding: 20px 0;
+    }
+
+    .account-year {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 21px;
+    }
+
+    .account-icon {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        font-size: 28px;
+    }
+
+    .account-content {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        padding-top: 5px;
+    }
+
+    .account-content h3 {
+        font-size: 17px;
+    }
+}
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .annual-accounts *,
+    .annual-accounts *::before,
+    .annual-accounts *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .minutes-section {
+        padding: 48px 20px;
+    }
+
+    .minutes-heading {
+        margin-bottom: 40px;
+    }
+
+    .minutes-heading h2 {
+        font-size: 30px;
+    }
+
+    .minutes-timeline::before {
+        left: 111px;
+    }
+
+    .minutes-item {
+        grid-template-columns: 82px 58px minmax(0, 1fr);
+        padding: 22px 0;
+    }
+
+    .minutes-year {
+        padding-right: 12px;
+    }
+
+    .minutes-year span {
+        font-size: 22px;
+    }
+
+    .minutes-year small {
+        font-size: 14px;
+    }
+
+    .minutes-marker {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .minutes-details {
+        padding-left: 15px;
+    }
+
+    .minutes-details h3 {
+        font-size: 19px;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 520px) {
+
+    .minutes-section {
+        padding: 38px 16px;
+    }
+
+    .minutes-heading h2 {
+        font-size: 26px;
+    }
+
+    .minutes-heading > p {
+        font-size: 15px;
+    }
+
+    .minutes-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.8px;
+    }
+
+    .minutes-timeline::before {
+        left: 19px;
+    }
+
+    .minutes-item {
+        grid-template-columns: 40px minmax(0, 1fr);
+        column-gap: 14px;
+        padding: 22px 0;
+    }
+
+    .minutes-year {
+        grid-column: 2;
+        grid-row: 1;
+        align-items: flex-start;
+        padding: 0 0 12px;
+    }
+
+    .minutes-year span {
+        font-size: 23px;
+    }
+
+    .minutes-year small {
+        margin-top: 3px;
+    }
+
+    .minutes-marker {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .minutes-details {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 0;
+    }
+
+    .minutes-label {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+    .minutes-details h3 {
+        font-size: 18px;
+    }
+
+    .minutes-details p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .minutes-footer {
+        gap: 8px;
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .minutes-section *,
+    .minutes-section *::before,
+    .minutes-section *::after {
         animation: none !important;
         transition: none !important;
     }
