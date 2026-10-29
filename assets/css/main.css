@@ -714,7 +714,7 @@ p {
   font-size: var(--rs-fs-p);
   font-family: var(--rs-ff-p);
   font-weight: var(--rs-fw-normal);
-  color: var(--rs-text-primary);
+  color: black;
   margin-bottom: 30px;
   line-height: 28px;
 }

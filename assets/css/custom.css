@@ -420,13 +420,56 @@ a {
    HEADER 3
 ========================================================= */
 
-.navbar-wrapper {
-    width: 100%;
 
-    background: #073b8f;
-
+/* HEADER 1 - TOP UTILITY BAR */
+.basc-topbar {
     position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+/* HEADER 2 - COLLEGE BRAND */
+.college-header {
+    position: relative;
+    width: 100%;
+    z-index: 20;
+}
+
+/* HEADER 2 + HEADER 3 PARENT */
+.sticky-header-area {
+    position: static !important;
+    top: auto;
+    transform: none;
+    overflow: visible;
+}
+
+/* HEADER 3 - NORMAL POSITION */
+.navbar-wrapper {
+    position: relative;
+    width: 100%;
+    background: #073b8f;
     z-index: 90;
+}
+
+/* HEADER 3 - STICKY POSITION */
+.navbar-wrapper.is-fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+/* SPACE RESERVED WHEN NAVIGATION IS FIXED */
+.navbar-sticky-spacer {
+    width: 100%;
+    height: 0;
+}
+
+/* KEEP MOBILE MENU ABOVE PAGE CONTENT */
+.navbar-wrapper.is-fixed.menu-open {
+    z-index: 99999;
 }
 
 
