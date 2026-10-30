@@ -8734,7 +8734,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
             rgba(255, 255, 255, 0.91),
             rgba(255, 255, 255, 0.94)
         ),
-        url("../img/department/tamil.jpg");
+        url("../img/infra/arts.jpg");
 
     background-size: cover;
     background-position: center;
@@ -8766,10 +8766,11 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 .td-content.td-bg-chemistry {
     background-image:
         linear-gradient(
-            rgba(255, 255, 255, 0.89),
-            rgba(255, 255, 255, 0.94)
+            rgba(255, 255, 255, 0.79),
+            rgba(255, 255, 255, 0.74)
         ),
         url("../img/department/chemistry.jpg");
+        background-position: top center;
 }
 
 /* Tamil */
@@ -19541,3 +19542,2307 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     }
 }
 
+
+/* ==========================================
+   BASCW UNIQUE QUALITY FRAMEWORK
+   WAVE EDITORIAL DESIGN
+========================================== */
+
+.bascw-unique-quality,
+.bascw-unique-quality * {
+    box-sizing: border-box;
+}
+
+.bascw-unique-quality {
+    width: 100%;
+    padding: 50px 18px;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.uq-container {
+    max-width: 1180px;
+    margin: auto;
+    position: relative;
+}
+
+/* HEADER */
+
+.uq-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.uq-header > span {
+    color: #aa7a32;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.uq-header h2 {
+    font-size: 32px;
+    color: #253e53;
+    margin: 12px 0;
+}
+
+.uq-heading-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 15px;
+}
+
+.uq-heading-decoration i {
+    display: block;
+    height: 4px;
+    width: 35px;
+    border-radius: 10px;
+    background: #d3a345;
+}
+
+.uq-heading-decoration i:nth-child(2) {
+    width: 65px;
+    background: #287c77;
+}
+
+.uq-heading-decoration i:nth-child(3) {
+    background: #9670a8;
+}
+
+/* FEATURE SECTIONS */
+
+.uq-feature {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    position: relative;
+    margin-bottom: 24px;
+    min-height: 180px;
+    overflow: hidden;
+}
+
+.uq-feature-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.uq-count {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: .7;
+}
+
+.uq-round-icon {
+    width: 66px;
+    height: 66px;
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 50% 50% 50% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    transform: rotate(-8deg);
+}
+
+.uq-vertical-text {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.uq-feature-content {
+    position: relative;
+    z-index: 1;
+    padding: 28px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uq-topline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.uq-topline span:first-child {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.uq-line {
+    height: 1px;
+    width: 65px;
+    background: currentColor;
+    opacity: .5;
+}
+
+.uq-feature-content h3 {
+    font-size: 27px;
+    margin: 0 0 12px;
+}
+
+.uq-feature-content p,
+.uq-feature-content li {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #000000;
+    text-align: justify;
+}
+
+.uq-feature-content p {
+    margin: 0 0 10px;
+}
+
+.uq-feature-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.uq-feature-content li {
+    padding-left: 5px;
+    margin-bottom: 9px;
+}
+
+.uq-feature-content li::marker {
+    color: currentColor;
+}
+
+.uq-watermark {
+    position: absolute;
+    right: 25px;
+    bottom: -45px;
+    font-size: 175px;
+    font-weight: 800;
+    opacity: .045;
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* VISION */
+
+.uq-vision {
+    background: #eaf5f1;
+    border-radius: 0 55px 0 0;
+}
+
+.uq-vision .uq-feature-side {
+    background: #237c6c;
+    color: #ffffff;
+}
+
+.uq-vision .uq-feature-content h3 {
+    color: #237c6c;
+}
+
+.uq-vision .uq-topline {
+    color: #237c6c;
+}
+
+/* MISSION */
+
+.uq-mission {
+    background: #fff3e1;
+    border-radius: 55px 0 0 0;
+}
+
+.uq-mission .uq-feature-side {
+    background: #c28c36;
+    color: #ffffff;
+}
+
+.uq-mission .uq-feature-content h3 {
+    color: #a97724;
+}
+
+.uq-mission .uq-topline {
+    color: #a97724;
+}
+
+/* OBJECTIVES */
+
+.uq-objectives {
+    background: #f1ebf8;
+    border-radius: 0 55px 0 0;
+}
+
+.uq-objectives .uq-feature-side {
+    background: #80609e;
+    color: #ffffff;
+}
+
+.uq-objectives .uq-feature-content h3 {
+    color: #70518c;
+}
+
+.uq-objectives .uq-topline {
+    color: #70518c;
+}
+
+/* SWOC INTRODUCTION */
+
+.uq-swoc-heading {
+    margin: 70px 0 45px;
+    padding: 40px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: #183b50;
+    position: relative;
+    overflow: hidden;
+}
+
+.uq-swoc-heading::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border: 30px solid rgba(255,255,255,.07);
+    border-radius: 50%;
+    right: 15%;
+    top: -170px;
+}
+
+.uq-swoc-heading-left {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+}
+
+.uq-swoc-heading-left > span {
+    font-size: 12px;
+    color: #e4bd72;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.uq-swoc-heading h2 {
+    color: #ffffff;
+    font-size: 39px;
+    margin: 10px 0;
+}
+
+.uq-swoc-heading h2 em {
+    color: #e5bb69;
+    font-style: normal;
+}
+
+.uq-swoc-heading p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+.uq-swoc-graphic {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 55px);
+    gap: 12px;
+    transform: rotate(-8deg);
+}
+
+.uq-swoc-graphic span {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.6);
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* SWOC SECTIONS */
+
+.uq-swoc {
+    position: relative;
+    padding: 30px 35px 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* Colour Themes */
+
+.uq-strength {
+    background: #edf6ef;
+    border-left: 7px solid #39825b;
+    border-radius: 0 45px 0 0;
+}
+
+.uq-weakness {
+    background: #fff1eb;
+    border-right: 7px solid #d17a58;
+    border-radius: 45px 0 0 0;
+}
+
+.uq-opportunity {
+    background: #edf3fc;
+    border-left: 7px solid #4b78b0;
+    border-radius: 0 45px 0 0;
+}
+
+.uq-challenge {
+    background: #f5eef8;
+    border-right: 7px solid #9166a4;
+    border-radius: 45px 0 0 0;
+}
+
+/* SWOC HEADINGS */
+
+.uq-swoc-top {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.uq-swoc-letter {
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 1;
+    min-width: 70px;
+}
+
+.uq-strength .uq-swoc-letter {
+    color: #39825b;
+}
+
+.uq-weakness .uq-swoc-letter {
+    color: #d17a58;
+}
+
+.uq-opportunity .uq-swoc-letter {
+    color: #4b78b0;
+}
+
+.uq-challenge .uq-swoc-letter {
+    color: #9166a4;
+}
+
+.uq-swoc-top span {
+    color: #777777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.uq-swoc-top h3 {
+    color: #203b50;
+    font-size: 25px;
+    margin: 5px 0 0;
+}
+
+/* SWOC CONTENT */
+
+.uq-swoc-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 45px;
+}
+
+.uq-swoc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.uq-swoc-item > span {
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 4px;
+    min-width: 27px;
+}
+
+.uq-strength .uq-swoc-item > span {
+    color: #39825b;
+}
+
+.uq-weakness .uq-swoc-item > span {
+    color: #d17a58;
+}
+
+.uq-opportunity .uq-swoc-item > span {
+    color: #4b78b0;
+}
+
+.uq-challenge .uq-swoc-item > span {
+    color: #9166a4;
+}
+
+.uq-swoc-item p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+/* FOOTER */
+
+.uq-footer {
+    text-align: center;
+    padding: 40px 15px 10px;
+}
+
+.uq-footer-decoration {
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(90deg, #237c6c, #c28c36, #80609e);
+    margin: 0 auto 20px;
+}
+
+.uq-footer span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #a57a30;
+    font-weight: 700;
+}
+
+.uq-footer h3 {
+    color: #183b50;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+
+/* ==========================================
+   BASCW IQAC COMMITTEE MEMBERS
+   MODERN EDITORIAL DIRECTORY DESIGN
+========================================== */
+
+.iqac-members,
+.iqac-members * {
+    box-sizing: border-box;
+}
+
+.iqac-members {
+    width: 100%;
+    padding: 45px 18px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.iqac-members-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.iqac-members-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.iqac-members-header > span {
+    font-size: 12px;
+    color: #b08030;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.iqac-members-header h2 {
+    font-size: 32px;
+    color: #183c53;
+    margin: 12px 0;
+}
+
+.iqac-header-line {
+    width: 85px;
+    height: 4px;
+    margin: 15px auto;
+    background: linear-gradient(90deg, #1a7778, #d2a54a);
+    border-radius: 10px;
+}
+
+.iqac-members-header p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #000;
+    text-align: center;
+}
+
+/* SECTION HEADING */
+
+.iqac-member-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 35px 0 20px;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.iqac-member-heading > span {
+    font-size: 28px;
+    color: #c18d37;
+    font-weight: 800;
+}
+
+.iqac-member-heading h3 {
+    color: #193e55;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* MEMBER DIRECTORY */
+
+.iqac-member-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 45px;
+}
+
+.iqac-member {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    align-items: start;
+    gap: 5px 12px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+}
+
+/* NUMBER */
+
+.iqac-member-no {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    color: #c39748;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 4px;
+}
+
+/* DESIGNATION */
+
+.iqac-role {
+    grid-column: 2;
+    grid-row: 1;
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    padding: 5px 12px;
+    background: #eaf2f3;
+    color: #236c75;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 700;
+    border-left: 3px solid #287e83;
+}
+
+/* PERSON DETAILS */
+
+.iqac-member-info {
+    grid-column: 2;
+    grid-row: 2;
+    padding-top: 5px;
+}
+
+.iqac-member-info h4,
+.iqac-person-detail h4 {
+    font-size: 18px;
+    color: #183c53;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.iqac-member-info p,
+.iqac-person-detail p {
+    font-size: 17px;
+    color: #000000;
+    line-height: 1.65;
+    text-align: justify;
+    margin: 2px 0;
+}
+
+/* SPECIAL SECTIONS */
+
+.iqac-special-section {
+    margin-top: 38px;
+    padding: 25px 30px;
+    position: relative;
+    overflow: hidden;
+    border-left: 5px solid;
+}
+
+.admin-section {
+    background: #eef5f3;
+    border-color: #32816c;
+}
+
+.society-section {
+    background: #fff5e8;
+    border-color: #bd8c37;
+}
+
+.student-section {
+    background: #edf2fa;
+    border-color: #557db1;
+}
+
+.alumni-section {
+    background: #f5eff9;
+    border-color: #8864a1;
+}
+
+.placement-section {
+    background: #fff0ed;
+    border-color: #c8755d;
+}
+
+.coordinator-section {
+    background: #eaf4f4;
+    border-color: #267e82;
+}
+
+/* SPECIAL HEADING */
+
+.iqac-special-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.iqac-special-heading > span {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgba(30, 60, 80, .25);
+}
+
+.iqac-special-heading small {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.iqac-special-heading h3 {
+    font-size: 22px;
+    color: #183c53;
+    margin: 0;
+}
+
+/* NAMES */
+
+.iqac-special-names {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+}
+
+.iqac-name-item {
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    position: relative;
+    padding-left: 42px;
+}
+
+.iqac-name-item > span {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    color: #a9823d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.iqac-name-item h4 {
+    font-size: 18px;
+    color: #183c53;
+    margin: 0 0 4px;
+}
+
+.iqac-name-item p {
+    font-size: 17px;
+    color: #000;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* SINGLE PERSON DETAILS */
+
+.iqac-person-detail {
+    padding: 8px 0 5px 42px;
+    position: relative;
+}
+
+.iqac-person-detail::before {
+    content: "→";
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    color: #b68b3e;
+    font-size: 24px;
+}
+
+/* FOOTER */
+
+.iqac-members-footer {
+    text-align: center;
+    padding: 45px 10px 10px;
+}
+
+.iqac-footer-line {
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #267e82, #d2a54a);
+    margin: 0 auto 18px;
+}
+
+.iqac-members-footer span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #a47c35;
+}
+
+.iqac-members-footer h3 {
+    font-size: 24px;
+    color: #183c53;
+    margin: 12px 0;
+}
+
+/* ==========================================
+   BASCW IQAC POLICIES
+   MODERN EDITORIAL DESIGN
+========================================== */
+
+.modern-policy,
+.modern-policy * {
+    box-sizing: border-box;
+}
+
+.modern-policy {
+    width: 100%;
+    padding:35px 18px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.mp-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* HEADING */
+
+.mp-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d9d2c2;
+}
+
+.mp-heading-left {
+    max-width: 760px;
+}
+
+.mp-tag {
+    display: inline-block;
+    color: #a47a32;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.mp-heading h2 {
+    color: #173c35;
+    font-size: 39px;
+    font-weight: 750;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+.mp-heading h2 em {
+    color: #b18237;
+    font-style: normal;
+}
+
+.mp-heading p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+.mp-heading-number {
+    min-width: 130px;
+    height: 130px;
+    border: 1px solid #c6ad7e;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eee8d9;
+    color: #173c35;
+    flex-shrink: 0;
+}
+
+.mp-heading-number strong {
+    font-size: 43px;
+    line-height: 1;
+}
+
+.mp-heading-number span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* POLICY LIST */
+
+.mp-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mp-item {
+    display: grid;
+    grid-template-columns: 55px 55px minmax(0, 1fr) 125px;
+    align-items: center;
+    gap: 18px;
+    padding: 17px 18px;
+    min-height: 88px;
+    border-bottom: 1px solid #dedbd1;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.mp-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    bottom: 15px;
+    width: 3px;
+    background: #b18237;
+    transform: scaleY(0);
+    transition: 0.3s ease;
+}
+
+.mp-item:hover {
+    background: #fff;
+    padding-left: 25px;
+}
+
+.mp-item:hover::before {
+    transform: scaleY(1);
+}
+
+/* NUMBER */
+
+.mp-number {
+    font-size: 22px;
+    font-weight: 700;
+    color: #b18237;
+    text-align: center;
+}
+
+/* ICON */
+
+.mp-icon {
+    width: 48px;
+    height: 48px;
+    background: #e9eee8;
+    color: #174b3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    border-radius: 12px 2px 12px 2px;
+    transition: 0.3s ease;
+}
+
+.mp-item:hover .mp-icon {
+    background: #174b3e;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* POLICY CONTENT */
+
+.mp-info {
+    min-width: 0;
+}
+
+.mp-category {
+    display: block;
+    color: #a47a32;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.mp-info h3 {
+    color: #252b27;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* PDF BUTTON */
+
+.mp-view {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 11px 12px;
+    background: #174b3e;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.mp-view i {
+    font-size: 12px;
+}
+
+.mp-view:hover {
+    background: #b18237;
+    color: #fff;
+}
+
+/* FOOTER */
+
+.mp-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 25px;
+    margin-top: 10px;
+}
+
+.mp-footer span {
+    color: #77715f;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+/* ==========================================
+   BASCW IQAC ACTION TAKEN REPORTS
+   MODERN EDITORIAL STYLE
+========================================== */
+
+.atr-section,
+.atr-section * {
+    box-sizing: border-box;
+}
+
+.atr-section {
+    width: 100%;
+    padding: 30px 50px;
+    background:white;
+    position: relative;
+    overflow: hidden;
+}
+
+.atr-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* HEADING */
+
+.atr-heading {
+    padding-bottom: 27px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #d9d2c2;
+}
+
+.atr-tag {
+    display: block;
+    color: #a47a32;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.atr-heading h2 {
+    color: #173c35;
+    font-size: 37px;
+    font-weight: 750;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.atr-heading h2 em {
+    color: #b18237;
+    font-style: normal;
+}
+
+.atr-heading p {
+    max-width: 800px;
+    color: #444;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+/* REPORT LIST */
+
+.atr-list {
+    width: 100%;
+}
+
+.atr-item {
+    display: grid;
+    grid-template-columns: 105px 50px minmax(0, 1fr) 125px;
+    align-items: center;
+    gap: 18px;
+    min-height: 88px;
+    padding: 16px 18px;
+    border-bottom: 1px solid #dedbd1;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.atr-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    bottom: 15px;
+    width: 3px;
+    background: #b18237;
+    transform: scaleY(0);
+    transition: 0.3s ease;
+}
+
+.atr-item:hover {
+    background: #fff;
+    padding-left: 25px;
+}
+
+.atr-item:hover::before {
+    transform: scaleY(1);
+}
+
+/* YEAR */
+
+.atr-year {
+    color: #174b3e;
+    font-size: 21px;
+    font-weight: 750;
+    text-align: center;
+}
+
+/* ICON */
+
+.atr-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a47a32;
+    background: #eee8d9;
+    border-radius: 10px 2px 10px 2px;
+    font-size: 19px;
+    transition: 0.3s ease;
+}
+
+.atr-item:hover .atr-icon {
+    background: #174b3e;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* REPORT CONTENT */
+
+.atr-info span {
+    display: block;
+    color: #a47a32;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.atr-info h3 {
+    color: #252b27;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* VIEW BUTTON */
+
+.atr-view {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 12px;
+    background: #174b3e;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.atr-view:hover {
+    background: #b18237;
+    color: #fff;
+}
+
+/* FOOTER */
+
+.atr-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 25px;
+    margin-top: 10px;
+}
+
+.atr-footer span {
+    color: #77715f;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+}
+/* =========================================
+   BASCW - AQAR REPORTS
+   MODERN EDITORIAL DOCUMENT DESIGN
+========================================= */
+
+.aqar-section,
+.aqar-section * {
+    box-sizing: border-box;
+}
+
+.aqar-section {
+    width: 100%;
+    padding: 45px 20px;
+    background: #f5f7f3;
+    position: relative;
+    overflow: hidden;
+}
+
+.aqar-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* HEADING */
+
+.aqar-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 35px;
+}
+
+.aqar-tag {
+    display: inline-block;
+    color: #a4772d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.aqar-heading h2 {
+    color: #173f35;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.aqar-heading-line {
+    width: 75px;
+    height: 4px;
+    background: #bd923e;
+    margin: 17px auto;
+    border-radius: 5px;
+}
+
+.aqar-heading p {
+    color: #454d49;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0;
+}
+
+/* REPORT LIST */
+
+.aqar-list {
+    width: 100%;
+    border-top: 1px solid #d9e0d9;
+}
+
+.aqar-item {
+    width: 100%;
+    min-height: 105px;
+    display: grid;
+    grid-template-columns: 65px 65px 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #d9e0d9;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.aqar-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 0;
+    background: #b58a3b;
+    transition: 0.3s ease;
+}
+
+.aqar-item:hover {
+    background: #f0f5ef;
+    padding-left: 32px;
+}
+
+.aqar-item:hover::before {
+    height: 100%;
+}
+
+/* NUMBER */
+
+.aqar-year {
+    color: #a8b5aa;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    border-right: 1px solid #e0e6df;
+    padding-right: 15px;
+}
+
+/* PDF ICON */
+
+.aqar-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8eeee;
+    color: #a63838;
+    font-size: 23px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.aqar-item:hover .aqar-icon {
+    background: #173f35;
+    color: #ffffff;
+    transform: rotate(-5deg);
+}
+
+/* REPORT DETAILS */
+
+.aqar-info span {
+    display: block;
+    color: #a4772d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin-bottom: 5px;
+}
+
+.aqar-info h3 {
+    color: #203d34;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* VIEW PDF BUTTON */
+
+.aqar-view {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 19px;
+    background: #173f35;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    border: 1px solid #173f35;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.aqar-view:hover {
+    background: #b58a3b;
+    border-color: #b58a3b;
+    color: #ffffff;
+}
+
+.aqar-view i {
+    font-size: 11px;
+}
+
+/* FOOTER */
+
+.aqar-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 22px 10px 0;
+    color: #53645a;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.aqar-footer i {
+    color: #b58a3b;
+    font-size: 20px;
+}
+
+/* ==========================================
+   BASCW RTI - MODERN SPLIT BANNER DESIGN
+========================================== */
+
+.rti-modern,
+.rti-modern * {
+    box-sizing: border-box;
+}
+
+.rti-modern {
+    width: 100%;
+    padding: 35px 20px 45px;
+    background: #f4f6f2;
+    overflow: hidden;
+}
+
+/* BANNER */
+
+.rti-modern-banner {
+    max-width: 1200px;
+    min-height: 320px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    background: #173f35;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BANNER TEXT */
+
+.rti-banner-content {
+    padding: 45px 55px;
+    position: relative;
+    z-index: 2;
+}
+
+.rti-eyebrow {
+    color: #e3bd72;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.rti-banner-content h2 {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 1.12;
+    margin: 22px 0 15px;
+    font-weight: 400;
+}
+
+.rti-banner-content h2 strong {
+    color: #e3bd72;
+    font-weight: 700;
+}
+
+.rti-banner-line {
+    width: 65px;
+    height: 4px;
+    background: #e3bd72;
+    margin: 18px 0;
+}
+
+.rti-banner-content p {
+    max-width: 570px;
+    color: #e0e9e3;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+/* GRAPHIC AREA */
+
+.rti-banner-graphic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    background: #204f42;
+    overflow: hidden;
+}
+
+.rti-circle {
+    position: absolute;
+    border: 1px solid rgba(227, 189, 114, 0.35);
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 280px;
+    height: 280px;
+}
+
+.circle-two {
+    width: 220px;
+    height: 220px;
+}
+
+.rti-large-icon {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(227, 189, 114, 0.6);
+    border-radius: 50%;
+    color: #e3bd72;
+    font-size: 58px;
+    position: relative;
+    z-index: 2;
+    animation: rtiFloat 4s ease-in-out infinite;
+}
+
+.rti-graphic-text {
+    position: absolute;
+    top: 28px;
+    right: 35px;
+    color: rgba(255,255,255,0.18);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.rti-graphic-year {
+    position: absolute;
+    bottom: 25px;
+    color: #e3bd72;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+@keyframes rtiFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* DOCUMENT AREA */
+
+.rti-document-area {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 35px;
+    background: #ffffff;
+}
+
+/* DOCUMENT HEADING */
+
+.rti-document-label {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e4e9e3;
+}
+
+.rti-label-number {
+    color: #b58a3b;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rti-document-label small {
+    color: #9a793d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.rti-document-label h3 {
+    color: #173f35;
+    font-size: 22px;
+    margin: 5px 0 0;
+}
+
+/* DOCUMENT ROW */
+
+.rti-document-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.rti-pdf-symbol {
+    width: 60px;
+    height: 65px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9eeee;
+    color: #b13b3b;
+    font-size: 29px;
+}
+
+.rti-pdf-details {
+    flex: 1;
+}
+
+.rti-pdf-details h4 {
+    color: #253d34;
+    font-size: 19px;
+    margin: 0 0 7px;
+}
+
+.rti-pdf-details p {
+    color: #747e77;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* BUTTON */
+
+.rti-open-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 22px;
+    background: #b58a3b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.rti-open-btn:hover {
+    background: #173f35;
+    color: #ffffff;
+}
+
+.rti-open-btn i {
+    transition: 0.3s ease;
+}
+
+.rti-open-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* FOOTER */
+
+.rti-bottom-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 18px;
+    border-top: 1px solid #e4e9e3;
+    color: #68756c;
+    font-size: 13px;
+}
+
+.rti-bottom-note i {
+    color: #b58a3b;
+    font-size: 17px;
+}
+
+/* ==========================================
+   BASCW FEEDBACK - EDITORIAL STYLE
+   NO CARDS / NO BOX SHAPES
+========================================== */
+
+.fb-editorial,
+.fb-editorial * {
+    box-sizing: border-box;
+}
+
+.fb-editorial {
+    width: 100%;
+    padding: 35px 20px 45px;
+    background:lightgoldenrodyellow;
+    overflow: hidden;
+}
+
+/* HERO BANNER */
+
+.fb-hero {
+    max-width: 1250px;
+    min-height: 290px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #173f35;
+    position: relative;
+    overflow: hidden;
+}
+
+.fb-hero::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 50%;
+    right: 8%;
+    top: -260px;
+}
+
+.fb-hero-inner {
+    padding: 40px 55px;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.fb-eyebrow {
+    color: #e5bd71;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.fb-hero h2 {
+    color: #ffffff;
+    font-size: 43px;
+    font-weight: 700;
+    margin: 20px 0 12px;
+    line-height: 1.2;
+}
+
+.fb-hero h2 span {
+    color: #e5bd71;
+}
+
+.fb-hero-inner > p {
+    color: #e0e9e2;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 670px;
+    margin: 0;
+}
+
+.fb-hero-bottom {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 24px;
+    color: #e5bd71;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.fb-hero-bottom i {
+    font-size: 8px;
+}
+
+/* HERO DECORATION */
+
+.fb-hero-decoration {
+    min-width: 280px;
+    height: 230px;
+    margin-right: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(229,189,113,.9);
+    position: relative;
+    z-index: 1;
+}
+
+.fb-hero-decoration > i {
+    font-size: 105px;
+    animation: fbFloat 4s ease-in-out infinite;
+}
+
+.fb-decoration-text {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.fb-decoration-line {
+    width: 100px;
+    height: 2px;
+    background: #e5bd71;
+    margin-top: 13px;
+}
+
+@keyframes fbFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* INTRO */
+
+.fb-intro {
+    max-width: 1150px;
+    margin: 42px auto 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.fb-intro > div > span {
+    color: #a47c37;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.fb-intro h3 {
+    color: #173f35;
+    font-size: 28px;
+    margin: 7px 0 0;
+}
+
+.fb-intro > p {
+    max-width: 420px;
+    color: #606d64;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* EDITORIAL ROWS */
+
+.fb-rows {
+    max-width: 1150px;
+    margin: auto;
+    border-top: 2px solid #173f35;
+}
+
+.fb-row {
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 55px 65px 1fr auto;
+    align-items: center;
+    gap: 22px;
+    padding: 17px 20px;
+    border-bottom: 1px solid #d9dfd9;
+    position: relative;
+    transition: background .3s ease;
+}
+
+.fb-row:hover {
+    background: #edf2ec;
+}
+
+.fb-index {
+    color: #a6b2a8;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* COLOURFUL ICONS - NO BOXES */
+
+.fb-row-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transition: transform .3s ease;
+}
+
+.fb-row:hover .fb-row-icon {
+    transform: translateY(-5px);
+}
+
+.fb-blue {
+    color: #3779ac;
+}
+
+.fb-green {
+    color: #25836b;
+}
+
+.fb-gold {
+    color: #b18a3c;
+}
+
+.fb-purple {
+    color: #8065a8;
+}
+
+.fb-rose {
+    color: #b76572;
+}
+
+/* ROW CONTENT */
+
+.fb-row-content span {
+    color: #a47c37;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.fb-row-content h4 {
+    color: #203e34;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 6px 0 0;
+}
+
+/* PDF LINK */
+
+.fb-pdf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 4px 12px 18px;
+    border-left: 1px solid #cbd5cc;
+    color: #173f35;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: .3s ease;
+}
+
+.fb-pdf-link i {
+    color: #b58a3b;
+    transition: transform .3s ease;
+}
+
+.fb-pdf-link:hover {
+    color: #b58a3b;
+}
+
+.fb-pdf-link:hover i {
+    transform: translate(4px, -3px);
+}
+
+/* FOOTER */
+
+.fb-footer {
+    max-width: 1150px;
+    margin: 25px auto 0;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-top: 1px solid #d9dfd9;
+}
+
+.fb-footer i {
+    color: #b58a3b;
+    font-size: 23px;
+}
+
+.fb-footer p {
+    color: #53645a;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* ===================================
+   INSTITUTIONAL DISTINCTIVENESS
+   SIMPLE COMPACT DESIGN
+=================================== */
+
+.id-simple {
+    width: 100%;
+    padding: 25px 4%;
+    background: #ffffff;
+    color: #111111;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.id-simple *,
+.id-simple *::before,
+.id-simple *::after {
+    box-sizing: border-box;
+}
+
+/* MAIN TITLE */
+
+.id-title {
+    text-align: center;
+    margin: 0 auto 25px;
+    padding: 10px 0 18px;
+    border-bottom: 2px solid #d4b36a;
+}
+
+.id-title span {
+    display: block;
+    color: #98712f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.id-title h1 {
+    color: #174b36;
+    font-size: 34px;
+    margin: 10px 0;
+    line-height: 1.3;
+}
+
+.id-title-line {
+    width: 65px;
+    height: 3px;
+    background: #b38a43;
+    margin: 12px auto 0;
+}
+
+/* INTRO */
+
+.id-opening {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.id-opening img {
+    width: 100%;
+    height:450px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.id-simple p {
+    color: #111111;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0 0 12px;
+}
+
+/* CONTENT SECTIONS */
+
+.id-content-section {
+    padding: 20px 0;
+    border-top: 1px solid #e5e0d5;
+}
+
+.id-content-section h2 {
+    color: #174b36;
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 0 0 18px;
+    padding-left: 13px;
+    border-left: 4px solid #c6a052;
+}
+
+/* IMAGE + TEXT */
+
+.id-image-row {
+    display: grid;
+    grid-template-columns: 34% 66%;
+    align-items: start;
+    gap: 25px;
+}
+
+.id-image-row > img {
+    width: 100%;
+    height: 265px;
+    display: block;
+    object-fit: cover;
+}
+
+.id-image-row > div {
+    padding: 0;
+}
+
+.id-image-right {
+    grid-template-columns: 66% 34%;
+}
+
+.id-image-right > img {
+    order: 2;
+}
+
+.id-image-right > div {
+    order: 1;
+}
+
+
+/* =========================================
+   BASCW BEST PRACTICES
+   SIMPLE EDITORIAL STYLE
+   NO BOXES / NO CARDS
+========================================= */
+
+.bp-page {
+    width: 100%;
+    padding: 25px 4%;
+    background: #ffffff;
+    color: #111111;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bp-page * {
+    box-sizing: border-box;
+}
+
+/* PAGE HEADING */
+
+.bp-heading {
+    text-align: center;
+    padding: 5px 0 20px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #d3b36e;
+}
+
+.bp-heading span {
+    color: #a27b36;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bp-heading h1 {
+    color: #174b36;
+    font-size: 34px;
+    margin: 9px 0;
+}
+
+.bp-line {
+    width: 60px;
+    height: 3px;
+    background: #bd984f;
+    margin: 12px auto 0;
+}
+
+/* PRACTICE TITLE */
+
+.bp-practice {
+    padding: 12px 0 28px;
+}
+
+.bp-practice-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ded8ca;
+}
+
+.bp-number {
+    color: #c19b50;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.bp-practice-title small {
+    color: #a17b37;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bp-practice-title h2 {
+    color: #174b36;
+    font-size: 25px;
+    margin: 5px 0 0;
+    line-height: 1.3;
+}
+
+/* CONTENT */
+
+.bp-content {
+    padding-left: 4px;
+}
+
+.bp-content h3 {
+    color: #174b36;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 22px 0 10px;
+    padding-left: 12px;
+    border-left: 3px solid #c6a052;
+}
+
+.bp-content p {
+    color: #111111;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0 0 13px;
+}
+
+.bp-content ul {
+    margin: 5px 0 16px;
+    padding-left: 28px;
+}
+
+.bp-content li {
+    color: #111111;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    padding-left: 4px;
+    margin-bottom: 7px;
+}
+
+.bp-content li::marker {
+    color: #a9823b;
+}
+
+/* SECOND PRACTICE */
+
+.bp-second {
+    border-top: 2px solid #d8c69e;
+    padding-top: 28px;
+    margin-top: 10px;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+    .bp-page {
+        padding: 22px 3%;
+    }
+
+    .bp-practice-title h2 {
+        font-size: 23px;
+    }
+
+    .bp-content h3 {
+        font-size: 19px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .bp-page {
+        padding: 18px 15px;
+    }
+
+    .bp-heading h1 {
+        font-size: 28px;
+    }
+
+    .bp-heading span {
+        font-size: 10px;
+    }
+
+    .bp-practice-title {
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .bp-number {
+        font-size: 34px;
+    }
+
+    .bp-practice-title h2 {
+        font-size: 21px;
+    }
+
+    .bp-content h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .bp-content p,
+    .bp-content li {
+        font-size: 17px;
+        line-height: 1.65;
+        text-align: justify;
+    }
+
+    .bp-content ul {
+        padding-left: 22px;
+    }
+}
