@@ -4952,263 +4952,6 @@
     }
 }
 
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 1000px) {
-    .sports-container {
-        gap: 35px;
-    }
-
-    .sports-hero {
-        min-height: 350px;
-    }
-
-    .sports-hero-image {
-        height: 315px;
-    }
-
-    .sports-benefits {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        row-gap: 30px;
-    }
-
-    .sports-facility-grid {
-        gap: 22px;
-    }
-
-    .facility-image {
-        height: 210px;
-    }
-
-    .sports-competition {
-        gap: 35px;
-        padding: 25px;
-    }
-
-    .competition-image {
-        height: 360px;
-    }
-
-    .sports-gallery {
-        grid-template-rows: 180px 180px;
-    }
-
-    .sports-quick-links {
-        gap: 15px;
-        padding: 22px;
-    }
-}
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 700px) {
-    .basc-sports {
-        padding: 42px 0 45px;
-    }
-
-    .sports-container {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .sports-intro h2 {
-        font-size: clamp(34px, 9vw, 46px);
-    }
-
-    .sports-intro > p {
-        font-size: 15px;
-        line-height: 1.85;
-    }
-
-    .sports-label,
-    .competition-label {
-        font-size: 15px;
-        letter-spacing: 2px;
-    }
-
-    .sports-hero {
-        min-height: 340px;
-        padding-left: 15px;
-    }
-
-    .sports-hero-image {
-        height: 300px;
-    }
-
-    .sports-round-text {
-        width: 100px;
-        height: 100px;
-    }
-
-    .sports-round-text span {
-        font-size: 12px;
-    }
-
-    .sports-image-caption {
-        right: 0;
-        padding: 12px 16px;
-    }
-
-    .sports-benefits {
-        margin-top: 45px;
-        margin-bottom: 55px;
-        padding: 25px 0;
-        gap: 25px 15px;
-    }
-
-    .sports-benefit {
-        gap: 10px;
-    }
-
-    .benefit-icon {
-        flex-basis: 42px;
-        width: 42px;
-        height: 42px;
-        font-size: 19px;
-    }
-
-    .sports-benefit h3 {
-        font-size: 15px;
-    }
-
-    .sports-benefit p {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-    .sports-heading {
-        margin-bottom: 28px;
-    }
-
-    .sports-heading h2 {
-        font-size: 32px;
-    }
-
-    .sports-heading > p {
-        font-size: 15px;
-    }
-
-    .sports-facility-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .facility-image {
-        height: 245px;
-        margin-bottom: 17px;
-    }
-
-    .sports-facility h3 {
-        font-size: 21px;
-    }
-
-    .sports-facility p {
-        font-size: 15px;
-    }
-
-    .sports-competition {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        margin-top: 65px;
-        margin-bottom: 65px;
-        padding: 18px;
-        border-radius: 16px;
-    }
-
-    .competition-image {
-        height: 280px;
-        border-radius: 65px 10px 65px 10px;
-    }
-
-    .competition-content h2 {
-        font-size: 32px;
-    }
-
-    .competition-content > p {
-        font-size: 15px;
-    }
-
-    .sports-gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-rows: 180px 160px 160px;
-        gap: 12px;
-    }
-
-    .gallery-large {
-        grid-column: span 2;
-        grid-row: auto;
-    }
-
-    .sports-gallery-item figcaption {
-        right: 12px;
-        bottom: 12px;
-        left: 12px;
-        font-size: 16px;
-    }
-
-    .sports-gallery-section {
-        margin-bottom: 50px;
-    }
-
-    .sports-quick-links {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 18px;
-        border-radius: 14px;
-    }
-
-    .sports-quick-links > a {
-        padding: 12px 0;
-        border-bottom: 1px solid #D5E6F5;
-    }
-
-    .sports-quick-links > a:last-child {
-        border-bottom: 0;
-    }
-}
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
-@media (max-width: 380px) {
-    .sports-benefits {
-        grid-template-columns: 1fr;
-    }
-
-    .sports-hero {
-        min-height: 290px;
-    }
-
-    .sports-hero-image {
-        height: 255px;
-    }
-
-    .sports-image-caption {
-        max-width: 240px;
-    }
-
-    .sports-gallery {
-        grid-template-rows: 160px 140px 140px;
-    }
-}
-
-/* =========================================
-   ACCESSIBILITY
-========================================= */
-
-@media (prefers-reduced-motion: reduce) {
-    .basc-sports *,
-    .basc-sports *::before,
-    .basc-sports *::after {
-        transition: none !important;
-    }
-}
-
 
 /* TABLET */
 
@@ -6279,275 +6022,6 @@
     }
 }
 
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1024px) {
-
-    .basc-scholarship {
-        padding: 38px 4%;
-    }
-
-    .basc-scholarship-intro {
-        gap: 4%;
-    }
-
-    .basc-scholarship-photo > img {
-        height: 330px;
-    }
-
-    .basc-scholarship-areas {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .scholar-area {
-        padding: 22px 18px;
-    }
-
-    .scholar-area:nth-child(3),
-    .scholar-area:nth-child(4) {
-        border-top: 1px solid rgba(23, 62, 104, 0.22);
-    }
-
-    .scholar-area:nth-child(3) {
-        border-left: none;
-    }
-
-    .scholar-journey-steps {
-        gap: 20px;
-    }
-
-    .basc-scholar-contact {
-        padding: 24px;
-    }
-}
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 700px) {
-
-    .basc-scholarship {
-        padding: 32px 18px;
-    }
-
-    .basc-scholarship-heading {
-        margin-bottom: 30px;
-    }
-
-    .basc-scholarship-heading h2 {
-        font-size: 33px;
-        line-height: 1.25;
-    }
-
-    .basc-scholarship p,
-    .basc-scholarship .scholar-area p,
-    .basc-scholarship .scholar-document-info p,
-    .basc-scholarship .scholar-journey-step p,
-    .basc-scholarship .scholar-contact-content p,
-    .basc-scholarship .basc-scholarship-photo-caption p {
-        font-size: 17px;
-        line-height: 1.65;
-    }
-
-    .basc-scholarship-intro {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 25px;
-        margin-bottom: 35px;
-    }
-
-    .basc-scholarship-photo > img {
-        height: 280px;
-    }
-
-    .basc-scholarship-photo-caption {
-        bottom: 22px;
-        padding: 10px 13px;
-    }
-
-    .basc-scholarship-intro-text h3 {
-        font-size: 28px;
-    }
-
-    .basc-scholarship-areas {
-        grid-template-columns: minmax(0, 1fr);
-        margin-bottom: 35px;
-    }
-
-    .scholar-area {
-        padding: 20px 6px;
-    }
-
-    .scholar-area + .scholar-area,
-    .scholar-area:nth-child(3),
-    .scholar-area:nth-child(4) {
-        border-top: 1px solid rgba(23, 62, 104, 0.22);
-        border-left: none;
-    }
-
-    .scholar-area h3 {
-        font-size: 21px;
-    }
-
-    .scholar-area-icon {
-        margin-bottom: 8px;
-    }
-
-    .basc-scholar-documents {
-        padding: 23px 16px;
-        margin-bottom: 38px;
-    }
-
-    .scholar-documents-heading {
-        align-items: flex-start;
-        gap: 12px;
-        margin-bottom: 15px;
-    }
-
-    .scholar-documents-heading h3,
-    .scholar-journey-heading h3 {
-        font-size: 27px;
-    }
-
-    .scholar-document-mark {
-        width: 50px;
-        height: 61px;
-    }
-
-    .scholar-document-row {
-        grid-template-columns: 35px minmax(0, 1fr);
-        gap: 11px;
-        padding: 16px 0;
-    }
-
-    .scholar-document-icon {
-        width: 33px;
-        height: 33px;
-    }
-
-    .scholar-document-info h4 {
-        font-size: 19px;
-    }
-
-    .scholar-document-link {
-        grid-column: 2;
-        justify-self: start;
-        font-size: 17px;
-    }
-
-    .basc-scholar-journey {
-        margin-bottom: 35px;
-    }
-
-    .scholar-journey-heading {
-        text-align: left;
-        margin-bottom: 22px;
-    }
-
-    .scholar-journey-heading .scholar-section-label {
-        justify-content: flex-start;
-    }
-
-    .scholar-journey-steps {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 22px;
-    }
-
-    .scholar-journey-steps::before {
-        top: 20px;
-        bottom: 25px;
-        left: 23px;
-        right: auto;
-        border-top: none;
-        border-left: 2px dashed rgba(23, 105, 170, 0.35);
-    }
-
-    .scholar-journey-step {
-        min-height: 55px;
-        padding: 5px 0 0 65px;
-    }
-
-    .scholar-journey-step h4 {
-        font-size: 21px;
-    }
-
-    .basc-scholar-contact {
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 14px;
-        padding: 22px 17px;
-    }
-
-    .scholar-contact-symbol {
-        width: 43px;
-        height: 43px;
-        font-size: 23px;
-    }
-
-    .scholar-contact-content {
-        flex-basis: calc(100% - 58px);
-    }
-
-    .scholar-contact-content h3 {
-        font-size: 24px;
-    }
-
-    .scholar-contact-link {
-        margin-left: 57px;
-    }
-}
-
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
-
-@media (max-width: 380px) {
-
-    .basc-scholarship {
-        padding: 27px 14px;
-    }
-
-    .basc-scholarship-heading h2 {
-        font-size: 29px;
-    }
-
-    .basc-scholarship-photo > img {
-        height: 235px;
-    }
-
-    .scholar-documents-heading h3 {
-        font-size: 24px;
-    }
-
-    .basc-scholar-documents {
-        padding: 19px 12px;
-    }
-
-    .scholar-document-info h4 {
-        font-size: 18px;
-    }
-
-    .scholar-contact-content h3 {
-        font-size: 22px;
-    }
-}
-
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .basc-scholarship *,
-    .basc-scholarship *::before,
-    .basc-scholarship *::after {
-        transition: none !important;
-        animation: none !important;
-    }
-}
 
 /* Tablet */
 
@@ -11204,5 +10678,535 @@
     .reveal-item {
         opacity: 1;
         transform: none;
+    }
+}
+/* TABLET */
+
+@media (max-width: 991px) {
+    .basc-student-life {
+        padding: 38px 4%;
+    }
+
+    .basc-life-layout {
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        min-height: 680px;
+    }
+
+    .basc-life-visual,
+    .basc-main-image {
+        min-height: 680px;
+    }
+
+    .basc-life-content {
+        height: 630px;
+        margin-left: -25px;
+        padding: 24px 21px;
+    }
+
+    .basc-image-caption {
+        left: 23px;
+        right: 20px;
+        bottom: 35px;
+    }
+
+    .basc-image-caption h2 {
+        font-size: 30px;
+    }
+
+    .basc-activity {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .basc-activity-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .basc-content-heading h2 {
+        font-size: 24px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+    .basc-student-life {
+        padding: 30px 15px;
+    }
+
+    .basc-section-heading {
+        margin-bottom: 25px;
+    }
+
+    .basc-section-heading h1 {
+        font-size: 32px;
+    }
+
+    .basc-section-heading > p {
+        font-size: 15px;
+        line-height: 1.75;
+        text-align: justify;
+    }
+
+    .basc-life-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .basc-life-visual {
+        width: 100%;
+        min-height: 390px;
+        height: 390px;
+    }
+
+    .basc-main-image {
+        min-height: 390px;
+    }
+
+    .basc-image-caption {
+        left: 21px;
+        right: 18px;
+        bottom: 25px;
+    }
+
+    .basc-image-caption h2 {
+        font-size: 29px;
+    }
+
+    .basc-image-caption p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .basc-image-tag {
+        top: 15px;
+        left: 15px;
+        padding: 9px 12px;
+    }
+
+    .basc-life-content {
+        width: 100%;
+        height: auto;
+        max-height: 650px;
+        margin: -20px 0 0;
+        padding: 23px 19px;
+        overflow-y: auto;
+        border-top: 4px solid #8b1e2d;
+    }
+
+    .basc-content-heading h2 {
+        font-size: 23px;
+    }
+
+    .basc-content-heading p {
+        font-size: 15px;
+    }
+
+    .basc-activity {
+        padding: 19px 0;
+    }
+
+    .basc-activity-info h3 {
+        font-size: 17px;
+    }
+
+    .basc-activity-info p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .basc-activity-number {
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+
+    .basc-life-footer {
+        padding: 17px 14px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+    .basc-student-life {
+        padding: 25px 10px;
+    }
+
+    .basc-section-heading h1 {
+        font-size: 28px;
+    }
+
+    .basc-life-visual {
+        min-height: 340px;
+        height: 340px;
+    }
+
+    .basc-main-image {
+        min-height: 340px;
+    }
+
+    .basc-image-caption h2 {
+        font-size: 25px;
+    }
+
+    .basc-life-content {
+        padding: 20px 14px;
+    }
+
+    .basc-activity {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .basc-activity-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+
+    .basc-activity-info h3 {
+        font-size: 16px;
+    }
+}
+
+/* ACCESSIBILITY: REDUCE MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .basc-activity {
+        animation: none;
+    }
+}
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .placement-container {
+        width: 94%;
+    }
+
+    .placement-row {
+        gap: 25px;
+    }
+
+    .objective-layout {
+        gap: 25px;
+    }
+
+    .statistics-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-area {
+        max-width: 550px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .salary-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .placement-section {
+        padding: 30px 0 45px;
+    }
+
+    .placement-container {
+        width: 92%;
+    }
+
+    .placement-section h2 {
+        font-size: 23px;
+    }
+
+    .placement-section h3 {
+        font-size: 18px;
+    }
+
+    .placement-section p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .placement-row,
+    .objective-layout,
+    .mission-vision,
+    .placement-contact {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-bottom: 40px;
+    }
+
+    .placement-row .placement-content,
+    .placement-row .placement-image {
+        order: initial;
+    }
+
+    .placement-image,
+    .placement-image img {
+        height: 280px;
+        min-height: 280px;
+    }
+
+    .reverse-row {
+        padding: 30px 0;
+    }
+
+    .work-item {
+        grid-template-columns: 38px 1fr;
+        gap: 12px;
+    }
+
+    .work-item > span {
+        width: 34px;
+        height: 34px;
+    }
+
+    .objective-image img {
+        height: 280px;
+        min-height: 280px;
+    }
+
+    .mv-image,
+    .mv-image img {
+        height: 270px;
+        min-height: 270px;
+    }
+
+    .placement-table {
+        min-width: 550px;
+    }
+
+    .statistics-table {
+        min-width: 450px;
+    }
+
+    .company-year summary {
+        grid-template-columns: 1fr 25px;
+        gap: 8px;
+        padding: 16px;
+    }
+
+    .year-title {
+        font-size: 17px;
+    }
+
+    .year-info {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 14px;
+    }
+
+    .faq-icon {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .year-highlight {
+        gap: 10px;
+    }
+
+    .year-highlight strong {
+        font-size: 24px;
+    }
+
+    .placement-pie-chart {
+        width: 230px;
+        height: 230px;
+    }
+
+    .contact-image,
+    .contact-image img {
+        height: 260px;
+        min-height: 260px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 420px) {
+
+    .placement-section h2 {
+        font-size: 21px;
+    }
+
+    .placement-section p {
+        font-size: 15px;
+    }
+
+    .year-highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .year-highlight div {
+        padding: 12px;
+    }
+
+    .placement-pie-chart {
+        width: 205px;
+        height: 205px;
+    }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .placement-section *,
+    .placement-section *::before,
+    .placement-section *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* TABLET */
+
+@media(max-width: 991px) {
+    .scholarship-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .scheme-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .document-section {
+        gap: 30px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width: 767px) {
+
+    .scholarship-hero {
+        min-height: 400px;
+        padding: 45px 22px;
+    }
+
+    .scholarship-hero::after {
+        background: rgba(5, 28, 66, .86);
+    }
+
+    .scholarship-intro {
+        grid-template-columns: 1fr;
+        padding: 50px 22px;
+        gap: 30px;
+    }
+
+    .intro-image {
+        height: 260px;
+    }
+
+    .scholarship-highlights {
+        padding: 35px 20px;
+        gap: 15px;
+    }
+
+    .highlight-card {
+        border-right: none;
+        border-bottom: 1px solid #d6c9a9;
+        padding: 18px 8px;
+    }
+
+    .scholarship-main {
+        padding: 50px 18px;
+    }
+
+    .scheme-card {
+        padding: 25px 0;
+    }
+
+    .scheme-top {
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .scheme-number {
+        width: 43px;
+        height: 43px;
+        flex-shrink: 0;
+    }
+
+    .scheme-symbol {
+        display: none;
+    }
+
+    .scheme-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .scheme-info div {
+        border-bottom: 1px solid #d8d0c0;
+    }
+
+    .details-content {
+        padding: 20px 15px;
+    }
+
+    .document-section {
+        grid-template-columns: 1fr;
+        padding: 50px 22px;
+        gap: 30px;
+    }
+
+    .document-image {
+        height: 260px;
+    }
+
+    .document-list {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficiary-section {
+        padding: 50px 15px;
+    }
+
+    .scholarship-contact {
+        padding: 30px 20px;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width: 400px) {
+
+    .scholarship-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .scheme-info {
+        grid-template-columns: 1fr;
+    }
+
+    .scheme-info div {
+        border-left: none;
+    }
+
+    .scheme-top {
+        gap: 10px;
     }
 }
