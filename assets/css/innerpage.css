@@ -20,26 +20,26 @@ a {
 }
 
 
-
-
 /* =====================================================
-   COMMON BREADCRUMB DESIGN
+   COMMON BREADCRUMB - BOTTOM RIGHT ALIGNMENT
 ===================================================== */
 
 .page-breadcrumb {
     position: relative;
     width: 100%;
-    min-height:350px;
+    min-height: 350px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     box-sizing: border-box;
 }
 
-/* Dark overlay */
+/* DARK OVERLAY */
+
 .breadcrumb-overlay {
     position: absolute;
     inset: 0;
@@ -47,30 +47,39 @@ a {
     z-index: 1;
 }
 
-/* Content container */
+/* CONTENT CONTAINER */
+
 .breadcrumb-container {
     position: relative;
     z-index: 2;
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: 35px 30px 35px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
 }
 
-/* Page title */
+/* PAGE TITLE */
+
 .breadcrumb-container h1 {
-    margin: 0 0 15px;
+    margin: 0 0 13px;
     color: #ffffff;
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
 }
 
-/* Breadcrumb list */
+/* BREADCRUMB LIST */
+
 .breadcrumb-list {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
@@ -93,7 +102,7 @@ a {
 }
 
 .breadcrumb-list li a:hover {
-    color: #ff4d99;
+    color: #ffb3d2;
 }
 
 .breadcrumb-list li + li::before {
@@ -108,112 +117,86 @@ a {
     color: #ffb3d2;
 }
 
-
 /* =====================================================
-   INDIVIDUAL SECTION BACKGROUND IMAGES
-   Change these image paths as needed
+   BACKGROUND IMAGES
 ===================================================== */
 
-/* Default breadcrumb */
 .page-breadcrumb {
     background-image: url("../img/infra/cap.jpg");
 }
 
-/* ==========================================
-   DEPARTMENT BREADCRUMB BACKGROUND IMAGES
-========================================== */
-
-/* Tamil Department */
 .breadcrumb-tamil {
     background-image: url("../img/departmentcover/department_cover_01.jpg");
 }
 
-/* English Department */
 .breadcrumb-english {
     background-image: url("../img/departmentcover/department_cover_06.jpg");
 }
 
-/* Commerce Department */
 .breadcrumb-commerce {
     background-image: url("../img/departmentcover/department_cover_16.jpeg");
 }
 
-/* Business Administration Department */
 .breadcrumb-business-administration {
     background-image: url("../img/departmentcover/department_cover_15.jpeg");
 }
 
-/* History Department */
 .breadcrumb-history {
     background-image: url("../img/departmentcover/department_cover_18.jpg");
 }
 
-/* Mathematics Department */
 .breadcrumb-mathematics {
     background-image: url("../img/departmentcover/department_cover_05.jpg");
 }
 
-/* Physics Department */
 .breadcrumb-physics {
     background-image: url("../img/departmentcover/department_cover_07.jpg");
 }
 
-/* Computer Science Department */
 .breadcrumb-computer-science {
     background-image: url("../img/departmentcover/department_cover_08.jpg");
 }
 
-/* Fashion Technology Department */
 .breadcrumb-fashion-technology {
     background-image: url("../img/departmentcover/department_cover_13.jpg");
 }
 
-/* Biotechnology Department */
 .breadcrumb-biotechnology {
     background-image: url("../img/departmentcover/department_cover_14.jpg");
 }
 
-/* Nutrition and Dietetics Department */
 .breadcrumb-nutrition-dietetics {
     background-image: url("../img/departmentcover/department_cover_17.jpg");
 }
 
-/* Statistics Department */
 .breadcrumb-statistics {
     background-image: url("../img/departmentcover/department_cover_11.jpg");
 }
 
-/* Botany Department */
 .breadcrumb-botany {
     background-image: url("../img/departmentcover/department_cover_09.jpg");
 }
 
-/* Microbiology Department */
 .breadcrumb-microbiology {
     background-image: url("../img/departmentcover/department_cover_02.jpeg");
 }
 
-/* Chemistry Department */
 .breadcrumb-chemistry {
     background-image: url("../img/departmentcover/department_cover_03.jpeg");
 }
 
-/* Zoology Department */
 .breadcrumb-zoology {
     background-image: url("../img/departmentcover/department_cover_04.jpg");
 }
 
-/* Vision and Mission */
 .breadcrumb-vision {
     background-image: url("../img/infra/infra2.png");
 }
 
-/* Student Life */
 .breadcrumb-student-life {
     background-image: url("../img/infra/infra3.png");
 }
 
-/* Facilities */
 .breadcrumb-facilities {
     background-image: url("../img/infra/infra4.png");
 }
@@ -223,17 +206,19 @@ a {
 ===================================================== */
 
 @media (max-width: 991px) {
+
     .page-breadcrumb {
-        min-height: 220px;
+        min-height: 250px;
     }
 
     .breadcrumb-container {
-        padding: 50px 25px;
+        padding: 30px 25px;
     }
 
     .breadcrumb-container h1 {
         font-size: 36px;
     }
+
 }
 
 /* =====================================================
@@ -241,30 +226,31 @@ a {
 ===================================================== */
 
 @media (max-width: 576px) {
+
     .page-breadcrumb {
-        min-height: 190px;
+        min-height: 210px;
         background-position: center;
     }
 
     .breadcrumb-container {
-        padding: 45px 20px;
+        padding: 25px 20px;
     }
 
     .breadcrumb-container h1 {
-        font-size: 30px;
-        margin-bottom: 12px;
+        font-size: 27px;
+        margin-bottom: 10px;
     }
 
     .breadcrumb-list li {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .breadcrumb-list li + li::before {
-        margin: 0 9px;
-        font-size: 18px;
+        margin: 0 8px;
+        font-size: 17px;
     }
-}
 
+}
 
 /* =====================================================
    BHARATHIYAR COLLEGE - PROFILE & HISTORY
@@ -9727,1356 +9713,673 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 }
 
 
-/* =====================================================
-   BASCW SPORTS & PHYSICAL EDUCATION
-   Complete Responsive CSS
-===================================================== */
 
-.basc-sports {
+/* =========================================================
+   BASCW - PHYSICAL EDUCATION
+   PROFESSIONAL MILD COLOUR DESIGN
+========================================================= */
+
+.basc-physical-page {
+    --physical-red: #8b1e2d;
+    --physical-blue: #08306c;
+    --physical-gold: #c6a24a;
+    --physical-cream: #fbf9f4;
+    --physical-text: #292929;
+
     width: 100%;
     overflow: hidden;
+    color: var(--physical-text);
     background: #ffffff;
-    color: #222;
 }
 
-.basc-sports * {
-    box-sizing: border-box;
-}
-
-.basc-sports p {
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.8;
-    text-align: justify;
-    color: #333;
-}
-
-.basc-sports h2 {
-    font-size: 25px;
-    font-weight: 800;
-}
-
-.basc-sports h3 {
-    font-size: 20px;
-    font-weight: 800;
+.basc-physical-container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
 }
 
 
-/* =====================================================
-   HERO SECTION
-===================================================== */
+/* =========================================================
+   COMMON HEADING
+========================================================= */
 
-.sports-hero {
-    position: relative;
-    min-height: 570px;
-    padding: 65px 7%;
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    align-items: center;
-    gap: 50px;
-    background: linear-gradient(
-        115deg,
-        #fff0d9,
-        #f2f4df,
-        #e4f4e9,
-        #fce8df
-    );
+.basc-physical-heading {
+    text-align: center;
+    margin-bottom: 38px;
 }
 
-.sports-hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.sports-tag {
+.basc-physical-heading > span {
     display: inline-block;
-    color: #a65d19;
-    font-size: 13px;
+    color: var(--physical-red);
+    font-size:20px;
     font-weight: 800;
     letter-spacing: 2px;
-    margin-bottom: 18px;
+    margin-bottom: 9px;
 }
 
-.sports-hero h1 {
-    color: #174b39;
-    font-size: 43px;
-    font-weight: 800;
-    line-height: 1.2;
+.basc-physical-heading h2 {
+    color: var(--physical-blue);
+    font-size: 30px;
+    font-weight: 750;
+    line-height: 1.3;
     margin: 0;
-    max-width: 550px;
 }
 
-.sports-title-line {
-    width: 85px;
-    height: 5px;
-    background: #c68b3e;
-    margin: 25px 0;
-    border-radius: 20px;
+.basc-physical-line {
+    width: 65px;
+    height: 3px;
+    background: var(--physical-gold);
+    margin: 14px auto 15px;
+    border-radius: 5px;
 }
 
-.sports-hero-content p {
-    max-width: 620px;
+.basc-physical-heading p {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color:black;
+    text-align: center;
 }
 
-.sports-link {
-    display: inline-flex;
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.basc-physical-intro {
+    padding: 65px 0 60px;
+    background: linear-gradient(120deg, #fbf9f4, #ffffff);
+}
+
+.basc-physical-intro-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
     align-items: center;
-    gap: 25px;
-    margin-top: 18px;
-    padding: 13px 22px;
-    color: #fff;
-    background: #174b39;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 800;
-    border-radius: 30px 5px 30px 5px;
-    transition: 0.3s;
+    gap: 42px;
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 15px;
 }
 
-.sports-link:hover {
-    background: #b77a2d;
-    transform: translateY(-3px);
-}
-
-.sports-link span {
-    font-size: 20px;
-}
-
-.sports-hero-image {
+.basc-physical-intro-image {
     position: relative;
-    height: 420px;
-    z-index: 1;
-}
-
-.sports-hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 48% 48% 8px 8px;
-    display: block;
-}
-
-.sports-image-curve {
-    position: absolute;
-    top: -18px;
-    right: -18px;
-    width: 120px;
-    height: 120px;
-    border: 10px solid #c68b3e;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-.sports-image-caption {
-    position: absolute;
-    left: -30px;
-    bottom: 35px;
-    background: #174b39;
-    color: #fff;
-    padding: 18px 25px;
-    border-radius: 0 25px 0 25px;
-}
-
-.sports-image-caption span {
-    display: block;
-    color: #e4bc79;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-}
-
-.sports-image-caption strong {
-    font-size: 18px;
-    font-weight: 800;
-}
-
-.sports-hero-shape {
-    position: absolute;
-    width: 350px;
     height: 350px;
-    border: 55px solid rgba(198, 139, 62, 0.09);
-    border-radius: 50%;
-    right: -150px;
-    bottom: -180px;
-}
-
-
-/* =====================================================
-   SPORTS BENEFITS
-===================================================== */
-
-.sports-benefits {
-    padding: 42px 7%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
-    background: linear-gradient(
-        105deg,
-        #14533e,
-        #247a57,
-        #286d65,
-        #355b76
-    );
-}
-
-.sports-benefit {
-    position: relative;
-    padding: 10px 20px;
-    border-right: 1px solid rgba(255,255,255,0.25);
-}
-
-.sports-benefit:last-child {
-    border-right: none;
-}
-
-.benefit-symbol {
-    font-size: 34px;
-    color: #e6b65f;
-    margin-bottom: 12px;
-}
-
-.sports-benefit h3 {
-    color: #fff;
-    margin: 0 0 10px;
-}
-
-.sports-benefit p {
-    color: #e7eee8;
-    font-size: 17px;
-    margin: 0;
-}
-
-
-/* =====================================================
-   COMMON SECTION HEADING
-===================================================== */
-
-.sports-section-heading {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.sports-section-heading > span,
-.quota-heading > span {
-    color: #b47727;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.sports-section-heading h2,
-.quota-heading h2 {
-    color: #174b39;
-    margin: 12px 0;
-    font-size: 25px;
-    font-weight: 800;
-}
-
-.sports-section-heading p,
-.quota-heading p {
-    max-width: 750px;
-    margin: auto;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-
-/* =====================================================
-   SPORTS FACILITIES
-===================================================== */
-
-.sports-facility-section {
-    padding: 75px 7%;
-    background: #fff;
-}
-
-.sports-facility-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    align-items: center;
-}
-
-.facility-image {
-    position: relative;
-    height: 450px;
     overflow: hidden;
-    border-radius: 100px 8px 100px 8px;
-}
-
-.facility-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.facility-image-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 35px 25px 25px;
-    background: linear-gradient(
-        transparent,
-        rgba(13, 55, 38, 0.95)
-    );
-}
-
-.facility-image-label h3 {
-    color: #fff;
-    font-size: 24px;
-    margin: 0 0 8px;
-}
-
-.facility-image-label p {
-    color: #fff;
-    margin: 0;
-}
-
-.facility-details {
-    padding: 10px 0;
-}
-
-.facility-item {
-    display: flex;
-    gap: 20px;
-    padding: 20px 0;
-    border-bottom: 1px solid #e6e8e2;
-}
-
-.facility-item:last-child {
-    border-bottom: none;
-}
-
-.facility-icon {
-    color: #c18b3d;
-    font-size: 28px;
-    font-weight: 800;
-}
-
-.facility-item h3 {
-    color: #174b39;
-    margin: 0 0 8px;
-}
-
-.facility-item p {
-    margin: 0;
-}
-
-
-/* =====================================================
-   COMPETITIONS
-===================================================== */
-
-.sports-competition {
-    padding: 75px 7%;
-    background: linear-gradient(
-        120deg,
-        #fff1dc,
-        #f3f1df,
-        #e5f2e8
-    );
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: center;
-    gap: 55px;
-}
-
-.competition-content > span {
-    color: #b47727;
-    font-weight: 800;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-.competition-content h2 {
-    color: #174b39;
-    margin: 15px 0;
-    font-size: 25px;
-    font-weight: 800;
-}
-
-.competition-image {
-    height: 410px;
-    overflow: hidden;
-    border-radius: 8px 100px 8px 100px;
-}
-
-.competition-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.competition-highlights {
-    margin-top: 28px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 30px;
-}
-
-.competition-highlights div {
-    padding: 12px 0;
-    border-bottom: 2px solid #d5b47d;
-}
-
-.competition-highlights strong {
-    display: block;
-    color: #174b39;
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 5px;
-}
-
-.competition-highlights span {
-    color: #444;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-
-/* =====================================================
-   SPORTS ACHIEVEMENTS
-===================================================== */
-
-.sports-achievements {
-    position: relative;
-    padding: 70px 6%;
-    background: linear-gradient(
-        120deg,
-        #fff7e8 0%,
-        #f0f8ed 35%,
-        #f0f1ff 70%,
-        #fff0eb 100%
-    );
-    overflow: hidden;
-}
-
-.sports-achievements::before {
-    content: "";
-    position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 300px;
-    height: 300px;
-    border: 45px solid rgba(223, 157, 65, 0.13);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.sports-achievements::after {
-    content: "";
-    position: absolute;
-    bottom: -130px;
-    left: -100px;
-    width: 280px;
-    height: 280px;
-    background: rgba(37, 130, 95, 0.07);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-
-/* ACHIEVEMENT HEADING */
-
-.sports-achievement-heading {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.sports-achievement-heading span {
-    display: inline-block;
-    color: #a65d19;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.sports-achievement-heading h2 {
-    font-size: 25px;
-    font-weight: 800;
-    color: #174b39;
-    margin: 8px 0 14px;
-}
-
-.sports-achievement-heading p {
-    max-width: 800px;
-    margin: auto;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.8;
-    color: #303b32;
-    text-align: center;
-}
-
-
-/* ACHIEVEMENT LAYOUT */
-
-.achievement-layout {
-    position: relative;
-    z-index: 1;
-    max-width: 1350px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 0.78fr 1.5fr;
-    gap: 50px;
-    align-items: start;
-}
-
-
-/* ACHIEVEMENT INTRO */
-
-.achievement-intro {
-    position: relative;
-    padding: 35px 30px;
-    background: linear-gradient(
-        145deg,
-        #145b43,
-        #237f5d,
-        #164d47
-    );
-    border-radius: 65px 8px 65px 8px;
-    overflow: hidden;
-}
-
-.achievement-intro::after {
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    right: -70px;
-    bottom: -80px;
-    border: 25px solid rgba(255,255,255,0.09);
-    border-radius: 50%;
-}
-
-.achievement-label {
-    display: inline-block;
-    color: #ffe0a1;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 18px;
-}
-
-.achievement-intro h3 {
-    color: #fff;
-    font-size: 25px;
-    font-weight: 800;
-    line-height: 1.4;
-    margin: 0 0 18px;
-}
-
-.achievement-intro p {
-    color: #f2fff5;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.8;
-    text-align: justify;
-    margin-bottom: 15px;
-}
-
-.achievement-highlight {
-    position: relative;
-    z-index: 1;
-    margin-top: 25px;
-    padding: 20px 0;
-    border-top: 1px solid rgba(255,255,255,0.3);
-}
-
-.achievement-highlight span {
-    display: block;
-    color: #ffdc91;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-}
-
-.achievement-highlight strong {
-    color: #fff;
-    font-size: 17px;
-    font-weight: 800;
-}
-
-.achievement-intro img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: 220px;
-    margin-top: 20px;
-    object-fit: cover;
-    border-radius: 45px 5px 45px 5px;
-}
-
-
-/* ACHIEVEMENT FAQ */
-
-.achievement-faq {
-    border-top: 3px solid #174b39;
-}
-
-.achievement-faq details {
-    position: relative;
-    margin: 0;
-    border-bottom: 1px solid rgba(37, 70, 52, 0.18);
-    transition: background 0.3s ease;
-}
-
-.achievement-faq details:nth-child(1) {
-    background: #fff0dc;
-}
-
-.achievement-faq details:nth-child(2) {
-    background: #e4f4e9;
-}
-
-.achievement-faq details:nth-child(3) {
-    background: #e9edff;
-}
-
-.achievement-faq details:nth-child(4) {
-    background: #ffebeb;
-}
-
-.achievement-faq details:nth-child(5) {
-    background: #fff5d9;
-}
-
-.achievement-faq details[open] {
-    background: #ffffff;
-}
-
-.achievement-faq summary {
-    position: relative;
-    list-style: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 21px 23px;
-    color: #173e30;
-    font-size: 17px;
-    font-weight: 800;
-    transition: 0.3s;
-}
-
-.achievement-faq summary::-webkit-details-marker {
-    display: none;
-}
-
-.achievement-faq summary:hover {
-    color: #b16c20;
-}
-
-.achievement-faq summary b {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
-    color: #fff;
-    background: #1b6449;
-    border-radius: 50%;
-    font-size: 23px;
-    font-weight: 400;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.achievement-faq details[open] summary b {
-    background: #c47b29;
-    transform: rotate(45deg);
-}
-
-
-/* FAQ ANSWER */
-
-.achievement-answer {
-    padding: 0 22px 25px;
-    animation: achievementOpen 0.35s ease;
-}
-
-.achievement-answer p {
-    color: #303a33;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.8;
-    text-align: justify;
-    margin: 0 0 18px;
-}
-
-@keyframes achievementOpen {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* ACHIEVEMENT TABLE */
-
-.achievement-table-wrap {
-    width: 100%;
-    overflow-x: auto;
-    margin-top: 15px;
     border-radius: 12px;
 }
 
-.sports-achievement-table {
-    width: 100%;
-    min-width: 650px;
-    border-collapse: collapse;
-    background: #fff;
-}
-
-.sports-achievement-table thead {
-    background: linear-gradient(
-        100deg,
-        #164b39,
-        #267b57,
-        #397f82
-    );
-}
-
-.sports-achievement-table th {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 800;
-    padding: 16px 13px;
-    text-align: left;
-    white-space: nowrap;
-}
-
-.sports-achievement-table td {
-    color: #252f29;
-    font-size: 17px;
-    font-weight: 700;
-    padding: 15px 13px;
-    border-bottom: 1px solid #e4e8e3;
-    vertical-align: middle;
-}
-
-.sports-achievement-table tbody tr:nth-child(even) {
-    background: #f0f7f2;
-}
-
-.sports-achievement-table tbody tr:nth-child(odd) {
-    background: #fffaf0;
-}
-
-.sports-achievement-table tbody tr:hover {
-    background: #e6f3e8;
-    transition: background 0.3s;
-}
-
-
-/* ACHIEVEMENT LABELS */
-
-.award {
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 20px 5px 20px 5px;
-    font-size: 13px;
-    font-weight: 800;
-    white-space: nowrap;
-}
-
-.award.gold {
-    background: #ffebae;
-    color: #80520c;
-}
-
-.award.silver {
-    background: #e2e9f1;
-    color: #40566f;
-}
-
-.award.bronze {
-    background: #f5ddca;
-    color: #8a481c;
-}
-
-.award.blue {
-    background: #dceaff;
-    color: #1d4c87;
-}
-
-
-/* TABLE SCROLLBAR */
-
-.achievement-table-wrap::-webkit-scrollbar {
-    height: 7px;
-}
-
-.achievement-table-wrap::-webkit-scrollbar-track {
-    background: #e7e7e7;
-    border-radius: 20px;
-}
-
-.achievement-table-wrap::-webkit-scrollbar-thumb {
-    background: #39805c;
-    border-radius: 20px;
-}
-
-
-/* =====================================================
-   SPORTS QUOTA
-===================================================== */
-
-.sports-quota {
-    position: relative;
-    padding: 75px 7%;
-    background: linear-gradient(
-        120deg,
-        #fff0dd,
-        #f4f0e5,
-        #e5f3e8,
-        #f1eaff
-    );
-    overflow: hidden;
-}
-
-.quota-heading {
-    text-align: center;
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 1;
-}
-
-.quota-heading > span {
-    color: #b47727;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.quota-heading h2 {
-    color: #174b39;
-    margin: 12px 0;
-}
-
-.quota-heading p {
-    max-width: 750px;
-    margin: auto;
-    text-align: center;
-}
-
-.quota-main {
-    display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: 65px;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.quota-visual {
-    position: relative;
-    height: 570px;
-}
-
-.quota-visual > img {
+.basc-physical-intro-image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
-    border-radius: 150px 8px 150px 8px;
+    transition: transform 0.5s ease;
 }
 
-.quota-visual-content {
+.basc-physical-intro-image:hover img {
+    transform: scale(1.04);
+}
+
+.basc-intro-image-caption {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 60px 25px 25px;
-    background: linear-gradient(
-        transparent,
-        rgba(16, 58, 41, 0.96)
-    );
-    border-radius: 0 0 150px 8px;
+    padding: 24px 15px 16px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(transparent, rgba(4, 25, 55, 0.85));
 }
 
-.quota-visual-content span {
-    color: #e9bc70;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
+.basc-physical-intro-text {
+    padding: 12px 10px;
 }
 
-.quota-visual-content h3 {
-    color: #fff;
-    font-size: 25px;
-    margin: 10px 0;
-}
-
-.quota-visual-content p {
-    color: #fff;
-    margin: 0;
-}
-
-.quota-circle {
-    position: absolute;
-    top: -25px;
-    right: -25px;
-    width: 90px;
-    height: 90px;
-    border: 12px solid #c28b3d;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-
-/* SPORTS QUOTA BENEFITS */
-
-.quota-benefits {
-    display: flex;
-    flex-direction: column;
-}
-
-.quota-item {
-    display: flex;
-    gap: 22px;
-    align-items: flex-start;
-    padding: 19px 0;
-    border-bottom: 1px solid #d8d6c9;
-}
-
-.quota-item:last-child {
-    border-bottom: none;
-}
-
-.quota-shape {
-    color: #b47727;
-    font-size: 32px;
-    line-height: 1;
-    min-width: 35px;
-    padding-top: 2px;
-}
-
-.quota-item h3 {
-    color: #174b39;
-    margin: 0 0 7px;
+.basc-physical-small-title {
+    display: block;
+    color: var(--physical-red);
     font-size: 20px;
-}
-
-.quota-item p {
-    margin: 0;
-}
-
-
-/* SPORTS QUOTA NOTE */
-
-.quota-note {
-    position: relative;
-    margin-top: 45px;
-    padding: 20px 25px;
-    border-left: 5px solid #b47727;
-    background: rgba(255, 255, 255, 0.65);
-}
-
-.quota-note span {
-    color: #174b39;
-    font-size: 17px;
     font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
 }
 
-.quota-note p {
-    margin: 8px 0 0;
+.basc-physical-intro-text p {
+    color: black;
     font-size: 17px;
+    line-height: 1.85;
+    text-align: justify;
+    margin: 0 0 14px;
 }
 
 
-/* =====================================================
-   SPORTS GALLERY
-===================================================== */
+/* =========================================================
+   DEPARTMENT CONTACT
+========================================================= */
 
-.sports-gallery-section {
-    padding: 75px 7%;
-    background: #fff;
+.basc-physical-contact {
+    padding: 38px 0;
+    background: #f5f6f8;
 }
 
-.sports-gallery {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    grid-template-rows: 220px 220px;
-    gap: 17px;
+.basc-physical-contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    max-width: 800px;
+    margin: auto;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 13px;
 }
 
-.gallery-item {
-    position: relative;
+.basc-physical-contact-photo {
+    width: 125px;
+    height: 150px;
+    flex: 0 0 125px;
     overflow: hidden;
-    border-radius: 8px 45px 8px 45px;
+    border-radius: 9px;
+    background: #eee9df;
 }
 
-.gallery-item img {
+.basc-physical-contact-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
-    transition: transform 0.5s;
+    object-fit: cover;
+    object-position: center top;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.07);
+.basc-physical-contact-details {
+    flex: 1;
 }
 
-.gallery-item::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        transparent 45%,
-        rgba(10, 44, 30, 0.85)
-    );
-}
-
-.gallery-item span {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 800;
-}
-
-.gallery-tall {
-    grid-row: span 2;
-    border-radius: 100px 8px 100px 8px;
-}
-
-.gallery-wide {
-    grid-column: span 2;
-}
-
-
-/* =====================================================
-   QUICK LINKS
-===================================================== */
-
-.sports-quick-links {
-    padding: 40px 7%;
-    background: linear-gradient(
-        105deg,
-        #174b39,
-        #247b57,
-        #355d70
-    );
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-.sports-quick-links > div:first-child > span {
-    color: #e6b65f;
+.basc-physical-label {
+    display: inline-block;
+    color: var(--physical-red);
     font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 800;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
 }
 
-.sports-quick-links h2 {
-    color: #fff;
-    font-size: 25px;
-    margin: 8px 0 0;
+.basc-physical-contact-details h3 {
+    color: var(--physical-blue);
+    font-size: 23px;
+    font-weight: 750;
+    margin: 0 0 5px;
 }
 
-.sports-quick-nav {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.sports-quick-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
+.basc-physical-contact-details h4 {
+    color: var(--physical-red);
+    font-size: 17px;
     font-weight: 700;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d4a65f;
-    transition: 0.3s;
+    margin: 0 0 9px;
 }
 
-.sports-quick-nav a:hover {
-    color: #edc47f;
+.basc-physical-contact-details p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 4px 0;
+}
+
+.basc-physical-contact-details p i {
+    color: var(--physical-red);
+    margin-right: 6px;
+}
+
+.basc-physical-phone {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    margin-top: 12px;
+}
+
+.basc-physical-phone a {
+    color: var(--physical-blue);
+    font-size: 14px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.basc-physical-phone a:hover {
+    color: var(--physical-red);
+}
+
+.basc-physical-phone i {
+    color: var(--physical-red);
+    margin-right: 6px;
 }
 
 
-/* =====================================================
-   TABLET RESPONSIVE
-===================================================== */
+/* =========================================================
+   INDOOR SPORTS
+========================================================= */
 
-@media (max-width: 1000px) {
+.basc-physical-facilities {
+    padding: 65px 0;
+    background: #ffffff;
+}
 
-    .sports-hero {
-        grid-template-columns: 1fr 0.85fr;
-        gap: 30px;
+
+/* =========================================================
+   OUTDOOR SPORTS
+========================================================= */
+
+.basc-physical-outdoor {
+    padding: 65px 0;
+    background: var(--physical-cream);
+}
+
+
+/* =========================================================
+   MEDIUM-SIZE SPORTS PHOTOGRAPHS
+   ALL IMAGES SAME SIZE
+========================================================= */
+
+.basc-sports-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.basc-sport-item {
+    text-align: center;
+    padding: 22px 15px 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.basc-sport-item:hover {
+    transform: translateY(-5px);
+    background: #fbf8f1;
+}
+
+/* Medium image size */
+.basc-sport-item img {
+    width: 200px;
+    height:200px;
+    display: block;
+    margin: 0 auto 15px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 3px solid #eee5d5;
+    padding: 3px;
+    background: #ffffff;
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.basc-sport-item:hover img {
+    border-color: var(--physical-gold);
+    transform: scale(1.05);
+}
+
+.basc-sport-item h3 {
+    color: var(--physical-blue);
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* =========================================================
+   SPORTS ACHIEVEMENTS
+========================================================= */
+
+.basc-physical-achievements {
+    padding: 65px 0 70px;
+    background: #ffffff;
+}
+
+.basc-achievement-marquee {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.basc-achievement-track {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: max-content;
+    animation: bascAchievementScroll 35s linear infinite;
+}
+
+.basc-achievement-marquee:hover .basc-achievement-track {
+    animation-play-state: paused;
+}
+
+.basc-achievement-image {
+    position: relative;
+    width: 230px;
+    height: 260px;
+    flex: 0 0 230px;
+    overflow: hidden;
+    border-radius: 48% 48% 12px 12px;
+    background: #eee9df;
+}
+
+.basc-achievement-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.basc-achievement-image:hover img {
+    transform: scale(1.08);
+}
+
+.basc-achievement-image span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 24px 10px 15px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(
+        transparent,
+        rgba(5, 30, 65, 0.88)
+    );
+}
+
+@keyframes bascAchievementScroll {
+    from {
+        transform: translateX(0);
     }
 
-    .sports-hero h1 {
-        font-size: 35px;
+    to {
+        transform: translateX(calc(-50% - 12.5px));
     }
+}
 
-    .sports-benefits {
+
+/* =========================================================
+   SPORTS QUOTA
+========================================================= */
+
+.basc-physical-quota {
+    padding: 65px 0;
+    background: #f8f7f3;
+}
+
+.basc-quota-description {
+    max-width: 950px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.basc-quota-description p {
+    color: #333333;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 0 12px;
+}
+
+
+/* CLICKABLE YEAR LINKS */
+
+.basc-quota-years {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.basc-quota-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 9px;
+    border-bottom: 3px solid var(--physical-gold);
+    text-decoration: none;
+    transition: transform 0.3s ease,
+                background 0.3s ease,
+                color 0.3s ease;
+}
+
+.basc-quota-year:hover {
+    transform: translateY(-4px);
+    background: var(--physical-blue);
+    border-bottom-color: var(--physical-red);
+}
+
+.basc-quota-year span {
+    color: var(--physical-blue);
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.basc-quota-year:hover span {
+    color: #ffffff;
+}
+
+.basc-quota-year:focus-visible {
+    outline: 3px solid var(--physical-gold);
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .basc-physical-intro-content {
         grid-template-columns: 1fr 1fr;
+        gap: 25px;
     }
 
-    .sports-benefit:nth-child(2) {
-        border-right: none;
-    }
-
-    .sports-facility-content,
-    .sports-competition {
-        gap: 30px;
-    }
-
-    .achievement-layout,
-    .quota-main {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .achievement-intro {
-        padding: 30px;
-    }
-
-    .quota-visual {
-        height: 400px;
-    }
-
-    .sports-gallery {
-        grid-template-rows: 190px 190px;
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE RESPONSIVE
-===================================================== */
-
-@media (max-width: 700px) {
-
-    .sports-hero {
-        grid-template-columns: 1fr;
-        padding: 45px 6%;
-    }
-
-    .sports-hero h1 {
-        font-size: 32px;
-    }
-
-    .sports-hero-image {
+    .basc-physical-intro-image {
         height: 320px;
-        margin: 10px 10px 20px;
     }
 
-    .sports-image-caption {
-        left: -10px;
-        bottom: 20px;
+    .basc-sports-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .sports-benefits {
-        grid-template-columns: 1fr 1fr;
-        gap: 25px 15px;
-        padding: 35px 6%;
-    }
-
-    .sports-benefit {
-        padding: 8px 10px;
-        border-right: none;
-    }
-
-    .sports-benefit h3 {
-        font-size: 17px;
-    }
-
-    .sports-benefit p {
-        font-size: 17px;
-    }
-
-    .sports-facility-section,
-    .sports-achievements,
-    .sports-gallery-section {
-        padding: 50px 6%;
-    }
-
-    .sports-section-heading h2,
-    .quota-heading h2 {
-        font-size: 25px;
-    }
-
-    .sports-facility-content,
-    .sports-competition {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .facility-image {
-        height: 330px;
-        border-radius: 65px 8px 65px 8px;
-    }
-
-    .sports-competition,
-    .sports-quota {
-        padding: 50px 6%;
-    }
-
-    .competition-image {
-        height: 300px;
-        border-radius: 8px 65px 8px 65px;
-    }
-
-    .competition-highlights {
-        gap: 15px;
-    }
-
-    .achievement-intro {
-        padding: 28px 22px;
-        border-radius: 45px 8px 45px 8px;
-    }
-
-    .achievement-intro h3 {
-        font-size: 25px;
-    }
-
-    .achievement-intro img {
-        height: 220px;
-    }
-
-    .achievement-faq summary {
-        font-size: 16px;
-        padding: 18px 13px;
-        gap: 12px;
-    }
-
-    .achievement-answer {
-        padding: 0 12px 20px;
-    }
-
-    .achievement-answer p {
-        font-size: 17px;
-    }
-
-    .sports-achievement-table th {
-        padding: 13px 10px;
-        font-size: 14px;
-    }
-
-    .sports-achievement-table td {
-        padding: 13px 10px;
-        font-size: 16px;
-    }
-
-    .quota-main {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .quota-visual {
-        height: 400px;
-        margin: 10px;
-    }
-
-    .quota-visual > img {
-        border-radius: 100px 8px 100px 8px;
-    }
-
-    .quota-visual-content {
-        border-radius: 0 0 100px 8px;
-    }
-
-    .quota-item {
-        gap: 13px;
-    }
-
-    .quota-item h3 {
-        font-size: 18px;
-    }
-
-    .sports-gallery {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 190px 160px 160px;
-        gap: 12px;
-    }
-
-    .gallery-tall {
-        grid-row: span 2;
-    }
-
-    .gallery-wide {
-        grid-column: span 1;
-    }
-
-    .gallery-item span {
-        left: 12px;
-        bottom: 13px;
-        font-size: 14px;
-    }
-
-    .sports-quick-links {
-        padding: 35px 6%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .sports-quick-nav {
-        gap: 15px;
-        flex-direction: column;
+    .basc-quota-years {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
 }
 
 
-/* =====================================================
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .basc-physical-container {
+        width: 92%;
+    }
+
+    .basc-physical-intro,
+    .basc-physical-facilities,
+    .basc-physical-outdoor,
+    .basc-physical-achievements,
+    .basc-physical-quota {
+        padding: 48px 0;
+    }
+
+    .basc-physical-heading {
+        margin-bottom: 28px;
+    }
+
+    .basc-physical-heading h2 {
+        font-size: 25px;
+    }
+
+    .basc-physical-intro-content {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 14px;
+    }
+
+    .basc-physical-intro-image {
+        height: 280px;
+    }
+
+    .basc-physical-intro-text {
+        padding: 5px 4px;
+    }
+
+    .basc-physical-intro-text p,
+    .basc-quota-description p {
+        font-size: 16px;
+    }
+
+    .basc-physical-contact-content {
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .basc-physical-contact-photo {
+        width: 105px;
+        height: 130px;
+        flex-basis: 105px;
+    }
+
+    .basc-physical-contact-details h3 {
+        font-size: 20px;
+    }
+
+    .basc-sports-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .basc-sport-item {
+        padding: 18px 10px;
+    }
+
+    /* Medium-sized photos on tablet */
+    .basc-sport-item img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .basc-achievement-image {
+        width: 195px;
+        height: 225px;
+        flex-basis: 195px;
+    }
+
+    .basc-quota-years {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
    SMALL MOBILE
-===================================================== */
+========================================================= */
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 
-    .sports-hero h1 {
-        font-size: 28px;
+    .basc-physical-heading h2 {
+        font-size: 22px;
     }
 
-    .sports-benefits {
-        grid-template-columns: 1fr;
+    .basc-physical-heading > span {
+        font-size: 11px;
     }
 
-    .sports-benefit {
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-        padding-bottom: 18px;
+    .basc-physical-intro-image {
+        height: 235px;
     }
 
-    .competition-highlights {
-        grid-template-columns: 1fr;
+    .basc-physical-contact-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .sports-gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 190px);
+    .basc-physical-contact-photo {
+        width: 105px;
+        height: 130px;
+        flex-basis: auto;
     }
 
-    .gallery-tall,
-    .gallery-wide {
-        grid-row: auto;
-        grid-column: auto;
+    .basc-physical-phone {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .basc-physical-contact-details p {
+        font-size: 14px;
+    }
+
+    /* Medium image size on mobile */
+    .basc-sport-item img {
+        width: 105px;
+        height: 105px;
+    }
+
+    .basc-sport-item h3 {
+        font-size: 15px;
+    }
+
+    .basc-achievement-image {
+        width: 180px;
+        height: 210px;
+        flex-basis: 180px;
+    }
+
+    .basc-quota-years {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .basc-quota-year {
+        min-height: 65px;
+    }
+
+    .basc-quota-year span {
+        font-size: 21px;
     }
 
 }
 
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .basc-achievement-track {
+        animation: none;
+    }
+
+    .basc-sport-item,
+    .basc-sport-item img,
+    .basc-achievement-image img {
+        transition: none;
+    }
+
+}
 
 /* ==========================================
    BASCW SCHOLARSHIP PAGE
@@ -11101,7 +10404,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 .basc-scholarship * {
     box-sizing: border-box;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .basc-scholarship p,
@@ -11123,7 +10426,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 .basc-scholarship p {
     line-height: 1.8;
     text-align: justify;
-    color: #303030;
+    color:black;
     margin: 0 0 15px;
 }
 
@@ -11163,7 +10466,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     min-height: 430px;
     display: flex;
     align-items: center;
-    padding: 65px 8%;
+    padding: 35px 3%;
     isolation: isolate;
     background: var(--blue);
 }
@@ -11172,7 +10475,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     position: absolute;
     inset: 0;
     z-index: -2;
-    background-image: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1800&q=85");
+    background-image: url("assets/img/infra/scholar1.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -13530,10 +12833,9 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 ========================================== */
 
 .basc-principal-awards {
-    padding: 10px 10px;
-    background: #fffaf5;
+    padding:30px 10px;
+    background: white;
     overflow: hidden;
-    font-family: 'Poppins', sans-serif;
 }
 
 /* SECTION HEADING */
@@ -13649,8 +12951,8 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 /* AWARD ITEM */
 
 .basc-award-item {
-    width: 275px;
-    flex: 0 0 275px;
+    width: 450px;
+    flex: 0 0 450px;
     margin: 0;
     text-align: center;
 }
@@ -13717,7 +13019,6 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     font-size: 15px;
     line-height: 1.7;
     margin: 0;
-    text-align: justify;
 }
 
 
@@ -23287,294 +22588,642 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     color: #ffffff;
 }
 
-/* ==========================================
-   LAB DIAGONAL DESIGN
-========================================== */
+/* =========================================================
+   BASCW LABORATORY FACILITIES
+   LANGUAGE LEFT IMAGE + RIGHT CONTENT
+   COMPUTER AND SCIENCE CURVED SCROLLING CARDS
+========================================================= */
 
-.lab-diagonal,
-.lab-diagonal * {
-    box-sizing: border-box;
-}
-
-.lab-diagonal {
+.basc-lab-gallery {
     width: 100%;
-    padding: 55px 6%;
+    padding: 55px 0 70px;
+    background: #ffffff;
+    color: #222222;
     overflow: hidden;
-    position: relative;
-
-    background:
-        radial-gradient(
-            circle at 5% 10%,
-            rgba(40, 163, 130, 0.10),
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 95% 85%,
-            rgba(226, 166, 75, 0.13),
-            transparent 28%
-        ),
-        #f8f9f5;
 }
 
-/* ==========================================
-   INTRODUCTION
-========================================== */
-
-.lab-diagonal-intro {
-    max-width: 1250px;
-    margin: 0 auto 40px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35px;
+.basc-lab-category {
+    width: 100%;
+    margin-bottom: 80px;
 }
 
-.lab-intro-content {
-    max-width: 800px;
+.basc-lab-category:last-child {
+    margin-bottom: 0;
 }
 
-.lab-overline {
+/* =========================================================
+   COMMON CATEGORY HEADING
+========================================================= */
+
+.basc-lab-heading {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+    padding: 0 25px;
+}
+
+.basc-lab-heading > span {
     display: inline-block;
-    color: #b47b2d;
-    font-size: 12px;
+    color: #8b1e2d;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
-.lab-intro-content h2 {
-    color: #183d34;
-    font-size: 39px;
-    line-height: 1.25;
-    margin: 0 0 18px;
-    font-weight: 800;
+.basc-lab-heading h2 {
+    color: #08306c;
+    font-size: 34px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin: 0 0 10px;
 }
 
-.lab-intro-content h2 span {
-    color: #209477;
-    display: inline-block;
+.basc-lab-heading h2 b {
+    color: #8b1e2d;
 }
 
-.lab-intro-content p {
-    font-size: 17px;
-    line-height: 1.8;
-    text-align: justify;
-    color: #414c45;
+.basc-lab-heading p {
+    color:black;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 750px;
     margin: 0;
 }
 
-/* NUMBER DESIGN */
+/* =========================================================
+   LANGUAGE LAB - TWO COLUMN LAYOUT
+========================================================= */
 
-.lab-total-number {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding-left: 28px;
-    border-left: 3px solid #d9a54b;
-}
-
-.lab-total-number strong {
-    font-size: 65px;
-    line-height: 1;
-    font-weight: 800;
-
-    background: linear-gradient(
-        135deg,
-        #1b8d70,
-        #d49c42
-    );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.lab-total-number span {
-    color: #34564a;
-    font-size: 13px;
-    line-height: 1.6;
-    font-weight: 600;
-}
-
-/* ==========================================
-   LABORATORY TILES
-========================================== */
-
-.lab-diagonal-gallery {
-    max-width: 1250px;
-    margin: auto;
-
+.basc-language-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 55px;
+    align-items: center;
 }
 
-/* EACH TILE */
+/* LEFT IMAGE */
 
-.lab-tile {
+.basc-language-photo {
     position: relative;
-    overflow: hidden;
-    background: #ffffff;
-    padding-bottom: 23px;
-    border-bottom: 4px solid #269579;
-}
-
-.lab-tile-two {
-    border-bottom-color: #d7a144;
-    margin-top: 28px;
-}
-
-.lab-tile-three {
-    border-bottom-color: #688cbd;
-}
-
-/* IMAGE */
-
-.lab-tile-image {
     width: 100%;
-    height: 225px;
+    height: 490px;
     overflow: hidden;
-    position: relative;
+    border-radius: 170px 170px 8px 8px;
+    background: #eeeeee;
 }
 
-.lab-tile-image::after {
+.basc-language-photo::after {
     content: "";
     position: absolute;
-    inset: 0;
-
+    inset: 45% 0 0;
     background: linear-gradient(
-        135deg,
-        rgba(19, 106, 81, 0.14),
-        transparent 65%
+        to bottom,
+        transparent,
+        rgba(0, 0, 0, 0.72)
     );
+    pointer-events: none;
 }
 
-.lab-tile-image img {
+.basc-language-photo img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.6s ease;
 }
 
-.lab-tile:hover .lab-tile-image img {
+.basc-language-photo:hover img {
+    transform: scale(1.05);
+}
+
+/* IMAGE LABEL */
+
+.basc-language-photo-label {
+    position: absolute;
+    left: 25px;
+    right: 20px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.basc-language-photo-label > span {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5b72f;
+    color: #08306c;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.basc-language-photo-label small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+}
+
+.basc-language-photo-label h3 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* RIGHT CONTENT */
+
+.basc-language-content {
+    width: 100%;
+}
+
+.basc-language-tag {
+    display: inline-block;
+    color: #8b1e2d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.basc-language-content > h3 {
+    color: #08306c;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 20px;
+}
+
+.basc-language-content > h3 span {
+    color: #8b1e2d;
+}
+
+.basc-language-content > p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: justify;
+    margin: 0 0 15px;
+}
+
+/* LANGUAGE HIGHLIGHTS */
+
+.basc-language-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 25px;
+    row-gap: 20px;
+    margin-top: 28px;
+}
+
+.basc-language-highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.basc-language-highlight > span {
+    flex-shrink: 0;
+    color: #8b1e2d;
+    font-size: 14px;
+    font-weight: 800;
+    padding-top: 2px;
+    border-bottom: 2px solid #e5b72f;
+    padding-bottom: 5px;
+}
+
+.basc-language-highlight h4 {
+    color: #08306c;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.basc-language-highlight p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* LAB COUNT */
+
+.basc-language-count {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.basc-language-count strong {
+    color: #8b1e2d;
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.basc-language-count span {
+    color: #08306c;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   COMPUTER & SCIENCE HORIZONTAL SCROLL
+========================================================= */
+
+.basc-lab-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 5% 25px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #8b1e2d #eeeeee;
+}
+
+.basc-lab-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.basc-lab-scroll::-webkit-scrollbar-track {
+    background: #eeeeee;
+    border-radius: 10px;
+}
+
+.basc-lab-scroll::-webkit-scrollbar-thumb {
+    background: #8b1e2d;
+    border-radius: 10px;
+}
+
+.basc-lab-track {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: max-content;
+    min-width: 100%;
+}
+
+/* =========================================================
+   CURVED LAB CARDS
+========================================================= */
+
+.basc-lab-card {
+    position: relative;
+    flex: 0 0 300px;
+    width: 300px;
+    scroll-snap-align: start;
+}
+
+.basc-lab-card:nth-child(even) {
+    margin-top: 65px;
+}
+
+.basc-lab-card:nth-child(3n) {
+    margin-top: 30px;
+}
+
+/* IMAGE SHAPE */
+
+.basc-lab-image {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background: #eeeeee;
+    border-radius: 48% 48% 8px 8px / 34% 34% 8px 8px;
+}
+
+.basc-lab-card:nth-child(even) .basc-lab-image {
+    border-radius: 8px 8px 48% 48% / 8px 8px 34% 34%;
+}
+
+.basc-lab-card:nth-child(3n) .basc-lab-image {
+    border-radius: 48% 8px 48% 8px;
+}
+
+.basc-lab-card:nth-child(4n) .basc-lab-image {
+    border-radius: 8px 48% 8px 48%;
+}
+
+/* IMAGE */
+
+.basc-lab-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.basc-lab-card:hover .basc-lab-image img {
     transform: scale(1.07);
 }
 
-/* TILE CONTENT */
+/* NUMBER */
 
-.lab-tile-info {
-    position: relative;
-    padding: 22px 22px 5px;
-}
-
-.lab-index {
-    color: #b17c32;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.lab-tile-info h3 {
-    color: #194b3a;
-    font-size: 22px;
-    margin: 10px 0;
-    font-weight: 700;
-}
-
-.lab-tile-info p {
-    position: relative;
-    z-index: 2;
-    color: #535f57;
-    font-size: 15px;
-    line-height: 1.7;
-    text-align: justify;
-    margin: 0;
-    padding-right: 12px;
-}
-
-/* LARGE NUMBER WATERMARK */
-
-.lab-tile-count {
+.basc-lab-number {
     position: absolute;
-    right: 12px;
-    bottom: -15px;
-
-    font-size: 90px;
-    line-height: 1;
-    font-weight: 800;
-
-    color: rgba(30, 129, 97, 0.09);
-
-    pointer-events: none;
-}
-
-/* INDIVIDUAL WATERMARK COLORS */
-
-.lab-tile-two .lab-tile-count {
-    color: rgba(211, 151, 56, 0.13);
-}
-
-.lab-tile-three .lab-tile-count {
-    color: rgba(81, 122, 184, 0.12);
-}
-
-/* ==========================================
-   BOTTOM STATEMENT
-========================================== */
-
-.lab-diagonal-footer {
-    max-width: 1250px;
-    margin: 45px auto 0;
-
-    padding: 23px 0;
-    border-top: 1px solid #dce3dc;
-    border-bottom: 1px solid #dce3dc;
-
+    top: 18px;
+    left: 18px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.lab-footer-mark {
+    justify-content: center;
+    border-radius: 50%;
+    background: #8b1e2d;
+    color: #ffffff;
     font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #d19a45;
-    white-space: nowrap;
+    font-weight: 700;
+    z-index: 2;
 }
 
-.lab-footer-text {
-    max-width: 650px;
-    text-align: center;
+/* CARD TEXT */
+
+.basc-lab-info {
+    padding: 18px 8px 5px;
 }
 
-.lab-footer-text h3 {
-    font-size: 22px;
-    color: #174d3c;
-    margin: 0 0 8px;
+.basc-lab-info > span {
+    display: block;
+    color: #8b1e2d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
 }
 
-.lab-footer-text p {
-    color: #535e56;
+.basc-lab-info h3 {
+    color: #08306c;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 7px;
+}
+
+.basc-lab-info p {
+    color: black;
     font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.65;
+    text-align: left;
     margin: 0;
 }
 
-/* ==========================================
-   HOVER EFFECTS
-========================================== */
+/* =========================================================
+   LARGE TABLET
+========================================================= */
 
-.lab-tile {
-    transition: transform 0.35s ease;
+@media (max-width: 1100px) {
+
+    .basc-language-layout {
+        gap: 35px;
+    }
+
+    .basc-language-photo {
+        height: 440px;
+    }
+
+    .basc-language-content > h3 {
+        font-size: 30px;
+    }
+
+    .basc-language-highlights {
+        column-gap: 15px;
+    }
+
 }
 
-.lab-tile:hover {
-    transform: translateY(-7px);
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .basc-lab-gallery {
+        padding: 45px 0 55px;
+    }
+
+    .basc-lab-category {
+        margin-bottom: 65px;
+    }
+
+    .basc-language-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .basc-language-photo {
+        height: 400px;
+        border-radius: 130px 130px 8px 8px;
+    }
+
+    .basc-language-content > h3 {
+        font-size: 27px;
+        margin-bottom: 14px;
+    }
+
+    .basc-language-content > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .basc-language-highlights {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        margin-top: 20px;
+    }
+
+    .basc-language-count {
+        margin-top: 20px;
+    }
+
+    .basc-lab-card {
+        flex-basis: 275px;
+        width: 275px;
+    }
+
+    .basc-lab-image {
+        height: 290px;
+    }
+
+    .basc-lab-track {
+        gap: 24px;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .basc-lab-gallery {
+        padding: 35px 0 45px;
+    }
+
+    .basc-lab-category {
+        margin-bottom: 55px;
+    }
+
+    .basc-lab-heading {
+        padding: 0 20px;
+        margin-bottom: 22px;
+    }
+
+    .basc-lab-heading h2 {
+        font-size: 25px;
+    }
+
+    .basc-lab-heading p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    /* LANGUAGE MOBILE LAYOUT */
+
+    .basc-language-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 0 20px;
+    }
+
+    .basc-language-photo {
+        height: 350px;
+        border-radius: 130px 130px 8px 8px;
+    }
+
+    .basc-language-photo-label {
+        left: 18px;
+        bottom: 20px;
+    }
+
+    .basc-language-photo-label h3 {
+        font-size: 20px;
+    }
+
+    .basc-language-content > h3 {
+        font-size: 27px;
+    }
+
+    .basc-language-content > p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .basc-language-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 12px;
+    }
+
+    .basc-language-highlight {
+        gap: 9px;
+    }
+
+    .basc-language-highlight h4 {
+        font-size: 14px;
+    }
+
+    .basc-language-highlight p {
+        font-size: 13px;
+    }
+
+    .basc-language-count strong {
+        font-size: 32px;
+    }
+
+    /* SCROLL CARDS */
+
+    .basc-lab-scroll {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .basc-lab-card {
+        flex-basis: 245px;
+        width: 245px;
+    }
+
+    .basc-lab-image {
+        height: 265px;
+    }
+
+    .basc-lab-track {
+        gap: 20px;
+    }
+
+    .basc-lab-card:nth-child(even) {
+        margin-top: 35px;
+    }
+
+    .basc-lab-card:nth-child(3n) {
+        margin-top: 15px;
+    }
+
+    .basc-lab-info h3 {
+        font-size: 18px;
+    }
+
+    .basc-lab-info p {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .basc-language-layout {
+        padding: 0 16px;
+    }
+
+    .basc-language-photo {
+        height: 300px;
+        border-radius: 110px 110px 8px 8px;
+    }
+
+    .basc-language-content > h3 {
+        font-size: 24px;
+    }
+
+    .basc-language-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-lab-heading h2 {
+        font-size: 23px;
+    }
+
+    .basc-lab-card {
+        flex-basis: 225px;
+        width: 225px;
+    }
+
+    .basc-lab-image {
+        height: 245px;
+    }
+
 }
 
 /* =========================================
@@ -24759,7 +24408,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
             rgba(234, 240, 235, 0.84),
             rgba(255, 253, 248, 0.81)
         ),
-        url("../img/facility/hostel.jpeg") center/cover no-repeat;
+        url("../img/facility/food.jpg") center/cover no-repeat;
     color: #174b46;
     position: relative;
     overflow: hidden;
@@ -29004,7 +28653,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 .salary-section {
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-columns: 1.5fr 0.7fr;
     align-items: center;
     gap: 35px;
     margin-top: 30px;
@@ -29243,6 +28892,32 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 .table-responsive::-webkit-scrollbar-thumb {
     background: var(--teal);
     border-radius: 10px;
+}
+
+
+/* PLACEMENT STATISTICS IMAGES */
+
+.placement-statistics-images {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 25px;
+    width: 100%;
+    margin: 35px auto 45px;
+    align-items: center;
+}
+
+.statistics-image-box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.statistics-image-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 
@@ -30338,3 +30013,905 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     outline: 3px solid #c21845;
     outline-offset: 4px;
 }
+
+
+/* =========================================================
+   BASCW STUDENT LIFE
+   NSS | NCC | YRC | RRC | SCOUTS & GUIDES
+   RESPONSIVE CSS
+   COLLEGE THEME: CRIMSON | DARK BLUE | GOLD | IVORY
+========================================================= */
+
+.basc-student-life {
+    --basc-red: #8b1e2d;
+    --basc-blue: #08306c;
+    --basc-gold: #e5b72f;
+    --basc-cream: #fbf8f2;
+    --basc-text: #292929;
+
+    width: 100%;
+    overflow: hidden;
+    color: var(--basc-text);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.basc-student-life *,
+.basc-student-life *::before,
+.basc-student-life *::after {
+    box-sizing: border-box;
+}
+
+.basc-sl-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 65px 25px;
+}
+
+.basc-student-life p {
+    margin: 0 0 16px;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #444;
+}
+
+.basc-student-life h1,
+.basc-student-life h2,
+.basc-student-life h3,
+.basc-student-life h4 {
+    margin-top: 0;
+    line-height: 1.35;
+}
+
+.basc-student-life img {
+    display: block;
+    max-width: 100%;
+}
+
+/* =========================================================
+   01. PAGE INTRODUCTION
+========================================================= */
+
+.basc-sl-intro {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.basc-sl-eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--basc-red);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.basc-sl-intro h1 {
+    margin-bottom: 18px;
+    color: var(--basc-blue);
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.basc-sl-intro > p {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* =========================================================
+   02. SECTION NAVIGATION
+========================================================= */
+
+.basc-sl-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto 65px;
+    padding: 18px 10px;
+    border-top: 1px solid #e8e1d7;
+    border-bottom: 1px solid #e8e1d7;
+}
+
+.basc-sl-nav a {
+    display: inline-block;
+    padding: 9px 23px;
+    color: var(--basc-blue);
+    background: var(--basc-cream);
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.basc-sl-nav a:hover {
+    color: #fff;
+    background: var(--basc-red);
+}
+
+/* =========================================================
+   03. MAIN SECTIONS
+========================================================= */
+
+.basc-sl-section {
+    position: relative;
+    margin-bottom: 85px;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #e8e1d7;
+    scroll-margin-top: 100px;
+}
+
+.basc-sl-section:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+/* =========================================================
+   04. SECTION HEADING
+========================================================= */
+
+.basc-sl-heading {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 35px;
+}
+
+.basc-sl-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    color: #fff;
+    background: var(--basc-red);
+    border-radius: 50% 50% 50% 8px;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.basc-sl-label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--basc-red);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.basc-sl-heading h2 {
+    margin-bottom: 0;
+    color: var(--basc-blue);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* =========================================================
+   05. INTRO CONTENT
+========================================================= */
+
+.basc-sl-intro-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.basc-sl-intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+.basc-sl-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 20px 12px;
+    background: var(--basc-cream);
+    border-left: 4px solid var(--basc-gold);
+}
+
+.basc-sl-facts > div {
+    text-align: center;
+}
+
+.basc-sl-facts strong {
+    display: block;
+    color: var(--basc-red);
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.basc-sl-facts span {
+    display: block;
+    margin-top: 5px;
+    color: var(--basc-blue);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.basc-sl-side-note {
+    padding: 25px 22px;
+    background: var(--basc-cream);
+    border-left: 4px solid var(--basc-gold);
+}
+
+.basc-sl-side-note > i {
+    margin-bottom: 12px;
+    color: var(--basc-red);
+    font-size: 34px;
+}
+
+.basc-sl-side-note h3 {
+    margin-bottom: 8px;
+    color: var(--basc-blue);
+    font-size: 20px;
+}
+
+.basc-sl-side-note p {
+    margin-bottom: 0;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* =========================================================
+   06. IMAGE GALLERY
+========================================================= */
+
+.basc-sl-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.basc-sl-gallery figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    background: var(--basc-cream);
+    border-radius: 100px 100px 8px 8px;
+}
+
+.basc-sl-gallery figure:nth-child(2) {
+    margin-top: 28px;
+    border-radius: 8px 8px 100px 100px;
+}
+
+.basc-sl-gallery figure:nth-child(3) {
+    margin-top: 55px;
+}
+
+.basc-sl-gallery img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.basc-sl-gallery figure:hover img {
+    transform: scale(1.06);
+}
+
+.basc-sl-gallery figcaption {
+    padding: 14px 10px;
+    color: var(--basc-blue);
+    background: var(--basc-cream);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* =========================================================
+   07. VISION AND MISSION
+========================================================= */
+
+.basc-sl-two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    margin: 40px 0;
+}
+
+.basc-sl-two-columns > div {
+    padding: 25px 25px 22px;
+    background: var(--basc-cream);
+    border-bottom: 3px solid var(--basc-gold);
+}
+
+.basc-sl-two-columns h3 {
+    margin-bottom: 15px;
+    color: var(--basc-blue);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.basc-sl-two-columns h3 i {
+    margin-right: 9px;
+    color: var(--basc-red);
+}
+
+.basc-sl-two-columns p {
+    margin-bottom: 0;
+}
+
+.basc-sl-two-columns ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.basc-sl-two-columns li {
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   08. NSS MOTTO
+========================================================= */
+
+.basc-sl-motto {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 40px 0;
+    padding: 30px;
+    color: #fff;
+    background: var(--basc-blue);
+    border-radius: 8px 65px 8px 8px;
+}
+
+.basc-sl-motto-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 75px;
+    height: 75px;
+    color: var(--basc-blue);
+    background: var(--basc-gold);
+    border-radius: 50%;
+    font-size: 31px;
+}
+
+.basc-sl-motto .basc-sl-small-label {
+    color: var(--basc-gold);
+}
+
+.basc-sl-motto h3 {
+    margin: 5px 0 10px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.basc-sl-motto p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* =========================================================
+   09. SUBHEADINGS
+========================================================= */
+
+.basc-sl-subheading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 42px 0 22px;
+    padding-bottom: 12px;
+    color: var(--basc-blue);
+    border-bottom: 1px solid #e6dfd5;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.basc-sl-subheading i {
+    color: var(--basc-red);
+    font-size: 21px;
+}
+
+/* =========================================================
+   10. OBJECTIVES CHECK LIST
+========================================================= */
+
+.basc-sl-check-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px 35px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.basc-sl-check-list li {
+    position: relative;
+    padding-left: 28px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.basc-sl-check-list li::before {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    color: var(--basc-red);
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* =========================================================
+   11. ACTIVITIES GRID
+========================================================= */
+
+.basc-sl-activity-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 25px 0 35px;
+}
+
+.basc-sl-activity-grid > div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-height: 75px;
+    padding: 15px 13px;
+    background: var(--basc-cream);
+    border-bottom: 2px solid #e8d9b3;
+    transition: .3s ease;
+}
+
+.basc-sl-activity-grid > div:hover {
+    background: #f4eee3;
+    border-bottom-color: var(--basc-red);
+    transform: translateY(-4px);
+}
+
+.basc-sl-activity-grid i {
+    flex-shrink: 0;
+    width: 27px;
+    color: var(--basc-red);
+    font-size: 23px;
+    text-align: center;
+}
+
+.basc-sl-activity-grid span {
+    color: var(--basc-blue);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   12. PROGRAMME OFFICERS
+========================================================= */
+
+.basc-sl-officer-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin: 25px 0 35px;
+}
+
+.basc-sl-officer-list > div {
+    padding: 23px;
+    background: var(--basc-cream);
+    border-left: 4px solid var(--basc-red);
+}
+
+.basc-sl-unit {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 4px 12px;
+    color: #fff;
+    background: var(--basc-blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.basc-sl-officer-list h4 {
+    margin-bottom: 5px;
+    color: var(--basc-red);
+    font-size: 19px;
+}
+
+.basc-sl-officer-list p {
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* =========================================================
+   13. COORDINATOR
+========================================================= */
+
+.basc-sl-coordinator {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 550px;
+    margin: 20px 0 35px;
+    padding: 20px 23px;
+    background: var(--basc-cream);
+    border-left: 4px solid var(--basc-gold);
+}
+
+.basc-sl-coordinator > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    color: #fff;
+    background: var(--basc-red);
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.basc-sl-coordinator h4 {
+    margin-bottom: 5px;
+    color: var(--basc-blue);
+    font-size: 19px;
+}
+
+.basc-sl-coordinator p {
+    margin: 0;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* =========================================================
+   14. ACHIEVEMENT
+========================================================= */
+
+.basc-sl-achievement {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 40px 0;
+    padding: 28px;
+    background: var(--basc-cream);
+    border-left: 5px solid var(--basc-gold);
+}
+
+.basc-sl-achievement > i {
+    flex-shrink: 0;
+    color: var(--basc-red);
+    font-size: 45px;
+}
+
+.basc-sl-achievement span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--basc-red);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.basc-sl-achievement h3 {
+    margin-bottom: 8px;
+    color: var(--basc-blue);
+    font-size: 22px;
+}
+
+.basc-sl-achievement p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+/* =========================================================
+   15. ANNUAL REPORTS
+========================================================= */
+
+.basc-sl-reports {
+    margin-top: 45px;
+    padding: 28px;
+    background: #faf8f4;
+}
+
+.basc-sl-report-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #e2d9ca;
+}
+
+.basc-sl-small-label {
+    display: block;
+    color: var(--basc-red);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.basc-sl-report-heading h3 {
+    margin: 5px 0 0;
+    color: var(--basc-blue);
+    font-size: 24px;
+}
+
+.basc-sl-report-heading > i {
+    color: var(--basc-red);
+    font-size: 34px;
+}
+
+.basc-sl-report-list details {
+    margin-bottom: 12px;
+    background: #fff;
+    border-bottom: 1px solid #e8dfd2;
+}
+
+.basc-sl-report-list summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 17px 20px;
+    color: var(--basc-blue);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+.basc-sl-report-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.basc-sl-report-list summary::after {
+    margin-left: auto;
+    color: var(--basc-red);
+    content: "+";
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.basc-sl-report-list details[open] summary::after {
+    content: "−";
+}
+
+.basc-sl-report-list summary i {
+    color: var(--basc-red);
+    font-size: 20px;
+}
+
+.basc-sl-pdf-content {
+    padding: 5px 20px 22px;
+}
+
+.basc-sl-pdf-content p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.basc-sl-pdf-content iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    margin: 15px 0;
+    border: 0;
+    background: #fff;
+}
+
+.basc-sl-pdf-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 10px 0 0;
+    padding: 9px 17px;
+    color: #fff;
+    background: var(--basc-blue);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.basc-sl-pdf-content a:hover {
+    background: var(--basc-red);
+}
+
+/* =========================================================
+   16. SECTION-SPECIFIC ACCENTS
+========================================================= */
+
+.basc-nss .basc-sl-number {
+    background: var(--basc-red);
+}
+
+.basc-ncc .basc-sl-number {
+    background: var(--basc-blue);
+}
+
+.basc-yrc .basc-sl-number {
+    color: var(--basc-blue);
+    background: var(--basc-gold);
+}
+
+.basc-rrc .basc-sl-number {
+    background: #a51d36;
+}
+
+.basc-scouts .basc-sl-number {
+    background: #426b3c;
+}
+
+.basc-scouts .basc-sl-label {
+    color: #426b3c;
+}
+
+.basc-scouts .basc-sl-subheading i {
+    color: #426b3c;
+}
+
+/* =========================================================
+   17. SMOOTH SCROLL
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =====================================================
+   BASCW RUNNING NOTICE - COMPLETE CONTENT SCROLL
+===================================================== */
+
+.basc-running-notice {
+    width: 100%;
+    margin: 35px 0 55px;
+    overflow: hidden;
+    background: #08306c;
+}
+
+/* TOP HEADING */
+
+.basc-notice-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 22px;
+    background: #8b1e2d;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.basc-notice-heading i {
+    color: #e5b72f;
+    font-size: 19px;
+}
+
+
+/* SCROLL WINDOW */
+
+.basc-notice-window {
+    width: 100%;
+    overflow: hidden;
+    padding: 24px 0;
+    position: relative;
+    background-color:crimson;
+}
+
+
+/* SCROLLING TRACK */
+
+.basc-notice-track {
+    display: flex;
+    align-items: stretch;
+    width: max-content;
+    gap: 25px;
+    animation: bascFullNoticeScroll 110s linear infinite;
+}
+
+
+/* PAUSE WHEN HOVERING */
+
+.basc-notice-window:hover .basc-notice-track {
+    animation-play-state: paused;
+}
+
+
+/* INDIVIDUAL CONTENT */
+
+.basc-notice-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 420px;
+    flex-shrink: 0;
+    padding: 5px 15px;
+    border-right: 1px solid rgba(255,255,255,0.25);
+}
+
+
+/* NUMBER */
+
+.basc-notice-number {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5b72f;
+    color: #08306c;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+/* TITLE */
+
+.basc-notice-item h3 {
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0 0 10px;
+}
+
+.basc-notice-item h3 i {
+    color: #e5b72f;
+    margin-right: 6px;
+}
+
+
+/* DESCRIPTION */
+
+.basc-notice-item p {
+    font-size: 17px;
+    line-height: 1.8;
+    color:white;
+    text-align: left;
+    margin: 0;
+}
+
+
+/* SEPARATOR */
+
+.basc-notice-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #e5b72f;
+    font-size: 27px;
+    padding: 0 5px;
+}
+
+
+/* CONTINUOUS ANIMATION */
+
+@keyframes bascFullNoticeScroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
