@@ -22344,15 +22344,15 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 .fb-editorial {
     width: 100%;
-    padding: 35px 20px 45px;
-    background:lightgoldenrodyellow;
+    padding: 35px 15px;
+    background:white;
     overflow: hidden;
 }
 
 /* HERO BANNER */
 
 .fb-hero {
-    max-width: 1250px;
+    max-width: 1400px;
     min-height: 290px;
     margin: auto;
     display: flex;
@@ -29674,194 +29674,667 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 }
 
 /* ==========================================
-   TABLET RESPONSIVE
+   BASCW ACADEMIC CALENDAR
+   IVORY + GREEN + EARTHY BROWN + GOLD
+   NO BOX DESIGN
 ========================================== */
 
-@media (max-width: 900px) {
-
-    .disclosure-banner {
-        min-height: 225px;
-        padding: 45px 6%;
-    }
-
-    .disclosure-banner h1 {
-        font-size: 30px;
-    }
-
-    .disclosure-content,
-    .disclosure-intro,
-    .disclosure-bottom {
-        width: 92%;
-    }
-
-    .disclosure-table th,
-    .disclosure-table td {
-        padding: 12px;
-    }
-
-    .action-column {
-        width: 160px;
-    }
-
-    .contact-group {
-        padding: 17px;
-    }
+.basc-academic-calendar {
+    width: 100%;
+    padding:35px 10px;
+    background:white;
+    box-sizing: border-box;
 }
 
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
-
-@media (max-width: 600px) {
-
-    .disclosure-banner {
-        min-height: 195px;
-        padding: 35px 6%;
-    }
-
-    .disclosure-banner h1 {
-        font-size: 25px;
-    }
-
-    .disclosure-banner p {
-        font-size: 15px;
-    }
-
-    .banner-label {
-        font-size: 10px;
-        letter-spacing: 1.3px;
-    }
-
-    .banner-circle-one {
-        right: -160px;
-    }
-
-    .banner-circle-two {
-        right: -110px;
-    }
-
-    .banner-circle-three {
-        right: -60px;
-    }
-
-    .disclosure-intro {
-        margin: 27px auto 23px;
-    }
-
-    .disclosure-intro h2 {
-        font-size: 22px;
-    }
-
-    .disclosure-intro p {
-        font-size: 16px;
-        text-align: justify;
-    }
-
-    .disclosure-content {
-        width: 94%;
-    }
-
-    .disclosure-group {
-        margin-bottom: 27px;
-        overflow-x: auto;
-        scrollbar-width: thin;
-        scrollbar-color: #a56d3b #f8eeee;
-    }
-
-    .group-heading {
-        gap: 12px;
-        padding: 10px 0 13px;
-    }
-
-    .group-number {
-        min-width: 43px;
-        height: 43px;
-        font-size: 14px;
-    }
-
-    .group-heading h3 {
-        font-size: 19px;
-    }
-
-    .group-heading p {
-        font-size: 13px;
-    }
-
-    .disclosure-table {
-        min-width: 560px;
-    }
-
-    .disclosure-table th {
-        font-size: 15px;
-        padding: 12px;
-    }
-
-    .disclosure-table td {
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    .disclosure-link {
-        font-size: 14px;
-    }
-
-    .contact-group {
-        padding: 15px 12px;
-    }
-
-    .contact-details {
-        gap: 12px;
-        padding: 13px 3px;
-    }
-
-    .contact-icon {
-        min-width: 37px;
-        height: 37px;
-        font-size: 18px;
-    }
-
-    .contact-details h4 {
-        font-size: 16px;
-    }
-
-    .contact-details p {
-        font-size: 16px;
-    }
-
-    .map-link {
-        margin-left: 3px;
-        font-size: 14px;
-    }
-
-    .disclosure-bottom {
-        width: 94%;
-        padding: 14px 8px;
-    }
-
-    .disclosure-bottom p {
-        font-size: 13px;
-    }
+.basc-calendar-container {
+    max-width: 1400px;
+    margin: auto;
 }
 
+
+/* HEADING */
+
+.basc-calendar-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.basc-calendar-heading > span {
+    color: #98713b;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.basc-calendar-heading h2 {
+    color: #285638;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.basc-calendar-line {
+    width: 75px;
+    height: 3px;
+    background: #c49a48;
+    margin: 17px auto;
+}
+
+.basc-calendar-heading p {
+    max-width: 750px;
+    margin: auto;
+    color: #514b40;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* CALENDAR LIST */
+
+.basc-calendar-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CALENDAR ITEM */
+
+.basc-calendar-item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    align-items: center;
+    gap: 30px;
+    padding: 35px 10px;
+    border-bottom: 1px solid #e7ddc8;
+    transition: 0.3s ease;
+}
+
+.basc-calendar-item:first-child {
+    border-top: 1px solid #e7ddc8;
+}
+
+.basc-calendar-item:hover {
+    padding-left: 20px;
+    background: rgba(225, 215, 190, 0.15);
+}
+
+
+/* YEAR ICON */
+
+.basc-calendar-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #285638;
+}
+
+.basc-calendar-year i {
+    font-size: 37px;
+}
+
+.basc-calendar-year span {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #a77c38;
+}
+
+.old-year {
+    color: #956b43;
+}
+
+
+/* CONTENT */
+
+.basc-calendar-content {
+    min-width: 0;
+}
+
+.basc-calendar-tag {
+    display: inline-block;
+    color: #a77c38;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+}
+
+.old-tag {
+    color: #806047;
+}
+
+.basc-calendar-content h3 {
+    color: #285638;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+
+.basc-calendar-content p {
+    color: #514b40;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ACTION LINKS */
+
+.basc-calendar-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    min-width: 145px;
+}
+
+.basc-calendar-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #285638;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 7px 0;
+    transition: 0.3s ease;
+}
+
+.basc-calendar-actions a i {
+    color: #b18742;
+    font-size: 17px;
+}
+
+.basc-calendar-actions a:hover {
+    color: #a77c38;
+    transform: translateX(5px);
+}
+
+
+/* FOOTER */
+
+.basc-calendar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.basc-calendar-footer i {
+    color: #a77c38;
+    font-size: 19px;
+}
+
+.basc-calendar-footer p {
+    color: #665b4b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
 /* ==========================================
-   SMALL MOBILE
+   BASCW UGC FEE REFUND POLICY
+   IVORY + DARK GREEN + EARTHY BROWN + GOLD
+   NO BOX DESIGN
 ========================================== */
 
-@media (max-width: 380px) {
+.basc-ugc-refund {
+    width: 100%;
+    padding:35px 10px;
+    background:white;
+    box-sizing: border-box;
+}
 
-    .disclosure-banner h1 {
-        font-size: 22px;
-    }
+.basc-ugc-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
-    .banner-label {
-        font-size: 9px;
-    }
 
-    .group-heading h3 {
-        font-size: 18px;
-    }
+/* HEADING */
 
-    .contact-group {
-        padding: 12px 9px;
-    }
+.basc-ugc-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.basc-ugc-heading > span {
+    color: #a77c38;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.basc-ugc-heading h2 {
+    color: #285638;
+    font-size: 35px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.basc-ugc-line {
+    width: 75px;
+    height: 3px;
+    background: #c49a48;
+    margin: 17px auto;
+}
+
+.basc-ugc-heading p {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #514b40;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* POLICY CONTENT */
+
+.basc-ugc-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 25px 10px 35px;
+    border-bottom: 1px solid #e7ddc8;
+}
+
+.basc-ugc-icon {
+    min-width: 65px;
+    color: #a77c38;
+    font-size: 48px;
+    padding-top: 8px;
+}
+
+.basc-ugc-details {
+    flex: 1;
+}
+
+.basc-ugc-label {
+    display: block;
+    color: #a77c38;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.basc-ugc-details h3 {
+    color: #285638;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+.basc-ugc-details p {
+    color: #514b40;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 0 12px;
+}
+
+
+/* PDF DOCUMENT */
+
+.basc-ugc-document {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 30px 10px;
+    border-bottom: 1px solid #e7ddc8;
+    transition: 0.3s ease;
+}
+
+.basc-ugc-pdf-icon {
+    color: #a77c38;
+    font-size: 38px;
+}
+
+.basc-ugc-pdf-info {
+    flex: 1;
+}
+
+.basc-ugc-pdf-info h4 {
+    color: #285638;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 7px;
+}
+
+.basc-ugc-pdf-info span {
+    color: #806047;
+    font-size: 15px;
+}
+
+
+/* ACTION LINKS */
+
+.basc-ugc-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.basc-ugc-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #285638;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 8px 0;
+    transition: 0.3s ease;
+}
+
+.basc-ugc-actions a i {
+    color: #b18742;
+    font-size: 17px;
+}
+
+.basc-ugc-actions a:hover {
+    color: #a77c38;
+    transform: translateY(-3px);
+}
+
+
+/* FOOTER */
+
+.basc-ugc-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 30px;
+}
+
+.basc-ugc-footer i {
+    color: #a77c38;
+    font-size: 19px;
+}
+
+.basc-ugc-footer p {
+    color: #514b40;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.basc-ugc-footer a {
+    color: #285638;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: #c49a48;
+    text-underline-offset: 4px;
+}
+
+.basc-ugc-footer a:hover {
+    color: #a77c38;
+}
+
+
+/* ==========================================
+   BASCW NIRF REPORTS
+   RED + PINK + WHITE THEME
+   NO BLUE / NO SERIAL NUMBERS
+========================================== */
+
+.basc-nirf {
+    width: 100%;
+    padding: 75px 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.basc-nirf * {
+    box-sizing: border-box;
+}
+
+.basc-nirf-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* MAIN HEADING */
+
+.basc-nirf-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 55px;
+}
+
+.basc-nirf-heading > span {
+    color: #c21845;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.basc-nirf-heading h2 {
+    color: #a5123e;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.basc-nirf-line {
+    width: 75px;
+    height: 4px;
+    background: #ee8baa;
+    margin: 17px auto;
+    border-radius: 5px;
+}
+
+.basc-nirf-heading p {
+    color: #333333;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* YEAR SECTION */
+
+.basc-nirf-year {
+    padding: 0 0 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #f1dce3;
+}
+
+.basc-nirf-year:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* YEAR HEADING */
+
+.basc-nirf-year-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 23px;
+}
+
+.basc-nirf-year-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fde8ef;
+    color: #c21845;
+    font-size: 23px;
+    border-radius: 50%;
+}
+
+.basc-nirf-year-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.basc-nirf-year-text h3 {
+    color: #a5123e;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0 0 5px;
+}
+
+.basc-nirf-year-text p {
+    color: #666666;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* LATEST BADGE */
+
+.basc-nirf-latest {
+    color: #ffffff;
+    background: #c21845;
+    padding: 8px 17px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+/* PDF DOCUMENT GRID */
+
+.basc-nirf-documents {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    padding-left: 73px;
+}
+
+/* DOCUMENT */
+
+.basc-nirf-document {
+     min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 19px;
+    background: #fcfff7;
+    border-bottom: 3px solid #0d743d;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.basc-nirf-document:hover {
+    background: #c21845;
+    border-bottom-color: #f5b5ca;
+    transform: translateY(-4px);
+}
+
+/* PDF ICON */
+
+.basc-nirf-pdf-icon {
+    width: 49px;
+    height: 49px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fde4ec;
+    color: #c21845;
+    font-size: 25px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.basc-nirf-document:hover .basc-nirf-pdf-icon {
+    background: #ffffff;
+    color: #c21845;
+}
+
+/* DOCUMENT DETAILS */
+
+.basc-nirf-document-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.basc-nirf-document-info h4 {
+    color: #a5123e;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 0 0 5px;
+    transition: 0.3s ease;
+}
+
+.basc-nirf-document-info p {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    transition: 0.3s ease;
+}
+
+.basc-nirf-document:hover .basc-nirf-document-info h4,
+.basc-nirf-document:hover .basc-nirf-document-info p {
+    color: #ffffff;
+}
+
+/* DOWNLOAD */
+
+.basc-nirf-download {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #c21845;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.basc-nirf-download span {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.basc-nirf-document:hover .basc-nirf-download {
+    color: #ffffff;
+}
+
+/* PENDING DOCUMENT */
+
+.basc-nirf-pending {
+    cursor: default;
+    opacity: 0.7;
+    border-bottom-color: #e7cbd5;
+}
+
+.basc-nirf-pending:hover {
+    background: #fff7fa;
+    transform: none;
+}
+
+.basc-nirf-pending:hover .basc-nirf-document-info h4 {
+    color: #a5123e;
+}
+
+.basc-nirf-pending:hover .basc-nirf-document-info p {
+    color: #777777;
+}
+
+.basc-nirf-pending-text {
+    flex-shrink: 0;
+    color: #c21845;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.basc-nirf-document:focus-visible {
+    outline: 3px solid #c21845;
+    outline-offset: 4px;
 }

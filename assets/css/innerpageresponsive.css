@@ -11210,3 +11210,552 @@
         gap: 10px;
     }
 }
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .disclosure-banner {
+        min-height: 225px;
+        padding: 45px 6%;
+    }
+
+    .disclosure-banner h1 {
+        font-size: 30px;
+    }
+
+    .disclosure-content,
+    .disclosure-intro,
+    .disclosure-bottom {
+        width: 92%;
+    }
+
+    .disclosure-table th,
+    .disclosure-table td {
+        padding: 12px;
+    }
+
+    .action-column {
+        width: 160px;
+    }
+
+    .contact-group {
+        padding: 17px;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .disclosure-banner {
+        min-height: 195px;
+        padding: 35px 6%;
+    }
+
+    .disclosure-banner h1 {
+        font-size: 25px;
+    }
+
+    .disclosure-banner p {
+        font-size: 15px;
+    }
+
+    .banner-label {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+    }
+
+    .banner-circle-one {
+        right: -160px;
+    }
+
+    .banner-circle-two {
+        right: -110px;
+    }
+
+    .banner-circle-three {
+        right: -60px;
+    }
+
+    .disclosure-intro {
+        margin: 27px auto 23px;
+    }
+
+    .disclosure-intro h2 {
+        font-size: 22px;
+    }
+
+    .disclosure-intro p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .disclosure-content {
+        width: 94%;
+    }
+
+    .disclosure-group {
+        margin-bottom: 27px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #a56d3b #f8eeee;
+    }
+
+    .group-heading {
+        gap: 12px;
+        padding: 10px 0 13px;
+    }
+
+    .group-number {
+        min-width: 43px;
+        height: 43px;
+        font-size: 14px;
+    }
+
+    .group-heading h3 {
+        font-size: 19px;
+    }
+
+    .group-heading p {
+        font-size: 13px;
+    }
+
+    .disclosure-table {
+        min-width: 560px;
+    }
+
+    .disclosure-table th {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .disclosure-table td {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .disclosure-link {
+        font-size: 14px;
+    }
+
+    .contact-group {
+        padding: 15px 12px;
+    }
+
+    .contact-details {
+        gap: 12px;
+        padding: 13px 3px;
+    }
+
+    .contact-icon {
+        min-width: 37px;
+        height: 37px;
+        font-size: 18px;
+    }
+
+    .contact-details h4 {
+        font-size: 16px;
+    }
+
+    .contact-details p {
+        font-size: 16px;
+    }
+
+    .map-link {
+        margin-left: 3px;
+        font-size: 14px;
+    }
+
+    .disclosure-bottom {
+        width: 94%;
+        padding: 14px 8px;
+    }
+
+    .disclosure-bottom p {
+        font-size: 13px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+
+    .disclosure-banner h1 {
+        font-size: 22px;
+    }
+
+    .banner-label {
+        font-size: 9px;
+    }
+
+    .group-heading h3 {
+        font-size: 18px;
+    }
+
+    .contact-group {
+        padding: 12px 9px;
+    }
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 850px) {
+
+    .basc-calendar-item {
+        grid-template-columns: 75px 1fr;
+        gap: 20px;
+    }
+
+    .basc-calendar-actions {
+        grid-column: 2;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 576px) {
+
+    .basc-academic-calendar {
+        padding: 50px 16px;
+    }
+
+    .basc-calendar-heading {
+        margin-bottom: 35px;
+    }
+
+    .basc-calendar-heading h2 {
+        font-size: 28px;
+    }
+
+    .basc-calendar-heading p {
+        font-size: 16px;
+    }
+
+    .basc-calendar-item {
+        grid-template-columns: 55px 1fr;
+        gap: 15px;
+        padding: 25px 5px;
+    }
+
+    .basc-calendar-year i {
+        font-size: 28px;
+    }
+
+    .basc-calendar-content h3 {
+        font-size: 19px;
+    }
+
+    .basc-calendar-content p {
+        font-size: 16px;
+    }
+
+    .basc-calendar-tag {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .basc-calendar-actions {
+        grid-column: 2;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+    }
+
+    .basc-calendar-actions a {
+        font-size: 14px;
+    }
+
+    .basc-calendar-footer {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 350px) {
+
+    .basc-calendar-heading h2 {
+        font-size: 25px;
+    }
+
+    .basc-calendar-content h3 {
+        font-size: 17px;
+    }
+
+    .basc-calendar-actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 850px) {
+
+    .basc-ugc-document {
+        flex-wrap: wrap;
+    }
+
+    .basc-ugc-actions {
+        width: 100%;
+        padding-left: 60px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 576px) {
+
+    .basc-ugc-refund {
+        padding: 50px 16px;
+    }
+
+    .basc-ugc-heading {
+        margin-bottom: 35px;
+    }
+
+    .basc-ugc-heading h2 {
+        font-size: 27px;
+    }
+
+    .basc-ugc-heading p {
+        font-size: 16px;
+    }
+
+    .basc-ugc-content {
+        gap: 15px;
+        padding: 20px 5px 25px;
+    }
+
+    .basc-ugc-icon {
+        min-width: 42px;
+        font-size: 32px;
+    }
+
+    .basc-ugc-details h3 {
+        font-size: 20px;
+    }
+
+    .basc-ugc-details p {
+        font-size: 16px;
+    }
+
+    .basc-ugc-document {
+        gap: 15px;
+        padding: 25px 5px;
+    }
+
+    .basc-ugc-pdf-icon {
+        font-size: 30px;
+    }
+
+    .basc-ugc-pdf-info h4 {
+        font-size: 17px;
+    }
+
+    .basc-ugc-actions {
+        padding-left: 45px;
+        flex-wrap: wrap;
+        gap: 15px 22px;
+    }
+
+    .basc-ugc-actions a {
+        font-size: 14px;
+    }
+
+    .basc-ugc-footer {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 350px) {
+
+    .basc-ugc-heading h2 {
+        font-size: 24px;
+    }
+
+    .basc-ugc-content {
+        gap: 10px;
+    }
+
+    .basc-ugc-icon {
+        min-width: 32px;
+        font-size: 27px;
+    }
+
+    .basc-ugc-document {
+        flex-wrap: wrap;
+    }
+
+    .basc-ugc-actions {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .basc-nirf {
+        padding: 60px 20px;
+    }
+
+    .basc-nirf-documents {
+        padding-left: 0;
+    }
+
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .basc-nirf {
+        padding: 45px 15px;
+    }
+
+    .basc-nirf-heading {
+        margin-bottom: 40px;
+    }
+
+    .basc-nirf-heading h2 {
+        font-size: 28px;
+    }
+
+    .basc-nirf-heading p {
+        font-size: 16px;
+    }
+
+    .basc-nirf-year {
+        margin-bottom: 28px;
+        padding-bottom: 25px;
+    }
+
+    .basc-nirf-year-heading {
+        gap: 13px;
+        flex-wrap: wrap;
+    }
+
+    .basc-nirf-year-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .basc-nirf-year-text h3 {
+        font-size: 22px;
+    }
+
+    .basc-nirf-year-text p {
+        font-size: 13px;
+    }
+
+    .basc-nirf-latest {
+        margin-left: 58px;
+        margin-top: -5px;
+    }
+
+    .basc-nirf-documents {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .basc-nirf-document {
+        padding: 15px 12px;
+        gap: 11px;
+    }
+
+    .basc-nirf-pdf-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+
+    .basc-nirf-document-info h4 {
+        font-size: 14px;
+    }
+
+    .basc-nirf-document-info p {
+        font-size: 12px;
+    }
+
+    .basc-nirf-download {
+        font-size: 15px;
+    }
+
+    .basc-nirf-download span {
+        font-size: 10px;
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+
+    .basc-nirf-heading h2 {
+        font-size: 25px;
+    }
+
+    .basc-nirf-year-text h3 {
+        font-size: 20px;
+    }
+
+    .basc-nirf-document {
+        gap: 8px;
+        padding: 12px 9px;
+    }
+
+    .basc-nirf-pdf-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 19px;
+    }
+
+    .basc-nirf-document-info h4 {
+        font-size: 13px;
+    }
+
+    .basc-nirf-pending-text {
+        font-size: 10px;
+    }
+
+}
