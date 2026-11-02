@@ -19,6 +19,43 @@ a {
     text-decoration: none;
 }
 
+/* =========================================
+   FACULTY PHOTO HOVER ZOOM
+========================================= */
+
+.td-table td {
+    overflow: visible;
+}
+
+.td-table td img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Zoom on Hover */
+.td-table td img:hover {
+    transform: scale(2.5);
+    z-index: 100;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+}
+
+/* Keep zoomed image above table */
+.td-table tr {
+    position: relative;
+}
+
+.td-table-wrap {
+    overflow: visible;
+}
 
 /* =====================================================
    COMMON BREADCRUMB - BOTTOM RIGHT ALIGNMENT
