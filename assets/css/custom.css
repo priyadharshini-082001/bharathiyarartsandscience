@@ -583,7 +583,6 @@ a {
 .nav-dropdown:hover > .submenu,
 .nav-dropdown:focus-within > .submenu,
 .nav-dropdown.open > .submenu {
-    opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
