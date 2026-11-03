@@ -9751,9 +9751,11 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 
 
+
 /* =========================================================
    BASCW - PHYSICAL EDUCATION
-   PROFESSIONAL MILD COLOUR DESIGN
+   COMPLETE RESPONSIVE DESIGN
+   Desktop | Laptop | Tablet | Mobile
 ========================================================= */
 
 .basc-physical-page {
@@ -9764,9 +9766,17 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     --physical-text: #292929;
 
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     color: var(--physical-text);
     background: #ffffff;
+    box-sizing: border-box;
+}
+
+.basc-physical-page *,
+.basc-physical-page *::before,
+.basc-physical-page *::after {
+    box-sizing: border-box;
 }
 
 .basc-physical-container {
@@ -9787,7 +9797,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 .basc-physical-heading > span {
     display: inline-block;
     color: var(--physical-red);
-    font-size:20px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 9px;
@@ -9814,7 +9824,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.8;
-    color:black;
+    color: #000;
     text-align: center;
 }
 
@@ -9840,6 +9850,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 .basc-physical-intro-image {
     position: relative;
+    width: 100%;
     height: 350px;
     overflow: hidden;
     border-radius: 12px;
@@ -9867,11 +9878,15 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     font-size: 15px;
     font-weight: 700;
     text-align: center;
-    background: linear-gradient(transparent, rgba(4, 25, 55, 0.85));
+    background: linear-gradient(
+        transparent,
+        rgba(4, 25, 55, 0.85)
+    );
 }
 
 .basc-physical-intro-text {
     padding: 12px 10px;
+    min-width: 0;
 }
 
 .basc-physical-small-title {
@@ -9884,7 +9899,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 }
 
 .basc-physical-intro-text p {
-    color: black;
+    color: #000000;
     font-size: 17px;
     line-height: 1.85;
     text-align: justify;
@@ -9907,6 +9922,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     justify-content: center;
     gap: 28px;
     max-width: 800px;
+    width: 100%;
     margin: auto;
     padding: 25px 30px;
     background: #ffffff;
@@ -9932,6 +9948,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 .basc-physical-contact-details {
     flex: 1;
+    min-width: 0;
 }
 
 .basc-physical-label {
@@ -9962,6 +9979,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     font-size: 15px;
     line-height: 1.7;
     margin: 4px 0;
+    overflow-wrap: anywhere;
 }
 
 .basc-physical-contact-details p i {
@@ -9982,6 +10000,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     font-weight: 650;
     text-decoration: none;
     transition: color 0.3s ease;
+    overflow-wrap: anywhere;
 }
 
 .basc-physical-phone a:hover {
@@ -10015,8 +10034,7 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 
 /* =========================================================
-   MEDIUM-SIZE SPORTS PHOTOGRAPHS
-   ALL IMAGES SAME SIZE
+   SPORTS GRID
 ========================================================= */
 
 .basc-sports-grid {
@@ -10026,11 +10044,13 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 }
 
 .basc-sport-item {
+    min-width: 0;
     text-align: center;
     padding: 22px 15px 20px;
     background: #ffffff;
     border-radius: 12px;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease,
+                background 0.3s ease;
 }
 
 .basc-sport-item:hover {
@@ -10038,10 +10058,11 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     background: #fbf8f1;
 }
 
-/* Medium image size */
 .basc-sport-item img {
-    width: 200px;
-    height:200px;
+    width: 190px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
     display: block;
     margin: 0 auto 15px;
     object-fit: cover;
@@ -10063,7 +10084,9 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     color: var(--physical-blue);
     font-size: 17px;
     font-weight: 700;
+    line-height: 1.5;
     margin: 0;
+    overflow-wrap: anywhere;
 }
 
 
@@ -10167,7 +10190,9 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 }
 
 
-/* CLICKABLE YEAR LINKS */
+/* =========================================================
+   SPORTS QUOTA YEAR LINKS
+========================================================= */
 
 .basc-quota-years {
     display: grid;
@@ -10215,208 +10240,6 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
     outline-offset: 4px;
 }
 
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 991px) {
-
-    .basc-physical-intro-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-
-    .basc-physical-intro-image {
-        height: 320px;
-    }
-
-    .basc-sports-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .basc-quota-years {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE / TABLET
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .basc-physical-container {
-        width: 92%;
-    }
-
-    .basc-physical-intro,
-    .basc-physical-facilities,
-    .basc-physical-outdoor,
-    .basc-physical-achievements,
-    .basc-physical-quota {
-        padding: 48px 0;
-    }
-
-    .basc-physical-heading {
-        margin-bottom: 28px;
-    }
-
-    .basc-physical-heading h2 {
-        font-size: 25px;
-    }
-
-    .basc-physical-intro-content {
-        grid-template-columns: 1fr;
-        gap: 22px;
-        padding: 14px;
-    }
-
-    .basc-physical-intro-image {
-        height: 280px;
-    }
-
-    .basc-physical-intro-text {
-        padding: 5px 4px;
-    }
-
-    .basc-physical-intro-text p,
-    .basc-quota-description p {
-        font-size: 16px;
-    }
-
-    .basc-physical-contact-content {
-        gap: 18px;
-        padding: 20px;
-    }
-
-    .basc-physical-contact-photo {
-        width: 105px;
-        height: 130px;
-        flex-basis: 105px;
-    }
-
-    .basc-physical-contact-details h3 {
-        font-size: 20px;
-    }
-
-    .basc-sports-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
-    }
-
-    .basc-sport-item {
-        padding: 18px 10px;
-    }
-
-    /* Medium-sized photos on tablet */
-    .basc-sport-item img {
-        width: 115px;
-        height: 115px;
-    }
-
-    .basc-achievement-image {
-        width: 195px;
-        height: 225px;
-        flex-basis: 195px;
-    }
-
-    .basc-quota-years {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .basc-physical-heading h2 {
-        font-size: 22px;
-    }
-
-    .basc-physical-heading > span {
-        font-size: 11px;
-    }
-
-    .basc-physical-intro-image {
-        height: 235px;
-    }
-
-    .basc-physical-contact-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .basc-physical-contact-photo {
-        width: 105px;
-        height: 130px;
-        flex-basis: auto;
-    }
-
-    .basc-physical-phone {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .basc-physical-contact-details p {
-        font-size: 14px;
-    }
-
-    /* Medium image size on mobile */
-    .basc-sport-item img {
-        width: 105px;
-        height: 105px;
-    }
-
-    .basc-sport-item h3 {
-        font-size: 15px;
-    }
-
-    .basc-achievement-image {
-        width: 180px;
-        height: 210px;
-        flex-basis: 180px;
-    }
-
-    .basc-quota-years {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .basc-quota-year {
-        min-height: 65px;
-    }
-
-    .basc-quota-year span {
-        font-size: 21px;
-    }
-
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .basc-achievement-track {
-        animation: none;
-    }
-
-    .basc-sport-item,
-    .basc-sport-item img,
-    .basc-achievement-image img {
-        transition: none;
-    }
-
-}
 
 /* ==========================================
    BASCW SCHOLARSHIP PAGE
