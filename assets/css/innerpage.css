@@ -21413,7 +21413,6 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 /* DOCUMENT ROW */
 
 .rti-document-action {
-    display: flex;
     align-items: center;
     gap: 20px;
     padding: 25px 0;
