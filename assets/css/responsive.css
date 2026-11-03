@@ -1680,14 +1680,15 @@
 
         min-height: 48px;
 
-        padding: 0 14px;
+        padding: 0 9px;
 
         justify-content: flex-start;
 
-        background:crimson;
+        background:white;
 
-        color: #ffffff;
-        font-size: 14px;
+        color:#250b79;
+        font-size: 15px;
+        font-weight: 600;
     }
 
 

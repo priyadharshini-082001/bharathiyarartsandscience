@@ -142,128 +142,133 @@
         </header>
 
 
-
-        <!-- =====================================================
-         HEADER 3 - NAVIGATION
-    ====================================================== -->
+        <!-- =========================================================
+     BASCW HEADER 3 - RESPONSIVE NAVIGATION
+     Bharathiyar Arts & Science College for Women
+========================================================== -->
 
         <div class="navbar-wrapper">
 
             <div class="header-container navbar-inner">
 
-                <nav class="navbar" id="navbarMenu">
+                <!-- MOBILE BACKDROP -->
+                <div class="nav-backdrop" id="navBackdrop"></div>
+
+                <!-- NAVIGATION -->
+                <nav class="navbar" id="navbarMenu" aria-label="Main navigation">
+
+                    <!-- MOBILE DRAWER HEADER -->
+                    <div class="mobile-menu-header">
+
+                        <div class="college-logo">
+
+                            <img src="assets/logo/logo.jpeg" alt="Bharathiyar Arts
+                         and Science College for Women">
+
+                        </div>
+
+                        <button type="button" id="bascMobileClose" aria-label="Close navigation menu">
+
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                    </div>
 
                     <!-- HOME -->
-
                     <a href="index.html">
                         <i class="fas fa-house"></i>
                         Home
                     </a>
 
-
-                    <!-- ABOUT -->
-
-
+                    <!-- ABOUT US -->
                     <div class="nav-dropdown">
 
-                        <a href="about.html" class="nav-link">
-                            About Us
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                        <div class="nav-item-row">
+                            <a href="about.html">About Us</a>
+
+                            <button type="button" class="submenu-toggle" aria-label="Open About Us submenu"
+                                aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
 
                         <div class="submenu">
 
-                            <a href="about.html">
-                                College Profile and History
-                            </a>
+                            <a href="about.html">College Profile and History</a>
 
                             <a href="vision-mission.html">
                                 Vision, Mission, Motto and Quality Policy
                             </a>
 
-                            <!-- LEADERSHIP SUBMENU -->
+                            <!-- LEADERSHIP -->
                             <div class="nav-dropdown-sub">
 
-                                <a class="submenu-link">
-                                    Leadership
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">Leadership</a>
+
+                                    <button type="button" class="submenu-toggle" aria-label="Open Leadership submenu"
+                                        aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
 
                                 <div class="submenu-child">
-
-                                    <a href="chairman-message.html">
-                                        Chairman's Message
-                                    </a>
-
-                                    <a href="secretary-message.html">
-                                        Secretary's Message
-                                    </a>
-
-                                    <a href="treasurer-message.html">
-                                        Treasurer's Message
-                                    </a>
-
-                                    <div class="nav-dropdown-sub">
-                                        <a href="#" class="submenu-link">
-                                            Principal Message
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-
-                                        <!-- ARTS DEPARTMENTS -->
-                                        <div class="submenu-child">
-                                            <a href="princiawards.html">Principal Awards & Recognitions</a>
-                                        </div>
-                                    </div>
-
+                                    <a href="chairman-message.html">Chairman's Message</a>
+                                    <a href="secretary-message.html">Secretary's Message</a>
+                                    <a href="treasurer-message.html">Treasurer's Message</a>
+                                    <a href="principal-message.html">Principal's Message</a>
+                                    <a href="princiawards.html">Principal Awards &amp; Recognitions</a>
                                 </div>
 
                             </div>
 
-                            <a href="board-of-trustees.html">
-                                Board of Trustees
-                            </a>
-
-                            <a href="governing-body.html">
-                                Governing Body
-                            </a>
-
-                            <a href="organogram.html">
-                                Organogram
-                            </a>
+                            <a href="board-of-trustees.html">Board of Trustees</a>
+                            <a href="governing-body.html">Governing Body</a>
+                            <a href="organogram.html">Organogram</a>
 
                         </div>
-
                     </div>
 
-
-                    <!-- ACADEMIC DROPDOWN -->
+                    <!-- ACADEMIC -->
                     <div class="nav-dropdown">
 
-                        <a href="academics.html" class="nav-link">
-                            Academic
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                        <div class="nav-item-row">
+                            <a href="academics.html">Academic</a>
+
+                            <button type="button" class="submenu-toggle" aria-label="Open Academic submenu"
+                                aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
 
                         <div class="submenu">
 
                             <!-- DEPARTMENTS -->
                             <div class="nav-dropdown-sub">
 
-                                <a href="#" class="submenu-link">
-                                    Departments
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">Departments</a>
+
+                                    <button type="button" class="submenu-toggle" aria-label="Open Departments submenu"
+                                        aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
 
                                 <div class="submenu-child">
 
                                     <!-- ARTS -->
                                     <div class="nav-dropdown-sub">
-                                        <a href="#" class="submenu-link">
-                                            Arts
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
 
-                                        <!-- ARTS DEPARTMENTS -->
+                                        <div class="nav-item-row">
+                                            <a href="#" class="submenu-link">Arts</a>
+
+                                            <button type="button" class="submenu-toggle" aria-label="Open Arts submenu"
+                                                aria-expanded="false">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+
                                         <div class="submenu-child">
                                             <a href="tamil.html">Tamil</a>
                                             <a href="english.html">English</a>
@@ -271,16 +276,21 @@
                                             <a href="business-administration.html">Business Administration</a>
                                             <a href="history.html">History</a>
                                         </div>
+
                                     </div>
 
                                     <!-- SCIENCE -->
                                     <div class="nav-dropdown-sub">
-                                        <a href="#" class="submenu-link">
-                                            Science
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
 
-                                        <!-- SCIENCE DEPARTMENTS -->
+                                        <div class="nav-item-row">
+                                            <a href="#" class="submenu-link">Science</a>
+
+                                            <button type="button" class="submenu-toggle"
+                                                aria-label="Open Science submenu" aria-expanded="false">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+
                                         <div class="submenu-child">
                                             <a href="chemistry.html">Chemistry</a>
                                             <a href="computer-science.html">Computer Science</a>
@@ -290,16 +300,21 @@
                                             <a href="physics.html">Physics</a>
                                             <a href="statistics.html">Statistics</a>
                                         </div>
+
                                     </div>
 
                                     <!-- BIOLOGICAL SCIENCE -->
                                     <div class="nav-dropdown-sub">
-                                        <a href="#" class="submenu-link">
-                                            Biological Science
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
 
-                                        <!-- BIOLOGICAL SCIENCE DEPARTMENTS -->
+                                        <div class="nav-item-row">
+                                            <a href="#" class="submenu-link">Biological Science</a>
+
+                                            <button type="button" class="submenu-toggle"
+                                                aria-label="Open Biological Science submenu" aria-expanded="false">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+
                                         <div class="submenu-child">
                                             <a href="botany.html">Botany</a>
                                             <a href="biotechnology.html">Biotechnology</a>
@@ -307,220 +322,159 @@
                                             <a href="nutrition-dietetics.html">Nutrition &amp; Dietetics</a>
                                             <a href="zoology.html">Zoology</a>
                                         </div>
+
                                     </div>
 
                                 </div>
                             </div>
 
-                            <!-- EXISTING LINKS -->
-                            <a href="academic-council.html">
-                                Academic Council
-                            </a>
-
-                            <a href="board-of-studies.html">
-                                Board of Studies
-                            </a>
+                            <a href="academic-council.html">Academic Council</a>
+                            <a href="board-of-studies.html">Board of Studies</a>
 
                             <!-- INSTITUTIONAL DEVELOPMENT -->
                             <div class="nav-dropdown-sub">
 
-                                <a class="submenu-link" href="#">
-                                    Institutional Development
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">Institutional Development</a>
+
+                                    <button type="button" class="submenu-toggle"
+                                        aria-label="Open Institutional Development submenu" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
 
                                 <div class="submenu-child">
-
-                                    <a href="institutional-development-plan.html">
-                                        Development Plan
-                                    </a>
-
+                                    <a href="institutional-development-plan.html">Development Plan</a>
                                 </div>
+
                             </div>
 
-                            <!-- REPORTS & ACCOUNTS -->
+                            <!-- REPORTS -->
                             <div class="nav-dropdown-sub">
 
-                                <a class="submenu-link" href="#">
-                                    Reports &amp; Accounts
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">Reports &amp; Accounts</a>
+
+                                    <button type="button" class="submenu-toggle"
+                                        aria-label="Open Reports and Accounts submenu" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
 
                                 <div class="submenu-child">
-
-                                    <a href="annual-reports.html">
-                                        Annual Reports
-                                    </a>
-
-                                    <a href="annual-accounts.html">
-                                        Annual Accounts
-                                    </a>
-
+                                    <a href="annual-reports.html">Annual Reports</a>
+                                    <a href="annual-accounts.html">Annual Accounts</a>
                                 </div>
+
                             </div>
 
                             <!-- COLLEGE COMMITTEES -->
                             <div class="nav-dropdown-sub">
 
-                                <a class="submenu-link" href="#">
-                                    College Committees
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">College Committees</a>
+
+                                    <button type="button" class="submenu-toggle"
+                                        aria-label="Open College Committees submenu" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
 
                                 <div class="submenu-child">
-
-                                    <a href="college-committee-members.html">
-                                        Committee Members
-                                    </a>
-
-                                    <a href="college-committee-minutes.html">
-                                        Committee Minutes
-                                    </a>
-
+                                    <a href="college-committee-members.html">Committee Members</a>
+                                    <a href="college-committee-minutes.html">Committee Minutes</a>
                                 </div>
+
                             </div>
-                            <a href="academic-calendar.html">
-                                Academic Calendar
-                            </a>
+
+                            <!-- RESEARCH -->
+                            <div class="nav-dropdown-sub">
+
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">Research</a>
+
+                                    <button type="button" class="submenu-toggle" aria-label="Open Research submenu"
+                                        aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+
+                                <div class="submenu-child">
+                                    <a href="research-objectives.html">Objectives</a>
+                                    <a href="publications.html">Publications</a>
+                                    <a href="conferences-seminars.html">Conference &amp; Seminars</a>
+                                    <a href="incubation-centre.html">Incubation Centre</a>
+                                    <a href="research-scholars.html">Research Scholars</a>
+                                    <a href="research-projects.html">Research Projects</a>
+                                    <a href="research-collaborations.html">Research Collaboration</a>
+                                    <a href="intellectual-property-rights.html">Intellectual Property Rights</a>
+                                </div>
+
+                            </div>
+
+                            <a href="academic-calendar.html">Academic Calendar</a>
 
                         </div>
                     </div>
 
                     <!-- ADMISSIONS -->
-
                     <div class="nav-dropdown">
 
-                        <a href="admissions.html">
-                            Admissions
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                        <div class="nav-item-row">
+                            <a href="admissions.html">Admissions</a>
+
+                            <button type="button" class="submenu-toggle" aria-label="Open Admissions submenu"
+                                aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
 
                         <div class="submenu">
-
-                            <div class="nav-dropdown-sub">
-
-                                <a class="submenu-link" href="#">
-                                    Research
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-
-                                <!-- RESEARCH LINKS -->
-                                <div class="submenu-child">
-                                    <a href="research-objectives.html">
-                                        Objectives
-                                    </a>
-
-                                    <a href="publications.html">
-                                        Publications
-                                    </a>
-
-                                    <a href="conferences-seminars.html">
-                                        Conference &amp; Seminars
-                                    </a>
-
-                                    <a href="incubation-centre.html">
-                                        Incubation Centre
-                                    </a>
-
-                                    <a href="research-scholars.html">
-                                        Research Scholars
-                                    </a>
-
-                                    <a href="research-projects.html">
-                                        Research Projects
-                                    </a>
-
-                                    <a href="research-collaborations.html">
-                                        Research Collaboration
-                                    </a>
-
-                                    <a href="intellectual-property-rights.html">
-                                        Intellectual Property Rights
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <!-- ADMISSION LINKS -->
-                            <a href="courses-offered.html">
-                                Courses Offered
-                            </a>
-
-                            <a href="admission-process.html">
-                                Admission Process
-                            </a>
-
-                            <a href="eligibility-criteria.html">
-                                Eligibility Criteria
-                            </a>
-
-                            <a href="scholarships.html">
-                                Scholarships
-                            </a>
-
-                            <a href="ugc-fees-refund-policy.html">
-                                UGC Fees Refund Policy
-                            </a>
-
+                            <a href="courses-offered.html">Courses Offered</a>
+                            <a href="admission-process.html">Admission Process</a>
+                            <a href="eligibility-criteria.html">Eligibility Criteria</a>
+                            <a href="scholarships.html">Scholarships</a>
+                            <a href="ugc-fees-refund-policy.html">UGC Fees Refund Policy</a>
                         </div>
 
                     </div>
 
+                    <!-- COE -->
+                    <a href="coe.html">COE</a>
 
-                    <!-- DEPARTMENTS -->
-
-
-                    <a href="coe.html">
-                        COE
-                    </a>
-
-
-
-                    <!-- STUDENT LIFE DROPDOWN -->
+                    <!-- STUDENT ACTIVITY -->
                     <div class="nav-dropdown">
 
-                        <a href="#" class="nav-link">
-                            Student Activity
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                        <div class="nav-item-row">
+                            <a href="#">Student Activity</a>
+
+                            <button type="button" class="submenu-toggle" aria-label="Open Student Activity submenu"
+                                aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
 
                         <div class="submenu">
-                            <!-- STUDENT WELFARE SUBMENU -->
-                            <!-- STUDENT LIFE -->
-                            <a href="extention-activities.html">
-
-                                Extension Activities
-                            </a>
-
-                            <!-- STUDENT LIFE -->
-                            <a href="student-life.html">
-                                Student Life
-                            </a>
-
-                            <!-- CELLS AND CLUBS -->
-                            <a href="cells-and-clubs.html">
-                                Cells &amp; Clubs
-                            </a>
-
-                            <!-- COMMITTEES -->
-                            <a href="committees.html">
-                                Committees
-                            </a>
-                            <!-- COMMITTEES -->
-                            <a href="skill.html">
-                                Skill Developement Courses
-                            </a>
+                            <a href="extention-activities.html">Extension Activities</a>
+                            <a href="student-life.html">Student Life</a>
+                            <a href="cells-and-clubs.html">Cells &amp; Clubs</a>
+                            <a href="committees.html">Committees</a>
+                            <a href="skill.html">Skill Development Courses</a>
                         </div>
 
                     </div>
 
+                    <!-- IQAC -->
+                    <div class="nav-dropdown">
 
-                    <!-- IQAC DROPDOWN -->
-                    <div class="nav-dropdown iqac-dropdown">
+                        <div class="nav-item-row">
+                            <a href="#">IQAC</a>
 
-                        <a href="#" class="nav-link">
-                            IQAC <i class="fas fa-chevron-down"></i>
-                        </a>
+                            <button type="button" class="submenu-toggle" aria-label="Open IQAC submenu"
+                                aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
 
                         <div class="submenu">
 
@@ -530,71 +484,100 @@
 
                             <!-- IQAC MEETINGS -->
                             <div class="nav-dropdown-sub">
-                                <a href="#" class="submenu-link">
-                                    IQAC Meetings <i class="fas fa-chevron-right"></i>
-                                </a>
+
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">IQAC Meetings</a>
+
+                                    <button type="button" class="submenu-toggle" aria-label="Open IQAC Meetings submenu"
+                                        aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+
                                 <div class="submenu-child">
                                     <a href="iqac-minutes.html">Minutes of Meetings</a>
                                     <a href="iqac-action-taken-report.html">Action Taken Reports</a>
                                 </div>
+
                             </div>
 
-                            <!-- NAAC PEER TEAM REPORTS -->
+                            <!-- NAAC -->
                             <div class="nav-dropdown-sub">
-                                <a href="#" class="submenu-link">
-                                    NAAC - Peer Team Reports <i class="fas fa-chevron-right"></i>
-                                </a>
+
+                                <div class="nav-item-row">
+                                    <a href="#" class="submenu-link">NAAC - Peer Team Reports</a>
+
+                                    <button type="button" class="submenu-toggle" aria-label="Open NAAC Reports submenu"
+                                        aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+
                                 <div class="submenu-child">
                                     <a href="naac-cycle-1.html">Cycle 1</a>
                                     <a href="naac-cycle-2.html">Cycle 2</a>
                                 </div>
+
                             </div>
 
                             <a href="aqar.html">AQAR</a>
                             <a href="rti.html">RTI</a>
                             <a href="feedback.html">Feedback</a>
+
                             <!-- QUALITY INITIATIVES -->
                             <div class="nav-dropdown-sub">
-                                <a href="iqac-quality-initiatives.html" class="submenu-link">
-                                    Quality Initiatives <i class="fas fa-chevron-right"></i>
-                                </a>
+
+                                <div class="nav-item-row">
+                                    <a href="iqac-quality-initiatives.html" class="submenu-link">
+                                        Quality Initiatives
+                                    </a>
+
+                                    <button type="button" class="submenu-toggle"
+                                        aria-label="Open Quality Initiatives submenu" aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+
                                 <div class="submenu-child">
                                     <a href="best-practices.html">Best Practices</a>
                                     <a href="institutional-distinctiveness.html">Institutional Distinctiveness</a>
                                 </div>
+
                             </div>
 
                         </div>
                     </div>
 
+                    <!-- INFRASTRUCTURE -->
+                    <div class="nav-dropdown">
 
-                    <!-- INFRASTRUCTURE DROPDOWN -->
-                    <div class="nav-dropdown infrastructure-dropdown">
+                        <div class="nav-item-row">
+                            <a href="#">Infrastructure</a>
 
-                        <a href="#" class="nav-link">
-                            Infrastructure
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                            <button type="button" class="submenu-toggle" aria-label="Open Infrastructure submenu"
+                                aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
 
                         <div class="submenu">
-
                             <a href="academic-block.html">Academic Block</a>
-
                             <a href="administrative-block.html">Administrative Block</a>
-
                             <a href="laboratory.html">Laboratory</a>
-
                             <a href="auditorium-hall.html">Auditorium &amp; Hall</a>
-
                             <a href="library.html">Library</a>
 
-                            <!-- FACILITIES SUBMENU -->
+                            <!-- FACILITIES -->
                             <div class="nav-dropdown-sub">
 
-                                <a href="facilities.html" class="submenu-link">
-                                    Facilities
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
+                                <div class="nav-item-row">
+                                    <a href="facilities.html" class="submenu-link">Facilities</a>
+
+                                    <button type="button" class="submenu-toggle" aria-label="Open Facilities submenu"
+                                        aria-expanded="false">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
 
                                 <div class="submenu-child">
                                     <a href="hostel.html">Hostel</a>
@@ -605,62 +588,44 @@
                                 </div>
 
                             </div>
-
                         </div>
-
                     </div>
 
                     <!-- PLACEMENT -->
-                    <a href="placement.html">
-                        Placement
-                    </a>
+                    <a href="placement.html">Placement</a>
+
                     <!-- NIRF -->
-                    <a href="nirf.html">
-                        NIRF
-                    </a>
+                    <a href="nirf.html">NIRF</a>
 
-                    <!-- ALUMNAE DROPDOWN -->
-                    <div class="nav-dropdown alumnae-dropdown">
+                    <!-- ALUMNAE -->
+                    <div class="nav-dropdown">
 
-                        <a href="alumnae.html" class="nav-link">
-                            Alumnae
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                        <div class="nav-item-row">
+                            <a href="alumnae.html">Alumnae</a>
+
+                            <button type="button" class="submenu-toggle" aria-label="Open Alumnae submenu"
+                                aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
 
                         <div class="submenu">
-
-                            <!-- ABOUT ALUMNAE -->
-                            <a href="about-alumnae.html">
-                                About Alumnae
-                            </a>
-
-                            <!-- ALUMNAE COMMITTEE -->
-                            <a href="alumnae-committee.html">
-                                Committee
-                            </a>
-
-                            <!-- ALUMNAE EVENTS -->
-                            <a href="alumnae-events.html">
-                                Events
-                            </a>
-
-                            <!-- NOTABLE ALUMNAE -->
-                            <a href="notable-alumnae.html">
-                                Notable Alumnae
-                            </a>
-
-                            <!-- ALUMNAE REGISTRATION -->
-                            <a href="alumnae-registration.html">
-                                Alumnae Registration Form
-                            </a>
-
+                            <a href="about-alumnae.html">About Alumnae</a>
+                            <a href="alumnae-committee.html">Committee</a>
+                            <a href="alumnae-events.html">Events</a>
+                            <a href="notable-alumnae.html">Notable Alumnae</a>
+                            <a href="alumnae-registration.html">Alumnae Registration Form</a>
                         </div>
 
                     </div>
 
-
+                    <!-- SPORTS -->
                     <a href="sports.html">Sports</a>
-<!-- =========================================================
+
+
+
+
+                    <!-- =========================================================
      CALENDAR
 ========================================================= -->
 
@@ -670,7 +635,6 @@
                         <button class="calendar-btn" id="calendarBtn">
                             <i class="fa-regular fa-calendar-days"></i>
                         </button>
-
 
                         <!-- Calendar Popup -->
                         <div class="calendar-popup" id="calendarPopup">
@@ -1354,6 +1318,474 @@
         ========================================================= */
 
         renderCalendar();
+
+    </script>
+
+
+
+    </nav>
+
+    </div>
+
+    </div>
+
+    <script>
+
+        /* ==========================================================
+           BASCW HEADER 3 - COMPLETE NAVIGATION SCRIPT
+        ========================================================== */
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const wrapper = document.querySelector(".navbar-wrapper");
+            const navbar = document.getElementById("navbarMenu");
+            const menuToggle = document.getElementById("menuToggle");
+            const closeButton = document.getElementById("bascMobileClose");
+            const backdrop = document.getElementById("navBackdrop");
+
+            const mobileBreakpoint = 1100;
+
+            if (!wrapper || !navbar || !menuToggle || !backdrop) {
+                return;
+            }
+
+            let isMobile = window.innerWidth <= mobileBreakpoint;
+
+            /* ======================================================
+               STICKY NAVIGATION
+            ====================================================== */
+
+            const spacer = document.createElement("div");
+            spacer.className = "navbar-sticky-spacer";
+            spacer.hidden = true;
+
+            wrapper.parentNode.insertBefore(spacer, wrapper);
+
+            let navbarTop = 0;
+            let ticking = false;
+
+            function measureNavbar() {
+
+                if (wrapper.classList.contains("is-fixed")) {
+                    wrapper.classList.remove("is-fixed");
+                }
+
+                spacer.hidden = true;
+                spacer.style.height = "0px";
+
+                navbarTop =
+                    wrapper.getBoundingClientRect().top + window.scrollY;
+            }
+
+            function updateSticky() {
+
+                if (window.scrollY >= navbarTop) {
+
+                    if (!wrapper.classList.contains("is-fixed")) {
+                        spacer.style.height = wrapper.offsetHeight + "px";
+                        spacer.hidden = false;
+                        wrapper.classList.add("is-fixed");
+                    } else {
+                        spacer.style.height = wrapper.offsetHeight + "px";
+                    }
+
+                } else {
+
+                    wrapper.classList.remove("is-fixed");
+                    spacer.hidden = true;
+                    spacer.style.height = "0px";
+                }
+            }
+
+            function requestStickyUpdate() {
+
+                if (ticking) return;
+
+                ticking = true;
+
+                requestAnimationFrame(function () {
+                    updateSticky();
+                    ticking = false;
+                });
+            }
+
+            measureNavbar();
+            updateSticky();
+
+            window.addEventListener("scroll", requestStickyUpdate, {
+                passive: true
+            });
+
+            window.addEventListener("load", function () {
+                measureNavbar();
+                updateSticky();
+            });
+
+            /* ======================================================
+               MENU HELPERS
+            ====================================================== */
+
+            function setExpanded(button, expanded) {
+
+                if (!button) return;
+
+                button.setAttribute(
+                    "aria-expanded",
+                    String(expanded)
+                );
+            }
+
+            function closeAllSubmenus() {
+
+                navbar.querySelectorAll(
+                    ".nav-dropdown.open, .nav-dropdown-sub.open"
+                ).forEach(function (item) {
+                    item.classList.remove("open");
+                });
+
+                navbar.querySelectorAll(".submenu-toggle").forEach(function (button) {
+                    setExpanded(button, false);
+                });
+            }
+
+            function closeChildren(parent) {
+
+                parent.querySelectorAll(
+                    ".nav-dropdown.open, .nav-dropdown-sub.open"
+                ).forEach(function (child) {
+                    child.classList.remove("open");
+                });
+
+                parent.querySelectorAll(".submenu-toggle").forEach(function (button) {
+                    setExpanded(button, false);
+                });
+            }
+
+            /* ======================================================
+               OPEN MOBILE MENU
+            ====================================================== */
+
+            function openMobileMenu() {
+
+                if (!isMobile) return;
+
+                navbar.classList.add("mobile-open");
+                backdrop.classList.add("active");
+                wrapper.classList.add("menu-open");
+
+                document.body.classList.add("mobile-nav-active");
+
+                menuToggle.classList.add("active");
+                menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+
+                menuToggle.setAttribute("aria-expanded", "true");
+                menuToggle.setAttribute("aria-label", "Close navigation menu");
+
+            }
+
+            /* ======================================================
+               CLOSE MOBILE MENU
+            ====================================================== */
+
+            function closeMobileMenu() {
+
+                navbar.classList.remove("mobile-open");
+                backdrop.classList.remove("active");
+                wrapper.classList.remove("menu-open");
+
+                document.body.classList.remove("mobile-nav-active");
+
+                menuToggle.classList.remove("active");
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+                closeAllSubmenus();
+
+            }
+
+            /* ======================================================
+               HAMBURGER CLICK
+            ====================================================== */
+
+            menuToggle.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+                if (navbar.classList.contains("mobile-open")) {
+                    closeMobileMenu();
+                } else {
+                    openMobileMenu();
+                }
+
+            });
+
+            /* ======================================================
+               CLOSE BUTTON
+            ====================================================== */
+
+            if (closeButton) {
+
+                closeButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    closeMobileMenu();
+                });
+
+            }
+
+            /* ======================================================
+               BACKDROP CLICK
+            ====================================================== */
+
+            backdrop.addEventListener("click", function () {
+                closeMobileMenu();
+            });
+
+            /* ======================================================
+               MOBILE ACCORDION DROPDOWNS
+            ====================================================== */
+
+            navbar.addEventListener("click", function (event) {
+
+                const button = event.target.closest(".submenu-toggle");
+
+                if (!button || !navbar.contains(button)) return;
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (!isMobile) {
+
+                    const parent = button.closest(
+                        ".nav-dropdown, .nav-dropdown-sub"
+                    );
+
+                    if (!parent) return;
+
+                    const willOpen = !parent.classList.contains("open");
+
+                    parent.classList.toggle("open", willOpen);
+                    setExpanded(button, willOpen);
+
+                    return;
+                }
+
+                const parent = button.closest(
+                    ".nav-dropdown, .nav-dropdown-sub"
+                );
+
+                if (!parent) return;
+
+                const submenu = Array.from(parent.children).find(function (child) {
+
+                    return child.classList.contains("submenu") ||
+                        child.classList.contains("submenu-child");
+
+                });
+
+                if (!submenu) return;
+
+                const willOpen = !parent.classList.contains("open");
+
+                /* Close only sibling dropdowns */
+
+                const siblings = Array.from(parent.parentElement.children);
+
+                siblings.forEach(function (sibling) {
+
+                    if (sibling === parent) return;
+
+                    if (
+                        sibling.classList.contains("nav-dropdown") ||
+                        sibling.classList.contains("nav-dropdown-sub")
+                    ) {
+
+                        sibling.classList.remove("open");
+                        closeChildren(sibling);
+
+                        const siblingButton = sibling.querySelector(
+                            ":scope > .nav-item-row > .submenu-toggle"
+                        );
+
+                        setExpanded(siblingButton, false);
+                    }
+
+                });
+
+                /* Toggle selected dropdown */
+
+                if (!willOpen) {
+                    closeChildren(parent);
+                }
+
+                parent.classList.toggle("open", willOpen);
+
+                setExpanded(button, willOpen);
+
+                /* Keep opened submenu visible */
+
+                if (willOpen) {
+
+                    requestAnimationFrame(function () {
+
+                        const drawerRect = navbar.getBoundingClientRect();
+                        const itemRect = parent.getBoundingClientRect();
+
+                        if (
+                            itemRect.bottom >
+                            drawerRect.bottom - 25
+                        ) {
+                            navbar.scrollBy({
+                                top: itemRect.bottom - drawerRect.bottom + 40,
+                                behavior: "smooth"
+                            });
+                        }
+
+                    });
+
+                }
+
+            });
+
+            /* ======================================================
+               NORMAL NAVIGATION LINKS
+            ====================================================== */
+
+            navbar.addEventListener("click", function (event) {
+
+                const link = event.target.closest("a");
+
+                if (!link || !navbar.contains(link)) return;
+
+                const href = link.getAttribute("href");
+
+                if (!href || href === "#") {
+                    event.preventDefault();
+                    return;
+                }
+
+                if (isMobile) {
+                    closeMobileMenu();
+                }
+
+            });
+
+            /* ======================================================
+               ACTIVE PAGE DETECTION
+            ====================================================== */
+
+            function setActivePage() {
+
+                const currentPage =
+                    window.location.pathname.split("/").pop() || "index.html";
+
+                navbar.querySelectorAll("a").forEach(function (link) {
+
+                    const href = link.getAttribute("href");
+
+                    if (!href || href === "#") return;
+
+                    try {
+
+                        const page = new URL(href, window.location.href)
+                            .pathname.split("/").pop();
+
+                        if (page === currentPage) {
+
+                            link.classList.add("active");
+
+                            let parent = link.parentElement;
+
+                            while (parent && parent !== navbar) {
+
+                                if (
+                                    parent.classList.contains("nav-dropdown") ||
+                                    parent.classList.contains("nav-dropdown-sub")
+                                ) {
+
+                                    parent.classList.add("open");
+
+                                    const button = parent.querySelector(
+                                        ":scope > .nav-item-row > .submenu-toggle"
+                                    );
+
+                                    setExpanded(button, true);
+
+                                    const parentLink = parent.querySelector(
+                                        ":scope > .nav-item-row > a"
+                                    );
+
+                                    if (parentLink) {
+                                        parentLink.classList.add("active");
+                                    }
+
+                                }
+
+                                parent = parent.parentElement;
+                            }
+
+                        }
+
+                    } catch (error) {
+                        console.warn("Invalid navigation URL:", href);
+                    }
+
+                });
+
+            }
+
+            setActivePage();
+
+            /* ======================================================
+               ESCAPE KEY
+            ====================================================== */
+
+            document.addEventListener("keydown", function (event) {
+
+                if (event.key === "Escape") {
+
+                    closeMobileMenu();
+
+                    if (!isMobile) {
+                        closeAllSubmenus();
+                    }
+
+                }
+
+            });
+
+            /* ======================================================
+               RESPONSIVE RESET
+            ====================================================== */
+
+            function handleResize() {
+
+                const newIsMobile =
+                    window.innerWidth <= mobileBreakpoint;
+
+                if (newIsMobile !== isMobile) {
+
+                    isMobile = newIsMobile;
+
+                    closeMobileMenu();
+
+                    navbar.classList.remove("mobile-open");
+                    backdrop.classList.remove("active");
+
+                    closeAllSubmenus();
+
+                    setActivePage();
+                }
+
+                measureNavbar();
+                updateSticky();
+
+            }
+
+            window.addEventListener("resize", handleResize);
+
+        });
 
     </script>
 

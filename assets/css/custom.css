@@ -828,8 +828,6 @@ a {
         justify-content: flex-start;
         padding: 11px 14px;
         color: var(--text);
-        background: rgba(6, 6, 114, 0.687);
-        border: 1px solid var(--border);
         border-radius: 9px;
         font-size: 14px;
         font-weight: 600;
@@ -865,7 +863,6 @@ a {
         min-height: 47px;
         display: flex;
         align-items: stretch;
-        background: crimson;
         border-radius: 9px;
         overflow: hidden;
     }
@@ -881,8 +878,21 @@ a {
         font-weight: 600;
         text-decoration: none;
         overflow-wrap: anywhere;
+        background-color: white;
     }
 
+    .navbar > a, .navbar > .nav-dropdown > .nav-item-row > a {
+    min-height: 50px;
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    color: #250b79;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: .25s ease;
+}
     .nav-dropdown.open > .nav-item-row,
     .nav-dropdown-sub.open > .nav-item-row {
         background: #fff7eb;
@@ -982,7 +992,7 @@ a {
 
     .submenu .nav-item-row > a {
         min-height: 43px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .submenu .submenu-toggle {
