@@ -34,6 +34,16 @@
 
 <body>
 
+<!-- LOGO ONLY PRELOADER -->
+<div id="basc-preloader">
+    <div class="basc-preloader-logo">
+        <span class="basc-logo-ring"></span>
+
+        <div class="basc-logo-circle">
+            <img src="assets/logo/logo.jpeg" alt="College Logo">
+        </div>
+    </div>
+</div>
 
     <!-- TOP UTILITY HEADER -->
     <div class="basc-topbar">
@@ -1788,7 +1798,7 @@
 
     </script>
 
-    
+
     <!-- =========================================================
      COLLEGE IMAGE SLIDER
 ========================================================= -->
@@ -1799,23 +1809,15 @@
 
             <!-- SLIDE 1 -->
             <div class="college-slide  college-slide-active">
-                <img src="assets/img/infra/infra6.png" alt="College Arts Campus">
-            </div>
-  <div class="college-slide">
-                <img src="assets/img/infra/slidernew.jpg" alt="College Arts Campus">
-            </div>
-              <div class="college-slide">
                 <img src="assets/img/infra/slidernew2.jpg" alt="College Arts Campus">
             </div>
+        
             <div class="college-slide">
-                <img src="assets/img/infra/infra5.png" alt="College Arts Campus">
-            </div>
+                <img src="assets/img/infra/slidernew3.jpeg" alt="College Arts Campus">
 
+            </div>
             <!-- SLIDE 2 -->
 
-            <div class="college-slide">
-                <img src="assets/img/infra/infra4.png" alt="College Arts Campus">
-            </div>
             <div class="college-slide">
                 <img src="assets/img/infra/infra7.png" alt="College Arts Campus">
             </div>
@@ -1972,8 +1974,6 @@
        no crop
        no stretching
     */
-
-            object-fit: cover;
 
             object-position: top center;
 
@@ -2149,9 +2149,6 @@
 
                 width: 100% !important;
                 height: 100% !important;
-
-                object-fit: cover;
-
 
             }
 
@@ -6276,39 +6273,40 @@
 
                                 <div class="footer-social">
 
-                                    <a href="https://www.facebook.com/bharathiyar.deviyakurichi?mibextid=ZbWKwL" class="footer-social-link facebook" aria-label="Facebook"
-                                        target="_blank">
+                                    <a href="https://www.facebook.com/bharathiyar.deviyakurichi?mibextid=ZbWKwL"
+                                        class="footer-social-link facebook" aria-label="Facebook" target="_blank">
 
                                         <i class="fab fa-facebook-f"></i>
 
                                     </a>
 
 
-                                    <a href="https://www.instagram.com/bharathiyar_arts1997?igsi=djJqb2Q0eHVlMmIw" class="footer-social-link instagram" aria-label="Instagram"
-                                        target="_blank">
+                                    <a href="https://www.instagram.com/bharathiyar_arts1997?igsi=djJqb2Q0eHVlMmIw"
+                                        class="footer-social-link instagram" aria-label="Instagram" target="_blank">
 
                                         <i class="fab fa-instagram"></i>
 
                                     </a>
 
 
-                                    <a  href="https://www.youtube.com/results?search_query=bharathiyar+arts+and+science+college+deviyakurichi" class="footer-social-link youtube" aria-label="YouTube" target="_blank">
+                                    <a href="https://www.youtube.com/results?search_query=bharathiyar+arts+and+science+college+deviyakurichi"
+                                        class="footer-social-link youtube" aria-label="YouTube" target="_blank">
 
                                         <i class="fab fa-youtube"></i>
 
                                     </a>
 
 
-                                    <a  href="https://www.linkedin.com/in/bharathiyar-iic-022536317/" class="footer-social-link linkedin" aria-label="LinkedIn"
-                                        target="_blank">
+                                    <a href="https://www.linkedin.com/in/bharathiyar-iic-022536317/"
+                                        class="footer-social-link linkedin" aria-label="LinkedIn" target="_blank">
 
                                         <i class="fab fa-linkedin-in"></i>
 
                                     </a>
 
 
-                                    <a href="https://wa.me/919047673999" class="footer-social-link whatsapp" aria-label="WhatsApp"
-                                        target="_blank">
+                                    <a href="https://wa.me/919047673999" class="footer-social-link whatsapp"
+                                        aria-label="WhatsApp" target="_blank">
 
                                         <i class="fab fa-whatsapp"></i>
 
@@ -6352,7 +6350,7 @@
             </div>
         </footer>
 
- <!--==================================================
+        <!--==================================================
                 COPYRIGHT
 ===================================================-->
 
@@ -6432,5 +6430,35 @@
         <script src="assets/js/main.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <script>
+(function () {
+
+    const preloader = document.getElementById("basc-preloader");
+    const minimumTime = 2000;
+    const startTime = Date.now();
+
+    window.addEventListener("load", function () {
+
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(0, minimumTime - elapsedTime);
+
+        setTimeout(function () {
+
+            preloader.classList.add("basc-loaded");
+
+            setTimeout(function () {
+                preloader.style.display = "none";
+            }, 750);
+
+        }, remainingTime);
+
+    });
+
+})();
+</script>
+
+
     </body>
+
 </html>
