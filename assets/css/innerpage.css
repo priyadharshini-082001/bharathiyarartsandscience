@@ -161,7 +161,9 @@ a {
 .page-breadcrumb {
     background-image: url("../img/infra/cap.jpg");
 }
-
+.breadcrumb-about {
+    background-image: url("../img/departmentcover/aboutcover.jpg");
+}
 .breadcrumb-tamil {
     background-image: url("../img/departmentcover/department_cover_01.jpg");
 }
@@ -29875,759 +29877,807 @@ EMERALD GREEN / DEEP TEAL / CHAMPAGNE GOLD
 
 
 /* =========================================================
-   BASCW STUDENT LIFE
-   NSS | NCC | YRC | RRC | SCOUTS & GUIDES
-   RESPONSIVE CSS
-   COLLEGE THEME: CRIMSON | DARK BLUE | GOLD | IVORY
+   BASCW - STUDENT ACTIVITIES & SERVICES
+   FIVE DISTINCT PROGRAMME COLOUR THEMES
 ========================================================= */
 
-.basc-student-life {
-    --basc-red: #8b1e2d;
-    --basc-blue: #08306c;
-    --basc-gold: #e5b72f;
-    --basc-cream: #fbf8f2;
-    --basc-text: #292929;
-
+.basc-activities {
+    --activity-text: #292929;
     width: 100%;
     overflow: hidden;
-    color: var(--basc-text);
+    color: var(--activity-text);
+    background: #ffffff;
     font-size: 17px;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
-.basc-student-life *,
-.basc-student-life *::before,
-.basc-student-life *::after {
+.basc-activities *,
+.basc-activities *::before,
+.basc-activities *::after {
     box-sizing: border-box;
 }
 
-.basc-sl-container {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 65px 25px;
-}
-
-.basc-student-life p {
-    margin: 0 0 16px;
-    font-size: 17px;
-    line-height: 1.8;
-    text-align: justify;
-    color: #444;
-}
-
-.basc-student-life h1,
-.basc-student-life h2,
-.basc-student-life h3,
-.basc-student-life h4 {
-    margin-top: 0;
-    line-height: 1.35;
-}
-
-.basc-student-life img {
-    display: block;
+.basc-activities img {
     max-width: 100%;
+    display: block;
 }
+
+.basc-activity-container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
 
 /* =========================================================
-   01. PAGE INTRODUCTION
+   HERO
 ========================================================= */
 
-.basc-sl-intro {
-    max-width: 900px;
-    margin: 0 auto 45px;
+.basc-activity-hero {
+    padding: 48px 20px;
     text-align: center;
+    background: linear-gradient(120deg, #f5f0e8, #eef3f8);
 }
 
-.basc-sl-eyebrow {
-    display: inline-block;
-    margin-bottom: 12px;
-    color: var(--basc-red);
+.basc-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #8b1e2d;
     font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
-.basc-sl-intro h1 {
-    margin-bottom: 18px;
-    color: var(--basc-blue);
-    font-size: 38px;
-    font-weight: 800;
-}
-
-.basc-sl-intro > p {
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* =========================================================
-   02. SECTION NAVIGATION
-========================================================= */
-
-.basc-sl-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin: 0 auto 65px;
-    padding: 18px 10px;
-    border-top: 1px solid #e8e1d7;
-    border-bottom: 1px solid #e8e1d7;
-}
-
-.basc-sl-nav a {
-    display: inline-block;
-    padding: 9px 23px;
-    color: var(--basc-blue);
-    background: var(--basc-cream);
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: .3s ease;
-}
-
-.basc-sl-nav a:hover {
-    color: #fff;
-    background: var(--basc-red);
-}
-
-/* =========================================================
-   03. MAIN SECTIONS
-========================================================= */
-
-.basc-sl-section {
-    position: relative;
-    margin-bottom: 85px;
-    padding-bottom: 65px;
-    border-bottom: 1px solid #e8e1d7;
-    scroll-margin-top: 100px;
-}
-
-.basc-sl-section:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-/* =========================================================
-   04. SECTION HEADING
-========================================================= */
-
-.basc-sl-heading {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    margin-bottom: 35px;
-}
-
-.basc-sl-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 65px;
-    height: 65px;
-    color: #fff;
-    background: var(--basc-red);
-    border-radius: 50% 50% 50% 8px;
-    font-size: 23px;
-    font-weight: 800;
-}
-
-.basc-sl-label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--basc-red);
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1.8px;
-}
-
-.basc-sl-heading h2 {
-    margin-bottom: 0;
-    color: var(--basc-blue);
-    font-size: 30px;
-    font-weight: 800;
-}
-
-/* =========================================================
-   05. INTRO CONTENT
-========================================================= */
-
-.basc-sl-intro-content {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 280px;
-    gap: 35px;
-    align-items: center;
-    margin-bottom: 35px;
-}
-
-.basc-sl-intro-text p:last-child {
-    margin-bottom: 0;
-}
-
-.basc-sl-facts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    padding: 20px 12px;
-    background: var(--basc-cream);
-    border-left: 4px solid var(--basc-gold);
-}
-
-.basc-sl-facts > div {
-    text-align: center;
-}
-
-.basc-sl-facts strong {
-    display: block;
-    color: var(--basc-red);
-    font-size: 29px;
-    font-weight: 800;
+.basc-activity-hero h1 {
+    margin: 10px 0;
+    color: #08306c;
+    font-size: 34px;
     line-height: 1.3;
 }
 
-.basc-sl-facts span {
-    display: block;
-    margin-top: 5px;
-    color: var(--basc-blue);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.basc-sl-side-note {
-    padding: 25px 22px;
-    background: var(--basc-cream);
-    border-left: 4px solid var(--basc-gold);
-}
-
-.basc-sl-side-note > i {
-    margin-bottom: 12px;
-    color: var(--basc-red);
-    font-size: 34px;
-}
-
-.basc-sl-side-note h3 {
-    margin-bottom: 8px;
-    color: var(--basc-blue);
-    font-size: 20px;
-}
-
-.basc-sl-side-note p {
-    margin-bottom: 0;
-    font-size: 15px;
-    text-align: left;
-}
-
-/* =========================================================
-   06. IMAGE GALLERY
-========================================================= */
-
-.basc-sl-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
-    margin: 40px 0;
-}
-
-.basc-sl-gallery figure {
-    position: relative;
-    margin: 0;
-    overflow: hidden;
-    background: var(--basc-cream);
-    border-radius: 100px 100px 8px 8px;
-}
-
-.basc-sl-gallery figure:nth-child(2) {
-    margin-top: 28px;
-    border-radius: 8px 8px 100px 100px;
-}
-
-.basc-sl-gallery figure:nth-child(3) {
-    margin-top: 55px;
-}
-
-.basc-sl-gallery img {
-    width: 100%;
-    height: 290px;
-    object-fit: cover;
-    transition: transform .5s ease;
-}
-
-.basc-sl-gallery figure:hover img {
-    transform: scale(1.06);
-}
-
-.basc-sl-gallery figcaption {
-    padding: 14px 10px;
-    color: var(--basc-blue);
-    background: var(--basc-cream);
-    font-size: 15px;
-    font-weight: 700;
+.basc-activity-hero p {
+    max-width: 900px;
+    margin: auto;
+    color: #333333;
     text-align: center;
+    font-size: 17px;
 }
+
 
 /* =========================================================
-   07. VISION AND MISSION
+   NAVIGATION
 ========================================================= */
 
-.basc-sl-two-columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 35px;
-    margin: 40px 0;
+.basc-activity-nav {
+    padding: 18px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
 }
 
-.basc-sl-two-columns > div {
-    padding: 25px 25px 22px;
-    background: var(--basc-cream);
-    border-bottom: 3px solid var(--basc-gold);
-}
-
-.basc-sl-two-columns h3 {
-    margin-bottom: 15px;
-    color: var(--basc-blue);
-    font-size: 22px;
-    font-weight: 800;
-}
-
-.basc-sl-two-columns h3 i {
-    margin-right: 9px;
-    color: var(--basc-red);
-}
-
-.basc-sl-two-columns p {
-    margin-bottom: 0;
-}
-
-.basc-sl-two-columns ul {
-    margin: 0;
-    padding-left: 20px;
-}
-
-.basc-sl-two-columns li {
-    margin-bottom: 9px;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-/* =========================================================
-   08. NSS MOTTO
-========================================================= */
-
-.basc-sl-motto {
+.basc-activity-nav .basc-activity-container {
     display: flex;
-    align-items: center;
-    gap: 25px;
-    margin: 40px 0;
-    padding: 30px;
-    color: #fff;
-    background: var(--basc-blue);
-    border-radius: 8px 65px 8px 8px;
-}
-
-.basc-sl-motto-icon {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    width: 75px;
-    height: 75px;
-    color: var(--basc-blue);
-    background: var(--basc-gold);
-    border-radius: 50%;
-    font-size: 31px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.basc-sl-motto .basc-sl-small-label {
-    color: var(--basc-gold);
-}
-
-.basc-sl-motto h3 {
-    margin: 5px 0 10px;
-    color: #fff;
-    font-size: 25px;
-}
-
-.basc-sl-motto p {
-    margin-bottom: 0;
-    color: #fff;
-    font-size: 16px;
-}
-
-/* =========================================================
-   09. SUBHEADINGS
-========================================================= */
-
-.basc-sl-subheading {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 42px 0 22px;
-    padding-bottom: 12px;
-    color: var(--basc-blue);
-    border-bottom: 1px solid #e6dfd5;
-    font-size: 23px;
-    font-weight: 800;
-}
-
-.basc-sl-subheading i {
-    color: var(--basc-red);
-    font-size: 21px;
-}
-
-/* =========================================================
-   10. OBJECTIVES CHECK LIST
-========================================================= */
-
-.basc-sl-check-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 13px 35px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.basc-sl-check-list li {
-    position: relative;
-    padding-left: 28px;
-    color: #444;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.basc-sl-check-list li::before {
-    position: absolute;
-    top: 1px;
-    left: 0;
-    color: var(--basc-red);
-    content: "\f00c";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-}
-
-/* =========================================================
-   11. ACTIVITIES GRID
-========================================================= */
-
-.basc-sl-activity-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-    margin: 25px 0 35px;
-}
-
-.basc-sl-activity-grid > div {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    min-height: 75px;
-    padding: 15px 13px;
-    background: var(--basc-cream);
-    border-bottom: 2px solid #e8d9b3;
-    transition: .3s ease;
-}
-
-.basc-sl-activity-grid > div:hover {
-    background: #f4eee3;
-    border-bottom-color: var(--basc-red);
-    transform: translateY(-4px);
-}
-
-.basc-sl-activity-grid i {
-    flex-shrink: 0;
-    width: 27px;
-    color: var(--basc-red);
-    font-size: 23px;
-    text-align: center;
-}
-
-.basc-sl-activity-grid span {
-    color: var(--basc-blue);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.5;
-}
-
-/* =========================================================
-   12. PROGRAMME OFFICERS
-========================================================= */
-
-.basc-sl-officer-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
-    margin: 25px 0 35px;
-}
-
-.basc-sl-officer-list > div {
-    padding: 23px;
-    background: var(--basc-cream);
-    border-left: 4px solid var(--basc-red);
-}
-
-.basc-sl-unit {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 4px 12px;
-    color: #fff;
-    background: var(--basc-blue);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.basc-sl-officer-list h4 {
-    margin-bottom: 5px;
-    color: var(--basc-red);
-    font-size: 19px;
-}
-
-.basc-sl-officer-list p {
-    margin: 0;
-    font-size: 14px;
-    text-align: left;
-}
-
-/* =========================================================
-   13. COORDINATOR
-========================================================= */
-
-.basc-sl-coordinator {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 550px;
-    margin: 20px 0 35px;
-    padding: 20px 23px;
-    background: var(--basc-cream);
-    border-left: 4px solid var(--basc-gold);
-}
-
-.basc-sl-coordinator > i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 55px;
-    height: 55px;
-    color: #fff;
-    background: var(--basc-red);
-    border-radius: 50%;
-    font-size: 22px;
-}
-
-.basc-sl-coordinator h4 {
-    margin-bottom: 5px;
-    color: var(--basc-blue);
-    font-size: 19px;
-}
-
-.basc-sl-coordinator p {
-    margin: 0;
-    font-size: 15px;
-    text-align: left;
-}
-
-/* =========================================================
-   14. ACHIEVEMENT
-========================================================= */
-
-.basc-sl-achievement {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin: 40px 0;
-    padding: 28px;
-    background: var(--basc-cream);
-    border-left: 5px solid var(--basc-gold);
-}
-
-.basc-sl-achievement > i {
-    flex-shrink: 0;
-    color: var(--basc-red);
-    font-size: 45px;
-}
-
-.basc-sl-achievement span {
-    display: block;
-    margin-bottom: 6px;
-    color: var(--basc-red);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-}
-
-.basc-sl-achievement h3 {
-    margin-bottom: 8px;
-    color: var(--basc-blue);
-    font-size: 22px;
-}
-
-.basc-sl-achievement p {
-    margin-bottom: 0;
-    font-size: 16px;
-}
-
-/* =========================================================
-   15. ANNUAL REPORTS
-========================================================= */
-
-.basc-sl-reports {
-    margin-top: 45px;
-    padding: 28px;
-    background: #faf8f4;
-}
-
-.basc-sl-report-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 17px;
-    border-bottom: 1px solid #e2d9ca;
-}
-
-.basc-sl-small-label {
-    display: block;
-    color: var(--basc-red);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-}
-
-.basc-sl-report-heading h3 {
-    margin: 5px 0 0;
-    color: var(--basc-blue);
-    font-size: 24px;
-}
-
-.basc-sl-report-heading > i {
-    color: var(--basc-red);
-    font-size: 34px;
-}
-
-.basc-sl-report-list details {
-    margin-bottom: 12px;
-    background: #fff;
-    border-bottom: 1px solid #e8dfd2;
-}
-
-.basc-sl-report-list summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    padding: 17px 20px;
-    color: var(--basc-blue);
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    list-style: none;
-}
-
-.basc-sl-report-list summary::-webkit-details-marker {
-    display: none;
-}
-
-.basc-sl-report-list summary::after {
-    margin-left: auto;
-    color: var(--basc-red);
-    content: "+";
-    font-size: 23px;
-    font-weight: 500;
-}
-
-.basc-sl-report-list details[open] summary::after {
-    content: "−";
-}
-
-.basc-sl-report-list summary i {
-    color: var(--basc-red);
-    font-size: 20px;
-}
-
-.basc-sl-pdf-content {
-    padding: 5px 20px 22px;
-}
-
-.basc-sl-pdf-content p {
-    margin-bottom: 12px;
-    font-size: 15px;
-    text-align: left;
-}
-
-.basc-sl-pdf-content iframe {
-    display: block;
-    width: 100%;
-    height: 450px;
-    margin: 15px 0;
-    border: 0;
-    background: #fff;
-}
-
-.basc-sl-pdf-content a {
+.basc-activity-nav a {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin: 8px 10px 0 0;
     padding: 9px 17px;
-    color: #fff;
-    background: var(--basc-blue);
-    border-radius: 3px;
+    color: #08306c;
+    background: #edf2f8;
+    border-radius: 30px;
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
-    transition: .3s ease;
+    transition: 0.25s;
 }
 
-.basc-sl-pdf-content a:hover {
-    background: var(--basc-red);
+.basc-activity-nav a:hover {
+    color: #ffffff;
+    background: #08306c;
 }
+
 
 /* =========================================================
-   16. SECTION-SPECIFIC ACCENTS
+   PROGRAMME COLOUR THEMES
 ========================================================= */
 
-.basc-nss .basc-sl-number {
-    background: var(--basc-red);
+.basc-nss {
+    --program: #327044;
+    --program-dark: #20532f;
+    --program-light: #eaf4ec;
+    --program-pale: #f5faf5;
+    --program-border: #b9d7bd;
 }
 
-.basc-ncc .basc-sl-number {
-    background: var(--basc-blue);
+.basc-ncc {
+    --program: #285a91;
+    --program-dark: #17416e;
+    --program-light: #e9f1fa;
+    --program-pale: #f4f8fd;
+    --program-border: #b9cde5;
 }
 
-.basc-yrc .basc-sl-number {
-    color: var(--basc-blue);
-    background: var(--basc-gold);
+.basc-yrc {
+--program: #28991a;
+    --program-dark: #275309;
+    --program-light: #edfaec;
+    --program-pale: #f6fdf6;
+    --program-border: #d0e5be;
 }
 
-.basc-rrc .basc-sl-number {
-    background: #a51d36;
+
+.basc-rrc {
+    --program: #a43d58;
+    --program-dark: #76263e;
+    --program-light: #f9ebf0;
+    --program-pale: #fdf5f8;
+    --program-border: #e6bdca;
 }
 
-.basc-scouts .basc-sl-number {
-    background: #426b3c;
+.basc-scouts {
+    --program: #99702b;
+    --program-dark: #73511b;
+    --program-light: #f8f1e4;
+    --program-pale: #fcf9f1;
+    --program-border: #e1d0a8;
 }
 
-.basc-scouts .basc-sl-label {
-    color: #426b3c;
-}
-
-.basc-scouts .basc-sl-subheading i {
-    color: #426b3c;
-}
 
 /* =========================================================
-   17. SMOOTH SCROLL
+   PROGRAMME SECTIONS
 ========================================================= */
 
-html {
-    scroll-behavior: smooth;
+.basc-programme {
+    padding: 50px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    scroll-margin-top: 30px;
+}
+
+.basc-programme:nth-of-type(even) {
+    background: var(--program-pale);
+}
+
+
+/* =========================================================
+   PROGRAMME HEADING
+========================================================= */
+
+.basc-programme-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 32px;
+    padding: 23px 26px;
+    background: var(--program-light);
+    border-left: 6px solid var(--program);
+    border-radius: 4px 35px 4px 35px;
+}
+
+.basc-programme-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 78px;
+    flex-shrink: 0;
+    color: #ffffff;
+    background: var(--program);
+    border-radius: 22px 5px 22px 5px;
+    font-size: 32px;
+}
+
+.basc-programme-title {
+    position: relative;
+    z-index: 2;
+}
+
+.basc-programme-title > span {
+    color: var(--program-dark);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.basc-programme-title h2 {
+    margin: 3px 0;
+    color: var(--program-dark);
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.basc-programme-title p {
+    margin: 0;
+    color: #555555;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.basc-programme-number {
+    margin-left: auto;
+    color: var(--program);
+    opacity: 0.16;
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   ABOUT / VISION / OBJECTIVES / ACTIVITIES
+========================================================= */
+
+.basc-information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.basc-info-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    min-width: 0;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid var(--program-border);
+    border-radius: 5px 24px 5px 24px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.basc-info-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--program);
+}
+
+.basc-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    flex-shrink: 0;
+    color: #ffffff;
+    background: var(--program);
+    border-radius: 50% 50% 5px 50%;
+    font-size: 21px;
+}
+
+.basc-info-card h3 {
+    margin: 2px 0 9px;
+    color: var(--program-dark);
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.basc-info-label {
+    color: var(--program);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.basc-info-card p {
+    margin: 0;
+    color: #333333;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.basc-info-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.basc-info-card li {
+    margin-bottom: 5px;
+    color: #333333;
+    font-size: 16px;
+}
+
+
+/* DIFFERENT CARD SHAPES */
+
+.basc-about-card {
+    border-radius: 5px 28px 5px 28px;
+    background: linear-gradient(135deg, #ffffff, var(--program-pale));
+}
+
+.basc-vision-card {
+    border-radius: 28px 5px 28px 5px;
+    background: linear-gradient(135deg, var(--program-light), #ffffff);
+}
+
+.basc-objective-card {
+    border-radius: 28px 5px 5px 28px;
+    border-left: 5px solid var(--program);
+}
+
+.basc-major-card {
+    border-radius: 5px 28px 28px 5px;
+    border-right: 5px solid var(--program);
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.basc-programme-gallery {
+    margin-top: 34px;
+}
+
+.basc-gallery-heading {
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--program-border);
+}
+
+.basc-gallery-heading h3 {
+    margin: 0;
+    color: var(--program-dark);
+    font-size: 21px;
+}
+
+.basc-gallery-heading i {
+    margin-right: 8px;
+    color: var(--program);
+}
+
+.basc-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.basc-gallery-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px 25px 5px 25px;
+    border-bottom: 4px solid var(--program);
+}
+
+
+/* =========================================================
+   COORDINATOR
+========================================================= */
+
+.basc-programme-coordinator {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 26px;
+    padding: 17px 21px;
+    background: var(--program-light);
+    border-left: 4px solid var(--program);
+    border-radius: 4px 20px 4px 20px;
+}
+
+.basc-coordinator-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    flex-shrink: 0;
+    color: #ffffff;
+    background: var(--program);
+    border-radius: 50%;
+    font-size: 21px;
+}
+
+.basc-programme-coordinator span {
+    color: var(--program);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.basc-programme-coordinator h3 {
+    margin: 2px 0;
+    color: var(--program-dark);
+    font-size: 18px;
+}
+
+.basc-programme-coordinator p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   REPORT SECTION
+========================================================= */
+
+.basc-report-section {
+    margin-top: 38px;
+}
+
+.basc-report-heading {
+    margin-bottom: 20px;
+    padding: 18px 22px;
+    background: var(--program-light);
+    border-left: 5px solid var(--program);
+    border-radius: 4px 22px 4px 22px;
+}
+
+.basc-report-heading > span {
+    color: var(--program);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.basc-report-heading h3 {
+    margin: 3px 0 5px;
+    color: var(--program-dark);
+    font-size: 23px;
+}
+
+.basc-report-heading p {
+    margin: 0;
+    color: #555555;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   REPORT ACTIVITY ROW
+========================================================= */
+
+.basc-report-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 17px 16px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: 1px solid var(--program-border);
+    border-left: 4px solid var(--program);
+    border-radius: 4px 16px 4px 16px;
+    transition: 0.25s ease;
+}
+
+.basc-report-item:hover {
+    background: var(--program-pale);
+    border-color: var(--program);
+}
+
+.basc-report-activity {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.basc-report-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    color: #ffffff;
+    background: var(--program);
+    border-radius: 14px 4px 14px 4px;
+    font-size: 19px;
+}
+
+.basc-report-activity h4 {
+    margin: 0 0 3px;
+    color: var(--program-dark);
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.basc-report-activity p {
+    margin: 0;
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   YEAR-WISE PDF LINKS
+========================================================= */
+
+.basc-report-years {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.basc-report-years a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 11px;
+    color: var(--program-dark);
+    background: var(--program-light);
+    border: 1px solid var(--program-border);
+    border-radius: 4px 12px 4px 12px;
+    font-size: 12px;
+    font-weight: 750;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.25s ease;
+}
+
+.basc-report-years a i {
+    color: #bd3545;
+    font-size: 14px;
+}
+
+.basc-report-years a:hover {
+    color: #ffffff;
+    background: var(--program);
+    border-color: var(--program);
+}
+
+.basc-report-years a:hover i {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .basc-activity-container {
+        width: 94%;
+    }
+
+    .basc-information-grid {
+        gap: 14px;
+    }
+
+    .basc-info-card {
+        padding: 17px;
+        gap: 12px;
+    }
+
+    .basc-report-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .basc-report-years {
+        justify-content: flex-start;
+        padding-left: 60px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .basc-activity-hero {
+        padding: 35px 15px;
+    }
+
+    .basc-activity-hero h1 {
+        font-size: 27px;
+    }
+
+    .basc-activity-hero p {
+        font-size: 15px;
+    }
+
+    .basc-programme {
+        padding: 35px 0;
+    }
+
+    .basc-programme-heading {
+        gap: 13px;
+        padding: 17px;
+    }
+
+    .basc-programme-icon {
+        width: 59px;
+        height: 59px;
+        font-size: 25px;
+    }
+
+    .basc-programme-title h2 {
+        font-size: 22px;
+    }
+
+    .basc-programme-number {
+        font-size: 42px;
+    }
+
+    .basc-information-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-gallery-grid {
+        gap: 12px;
+    }
+
+    .basc-gallery-grid img {
+        height: 205px;
+    }
+
+    .basc-report-heading h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .basc-activity-container {
+        width: 92%;
+    }
+
+    .basc-activity-hero h1 {
+        font-size: 23px;
+    }
+
+    .basc-hero-tag {
+        font-size: 12px;
+    }
+
+    .basc-activity-nav .basc-activity-container {
+        gap: 7px;
+    }
+
+    .basc-activity-nav a {
+        padding: 7px 11px;
+        font-size: 12px;
+    }
+
+    .basc-programme-heading {
+        gap: 10px;
+        padding: 13px;
+        border-radius: 4px 20px 4px 20px;
+    }
+
+    .basc-programme-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 13px 4px 13px 4px;
+        font-size: 21px;
+    }
+
+    .basc-programme-title > span {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .basc-programme-title h2 {
+        font-size: 18px;
+    }
+
+    .basc-programme-title p {
+        font-size: 13px;
+    }
+
+    .basc-programme-number {
+        display: none;
+    }
+
+    .basc-info-card {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .basc-info-icon {
+        width: 39px;
+        height: 39px;
+        font-size: 17px;
+    }
+
+    .basc-info-card h3 {
+        font-size: 18px;
+    }
+
+    .basc-info-card p,
+    .basc-info-card li {
+        font-size: 15px;
+    }
+
+    .basc-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .basc-gallery-grid img {
+        height: 220px;
+    }
+
+    .basc-report-item {
+        padding: 13px 11px;
+        gap: 12px;
+    }
+
+    .basc-report-activity {
+        gap: 10px;
+    }
+
+    .basc-report-icon {
+        width: 39px;
+        height: 39px;
+        font-size: 16px;
+    }
+
+    .basc-report-activity h4 {
+        font-size: 15px;
+    }
+
+    .basc-report-activity p {
+        font-size: 12px;
+    }
+
+    .basc-report-years {
+        width: 100%;
+        padding-left: 49px;
+        gap: 6px;
+    }
+
+    .basc-report-years a {
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
+    .basc-report-years a i {
+        font-size: 12px;
+    }
+
+    .basc-report-heading {
+        padding: 14px;
+    }
+
+    .basc-report-heading h3 {
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .basc-report-years {
+        padding-left: 0;
+    }
+
+    .basc-report-years a {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    .basc-programme-title h2 {
+        font-size: 16px;
+    }
+
 }
 
 
