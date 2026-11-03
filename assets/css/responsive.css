@@ -1666,8 +1666,6 @@
 
         justify-content: flex-start;
 
-        gap: 0;
-
         max-height:fit-content;
 
     }
@@ -1686,15 +1684,10 @@
 
         justify-content: flex-start;
 
-        background: #fff;
+        background:crimson;
 
-        color: #073b8f;
-
-        border-bottom: 1px solid #edf1f7;
-
-        border-radius: 0;
-
-        font-size: 13px;
+        color: #ffffff;
+        font-size: 14px;
     }
 
 
@@ -1731,15 +1724,6 @@
 
     .aff-logo{
         display: none;
-    }
-    /* ACTIVE */
-
-    .navbar > a.active,
-    .nav-dropdown > a.active {
-
-        background: #f3f7ff;
-
-        border-left: 4px solid #e51d73;
     }
 
 
@@ -1995,46 +1979,6 @@
         font-size:9px;
     }
 
-
-    .menu-toggle {
-
-        width: 39px;
-        height: 38px;
-    }
-
-}
-
-/* =========================================================
-   REMOVE MOBILE BLUE TAP / FOCUS LINE
-========================================================= */
-
-.menu-toggle,
-.menu-toggle:hover,
-.menu-toggle:focus,
-.menu-toggle:active {
-
-    outline: none !important;
-
-    -webkit-tap-highlight-color: transparent;
-}
-
-
-/* =========================================================
-   MOBILE SCROLLBAR
-========================================================= */
-
-@media (max-width: 991px) {
-
-    .navbar::-webkit-scrollbar {
-        width: 4px;
-    }
-
-    .navbar::-webkit-scrollbar-thumb {
-
-        background: #c9d5e8;
-
-        border-radius: 10px;
-    }
 
 }
 
